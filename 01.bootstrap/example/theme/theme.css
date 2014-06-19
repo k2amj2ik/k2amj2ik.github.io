@@ -6,8 +6,8 @@ body {
 /* 한글 폰트 설정을 위해 bootstrap.css 내용에 "돋움" 추가 */
 
 @font-face {
-  font-family: "ng";
-  url('fonts/NanumGothic.woff') format('woff');
+  font-family: ng;
+  src: url(fonts/NanumGothic.woff);
 }
 
 body,h2,h1,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
