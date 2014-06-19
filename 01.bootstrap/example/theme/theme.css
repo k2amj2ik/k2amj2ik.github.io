@@ -7,11 +7,11 @@ body {
 
 @font-face {
   font-family: "ng";
-  url('/fonts/NanumGothic.woff') format('woff');
+  url('fonts/NanumGothic.woff') format('woff');
 }
 
 body,h2,h1,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
-  font-family: 나눔고딕, NanumGothic, ng;
+  font-family: ng;
 }
 
 /* Table */
