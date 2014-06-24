@@ -446,26 +446,26 @@
 <div class="form">
 	<fieldset>
 		<legend>input text 체크하기</legend>
-	</fieldset>
-	<ol>
+		<ol>
 		<li>
 			<label for="name" class="icon-required">긴 타이틀 테스트. 더 긴건? 더 긴건?</label>
 			<input type="text" id="name" placeholder="이름을 입력하세요." title="빈 칸없이 입력하세요." required/>
 		</li>
 	</ol>
+	</fieldset>
 	<fieldset>
 		<legend>email 또는 url 체크하기</legend>
+		<ol>
+			<li>
+				<label for="email" class="icon-required">이메일</label>
+				<input type="email" id="email" placeholder="이메일 주소를 입력하세요." title="이메일 형식에 맞아야 합니다." required/>
+			</li>
+			<li>
+				<label for="blog">블로그</label>
+				<input type="text" id="blog" placeholder="개인 홈페이지 또는 블로그 주소를 입력하세요." title="URL 형식에 맞아야 합니다." required/>
+			</li>
+		</ol>
 	</fieldset>
-	<ol>
-		<li>
-			<label for="email" class="icon-required">이메일</label>
-			<input type="text" id="email" placeholder="이메일 주소를 입력하세요." title="이메일 형식에 맞아야 합니다." required/>
-		</li>
-		<li>
-			<label for="blog">블로그</label>
-			<input type="text" id="blog" placeholder="개인 홈페이지 또는 블로그 주소를 입력하세요." title="URL 형식에 맞아야 합니다." required/>
-		</li>
-	</ol>
 </div>
 
 </div> <!-- /container -->
