@@ -1646,6 +1646,7 @@
 	</tr>
 	</tbody>
 </table>
+<p style="height: 1000px"></p>
 <div id="test" style="position: fixed;top: 0;left: 0;background-color: black;color: #ffffff;z-index: 1000000;border: 1px solid red">test</div>
 </div> <!-- /container -->
 
@@ -1658,18 +1659,18 @@
 <script src="../../assets/js/holder.js"></script>
 <script type="text/javascript">
 	onscroll = function() {
-		var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+		var scrollTop = document.body.scrollTop;
 		$("#test").html(scrollTop);
-		if(scrollTop > 4968) {
-			$("#tbl-header").removeClass();
-			$("#tbl-header").addClass("tbl-header-fixed");
-			$("#tbl-body").removeClass();
-			$("#tbl-body").addClass("tbl-body-fixed");
-		} else {
+		if(scrollTop <= 4968 || scrollTop > 5938 ) {
 			$("#tbl-header").removeClass();
 			$("#tbl-header").addClass("tbl-header-none-fixed");
 			$("#tbl-body").removeClass();
 			$("#tbl-body").addClass("tbl-body-none-fixed");
+		} else {
+			$("#tbl-header").removeClass();
+			$("#tbl-header").addClass("tbl-header-fixed");
+			$("#tbl-body").removeClass();
+			$("#tbl-body").addClass("tbl-body-fixed");
 		}
 	}
 </script>
