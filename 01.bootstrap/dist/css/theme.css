@@ -14,7 +14,7 @@ input[type="text"] {
 
 @font-face {
 	font-family: ng;
-	src: url(fonts/NanumGothic.woff);
+	src: url(../fonts/NanumGothic.woff);
 }
 
 body,h2,h1,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
@@ -37,6 +37,7 @@ body,h2,h1,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
 	border-top-right-radius: 4px;
 	border-right: 0;
 }
+
 .table tbody tr td {
 	border: 1px dotted #dddddd;
 	border-top: 0;
@@ -50,6 +51,41 @@ body,h2,h1,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
 .table tbody tr td:last-child {
 	border-right: 1px solid #eeeeee;
 }
+
+/* table fixed header*/
+
+.tbl-fixed {
+    position: relative;
+}
+.tbl-fixed th,
+.tbl-fixed td {
+    width: 100px;
+}
+.tbl-fixed thead.tbl-header-none-fixed {
+    position: static;
+    font-weight: normal;
+}
+.tbl-fixed thead.tbl-header-none-fixed tr th {
+    display: inline-block;
+    font-weight: normal;
+}
+.tbl-fixed thead.tbl-header-fixed {
+    position: fixed;
+    top: 51px;
+    z-index: 1000;
+}
+.tbl-fixed thead.tbl-header-fixed tr th {
+    display: inline-block;
+    font-weight: normal;
+}
+.tbl-fixed tbody.tbl-body-none-fixed tr td {
+    display: inline-block;
+}
+.tbl-fixed tbody.tbl-body-fixed {
+    position: absolute;
+    top: 125px;
+}
+
 
 /* Form */
 
@@ -81,7 +117,7 @@ body,h2,h1,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
 
 /* icons */
 
-.icon-required:before {
+.form-required label:before {
 	content: "";
 	display: block;
 	position: relative;
@@ -100,4 +136,5 @@ body,h2,h1,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
 .theme-showcase > p > .btn {
 	margin: 5px 0;
 }
+
 
