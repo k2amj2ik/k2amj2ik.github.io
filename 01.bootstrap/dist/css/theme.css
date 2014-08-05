@@ -62,6 +62,10 @@ body,h2,h1,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
 .tbl-fixed td {
     width: 100px;
 }
+.tbl-fixed thead,
+.tbl-fixed tbody {
+    width: 1017px;
+}
 .tbl-fixed thead.tbl-header-none-fixed {
     position: static;
     font-weight: normal;

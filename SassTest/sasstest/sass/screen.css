@@ -1,0 +1,61 @@
+/*
+Syntax error: File to import not found or unreadable: compass/reset.
+              Load path: C:/Users/lia/Dropbox/00.취미관련/00.개인공부/Study_Publishing/01.Study/k2amj2ik.github.io/SassTest/sasstest/sass (DEPRECATED)
+        on line 6 of screen.scss
+
+1: /* Welcome to Compass.
+2:  * In this file you should write your main styles. (or centralize your imports)
+3:  * Import this file using the following HTML or equivalent:
+4:  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> *\/
+5: 
+6: @import "compass/reset";
+7: @import "variables";
+8: div {
+9:   color: $bold-color;
+10:   font: bold 12pt/140%;
+11: }
+
+Backtrace:
+screen.scss:6
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.9/lib/sass/tree/import_node.rb:66:in `rescue in import'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.9/lib/sass/tree/import_node.rb:45:in `import'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.9/lib/sass/tree/import_node.rb:28:in `imported_file'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.9/lib/sass/tree/import_node.rb:37:in `css_import?'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.9/lib/sass/tree/visitors/perform.rb:283:in `visit_import'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.9/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.9/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.9/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.9/lib/sass/stack.rb:121:in `with_frame'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.9/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.9/lib/sass/tree/visitors/perform.rb:152:in `visit'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.9/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.9/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.9/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.9/lib/sass/tree/visitors/perform.rb:161:in `block in visit_children'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.9/lib/sass/tree/visitors/perform.rb:173:in `with_environment'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.9/lib/sass/tree/visitors/perform.rb:160:in `visit_children'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.9/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.9/lib/sass/tree/visitors/perform.rb:180:in `visit_root'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.9/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.9/lib/sass/tree/visitors/perform.rb:151:in `visit'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.9/lib/sass/tree/visitors/perform.rb:8:in `visit'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.9/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.9/lib/sass/tree/root_node.rb:20:in `render'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.9/lib/sass/engine.rb:274:in `render'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.9/lib/sass/plugin/compiler.rb:378:in `update_stylesheet'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.9/lib/sass/plugin/compiler.rb:189:in `block in update_stylesheets'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.9/lib/sass/plugin/compiler.rb:186:in `each'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.9/lib/sass/plugin/compiler.rb:186:in `update_stylesheets'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.9/lib/sass/plugin.rb:82:in `update_stylesheets'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.9/lib/sass/exec.rb:489:in `watch_or_update'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.9/lib/sass/exec.rb:346:in `process_result'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.9/lib/sass/exec.rb:43:in `parse'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.9/lib/sass/exec.rb:22:in `parse!'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.9/bin/scss:13:in `<top (required)>'
+C:/Ruby200-x64/bin/scss:23:in `load'
+C:/Ruby200-x64/bin/scss:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: File to import not found or unreadable: compass/reset.\A               Load path: C:/Users/lia/Dropbox/00.취미관련/00.개인공부/Study_Publishing/01.Study/k2amj2ik.github.io/SassTest/sasstest/sass (DEPRECATED)\A         on line 6 of screen.scss\A \A 1: /* Welcome to Compass.\A 2:  * In this file you should write your main styles. (or centralize your imports)\A 3:  * Import this file using the following HTML or equivalent:\A 4:  * <link href=\"/stylesheets/screen.css\" media=\"screen, projection\" rel=\"stylesheet\" type=\"text/css\" /> */\A 5: \A 6: @import \"compass/reset\";\A 7: @import \"variables\";\A 8: div {\A 9:   color: $bold-color;\A 10:   font: bold 12pt/140%;\A 11: }"; }
