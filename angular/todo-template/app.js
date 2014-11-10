@@ -1,26 +1,24 @@
-var app = angular.module('todo', ['ngRoute']);
+var app = angular.module('todo', ['ngRoute','ngResource']);
 
 //환경설정
 app.config(function($routeProvider){
     $routeProvider.when('/main',{
 //      template: '{{test}}',
         templateUrl: 'todo.html',
-        controller: function($scope){
 
-            $scope.todos = [
-                {
-                    completed: false,
-                    title: '숙제1'
-                },
-                {
-                    completed: true,
-                    title: '숙제2'
-                },
-                {
-                    completed: true,
-                    title: '숙제3'
-                }
-            ]
+        controller: function($scope, $resource){
+            var todoApi = $resource('http://localhost:3000/todos');
+
+            function success(response){
+                $scope.todos = response.data;
+            }
+
+            function fail(reason){
+                throw reason.messsage;
+            }
+
+            todoApi.get(success,fail);
+
             $scope.statusFilter = {
                 completed: false
             }
