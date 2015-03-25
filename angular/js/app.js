@@ -1,14 +1,13 @@
-app = angular.module("myApp", []);
+app = angular.module("myApp", ["ngResource"]);
 
 
 //app.controller("mainCtrl", ["$scope", "personService", function($scope, personService){}]);
 
-app.controller("mainCtrl", function($scope) {
+app.controller("mainCtrl", function($scope, $resource) {
   $scope.name = "Default Name";
   $scope.people = [];
   $scope.savePerson = function() {
-    $scope.people.push[$scope.name];
-    alert($scope.name);
+    $scope.people.push($scope.name);
     $scope.name = '';
   };
 });
