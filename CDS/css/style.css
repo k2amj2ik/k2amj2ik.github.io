@@ -1,0 +1,262 @@
+/* etc. */
+.invisible {
+    display: none;
+}
+
+.panel {
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+}
+
+/* texts */
+.txt-normal {
+    color: #6d737b;
+}
+
+/* buttons */
+.btn-normal {
+    display: inline-block;
+    padding: 3px 12px;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #8b8b8b;
+    border-radius: 2px;
+}
+.btn-normal:hover {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #333333;
+}
+
+.btn-major {
+    display: inline-block;
+    width: 88px ;
+    height: 59px;
+    text-indent: -200px;
+    border: 0;
+    overflow: hidden;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+    background-color: #ffffff;
+}
+
+.btn-major:hover {
+    background-color: #547495;
+}
+
+.btn-trivial {
+    display: inline-block;
+    padding: 10px;
+    margin: 4px 4px 0 0;
+    border: 0;
+    border-radius: 2px;
+    background-color: #e3e3e3;
+}
+
+.btn-trivial:hover {
+    background-color: #7f7f7f;
+}
+
+/* layout */
+.navigation {
+    height: 33px;
+}
+
+.container {
+    width: 100%;
+    height: 600px;
+    background: transparent url("../images/bg.png") repeat;
+    display: flex;
+    justify-content: space-around;
+}
+
+.container .object-list {
+    width: 670px;
+    min-width: 245px;
+}
+
+/* button - Choose a cake */
+.container .object-list .cake,
+.container .object-list .cake-active,
+.container .object-list .deco,
+.container .object-list .deco-active {
+    display: inline-block;
+    margin: 12px 10px 12px 0;
+}
+
+.container .object-list .cake {
+    background: #ffffff url("../images/btn_cake.png") no-repeat 50% 50%;
+}
+
+.container .object-list .cake:hover,
+.container .object-list .cake-active {
+    background: #547495 url("../images/btn_cake_v.png") no-repeat 50% 50%;
+}
+
+.container .object-list .deco {
+    background: #ffffff url("../images/btn_deco.png") no-repeat 50% 50%;
+}
+
+.container .object-list .deco:hover {
+    background: #547495 url("../images/btn_deco_v.png") no-repeat 50% 50%;
+}
+
+.container .object-list .panel .panel-heading {
+    color: #547495;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.container .object-list .manual .list-group {
+    font-weight: bold;
+}
+
+.container .object-list .manual .list-group p {
+    margin-top: 10px;
+    padding-left: 10px;
+    text-indent: -12px;
+    font-weight: normal;
+    font-size: 0.9em;
+    color: #6d737b;
+}
+
+.container .object-list .manual .list-group .list-group-item .icon-cake {
+    display: inline-block;
+    width: 35px;
+    height: 22px;
+    border: 1px solid #999999;
+    vertical-align: top;
+    background: #ffffff url("../images/btn_cake.png") no-repeat;
+    background-size: 32px;
+}
+
+.container .object-list .manual .list-group .list-group-item .icon-deco {
+     display: inline-block;
+     width: 35px;
+     height: 22px;
+     border: 1px solid #999999;
+     vertical-align: top;
+    background: #ffffff url("../images/btn_deco.png") no-repeat;
+     background-size: 35px;
+ }
+
+.container .object-list .manual .list-group .list-group-item .icon-save {
+    display: inline-block;
+    width: 35px;
+    height: 22px;
+    vertical-align: top;
+    background: #032b52 url("../images/btn_save.png") no-repeat 5px 4px;
+    background-size: 25px;
+}
+
+.container .object-list .manual .list-group p::before {
+    content: "★";
+}
+
+.container .object-list .cake-list .panel-body,
+.container .object-list .deco-list .panel-body{
+    padding: 10px 0 10px 4px;
+    margin: 0;
+    width: 100%;
+    height: 490px;
+    overflow-y: scroll;
+}
+
+.container .object-list .cake-list .thumbnail,
+.container .object-list .deco-list .thumbnail{
+    display: inline-block;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    border: 2px solid #ffffff;
+}
+
+.container .object-list .deco-list .thumbnail {
+    cursor: all-scroll;
+}
+
+.container .object-list .thumbnail:hover {
+    border: 2px solid #d6d6d6;
+}
+
+.container .object-list .thumbnail .thumb-cake,
+.container .object-list .thumbnail .thumb-deco {
+    width: 100px;
+    height: 100px;
+}
+
+.container .canvas {
+    position: relative;
+    width: 600px;
+    min-width: 600px;
+    background: transparent url("../images/bg2.png") no-repeat;
+}
+
+.container .canvas .img-cake {
+    width: 600px;
+    height: 600px;
+}
+
+.container .canvas .img-deco {
+    position: absolute;
+    width: 130px;
+    cursor: all-scroll;
+    border: 4px dotted rgba(255,255,255,0) ;
+}
+
+.container .canvas .img-deco:hover {
+    border: 4px dotted #f96a31 ;
+}
+
+.container .control {
+    width: 220px;
+    padding-right : 5px;
+    min-width: 140px;
+}
+
+.container .control .option {
+    position: relative;
+    margin: 100px 0 0 22px;
+    border: 3px solid #ff814f;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+}
+
+.container .control .option .tail {
+    position: absolute;
+    width: 23px;
+    height: 25px;
+    top: 20px;
+    left: -23px;
+    background: transparent url("../images/bg3.png") no-repeat;
+}
+
+
+/* navigation */
+
+.navigation {
+    width: 100%;
+    padding: 2px 4px;
+}
+
+.navigation .logo {
+    display: inline-block;
+    width: 366px;
+    height: 29px;
+    text-indent: -366px;
+    overflow: hidden;
+    background: transparent url("../images/logo.png") no-repeat top left;
+}
+
+.navigation .txt-normal {
+    display: inline-block;
+    float: right;
+    margin: 3px 10px 0 0;
+}
+
+.navigation .btn-normal {
+    float: right;
+}
+
+/* object-list */
+
