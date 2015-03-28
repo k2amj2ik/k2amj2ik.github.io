@@ -11,21 +11,21 @@
 <body>
 <!-- Navigation -->
 <div class="navigation">
-    <a class="logo" href="../html/index.html">BUTTER BE - Cake Design Simulator</a>
-    <a class="btn-normal" href="../html/tool/list.html">내 디자인 모두 보기</a>
+    <a class="logo" href="../html/login.html">BUTTER BE - Cake Design Simulator</a>
+    <a class="btn-normal" href="#mydesign">내 디자인 모두 보기</a>
     <a class="txt-normal" href="../html/member/modify.html">홍길동님 (k2am****) / 초급반</a>
 </div>
-<!-- Container -->
-<div class="container">
+<!-- editor -->
+<div class="editor">
     <!-- List of cakes and decorations -->
     <section class="object-list">
         <!-- 활성화된 버튼 표시 : cake 대신 cake-active 클래스 사용 -->
-        <button class="btn-major cake" href="" title="케이크 고르기">케이크 고르기</button>
-        <button class="btn-major deco" href="" title="장식 고르기">장식 고르기</button>
+        <button class="btn-major cake" title="케이크 베이스 고르기"></button>
+        <button class="btn-major deco" title="데코레이션 고르기"></button>
         <!-- panel 감추기 : invisible 클래스 추가 -->
         <!--<div class="panel panel-default manual invisible">-->
         <!-- Manual -->
-        <div class="panel panel-default manual">
+        <div class="panel panel-default manual invisible">
             <div class="panel-heading">이렇게 사용하세요.</div>
             <ul class="list-group">
                 <li class="list-group-item">1. <span class="icon-cake"></span> 케이크 베이스를 선택하세요.</li>
@@ -41,7 +41,7 @@
             </ul>
         </div>
         <!-- Cake List -->
-        <div class="panel panel-default cake-list">
+        <div class="panel panel-default cake-list invisible">
             <div class="panel-heading">케이크를 선택하세요. </div>
             <ul class="panel-body">
                 <li class="thumbnail"><img class="thumb-cake" src="../images/cake_base/cake1.png"/></li>
@@ -226,23 +226,100 @@
         <div class="option">
             <p class="title">정렬</p>
             <ul class="zindex">
-                <li><button class="btn-trivial"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></button></li>
-                <li><button class="btn-trivial"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></button></li>
-                <li><button class="btn-trivial"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></button></li>
-                <li><button class="btn-trivial"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></button></li>
+                <li><button class="btn-trivial" title="맨앞으로 가져오기"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></button></li>
+                <li><button class="btn-trivial" title="한 단계 앞으로 가져오기"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></button></li>
+                <li><button class="btn-trivial" title="한 단계 뒤로 보내기"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></button></li>
+                <li><button class="btn-trivial" title="맨뒤로 보내기"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></button></li>
             </ul>
-            <p class="title">색상 <button class="btn-trivial"><span class="glyphicon glyphicon-refresh" aria-hidden="true"></span></button></p>
+            <p class="title">색상 <button class="btn-tiny" title="색상 설정 초기화하기"><span class="glyphicon glyphicon-refresh" aria-hidden="true"></span></button></p>
             <ul class="color">
-                <li class="grayscale"><input type="range"/></li>
-                <li class="brigtness"><input type="range"/></li>
-                <li class="contrast"><input type="range"/></li>
-                <li class="hue-rotate"><input type="range"/></li>
-                <li class="saturate"><input type="range"/></li>
+                <li class="brigtness" title="밝기 더하기"><input type="range" value="0" step="0.01" min="0" max="1"/></li>
+                <li class="contrast" title="색상 대비 높이기"><input type="range" value="0" step="0.01" min="0" max="1"/></li>
+                <li class="hue-rotate" title="색조 바꾸기"><input type="range" value="0" step="0.01" min="0" max="1"/></li>
+                <li class="saturate" title="채도 높이기"><input type="range" value="0" step="0.01" min="0" max="1"/></li>
+                <li class="grayscale" title="채도 낮추기"><input type="range" value="0" step="0.01" min="0" max="1"/></li>
             </ul>
-            <p class="tail"></p>
+            <p class="title">편집</p>
+            <p class="object-delete"><button class="btn-trivial"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> 삭제</button></p>
         </div>
-
+        <!-- action -->
+        <div class="action">
+            <button class="btn-impact save" title="저장하기"></button>
+        </div>
     </section>
 </div>
+<!-- design list -->
+<a name="mydesign"></a>
+<div class="design-list">
+    <h1>내가 디자인한 케이크</h1>
+    <ul class="items">
+        <li class="item" onclick="alert('클릭하면 위로 이동하면서 편집모드로 전환')">
+            <p class="date">2015.03.22 13:11</p>
+            <p class="image"><img src="../images/thumb_new.png"/></p>
+            <p class="title">새 케이크 만들기</p>
+        </li>
+        <li class="item" onclick="alert('클릭하면 위로 이동하면서 편집모드로 전환')">
+            <p class="date">2015.03.22 13:11</p>
+            <p class="image"><img src="../images/thumb_1.png"/></p>
+            <p class="title">누난 너무 이뻐 마걸 마걸 마걸 눈누난나</p>
+        </li>
+        <li class="item" onclick="alert('클릭하면 위로 이동하면서 편집모드로 전환')">
+            <p class="date">2015.03.22 13:11</p>
+            <p class="image"><img src="../images/thumb_1.png"/></p>
+            <p class="title">누난 너무 이뻐 마걸 마걸 마걸 눈누난나</p>
+        </li>
+        <li class="item" onclick="alert('클릭하면 위로 이동하면서 편집모드로 전환')">
+            <p class="date">2015.03.22 13:11</p>
+            <p class="image"><img src="../images/thumb_1.png"/></p>
+            <p class="title">누난 너무 이뻐 마걸 마걸 마걸 눈누난나</p>
+        </li>
+        <li class="item" onclick="alert('클릭하면 위로 이동하면서 편집모드로 전환')">
+            <p class="date">2015.03.22 13:11</p>
+            <p class="image"><img src="../images/thumb_1.png"/></p>
+            <p class="title">누난 너무 이뻐 마걸 마걸 마걸 눈누난나</p>
+        </li>
+        <li class="item" onclick="alert('클릭하면 위로 이동하면서 편집모드로 전환')">
+            <p class="date">2015.03.22 13:11</p>
+            <p class="image"><img src="../images/thumb_1.png"/></p>
+            <p class="title">누난 너무 이뻐 마걸 마걸 마걸 눈누난나</p>
+        </li>
+        <li class="item" onclick="alert('클릭하면 위로 이동하면서 편집모드로 전환')">
+            <p class="date">2015.03.22 13:11</p>
+            <p class="image"><img src="../images/thumb_1.png"/></p>
+            <p class="title">누난 너무 이뻐 마걸 마걸 마걸 눈누난나</p>
+        </li>
+        <li class="item" onclick="alert('클릭하면 위로 이동하면서 편집모드로 전환')">
+            <p class="date">2015.03.22 13:11</p>
+            <p class="image"><img src="../images/thumb_1.png"/></p>
+            <p class="title">누난 너무 이뻐 마걸 마걸 마걸 눈누난나</p>
+        </li>
+        <li class="item" onclick="alert('클릭하면 위로 이동하면서 편집모드로 전환')">
+            <p class="date">2015.03.22 13:11</p>
+            <p class="image"><img src="../images/thumb_1.png"/></p>
+            <p class="title">누난 너무 이뻐 마걸 마걸 마걸 눈누난나</p>
+        </li>
+        <li class="item" onclick="alert('클릭하면 위로 이동하면서 편집모드로 전환')">
+            <p class="date">2015.03.22 13:11</p>
+            <p class="image"><img src="../images/thumb_1.png"/></p>
+            <p class="title">누난 너무 이뻐 마걸 마걸 마걸 눈누난나</p>
+        </li>
+        <li class="item" onclick="alert('클릭하면 위로 이동하면서 편집모드로 전환')">
+            <p class="date">2015.03.22 13:11</p>
+            <p class="image"><img src="../images/thumb_1.png"/></p>
+            <p class="title">누난 너무 이뻐 마걸 마걸 마걸 눈누난나</p>
+        </li>
+        <li class="item" onclick="alert('클릭하면 위로 이동하면서 편집모드로 전환')">
+            <p class="date">2015.03.22 13:11</p>
+            <p class="image"><img src="../images/thumb_1.png"/></p>
+            <p class="title">누난 너무 이뻐 마걸 마걸 마걸 눈누난나</p>
+        </li>
+        <li class="item" onclick="alert('클릭하면 위로 이동하면서 편집모드로 전환')">
+            <p class="date">2015.03.22 13:11</p>
+            <p class="image"><img src="../images/thumb_1.png"/></p>
+            <p class="title">누난 너무 이뻐 마걸 마걸 마걸 눈누난나</p>
+        </li>
+    </ul>
+</div>
+
 </body>
 </html>

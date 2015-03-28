@@ -1,10 +1,34 @@
 /* etc. */
+div, ul, p {
+    margin: 0;
+    padding: 0;
+}
+li {
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
 .invisible {
     display: none;
 }
 
 .panel {
     box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+}
+
+/* form */
+input, textarea {
+    padding: 10px;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+input[type='text'],
+input[type='password'] {
+    border: 1px solid #cccccc;
+    border-radius: 4px;
 }
 
 /* texts */
@@ -26,6 +50,41 @@
     color: #ffffff;
     text-decoration: none;
     background-color: #333333;
+}
+
+.btn-type1 {
+    display: inline-block;
+    margin-right: 6px;
+    padding:16px 30px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.4em;
+    text-decoration: none;
+    background-color: #fb7540;
+    border-radius: 2px;
+    border: 0;
+}
+.btn-type1:hover {
+    text-decoration: none;
+    background-color: #fa5616;
+}
+
+.btn-type2 {
+    display: inline-block;
+    margin-right: 6px;
+    padding:16px 30px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.4em;
+    text-decoration: none;
+    background-color: #a8a8a8;
+    border-radius: 2px;
+    border: 0;
+}
+
+.btn-type2:hover {
+    text-decoration: none;
+    background-color: #757575;
 }
 
 .btn-major {
@@ -54,185 +113,44 @@
 
 .btn-trivial:hover {
     background-color: #7f7f7f;
+    color: #ffffff;
 }
 
-/* layout */
+.btn-tiny {
+    display: inline-block;
+    padding: 4px;
+    margin: 4px 4px 0 0;
+    font-size: 0.7em;
+    color: #aaaaaa;
+    border: 0;
+    border-radius: 2px;
+    background-color: #ffffff;
+}
+
+.btn-tiny:hover {
+    color: #555555;
+    background-color: #e3e3e3;
+}
+
+.btn-impact {
+    display: inline-block;
+    width: 100% ;
+    height: 80px;
+    text-indent: -200px;
+    border: 0;
+    overflow: hidden;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+    background-color: #032b52;
+}
+
+.btn-impact:hover {
+    background-color: #0977b0;
+}
+
+/* contents */
 .navigation {
     height: 33px;
 }
-
-.container {
-    width: 100%;
-    height: 600px;
-    background: transparent url("../images/bg.png") repeat;
-    display: flex;
-    justify-content: space-around;
-}
-
-.container .object-list {
-    width: 670px;
-    min-width: 245px;
-}
-
-/* button - Choose a cake */
-.container .object-list .cake,
-.container .object-list .cake-active,
-.container .object-list .deco,
-.container .object-list .deco-active {
-    display: inline-block;
-    margin: 12px 10px 12px 0;
-}
-
-.container .object-list .cake {
-    background: #ffffff url("../images/btn_cake.png") no-repeat 50% 50%;
-}
-
-.container .object-list .cake:hover,
-.container .object-list .cake-active {
-    background: #547495 url("../images/btn_cake_v.png") no-repeat 50% 50%;
-}
-
-.container .object-list .deco {
-    background: #ffffff url("../images/btn_deco.png") no-repeat 50% 50%;
-}
-
-.container .object-list .deco:hover {
-    background: #547495 url("../images/btn_deco_v.png") no-repeat 50% 50%;
-}
-
-.container .object-list .panel .panel-heading {
-    color: #547495;
-    font-size: 1.4em;
-    font-weight: bold;
-}
-
-.container .object-list .manual .list-group {
-    font-weight: bold;
-}
-
-.container .object-list .manual .list-group p {
-    margin-top: 10px;
-    padding-left: 10px;
-    text-indent: -12px;
-    font-weight: normal;
-    font-size: 0.9em;
-    color: #6d737b;
-}
-
-.container .object-list .manual .list-group .list-group-item .icon-cake {
-    display: inline-block;
-    width: 35px;
-    height: 22px;
-    border: 1px solid #999999;
-    vertical-align: top;
-    background: #ffffff url("../images/btn_cake.png") no-repeat;
-    background-size: 32px;
-}
-
-.container .object-list .manual .list-group .list-group-item .icon-deco {
-     display: inline-block;
-     width: 35px;
-     height: 22px;
-     border: 1px solid #999999;
-     vertical-align: top;
-    background: #ffffff url("../images/btn_deco.png") no-repeat;
-     background-size: 35px;
- }
-
-.container .object-list .manual .list-group .list-group-item .icon-save {
-    display: inline-block;
-    width: 35px;
-    height: 22px;
-    vertical-align: top;
-    background: #032b52 url("../images/btn_save.png") no-repeat 5px 4px;
-    background-size: 25px;
-}
-
-.container .object-list .manual .list-group p::before {
-    content: "★";
-}
-
-.container .object-list .cake-list .panel-body,
-.container .object-list .deco-list .panel-body{
-    padding: 10px 0 10px 4px;
-    margin: 0;
-    width: 100%;
-    height: 490px;
-    overflow-y: scroll;
-}
-
-.container .object-list .cake-list .thumbnail,
-.container .object-list .deco-list .thumbnail{
-    display: inline-block;
-    cursor: pointer;
-    padding: 0;
-    margin: 0;
-    border: 2px solid #ffffff;
-}
-
-.container .object-list .deco-list .thumbnail {
-    cursor: all-scroll;
-}
-
-.container .object-list .thumbnail:hover {
-    border: 2px solid #d6d6d6;
-}
-
-.container .object-list .thumbnail .thumb-cake,
-.container .object-list .thumbnail .thumb-deco {
-    width: 100px;
-    height: 100px;
-}
-
-.container .canvas {
-    position: relative;
-    width: 600px;
-    min-width: 600px;
-    background: transparent url("../images/bg2.png") no-repeat;
-}
-
-.container .canvas .img-cake {
-    width: 600px;
-    height: 600px;
-}
-
-.container .canvas .img-deco {
-    position: absolute;
-    width: 130px;
-    cursor: all-scroll;
-    border: 4px dotted rgba(255,255,255,0) ;
-}
-
-.container .canvas .img-deco:hover {
-    border: 4px dotted #f96a31 ;
-}
-
-.container .control {
-    width: 220px;
-    padding-right : 5px;
-    min-width: 140px;
-}
-
-.container .control .option {
-    position: relative;
-    margin: 100px 0 0 22px;
-    border: 3px solid #ff814f;
-    border-radius: 8px;
-    background-color: #ffffff;
-    box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
-}
-
-.container .control .option .tail {
-    position: absolute;
-    width: 23px;
-    height: 25px;
-    top: 20px;
-    left: -23px;
-    background: transparent url("../images/bg3.png") no-repeat;
-}
-
-
-/* navigation */
 
 .navigation {
     width: 100%;
@@ -258,5 +176,317 @@
     float: right;
 }
 
-/* object-list */
+/* editor */
+.editor {
+    width: 100%;
+    height: 650px;
+    background: transparent url("../images/bg.png") repeat;
+    display: flex;
+    justify-content: space-around;
+}
 
+.editor .object-list {
+    width: 1000px;
+    min-width: 220px;
+}
+
+/* button - Choose a cake */
+.editor .object-list .cake,
+.editor .object-list .cake-active,
+.editor .object-list .deco,
+.editor .object-list .deco-active {
+    display: inline-block;
+    margin: 12px 10px 12px 0;
+}
+
+.editor .object-list .cake {
+    background: #ffffff url("../images/btn_cake.png") no-repeat 50% 50%;
+}
+
+.editor .object-list .cake:hover,
+.editor .object-list .cake-active {
+    background: #547495 url("../images/btn_cake_v.png") no-repeat 50% 50%;
+}
+
+.editor .object-list .deco {
+    background: #ffffff url("../images/btn_deco.png") no-repeat 50% 50%;
+}
+
+.editor .object-list .deco:hover {
+    background: #547495 url("../images/btn_deco_v.png") no-repeat 50% 50%;
+}
+
+.editor .object-list .panel .panel-heading {
+    color: #547495;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.editor .object-list .manual .list-group {
+    font-weight: bold;
+}
+
+.editor .object-list .manual .list-group p {
+    margin-top: 10px;
+    padding-left: 10px;
+    text-indent: -12px;
+    font-weight: normal;
+    font-size: 0.9em;
+    color: #6d737b;
+}
+
+.editor .object-list .manual .list-group .list-group-item .icon-cake {
+    display: inline-block;
+    width: 35px;
+    height: 22px;
+    border: 1px solid #999999;
+    vertical-align: top;
+    background: #ffffff url("../images/btn_cake.png") no-repeat;
+    background-size: 32px;
+}
+
+.editor .object-list .manual .list-group .list-group-item .icon-deco {
+     display: inline-block;
+     width: 35px;
+     height: 22px;
+     border: 1px solid #999999;
+     vertical-align: top;
+    background: #ffffff url("../images/btn_deco.png") no-repeat;
+     background-size: 35px;
+ }
+
+.editor .object-list .manual .list-group .list-group-item .icon-save {
+    display: inline-block;
+    width: 35px;
+    height: 22px;
+    vertical-align: top;
+    background: #032b52 url("../images/btn_save.png") no-repeat 5px 4px;
+    background-size: 25px;
+}
+
+.editor .object-list .manual .list-group p::before {
+    content: "★";
+}
+
+.editor .object-list .cake-list .panel-body,
+.editor .object-list .deco-list .panel-body{
+    padding: 10px 0 0 4px;
+    margin: 0;
+    width: 100%;
+    height: 500px;
+    overflow-y: scroll;
+}
+
+.editor .object-list .cake-list .thumbnail,
+.editor .object-list .deco-list .thumbnail{
+    display: inline-block;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    border: 2px solid #ffffff;
+}
+
+.editor .object-list .deco-list .thumbnail {
+    cursor: all-scroll;
+}
+
+.editor .object-list .thumbnail:hover {
+    border: 2px solid #d6d6d6;
+}
+
+.editor .object-list .thumbnail .thumb-cake,
+.editor .object-list .thumbnail .thumb-deco {
+    width: 90px;
+    height: 90px;
+}
+
+.editor .canvas {
+    position: relative;
+    width: 600px;
+    min-width: 600px;
+    background: transparent url("../images/bg2.png") no-repeat;
+}
+
+.editor .canvas .img-cake {
+    width: 600px;
+    height: 600px;
+}
+
+.editor .canvas .img-deco {
+    position: absolute;
+    width: 130px;
+    cursor: all-scroll;
+    border: 4px dotted rgba(255,255,255,0) ;
+}
+
+.editor .canvas .img-deco:hover {
+    border: 4px dotted #f96a31 ;
+}
+
+.editor .control {
+    position: relative;
+    width: 180px;
+    min-width: 100px;
+    padding-right : 5px;
+}
+
+.editor .control .option {
+    position: relative;
+    margin-top: 30px;
+    padding: 4px 4px 10px 8px;
+    border: 3px solid #ff814f;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+}
+
+.editor .control .option .title {
+    color: #ff814f;
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.editor .control .option .title:first-child {
+    margin-top: 10px;
+}
+
+
+.editor .control .option .zindex {
+    padding: 0;
+    margin: 0;
+}
+
+.editor .control .option .zindex > li {
+    display: inline-block;
+}
+
+.editor .control .option .zindex > li .btn-trivial {
+    width: 32px;
+    height: 32px;
+}
+
+.editor .control .option .color {
+    padding: 0;
+    margin: 0px;
+}
+
+.editor .control .option .color > li {
+    margin: 0 4px 10px -2px;
+    padding: 0 0 0 35px;
+    height: 28px;
+    list-style: none;
+}
+
+.editor .control .option .color .grayscale {
+    background: transparent url("../images/color.png") no-repeat 0 0;
+}
+
+.editor .control .option .color .brigtness {
+    background: transparent url("../images/color.png") no-repeat 0 -35px;
+}
+
+.editor .control .option .color .contrast {
+    background: transparent url("../images/color.png") no-repeat 0 -72px;
+}
+
+.editor .control .option .color .hue-rotate {
+    background: transparent url("../images/color.png") no-repeat 0 -105px;
+}
+
+.editor .control .option .color .saturate {
+    background: transparent url("../images/color.png") no-repeat 0 -136px;
+}
+
+.editor .control .option .object-delete .btn-trivial {
+    width: 100%;
+    vertical-align: top;
+}
+
+.editor .control .option .object-delete .btn-trivial .glyphicon {
+    font-size: 1.3em;
+}
+
+.editor .control .action .save {
+    position: absolute;
+    left: 0;
+    top: 555px;
+}
+
+.editor .control .action .save {
+    background-image: url("../images/btn_save.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+/*design list*/
+
+.design-list {
+    margin: 50px 10px 100px 30px;
+    padding-top: 30px;
+}
+
+.design-list > h1 {
+    color: #547495;
+    font-weight: bold;
+}
+
+.design-list .items {
+    margin-top: 50px;
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.design-list .items .item {
+    margin: 0 10px 20px 0;
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid #ffffff;
+}
+
+.design-list .items .item:hover {
+    border: 1px solid #cdcdcd;
+}
+
+.design-list .items .item .date {
+    padding: 4px;
+    font: bold 11px/100% Arial;
+    color: #b4b4b4;
+    background-color: #d5d5d5;
+}
+
+.design-list .items .item .title {
+    margin-top: 12px;
+    width: 200px;
+    color: #eb4301;
+}
+
+/* login */
+.login {
+    margin: 50px auto;
+    padding-bottom: 200px;
+    width: 350px;
+    background: transparent url("../images/logo_big.png") no-repeat left bottom;
+}
+
+.login .title {
+    font-size: 4em;
+    font-weight: bold;
+    color: #547495;
+}
+
+.login .title > span {
+    color: #002d56;
+}
+
+.login .input {
+    margin: 40px 0 20px 0;
+}
+
+.login .input > input {
+    width: 350px;
+}
+
+.login .button {
+    text-align: center;
+}
