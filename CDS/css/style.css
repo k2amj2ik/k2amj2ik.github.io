@@ -456,6 +456,12 @@ input[type='password'] {
 }
 
 .design-list .items .item .title {
+    width: 200px;
+    height: 200px;
+    background-color: #d5d5d5;
+}
+
+.design-list .items .item .title {
     margin-top: 12px;
     width: 200px;
     color: #eb4301;
