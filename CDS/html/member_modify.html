@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Butter be - CDS</title>
+    <meta name="viewport" content="width=device-width"/>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.css"/>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+</head>
+<body>
+<!-- Navigation -->
+<div class="navigation">
+    <a class="logo" href="../html/login.html">BUTTER BE - Cake Design Simulator</a>
+    <a class="btn-normal" href="../html/index.html#mydesign">내 디자인 모두 보기</a>
+    <a class="txt-normal" href="../html/member_modify.html">홍길동님 (k2am****) / 초급반</a>
+</div>
+<!-- member_modify -->
+<div class="member-modify">
+    <h1>내 정보 수정하기</h1>
+    <form action="index.html">
+        <table class="table">
+            <tbody>
+            <tr>
+                <th>아이디</th>
+                <td><input type="text" size="20" value="thisisid" class="readonly" readonly placeholder="아이디"/></td>
+            </tr>
+            <tr>
+                <th>비밀번호</th>
+                <td>
+                    <input type="password" size="20" value="******" placeholder="비밀번호"/>
+                    <input type="password" size="20" placeholder="비밀번호 재입력"/>
+                </td>
+            </tr>
+            <tr>
+                <th>이름</th>
+                <td><input type="text" size="20" placeholder="이름"/></td>
+            </tr>
+            <tr>
+                <th>성별</th>
+                <td>
+                    <input type="radio" value="1" checked/> 레이디
+                    <input type="radio" value="0"/> 젠틀맨
+                </td>
+            </tr>
+            <tr>
+                <th>생년월일</th>
+                <td><input type="date" value="1989-01-01"/></td>
+            </tr>
+            <tr>
+                <th>휴대전화</th>
+                <td>
+                    <input type="text" size="20" placeholder="예) 010-1234-5678"/></td>
+            </tr>
+            <tr>
+                <th>이메일</th>
+                <td>
+                    <input type="text" size="20" placeholder="예) email@domain.com"/></td>
+            </tr>
+            <tr>
+                <th>주소</th>
+                <td>
+                    <textarea rows="2" placeholder="예) 경기도 군포시 산본천로 62 인베스텔 1501호 버터비 스튜디오"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <th>인사말</th>
+                <td>
+                    <textarea rows="6" placeholder="예) 사랑하는 가족과 내아이를 위한, 정직하고 건강한 케이크를 직접 만들어 보고싶어서 왔어요 ^^"></textarea>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="buttons">
+            <input type="submit" value="확인" class="btn-type1">
+            <a href="index.html" class="btn-type2">취소</a>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
