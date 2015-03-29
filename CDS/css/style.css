@@ -1,3 +1,4 @@
+
 /* etc. */
 div, ul, p {
     margin: 0;
@@ -455,7 +456,7 @@ input[type='password'] {
     background-color: #d5d5d5;
 }
 
-.design-list .items .item .title {
+.design-list .items .item .image {
     width: 200px;
     height: 200px;
     background-color: #d5d5d5;
