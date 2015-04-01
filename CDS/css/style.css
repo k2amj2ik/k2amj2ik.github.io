@@ -1,4 +1,4 @@
-/* etc. */
+/* basic */
 div, ul, p {
     margin: 0;
     padding: 0;
@@ -466,9 +466,9 @@ h1{
 
 .editor .control .action .save {
     position: absolute;
-    right: 0;
+    right: 5px;
     top: 555px;
-    width: 120px;
+    width: 115px;
 }
 
 .editor .control .action .save {
@@ -520,7 +520,9 @@ h1{
 }
 
 .design-list .pagination {
-    margin: 30px auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
 }
 
 /* login */
