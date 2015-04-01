@@ -22,10 +22,8 @@
         <!-- 활성화된 버튼 표시 : cake 대신 cake-active 클래스 사용 -->
         <button class="btn-major cake" title="케이크 베이스 고르기"></button>
         <button class="btn-major deco" title="데코레이션 고르기"></button>
-        <!-- panel 감추기 : invisible 클래스 추가 -->
-        <!--<div class="panel panel-default manual invisible">-->
         <!-- Manual -->
-        <div class="panel panel-default manual invisible">
+        <div class="panel panel-default manual">
             <div class="panel-heading">이렇게 사용하세요.</div>
             <ul class="list-group">
                 <li class="list-group-item">1. <span class="icon-cake"></span> 케이크 베이스를 선택하세요.</li>
@@ -53,7 +51,7 @@
             </ul>
         </div>
         <!-- Decoration List -->
-        <div class="panel panel-default deco-list">
+        <div class="panel panel-default deco-list invisible">
             <div class="panel-heading">장식을 선택하세요. </div>
             <ul class="panel-body">
                 <li class="thumbnail"><img class="thumb-deco" src="../images/flower/flower1.png"/></li>
@@ -223,18 +221,14 @@
     </section>
     <section class="control">
         <!-- options -->
-        <div class="option">
+        <div class="option invisible-fixed">
             <p class="title">정렬</p>
-            <ul class="zindex">
-                <li>
-                    <button class="btn-trivial" title="한 단계 앞으로 가져오기"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></button>
-                    <button class="btn-trivial" title="맨앞으로 가져오기"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></button>
-                </li>
-                <li>
-                    <button class="btn-trivial" title="한 단계 뒤로 보내기"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></button>
-                    <button class="btn-trivial" title="맨뒤로 보내기"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></button>
-                </li>
-            </ul>
+            <p class="zindex">
+                <button class="btn-trivial" title="한 단계 앞으로 가져오기"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></button>
+                <button class="btn-trivial" title="맨앞으로 가져오기"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></button>
+                <button class="btn-trivial" title="맨뒤로 보내기"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></button>
+                <button class="btn-trivial" title="한 단계 뒤로 보내기"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></button>
+            </p>
             <p class="title">색상 <button class="btn-tiny" title="색상 설정 초기화하기"><span class="glyphicon glyphicon-refresh" aria-hidden="true"></span></button></p>
             <ul class="color">
                 <li class="brigtness" title="밝기 더하기"><input type="range" value="0" step="0.01" min="0" max="1"/></li>
@@ -321,6 +315,23 @@
             <p class="date">2015.03.22 13:11</p>
             <p class="image"><img src="../images/thumb_1.png"/></p>
             <p class="title">누난 너무 이뻐 마걸 마걸 마걸 눈누난나</p>
+        </li>
+    </ul>
+    <ul class="pagination">
+        <li>
+            <a href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+            </a>
+        </li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li>
+            <a href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+            </a>
         </li>
     </ul>
 </div>
