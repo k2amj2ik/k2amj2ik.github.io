@@ -1,0 +1,251 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Live Art Auction Management</title>
+    <link rel="icon" href="../images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi?autoload={'modules':[{'name':'visualization','version':'1.1','packages':['bar']}]}"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi?autoload={'modules':[{'name':'visualization','version':'1.1','packages':['corechart']}]}"></script>
+</head>
+<body>
+<header class="navbar">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a href="index.html">LIVE Management</a>
+        </div>
+        <nav>
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="auctions.html">
+                        Auctions
+                    </a>
+                </li>
+                <li>
+                    <a href="lots.html">
+                        Lots
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="users.html">
+                        Users
+                        <span class="badge">23</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="statistics.html">
+                        Statistics
+                    </a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="margin-top-10px margin-left-10px">
+                    <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#exampleModal1">Add User</button>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<div id="pagination">
+    <div class="pagination">
+        <span class="disabled prev">‹‹  </span>
+        <span class="current page">1</span>
+        <a href="#" class="page">2</a>
+        <a href="#" class="page">3</a>
+        <a href="#" class="page">4</a>
+        <a href="#" class="page">5</a>
+        <a href="#" class="page">6</a>
+        <a href="#" class="page">7</a>
+        <a href="#" class="page">8</a>
+        <a href="#" class="page">9</a>
+        <a href="#" class="page">10</a>
+        <span class="disabled prev">››</span>
+    </div>
+</div>
+<div class="contents-wrap container-fluid">
+    <div class="contents">
+        <!-- test area start -->
+        <div class="table-responsive">
+            <form>
+                <table class="table table-bordered table-hover">
+                    <thead>
+                    <tr class="lot-header-type1">
+                        <th>ID</th>
+                        <th>Password</th>
+                        <th>Name (Or Description)</th>
+                        <th>Role</th>
+                        <th>Menu Permission</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            <a href="#" data-toggle="modal" data-target="#exampleModal5">admin</a>
+                        </td>
+                        <td>admin</td>
+                        <td>관리자 계정입니다.</td>
+                        <td>ROLE_ADMIN</td>
+                        <td>main, auctions, lots, users, Statistics</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#" data-toggle="modal" data-target="#exampleModal5">cast</a>
+                        </td>
+                        <td>cast</td>
+                        <td>캐스터 계정입니다.</td>
+                        <td>ROLE_CASTER</td>
+                        <td>main, auctions, lots, Statistics</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#" data-toggle="modal" data-target="#exampleModal5">data</a>
+                        </td>
+                        <td>data</td>
+                        <td>데이터 담당자 계정입니다.</td>
+                        <td>ROLE_data</td>
+                        <td>main, auctions, lots</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- Modal Start -->
+<script>
+    $('#exampleModal').on('show.bs.modal', function (event) {
+        var button = $(event.relatedTarget) // Button that triggered the modal
+        var recipient = button.data('whatever') // Extract info from data-* attributes
+        // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+        // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+        var modal = $(this)
+        modal.find('.modal-title').text('New message to ' + recipient)
+        modal.find('.modal-body input').val(recipient)
+    })
+
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+
+    $(function () {
+        $('[data-toggle="popover"]').popover({html:true});
+    })
+</script>
+
+
+<div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <form class="form-horizontal">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Add User</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">ID</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" placeholder="Alphabet only">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Password</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" placeholder="Any letter">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Name (Or Description)</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" placeholder="Name or Description">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Role</label>
+                        <div class="col-sm-10">
+                            <select name="" id="">
+                                <option value="">ROLE_DATA</option>
+                                <option value="">ROLE_ADMIN</option>
+                                <option value="">ROLE_CASTER</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <input type=submit value="Save" class="btn btn-primary">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="exampleModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <form class="form-horizontal">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Edit User</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">ID</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" placeholder="Alphabet only" value="gnsart">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Password</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" placeholder="Any letter" value="transparency">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Name (Or Description)</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" placeholder="Name or Description" value="어드민 기본 계정">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Role</label>
+                        <div class="col-sm-10">
+                            <select name="" id="">
+                                <option value="">ROLE_DATA</option>
+                                <option value="" selected>ROLE_ADMIN</option>
+                                <option value="">ROLE_CASTER</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <input type=submit value="Save" class="btn btn-primary">
+                    <button type="button" class="btn btn-link" data-toggle="modal" data-target="#confirmModal1">Delete</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="confirmModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title">Delete the user</h4>
+            </div>
+            <div class="modal-body">
+                Do you want to delete the user?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-danger">Delete</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+

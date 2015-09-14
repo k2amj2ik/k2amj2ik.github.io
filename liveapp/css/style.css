@@ -1,0 +1,560 @@
+body {
+    background-color:#fff;
+    overflow: hidden;
+}
+header.navbar {
+    position: fixed;
+    top:0;
+    width: 100%;
+    height:50px;
+    background-color: black;
+    z-index: 1000;
+    border:0;
+    border-radius: 0;
+}
+.navbar-right {
+    padding-right:30px
+}
+.navbar-header {
+    width:300px;
+    padding:9px 0 0 14px;
+    color:#aaa;
+    font-size: 150%;
+}
+.navbar-nav>li.guide{
+    margin-right:15px;
+    padding-top:14px;
+    color:#fff;
+    font-size:100%;
+}
+.navbar-nav>li.guide>span{
+    margin-left:10px;
+}
+
+.navbar-nav>li.active {
+    background-color: #fff;
+}
+.navbar-nav>li>a:link,
+.navbar-nav>li>a:visited {
+    color:#fff;
+    background-color:#000;
+    text-shadow: none;
+}
+.navbar-nav>li>a:hover,
+.navbar-nav>li>a:active {
+    color:#fff;
+    background-color: #333;
+}
+
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+    background-color: #333;
+    border:0;
+}
+.navbar-nav>li.active>a:link,
+.navbar-nav>li.active>a:visited {
+    color:#000;
+    background-color: #fff;
+}
+.navbar-nav>li.active>a:hover,
+.navbar-nav>li.active>a:active {
+    color:#000;
+    background-color: #eee;
+}
+
+div.contents-wrap {
+    padding-top:80px;
+    width: 100%;
+    height: 100%;
+    z-index: 998;
+}
+div.contents {
+    overflow-y: scroll;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}
+.container-fluid {
+    margin:0;
+    padding:0;
+}
+#dialog {
+    position:absolute;
+    top:100px;
+}
+
+.lot-header-type1>th {
+    background-color:#f5f5f5;
+}
+.lot-header-type2>th {
+    background-color:#eee;
+    font-weight: normal;
+    font-size:90%;
+}
+.lot-row {
+    border-bottom:2px solid #555;
+}
+
+.lot-row>tr>td {
+    background-color:#fff;
+    border:1px solid #aaa;
+    /*cursor: pointer;*/
+}
+.lot-row>tr>td:hover {
+    border-bottom:1px solid red;
+}
+
+.ImageUrl,.idx,.linkset {
+    text-align: center;
+    font-family:"arial narrow"
+}
+
+.ArtistNameFirst,
+.ArtistNameLast {
+    font-size: 120%;
+    font-weight: bold;
+    font-family: "verdana";
+}
+
+/* 예상 신뢰도 */
+.label-good {
+    border:1px solid #fff;
+    color: #555;
+    background-color: #fff;
+}
+.label-doubtful {
+    border:1px solid #fff;
+    background-color: #e5b885;
+    color: #555;
+}
+.label-wrong {
+    border:1px solid #fff;
+    background-color: #ea847e;
+    color: #555;
+}
+
+.lot-row>tr>td.status-doubtful,
+.status-doubtful{
+    background-color: #fff6eb;
+}
+.lot-row>tr>td.status-wrong,
+.status-wrong{
+    background-color: #ffe9e8;
+}
+
+/* 검수상태 */
+.status-not-started {
+    font-size: 9pt;
+    color: #eee;
+}
+.status-checking {
+    font-size: 9pt;
+    color: #5bc0de;
+}
+.status-done {
+    font-size: 9pt;
+    color: #5cb85c;
+}
+.lot-row>tr>td>span.status-not-started {
+    font-size: 9pt;
+    color: rgba(0,0,0,0.1);
+}
+
+.lot-row>tr>td>span.status-checking {
+    font-size: 9pt;
+    color: #5bc0de;
+}
+
+.lot-row>tr>td>span.status-done {
+    font-size: 9pt;
+    color: #5cb85c;
+}
+/* 페이지 */
+.pagination {
+    height: 30px;
+    position: fixed;
+    top: 50px;
+    overflow: hidden;
+    background-color: #fff;
+    width:100%;
+    margin:0;
+    text-align: center;
+    padding-top:8px;
+    border-bottom:1px solid #555;
+}
+.pagination>a,
+.pagination>span{
+    box-sizing: border-box;
+    border-left:1px solid #eee;
+    border-right:1px solid #eee;
+    padding:6px 10px;
+    margin-right:-6px;
+    background-color:#fff
+}
+
+.pagination>a:hover,
+.pagination>span:hover {
+    background-color: #eee;
+}
+
+.pagination>span.current {
+    font-weight:bold;
+    background-color: #eee;
+}
+.orderby {
+    margin-top:20px;
+}
+.orderby label {
+    margin-left:20px;
+}
+
+select {
+    font-size:110%;
+    padding:5px 10px;
+    border:0px;
+    background-color:#eee;
+    margin-bottom:5px;
+}
+.filtering .control-label {
+    display:inline-block;
+    text-align: right;
+    width:180px;
+    margin-right:20px;
+}
+.filtering .form-group>select {
+    display:inline-block;
+    margin-right:10px;
+}
+.filtering input[type="text"] {
+    display:inline-block;
+    width: 240px;
+}
+.DateCrawled {
+    font-size: 9pt;
+}
+
+.panel-heading {
+    cursor:pointer;
+}
+
+.sort>label {
+    margin-right:50px;
+}
+.filtering1 .chk {
+    margin-right:50px;
+}
+.filtering1 .pagerow input[type="text"] {
+    width:50px;
+    margin:0;
+}
+
+.matching, .artwork-size {
+    font-size:10pt;
+    font-weight:normal;
+    display:block;
+    margin-left:1em;
+    background-color:#f5f5f5;
+    color:#777;
+}
+.dropdown-menu {
+    min-width: 150px;
+    background-color: #333;
+    border: 1px solid #333;
+}
+.dropdown-menu>li>a {
+    color: #fff;
+}
+.inline {
+    display: inline-block;
+    vertical-align: bottom;
+    margin-top: 4px;
+}
+.bullet>li {
+    padding-left:10px;
+    text-indent: -10px;
+}
+.bullet>li::before {
+    content: '- ';
+}
+.margin-top-10px {
+    margin-top: 10px;
+}
+.margin-left-10px {
+    margin-left: 10px;
+}
+.edit-rule {
+    font-size: 9pt;
+    color: rgba(0,0,0,0.1)
+}
+
+.border-bottom {
+    border-bottom: 1px solid #ccc;
+}
+
+.popover {
+    max-width: 1000px;
+}
+.clipboardtext {
+    max-width: 100px;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.lot-row-collaps>tr>td.CrawleDate { min-width: 80px;}
+.lot-row-collaps>tr>td.image { min-width: 80px;}
+.lot-row-collaps>tr>td.artist { min-width: 200px;}
+.lot-row-collaps>tr>td.worktitle { min-width: 200px;}
+.lot-row-collaps>tr>td.caption { min-width: 250px;}
+.lot-row-collaps>tr>td.price-realized { min-width: 100px;}
+.lot-row-collaps>tr>td.esimate { min-width: 100px;}
+.lot-row-collaps>tr>td.Auction { min-width: 200px;}
+.lot-row-collaps>tr>td.lot-description{ min-width: 200px;}
+.lot-row-collaps>tr>td.keywords{ min-width: 100px;}
+.lot-row-collaps>tr>td.etc{ min-width: 100px;}
+/*.lot-row-collaps>tr>td.Vendor { min-width: 100px;}*/
+/*.lot-row-collaps>tr>td.Link { min-width: 75px;}*/
+/*.lot-row-collaps>tr>td.ImageUrl { min-width: 100px;}*/
+/*.lot-row-collaps>tr>td.ArtistNameLast { min-width: 300px;}*/
+/*.lot-row-collaps>tr>td.ArtistYearFrom { min-width: 100px;}*/
+/*.lot-row-collaps>tr>td.ArtistYearTo { min-width: 100px;}*/
+/*.lot-row-collaps>tr>td.ArtistOrigin { min-width: 100px;}*/
+/*.lot-row-collaps>tr>td.workTitle-ori  { min-width: 400px;}*/
+/*.lot-row-collaps>tr>td.workTitle1  { min-width: 500px; max-width: 600px}*/
+/*.lot-row-collaps>tr>td.YearExecuted { min-width: 100px;}*/
+/*.lot-row-collaps>tr>td.Size { min-width: 300px;}*/
+/*.lot-row-collaps>tr>td.WorkMounted { min-width: 100px;}*/
+/*.lot-row-collaps>tr>td.Medium { min-width: 400px;}*/
+/*.lot-row-collaps>tr>td.Edition { min-width: 400px;}*/
+/*.lot-row-collaps>tr>td.Category { min-width: 400px;}*/
+/*.lot-row-collaps>tr>td.Category2 { min-width: 400px;}*/
+/*.lot-row-collaps>tr>td.ArtStyle { min-width: 100px;}*/
+/*.lot-row-collaps>tr>td.Item { min-width: 100px;}*/
+/*.lot-row-collaps>tr>td.Subject { min-width: 100px;}*/
+/*.lot-row-collaps>tr>td.Exhibited { min-width: 400px;}*/
+/*.lot-row-collaps>tr>td.Literature { min-width: 400px;}*/
+/*.lot-row-collaps>tr>td.SaleDateFrom { min-width: 100px;}*/
+/*.lot-row-collaps>tr>td.SaleDateTo { min-width: 100px;}*/
+/*.lot-row-collaps>tr>td.EstimateLow { min-width: 100px;}*/
+/*.lot-row-collaps>tr>td.EstimateHigh { min-width: 100px;}*/
+/*.lot-row-collaps>tr>td.EstimateCurrency { min-width: 50px;}*/
+/*.lot-row-collaps>tr>td.PriceSold { min-width: 150px;}*/
+/*.lot-row-collaps>tr>td.Premium { min-width: 150px;}*/
+/*.lot-row-collaps>tr>td.PriceSoldCurrency { min-width: 50px;}*/
+/*.lot-row-collaps>tr>td.AuctionName { min-width: 200px;}*/
+/*.lot-row-collaps>tr>td.SaleLocation { min-width: 300px;}*/
+/*.lot-row-collaps>tr>td.Misc { min-width: 400px;}*/
+/*.lot-row-collaps>tr>td.Provenance { min-width: 400px;}*/
+/*.lot-row-collaps>tr>td.LotDescription { min-width: 400px;}*/
+
+
+.img-thumbnail1 {
+    max-width: 90px;
+    max-height: 60px;
+}
+
+.img-thumbnail-medium {
+    max-width: 100px;
+    max-height: 100px;
+}
+.WorkTitle {
+    font-size: 150%;
+    font-family: "times new roman";
+    padding: 5px;
+}
+
+
+.lot-row>tr>td>p>span.categoryStatus1 {
+    color: forestgreen;
+    font-size: 140%;
+}
+
+.badge1 {
+    width: 80px;
+    font-weight: normal;
+    background-color: #eee;
+    color: #555;
+    font-weight: normal;
+}
+.btn-right {
+    float:right;
+    margin-left:5px;
+}
+
+.card-width {
+    display: inline-block;
+    float:left;
+    max-width: 372px;
+    margin: 10px 5px;
+}
+
+.popover-match-column {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    min-width: 400px;
+}
+.popover-match-column li {
+    display: inline-block;
+    padding: 5px 3px;
+}
+
+.taging-list {
+    padding-left:10px;
+}
+
+.shorter {
+    text-overflow: ellipsis;
+    height: 40px;
+    overflow: hidden;
+}
+
+.bg-warning {
+    background-color: #b92c28;
+}
+
+.chat-whole-container {
+    width: 100%;
+    height: 100%;
+    padding-top: 40px;
+    overflow: hidden;
+}
+
+.chat-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: normal;
+    white-space: nowrap;
+}
+.chat-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.chat-lots {
+    width: 33%;
+    min-width: 260px;
+    height: 100%;
+    overflow-y: scroll;
+    border: 1px solid #aaa;
+    vertical-align: top;
+}
+.chat-room {
+    width: 34%;
+    min-width: 390px;
+    height: 100%;
+    padding: 10px;
+    overflow-y: scroll;
+    border: 1px solid #aaa;
+    background: #555;
+}
+.chat-logs {
+    width: 33%;
+    min-width: 300px;
+    height: 100%;
+    overflow-y: scroll;
+    border: 1px solid #aaa;
+}
+.price-input input {
+    text-align: right;
+    font-size: 200%;
+    font-weight: bold;
+    max-width: 240px;
+    height: 60px;
+    padding-top: 20px;
+    background: transparent url("../images/bg_price.png") no-repeat 0 0;
+}
+
+.btn-price {
+    font-size: 120%;
+    font-weight: bold;
+    width: 70px;
+    height: 60px;
+}
+.chat-lots>.panel>div>div,
+.chat-room>.panel>div>div {
+    vertical-align: top;
+}
+.chat-lots-section-img {
+    display: inline-block;
+    min-width: 70px;
+    width: 70px;
+    overflow: hidden;
+}
+.chat-lots-section-text {
+    display: inline-block;
+    overflow: hidden;
+}
+.onair {
+    display: inline-block;
+    padding: 4px 10px 0 0;
+    font-size: 170%;
+    font-weight: bold;
+}
+
+.chat-dial {
+    padding: 20px;
+    font-size: 200%;
+    font-weight: bold;
+}
+.chat-dial>.btn {
+    font-family: arial narrow;
+    width: 85px;
+    height: 40px;
+    margin-bottom: 7px;
+    padding: 2px;
+    font-size: 90%;
+    /*font-weight: bold;*/
+    color: #555;
+}
+.chat-dial>.btn.chat-dial-btn2 {
+    width: 133px;
+    font-size: 80%;
+}
+.chat-currency {
+    min-width: 315px;
+    margin: 10px 0;
+    font-size: 120%;
+    font-weight: bold;
+    height: 35px;
+}
+.chat-price {
+    font-size: 130%;
+    font-weight: bold;
+}
+.chat-bid-day {
+    font-size: 80%;
+    color: #777;
+}
+.chat-bid-time {
+    font-size: 80%;
+    color: #000;
+}
+.label-chat-bid-status {
+    display: inline-block;
+    width: 70px;
+    margin: 0 10px 0 0;
+}
+.chat-lot-label {
+    display: inline-block;
+    text-align: center;
+    width: 70px;
+    margin: 0 10px 0 0;
+}
+
+.chat-logs-type2 .chat-bid-day {
+    font-size: 100%;
+    padding-right: 10px;
+    margin-right: 5px;
+    border-right: 1px solid #ccc;
+}
+
+.chat-logs-type2 .chat-bid-time {
+    font-size: 100%;
+    margin-right: 20px;
+}

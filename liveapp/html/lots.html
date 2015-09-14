@@ -1,0 +1,1323 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Live Art Auction Management</title>
+    <link rel="icon" href="../images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi?autoload={'modules':[{'name':'visualization','version':'1.1','packages':['bar']}]}"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi?autoload={'modules':[{'name':'visualization','version':'1.1','packages':['corechart']}]}"></script>
+</head>
+<body>
+<header class="navbar">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a href="index.html">LIVE Management</a>
+        </div>
+        <nav>
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="auctions.html">
+                        Auctions
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="lots.html">
+                        Lots
+                        <span class="badge">23</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="users.html">
+                        Users
+                    </a>
+                </li>
+                <li>
+                    <a href="statistics.html">
+                        Statistics
+                    </a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#exampleModal">Sort &amp; Filter</a>
+                </li>
+                <li class="margin-top-10px margin-left-10px">
+                    <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#exampleModal1">Add Lot</button>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<div id="pagination">
+    <div class="pagination">
+        <span class="disabled prev">‹‹  </span>
+        <span class="current page">1</span>
+        <a href="#" class="page">2</a>
+        <a href="#" class="page">3</a>
+        <a href="#" class="page">4</a>
+        <a href="#" class="page">5</a>
+        <a href="#" class="page">6</a>
+        <a href="#" class="page">7</a>
+        <a href="#" class="page">8</a>
+        <a href="#" class="page">9</a>
+        <a href="#" class="page">10</a>
+        <span class="disabled prev">››</span>
+    </div>
+</div>
+<div class="contents-wrap">
+    <div class="contents">
+        <!-- test area start -->
+        <div class="table">
+
+            <table class="table table-bordered table-hover">
+                <thead>
+                <tr class="lot-header-type1 small">
+                    <th>Auction idx</th>
+                    <th>Lot Info</th>
+                    <th>Artist</th>
+                    <th>Worktitle / Description</th>
+                    <th>Estimate</th>
+                    <th>Price Realized</th>
+                    <th>ETC.</th>
+                    <th>Bid Status</th>
+                    <th>Similar Lots</th>
+                </tr>
+                </thead>
+                <tbody class="lot-row lot-row-collaps small">
+                <tr>
+                    <td class="auction1">
+                        <button class="btn btn-link" onclick="location.href='auctions.html'">152323</button>
+                    </td>
+                    <td class="CrawleDate linkset">
+                        <p class="border-bottom" title="Lot idx">
+                            1875633
+                        </p>
+                        <p class="border-bottom" title="Lot Number">
+                            LOT. 1
+                        </p>
+                        <p class="border-bottom" title="Lot Vendor">
+                            Christies
+                        </p>
+                        <p>
+                            <a href="http://www.christies.com/lotfinderimages/d58756/andy_warhol_untitled_12_d5875631h.jpg" target="_blank">
+                                <img src="http://www.christies.com/lotfinderimages/d58756/andy_warhol_untitled_12_d5875631h.jpg" class="img-thumbnail1">
+                            </a>
+                        </p>
+                        <p>
+                            <a href="http://www.christies.com/lotfinder/furniture-lighting/a-giltwood-faux-aloe-vera-plan-probably-5926378-details.aspx?from=salesummary&intObjectID=5926378&sid=ea072046-2995-4bb3-9200-5d73970221b3" target="_blank" title="Lot">Origin Lot</a>
+                        </p>
+                    </td>
+                    <td class="title">
+                        <p class="border-bottom ArtistNameLast" title="Artist Name">
+                            Marc Chagall
+                        </p>
+                        <p class="border-bottom" title="Artist Origin">
+                            Singaporean
+                        </p>
+                        <p class="border-bottom" title="Artist Birth-death">
+                            1917-1983
+                        </p>
+                    </td>
+                    <td class="Caption">
+                        <p class="border-bottom Worktitle" title="Worktitle">
+                            <a href="#" data-toggle="modal" data-target="#exampleModal3">
+                                Les Iris
+                            </a>
+                        </p>
+                        <p class="border-bottom" title="Year">
+                            1934
+                        </p>
+                        <p class="border-bottom" title="Medium">
+                            Oil on canvas
+                        </p>
+                        <p class="border-bottom" title="Signed">
+                            signed'E.Chateignon' (lower left)
+                        </p>
+                        <p class="border-bottom" title="Other Description">
+                            with two draws and a low shelf on square legs
+                        </a>
+                        <p title="Size">
+                                Height: 31 in. (78.7 cm.), Length: 77½ in. (197 cm.), Depth: 32 5/8 in. (83 cm.)
+                        </p>
+                    </td>
+                    <td class="Estimate">
+                        <p class="border-bottom" title="Estimate">
+                            £2,000 - £3,000
+                        </p>
+                        <p class="border-bottom" title="Estimate - USD">
+                            $3,114 - $4,671
+                        </p>
+                    </td>
+                    <td class="Price-Realized">
+                        <p class="border-bottom" title="Price Realized">
+                            <span class="badge1">None</span>
+                        </p>
+                        <p class="border-bottom" title="Price Realized - USD">
+                            <span class="badge1">None</span>
+                        </p>
+                    </td>
+                    <td class="etc">
+                        <p class="clipboardtext border-bottom" title="Provenance">
+                            This lot will be removed to an off-site warehouse at the close of business on the day of sale - 2 weeks free storage
+                        </p>
+                        <p class="clipboardtext border-bottom" title="Exhibition">
+                            Anonymous sale;Sotheby's, London, 17 June 1992, lot 562.
+                        </p>
+                        <p class="clipboardtext border-bottom" title="Literature">
+                            Anonymous sale;Sotheby's, London, 17 June 1992, lot 562.
+                        </p>
+                        <p class="clipboardtext border-bottom" title="Condition Report">
+                            Anonymous sale;Sotheby's, London, 17 June 1992, lot 562.
+                        </p>
+                    </td>
+                    <td title="Status" class="warning text-center text-warning">
+                        READY
+                    </td>
+                    <td class="link">
+                        <button class="btn btn-default" data-toggle="modal" data-target="#exampleModal2">Similar 10 lots</button>
+                    </td>
+                </tr>
+                </tbody>
+                <tbody class="lot-row lot-row-collaps small">
+                <tr>
+                    <td class="auction1">
+                        <button class="btn btn-link" onclick="location.href='auctions.html'">152323</button>
+                    </td>
+                    <td class="CrawleDate linkset" title="CrawledDate">
+                        <p class="border-bottom" title="Lot idx">
+                            1875633
+                        </p>
+                        <p class="border-bottom" title="Lot Number">
+                            LOT. 1
+                        </p>
+                        <p class="border-bottom" title="Lot Vendor">
+                            Christies
+                        </p>
+                        <p>
+                            <a href="http://www.christies.com/lotfinderimages/d58756/andy_warhol_untitled_12_d5875631h.jpg" target="_blank">
+                                <img src="http://www.christies.com/lotfinderimages/d58756/andy_warhol_untitled_12_d5875631h.jpg" class="img-thumbnail1">
+                            </a>
+                        </p>
+                        <p>
+                            <a href="http://www.christies.com/lotfinder/prints-multiples/andy-warhol-untitled-12-5875631-details.aspx?from=salesummary&amp;intObjectID=5875631&amp;sid=09b979f7-4850-4d01-a810-b2a79651c0ba" target="_blank" title="Lot">Origin Lot</a>
+                        </p>
+                    </td>
+                    <td class="title">
+                        <p class="border-bottom ArtistNameLast" title="Artist Name">
+                            Marc Chagall
+                        </p>
+                        <p class="border-bottom" title="Artist Origin">
+                            Singaporean
+                        </p>
+                        <p class="border-bottom" title="Artist Birth-death">
+                            1917-1983
+                        </p>
+                    </td>
+                    <td class="Caption">
+                        <p class="border-bottom Worktitle" title="Worktitle">
+                            <a href="#" data-toggle="modal" data-target="#exampleModal3">
+                                Les Iris
+                            </a>
+                        </p>
+                        <p class="border-bottom" title="Year">
+                            1934
+                        </p>
+                        <p class="border-bottom" title="Medium">
+                            Oil on canvas
+                        </p>
+                        <p class="border-bottom" title="Signed">
+                            signed'E.Chateignon' (lower left)
+                        </p>
+                        <p class="border-bottom" title="Other Description">
+                            with two draws and a low shelf on square legs
+                            </a>
+                        <p title="Size">
+                            Height: 31 in. (78.7 cm.), Length: 77½ in. (197 cm.), Depth: 32 5/8 in. (83 cm.)
+                        </p>
+                    </td>
+                    <td class="Estimate">
+                        <p class="border-bottom" title="Estimate">
+                            £2,000 - £3,000
+                        </p>
+                        <p class="border-bottom" title="Estimate - USD">
+                            $3,114 - $4,671
+                        </p>
+                    </td>
+                    <td class="Price-Realized">
+                        <p class="border-bottom" title="Price Realized">
+                            £2,000
+                        </p>
+                        <p class="border-bottom" title="Price Realized - USD">
+                            $3,114
+                        </p>
+                    </td>
+                    <td class="etc">
+                        <p class="clipboardtext border-bottom" title="Provenance">
+                            This lot will be removed to an off-site warehouse at the close of business on the day of sale - 2 weeks free storage
+                        </p>
+                        <p class="clipboardtext border-bottom" title="Exhibition">
+                            Anonymous sale;Sotheby's, London, 17 June 1992, lot 562.
+                        </p>
+                        <p class="clipboardtext border-bottom" title="Literature">
+                            Anonymous sale;Sotheby's, London, 17 June 1992, lot 562.
+                        </p>
+                        <p class="clipboardtext border-bottom" title="Condition Report">
+                            Anonymous sale;Sotheby's, London, 17 June 1992, lot 562.
+                        </p>
+                    </td>
+                    <td title="Status" class="success text-center text-success">
+                        START
+                    </td>
+                    <td class="link">
+                        <button class="btn btn-default" data-toggle="modal" data-target="#exampleModal2">Similar 10 lots</button>
+                    </td>
+                </tr>
+                </tbody>
+                <tbody class="lot-row lot-row-collaps small">
+                <tr>
+                    <td class="auction1">
+                        <button class="btn btn-link" onclick="location.href='auctions.html'">152323</button>
+                    </td>
+                    <td class="CrawleDate linkset" title="CrawledDate">
+                        <p class="border-bottom" title="Lot idx">
+                            1875633
+                        </p>
+                        <p class="border-bottom" title="Lot Number">
+                            LOT. 1
+                        </p>
+                        <p class="border-bottom" title="Lot Vendor">
+                            Christies
+                        </p>
+                        <p>
+                            <a href="http://www.christies.com/lotfinderimages/d58756/andy_warhol_untitled_12_d5875631h.jpg" target="_blank">
+                                <img src="http://www.christies.com/lotfinderimages/d58756/andy_warhol_untitled_12_d5875631h.jpg" class="img-thumbnail1">
+                            </a>
+                        </p>
+                        <p>
+                            <a href="http://www.christies.com/lotfinder/drawings-watercolors/joseph-stella-lilies-in-a-vase-5928613-details.aspx?from=salesummary&intObjectID=5928613&sid=48997425-95cc-4873-b8da-86916ed81d52" target="_blank" title="Lot">Origin Lot</a>
+                        </p>
+                    </td>
+                    <td class="title">
+                        <p class="border-bottom ArtistNameLast" title="Artist Name">
+                            Marc Chagall
+                        </p>
+                        <p class="border-bottom" title="Artist Origin">
+                            Singaporean
+                        </p>
+                        <p class="border-bottom" title="Artist Birth-death">
+                            1917-1983
+                        </p>
+                    </td>
+                    <td class="Caption">
+                        <p class="border-bottom Worktitle" title="Worktitle">
+                            <a href="#" data-toggle="modal" data-target="#exampleModal3">
+                                Les Iris
+                            </a>
+                        </p>
+                        <p class="border-bottom" title="Year">
+                            1934
+                        </p>
+                        <p class="border-bottom" title="Medium">
+                            Oil on canvas
+                        </p>
+                        <p class="border-bottom" title="Signed">
+                            signed'E.Chateignon' (lower left)
+                        </p>
+                        <p class="border-bottom" title="Other Description">
+                            with two draws and a low shelf on square legs
+                            </a>
+                        <p title="Size">
+                            Height: 31 in. (78.7 cm.), Length: 77½ in. (197 cm.), Depth: 32 5/8 in. (83 cm.)
+                        </p>
+                    </td>
+                    <td class="Estimate">
+                        <p class="border-bottom" title="Estimate">
+                            £2,000 - £3,000
+                        </p>
+                        <p class="border-bottom" title="Estimate - USD">
+                            $3,114 - $4,671
+                        </p>
+                    </td>
+                    <td class="Price-Realized">
+                        <p class="border-bottom" title="Price Realized">
+                            <span class="badge1">None</span>
+                        </p>
+                        <p class="border-bottom" title="Price Realized - USD">
+                            <span class="badge1">None</span>
+                        </p>
+                    </td>
+                    <td class="etc">
+                        <p class="clipboardtext border-bottom" title="Provenance">
+                            This lot will be removed to an off-site warehouse at the close of business on the day of sale - 2 weeks free storage
+                        </p>
+                        <p class="clipboardtext border-bottom" title="Exhibition">
+                            Anonymous sale;Sotheby's, London, 17 June 1992, lot 562.
+                        </p>
+                        <p class="clipboardtext border-bottom" title="Literature">
+                            Anonymous sale;Sotheby's, London, 17 June 1992, lot 562.
+                        </p>
+                        <p class="clipboardtext border-bottom" title="Condition Report">
+                            Anonymous sale;Sotheby's, London, 17 June 1992, lot 562.
+                        </p>
+                    </td>
+                    <td title="Status" class="danger text-center text-danger">
+                        BID
+                    </td>
+                    <td class="link">
+                        <button class="btn btn-default" data-toggle="modal" data-target="#exampleModal2">Similar 10 lots</button>
+                    </td>
+                </tr>
+                </tbody>
+                <tbody class="lot-row lot-row-collaps small">
+                <tr>
+                    <td class="auction1">
+                        <button class="btn btn-link" onclick="location.href='auctions.html'">152323</button>
+                    </td>
+                    <td class="CrawleDate linkset">
+                        <p class="border-bottom" title="Lot idx">
+                            1875633
+                        </p>
+                        <p class="border-bottom" title="Lot Number">
+                            LOT. 1
+                        </p>
+                        <p class="border-bottom" title="Lot Vendor">
+                            Christies
+                        </p>
+                        <p>
+                            <a href="http://www.christies.com/lotfinderimages/d58756/andy_warhol_untitled_12_d5875631h.jpg" target="_blank">
+                                <img src="http://www.christies.com/lotfinderimages/d58756/andy_warhol_untitled_12_d5875631h.jpg" class="img-thumbnail1">
+                            </a>
+                        </p>
+                        <p>
+                            <a href="http://www.christies.com/lotfinder/furniture-lighting/a-giltwood-faux-aloe-vera-plan-probably-5926378-details.aspx?from=salesummary&intObjectID=5926378&sid=ea072046-2995-4bb3-9200-5d73970221b3" target="_blank" title="Lot">Origin Lot</a>
+                        </p>
+                    </td>
+                    <td class="title">
+                        <p class="border-bottom ArtistNameLast" title="Artist Name">
+                            Marc Chagall
+                        </p>
+                        <p class="border-bottom" title="Artist Origin">
+                            Singaporean
+                        </p>
+                        <p class="border-bottom" title="Artist Birth-death">
+                            1917-1983
+                        </p>
+                    </td>
+                    <td class="Caption">
+                        <p class="border-bottom Worktitle" title="Worktitle">
+                            <a href="#" data-toggle="modal" data-target="#exampleModal3">
+                                Les Iris
+                            </a>
+                        </p>
+                        <p class="border-bottom" title="Year">
+                            1934
+                        </p>
+                        <p class="border-bottom" title="Medium">
+                            Oil on canvas
+                        </p>
+                        <p class="border-bottom" title="Signed">
+                            signed'E.Chateignon' (lower left)
+                        </p>
+                        <p class="border-bottom" title="Other Description">
+                            with two draws and a low shelf on square legs
+                            </a>
+                        <p title="Size">
+                            Height: 31 in. (78.7 cm.), Length: 77½ in. (197 cm.), Depth: 32 5/8 in. (83 cm.)
+                        </p>
+                    </td>
+                    <td class="Estimate">
+                        <p class="border-bottom" title="Estimate">
+                            £2,000 - £3,000
+                        </p>
+                        <p class="border-bottom" title="Estimate - USD">
+                            $3,114 - $4,671
+                        </p>
+                    </td>
+                    <td class="Price-Realized">
+                        <p class="border-bottom" title="Price Realized">
+                            <span class="badge1">None</span>
+                        </p>
+                        <p class="border-bottom" title="Price Realized - USD">
+                            <span class="badge1">None</span>
+                        </p>
+                    </td>
+                    <td class="etc">
+                        <p class="clipboardtext border-bottom" title="Provenance">
+                            This lot will be removed to an off-site warehouse at the close of business on the day of sale - 2 weeks free storage
+                        </p>
+                        <p class="clipboardtext border-bottom" title="Exhibition">
+                            Anonymous sale;Sotheby's, London, 17 June 1992, lot 562.
+                        </p>
+                        <p class="clipboardtext border-bottom" title="Literature">
+                            Anonymous sale;Sotheby's, London, 17 June 1992, lot 562.
+                        </p>
+                        <p class="clipboardtext border-bottom" title="Condition Report">
+                            Anonymous sale;Sotheby's, London, 17 June 1992, lot 562.
+                        </p>
+                    </td>
+                    <td title="Status" class="info text-center text-info">
+                        SOLD
+                    </td>
+                    <td class="link">
+                        <button class="btn btn-default" data-toggle="modal" data-target="#exampleModal2">Similar 10 lots</button>
+                    </td>
+                </tr>
+                </tbody>
+                <tbody class="lot-row lot-row-collaps small">
+                <tr>
+                    <td class="auction1">
+                        <button class="btn btn-link" onclick="location.href='auctions.html'">152323</button>
+                    </td>
+                    <td class="CrawleDate linkset">
+                        <p class="border-bottom" title="Lot idx">
+                            1875633
+                        </p>
+                        <p class="border-bottom" title="Lot Number">
+                            LOT. 1
+                        </p>
+                        <p class="border-bottom" title="Lot Vendor">
+                            Christies
+                        </p>
+                        <p>
+                            <a href="http://www.christies.com/lotfinderimages/d58756/andy_warhol_untitled_12_d5875631h.jpg" target="_blank">
+                                <img src="http://www.christies.com/lotfinderimages/d58756/andy_warhol_untitled_12_d5875631h.jpg" class="img-thumbnail1">
+                            </a>
+                        </p>
+                        <p>
+                            <a href="http://www.christies.com/lotfinder/furniture-lighting/a-giltwood-faux-aloe-vera-plan-probably-5926378-details.aspx?from=salesummary&intObjectID=5926378&sid=ea072046-2995-4bb3-9200-5d73970221b3" target="_blank" title="Lot">Origin Lot</a>
+                        </p>
+                    </td>
+                    <td class="title">
+                        <p class="border-bottom ArtistNameLast" title="Artist Name">
+                            Marc Chagall
+                        </p>
+                        <p class="border-bottom" title="Artist Origin">
+                            Singaporean
+                        </p>
+                        <p class="border-bottom" title="Artist Birth-death">
+                            1917-1983
+                        </p>
+                    </td>
+                    <td class="Caption">
+                        <p class="border-bottom Worktitle" title="Worktitle">
+                            <a href="#" data-toggle="modal" data-target="#exampleModal3">
+                                Les Iris
+                            </a>
+                        </p>
+                        <p class="border-bottom" title="Year">
+                            1934
+                        </p>
+                        <p class="border-bottom" title="Medium">
+                            Oil on canvas
+                        </p>
+                        <p class="border-bottom" title="Signed">
+                            signed'E.Chateignon' (lower left)
+                        </p>
+                        <p class="border-bottom" title="Other Description">
+                            with two draws and a low shelf on square legs
+                            </a>
+                        <p title="Size">
+                            Height: 31 in. (78.7 cm.), Length: 77½ in. (197 cm.), Depth: 32 5/8 in. (83 cm.)
+                        </p>
+                    </td>
+                    <td class="Estimate">
+                        <p class="border-bottom" title="Estimate">
+                            £2,000 - £3,000
+                        </p>
+                        <p class="border-bottom" title="Estimate - USD">
+                            $3,114 - $4,671
+                        </p>
+                    </td>
+                    <td class="Price-Realized">
+                        <p class="border-bottom" title="Price Realized">
+                            <span class="badge1">None</span>
+                        </p>
+                        <p class="border-bottom" title="Price Realized - USD">
+                            <span class="badge1">None</span>
+                        </p>
+                    </td>
+                    <td class="etc">
+                        <p class="clipboardtext border-bottom" title="Provenance">
+                            This lot will be removed to an off-site warehouse at the close of business on the day of sale - 2 weeks free storage
+                        </p>
+                        <p class="clipboardtext border-bottom" title="Exhibition">
+                            Anonymous sale;Sotheby's, London, 17 June 1992, lot 562.
+                        </p>
+                        <p class="clipboardtext border-bottom" title="Literature">
+                            Anonymous sale;Sotheby's, London, 17 June 1992, lot 562.
+                        </p>
+                        <p class="clipboardtext border-bottom" title="Condition Report">
+                            Anonymous sale;Sotheby's, London, 17 June 1992, lot 562.
+                        </p>
+                    </td>
+                    <td title="Status" class="active text-center">
+                        PASSED
+                    </td>
+                    <td class="link">
+                        <button class="btn btn-default" data-toggle="modal" data-target="#exampleModal2">Similar 10 lots</button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<!-- Modal Start -->
+<script>
+    $('#exampleModal').on('show.bs.modal', function (event) {
+        var button = $(event.relatedTarget) // Button that triggered the modal
+        var recipient = button.data('whatever') // Extract info from data-* attributes
+        // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+        // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+        var modal = $(this)
+        modal.find('.modal-title').text('New message to ' + recipient)
+        modal.find('.modal-body input').val(recipient)
+    })
+
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+
+    $(function () {
+        $('[data-toggle="popover"]').popover({html:true});
+    })
+</script>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <form class="form-horizontal">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title">Filtering Options</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Lot idx</label>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control" placeholder="Lot idx number">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Auction idx</label>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control" placeholder="Auction idx number">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Bid Status</label>
+                        <div class="col-md-9">
+                            <label class="checkbox-inline">
+                                <input type="checkbox" checked> READY
+                            </label>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" checked> START
+                            </label>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" checked> BID
+                            </label>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" checked> SOLD
+                            </label>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" checked> PASSED
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <input type="submit" value="Search" class="btn btn-primary">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <form class="form-horizontal">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Add Lot</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Lot URL</label>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control" placeholder="origin lot url">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label"> Lot Image URL</label>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control" placeholder="url of lot image">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Auction</label>
+                        <div class="col-md-9">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <input type="text" name="addAlias" class="form-control" id="addAlias" placeholder="auction idx">
+                                </div>
+                                <div class="col-md-7">
+                                    <button type="button" class="btn btn-default">Search</button>
+                                    <!--<button class="btn btn-default">Delete</button>-->
+                                </div>
+                            </div>
+                            <!--&lt;!&ndash; auction idx 검색 시 매칭되는 항목 있으면 표시 &ndash;&gt;-->
+                            <!--<div class="panel panel-default margin-top-10px">-->
+                                <!--<table class="table table-bordered table-striped small">-->
+                                    <!--<colgroup>-->
+                                        <!--<col class="col-md-3">-->
+                                        <!--<col class="col-md-9">-->
+                                    <!--</colgroup>-->
+                                    <!--<tbody>-->
+                                    <!--<tr>-->
+                                        <!--<td scope="row">-->
+                                            <!--Auction idx-->
+                                        <!--</td>-->
+                                        <!--<td>123456</td>-->
+                                    <!--</tr>-->
+                                    <!--<tr>-->
+                                        <!--<td scope="row">-->
+                                            <!--Vendor-->
+                                        <!--</td>-->
+                                        <!--<td>Christies</td>-->
+                                    <!--</tr>-->
+                                    <!--<tr>-->
+                                        <!--<td scope="row">-->
+                                            <!--Starting Time-->
+                                        <!--</td>-->
+                                        <!--<td>2015-09-09 10:00 AM</td>-->
+                                    <!--</tr>-->
+                                    <!--<tr>-->
+                                        <!--<td scope="row">-->
+                                            <!--Sale Number-->
+                                        <!--</td>-->
+                                        <!--<td>1458</td>-->
+                                    <!--</tr>-->
+                                    <!--<tr>-->
+                                        <!--<td scope="row">-->
+                                            <!--Auction Name-->
+                                        <!--</td>-->
+                                        <!--<td>-->
+                                            <!--This is Auction Name. Contemporary Art Auction Name.-->
+                                        <!--</td>-->
+                                    <!--</tr>-->
+                                    <!--<tr>-->
+                                        <!--<td scope="row">-->
+                                            <!--Location-->
+                                        <!--</td>-->
+                                        <!--<td>-->
+                                            <!--New York, ABC building-->
+                                        <!--</td>-->
+                                    <!--</tr>-->
+                                    <!--</tbody>-->
+                                <!--</table>-->
+                            <!--</div>-->
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Lot Number</label>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control" placeholder="Vendor Lot Number">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Artist Name</label>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control" placeholder="Artist Name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Artist Origin</label>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control" placeholder="Artist Origin">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Artist Birth Year</label>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control" placeholder="Artist Birth Year">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Artist Death Year</label>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control" placeholder="Artist Death Year">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Worktitle</label>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control" placeholder="Worktitle">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Estimate Low</label>
+                        <div class="col-md-9">
+                            <select name="" id="">
+                                <option value="">(KRW) ₩</option>
+                                <option value="">(EUR) € </option>
+                                <option value="">(GBP) £ </option>
+                                <option value="" selected>(USD) $</option>
+                                <option value="">(JPY) Ұ </option>
+                                <option value="">(CNY) Y </option>
+                                <option value="">(HKD) HK$ </option>
+                                <option value="">(SGD) S$ </option>
+                                <option value="">(TWD) NT$ </option>
+                                <option value="">(BND) B$ </option>
+                                <option value="">(AUD) $AUD </option>
+                                <option value="">(NZD) $ </option>
+                                <option value="">(CHF) SFr </option>
+                                <option value="">(INR) Rs. </option>
+                            </select>
+                            <input type="text" size="40" placeholder="Estimate Low">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Estimate High</label>
+                        <div class="col-md-9">
+                            <select name="" id="">
+                                <option value="">(KRW) ₩</option>
+                                <option value="">(EUR) € </option>
+                                <option value="">(GBP) £ </option>
+                                <option value="" selected>(USD) $</option>
+                                <option value="">(JPY) Ұ </option>
+                                <option value="">(CNY) Y </option>
+                                <option value="">(HKD) HK$ </option>
+                                <option value="">(SGD) S$ </option>
+                                <option value="">(TWD) NT$ </option>
+                                <option value="">(BND) B$ </option>
+                                <option value="">(AUD) $AUD </option>
+                                <option value="">(NZD) $ </option>
+                                <option value="">(CHF) SFr </option>
+                                <option value="">(INR) Rs. </option>
+                            </select>
+                            <input type="text" size="40" placeholder="Estimate High">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Bid Status</label>
+                        <div class="col-md-9">
+                            <label class="radio-inline">
+                                <input type="radio" checked> READY
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio"> START
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio"> BID
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio"> SOLD
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio"> PASSED
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Price Realized</label>
+                        <div class="col-md-9">
+                            <select name="" id="">
+                                <option value="">(KRW) ₩</option>
+                                <option value="">(EUR) € </option>
+                                <option value="">(GBP) £ </option>
+                                <option value="" selected>(USD) $</option>
+                                <option value="">(JPY) Ұ </option>
+                                <option value="">(CNY) Y </option>
+                                <option value="">(HKD) HK$ </option>
+                                <option value="">(SGD) S$ </option>
+                                <option value="">(TWD) NT$ </option>
+                                <option value="">(BND) B$ </option>
+                                <option value="">(AUD) $AUD </option>
+                                <option value="">(NZD) $ </option>
+                                <option value="">(CHF) SFr </option>
+                                <option value="">(INR) Rs. </option>
+                            </select>
+                            <input type="text" size="40" placeholder="Price Realized">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Category</label>
+                        <div class="col-md-9">
+                            <select name="" id="">
+                                <option value="11">Paintings</option>
+                                <option value="12">Photograph</option>
+                                <option value="13">Prints and Multiples</option>
+                                <option value="14">Sculptures & Figures</option>
+                                <option value="15">Works on paper</option>
+                                <option value="17">Others</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Medium</label>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control" placeholder="Medium">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Size</label>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control" placeholder="Size">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Year of Creation</label>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control" placeholder="Year of Creation">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Signed</label>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control" placeholder="Signed">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Other Description</label>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control" placeholder="Other Description">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Provenance</label>
+                        <div class="col-md-9">
+                            <textarea rows="10" class="form-control" placeholder="Provenance"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Exhibition</label>
+                        <div class="col-md-9">
+                            <textarea rows="10" class="form-control" placeholder="Exhibition"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Literature</label>
+                        <div class="col-md-9">
+                            <textarea rows="10" class="form-control" placeholder="Literature"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Condition Report</label>
+                        <div class="col-md-9">
+                            <textarea rows="10" class="form-control" placeholder="Condition Report"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Keywords</label>
+                        <div class="col-md-9">
+                            <textarea rows="10" class="form-control" placeholder="Keywords"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <input type=submit value="Save" class="btn btn-primary">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <form class="form-horizontal">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Edit Lot</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Lot URL</label>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control" placeholder="origin lot url" value="http://www.christies.com/lotfinder/drawings-watercolors/joseph-stella-lilies-in-a-vase-5928613-details.aspx?from=salesummary&intObjectID=5928613&sid=48997425-95cc-4873-b8da-86916ed81d52">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label"> Lot Image URL</label>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control" placeholder="url of lot image" value="http://www.christies.com/lotfinderimages/d59286/joseph_stella_lilies_in_a_vase_d5928613h.jpg">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Auction</label>
+                        <div class="col-md-9">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <input type="text" name="addAlias" class="form-control" id="addAlias" placeholder="auction idx" value="112342">
+                                </div>
+                                <div class="col-md-7">
+                                    <button type="button" class="btn btn-default">Search</button>
+                                    <button class="btn btn-default">Delete</button>
+                                </div>
+                            </div>
+                            <!-- auction idx 검색 시 매칭되는 항목 있으면 표시 -->
+                            <div class="panel panel-default margin-top-10px">
+                                <table class="table table-bordered table-striped small">
+                                    <colgroup>
+                                        <col class="col-md-3">
+                                        <col class="col-md-9">
+                                    </colgroup>
+                                    <tbody>
+                                    <tr>
+                                        <td scope="row">
+                                            Auction idx
+                                        </td>
+                                        <td>123456</td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">
+                                            Vendor
+                                        </td>
+                                        <td>Christies</td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">
+                                            Starting Time
+                                        </td>
+                                        <td>2015-09-09 10:00 AM</td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">
+                                            Sale Number
+                                        </td>
+                                        <td>1458</td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">
+                                            Auction Name
+                                        </td>
+                                        <td>
+                                            This is Auction Name. Contemporary Art Auction Name.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">
+                                            Location
+                                        </td>
+                                        <td>
+                                            New York, ABC building
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Lot Number</label>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control" placeholder="Vendor Lot Number" value="1">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Artist Name</label>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control" placeholder="Artist Name" value="JOSEPH STELLA">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Artist Origin</label>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control" placeholder="Artist Origin" value="">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Artist Birth Year</label>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control" placeholder="Artist Birth Year" value="1877">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Artist Death Year</label>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control" placeholder="Artist Death Year" value="1946">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Worktitle</label>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control" placeholder="Worktitle" value="LILIES IN A VASE">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Estimate Low</label>
+                        <div class="col-md-9">
+                            <select name="" id="">
+                                <option value="">(KRW) ₩</option>
+                                <option value="">(EUR) € </option>
+                                <option value="">(GBP) £ </option>
+                                <option value="" selected>(USD) $</option>
+                                <option value="">(JPY) Ұ </option>
+                                <option value="">(CNY) Y </option>
+                                <option value="">(HKD) HK$ </option>
+                                <option value="">(SGD) S$ </option>
+                                <option value="">(TWD) NT$ </option>
+                                <option value="">(BND) B$ </option>
+                                <option value="">(AUD) $AUD </option>
+                                <option value="">(NZD) $ </option>
+                                <option value="">(CHF) SFr </option>
+                                <option value="">(INR) Rs. </option>
+                            </select>
+                            <input type="text" size="40" placeholder="Estimate Low" value="5,000">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Estimate High</label>
+                        <div class="col-md-9">
+                            <select name="" id="">
+                                <option value="">(KRW) ₩</option>
+                                <option value="">(EUR) € </option>
+                                <option value="">(GBP) £ </option>
+                                <option value="" selected>(USD) $</option>
+                                <option value="">(JPY) Ұ </option>
+                                <option value="">(CNY) Y </option>
+                                <option value="">(HKD) HK$ </option>
+                                <option value="">(SGD) S$ </option>
+                                <option value="">(TWD) NT$ </option>
+                                <option value="">(BND) B$ </option>
+                                <option value="">(AUD) $AUD </option>
+                                <option value="">(NZD) $ </option>
+                                <option value="">(CHF) SFr </option>
+                                <option value="">(INR) Rs. </option>
+                            </select>
+                            <input type="text" size="40" placeholder="Estimate High" value="7,000">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Bid Status</label>
+                        <div class="col-md-9">
+                            <label class="radio-inline">
+                                <input type="radio" checked> READY
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio"> START
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio"> BID
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio"> SOLD
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio"> PASSED
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Price Realized</label>
+                        <div class="col-md-9">
+                            <select name="" id="">
+                                <option value="">(KRW) ₩</option>
+                                <option value="">(EUR) € </option>
+                                <option value="">(GBP) £ </option>
+                                <option value="" selected>(USD) $</option>
+                                <option value="">(JPY) Ұ </option>
+                                <option value="">(CNY) Y </option>
+                                <option value="">(HKD) HK$ </option>
+                                <option value="">(SGD) S$ </option>
+                                <option value="">(TWD) NT$ </option>
+                                <option value="">(BND) B$ </option>
+                                <option value="">(AUD) $AUD </option>
+                                <option value="">(NZD) $ </option>
+                                <option value="">(CHF) SFr </option>
+                                <option value="">(INR) Rs. </option>
+                            </select>
+                            <input type="text" size="40" placeholder="Price Realized">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Category</label>
+                        <div class="col-md-9">
+                            <select name="" id="">
+                                <option value="11">Paintings</option>
+                                <option value="12">Photograph</option>
+                                <option value="13">Prints and Multiples</option>
+                                <option value="14">Sculptures & Figures</option>
+                                <option value="15" selected>Works on paper</option>
+                                <option value="17">Others</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Medium</label>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control" placeholder="Medium" value="pastel on paper">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Size</label>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control" placeholder="Size" value="12 x 19 in. (30.48 x 48.2 cm.)">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Year of Creation</label>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control" placeholder="Year of Creation" value="1944">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Signed</label>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control" placeholder="Signed" value="signed and dated 'Joseph Stella 1944' (lower right)">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Other Description</label>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control" placeholder="Other Description">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Provenance</label>
+                        <div class="col-md-9">
+                            <textarea rows="10" class="form-control" placeholder="Provenance">
+Richard York Gallery, New York.
+Acquired by the present owner from the above, 1998.
+                            </textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Exhibition</label>
+                        <div class="col-md-9">
+                            <textarea rows="10" class="form-control" placeholder="Exhibition"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Literature</label>
+                        <div class="col-md-9">
+                            <textarea rows="10" class="form-control" placeholder="Literature"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Condition Report</label>
+                        <div class="col-md-9">
+                            <textarea rows="10" class="form-control" placeholder="Condition Report"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Keywords</label>
+                        <div class="col-md-9">
+                            <textarea rows="10" class="form-control" placeholder="Keywords">
+Joseph Stella
+20th Century
+Drawings & Watercolors
+United States Of America
+Modern
+                            </textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <input type=submit value="Save" class="btn btn-primary">
+                    <button type="button" class="btn btn-link" data-toggle="modal" data-target="#confirmModal1">Delete</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <form class="form-horizontal">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">18245633 - Similar Lots</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Similar Lots 자동 선정 기준
+                        </div>
+                        <div class="panel-body">
+                            - 작가 제한 : 동일<br/>
+                            - 카테고리 제한 : 동일 (ex- painting)<br/>
+                            - 기간 제한 : 경매일 1주 전부터 2주 후 범위<br/>
+                            - 가격 제한; 기준 작품의 +- 1 million 이내<br/>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Similar Lots
+                        </div>
+                        <table class="table table-bordered table-striped">
+                            <colgroup>
+                                <col class="col-md-1">
+                                <col class="col-md-9">
+                            </colgroup>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <a href="http://www.christies.com/lotfinderimages/d58756/andy_warhol_untitled_12_d5875631h.jpg" target="_blank">
+                                        <img src="http://www.christies.com/lotfinderimages/d58756/andy_warhol_untitled_12_d5875631h.jpg" class="img-thumbnail1">
+                                    </a>
+                                </td>
+                                <td>
+                                    <p class="border-bottom" title="Lot idx">112132</p>
+                                    <p title="Worktitle">This is Lot title</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="http://www.christies.com/lotfinderimages/d58756/andy_warhol_untitled_12_d5875631h.jpg" target="_blank">
+                                        <img src="http://www.christies.com/lotfinderimages/d58756/andy_warhol_untitled_12_d5875631h.jpg" class="img-thumbnail1">
+                                    </a>
+                                </td>
+                                <td>
+                                    <p class="border-bottom" title="Lot idx">112132</p>
+                                    <p title="Worktitle">This is Lot title</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="http://www.christies.com/lotfinderimages/d58756/andy_warhol_untitled_12_d5875631h.jpg" target="_blank">
+                                        <img src="http://www.christies.com/lotfinderimages/d58756/andy_warhol_untitled_12_d5875631h.jpg" class="img-thumbnail1">
+                                    </a>
+                                </td>
+                                <td>
+                                    <p class="border-bottom" title="Lot idx">112132</p>
+                                    <p title="Worktitle">This is Lot title</p>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="confirmModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title">Delete the lot</h4>
+            </div>
+            <div class="modal-body">
+                Do you want to delete the lot?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-danger">Delete</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
