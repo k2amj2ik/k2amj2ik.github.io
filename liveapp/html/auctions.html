@@ -89,8 +89,8 @@
                         <th>Casting Room</th>
                     </tr>
                     </thead>
-                    <tbody class="lot-row lot-row-collaps small">
-                    <tr>
+                    <tbody>
+                    <tr class="lot-row lot-row-collaps small">
                         <td>
                             1
                         </td>
@@ -133,7 +133,8 @@
                             <button class="btn btn-link" onclick="location.href='lots.html'">→ Go to Lots</button>
                         </td>
                         <td>
-                            <strong>2015-19-15 10:00 AM</strong>
+                            <strong>2015-11-15 10:00 AM</strong> <br/>
+                            2015-11-15 09:09 PM KST
                         </td>
                         <td>
                             <p class="border-bottom" title="First Casted Time">
@@ -147,12 +148,10 @@
                             READY
                         </td>
                         <td>
-                            <button class="btn btn-primary" onclick="window.open('popup_cast_room_type2.html', 'cast_popup', 'width=1000,height=900,location=0,scrollbars=0,status=1')">Enter Casting Room</button>
+                            <button class="btn btn-primary" onclick="window.open('popup_cast_room_type3.html', 'cast_popup', 'width=1000,height=900,location=0,scrollbars=0,status=1')">Enter Casting Room</button>
                         </td>
                     </tr>
-                    </tbody>
-                    <tbody class="lot-row lot-row-collaps small">
-                    <tr>
+                    <tr class="lot-row lot-row-collaps small">
                         <td>
                             1
                         </td>
@@ -195,7 +194,8 @@
                             <button class="btn btn-link" onclick="location.href='lots.html'">→ Go to Lots</button>
                         </td>
                         <td>
-                            <strong>2015-19-15 10:00 AM</strong>
+                            <strong>2015-11-15 10:00 AM</strong> <br/>
+                            2015-11-15 09:09 PM KST
                         </td>
                         <td>
                             <p class="border-bottom" title="First Casted Time">
@@ -209,12 +209,10 @@
                             ON AIR
                         </td>
                         <td>
-                            <button class="btn btn-primary" onclick="window.open('popup_cast_room_type3.html', 'cast_popup', 'width=1000,height=900,location=0,scrollbars=0,status=1')">Enter Casting Room</button>
+                            <button class="btn btn-primary" onclick="window.open('popup_cast_room_type2.html', 'cast_popup', 'width=1000,height=900,location=0,scrollbars=0,status=1')">Enter Casting Room</button>
                         </td>
                     </tr>
-                    </tbody>
-                    <tbody class="lot-row lot-row-collaps small">
-                    <tr>
+                    <tr class="lot-row lot-row-collaps small">
                         <td>
                             1
                         </td>
@@ -257,7 +255,8 @@
                             <button class="btn btn-link" onclick="location.href='lots.html'">→ Go to Lots</button>
                         </td>
                         <td>
-                            <strong>2015-19-15 10:00 AM</strong>
+                            <strong>2015-11-15 10:00 AM</strong> <br/>
+                            2015-11-15 09:09 PM KST
                         </td>
                         <td>
                             <p class="border-bottom" title="First Casted Time">
@@ -274,9 +273,7 @@
                             <button class="btn btn-primary" onclick="window.open('popup_cast_room.html', 'cast_popup', 'width=1000,height=900,location=0,scrollbars=0,status=1')">Enter Casting Room</button>
                         </td>
                     </tr>
-                    </tbody>
-                    <tbody class="lot-row lot-row-collaps small">
-                    <tr>
+                    <tr class="lot-row lot-row-collaps small">
                         <td>
                             1
                         </td>
@@ -319,7 +316,8 @@
                             <button class="btn btn-link" onclick="location.href='lots.html'">→ Go to Lots</button>
                         </td>
                         <td>
-                            <strong>2015-19-15 10:00 AM</strong>
+                            <strong>2015-11-15 10:00 AM</strong> <br/>
+                            2015-11-15 09:09 PM KST
                         </td>
                         <td>
                             <p class="border-bottom" title="First Casted Time">
@@ -408,7 +406,7 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="col-md-3 control-label">Starting Date</label>
+                        <label class="col-md-3 control-label">Starting Time</label>
                         <div class="col-md-9">
                             <input type="date" value="2015-09-07"/>
                             <select name="" id="">
@@ -518,7 +516,7 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="col-md-3 control-label">Starting Date</label>
+                        <label class="col-md-3 control-label">Starting Time</label>
                         <div class="col-md-9">
                             <input type="date" value="2015-09-07"/>
                             <select name="" id="">
@@ -602,40 +600,49 @@ Sep 14, 10am - 5pm
                 </div>
                 <div class="modal-body">
                     <div class="form-group">
+                        <label class="col-md-3 control-label">Vendor</label>
+                        <div class="col-md-9">
+                            <select name="" id="">
+                                <option value="">Choose a vendor</option>
+                                <option value="">Christies</option>
+                                <option value="">Sothebys</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
                         <label class="col-md-3 control-label">Auction idx</label>
                         <div class="col-md-9">
                             <input type="text" class="form-control" placeholder="Auction idx number">
                         </div>
                     </div>
                     <div class="form-group">
+                        <label class="col-md-3 control-label">Auction Name</label>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control" placeholder="Auction name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Starting Time</label>
+                        <div class="col-md-9">
+                            <input type="date" value="2015-09-07"/> -
+                            <input type="date" value="2015-09-07"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
                         <label class="col-md-3 control-label">Cast Status</label>
-                        <div class="col-sm-2">
-                            <div class="radio">
-                                <label>
-                                    <input type="radio" checked> ALL
-                                </label>
-                            </div>
-                        </div>
-                        <div class="col-sm-2">
-                            <div class="radio">
-                                <label>
-                                    <input type="radio"> READY
-                                </label>
-                            </div>
-                        </div>
-                        <div class="col-sm-2">
-                            <div class="radio">
-                                <label>
-                                    <input type="radio"> ON AIR
-                                </label>
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="radio">
-                                <label>
-                                    <input type="radio"> OFF AIR
-                                </label>
-                            </div>
+                        <div class="col-md-9">
+                            <label class="checkbox-inline">
+                                <input type="checkbox" checked> NOT YET
+                            </label>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" checked> READY
+                            </label>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" checked> ON AIR
+                            </label>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" checked> OFF AIR
+                            </label>
                         </div>
                     </div>
                 </div>
@@ -661,7 +668,7 @@ Sep 14, 10am - 5pm
                             <code class="chat-lot-label">LOT.101</code>
                             <span class="chat-bid-day">2015-10-10</span>
                             <span class="chat-bid-time">10:00 AM</span>
-                            <span class="label label-warning label-chat-bid-status">START</span>
+                            <span class="label label-success label-chat-bid-status">START</span>
                             <sapn class="chat-price">$ 100,000</sapn>
                         </li>
                         <li class="list-group-item">
@@ -676,14 +683,18 @@ Sep 14, 10am - 5pm
                             <span class="chat-bid-day">2015-10-10</span>
                             <span class="chat-bid-time">10:00 AM</span>
                             <span class="label label-info label-chat-bid-status">SOLD</span>
-                            <sapn class="chat-price">$ 100,000</sapn>
                         </li>
                         <li class="list-group-item">
                             <code class="chat-lot-label">LOT.101</code>
                             <span class="chat-bid-day">2015-10-10</span>
                             <span class="chat-bid-time">10:00 AM</span>
-                            <span class="label label-default label-chat-bid-status">NOT SOLD</span>
-                            <sapn class="chat-price">$ 100,000</sapn>
+                            <span class="label label-default label-chat-bid-status">PASSED</span>
+                        </li>
+                        <li class="list-group-item">
+                            <code class="chat-lot-label">LOT.101</code>
+                            <span class="chat-bid-day">2015-10-10</span>
+                            <span class="chat-bid-time">10:00 AM</span>
+                            <span class="label label-default label-chat-bid-status">WITHDRAWN</span>
                         </li>
                     </ul>
                 </div>
