@@ -560,7 +560,8 @@ select {
 .label-chat-bid-status {
     display: inline-block;
     width: 70px;
-    margin: 0 10px 0 0;
+    font-size: 65%;
+    margin: 5PX 10px 0 0;
 }
 .chat-lot-label {
     display: inline-block;
