@@ -602,7 +602,7 @@ select {
     text-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 .login-bg {
-    background: #d0d4d7 url("../images/bg6.jpg") no-repeat 0 0;
+    background: #00315a url("../images/bg6.jpg") no-repeat 0 0;
     background-size: 100% 100%;
 }
 .login-container {
