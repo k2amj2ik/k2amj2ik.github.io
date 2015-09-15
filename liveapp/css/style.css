@@ -497,7 +497,8 @@ select {
     font-weight: bold;
 }
 
-.chat-dial {
+.chat-dial,
+.chat-dial-type2 {
     padding: 20px;
     font-size: 200%;
     font-weight: bold;
@@ -513,8 +514,20 @@ select {
     color: #555;
 }
 .chat-dial>.btn.chat-dial-btn2 {
-    width: 133px;
+    width: 131px;
+}
+.chat-dial-type2>.btn {
+    font-family: arial narrow;
+    width: 260px;
+    height: 40px;
+    margin-bottom: 7px;
+    padding: 2px;
+    font-weight: bold;
+    font-size: 75%;
+}
+.chat-dial-type2>.btn>.badge {
     font-size: 80%;
+    font-weight: normal;
 }
 .chat-currency {
     min-width: 315px;
