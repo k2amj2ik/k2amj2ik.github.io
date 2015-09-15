@@ -571,3 +571,65 @@ select {
     font-size: 100%;
     margin-right: 20px;
 }
+.error-bg {
+    background: #d0d4d7 url("../images/bg2.jpg") no-repeat 0 0;
+    background-size: 100% 100%;
+}
+.error-container {
+    margin-top: 100px;
+    width: 100%;
+    text-align: center;
+}
+.error-sign {
+    font-size: 700%;
+    color: rgba(255,255,255,0);
+    text-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.error-info {
+    padding: 20px 0 0 0;
+    font-size: 250%;
+    color: rgba(0,0,0,0.5);
+    /*text-shadow: 0 0 4px rgba(255,255,255,0.3);*/
+    text-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.login-bg {
+    background: #d0d4d7 url("../images/bg6.jpg") no-repeat 0 0;
+    background-size: 100% 100%;
+}
+.login-container {
+    margin: 150px 0 0 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+.login-sign {
+    font-size: 700%;
+    color: rgba(0,0,0,1);
+    text-shadow: 0 0 8px rgba(0,0,0,1);
+    text-transform: uppercase;
+}
+.login-info {
+    padding: 20px 0 0 0;
+}
+.login-info>ul>li {
+    display: inline-block;
+    vertical-align: top;
+}
+.login-info>ul>li>input {
+    width: 200px;
+    height: 60px;
+    font-size: 200%;
+    padding: 0 0 0 10px;
+    background-color: rgba(0,0,0,0.4);
+    color: #fff;
+    border: 2px solid #000;
+
+}
+.login-btn {
+    width: 60px;
+    height: 60px;
+    font-size: 200%;
+    background-color: rgba(0,0,0,1);
+    color: #fff;
+    border: 2px solid #000;
+}
