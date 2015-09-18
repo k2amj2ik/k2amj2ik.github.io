@@ -8,8 +8,6 @@
     <link href="../css/style.css" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="https://www.google.com/jsapi?autoload={'modules':[{'name':'visualization','version':'1.1','packages':['bar']}]}"></script>
-    <script type="text/javascript" src="https://www.google.com/jsapi?autoload={'modules':[{'name':'visualization','version':'1.1','packages':['corechart']}]}"></script>
 </head>
 <body>
 <header class="navbar">
@@ -36,7 +34,7 @@
                 </li>
                 <li class="dropdown active">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                        Settings > Users
+                        Settings > Codes
                         <span class="badge">200</span>
                         <span class="caret"></span>
                     </a>
@@ -50,7 +48,7 @@
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li class="margin-top-10px margin-left-10px">
-                    <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#exampleModal1">Add User</button>
+                    <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#exampleModal1">Add Code</button>
                 </li>
             </ul>
         </nav>
@@ -72,52 +70,37 @@
         <span class="disabled prev">››</span>
     </div>
 </div>
-<div class="contents-wrap container-fluid">
+<div class="contents-wrap">
     <div class="contents">
         <!-- test area start -->
-        <div class="table-responsive">
-            <form>
-                <table class="table table-bordered table-hover">
-                    <thead>
-                    <tr class="lot-header-type1">
-                        <th>ID</th>
-                        <th>Password</th>
-                        <th>Name (Or Description)</th>
-                        <th>Role</th>
-                        <th>Menu Permission</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>
-                            <a href="#" data-toggle="modal" data-target="#exampleModal5">admin</a>
-                        </td>
-                        <td>admin</td>
-                        <td>관리자 계정입니다.</td>
-                        <td>ROLE_ADMIN</td>
-                        <td>main, auctions, lots, users, Statistics</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <a href="#" data-toggle="modal" data-target="#exampleModal5">cast</a>
-                        </td>
-                        <td>cast</td>
-                        <td>캐스터 계정입니다.</td>
-                        <td>ROLE_CASTER</td>
-                        <td>main, auctions, lots, Statistics</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <a href="#" data-toggle="modal" data-target="#exampleModal5">data</a>
-                        </td>
-                        <td>data</td>
-                        <td>데이터 담당자 계정입니다.</td>
-                        <td>ROLE_data</td>
-                        <td>main, auctions, lots</td>
-                    </tr>
-                    </tbody>
-                </table>
-            </form>
+        <div class="table">
+            <table class="table table-bordered table-hover">
+                <thead>
+                <tr class="lot-header-type1">
+                    <th>idx</th>
+                    <th>Code Group</th>
+                    <th>Sort by</th>
+                    <th>Code Name</th>
+                    <th>Memo</th>
+                </tr>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>7</td>
+                    <td>Location</td>
+                    <td>1</td>
+                    <td>
+                        <a href="#" data-toggle="modal" data-target="#exampleModal5">
+                            London
+                        </a>
+                    </td>
+                    <td>
+                        test
+                    </td>
+                </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 </div>
@@ -133,13 +116,6 @@
         modal.find('.modal-body input').val(recipient)
     })
 
-    $(function () {
-        $('[data-toggle="tooltip"]').tooltip()
-    })
-
-    $(function () {
-        $('[data-toggle="popover"]').popover({html:true});
-    })
 </script>
 
 
@@ -149,35 +125,34 @@
             <form class="form-horizontal">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title">Add User</h4>
+                    <h4 class="modal-title">Add Code</h4>
                 </div>
                 <div class="modal-body">
                     <div class="form-group">
-                        <label class="col-sm-2 control-label">ID</label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" placeholder="Alphabet only">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-sm-2 control-label">Password</label>
-                        <div class="col-sm-10">
-                            <input type="password" class="form-control" placeholder="Any letter">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-sm-2 control-label">Name (Or Description)</label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" placeholder="Name or Description">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-sm-2 control-label">Role</label>
+                        <label class="col-sm-2 control-label">Code Group</label>
                         <div class="col-sm-10">
                             <select name="" id="">
-                                <option value="">ROLE_DATA</option>
-                                <option value="">ROLE_ADMIN</option>
-                                <option value="">ROLE_CASTER</option>
+                                <option value="">Choose a Code Group</option>
+                                <option value="" selected>location</option>
                             </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Ordering</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" placeholder="Insert code order number">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Code Name</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" placeholder="Insert code name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Memo</label>
+                        <div class="col-sm-10">
+                            <textarea class="form-control" placeholder="Write anything about this code."></textarea>
                         </div>
                     </div>
                 </div>
@@ -195,35 +170,36 @@
             <form class="form-horizontal">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title">Edit User</h4>
+                    <h4 class="modal-title">Edit Code</h4>
                 </div>
                 <div class="modal-body">
                     <div class="form-group">
-                        <label class="col-sm-2 control-label">ID</label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" placeholder="Alphabet only" value="gnsart">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-sm-2 control-label">Password</label>
-                        <div class="col-sm-10">
-                            <input type="password" class="form-control" placeholder="Any letter" value="transparency">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-sm-2 control-label">Name (Or Description)</label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" placeholder="Name or Description" value="어드민 기본 계정">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-sm-2 control-label">Role</label>
+                        <label class="col-sm-2 control-label">Code Group</label>
                         <div class="col-sm-10">
                             <select name="" id="">
-                                <option value="">ROLE_DATA</option>
-                                <option value="" selected>ROLE_ADMIN</option>
-                                <option value="">ROLE_CASTER</option>
+                                <option value="">Choose a Code Group</option>
+                                <option value="" selected>Location</option>
                             </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Ordering</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" placeholder="Insert code order number" value="3">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Code Name</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" placeholder="Insert code name" value="London">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Memo</label>
+                        <div class="col-sm-10">
+                            <textarea class="form-control" placeholder="Write anything about this code.">
+테스트
+                            </textarea>
                         </div>
                     </div>
                 </div>
@@ -241,10 +217,10 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                <h4 class="modal-title">Delete the user</h4>
+                <h4 class="modal-title">Delete the code</h4>
             </div>
             <div class="modal-body">
-                Do you want to delete the user?
+                Do you want to delete the code?
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
