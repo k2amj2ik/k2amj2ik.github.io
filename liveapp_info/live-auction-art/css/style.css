@@ -114,7 +114,7 @@
     background-color: rgba(114,30,10,0.3);
     box-sizing: border-box;
     border-radius: 10px;
-    box-shadow: 4px 3px 6px rgba(0,0,0,0.2) ;
+    /*box-shadow: 4px 3px 6px rgba(0,0,0,0.2) ;*/
     cursor: pointer;
 }
 
@@ -240,7 +240,7 @@
         background-color: rgba(114,30,10,0.3);
         box-sizing: border-box;
         border-radius: 10px;
-        box-shadow: 4px 3px 6px rgba(0,0,0,0.2) ;
+        /*box-shadow: 4px 3px 6px rgba(0,0,0,0.2) ;*/
     }
 
     .btn-type1:hover {
@@ -371,7 +371,7 @@
         background-color: rgba(114,30,10,0.3);
         box-sizing: border-box;
         border-radius: 10px;
-        box-shadow: 4px 3px 6px rgba(0,0,0,0.2) ;
+        /*box-shadow: 4px 3px 6px rgba(0,0,0,0.2) ;*/
     }
 
     .btn-type1:hover {
@@ -441,8 +441,8 @@
 
     .info-summary-wide {
         /*background: none;*/
-        background: #ddb8aa url("../images/bg_1.jpg") no-repeat center bottom;
-        background-size: 100% auto;
+        background: #ddb8aa url("../images/bg_1.jpg") no-repeat center top;
+        background-size: auto 100%;
         vertical-align: bottom;
     }
 
@@ -501,7 +501,7 @@
         background-color: rgba(114,30,10,0.3);
         box-sizing: border-box;
         border-radius: 10px;
-        box-shadow: 4px 3px 6px rgba(0,0,0,0.2) ;
+        /*box-shadow: 4px 3px 6px rgba(0,0,0,0.2) ;*/
         cursor: pointer;
     }
 
