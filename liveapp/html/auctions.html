@@ -8,8 +8,6 @@
     <link href="../css/style.css" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="https://www.google.com/jsapi?autoload={'modules':[{'name':'visualization','version':'1.1','packages':['bar']}]}"></script>
-    <script type="text/javascript" src="https://www.google.com/jsapi?autoload={'modules':[{'name':'visualization','version':'1.1','packages':['corechart']}]}"></script>
 </head>
 <body>
 <header class="navbar">
@@ -61,18 +59,21 @@
 </header>
 <div id="pagination">
     <div class="pagination">
-        <span class="disabled prev">‹‹  </span>
-        <span class="current page">1</span>
-        <a href="#" class="page">2</a>
-        <a href="#" class="page">3</a>
-        <a href="#" class="page">4</a>
-        <a href="#" class="page">5</a>
-        <a href="#" class="page">6</a>
-        <a href="#" class="page">7</a>
-        <a href="#" class="page">8</a>
-        <a href="#" class="page">9</a>
-        <a href="#" class="page">10</a>
-        <span class="disabled prev">››</span>
+        <span class="text-danger">Current Page: <strong>3</strong></span>
+        <span class="page-prev">‹‹  </span>
+        <div class="page-wrap">
+            <span class="current page">1</span>
+            <a href="#" class="page">2</a>
+            <a href="#" class="page">3</a>
+            <a href="#" class="page">4</a>
+            <a href="#" class="page">5</a>
+            <a href="#" class="page">6</a>
+            <a href="#" class="page">7</a>
+            <a href="#" class="page">8</a>
+            <a href="#" class="page">9</a>
+            <a href="#" class="page">10</a>
+        </div>
+        <span class="page-next">››</span>
     </div>
 </div>
 <div class="contents-wrap container-fluid">
@@ -448,6 +449,7 @@
                                 <option value="">50</option>
                                 <option value="">55</option>
                             </select>
+                            <input type="checkbox"/> Summer Time
                         </div>
                     </div>
                     <div class="form-group">
@@ -460,7 +462,40 @@
                     <div class="form-group">
                         <label class="col-md-3 control-label">Location</label>
                         <div class="col-md-9">
-                            <input type="text" size="20" placeholder="City"/>
+                            <select name="" id="">
+                                <option value="" selected>City</option>
+                                <option value="1">Melbourne</option>
+                                <option value="2">Vienna</option>
+                                <option value="3">Palais Lobkowitz</option>
+                                <option value="4">Salzburg</option>
+                                <option value="5">Wien Favoriten</option>
+                                <option value="6">Knokke-Heist</option>
+                                <option value="7">Hong Kong</option>
+                                <option value="8">Beijing</option>
+                                <option value="9">Shanghai</option>
+                                <option value="10">Denmark</option>
+                                <option value="11">Paris</option>
+                                <option value="12">Beaune</option>
+                                <option value="13">Milan</option>
+                                <option value="14">Tokyo</option>
+                                <option value="15">Moroco</option>
+                                <option value="16">Amsterdam</option>
+                                <option value="17">Edinburgh</option>
+                                <option value="18">Singapore</option>
+                                <option value="19">Praha</option>
+                                <option value="20">Seoul</option>
+                                <option value="21">Geneva</option>
+                                <option value="22">Taipei</option>
+                                <option value="23">London</option>
+                                <option value="24">Oxford</option>
+                                <option value="25">Stafford</option>
+                                <option value="26">Dubai</option>
+                                <option value="27">New York</option>
+                                <option value="28">Los Angeles</option>
+                                <option value="29">San Francisco</option>
+                                <option value="30">Philadelphia</option>
+                                <option value="31">California</option>
+                            </select>
                             <input type="text" size="40" placeholder="Detail Location"/>
                         </div>
                     </div>
@@ -558,6 +593,7 @@
                                 <option value="">50</option>
                                 <option value="">55</option>
                             </select>
+                            <input type="checkbox"/> Summer Time
                         </div>
                     </div>
                     <div class="form-group">
@@ -570,7 +606,40 @@
                     <div class="form-group">
                         <label class="col-md-3 control-label">Location</label>
                         <div class="col-md-9">
-                            <input type="text" size="20" placeholder="City" value="London"/>
+                            <select name="" id="">
+                                <option value="">City</option>
+                                <option value="1">Melbourne</option>
+                                <option value="2">Vienna</option>
+                                <option value="3">Palais Lobkowitz</option>
+                                <option value="4">Salzburg</option>
+                                <option value="5">Wien Favoriten</option>
+                                <option value="6">Knokke-Heist</option>
+                                <option value="7">Hong Kong</option>
+                                <option value="8">Beijing</option>
+                                <option value="9">Shanghai</option>
+                                <option value="10">Denmark</option>
+                                <option value="11">Paris</option>
+                                <option value="12">Beaune</option>
+                                <option value="13">Milan</option>
+                                <option value="14">Tokyo</option>
+                                <option value="15">Moroco</option>
+                                <option value="16">Amsterdam</option>
+                                <option value="17">Edinburgh</option>
+                                <option value="18">Singapore</option>
+                                <option value="19">Praha</option>
+                                <option value="20">Seoul</option>
+                                <option value="21">Geneva</option>
+                                <option value="22">Taipei</option>
+                                <option value="23" selected>London</option>
+                                <option value="24">Oxford</option>
+                                <option value="25">Stafford</option>
+                                <option value="26">Dubai</option>
+                                <option value="27">New York</option>
+                                <option value="28">Los Angeles</option>
+                                <option value="29">San Francisco</option>
+                                <option value="30">Philadelphia</option>
+                                <option value="31">California</option>
+                            </select>
                             <input type="text" size="40" placeholder="Detail Location" value="South Kansington"/>
                         </div>
                     </div>

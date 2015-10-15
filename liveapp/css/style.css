@@ -1,9 +1,7 @@
-html {
+html, body {
     height: 100%;
-}
-body {
     background-color:#fff;
-    overflow: hidden;
+    overflow: visible;
 }
 header.navbar {
     position: fixed;
@@ -102,10 +100,6 @@ div.contents {
     border:1px solid #aaa;
     /*cursor: pointer;*/
 }
-.lot-row>tr>td:hover {
-    border-bottom:1px solid red;
-}
-
 .ImageUrl,.idx,.linkset {
     text-align: center;
     font-family:"arial narrow"
@@ -184,8 +178,16 @@ div.contents {
     padding-top:8px;
     border-bottom:1px solid #555;
 }
+.pagination>.page-next {
+    margin-left: -3px;
+}
+.pagination>.page-wrap {
+    display: inline-block;
+}
 .pagination>a,
-.pagination>span{
+.pagination>span,
+.pagination>.page-wrap>a,
+.pagination>.page-wrap>span {
     box-sizing: border-box;
     border-left:1px solid #eee;
     border-right:1px solid #eee;
@@ -195,11 +197,13 @@ div.contents {
 }
 
 .pagination>a:hover,
-.pagination>span:hover {
+.pagination>span:hover,
+.pagination>.page-wrap>a:hover,
+.pagination>.page-wrap>span:hover  {
     background-color: #eee;
 }
 
-.pagination>span.current {
+.pagination>.page-wrap>span.current {
     font-weight:bold;
     background-color: #eee;
 }
@@ -359,12 +363,16 @@ select {
     max-width: 100px;
     max-height: 100px;
 }
-.WorkTitle {
+.WorkTitle a #worktitle {
     font-size: 150%;
     font-family: "times new roman";
     padding: 5px;
 }
-
+.WorkTitle a:focus,
+.WorkTitle a:visited,
+.WorkTitle a:active {
+    color: purple;
+}
 
 .lot-row>tr>td>p>span.categoryStatus1 {
     color: forestgreen;
@@ -443,6 +451,7 @@ select {
     width: 33%;
     min-width: 270px;
     height: 100%;
+    overflow-x: hidden;
     overflow-y: scroll;
     border: 1px solid #aaa;
     vertical-align: top;
@@ -467,20 +476,21 @@ select {
     text-align: right;
     font-size: 200%;
     font-weight: bold;
-    max-width: 240px;
+    max-width: 232px;
     height: 60px;
     padding-top: 20px;
-    background: transparent url("../images/bg_price.png") no-repeat 0 0;
+    background: transparent url("../images/bg_price.png") no-repeat -8px 0;
 }
 
 .price-input-sm input {
     text-align: right;
     font-size: 150%;
     font-weight: bold;
-    max-width: 180px;
+    max-width: 200px;
+    min-width: 200px;
     height: 40px;
     padding: 15px 10px 5px 0;
-    background: transparent url("../images/bg_price_sm.png") no-repeat 0 0;
+    background: transparent url("../images/bg_price_sm.png") no-repeat 21px 0;
 }
 .btn-price {
     font-size: 120%;
@@ -500,8 +510,21 @@ select {
 }
 .chat-lots-section-text {
     display: inline-block;
-    overflow: hidden;
 }
+.chat-lots-section-text>p {
+    height: 20px;
+    width: 170px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+.chat-lots-section-text-type2 {
+    display: inline-block;
+}
+.chat-lots-section-text-type2>p {
+    width: 240px;
+}
+
 .onair {
     display: inline-block;
     padding: 4px 10px 0 0;
@@ -542,11 +565,10 @@ select {
     font-weight: normal;
 }
 .chat-currency {
-    min-width: 315px;
-    margin: 10px 0;
-    font-size: 120%;
+    min-width: 50px;
+    font-size: 140%;
     font-weight: bold;
-    height: 35px;
+    height: 60px;
 }
 .chat-price {
     font-size: 130%;
@@ -657,4 +679,42 @@ select {
 .br-btn-lg {
     padding: 10px 25px;
     font-size: 150%;
+}
+
+.active-lot {
+    color: #fff;
+    background-color: #333;
+}
+
+.active-lot code {
+    color: #000;
+    background-color: pink;
+}
+
+.ended-lot {
+    background-color: #ddd;
+}
+.ended-lot code {
+    color: #000;
+    background-color: #ccc;
+}
+
+.lot-start {
+    border-bottom:20px solid #eee;
+}
+.price-input-group {
+    font-family:impact;
+    font-size:180%
+}
+
+.price-input-type1 {
+    text-align:right;
+    width: 110px;
+    border:1px solid #eee;
+    margin-right:-6px;
+}
+.price-input-type2 {
+    text-align:left;
+    width: 110px;
+    border:1px solid #eee;
 }

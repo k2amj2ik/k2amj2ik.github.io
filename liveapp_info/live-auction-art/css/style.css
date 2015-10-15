@@ -1,0 +1,555 @@
+@charset "utf-8";
+@font-face {
+    font-family:'gt';
+    font-weight:200;
+    src:url('../fonts/gotham-extralight.woff') format('woff'), local(times new romans);
+}
+@font-face {
+    font-family:'gt';
+    font-weight:300;
+    src:url('../fonts/gotham-light.woff') format('woff'), local(times new romans);
+}
+@font-face {
+    font-family:'gt';
+    font-weight:400;
+    src:url('../fonts/gotham-book.woff') format('woff'), local(times new romans);
+}
+@font-face {
+    font-family:'gt';
+    font-weight:600;
+    src:url('../fonts/gotham-medium.woff') format('woff'), local(times new romans);
+}
+@font-face {
+    font-family:'gt';
+    font-weight:700;
+    src:url('../fonts/gotham-bold.woff') format('woff'), local(times new romans);
+}
+
+
+/*body {*/
+    /*background: transparent url("../images/bg_temp.jpg") no-repeat center top;*/
+/*}*/
+
+.container-fluid {
+    padding:0;
+}
+
+.logo,
+.logo:hover,
+.logo:active,
+.logo:visited {
+    display: inline-block;
+    margin: 30px 0;
+    padding: 10px 17px;
+    font-weight: bold;
+    font-size: 100%;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #D48C78;
+    background-color: #FFFFFF;
+    border-color: #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.info-summary-wide {
+    background: #ddb8aa url("../images/bg_1.jpg") no-repeat center top;
+    background-size: auto 100%;
+    vertical-align: bottom;
+}
+
+.info-summary {
+    background: transparent url("../images/hand.png") no-repeat right bottom;
+    background-size: auto 700px;
+    padding-bottom: 600px;
+}
+.context {
+    font-family:"gt";
+    margin-top: 0;
+    color: #fff;
+}
+
+.context .title {
+    font-weight:300;
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: -2px;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+}
+
+.context .title strong {
+    display: block;
+    font-size: 34px;
+    line-height: 40px;
+    font-weight:700;
+    letter-spacing: 0;
+    text-transform: uppercase;
+}
+
+.context .description {
+    margin-top: 20px;
+    font-weight:400;
+    font-size: 20px;
+    line-height: 25px;
+    color: rgba(0,0,0,0.5);
+}
+
+.download {
+    margin-top: 10px;
+}
+
+.btn-type1,
+.btn-type1:hover,
+.btn-type1:active,
+.btn-type1:visited {
+    display: inline-block;
+    width: 100%;
+    margin: 26px 10px 0 0;
+    padding: 13px 17px;
+    border: 0;
+    font-weight:600;
+    font-size:20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: rgba(114,30,10,0.3);
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 4px 3px 6px rgba(0,0,0,0.2) ;
+    cursor: pointer;
+}
+
+.btn-type1:hover {
+    background-color: rgba(114,30,10,0.5);
+}
+
+.btn-type1 .caret {
+    display: inline-block;
+    float: right;
+    border: 0;
+    width: 10px;
+    height: 30px;
+    background: transparent url("../images/icon_arrow.gif") no-repeat right center;
+    -webkit-background-size:10px 17px;
+    background-size:8px auto;
+
+}
+
+.btn-type1.appstore .icon {
+    display: inline-block;
+    float: left;
+    width: 34px;
+    height: 30px;
+    background: transparent url("../images/apple.png") no-repeat left top;
+    -webkit-background-size:25px 30px;
+    background-size:25px 30px;
+
+}
+
+.btn-type1.playstore .icon {
+    display: inline-block;
+    float: left;
+    width: 34px;
+    height: 30px;
+    background: transparent url("../images/android.png") no-repeat left top;
+    -webkit-background-size:26px 30px;
+    background-size:26px 30px;
+
+}
+
+/* ipad - portrait */
+@media (min-width: 768px){
+    .logo,
+    .logo:hover,
+    .logo:active,
+    .logo:visited {
+        display: inline-block;
+        margin: 30px 0;
+        padding: 10px 17px;
+        font-weight: bold;
+        font-size: 100%;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #D48C78;
+        background-color: #FFFFFF;
+        border-color: #FFFFFF;
+        box-sizing: border-box;
+        border-radius: 4px;
+    }
+
+    .info-summary-wide {
+        background: #ddb8aa url("../images/bg_1.jpg") no-repeat left top;
+        background-size: auto 100%;
+        vertical-align: bottom;
+    }
+
+    .info-summary {
+        background: transparent url("../images/hand.png") no-repeat right bottom;
+        background-size: auto 680px;
+        padding-bottom:400px
+
+    }
+    .context {
+        font-family:"gt";
+        margin-top: 30px;
+        color: #fff;
+    }
+
+    .context .title {
+        font-weight:200;
+        font-size: 64px;
+        letter-spacing: 0;
+        line-height: 70px;
+    }
+
+    .context .title strong {
+        display: block;
+        font-size: 65px;
+        line-height: 78px;
+        letter-spacing: -2px;
+        font-weight:700;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 4px rgba(0,0,0,0.1);
+    }
+
+    .context .description {
+        margin-top: 28px;
+        width: 610px;
+        font-weight:400;
+        font-size: 20px;
+        color: #fff;
+        text-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+    }
+
+    .download {
+        margin-top: 30px;
+    }
+
+    .btn-type1,
+    .btn-type1:hover,
+    .btn-type1:active,
+    .btn-type1:visited {
+        display: inline-block;
+        width: 200px;
+        margin: 26px 10px 0 0;
+        padding: 13px 17px;
+        border: 0;
+        font-weight:600;
+        font-size:15px;
+        text-decoration: none;
+        color: #fff;
+        background-color: rgba(114,30,10,0.3);
+        box-sizing: border-box;
+        border-radius: 10px;
+        box-shadow: 4px 3px 6px rgba(0,0,0,0.2) ;
+    }
+
+    .btn-type1:hover {
+        background-color: rgba(114,30,10,0.5);
+    }
+
+    .btn-type1 .text {
+        display: inline-block;
+        float: left;
+        line-height: 30px;
+    }
+
+    .btn-type1 .caret {
+        display: inline-block;
+        border: 0;
+        width: 10px;
+        height: 30px;
+        background: transparent url("../images/icon_arrow.gif") no-repeat right center;
+        -webkit-background-size:10px 17px;
+        background-size:8px auto;
+
+    }
+
+    .btn-type1.appstore .icon {
+        display: inline-block;
+        float: left;
+        width: 34px;
+        height: 30px;
+        background: transparent url("../images/apple.png") no-repeat left top;
+        -webkit-background-size:25px 30px;
+        background-size:25px 30px;
+
+    }
+
+    .btn-type1.playstore .icon {
+        display: inline-block;
+        float: left;
+        width: 34px;
+        height: 30px;
+        background: transparent url("../images/android.png") no-repeat left top;
+        -webkit-background-size:26px 30px;
+        background-size:26px 30px;
+
+    }
+}
+
+/* ipad - landscape */
+@media (min-width: 1024px){
+    .logo,
+    .logo:hover,
+    .logo:active,
+    .logo:visited {
+        display: inline-block;
+        margin: 30px 0;
+        padding: 10px 17px;
+        font-weight: bold;
+        font-size: 100%;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #D48C78;
+        background-color: #FFFFFF;
+        border-color: #FFFFFF;
+        box-sizing: border-box;
+        border-radius: 4px;
+    }
+
+    .info-summary-wide {
+        background: #ddb8aa url("../images/bg_1.jpg") no-repeat left top;
+        background-size: auto 100%;
+        vertical-align: bottom;
+    }
+
+    .info-summary {
+        background: transparent url("../images/hand.png") no-repeat right bottom;
+        background-size: auto 650px;
+        padding-bottom:150px
+
+    }
+    .context {
+        font-family:"gt";
+        margin-top: 30px;
+        color: #fff;
+    }
+
+    .context .title {
+        font-weight:200;
+        font-size: 64px;
+        letter-spacing: 0;
+        line-height: 70px;
+    }
+
+    .context .title strong {
+        display: block;
+        font-size: 65px;
+        line-height: 78px;
+        letter-spacing: -2px;
+        font-weight:700;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 4px rgba(0,0,0,0.1);
+    }
+
+    .context .description {
+        margin-top: 28px;
+        width: 610px;
+        font-weight:400;
+        font-size: 20px;
+        color: #fff;
+        text-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+    }
+
+    .download {
+        margin-top: 30px;
+    }
+
+    .btn-type1,
+    .btn-type1:hover,
+    .btn-type1:active,
+    .btn-type1:visited {
+        display: inline-block;
+        width: 200px;
+        margin: 26px 10px 0 0;
+        padding: 13px 17px;
+        border: 0;
+        font-weight:600;
+        font-size:15px;
+        text-decoration: none;
+        color: #fff;
+        background-color: rgba(114,30,10,0.3);
+        box-sizing: border-box;
+        border-radius: 10px;
+        box-shadow: 4px 3px 6px rgba(0,0,0,0.2) ;
+    }
+
+    .btn-type1:hover {
+        background-color: rgba(114,30,10,0.5);
+    }
+
+    .btn-type1 .text {
+        display: inline-block;
+        float: left;
+        line-height: 30px;
+    }
+
+    .btn-type1 .caret {
+        display: inline-block;
+        border: 0;
+        width: 10px;
+        height: 30px;
+        background: transparent url("../images/icon_arrow.gif") no-repeat right center;
+        -webkit-background-size:10px 17px;
+        background-size:8px auto;
+
+    }
+
+    .btn-type1.appstore .icon {
+        display: inline-block;
+        float: left;
+        width: 34px;
+        height: 30px;
+        background: transparent url("../images/apple.png") no-repeat left top;
+        -webkit-background-size:25px 30px;
+        background-size:25px 30px;
+
+    }
+
+    .btn-type1.playstore .icon {
+        display: inline-block;
+        float: left;
+        width: 34px;
+        height: 30px;
+        background: transparent url("../images/android.png") no-repeat left top;
+        -webkit-background-size:26px 30px;
+        background-size:26px 30px;
+
+    }
+}
+
+
+/* desktop */
+@media (min-width: 1366px) {
+    .logo,
+    .logo:hover,
+    .logo:active,
+    .logo:visited {
+        display: inline-block;
+        margin: 30px 0;
+        padding: 10px 17px;
+        font-weight: bold;
+        font-size: 100%;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #D48C78;
+        background-color: #FFFFFF;
+        border-color: #FFFFFF;
+        box-sizing: border-box;
+        border-radius: 4px;
+    }
+
+    .info-summary-wide {
+        /*background: none;*/
+        background: #ddb8aa url("../images/bg_1.jpg") no-repeat center bottom;
+        background-size: 100% auto;
+        vertical-align: bottom;
+    }
+
+    .info-summary {
+        background: transparent url("../images/hand.png") no-repeat right bottom;
+        background-size: auto;
+        padding-bottom: 200px;
+    }
+    .context {
+        font-family:"gt";
+        margin-top: 154px;
+        color: #fff;
+    }
+
+    .context .title {
+        font-weight:200;
+        font-size: 65px;
+        line-height: 76px;
+        letter-spacing: -2px;
+        text-shadow: none;
+    }
+
+    .context .title strong {
+        display: block;
+        font-size: 65px;
+        line-height: 78px;
+        letter-spacing: -2px;
+        font-weight:700;
+        text-transform: uppercase;
+    }
+
+    .context .description {
+        margin-top: 28px;
+        font-weight:400;
+        font-size: 20px;
+        color: #fff;
+    }
+
+    .download {
+        margin-top: 30px;
+    }
+
+    .btn-type1,
+    .btn-type1:hover,
+    .btn-type1:active,
+    .btn-type1:visited {
+        display: inline-block;
+        width: inherit;
+        margin: 26px 10px 0 0;
+        padding: 13px 17px;
+        border: 0;
+        font-weight:600;
+        font-size:15px;
+        text-decoration: none;
+        color: #fff;
+        background-color: rgba(114,30,10,0.3);
+        box-sizing: border-box;
+        border-radius: 10px;
+        box-shadow: 4px 3px 6px rgba(0,0,0,0.2) ;
+        cursor: pointer;
+    }
+
+    .btn-type1:hover {
+        background-color: rgba(114,30,10,0.5);
+    }
+
+    .btn-type1 .text {
+        display: inline-block;
+        float: left;
+        line-height: 30px;
+    }
+
+    .btn-type1 .caret {
+        display: inline-block;
+        margin: 0 0 0 10px;
+        float: right;
+        border: 0;
+        width: 10px;
+        height: 30px;
+        background: transparent url("../images/icon_arrow.gif") no-repeat right center;
+        -webkit-background-size:10px 17px;
+        background-size:8px auto;
+
+    }
+
+    .btn-type1.appstore .icon {
+        display: inline-block;
+        float: left;
+        width: 34px;
+        height: 30px;
+        background: transparent url("../images/apple.png") no-repeat left top;
+        -webkit-background-size:25px 30px;
+        background-size:25px 30px;
+
+    }
+
+    .btn-type1.playstore .icon {
+        display: inline-block;
+        float: left;
+        width: 34px;
+        height: 30px;
+        background: transparent url("../images/android.png") no-repeat left top;
+        -webkit-background-size:26px 30px;
+        background-size:26px 30px;
+
+    }
+}
+
+
+
