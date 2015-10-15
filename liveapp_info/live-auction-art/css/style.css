@@ -33,9 +33,9 @@
     padding:0;
 }
 
-.description {
-    text-align: justify;
-}
+/*.description {*/
+    /*text-align: justify;*/
+/*}*/
 
 .logo {
     display: inline-block;
@@ -446,7 +446,7 @@
 /* footer */
 .footer-wide {
     text-align: center;
-    background-color: #222222;
+    background-color: #000;
 }
 
 .footer {
@@ -471,7 +471,7 @@
     margin: 40px 0 0 0;
     font-family:'gt';
     font-weight:200;
-    font-size: 20px;
+    font-size: 22px;
     color: #888888;
 }
 
@@ -479,6 +479,13 @@
     font-weight:600;
 }
 
+.logo-gmsart,
+.logo-gmsart:hover {
+    background: transparent url("../images/gnsart.png") no-repeat left bottom;
+    background-size: 100% auto;
+    color: rgba(0,0,0,0);
+    text-decoration: none;
+}
 
 /* ipad - portrait */
 @media (min-width: 768px){
@@ -873,13 +880,14 @@
     }
 
     .info-section1 .context .description {
+        width: 900px;
         font-size: 20px;
         line-height: 26px;
     }
 
     /* info-section2 */
     .info-section2 {
-        background: transparent url("../images/img02_big.jpg") no-repeat left 100px;
+        background: transparent url("../images/img02_big.jpg") no-repeat left 120px;
         padding-bottom: 340px;
     }
 
