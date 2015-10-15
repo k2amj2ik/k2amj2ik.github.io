@@ -601,8 +601,7 @@
     }
     .info-summary .context {
         margin-top: 154px;
-        font-size: 28px;
-        width: 1000px;
+        font-size: 28px;        
     }
 
     .info-summary .context .title {
@@ -610,6 +609,7 @@
         font-size: 63px;
         line-height: 76px;
         text-shadow: none;
+        width: 1000px;
     }
 
     .info-summary .context .title strong {
