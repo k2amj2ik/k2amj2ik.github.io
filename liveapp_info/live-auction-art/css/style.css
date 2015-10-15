@@ -689,7 +689,7 @@
     }
     /* info-section1 */
     .info-section1 {
-        background: transparent url("../images/img01_small.png") no-repeat center bottom;
+        background: transparent url("../images/img01_big.jpg") no-repeat center bottom;
         background-size: auto 400px;
         padding-bottom: 400px;
     }
@@ -853,8 +853,7 @@
     }
 
     .info-section1 {
-        background: transparent url("../images/img01_small.png") no-repeat center bottom;
-        background-size: 100% auto;
+        background: transparent url("../images/img01_big.jpg") no-repeat center bottom;
         padding-bottom: 550px;
     }
 
