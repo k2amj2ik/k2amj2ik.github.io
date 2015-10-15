@@ -53,7 +53,7 @@
 }
 
 .info-summary-wide {
-    background: #ddb8aa url("../images/bg_1.jpg") no-repeat center top;
+    background: #ddb8aa url("../images/bg_wide.jpg") no-repeat center top;
     background-size: auto 100%;
     vertical-align: bottom;
 }
@@ -63,13 +63,13 @@
     background-size: auto 700px;
     padding-bottom: 600px;
 }
-.context {
+.info-summary .context {
     font-family:"gt";
     margin-top: 0;
     color: #fff;
 }
 
-.context .title {
+.info-summary .context .title {
     font-weight:300;
     font-size: 30px;
     line-height: 40px;
@@ -77,7 +77,7 @@
     text-shadow: 1px 1px 4px rgba(0,0,0,0.2);
 }
 
-.context .title strong {
+.info-summary .context .title strong {
     display: block;
     font-size: 34px;
     line-height: 40px;
@@ -86,7 +86,7 @@
     text-transform: uppercase;
 }
 
-.context .description {
+.info-summary .context .description {
     margin-top: 20px;
     font-weight:400;
     font-size: 20px;
@@ -114,7 +114,6 @@
     background-color: rgba(114,30,10,0.3);
     box-sizing: border-box;
     border-radius: 10px;
-    /*box-shadow: 4px 3px 6px rgba(0,0,0,0.2) ;*/
     cursor: pointer;
 }
 
@@ -156,66 +155,74 @@
 
 }
 
+.info-section1-wide {
+    background: #f8f8f8 url("../images/bg_bar01.gif") repeat-x bottom top;
+}
+
+.info-section1-wide .context {
+    font-family:"gt";
+    margin-top: 129px;
+    color: #222;
+}
+
+.info-section1-wide .context .title {
+    width: 100%;
+    text-align: center;
+    font-weight:400;
+    font-size: 46px;
+    line-height: 46px;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+
+}
+.info-section1-wide .context .title::after {
+    content: '';
+    display: block;
+    width: 84px;
+    height: 2px;
+    background-color: #c2297f;
+    margin: 0 auto;
+    margin-top: 38px;
+    margin-bottom: 38px;
+}
+
+.info-section1-wide .context .description {
+    color: #777;
+    font-weight:400;
+    font-size: 18px;
+    line-height: 26px;
+    text-shadow: none;
+}
+
 /* ipad - portrait */
 @media (min-width: 768px){
-    .logo,
-    .logo:hover,
-    .logo:active,
-    .logo:visited {
-        display: inline-block;
-        margin: 30px 0;
-        padding: 10px 17px;
-        font-weight: bold;
-        font-size: 100%;
-        text-transform: uppercase;
-        text-decoration: none;
-        color: #D48C78;
-        background-color: #FFFFFF;
-        border-color: #FFFFFF;
-        box-sizing: border-box;
-        border-radius: 4px;
-    }
-
-    .info-summary-wide {
-        background: #ddb8aa url("../images/bg_1.jpg") no-repeat left top;
-        background-size: auto 100%;
-        vertical-align: bottom;
-    }
 
     .info-summary {
-        background: transparent url("../images/hand.png") no-repeat right bottom;
         background-size: auto 680px;
         padding-bottom:400px
 
     }
-    .context {
-        font-family:"gt";
+    .info-summary .context {
         margin-top: 30px;
-        color: #fff;
     }
 
-    .context .title {
+    .info-summary .context .title {
         font-weight:200;
         font-size: 64px;
-        letter-spacing: 0;
         line-height: 70px;
+        letter-spacing: 0;
     }
 
-    .context .title strong {
-        display: block;
+    .info-summary .context .title strong {
         font-size: 65px;
         line-height: 78px;
         letter-spacing: -2px;
-        font-weight:700;
-        text-transform: uppercase;
         text-shadow: 1px 1px 4px rgba(0,0,0,0.1);
     }
 
-    .context .description {
+    .info-summary .context .description {
         margin-top: 28px;
         width: 610px;
-        font-weight:400;
-        font-size: 20px;
         color: #fff;
         text-shadow: 1px 1px 4px rgba(0,0,0,0.2);
     }
@@ -228,125 +235,46 @@
     .btn-type1:hover,
     .btn-type1:active,
     .btn-type1:visited {
-        display: inline-block;
         width: 200px;
-        margin: 26px 10px 0 0;
-        padding: 13px 17px;
-        border: 0;
-        font-weight:600;
         font-size:15px;
-        text-decoration: none;
-        color: #fff;
-        background-color: rgba(114,30,10,0.3);
-        box-sizing: border-box;
-        border-radius: 10px;
-        /*box-shadow: 4px 3px 6px rgba(0,0,0,0.2) ;*/
-    }
-
-    .btn-type1:hover {
-        background-color: rgba(114,30,10,0.5);
     }
 
     .btn-type1 .text {
         display: inline-block;
         float: left;
         line-height: 30px;
-    }
-
-    .btn-type1 .caret {
-        display: inline-block;
-        border: 0;
-        width: 10px;
-        height: 30px;
-        background: transparent url("../images/icon_arrow.gif") no-repeat right center;
-        -webkit-background-size:10px 17px;
-        background-size:8px auto;
-
-    }
-
-    .btn-type1.appstore .icon {
-        display: inline-block;
-        float: left;
-        width: 34px;
-        height: 30px;
-        background: transparent url("../images/apple.png") no-repeat left top;
-        -webkit-background-size:25px 30px;
-        background-size:25px 30px;
-
-    }
-
-    .btn-type1.playstore .icon {
-        display: inline-block;
-        float: left;
-        width: 34px;
-        height: 30px;
-        background: transparent url("../images/android.png") no-repeat left top;
-        -webkit-background-size:26px 30px;
-        background-size:26px 30px;
-
     }
 }
 
 /* ipad - landscape */
 @media (min-width: 1024px){
-    .logo,
-    .logo:hover,
-    .logo:active,
-    .logo:visited {
-        display: inline-block;
-        margin: 30px 0;
-        padding: 10px 17px;
-        font-weight: bold;
-        font-size: 100%;
-        text-transform: uppercase;
-        text-decoration: none;
-        color: #D48C78;
-        background-color: #FFFFFF;
-        border-color: #FFFFFF;
-        box-sizing: border-box;
-        border-radius: 4px;
-    }
-
-    .info-summary-wide {
-        background: #ddb8aa url("../images/bg_1.jpg") no-repeat left top;
-        background-size: auto 100%;
-        vertical-align: bottom;
-    }
 
     .info-summary {
-        background: transparent url("../images/hand.png") no-repeat right bottom;
         background-size: auto 650px;
         padding-bottom:150px
 
     }
-    .context {
-        font-family:"gt";
+    .info-summary .context {
         margin-top: 30px;
-        color: #fff;
     }
 
-    .context .title {
+    .info-summary .context .title {
         font-weight:200;
         font-size: 64px;
-        letter-spacing: 0;
         line-height: 70px;
+        letter-spacing: 0;
     }
 
-    .context .title strong {
-        display: block;
+    .info-summary .context .title strong {
         font-size: 65px;
         line-height: 78px;
         letter-spacing: -2px;
-        font-weight:700;
-        text-transform: uppercase;
         text-shadow: 1px 1px 4px rgba(0,0,0,0.1);
     }
 
-    .context .description {
+    .info-summary .context .description {
         margin-top: 28px;
         width: 610px;
-        font-weight:400;
-        font-size: 20px;
         color: #fff;
         text-shadow: 1px 1px 4px rgba(0,0,0,0.2);
     }
@@ -359,125 +287,44 @@
     .btn-type1:hover,
     .btn-type1:active,
     .btn-type1:visited {
-        display: inline-block;
         width: 200px;
-        margin: 26px 10px 0 0;
-        padding: 13px 17px;
-        border: 0;
-        font-weight:600;
         font-size:15px;
-        text-decoration: none;
-        color: #fff;
-        background-color: rgba(114,30,10,0.3);
-        box-sizing: border-box;
-        border-radius: 10px;
-        /*box-shadow: 4px 3px 6px rgba(0,0,0,0.2) ;*/
-    }
-
-    .btn-type1:hover {
-        background-color: rgba(114,30,10,0.5);
     }
 
     .btn-type1 .text {
         display: inline-block;
         float: left;
         line-height: 30px;
-    }
-
-    .btn-type1 .caret {
-        display: inline-block;
-        border: 0;
-        width: 10px;
-        height: 30px;
-        background: transparent url("../images/icon_arrow.gif") no-repeat right center;
-        -webkit-background-size:10px 17px;
-        background-size:8px auto;
-
-    }
-
-    .btn-type1.appstore .icon {
-        display: inline-block;
-        float: left;
-        width: 34px;
-        height: 30px;
-        background: transparent url("../images/apple.png") no-repeat left top;
-        -webkit-background-size:25px 30px;
-        background-size:25px 30px;
-
-    }
-
-    .btn-type1.playstore .icon {
-        display: inline-block;
-        float: left;
-        width: 34px;
-        height: 30px;
-        background: transparent url("../images/android.png") no-repeat left top;
-        -webkit-background-size:26px 30px;
-        background-size:26px 30px;
-
     }
 }
 
 
 /* desktop */
 @media (min-width: 1366px) {
-    .logo,
-    .logo:hover,
-    .logo:active,
-    .logo:visited {
-        display: inline-block;
-        margin: 30px 0;
-        padding: 10px 17px;
-        font-weight: bold;
-        font-size: 100%;
-        text-transform: uppercase;
-        text-decoration: none;
-        color: #D48C78;
-        background-color: #FFFFFF;
-        border-color: #FFFFFF;
-        box-sizing: border-box;
-        border-radius: 4px;
-    }
-
-    .info-summary-wide {
-        /*background: none;*/
-        background: #ddb8aa url("../images/bg_1.jpg") no-repeat center top;
-        background-size: auto 100%;
-        vertical-align: bottom;
-    }
 
     .info-summary {
-        background: transparent url("../images/hand.png") no-repeat right bottom;
         background-size: auto;
-        padding-bottom: 200px;
+        padding-bottom: 270px;
     }
-    .context {
-        font-family:"gt";
+    .info-summary .context {
         margin-top: 154px;
-        color: #fff;
     }
 
-    .context .title {
+    .info-summary .context .title {
         font-weight:200;
         font-size: 65px;
         line-height: 76px;
-        letter-spacing: -2px;
         text-shadow: none;
     }
 
-    .context .title strong {
-        display: block;
+    .info-summary .context .title strong {
         font-size: 65px;
         line-height: 78px;
         letter-spacing: -2px;
-        font-weight:700;
-        text-transform: uppercase;
     }
 
-    .context .description {
+    .info-summary .context .description {
         margin-top: 28px;
-        font-weight:400;
-        font-size: 20px;
         color: #fff;
     }
 
@@ -489,65 +336,14 @@
     .btn-type1:hover,
     .btn-type1:active,
     .btn-type1:visited {
-        display: inline-block;
-        width: inherit;
-        margin: 26px 10px 0 0;
-        padding: 13px 17px;
-        border: 0;
-        font-weight:600;
+        width: 180px;
         font-size:15px;
-        text-decoration: none;
-        color: #fff;
-        background-color: rgba(114,30,10,0.3);
-        box-sizing: border-box;
-        border-radius: 10px;
-        /*box-shadow: 4px 3px 6px rgba(0,0,0,0.2) ;*/
-        cursor: pointer;
-    }
-
-    .btn-type1:hover {
-        background-color: rgba(114,30,10,0.5);
     }
 
     .btn-type1 .text {
         display: inline-block;
         float: left;
         line-height: 30px;
-    }
-
-    .btn-type1 .caret {
-        display: inline-block;
-        margin: 0 0 0 10px;
-        float: right;
-        border: 0;
-        width: 10px;
-        height: 30px;
-        background: transparent url("../images/icon_arrow.gif") no-repeat right center;
-        -webkit-background-size:10px 17px;
-        background-size:8px auto;
-
-    }
-
-    .btn-type1.appstore .icon {
-        display: inline-block;
-        float: left;
-        width: 34px;
-        height: 30px;
-        background: transparent url("../images/apple.png") no-repeat left top;
-        -webkit-background-size:25px 30px;
-        background-size:25px 30px;
-
-    }
-
-    .btn-type1.playstore .icon {
-        display: inline-block;
-        float: left;
-        width: 34px;
-        height: 30px;
-        background: transparent url("../images/android.png") no-repeat left top;
-        -webkit-background-size:26px 30px;
-        background-size:26px 30px;
-
     }
 }
 
