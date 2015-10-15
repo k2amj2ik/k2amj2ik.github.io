@@ -2,27 +2,27 @@
 @font-face {
     font-family:'gt';
     font-weight:200;
-    src:url('../fonts/gotham-extralight.woff') format('woff'), local(arial);
+    src:url('../fonts/gotham-extralight.woff') format('woff'), local(time new roman);
 }
 @font-face {
     font-family:'gt';
     font-weight:300;
-    src:url('../fonts/gotham-light.woff') format('woff'), local(arial);
+    src:url('../fonts/gotham-light.woff') format('woff'), local(time new roman);
 }
 @font-face {
     font-family:'gt';
     font-weight:400;
-    src:url('../fonts/gotham-book.woff') format('woff'), local(arial);
+    src:url('../fonts/gotham-book.woff') format('woff'), local(time new roman);
 }
 @font-face {
     font-family:'gt';
     font-weight:600;
-    src:url('../fonts/gotham-medium.woff') format('woff'), local(arial);
+    src:url('../fonts/gotham-medium.woff') format('woff'), local(time new roman);
 }
 @font-face {
     font-family:'gt';
     font-weight:700;
-    src:url('../fonts/gotham-bold.woff') format('woff'), local(arial);
+    src:url('../fonts/gotham-bold.woff') format('woff'), local(time new roman);
 }
 
 /*body {*/
