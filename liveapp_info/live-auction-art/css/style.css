@@ -609,11 +609,11 @@
         font-size: 63px;
         line-height: 76px;
         text-shadow: none;
-        width: 1000px;
     }
 
     .info-summary .context .title strong {
         font-size: 65px;
+        width: 1000px;
         line-height: 78px;
         letter-spacing: -2px;
     }
