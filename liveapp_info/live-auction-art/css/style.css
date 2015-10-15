@@ -33,9 +33,10 @@
     padding:0;
 }
 
-/*.description {*/
-    /*text-align: justify;*/
-/*}*/
+.description {
+    width: 800px;
+    /*text-align: justify;*/    
+}
 
 .logo {
     display: inline-block;
