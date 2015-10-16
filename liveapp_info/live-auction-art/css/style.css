@@ -34,7 +34,6 @@
 }
 
 .description {
-    width: 800px;
     /*text-align: justify;*/    
 }
 
@@ -61,7 +60,7 @@
 }
 
 .info-summary {
-    background: transparent url("../images/hand.png") no-repeat right bottom;
+    background: transparent url("../images/hand_big.png") no-repeat right bottom;
     background-size: auto 700px;
     padding-bottom: 600px;
 }
@@ -195,7 +194,6 @@
 
 .info-section1 .context .description {
     margin: 0 auto;
-    width: 100%;
     color: #777;
     font-weight:400;
     font-size: 18px;
@@ -254,7 +252,7 @@
 }
 
 .info-section3 {
-    background: transparent url("../images/img03.jpg") no-repeat center bottom;
+    background: transparent url("../images/img03.png") no-repeat center bottom;
     background-size: auto 280px;
     padding-bottom: 300px;
 }
@@ -402,6 +400,7 @@
     border: 0;
     overflow: hidden;
     background: transparent url("../images/icon.png") no-repeat center center;
+    background-size: 100% 100%;
 }
 
 .btn-type2,
@@ -430,7 +429,7 @@
     display: inline-block;
     width: 200px;
     height: 50px;
-    background: transparent url("../images/apple.png") no-repeat center center;
+    background: transparent url("../images/apple_b.png") no-repeat center center;
     -webkit-background-size:40px auto;
     background-size:40px auto;
 }
@@ -439,7 +438,7 @@
     display: inline-block;
     width: 200px;
     height: 50px;
-    background: transparent url("../images/android.png") no-repeat center center;
+    background: transparent url("../images/android_b.png") no-repeat center center;
     -webkit-background-size:40px auto;
     background-size:40px auto;
 }
@@ -598,7 +597,7 @@
 
     /* info-section3 */
     .info-section3 {
-        background: transparent url("../images/img03.jpg") no-repeat center bottom;
+        background: transparent url("../images/img03.png") no-repeat center bottom;
         background-size: auto 500px;
         padding-bottom: 570px;
     }
@@ -713,6 +712,7 @@
     }
 
     .info-section1 .context .description {
+        width: 800px;
         font-size: 20px;
         line-height: 26px;
     }
@@ -741,6 +741,7 @@
     }
 
     .info-section2 .context .description {
+        width: 800px;
         margin: 0 auto;
         color: #777;
         font-weight:400;
@@ -752,7 +753,7 @@
 
     /* info-section3 */
     .info-section3 {
-        background: transparent url("../images/img03.jpg") no-repeat center bottom;
+        background: transparent url("../images/img03.png") no-repeat center bottom;
         background-size: auto 500px;
         padding-bottom: 570px;
     }
@@ -772,6 +773,7 @@
     }
 
     .info-section3 .context .description {
+        width: 800px;
         font-size: 20px;
         line-height: 26px;
     }
@@ -809,7 +811,7 @@
 @media (min-width: 1366px) {
 
     .info-summary {
-        background-size: auto;
+        background-size: auto 825px;
         padding-bottom: 130px;
     }
     .info-summary .context {
@@ -862,7 +864,7 @@
 
     .info-section1 {
         background: transparent url("../images/img01_big.jpg") no-repeat center bottom;
-        padding-bottom: 550px;
+        padding-bottom: 470px;
     }
 
     .info-section1 .context {
@@ -916,6 +918,7 @@
     }
 
     .info-section2 .context .description {
+        width: 510px;
         font-size: 20px;
         line-height: 26px;
     }
@@ -926,7 +929,7 @@
     }
 
     .info-section3 {
-        background: transparent url("../images/img03.jpg") no-repeat right bottom;
+        background: transparent url("../images/img03.png") no-repeat right bottom;
         padding-bottom: 300px;
     }
 
@@ -960,6 +963,7 @@
 
     .info-section3 .context .description {
         margin: 0 auto;
+        width: 510px;
         color: #777;
         font-weight:400;
         font-size: 20px;
