@@ -204,7 +204,7 @@
 
 /* info-section2 */
 .info-section2 {
-    background: transparent url("../images/img02_small.jpg") no-repeat center bottom;
+    background: transparent url("../images/img02_small.jpg") no-repeat 10px bottom;
     background-size: auto 300px;
     padding-bottom: 350px;
 }
