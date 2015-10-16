@@ -26,7 +26,7 @@
 }
 
 /*body {*/
-    /*background: transparent url("../images/bg_temp.jpg") no-repeat center top;*/
+    /*background: transparent url("../images/1366.jpg") no-repeat center top;*/
 /*}*/
 
 .container-fluid {
@@ -54,7 +54,7 @@
 }
 
 .info-summary-wide {
-    background: #905460 url("../images/bg_1.jpg") no-repeat center center;
+    background: #905460 url("../images/bg_pad.jpg") no-repeat center center;
     background-size: cover;
     vertical-align: bottom;
 }
@@ -490,8 +490,14 @@
 /* ipad - portrait */
 @media (min-width: 768px){
 
+    .info-summary-wide {
+        background: #905460 url("../images/bg_pad.jpg") no-repeat center center;
+        background-size: cover;
+    }
+
     .info-summary {
-        background-size: auto 680px;
+        background: transparent url("../images/hand_big.png") no-repeat right bottom;
+        background-size: auto 600px;
         padding-bottom:400px
 
     }
@@ -647,6 +653,11 @@
 /* ipad - landscape */
 @media (min-width: 1024px){
 
+    .info-summary-wide {
+        background: #905460 url("../images/bg_1.jpg") no-repeat center center;
+        background-size: cover;
+    }
+
     .info-summary {
         background-size: auto 650px;
         padding-bottom:150px
@@ -721,7 +732,7 @@
     .info-section2 {
         background: transparent url("../images/img02_small.jpg") no-repeat center bottom;
         background-size: auto 450px;
-        padding-bottom: 500px;
+        padding-bottom: 440px;
     }
 
     .info-section2 .context {
@@ -810,12 +821,17 @@
 /* desktop */
 @media (min-width: 1366px) {
 
+    .info-summary-wide {
+        background: #905460 url("../images/bg_1.jpg") no-repeat center center;
+        background-size: cover;
+    }
+
     .info-summary {
         background-size: auto 825px;
         padding-bottom: 130px;
     }
     .info-summary .context {
-        margin-top: 154px;
+        margin-top: 80px;
         font-size: 28px;        
     }
 
