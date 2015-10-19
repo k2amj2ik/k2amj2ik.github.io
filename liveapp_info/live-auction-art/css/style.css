@@ -60,10 +60,17 @@
 }
 
 .info-summary {
+    position: relative;
     background: transparent url("../images/hand_big.png") no-repeat right bottom;
     background-size: auto 700px;
     padding-bottom: 600px;
 }
+
+/*.ani-live {*/
+    /*display: none;*/
+    /*position: absolute;*/
+/*}*/
+
 .info-summary .context {
     font-family:"gt";
     margin-top: 0;
@@ -499,8 +506,18 @@
         background: transparent url("../images/hand_big.png") no-repeat right bottom;
         background-size: auto 600px;
         padding-bottom:400px
-
     }
+
+    /*.ani-live {*/
+        /*display: block;*/
+        /*position: absolute;*/
+        /*background: transparent url("../images/hand_mid3_1.gif") no-repeat left top;*/
+        /*background-size: 100% auto;*/
+        /*width: 187.5px;*/
+        /*height: 67px;*/
+        /*top: 708px;*/
+        /*left: 499px;*/
+    /*}*/
     .info-summary .context {
         margin-top: 30px;
     }
@@ -661,8 +678,17 @@
     .info-summary {
         background-size: auto 650px;
         padding-bottom:150px
-
     }
+    /*.ani-live {*/
+        /*display: none;*/
+        /*position: absolute;*/
+        /*background: transparent url("../images/hand_mid3_1.gif") no-repeat left top;*/
+        /*background-size: 100% auto;*/
+        /*width: 203px;*/
+        /*height: 73px;*/
+        /*top: 359px;*/
+        /*left: 899px;*/
+    /*}*/
     .info-summary .context {
         margin-top: 30px;
     }
@@ -816,6 +842,7 @@
         line-height: 30px;
         text-align: left;
     }
+
 }
 
 /* desktop */
@@ -827,9 +854,23 @@
     }
 
     .info-summary {
-        background-size: auto 825px;
+        background-size: auto 822px;
         padding-bottom: 130px;
     }
+    /*.ani-live {*/
+        /*display: block;*/
+        /*position: absolute;*/
+        /*background: transparent url("../images/hand_mid3_1.gif") no-repeat left top;*/
+        /*background-size: 100% auto;*/
+        /*width: 258px;*/
+        /*height: 92px;*/
+        /*top: 449px;*/
+        /*left: 826px;*/
+    /*}*/
+    /*.ani-live {*/
+        /*top: 708px\9;*/
+        /*left: 503px\9;*/
+    /*}*/
     .info-summary .context {
         margin-top: 80px;
         font-size: 28px;        
@@ -1028,7 +1069,6 @@
         font-size: 20px;
         line-height: 26px;
     }
-
 }
 
 /* wide desktop */
@@ -1039,3 +1079,4 @@
         background-size: cover;
     }
 }
+

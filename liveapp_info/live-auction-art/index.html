@@ -7,10 +7,12 @@
     <meta name="keywords" content="Fine Art, Auction, Artist, Live Auction, Art, G&S ART, Real">
     <meta name="author" content="G&S ART">
     <title>Live Auction Art</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/png" href="images/favicon.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <body>
 <div class="container-fluid info-summary-wide">
     <div class="container info-summary">
@@ -24,18 +26,26 @@
                 live fine art auction results from around the world in one app.
             </p>
             <div class="download">
-                <button class="btn-type1 appstore">
-                    <span class="icon"></span>
-                    <span class="text">App Store</span>
-                    <span class="caret"></span>
+                <button class="btn-type2" data-toggle="popover" data-trigger="focus" title="" data-placement="bottom" data-content="<span style='color:#333'>November, coming Soon!</color>">
+                    <span class="text">COMING SOON</span>
                 </button>
-                <button class="btn-type1 playstore">
-                    <span class="icon"></span>
-                    <span class="text">Google Play</span>
-                    <span class="caret"></span>
-                </button>
+                <!--<button class="btn-type1 appstore" data-toggle="popover" data-trigger="focus" title="" data-placement="top" data-content="<span style='color:#333'>November, coming Soon!</color>">-->
+                    <!--<span class="icon"></span>-->
+                    <!--<span class="text">App Store</span>-->
+                    <!--<span class="caret"></span>-->
+                <!--</button>-->
+                <!--<button class="btn-type1 playstore" data-toggle="popover" data-trigger="focus" title="" data-placement="top" data-content="<span style='color:#333'>November, coming Soon!</color>">-->
+                    <!--<span class="icon"></span>-->
+                    <!--<span class="text">Google Play</span>-->
+                    <!--<span class="caret"></span>-->
+                <!--</button>-->
             </div>
         </div>
+        <!--<div class="ani-live"></div>-->
+        <!--<video preload="none" autoplay class="ani-live">-->
+            <!--<source src="images/hand_mid3.mp4" type="video/mp4">-->
+            <!--<source src="images/hand_mid3.webm" type="video/webm">-->
+        <!--</video>-->
     </div>
 </div>
 
@@ -122,12 +132,15 @@
                 Download Now
             </p>
             <div class="download">
-                <button class="btn-type2 appstore">
-                    <span class="icon"></span>
+                <button class="btn-type2" data-toggle="popover" data-trigger="focus" title="" data-placement="bottom" data-content="<span style='color:#333'>November, coming Soon!</color>">
+                    <span class="text">COMING SOON</span>
                 </button>
-                <button class="btn-type2 playstore">
-                    <span class="icon"></span>
-                </button>
+                <!--<button class="btn-type2 appstore" data-toggle="popover" data-trigger="focus" title="" data-placement="bottom" data-content="<span style='color:#333'>November, coming Soon!</color>">-->
+                    <!--<span class="icon"></span>-->
+                <!--</button>-->
+                <!--<button class="btn-type2 playstore" data-toggle="popover" data-trigger="focus" title="" data-placement="bottom" data-content="<span style='color:#333'>November, coming Soon!</color>">-->
+                    <!--<span class="icon"></span>-->
+                <!--</button>-->
             </div>
         </div>
     </div>
@@ -149,6 +162,11 @@
 
     ga('create', 'UA-68933947-1', 'auto');
     ga('send', 'pageview');
-
 </script>
+<script>
+    $(function(){
+        $("[data-toggle=popover]").popover({html : true});
+    });
+</script>
+
 </body></html>

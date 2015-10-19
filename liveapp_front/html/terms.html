@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>Live Auction - HTML</title>
+	<link rel="stylesheet" href="../asset/css/css.css" />
+	<link rel="apple-touch-icon-precomposed" href="../asset/images/br.png" />
+	<link rel="apple-touch-startup-image" href="../asset/images/br.png" />
+	<link rel="icon" href="../asset/images/br.png" />
+	<style type="text/css">
+body {position:relative; width:100%; height:100%; overflow:hidden; background:#4b8adc linear-gradient(#4b8adc, #3baeda); color:#fff;}
+h1 {position:fixed; top:30px; left:0; width:100%; font-size:29.4px; font-weight:600; text-align:center;}
+.div {position:relative; width:100%; height:100%; overflow:hidden; box-sizing:border-box; padding:75px 25px 115px; z-index:1;}
+.terms {position:relative; width:100%; height:100%; overflow-y:scroll; overflow-x:hidden; -webkit-overflow-scrolling:touch; box-sizing:border-box; padding:10px; box-shadow:1px 1px 0 rgba(100,100,100,0.5); font-size:15px; color:#444; line-height:1.5em; background:#fff;}
+.terms::after {content:''; position:absolute; bottom:0; left:0; width:100%; height:50px; background:linear-gradient(rgba(255,255,255,0), rgba(255,255,255,1)); z-index:2;}
+.a {position:fixed; bottom:0; left:0; z-index:3; width:100%; height:100px; box-sizing:border-box; padding:0 25px;}
+.a a {float:right; display:block; width:46%; height:70px; box-sizing:border-box; padding:25px 0; box-shadow:1px 1px 0 rgba(100,100,100,0.5); background:#222; color:#fff; font-size:20px; text-align:center;}
+.a a:first-child {float:left; background:transparent; border:2px solid #fff; padding:23px 0;}
+
+.mask {position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:1;}
+.lay {position:absolute; top:50%; left:0; box-sizing:border-box; width:100%; height:250px; margin-top:-135px; padding:0 15px; z-index:100;}
+.lay .in {position:relative; width:100%; height:250px; background:#222; text-align:center; color:#fff; z-index:2;}
+.lay .in .tit {padding-top:33px; font-weight:600; font-size:22.6px;}
+.lay .in .cont {margin-top:20px; font-size:18px; line-height:1.25em;}
+.lay .in .btn {margin-top:25px;}
+.lay .in .btn button {width:140px; height:55px; box-sizing:border-box; font-size:20px; color:#222; background:#fff; text-align:center;}
+	</style>
+</head>
+
+<body>
+<h1>Terms and Conditions</h1>
+<div class="div">
+	<div class="terms">
+		Your use of the PETA text message and alert service (“the Service”) is governed by the terms and conditions below. Use of the Service constitutes your acceptance of these terms, which take effect when you sign up for the Service. If you do not agree to these terms, please do not sign up for the Service.<br>
+		1. You must be at least 13 years old to use the Service, and if you are under 18 (in the U.S.) or under the age of majority in your province/territory of residence, your parent or guardian must have read and agreed to these terms before you subscribe.<br>
+		2. You must be at least 13 years old to use the Service, and if you are under 18 <br>
+		1. You must be at least 13 years old to use the Service, and if you are under 18 (in the U.S.) or under the age of majority in your province/territory of residence, your parent or guardian must have read and agreed to these terms before you subscribe.<br>
+		2. You must be at least 13 years old to use the Service, and if you are under 18 <br>
+		1. You must be at least 13 years old to use the Service, and if you are under 18 (in the U.S.) or under the age of majority in your province/territory of residence, your parent or guardian must have read and agreed to these terms before you subscribe.<br>
+		2. You must be at least 13 years old to use the Service, and if you are under 18 <br>
+		1. You must be at least 13 years old to use the Service, and if you are under 18 (in the U.S.) or under the age of majority in your province/territory of residence, your parent or guardian must have read and agreed to these terms before you subscribe.<br>
+		2. You must be at least 13 years old to use the Service, and if you are under 18 <br>
+	</div>
+</div>
+<p class="a">
+	<a href="javascript:void(0)">Disagree</a>
+	<a href="javascript:void(0)" onclick="document.getElementById('layer').style.display='block'">Agree</a>
+</p>
+
+<div class="lay" id="layer">
+	<div class="mask"></div>
+	<div class="in">
+		<p class="tit">Terms and Conditions</p>
+		<div class="cont">
+			You must agree to<br>
+			our Terms and Conditions<br>
+			in order to continue.
+		</div>
+		<p class="btn">
+			<button type="button" onclick="document.getElementById('layer').style.display='none'">OK</button>
+		</p>
+	</div>
+</div>
+
+</body>
+</html>
