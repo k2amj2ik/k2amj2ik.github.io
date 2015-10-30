@@ -718,3 +718,7 @@ select {
     width: 110px;
     border:1px solid #eee;
 }
+
+.wv-box {
+    width: 90%;
+}
