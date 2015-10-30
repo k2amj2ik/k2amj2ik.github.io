@@ -25,37 +25,75 @@
 	/*src:url('fonts/gotham-bold.woff') format('woff'), local(times new romans);*/
 /*}*/
 
-/* ClementePDaa */
+/*/!* Cravity *!/*/
+
+/*@font-face {*/
+	/*font-family:'gt';*/
+	/*font-weight:200;*/
+	/*src:url('fonts/Gravity-UltraLight.woff') format('woff'), local(times new romans);*/
+/*}*/
+/*@font-face {*/
+	/*font-family:'gt';*/
+	/*font-weight:300;*/
+	/*src:url('fonts/Gravity-Light.woff') format('woff'), local(times new romans);*/
+/*}*/
+/*@font-face {*/
+	/*font-family:'gt';*/
+	/*font-weight:400;*/
+	/*src:url('fonts/Gravity-Book.woff') format('woff'), local(times new romans);*/
+/*}*/
+/*@font-face {*/
+	/*font-family:'gt';*/
+	/*font-weight:600;*/
+	/*src:url('fonts/Gravity-Bold.woff') format('woff'), local(times new romans);*/
+/*}*/
+/*@font-face {*/
+	/*font-family:'gt';*/
+	/*font-weight:700;*/
+	/*src:url('fonts/Gravity-Bold.woff') format('woff'), local(times new romans);*/
+/*}*/
+/*@font-face {*/
+	/*font-family:'gt';*/
+	/*font-weight:800;*/
+	/*src:url('fonts/Gravity-Bold.woff') format('woff'), local(times new romans);*/
+/*}*/
+
+/* homizio */
 
 @font-face {
 	font-family:'gt';
 	font-weight:200;
-	src:url('fonts/Gravity-UltraLight.woff') format('woff'), local(times new romans);
+	src:url('fonts/Homizio-thin.woff') format('woff'), local(times new romans);
 }
 @font-face {
 	font-family:'gt';
 	font-weight:300;
-	src:url('fonts/Gravity-UltraLight.woff') format('woff'), local(times new romans);
+	src:url('fonts/Gravity-Light.woff') format('woff'), local(times new romans);
 }
 @font-face {
 	font-family:'gt';
 	font-weight:400;
-	src:url('fonts/Gravity-Book.woff') format('woff'), local(times new romans);
+	src:url('fonts/Homizio-regular.woff') format('woff'), local(times new romans);
 }
 @font-face {
 	font-family:'gt';
 	font-weight:600;
-	src:url('fonts/Gravity-Bold.woff') format('woff'), local(times new romans);
+	src:url('fonts/Homizio-Medium.woff') format('woff'), local(times new romans);
 }
 @font-face {
 	font-family:'gt';
 	font-weight:700;
-	src:url('fonts/Gravity-Bold.woff') format('woff'), local(times new romans);
+	src:url('fonts/Homizio-Medium.woff') format('woff'), local(times new romans);
 }
 @font-face {
 	font-family:'gt';
 	font-weight:800;
-	src:url('fonts/Gravity-Bold.woff') format('woff'), local(times new romans);
+	src:url('fonts/Homizio-Bold.woff') format('woff'), local(times new romans);
+}
+@font-face {
+	font-family:'gt';
+	font-weight:900;
+	src:url('fonts/Homizio-Black.woff') format('woff'), local(times new romans);
 }
 
 /*@font-face {*/
