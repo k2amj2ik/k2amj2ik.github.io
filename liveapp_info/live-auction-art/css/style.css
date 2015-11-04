@@ -118,7 +118,7 @@
     font-size:20px;
     text-decoration: none;
     color: #fff;
-    background-color: rgba(114,30,10,0.3);
+    background: rgba(114,30,10,0.3) url(../images/home_beta.png) no-repeat right top;
     box-sizing: border-box;
     border-radius: 10px;
     cursor: pointer;
@@ -129,7 +129,7 @@
 }
 
 .btn-type1 .caret {
-    display: inline-block;
+    display: none;
     float: right;
     border: 0;
     width: 10px;
@@ -406,7 +406,7 @@
     height: 80px;
     border: 0;
     overflow: hidden;
-    background: transparent url("../images/icon.png") no-repeat center center;
+    background: transparent url("../images/icon_big.png") no-repeat center center;
     background-size: 100% 100%;
 }
 
@@ -422,7 +422,7 @@
     font-size:20px;
     text-decoration: none;
     color: #fff;
-    background-color: rgba(114,30,10,0.3);
+    background: rgba(114,30,10,0.3) url(../images/home_beta.png) no-repeat right top;
     box-sizing: border-box;
     border-radius: 10px;
     cursor: pointer;
