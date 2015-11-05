@@ -434,7 +434,7 @@
 
 .btn-type2.appstore .icon {
     display: inline-block;
-    width: 200px;
+    width: 250px;
     height: 50px;
     background: transparent url("../images/apple_b.png") no-repeat center center;
     -webkit-background-size:40px auto;
@@ -443,7 +443,7 @@
 
 .btn-type2.playstore .icon {
     display: inline-block;
-    width: 200px;
+    width: 250px;
     height: 50px;
     background: transparent url("../images/android_b.png") no-repeat center center;
     -webkit-background-size:40px auto;
@@ -553,7 +553,7 @@
     .btn-type1:hover,
     .btn-type1:active,
     .btn-type1:visited {
-        width: 200px;
+        width: 250px;
         font-size:15px;
     }
 
@@ -722,7 +722,7 @@
     .btn-type1:hover,
     .btn-type1:active,
     .btn-type1:visited {
-        width: 200px;
+        width: 250px;
         font-size:15px;
     }
 
@@ -905,7 +905,7 @@
     .btn-type1:hover,
     .btn-type1:active,
     .btn-type1:visited {
-        width: 180px;
+        width: 250px;
         font-size:15px;
     }
 
