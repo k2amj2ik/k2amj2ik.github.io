@@ -1,0 +1,120 @@
+<html lang="ko"><head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<!-- Enable all requests, inline styles, and eval() -->
+	<meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
+	<!--  etc CSS  -->
+	<link rel="stylesheet" href="css/icecream/icecream-grid.css">
+	<!--<link rel="stylesheet" href="css/ratchet/ratchet.css">-->
+	<link rel="stylesheet" href="css/pageslider/pageslider.css">
+	<!--  main CSS  -->
+	<link rel="stylesheet" href="css/main.css">
+
+	<title>Live Auction App</title>
+	<!--  Weinre Url  -->
+	<!--<script type="text/javascript" src="http://192.168.0.13:8080/target/target-script-min.js#anonymous"></script>-->
+</head>
+<body>
+
+
+<!-- Preload -->
+<script type="text/javascript" src="lib/moment/moment.js"></script>
+<script type="text/javascript" src="lib/moment/twix.js"></script>
+<script type="text/javascript" src="lib/moment/moment-timezone-with-data.js"></script>
+<script data-main="module/app" src="lib/require/require.js"></script>
+
+
+<div id="264" class="page transition center"><header>
+	<span id="goHome"><h1>Live Art Auction</h1></span>
+	<span class="go_back"><img src="img/btn_back.png" alt="back"></span>
+</header>
+<div id="wrapper" class="lot_list t145">		<!-- upcoming: t145, ongoing: t175, past: t185 -->
+	<div class="top_fix move_other_auction">
+		<div id="auctionInfoWrapper" class="c1">
+			<a class="open_others a">
+				<span id="ico" class="ico b">C</span> <!-- 진행중인 경우 class에 b 추가됩니다. -->
+				<div class="cont">
+					<p id="vendor" class="vendor">Christies [25920]</p>
+					<p id="aucDate" class="vendor">October 14th 2015, 2:00 pm</p>
+					<p id="title" class="title">ASOBI: Japanese and Korean Modern &amp; Contemporary Art</p>
+				</div>
+			</a>
+			<!-- 시작전 -->
+			<div id="upcoming" class="auction_sale_info upcoming">
+				<span class="b"></span>
+				<div class="remains">
+					<span class="tit">Starts in</span>
+					<span class="times"><span>10</span>h <span>23</span>m <span>23</span>s</span>
+				</div>
+			</div>
+
+			<!-- 진행중인 경매 -->
+			<div id="ongoing" class="auction_sale_info ongoing" style="display:none">
+				<span class="b"></span>
+				<div class="time">
+					<p class="lot_no">Lot. 157</p>
+					<p class="clock"><span>01</span> <em class="c_white">:</em> <span>46</span></p>
+				</div>
+				<div class="cont">
+					<p class="artist">Marc Chagall</p>
+					<p class="title">Corbeille de fruits et bouquet dans la nuit</p>
+					<p class="price">£15,500,000</p>
+				</div>
+			</div>
+			<!-- 종료된 경매 -->
+			<div id="past" class="auction_sale_info past" style="display:none">
+				<span class="b"></span>
+				<p class="tit">SALE TOTAL</p>
+				<div class="prices">
+					<strong class="p1">£15,500,000</strong>
+					<span class="p2">$15,500,000</span>
+					<span class="txt">Hammer</span>
+				</div>
+			</div>
+		</div>
+
+		<ul class="other_auctions scrollY">
+			<!--<li class="c3">-->
+				<!--<a href="javascript:void(0)" class="a">-->
+					<!--<span class="ico b">B</span> &lt;!&ndash; 진행중인 경우 class에 b 추가됩니다. &ndash;&gt;-->
+					<!--<div class="cont">-->
+						<!--<p class="vendor">bonhams &middot; Sep 8, 10:00am</p>-->
+						<!--<p class="title">Out of Ordinary</p>-->
+					<!--</div>-->
+				<!--</a>-->
+			<!--</li>-->
+			<!--<li class="c2">-->
+				<!--<a href="javascript:void(0)" class="a">-->
+					<!--<span class="ico b">S</span> &lt;!&ndash; 진행중인 경우 class에 b 추가됩니다. &ndash;&gt;-->
+					<!--<div class="cont">-->
+						<!--<p class="vendor">Sothebys &middot; Sep 8, 10:00am</p>-->
+						<!--<p class="title">Out of Ordinary</p>-->
+					<!--</div>-->
+				<!--</a>-->
+			<!--</li>-->
+			<!--<li class="c5">-->
+				<!--<a href="javascript:void(0)" class="a">-->
+					<!--<span class="ico">P</span> &lt;!&ndash; 진행중인 경우 class에 b 추가됩니다. &ndash;&gt;-->
+					<!--<div class="cont">-->
+						<!--<p class="vendor">Polyauction &middot; Sep 8, 10:00am</p>-->
+						<!--<p class="title">Out of Ordinary</p>-->
+					<!--</div>-->
+				<!--</a>-->
+			<!--</li>-->
+			<!--<li class="c1">-->
+				<!--<a href="javascript:void(0)" class="a">-->
+					<!--<span class="ico b">C</span> &lt;!&ndash; 진행중인 경우 class에 b 추가됩니다. &ndash;&gt;-->
+					<!--<div class="cont">-->
+						<!--<p class="vendor">Christies &middot; Sep 8, 10:00am</p>-->
+						<!--<p class="title">Out of Ordinary</p>-->
+					<!--</div>-->
+				<!--</a>-->
+			<!--</li>-->
+		</ul>
+	</div>
+	
+	
+	<ul id="lotList" class="auction_list c1"><li class="past">   <div class="bg"></div>   <a href="#lotDetail/1584154" class="detail">       <p class="lot_no">Lot. 1</p>       <div class="c_wrap">           <div class="thumb img_align"><canvas id="canvas_1584154"></canvas></div>           <div class="cont">               <p class="artist">Yoshihara Jiro</p>               <p class="title">Untitled</p>               <p class="price"> high)  (GBP) £ 50,000</p>               <p class="price"> low)  (GBP) £ 60,000</p>           </div>       </div>       <div class="result">           <span class="c_black">PASSED</span>       </div>   </a></li><li class="past">   <div class="bg"></div>   <a href="#lotDetail/1584086" class="detail">       <p class="lot_no">Lot. 2</p>       <div class="c_wrap">           <div class="thumb img_align"><canvas id="canvas_1584086"></canvas></div>           <div class="cont">               <p class="artist">Yoshihara Jiro</p>               <p class="title">Untitled</p>               <p class="price"> high)  (GBP) £ 18,000</p>               <p class="price"> low)  (GBP) £ 12,100</p>           </div>       </div>       <div class="result">           <span> (GBP) £ 12,100 </span>       </div>   </a></li><li class="past">   <div class="bg"></div>   <a href="#lotDetail/1584087" class="detail">       <p class="lot_no">Lot. 3</p>       <div class="c_wrap">           <div class="thumb img_align"><canvas id="canvas_1584087"></canvas></div>           <div class="cont">               <p class="artist">Shiraga Kazuo</p>               <p class="title">Haten</p>               <p class="price"> high)  (GBP) £ 200,000</p>               <p class="price"> low)  (GBP) £ 242,000</p>           </div>       </div>       <div class="result">           <span> (GBP) £ 242,000 </span>       </div>   </a></li><li class="past">   <div class="bg"></div>   <a href="#lotDetail/1584088" class="detail">       <p class="lot_no">Lot. 4</p>       <div class="c_wrap">           <div class="thumb img_align"><canvas id="canvas_1584088"></canvas></div>           <div class="cont">               <p class="artist">Shiraga Kazuo</p>               <p class="title">Untitled</p>               <p class="price"> high)  (GBP) £ 40,000</p>               <p class="price"> low)  (GBP) £ 26,400</p>           </div>       </div>       <div class="result">           <span class="c_black">PASSED</span>       </div>   </a></li><li class="past">   <div class="bg"></div>   <a href="#lotDetail/1584089" class="detail">       <p class="lot_no">Lot. 5</p>       <div class="c_wrap">           <div class="thumb img_align"><canvas id="canvas_1584089"></canvas></div>           <div class="cont">               <p class="artist">Shiraga Kazuo</p>               <p class="title">Untitled</p>               <p class="price"> high)  (GBP) £ 50,000</p>               <p class="price"> low)  (GBP) £ 22,000</p>           </div>       </div>       <div class="result">           <span class="c_black">WITHDRAWN</span>       </div>   </a></li><li class="past">   <div class="bg"></div>   <a href="#lotDetail/1584090" class="detail">       <p class="lot_no">Lot. 6</p>       <div class="c_wrap">           <div class="thumb img_align"><canvas id="canvas_1584090"></canvas></div>           <div class="cont">               <p class="artist">Tanaka Atsuko</p>               <p class="title">Work</p>               <p class="price"> high)  (GBP) £ 10,000</p>               <p class="price"> low)  (GBP) £ 4,800</p>           </div>       </div>       <div class="result">           <span> (GBP) £ 4,800 </span>       </div>   </a></li><li class="past">   <div class="bg"></div>   <a href="#lotDetail/1584091" class="detail">       <p class="lot_no">Lot. 7</p>       <div class="c_wrap">           <div class="thumb img_align"><canvas id="canvas_1584091"></canvas></div>           <div class="cont">               <p class="artist">Tanaka Atsuko</p>               <p class="title">Untitled</p>               <p class="price"> high)  (GBP) £ 60,000</p>               <p class="price"> low)  (GBP) £ 35,000</p>           </div>       </div>       <div class="result">           <span> (GBP) £ 35,000 </span>       </div>   </a></li><li class="past">   <div class="bg"></div>   <a href="#lotDetail/1584092" class="detail">       <p class="lot_no">Lot. 8</p>       <div class="c_wrap">           <div class="thumb img_align"><canvas id="canvas_1584092"></canvas></div>           <div class="cont">               <p class="artist">Maekawa Tsuyoshi</p>               <p class="title">Work</p>               <p class="price"> high)  (GBP) £ 7,000</p>               <p class="price"> low)  (GBP) £ 8,500</p>           </div>       </div>       <div class="result">           <span> (GBP) £ 8,500 </span>       </div>   </a></li><li class="past">   <div class="bg"></div>   <a href="#lotDetail/1584093" class="detail">       <p class="lot_no">Lot. 9</p>       <div class="c_wrap">           <div class="thumb img_align"><canvas id="canvas_1584093"></canvas></div>           <div class="cont">               <p class="artist">Sumi Yasuo</p>               <p class="title">Work, Mizugami</p>               <p class="price"> high)  (GBP) £ 6,000</p>               <p class="price"> low)  (GBP) £ 3,200</p>           </div>       </div>       <div class="result">           <span> (GBP) £ 3,200 </span>       </div>   </a></li><li class="past">   <div class="bg"></div>   <a href="#lotDetail/1584094" class="detail">       <p class="lot_no">Lot. 10</p>       <div class="c_wrap">           <div class="thumb img_align"><canvas id="canvas_1584094"></canvas></div>           <div class="cont">               <p class="artist">Yoshida Toshio</p>               <p class="title">Untitled</p>               <p class="price"> high)  (GBP) £ 9,000</p>               <p class="price"> low)  (GBP) £ 12,000</p>           </div>       </div>       <div class="result">           <span> (GBP) £ 12,000 </span>       </div>   </a></li><li class="past">   <div class="bg"></div>   <a href="#lotDetail/1584095" class="detail">       <p class="lot_no">Lot. 11</p>       <div class="c_wrap">           <div class="thumb img_align"><canvas id="canvas_1584095"></canvas></div>           <div class="cont">               <p class="artist">Shimamoto Shozo</p>               <p class="title">Work</p>               <p class="price"> high)  (GBP) £ 60,000</p>               <p class="price"> low)  (GBP) £ 32,000</p>           </div>       </div>       <div class="result">           <span> (GBP) £ 32,000 </span>       </div>   </a></li><li class="past">   <div class="bg"></div>   <a href="#lotDetail/1584096" class="detail">       <p class="lot_no">Lot. 12</p>       <div class="c_wrap">           <div class="thumb img_align"><canvas id="canvas_1584096"></canvas></div>           <div class="cont">               <p class="artist">Nasaka Senkichiro</p>               <p class="title">Work K</p>               <p class="price"> high)  (GBP) £ 5,000</p>               <p class="price"> low)  (GBP) £ 2,600</p>           </div>       </div>       <div class="result">           <span> (GBP) £ 2,600 </span>       </div>   </a></li><li class="past">   <div class="bg"></div>   <a href="#lotDetail/1584097" class="detail">       <p class="lot_no">Lot. 13</p>       <div class="c_wrap">           <div class="thumb img_align"><canvas id="canvas_1584097"></canvas></div>           <div class="cont">               <p class="artist">Nasaka Yuko</p>               <p class="title">8 (Infinity) 1964-9</p>               <p class="price"> high)  (GBP) £ 35,000</p>               <p class="price"> low)  (GBP) £ 105,000</p>           </div>       </div>       <div class="result">           <span> (GBP) £ 105,000 </span>       </div>   </a></li><li class="past">   <div class="bg"></div>   <a href="#lotDetail/1584098" class="detail">       <p class="lot_no">Lot. 14</p>       <div class="c_wrap">           <div class="thumb img_align"><canvas id="canvas_1584098"></canvas></div>           <div class="cont">               <p class="artist">Nasaka Yuko</p>               <p class="title">Work</p>               <p class="price"> high)  (GBP) £ 12,000</p>               <p class="price"> low)  (GBP) £ 11,000</p>           </div>       </div>       <div class="result">           <span> (GBP) £ 11,000 </span>       </div>   </a></li><li class="past">   <div class="bg"></div>   <a href="#lotDetail/1584099" class="detail">       <p class="lot_no">Lot. 15</p>       <div class="c_wrap">           <div class="thumb img_align"><canvas id="canvas_1584099"></canvas></div>           <div class="cont">               <p class="artist">Yoshihara Michio</p>               <p class="title">Tebo 8912</p>               <p class="price"> high)  (GBP) £ 8,000</p>               <p class="price"> low)  (GBP) £ 4,200</p>           </div>       </div>       <div class="result">           <span> (GBP) £ 4,200 </span>       </div>   </a></li><li class="past">   <div class="bg"></div>   <a href="#lotDetail/1584100" class="detail">       <p class="lot_no">Lot. 16</p>       <div class="c_wrap">           <div class="thumb img_align"><canvas id="canvas_1584100"></canvas></div>           <div class="cont">               <p class="artist">Ukita Yozo</p>               <p class="title">Untitled</p>               <p class="price"> high)  (GBP) £ 4,000</p>               <p class="price"> low)  (GBP) £ 2,200</p>           </div>       </div>       <div class="result">           <span> (GBP) £ 2,200 </span>       </div>   </a></li><li class="past">   <div class="bg"></div>   <a href="#lotDetail/1584101" class="detail">       <p class="lot_no">Lot. 17</p>       <div class="c_wrap">           <div class="thumb img_align"><canvas id="canvas_1584101"></canvas></div>           <div class="cont">               <p class="artist">Uemae Chiyu</p>               <p class="title">Untitled</p>               <p class="price"> high)  (GBP) £ 10,000</p>               <p class="price"> low)  (GBP) £ 5,500</p>           </div>       </div>       <div class="result">           <span class="c_black">PASSED</span>       </div>   </a></li><li class="past">   <div class="bg"></div>   <a href="#lotDetail/1584102" class="detail">       <p class="lot_no">Lot. 18</p>       <div class="c_wrap">           <div class="thumb img_align"><canvas id="canvas_1584102"></canvas></div>           <div class="cont">               <p class="artist">Motonaga Sadamasa</p>               <p class="title">QQ</p>               <p class="price"> high)  (GBP) £ 16,000</p>               <p class="price"> low)  (GBP) £ 19,000</p>           </div>       </div>       <div class="result">           <span> (GBP) £ 19,000 </span>       </div>   </a></li><li class="past">   <div class="bg"></div>   <a href="#lotDetail/1584103" class="detail">       <p class="lot_no">Lot. 19</p>       <div class="c_wrap">           <div class="thumb img_align"><canvas id="canvas_1584103"></canvas></div>           <div class="cont">               <p class="artist">Motonaga Sadamasa</p>               <p class="title">Irodama</p>               <p class="price"> high)  (GBP) £ 20,000</p>               <p class="price"> low)  (GBP) £ 24,000</p>           </div>       </div>       <div class="result">           <span> (GBP) £ 24,000 </span>       </div>   </a></li><li class="past">   <div class="bg"></div>   <a href="#lotDetail/1584104" class="detail">       <p class="lot_no">Lot. 20</p>       <div class="c_wrap">           <div class="thumb img_align"><canvas id="canvas_1584104"></canvas></div>           <div class="cont">               <p class="artist">Shimamoto Shozo</p>               <p class="title">Untitled</p>               <p class="price"> high)  (GBP) £ 15,000</p>               <p class="price"> low)  (GBP) £ 7,500</p>           </div>       </div>       <div class="result">           <span> (GBP) £ 7,500 </span>       </div>   </a></li></ul>
+
+</div>
+<span id="go_top" onclick="window.scrollTo(0,0)"></span></div></body></html>
