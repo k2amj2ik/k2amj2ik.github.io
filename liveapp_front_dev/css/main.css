@@ -259,7 +259,7 @@ header .gohome img {display:none}
 /* lot list */
 .lot_list .top_fix {position:fixed; top:50px; left:0; width:100%; height:65px; box-sizing:border-box; overflow:visible; background:#fff; z-index:100;}
 .move_other_auction {box-shadow:0 4px 0 rgba(203,203,203,0.5);}
-.move_other_auction .a {position:relative; display:block; width:100%; height:65px; box-sizing:border-box; padding:15px 16px 15px 62px;}
+.move_other_auction .a {position:relative; display:block; width:100%; height:65px; box-sizing:border-box; padding:7px 16px 15px 62px;}
 
 /*.move_other_auction .a::after {content:''; position:absolute; right:20px; top:50%; margin-top:-4px; width:16px; height:8px; background:url('../img/ico_arrow_ud.png') no-repeat 0 0; background-size:16px 16px;}*/
 .move_other_auction .a::after {content:''; position:absolute; right:20px; top:50%; margin-top:-4px; width:16px; height:8px;}
@@ -301,7 +301,8 @@ header .gohome img {display:none}
 
 .move_other_auction .a .cont {position:relative; top:1px;}
 .move_other_auction .a .cont p {width:100%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; line-height:1.3em;}
-.move_other_auction .a .cont .vendor {font-size:13.5px; color:#222;}
+.move_other_auction .a .cont .vendor {font-size:12.5px; color:#222;}
+.move_other_auction .a .cont .lots {font-size:13px; color:#777;letter-spacing: -1px}
 .move_other_auction .a .cont .title {font-size:13.5px; color:#222; font-weight:600;}
 .move_other_auction .other_auctions {position:absolute; top:65px; left:0; width:100%; max-height:180px; border-top:4px solid #ddd; border-bottom:1px solid #ddd; background:#ebebeb; z-index:101; display:none;}
 .move_other_auction .other_auctions li {width:100%; height:60px; border-top:1px solid #ddd;}
