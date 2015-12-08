@@ -623,7 +623,7 @@ header .gohome img {display:none}
 	padding:4px 10px;
 	width:50px;
 	height:48px;
-	border-radius: none;
+	border-radius: 0;
 	background-color:transparent;
 	border:2px solid #ccc;
 	color: #aaa;
