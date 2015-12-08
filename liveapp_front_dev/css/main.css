@@ -620,16 +620,16 @@ header .gohome img {display:none}
 	position: absolute;
 	right:20px;
 	top:20px;
-	padding:4px 0 0 14px;
+	padding:4px 0 0 50px;
 	font-size:180%;
 	width:50px;
 	height:48px;
 	overflow: hidden;
 	border-radius: 0;
-	background-color:transparent;
 	border:2px solid #ccc;
 	color: #aaa;
-	border: 2px solid #ccc;
+	opacity:0.5;
+	background: transparent url('https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_down_48px-128.png') no-repeat center center;background-size:50% auto
 }
 
 .btn-more {
