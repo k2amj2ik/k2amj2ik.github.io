@@ -603,6 +603,7 @@ header .gohome img {display:none}
 .gotolots > select {
 	width:100%;
 	height:30px;
+	border:2px solid #eee;
 }
 
 .btn-more {
