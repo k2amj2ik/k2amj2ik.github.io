@@ -1,0 +1,56 @@
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<!-- Enable all requests, inline styles, and eval() -->
+	<meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
+	<!--  etc CSS  -->
+	<link rel="stylesheet" href="css/icecream/icecream-grid.css">
+	<!--<link rel="stylesheet" href="css/ratchet/ratchet.css">-->
+	<link rel="stylesheet" href="css/pageslider/pageslider.css">
+	<!--  main CSS  -->
+	<link rel="stylesheet" href="css/main.css">
+
+	<title>Live Auction App</title>
+	</head>
+<body>
+<div>
+	<div class="search-artist">
+		<div class="header type2">
+			<div class="search">
+				<input type="text" class="search-input" placeholder="Search an artist"/>
+				<button class="search-reset"></button>
+			</div>
+			<p class="btn"><button class="btn-close"></button></p>
+		</div>
+		<div class="scroll-body">
+            <div class="c1">
+                <div class="auction-summary">
+					<span id="ico" class="ico b">C</span> <!-- 진행중인 경우 class에 b 추가됩니다. -->
+					<div class="cont">
+						<p id="title" class="title">ASOBI: Japanese and Korean Modern &amp; Contemporary Art</p>
+						<p id="vendor" class="vendor">Christies · Oct 14th 2015, 2:00 pm</p>
+					</div>
+				</div>
+			</div>
+			<div class="results-count">
+				<p class="text">Artists in this Auction</p>
+				<p class="count">28</p>
+			</div>
+			<div class="results">
+				<ul class="results-list">
+					<li><span class="searched">Pa</span>blo Picasso</li>
+					<li><span class="searched">Pa</span>blo Picasso</li>
+					<li><span class="searched">Pa</span>blo Picasso</li>
+					<li><span class="searched">Pa</span>blo Picasso</li>
+					<li><span class="searched">Pa</span>blo Picasso</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- temp start -->
+<div class="temp-search-in-auction"></div>
+<!-- temp end -->
+</body>
+</html>
