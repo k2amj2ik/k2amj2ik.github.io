@@ -1,88 +1,616 @@
-<html><head>
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-<!--    <meta name="format-detection" content="telephone=no">-->
-<!--    <meta name="msapplication-tap-highlight" content="no">-->
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<!-- Enable all requests, inline styles, and eval() -->
 	<meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
-	<meta charset="UTF-8">
-    <!--  etc CSS  -->
+	<!--  etc CSS  -->
 	<link rel="stylesheet" href="css/icecream/icecream-grid.css">
+	<!--<link rel="stylesheet" href="css/ratchet/ratchet.css">-->
 	<link rel="stylesheet" href="css/pageslider/pageslider.css">
-	<link rel="stylesheet" href="css/flipclock/flipclock.css">
 	<!--  main CSS  -->
 	<link rel="stylesheet" href="css/main.css">
+
 	<title>Live Auction App</title>
-	<!--  Weinre Url  -->
-	<!--<script type="text/javascript" src="http://192.168.0.13:8080/target/target-script-min.js#anonymous"></script>-->
-    <style>a[href], button { touch-action: manipulation; }</style>
-<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="app" src="module/app.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="module-cfg" src="module/module-cfg.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="../cordova" src="module/../cordova.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="gval" src="module/gval.js"></script><script src="file:///var/mobile/Containers/Bundle/Application/06156D23-F7BB-4365-B916-77EF745B707B/Live%20Auction%20Art.app/www/cordova_plugins.js"></script><script src="file:///var/mobile/Containers/Bundle/Application/06156D23-F7BB-4365-B916-77EF745B707B/Live%20Auction%20Art.app/www/plugins/cordova-plugin-console/www/logger.js"></script><script src="file:///var/mobile/Containers/Bundle/Application/06156D23-F7BB-4365-B916-77EF745B707B/Live%20Auction%20Art.app/www/plugins/cordova-plugin-console/www/console-via-logger.js"></script><script src="file:///var/mobile/Containers/Bundle/Application/06156D23-F7BB-4365-B916-77EF745B707B/Live%20Auction%20Art.app/www/plugins/cordova-plugin-device/www/device.js"></script><script src="file:///var/mobile/Containers/Bundle/Application/06156D23-F7BB-4365-B916-77EF745B707B/Live%20Auction%20Art.app/www/plugins/cordova-plugin-device-motion/www/Acceleration.js"></script><script src="file:///var/mobile/Containers/Bundle/Application/06156D23-F7BB-4365-B916-77EF745B707B/Live%20Auction%20Art.app/www/plugins/cordova-plugin-device-motion/www/accelerometer.js"></script><script src="file:///var/mobile/Containers/Bundle/Application/06156D23-F7BB-4365-B916-77EF745B707B/Live%20Auction%20Art.app/www/plugins/cordova-plugin-device-orientation/www/CompassError.js"></script><script src="file:///var/mobile/Containers/Bundle/Application/06156D23-F7BB-4365-B916-77EF745B707B/Live%20Auction%20Art.app/www/plugins/cordova-plugin-device-orientation/www/CompassHeading.js"></script><script src="file:///var/mobile/Containers/Bundle/Application/06156D23-F7BB-4365-B916-77EF745B707B/Live%20Auction%20Art.app/www/plugins/cordova-plugin-device-orientation/www/compass.js"></script><script src="file:///var/mobile/Containers/Bundle/Application/06156D23-F7BB-4365-B916-77EF745B707B/Live%20Auction%20Art.app/www/plugins/cordova-plugin-dialogs/www/notification.js"></script><script src="file:///var/mobile/Containers/Bundle/Application/06156D23-F7BB-4365-B916-77EF745B707B/Live%20Auction%20Art.app/www/plugins/cordova-plugin-file/www/DirectoryEntry.js"></script><script src="file:///var/mobile/Containers/Bundle/Application/06156D23-F7BB-4365-B916-77EF745B707B/Live%20Auction%20Art.app/www/plugins/cordova-plugin-file/www/DirectoryReader.js"></script><script src="file:///var/mobile/Containers/Bundle/Application/06156D23-F7BB-4365-B916-77EF745B707B/Live%20Auction%20Art.app/www/plugins/cordova-plugin-file/www/Entry.js"></script><script src="file:///var/mobile/Containers/Bundle/Application/06156D23-F7BB-4365-B916-77EF745B707B/Live%20Auction%20Art.app/www/plugins/cordova-plugin-file/www/File.js"></script><script src="file:///var/mobile/Containers/Bundle/Application/06156D23-F7BB-4365-B916-77EF745B707B/Live%20Auction%20Art.app/www/plugins/cordova-plugin-file/www/FileEntry.js"></script><script src="file:///var/mobile/Containers/Bundle/Application/06156D23-F7BB-4365-B916-77EF745B707B/Live%20Auction%20Art.app/www/plugins/cordova-plugin-file/www/FileError.js"></script><script src="file:///var/mobile/Containers/Bundle/Application/06156D23-F7BB-4365-B916-77EF745B707B/Live%20Auction%20Art.app/www/plugins/cordova-plugin-file/www/FileReader.js"></script><script src="file:///var/mobile/Containers/Bundle/Application/06156D23-F7BB-4365-B916-77EF745B707B/Live%20Auction%20Art.app/www/plugins/cordova-plugin-file/www/FileSystem.js"></script><script src="file:///var/mobile/Containers/Bundle/Application/06156D23-F7BB-4365-B916-77EF745B707B/Live%20Auction%20Art.app/www/plugins/cordova-plugin-file/www/FileUploadOptions.js"></script><script src="file:///var/mobile/Containers/Bundle/Application/06156D23-F7BB-4365-B916-77EF745B707B/Live%20Auction%20Art.app/www/plugins/cordova-plugin-file/www/FileUploadResult.js"></script><script src="file:///var/mobile/Containers/Bundle/Application/06156D23-F7BB-4365-B916-77EF745B707B/Live%20Auction%20Art.app/www/plugins/cordova-plugin-file/www/FileWriter.js"></script><script src="file:///var/mobile/Containers/Bundle/Application/06156D23-F7BB-4365-B916-77EF745B707B/Live%20Auction%20Art.app/www/plugins/cordova-plugin-file/www/Flags.js"></script><script src="file:///var/mobile/Containers/Bundle/Application/06156D23-F7BB-4365-B916-77EF745B707B/Live%20Auction%20Art.app/www/plugins/cordova-plugin-file/www/LocalFileSystem.js"></script><script src="file:///var/mobile/Containers/Bundle/Application/06156D23-F7BB-4365-B916-77EF745B707B/Live%20Auction%20Art.app/www/plugins/cordova-plugin-file/www/Metadata.js"></script><script src="file:///var/mobile/Containers/Bundle/Application/06156D23-F7BB-4365-B916-77EF745B707B/Live%20Auction%20Art.app/www/plugins/cordova-plugin-file/www/ProgressEvent.js"></script><script src="file:///var/mobile/Containers/Bundle/Application/06156D23-F7BB-4365-B916-77EF745B707B/Live%20Auction%20Art.app/www/plugins/cordova-plugin-file/www/fileSystems.js"></script><script src="file:///var/mobile/Containers/Bundle/Application/06156D23-F7BB-4365-B916-77EF745B707B/Live%20Auction%20Art.app/www/plugins/cordova-plugin-file/www/requestFileSystem.js"></script><script src="file:///var/mobile/Containers/Bundle/Application/06156D23-F7BB-4365-B916-77EF745B707B/Live%20Auction%20Art.app/www/plugins/cordova-plugin-file/www/resolveLocalFileSystemURI.js"></script><script src="file:///var/mobile/Containers/Bundle/Application/06156D23-F7BB-4365-B916-77EF745B707B/Live%20Auction%20Art.app/www/plugins/cordova-plugin-file/www/ios/FileSystem.js"></script><script src="file:///var/mobile/Containers/Bundle/Application/06156D23-F7BB-4365-B916-77EF745B707B/Live%20Auction%20Art.app/www/plugins/cordova-plugin-file/www/fileSystems-roots.js"></script><script src="file:///var/mobile/Containers/Bundle/Application/06156D23-F7BB-4365-B916-77EF745B707B/Live%20Auction%20Art.app/www/plugins/cordova-plugin-file/www/fileSystemPaths.js"></script><script src="file:///var/mobile/Containers/Bundle/Application/06156D23-F7BB-4365-B916-77EF745B707B/Live%20Auction%20Art.app/www/plugins/cordova-plugin-file-transfer/www/FileTransferError.js"></script><script src="file:///var/mobile/Containers/Bundle/Application/06156D23-F7BB-4365-B916-77EF745B707B/Live%20Auction%20Art.app/www/plugins/cordova-plugin-file-transfer/www/FileTransfer.js"></script><script src="file:///var/mobile/Containers/Bundle/Application/06156D23-F7BB-4365-B916-77EF745B707B/Live%20Auction%20Art.app/www/plugins/cordova-plugin-geolocation/www/Coordinates.js"></script><script src="file:///var/mobile/Containers/Bundle/Application/06156D23-F7BB-4365-B916-77EF745B707B/Live%20Auction%20Art.app/www/plugins/cordova-plugin-geolocation/www/PositionError.js"></script><script src="file:///var/mobile/Containers/Bundle/Application/06156D23-F7BB-4365-B916-77EF745B707B/Live%20Auction%20Art.app/www/plugins/cordova-plugin-geolocation/www/Position.js"></script><script src="file:///var/mobile/Containers/Bundle/Application/06156D23-F7BB-4365-B916-77EF745B707B/Live%20Auction%20Art.app/www/plugins/cordova-plugin-geolocation/www/geolocation.js"></script><script src="file:///var/mobile/Containers/Bundle/Application/06156D23-F7BB-4365-B916-77EF745B707B/Live%20Auction%20Art.app/www/plugins/cordova-plugin-inappbrowser/www/inappbrowser.js"></script><script src="file:///var/mobile/Containers/Bundle/Application/06156D23-F7BB-4365-B916-77EF745B707B/Live%20Auction%20Art.app/www/plugins/cordova-plugin-network-information/www/network.js"></script><script src="file:///var/mobile/Containers/Bundle/Application/06156D23-F7BB-4365-B916-77EF745B707B/Live%20Auction%20Art.app/www/plugins/cordova-plugin-network-information/www/Connection.js"></script><script src="file:///var/mobile/Containers/Bundle/Application/06156D23-F7BB-4365-B916-77EF745B707B/Live%20Auction%20Art.app/www/plugins/cordova-plugin-splashscreen/www/splashscreen.js"></script><script src="file:///var/mobile/Containers/Bundle/Application/06156D23-F7BB-4365-B916-77EF745B707B/Live%20Auction%20Art.app/www/plugins/cordova-plugin-vibration/www/vibration.js"></script><script src="file:///var/mobile/Containers/Bundle/Application/06156D23-F7BB-4365-B916-77EF745B707B/Live%20Auction%20Art.app/www/plugins/cordova-plugin-appversion/www/app-version.js"></script><script src="file:///var/mobile/Containers/Bundle/Application/06156D23-F7BB-4365-B916-77EF745B707B/Live%20Auction%20Art.app/www/plugins/phonegap-plugin-push/www/push.js"></script><script src="file:///var/mobile/Containers/Bundle/Application/06156D23-F7BB-4365-B916-77EF745B707B/Live%20Auction%20Art.app/www/plugins/org.pbernasconi.progressindicator/www/progressIndicator.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="idbUtil" src="module/utils/idbUtil.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="restUtil" src="module/utils/restUtil.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Util" src="module/utils/comUtil.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery" src="module/../lib/jquery/jquery.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="backbone" src="module/../lib/backbone/backbone.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="underscore" src="module/../lib/underscore/underscore.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="countdown" src="module/../lib/jquery/jquery.countdown.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="lazyload" src="module/../lib/jquery/jquery.lazyload.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="flipclock" src="module/../lib/jquery/flipclock.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="domReady" src="module/../lib/require/domReady.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="fastclick" src="module/../lib/fastclick/fastclick.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="pageslider" src="module/../lib/pageslider/pageslider.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="AuctionModel" src="module/models/AuctionModel.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="LotModel" src="module/models/LotModel.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="templates" src="module/utils/templates.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="AuctionListView" src="module/views/AuctionListView.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="LotListView" src="module/views/LotListView.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="LotDetailView" src="module/views/LotDetailView.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="router" src="module/routers/AppRouter.js"></script></head>
+</head>
 <body>
-    <form id="frmTmr">
-        <input type="hidden" id="curSaleLotNum" value="">
-        <input type="hidden" id="curLotIdx" value="">
-        <input type="hidden" id="tmrSec" value="">
-        <input type="hidden" id="bdPrice" value="">
-    </form>
-    
-    <!-- Preload -->
-    <script type="text/javascript" src="lib/idbstore/basil.min.js"></script>
-    <script type="text/javascript" src="lib/moment/moment.js"></script>
-    <script type="text/javascript" src="lib/moment/twix.js"></script>
-    <script type="text/javascript" src="lib/moment/moment-timezone-with-data.js"></script>
-    <script data-main="module/app" src="lib/require/require.js"></script>
 
 
-<iframe src="gap://ready" style="display: none;"></iframe><div id="601" class="page transition center"><header>
-	<span id="goHome"><h1>Live Auction Art</h1></span>
-	<span class="go_back"><img src="img/btn_back.png"></span>
-	<!--<span class="refresh"><img src="img/btn_refresh.png"></span>-->
-</header>
-<div id="wrapper" class="lot_list t145">		<!-- upcoming: t145, ongoing: t175, past: t185 -->
-	<div class="top_fix move_other_auction">
-		<div id="auctionInfoWrapper" class="c1">
-			<a class="open_others a">
-				<span id="ico" class="ico b">C</span> <!-- 진행중인 경우 class에 b 추가됩니다. -->
-				<div class="cont">
-					<p id="vendor" class="vendor">Christies · Oct 14th 2015, 2:00 pm</p>
-					<p id="title" class="title">ASOBI: Japanese and Korean Modern &amp; Contemporary Art</p>
-				</div>
-			</a>
-			<!-- 시작전 -->
-			<div id="upcoming" class="auction_sale_info upcoming" style="display:block">
-				<span class="b"></span>
-				<div class="remains">
-					<span class="tit">Starts in</span>
-					<span class="times"><span>10</span>h <span>23</span>m <span>23</span>s</span>
-				</div>
-			</div>
+<!-- Preload -->
 
-			<!-- 진행중인 경매 -->
-			<div id="ongoing" class="auction_sale_info ongoing" style="display:none">
-				<span class="b"></span>
-				<p class="tit">Current Bid </p>
-				<div class="prices">
-					<strong class="p1"> Lot. 127</strong>
-				</div>
-			</div>
-			<!-- 종료된 경매 -->
-			<div id="past" class="auction_sale_info past" style="display:none">
-				<span class="b"></span>
-				<p class="tit">SALE TOTAL</p>
-				<div class="prices">
-					<strong class="p1">£15,000,000</strong>
-					<!--<span class="p2">$15,500,000</span>-->
-					<span class="txt">Hammer</span>
-				</div>
-			</div>
+<div class="lots-list">
+	<div class="header">
+		<div class="search">
+			<input type="text" class="search-input" placeholder="Live Auction Art" value="pa"/>
+			<button class="search-reset"></button>
 		</div>
-
-		<ul class="other_auctions scrollY">
-		</ul>
-		
+		<p class="btn"><button class="btn-close"></button></p>
 	</div>
-	
-	
-	<ul id="lotList" class="auction_list"><li class="upcoming">   <div class="bg"></div>   <a href="#lotDetail/1633138" class="detail">       <p class="lot_no">Lot. 1</p>       <div class="c_wrap">           <div class="thumb img_align"><img src="http://54.65.183.10/ArtAuctionImage/Bonhams/L160/2015/22811-1.jpg" class="lazyResult" data-original="http://54.65.183.10/ArtAuctionImage/Bonhams/L160/2015/22811-1.jpg" style="display: block;"></div>           <div class="cont">               <p class="artist">Travel &amp; Exploration</p>               <p class="title"> A naval officer's sketchbook containing 42 pages of drawings and watercolours depicting figure studies from various countries including Algiers, Africa, and the Caribbean, as well as several studies of military and naval officers and some ship portraits</p>               <p class="price"> £5,000 - £7,000</p>           </div>       </div>   </a></li><li class="upcoming">   <div class="bg"></div>   <a href="#lotDetail/1633198" class="detail">       <p class="lot_no">Lot. 2</p>       <div class="c_wrap">           <div class="thumb img_align"><img src="http://54.65.183.10/ArtAuctionImage/Bonhams/L160/2015/22811-2.jpg" class="lazyResult" data-original="http://54.65.183.10/ArtAuctionImage/Bonhams/L160/2015/22811-2.jpg" style="display: block;"></div>           <div class="cont">               <p class="artist"></p>               <p class="title">LOGBOOKS</p>               <p class="price"> £600 - £800</p>           </div>       </div>   </a></li><li class="upcoming">   <div class="bg"></div>   <a href="#lotDetail/1633209" class="detail">       <p class="lot_no">Lot. 3</p>       <div class="c_wrap">           <div class="thumb img_align"><img src="http://54.65.183.10/ArtAuctionImage/Bonhams/L160/2015/22811-3.jpg" class="lazyResult" data-original="http://54.65.183.10/ArtAuctionImage/Bonhams/L160/2015/22811-3.jpg" style="display: block;"></div>           <div class="cont">               <p class="artist"></p>               <p class="title">LOGBOOK</p>               <p class="price"> £1,000 - £1,500</p>           </div>       </div>   </a></li><li class="upcoming">   <div class="bg"></div>   <a href="#lotDetail/1633220" class="detail">       <p class="lot_no">Lot. 4</p>       <div class="c_wrap">           <div class="thumb img_align"><img src="http://54.65.183.10/ArtAuctionImage/Bonhams/L160/2015/22811-4.jpg" class="lazyResult" data-original="http://54.65.183.10/ArtAuctionImage/Bonhams/L160/2015/22811-4.jpg" style="display: block;"></div>           <div class="cont">               <p class="artist"></p>               <p class="title">GEOGRAPHICAL AND ASTRONOMICAL CARD GAME<br>"Court Game of Astrophilogeon", [W. Davy for Charles Hodges, c.1828]</p>               <p class="price"> £800 - £1,200</p>           </div>       </div>   </a></li><li class="upcoming">   <div class="bg"></div>   <a href="#lotDetail/1633231" class="detail">       <p class="lot_no">Lot. 5</p>       <div class="c_wrap">           <div class="thumb img_align"><img src="http://54.65.183.10/ArtAuctionImage/Bonhams/L160/2015/22811-5.jpg" class="lazyResult" data-original="http://54.65.183.10/ArtAuctionImage/Bonhams/L160/2015/22811-5.jpg" style="display: block;"></div>           <div class="cont">               <p class="artist"></p>               <p class="title">A rare 18 1/2-inch Vincenzo Coronelli terrestrial globe,  <br>Italian,   gores published 1696, stand later,  </p>               <p class="price"> £30,000 - £50,000</p>           </div>       </div>   </a></li><li class="upcoming">   <div class="bg"></div>   <a href="#lotDetail/1633242" class="detail">       <p class="lot_no">Lot. 6</p>       <div class="c_wrap">           <div class="thumb img_align"><img src="img/loading.png" class="lazyResult" data-original="http://54.65.183.10/ArtAuctionImage/Bonhams/L160/2015/22811-6.jpg"></div>           <div class="cont">               <p class="artist">English School</p>               <p class="title">A view in the South Pacific</p>               <p class="price"> £600 - £800</p>           </div>       </div>   </a></li><li class="upcoming">   <div class="bg"></div>   <a href="#lotDetail/1633253" class="detail">       <p class="lot_no">Lot. 7</p>       <div class="c_wrap">           <div class="thumb img_align"><img src="img/loading.png" class="lazyResult" data-original="http://54.65.183.10/ArtAuctionImage/Bonhams/L160/2015/22811-7.jpg"></div>           <div class="cont">               <p class="artist">Charles Meere</p>               <p class="title">Late Afternoon on the Tumut Plains, Southern New South Wales</p>               <p class="price"> £800 - £1,200</p>           </div>       </div>   </a></li><li class="upcoming">   <div class="bg"></div>   <a href="#lotDetail/1633264" class="detail">       <p class="lot_no">Lot. 8</p>       <div class="c_wrap">           <div class="thumb img_align"><img src="img/loading.png" class="lazyResult" data-original="http://54.65.183.10/ArtAuctionImage/Bonhams/L160/2015/22811-8.jpg"></div>           <div class="cont">               <p class="artist">Lawrence M. Daws</p>               <p class="title">Mandala</p>               <p class="price"> £800 - £1,200</p>           </div>       </div>   </a></li><li class="upcoming">   <div class="bg"></div>   <a href="#lotDetail/1633275" class="detail">       <p class="lot_no">Lot. 9</p>       <div class="c_wrap">           <div class="thumb img_align"><img src="img/loading.png" class="lazyResult" data-original="http://54.65.183.10/ArtAuctionImage/Bonhams/L160/2015/22811-9.jpg"></div>           <div class="cont">               <p class="artist">Donald Friend</p>               <p class="title">Portrait of a young Balinese man</p>               <p class="price"> £1,500 - £2,000</p>           </div>       </div>   </a></li><li class="upcoming">   <div class="bg"></div>   <a href="#lotDetail/1633139" class="detail">       <p class="lot_no">Lot. 10</p>       <div class="c_wrap">           <div class="thumb img_align"><img src="img/loading.png" class="lazyResult" data-original="http://54.65.183.10/ArtAuctionImage/Bonhams/L160/2015/22811-10.jpg"></div>           <div class="cont">               <p class="artist"></p>               <p class="title">George Rossi Ashton<br>(British/Australian, 1857-died after 1895)<br>The waiter</p>               <p class="price"> £600 - £800</p>           </div>       </div>   </a></li><li class="upcoming">   <div class="bg"></div>   <a href="#lotDetail/1633150" class="detail">       <p class="lot_no">Lot. 11</p>       <div class="c_wrap">           <div class="thumb img_align"><img src="img/loading.png" class="lazyResult" data-original="http://54.65.183.10/ArtAuctionImage/Bonhams/L160/2015/22811-11.jpg"></div>           <div class="cont">               <p class="artist">Sir William Dobell</p>               <p class="title">The Customers</p>               <p class="price"> £3,000 - £5,000</p>           </div>       </div>   </a></li><li class="upcoming">   <div class="bg"></div>   <a href="#lotDetail/1633161" class="detail">       <p class="lot_no">Lot. 12</p>       <div class="c_wrap">           <div class="thumb img_align"><img src="img/loading.png" class="lazyResult" data-original="http://54.65.183.10/ArtAuctionImage/Bonhams/L160/2015/22811-12.jpg"></div>           <div class="cont">               <p class="artist">Richard Read Jnr</p>               <p class="title">Portrait of Lieutenant-Colonel Joseph Anderson (1790-1877)</p>               <p class="price"> £600 - £800</p>           </div>       </div>   </a></li><li class="upcoming">   <div class="bg"></div>   <a href="#lotDetail/1633172" class="detail">       <p class="lot_no">Lot. 13</p>       <div class="c_wrap">           <div class="thumb img_align"><img src="img/loading.png" class="lazyResult" data-original="http://54.65.183.10/ArtAuctionImage/Bonhams/L160/2015/22811-13.jpg"></div>           <div class="cont">               <p class="artist"></p>               <p class="title">MURRAY-DARLING RIVER EXPEDITION,</p>               <p class="price"> £4,000 - £6,000</p>           </div>       </div>   </a></li><li class="upcoming">   <div class="bg"></div>   <a href="#lotDetail/1633183" class="detail">       <p class="lot_no">Lot. 14</p>       <div class="c_wrap">           <div class="thumb img_align"><img src="img/loading.png" class="lazyResult" data-original="http://54.65.183.10/ArtAuctionImage/Bonhams/L160/2015/22811-14.jpg"></div>           <div class="cont">               <p class="artist"></p>               <p class="title">AUSTRALIA - NAVAL</p>               <p class="price"> £2,000 - £4,000</p>           </div>       </div>   </a></li><li class="upcoming">   <div class="bg"></div>   <a href="#lotDetail/1633193" class="detail">       <p class="lot_no">Lot. 15</p>       <div class="c_wrap">           <div class="thumb img_align"><img src="img/loading.png" class="lazyResult" data-original="http://54.65.183.10/ArtAuctionImage/Bonhams/L160/2015/22811-15.jpg"></div>           <div class="cont">               <p class="artist"></p>               <p class="title">SPILBERGEN (JORIS VAN)</p>               <p class="price"> £15,000 - £20,000</p>           </div>       </div>   </a></li><li class="upcoming">   <div class="bg"></div>   <a href="#lotDetail/1633194" class="detail">       <p class="lot_no">Lot. 16</p>       <div class="c_wrap">           <div class="thumb img_align"><img src="img/loading.png" class="lazyResult" data-original="http://54.65.183.10/ArtAuctionImage/Bonhams/L160/2015/22811-16.jpg"></div>           <div class="cont">               <p class="artist"></p>               <p class="title">HAWAII, MARQUESAS ISLANDS and PITCAIRN</p>               <p class="price"> £40,000 - £60,000</p>           </div>       </div>   </a></li><li class="upcoming">   <div class="bg"></div>   <a href="#lotDetail/1633195" class="detail">       <p class="lot_no">Lot. 17</p>       <div class="c_wrap">           <div class="thumb img_align"><img src="img/loading.png" class="lazyResult" data-original="http://54.65.183.10/ArtAuctionImage/Bonhams/L160/2015/22811-17.jpg"></div>           <div class="cont">               <p class="artist"></p>               <p class="title">COOK (JAMES) HAWKESWORTH (JOHN)</p>               <p class="price"> £12,000 - £18,000</p>           </div>       </div>   </a></li><li class="upcoming">   <div class="bg"></div>   <a href="#lotDetail/1633196" class="detail">       <p class="lot_no">Lot. 18</p>       <div class="c_wrap">           <div class="thumb img_align"><img src="img/loading.png" class="lazyResult" data-original="http://54.65.183.10/ArtAuctionImage/Bonhams/L160/2015/22811-18.jpg"></div>           <div class="cont">               <p class="artist"></p>               <p class="title">KUSAKABE STUDIO<br>Album containing 50 views of Japan, [1880s]</p>               <p class="price"> £1,500 - £2,500</p>           </div>       </div>   </a></li><li class="upcoming">   <div class="bg"></div>   <a href="#lotDetail/1633197" class="detail">       <p class="lot_no">Lot. 19</p>       <div class="c_wrap">           <div class="thumb img_align"><img src="img/loading.png" class="lazyResult" data-original="http://54.65.183.10/ArtAuctionImage/Bonhams/L160/2015/22811-19.jpg"></div>           <div class="cont">               <p class="artist">Eizo Kato</p>               <p class="title">A view of Hong Kong and Victoria Harbour by moonlight</p>               <p class="price"> £1,500 - £2,000</p>           </div>       </div>   </a></li><li class="upcoming">   <div class="bg"></div>   <a href="#lotDetail/1633199" class="detail">       <p class="lot_no">Lot. 20</p>       <div class="c_wrap">           <div class="thumb img_align"><img src="img/loading.png" class="lazyResult" data-original="http://54.65.183.10/ArtAuctionImage/Bonhams/L160/2015/22811-20.jpg"></div>           <div class="cont">               <p class="artist">Elizabeth Brunner</p>               <p class="title">'Japanese Lady'</p>               <p class="price"> £800 - £1,200</p>           </div>       </div>   </a></li><div id="btn-more-lot-wrap" class="btns">   <button id="btn-more-lot" class="btn-more">View More</button></div></ul>
 
 </div>
-<span id="go_top"></span></div></body></html>
+
+
+
+
+<div id="264" class="page transition center">
+	<header>
+		<div class="lot-list-header">
+			<div class="search">
+				<input type="text" class="search-input" placeholder="Live Auction Art" value="pa"/>
+				<button class="search-reset"></button>
+			</div>
+			<p class="btn"><button class="btn-close"></button></p>
+		</div>
+	</header>
+	<div id="wrapper" class="lot_list t145">		<!-- upcoming: t145, ongoing: t175, past: t185 -->
+		<div class="top_fix move_other_auction">
+			<div id="auctionInfoWrapper" class="c1">
+				<a class="open_others a">
+					<span id="ico" class="ico b">C</span> <!-- 진행중인 경우 class에 b 추가됩니다. -->
+					<div class="cont">
+						<p id="vendor" class="vendor">Christies · Oct 14th 2015, 2:00 pm</p>
+						<p id="title" class="title">ASOBI: Japanese and Korean Modern &amp; Contemporary Art</p>
+					</div>
+				</a>
+				<!-- 시작전 -->
+				<div id="upcoming" class="auction_sale_info upcoming" style="display:none">
+					<span class="b"></span>
+					<div class="remains">
+						<span class="tit">Starts in</span>
+						<span class="times"><span>10</span>h <span>23</span>m <span>23</span>s</span>
+					</div>
+				</div>
+
+				<!-- 진행중인 경매 -->
+				<div id="ongoing" class="auction_sale_info ongoing" style="display:none">
+					<span class="b"></span>
+					<p class="tit">Current Bid </p>
+					<div class="prices">
+						<strong class="p1"> Lot. 127</strong>
+					</div>
+				</div>
+				<!-- 진행중인 경매 - re -->
+				<div id="ongoing" class="auction_sale_info ongoing" style="display:none;height:2px;overflow:hidden">
+					<span class="b"></span>
+				</div>
+				<!-- 진행중인 경매 - re2 -->
+				<div id="ongoing" class="auction_sale_info ongoing" style="display:block">
+					<span class="b"></span>
+					<div class="prices">
+						<strong class="p1">LIVE AUCTION</strong>
+					</div>
+				</div>
+				<!-- 종료된 경매 -->
+				<div id="past" class="auction_sale_info past" style="display:none">
+					<span class="b"></span>
+					<p class="tit">SALE TOTAL</p>
+					<div class="prices">
+						<strong class="p1">£15,500,000</strong>
+						<!--<span class="p2">$15,500,000</span>-->
+						<span class="txt">Hammer</span>
+					</div>
+				</div>
+				<!-- 진행여부 관계없이 페이징 -->
+				<div id="ongoing" class="auction_sale_info ongoing" style="display:none">
+					<span class="b"></span>
+					<p class="tit">Current Bid </p>
+					<div class="prices">
+						<strong class="p1"> Lot. 127</strong>
+					</div>
+				</div>
+			</div>
+
+			<ul class="other_auctions scrollY">
+				<!--<li class="c3">-->
+				<!--<a href="javascript:void(0)" class="a">-->
+				<!--<span class="ico b">B</span> &lt;!&ndash; 진행중인 경우 class에 b 추가됩니다. &ndash;&gt;-->
+				<!--<div class="cont">-->
+				<!--<p class="vendor">bonhams &middot; Sep 8, 10:00am</p>-->
+				<!--<p class="title">Out of Ordinary</p>-->
+				<!--</div>-->
+				<!--</a>-->
+				<!--</li>-->
+				<!--<li class="c2">-->
+				<!--<a href="javascript:void(0)" class="a">-->
+				<!--<span class="ico b">S</span> &lt;!&ndash; 진행중인 경우 class에 b 추가됩니다. &ndash;&gt;-->
+				<!--<div class="cont">-->
+				<!--<p class="vendor">Sothebys &middot; Sep 8, 10:00am</p>-->
+				<!--<p class="title">Out of Ordinary</p>-->
+				<!--</div>-->
+				<!--</a>-->
+				<!--</li>-->
+				<!--<li class="c5">-->
+				<!--<a href="javascript:void(0)" class="a">-->
+				<!--<span class="ico">P</span> &lt;!&ndash; 진행중인 경우 class에 b 추가됩니다. &ndash;&gt;-->
+				<!--<div class="cont">-->
+				<!--<p class="vendor">Polyauction &middot; Sep 8, 10:00am</p>-->
+				<!--<p class="title">Out of Ordinary</p>-->
+				<!--</div>-->
+				<!--</a>-->
+				<!--</li>-->
+				<!--<li class="c1">-->
+				<!--<a href="javascript:void(0)" class="a">-->
+				<!--<span class="ico b">C</span> &lt;!&ndash; 진행중인 경우 class에 b 추가됩니다. &ndash;&gt;-->
+				<!--<div class="cont">-->
+				<!--<p class="vendor">Christies &middot; Sep 8, 10:00am</p>-->
+				<!--<p class="title">Out of Ordinary</p>-->
+				<!--</div>-->
+				<!--</a>-->
+				<!--</li>-->
+			</ul>
+		</div>
+
+
+		<button type="button" onclick="$(this).next().slideToggle();$(this).toggleClass('on')" style="padding:30px 20px 14px 20px">LOTS <span style="font-weight:bold">1 - 20</span> OF 173 &nbsp; &nbsp; ▼</button>
+		<div class="sale_info" style="display: none;">
+			<ul>
+				<li style="padding:10px 20px">Lots 1 - 20</li>
+				<li style="padding:10px 20px">Lots 21 - 40</li>
+				<li style="padding:10px 20px">Lots 41 - 60</li>
+				<li style="padding:10px 20px">Lots 61 - 80</li>
+				<li style="padding:10px 20px">Lots 81 - 118</li>
+				<li style="padding:10px 20px">Lots 119 - 133</li>
+				<li style="padding:10px 20px">Lots 134 - 152</li>
+				<li style="padding:10px 20px">Lots 153 - 173</li>
+			</ul>
+		</div>
+		<ul id="lotList" class="auction_list c1">
+			<li class="past">
+				<div class="bg"></div>
+				<a href="#lotDetail/1584154" class="detail">
+					<p class="lot_no">Lot. 1</p>
+					<div class="c_wrap">
+						<div class="thumb img_align">
+							<img src="http://www.christies.com/lotfinderimages/d59307/a_nishapur_pottery_bowl_north_east_iran_10th_century_d5930798h.jpg">
+						</div>
+						<div class="cont">
+							<p class="artist">Yoshihara Jiro</p>
+							<p class="title">Bekannt durch Film, Funk, Fernsehen und Polizeinotrufsäulen (A celebrity in film, radio, television and police call boxes)</p>
+							<p class="price"> £ 50,000 - £ 60,000</p>
+						</div>
+					</div>
+					<div class="result">
+						<p class="status">hammer</p>
+						<span> £ 105,000 </span>
+					</div>
+				</a>
+			</li>
+			<li class="past">
+				<div class="bg"></div>
+				<a href="#lotDetail/1584154" class="detail">
+					<p class="lot_no">Lot. 1</p>
+					<div class="c_wrap">
+						<div class="thumb img_align">
+							<img src="http://www.christies.com/lotfinderimages/d59307/a_nishapur_pottery_bowl_north_east_iran_10th_century_d5930798h.jpg">
+						</div>
+						<div class="cont">
+							<p class="artist">Yoshihara Jiro</p>
+							<p class="title">Bekannt durch Film, Funk, Fernsehen und Polizeinotrufsäulen (A celebrity in film, radio, television and police call boxes)</p>
+							<p class="price"> £ 50,000 - £ 60,000</p>
+						</div>
+					</div>
+					<div class="result">
+						<p class="status">hammer</p>
+						<span> £ 105,000 </span>
+					</div>
+				</a>
+			</li>
+			<li class="past">
+				<div class="bg"></div>
+				<a href="#lotDetail/1584154" class="detail">
+					<p class="lot_no">Lot. 1</p>
+					<div class="c_wrap">
+						<div class="thumb img_align">
+							<img src="http://www.christies.com/lotfinderimages/d59307/a_nishapur_pottery_bowl_north_east_iran_10th_century_d5930798h.jpg">
+						</div>
+						<div class="cont">
+							<p class="artist">Yoshihara Jiro</p>
+							<p class="title">Bekannt durch Film, Funk, Fernsehen und Polizeinotrufsäulen (A celebrity in film, radio, television and police call boxes)</p>
+							<p class="price"> £ 50,000 - £ 60,000</p>
+						</div>
+					</div>
+					<div class="result">
+						<p class="status">hammer</p>
+						<span> £ 105,000 </span>
+					</div>
+				</a>
+			</li>
+			<li class="upcoming">
+				<div class="bg"></div>
+				<a href="#lotDetail/1584154" class="detail">
+					<p class="lot_no">Lot. 1</p>
+					<div class="c_wrap">
+						<div class="thumb img_align">
+							<img src="http://www.christies.com/lotfinderimages/d59307/a_nishapur_pottery_bowl_north_east_iran_10th_century_d5930798h.jpg">
+						</div>
+						<div class="cont">
+							<p class="artist">Yoshihara Jiro</p>
+							<p class="title">Bekannt durch Film, Funk, Fernsehen und Polizeinotrufsäulen (A celebrity in film, radio, television and police call boxes)</p>
+							<p class="price"> £ 50,000 - £ 60,000</p>
+						</div>
+					</div>
+					<div class="remaining">
+						<span class="nums">Remaining 2 Lots</span>
+					</div>
+				</a>
+			</li>
+			<li class="ongoing">
+				<div class="bg b"></div>
+				<a href="#lotDetail/1584154" class="detail">
+					<p class="lot_no">Lot. 1</p>
+					<div class="c_wrap">
+						<div class="thumb img_align">
+							<img src="http://www.christies.com/lotfinderimages/d59307/a_nishapur_pottery_bowl_north_east_iran_10th_century_d5930798h.jpg">
+						</div>
+						<div class="cont">
+							<p class="artist">Yoshihara Jiro</p>
+							<p class="title">Bekannt durch Film, Funk, Fernsehen und Polizeinotrufsäulen (A celebrity in film, radio, television and police call boxes)</p>
+							<p class="price"> £ 50,000 - £ 60,000</p>
+						</div>
+					</div>
+				</a><div class="c_bot">
+				<div class="time">
+					<div id="castLotTime" class="flip-clock-wrapper">
+						<span class="flip-clock-divider minutes"><span class="flip-clock-dot top"></span><span class="flip-clock-dot bottom"></span></span><ul class="flip "><li class="flip-clock-before"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">9</div></div><div class="down"><div class="shadow"></div><div class="inn">9</div></div></a></li><li class="flip-clock-active"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">0</div></div><div class="down"><div class="shadow"></div><div class="inn">0</div></div></a></li></ul><ul class="flip "><li class="flip-clock-before"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">9</div></div><div class="down"><div class="shadow"></div><div class="inn">9</div></div></a></li><li class="flip-clock-active"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">0</div></div><div class="down"><div class="shadow"></div><div class="inn">0</div></div></a></li></ul><span class="flip-clock-divider seconds"><span class="flip-clock-dot top"></span><span class="flip-clock-dot bottom"></span></span><ul class="flip  play"><li class="flip-clock-before"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">4</div></div><div class="down"><div class="shadow"></div><div class="inn">4</div></div></a></li><li class="flip-clock-active"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">5</div></div><div class="down"><div class="shadow"></div><div class="inn">5</div></div></a></li></ul><ul class="flip  play"><li class="flip-clock-before"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">4</div></div><div class="down"><div class="shadow"></div><div class="inn">4</div></div></a></li><li class="flip-clock-active"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">5</div></div><div class="down"><div class="shadow"></div><div class="inn">5</div></div></a></li></ul>
+					</div>
+				</div>
+				<div id="currentPrice" class="price">
+					<p class="status">Started</p>
+					<p class="currency"><span class="locale">£</span> 216,000+</p>
+				</div>
+			</div>
+			</li>
+			<li class="ongoing">
+				<div class="bg b"></div>
+				<a href="#lotDetail/1584154" class="detail">
+					<p class="lot_no">Lot. 1</p>
+					<div class="c_wrap">
+						<div class="thumb img_align">
+							<img src="http://www.christies.com/lotfinderimages/d59307/a_nishapur_pottery_bowl_north_east_iran_10th_century_d5930798h.jpg">
+						</div>
+						<div class="cont">
+							<p class="artist">Yoshihara Jiro</p>
+							<p class="title">Bekannt durch Film, Funk, Fernsehen und Polizeinotrufsäulen (A celebrity in film, radio, television and police call boxes)</p>
+							<p class="price"> £ 50,000 - £ 60,000</p>
+						</div>
+					</div>
+				</a>
+				<div class="c_bot">
+					<div class="time">
+						<div id="castLotTime" class="flip-clock-wrapper">
+							<span class="flip-clock-divider minutes"><span class="flip-clock-dot top"></span><span class="flip-clock-dot bottom"></span></span><ul class="flip "><li class="flip-clock-before"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">9</div></div><div class="down"><div class="shadow"></div><div class="inn">9</div></div></a></li><li class="flip-clock-active"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">0</div></div><div class="down"><div class="shadow"></div><div class="inn">0</div></div></a></li></ul><ul class="flip "><li class="flip-clock-before"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">9</div></div><div class="down"><div class="shadow"></div><div class="inn">9</div></div></a></li><li class="flip-clock-active"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">0</div></div><div class="down"><div class="shadow"></div><div class="inn">0</div></div></a></li></ul><span class="flip-clock-divider seconds"><span class="flip-clock-dot top"></span><span class="flip-clock-dot bottom"></span></span><ul class="flip  play"><li class="flip-clock-before"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">4</div></div><div class="down"><div class="shadow"></div><div class="inn">4</div></div></a></li><li class="flip-clock-active"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">5</div></div><div class="down"><div class="shadow"></div><div class="inn">5</div></div></a></li></ul><ul class="flip  play"><li class="flip-clock-before"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">4</div></div><div class="down"><div class="shadow"></div><div class="inn">4</div></div></a></li><li class="flip-clock-active"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">5</div></div><div class="down"><div class="shadow"></div><div class="inn">5</div></div></a></li></ul>
+						</div>
+					</div>
+					<div id="currentPrice" class="price">
+						<p class="status">Current</p>
+						<p class="currency"><span class="locale">£</span> 216,000</p>
+					</div>
+				</div>
+			</li>
+			<li class="ongoing">
+				<div class="bg b"></div>
+				<a href="#lotDetail/1584154" class="detail">
+					<p class="lot_no">Lot. 1</p>
+					<div class="c_wrap">
+						<div class="thumb img_align">
+							<img src="http://www.christies.com/lotfinderimages/d59307/a_nishapur_pottery_bowl_north_east_iran_10th_century_d5930798h.jpg">
+						</div>
+						<div class="cont">
+							<p class="artist">Yoshihara Jiro</p>
+							<p class="title">Bekannt durch Film, Funk, Fernsehen und Polizeinotrufsäulen (A celebrity in film, radio, television and police call boxes)</p>
+							<p class="price"> £ 50,000 - £ 60,000</p>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li class="past">
+				<div class="bg"></div>
+				<a href="#lotDetail/1584154" class="detail">
+					<p class="lot_no">Lot. 1</p>
+					<div class="c_wrap">
+						<div class="thumb img_align">
+							<img src="http://www.christies.com/lotfinderimages/d59307/a_nishapur_pottery_bowl_north_east_iran_10th_century_d5930798h.jpg">
+						</div>
+						<div class="cont">
+							<p class="artist">Yoshihara Jiro</p>
+							<p class="title">Bekannt durch Film, Funk, Fernsehen und Polizeinotrufsäulen (A celebrity in film, radio, television and police call boxes)</p>
+							<p class="price"> £ 50,000 - £ 60,000</p>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li class="past">
+				<div class="bg"></div>
+				<a href="#lotDetail/1584154" class="detail">
+					<p class="lot_no">Lot. 1</p>
+					<div class="c_wrap">
+						<div class="thumb img_align">
+							<img src="http://www.christies.com/lotfinderimages/d59307/a_nishapur_pottery_bowl_north_east_iran_10th_century_d5930798h.jpg">
+						</div>
+						<div class="cont">
+							<p class="artist">Yoshihara Jiro</p>
+							<p class="title">Bekannt durch Film, Funk, Fernsehen und Polizeinotrufsäulen (A celebrity in film, radio, television and police call boxes)</p>
+							<p class="price"> £ 50,000 - £ 60,000</p>
+						</div>
+					</div>
+					<div class="result">
+						<span class="c_black">Withdrawn</span>
+					</div>
+				</a>
+			</li>
+			<li class="past search-result">
+				<div class="bg"></div>
+				<div style="color:#fff;background-color:#e44b3b;padding:3px 10px;opacity:1;height:14px;">
+					<p style="float:left">Christies · New York</p>
+					<p style="float:right">25 Nov 2015</p>
+				</div>
+				<a href="#lotDetail/1584154" class="detail">
+					<p class="lot_no">Lot. 1</p>
+					<div class="c_wrap">
+						<div class="thumb img_align">
+							<img src="http://www.christies.com/lotfinderimages/d59307/a_nishapur_pottery_bowl_north_east_iran_10th_century_d5930798h.jpg">
+						</div>
+						<div class="cont">
+							<p class="artist">Yoshihara Jiro</p>
+							<p class="title">Bekannt durch Film, Funk, Fernsehen und Polizeinotrufsäulen (A celebrity in film, radio, television and police call boxes)</p>
+							<p class="price"> £ 50,000 - £ 60,000</p>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li class="past search-result">
+				<div class="bg"></div>
+				<div style="color:#fff;background-color:#e44b3b;padding:3px 10px;opacity:1;height:14px;">
+					<p style="float:left">Christies</p>
+					<p style="float:right">25 Nov 2015, 4:00 pm</p>
+				</div>
+				<a href="#lotDetail/1584154" class="detail">
+					<p class="lot_no">Lot. 1</p>
+					<div class="c_wrap">
+						<div class="thumb img_align">
+							<img src="http://www.christies.com/lotfinderimages/d59307/a_nishapur_pottery_bowl_north_east_iran_10th_century_d5930798h.jpg">
+						</div>
+						<div class="cont">
+							<p class="artist">Yoshihara Jiro</p>
+							<p class="title">Bekannt durch Film, Funk, Fernsehen und Polizeinotrufsäulen (A celebrity in film, radio, television and police call boxes)</p>
+							<p class="price"> £ 50,000 - £ 60,000</p>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li class="past search-result">
+				<div class="bg"></div>
+				<div style="color:#fff;background-color:#e44b3b;padding:3px 10px;opacity:1;height:14px;">
+					<p style="float:left">Christies</p>
+					<p style="float:right">25 Nov 2015, 4:00 pm</p>
+				</div>
+				<a href="#lotDetail/1584154" class="detail">
+					<p class="lot_no">Lot. 1</p>
+					<div class="c_wrap">
+						<div class="thumb img_align">
+							<img src="http://www.christies.com/lotfinderimages/d59307/a_nishapur_pottery_bowl_north_east_iran_10th_century_d5930798h.jpg">
+						</div>
+						<div class="cont">
+							<p class="artist">Yoshihara Jiro</p>
+							<p class="title">Bekannt durch Film, Funk, Fernsehen und Polizeinotrufsäulen (A celebrity in film, radio, television and police call boxes)</p>
+							<p class="price"> £ 50,000 - £ 60,000</p>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li class="past search-result">
+				<div class="bg"></div>
+				<div style="color:#fff;background-color:#e44b3b;padding:3px 10px;opacity:1;height:14px;">
+					<p style="float:left">Christies</p>
+					<p style="float:right">25 Nov 2015, 4:00 pm</p>
+				</div>
+				<a href="#lotDetail/1584154" class="detail">
+					<p class="lot_no">Lot. 1</p>
+					<div class="c_wrap">
+						<div class="thumb img_align">
+							<img src="http://www.christies.com/lotfinderimages/d59307/a_nishapur_pottery_bowl_north_east_iran_10th_century_d5930798h.jpg">
+						</div>
+						<div class="cont">
+							<p class="artist">Yoshihara Jiro</p>
+							<p class="title">Bekannt durch Film, Funk, Fernsehen und Polizeinotrufsäulen (A celebrity in film, radio, television and police call boxes)</p>
+							<p class="price"> £ 50,000 - £ 60,000</p>
+						</div>
+					</div>
+					<div class="result">
+						<p class="status">hammer</p>
+						<span> £ 105,000 </span>
+					</div>
+				</a>
+			</li>
+			<li class="past search-result">
+				<div class="bg"></div>
+				<div style="color:#fff;background-color:#e44b3b;padding:3px 10px;opacity:1;height:14px;">
+					<p style="float:left">Christies</p>
+					<p style="float:right">25 Nov 2015, 4:00 pm</p>
+				</div>
+				<a href="#lotDetail/1584154" class="detail">
+					<p class="lot_no">Lot. 1</p>
+					<div class="c_wrap">
+						<div class="thumb img_align">
+							<img src="http://www.christies.com/lotfinderimages/d59307/a_nishapur_pottery_bowl_north_east_iran_10th_century_d5930798h.jpg">
+						</div>
+						<div class="cont">
+							<p class="artist">Yoshihara Jiro</p>
+							<p class="title">Bekannt durch Film, Funk, Fernsehen und Polizeinotrufsäulen (A celebrity in film, radio, television and police call boxes)</p>
+							<p class="price"> £ 50,000 - £ 60,000</p>
+						</div>
+					</div>
+					<div class="result">
+						<p class="status">hammer</p>
+						<span> £ 105,000 </span>
+					</div>
+				</a>
+			</li>
+			<li class="past search-result">
+				<div class="bg"></div>
+				<div style="color:#fff;background-color:#e44b3b;padding:3px 10px;opacity:1;height:14px;">
+					<p style="float:left">Christies</p>
+					<p style="float:right">25 Nov 2015, 4:00 pm</p>
+				</div>
+				<a href="#lotDetail/1584154" class="detail">
+					<p class="lot_no">Lot. 1</p>
+					<div class="c_wrap">
+						<div class="thumb img_align">
+							<img src="http://www.christies.com/lotfinderimages/d59307/a_nishapur_pottery_bowl_north_east_iran_10th_century_d5930798h.jpg">
+						</div>
+						<div class="cont">
+							<p class="artist">Yoshihara Jiro</p>
+							<p class="title">Bekannt durch Film, Funk, Fernsehen und Polizeinotrufsäulen (A celebrity in film, radio, television and police call boxes)</p>
+							<p class="price"> £ 50,000 - £ 60,000</p>
+						</div>
+					</div>
+					<div class="result">
+						<p class="status">hammer</p>
+						<span> £ 105,000 </span>
+					</div>
+				</a>
+			</li>
+			<li class="past search-result">
+				<div class="bg"></div>
+				<div style="color:#fff;background-color:#e44b3b;padding:3px 10px;opacity:1;height:14px;">
+					<p style="float:left">Christies</p>
+					<p style="float:right">25 Nov 2015, 4:00 pm</p>
+				</div>
+				<a href="#lotDetail/1584154" class="detail">
+					<p class="lot_no">Lot. 1</p>
+					<div class="c_wrap">
+						<div class="thumb img_align">
+							<img src="http://www.christies.com/lotfinderimages/d59307/a_nishapur_pottery_bowl_north_east_iran_10th_century_d5930798h.jpg">
+						</div>
+						<div class="cont">
+							<p class="artist">Yoshihara Jiro</p>
+							<p class="title">Bekannt durch Film, Funk, Fernsehen und Polizeinotrufsäulen (A celebrity in film, radio, television and police call boxes)</p>
+							<p class="price"> £ 50,000 - £ 60,000</p>
+						</div>
+					</div>
+					<div class="result">
+						<p class="status">hammer</p>
+						<span> £ 105,000 </span>
+					</div>
+				</a>
+			</li>
+			<li class="past">
+				<div class="bg"></div>
+				<a href="#lotDetail/1584154" class="detail">
+					<p class="lot_no">Lot. 1</p>
+					<div class="c_wrap">
+						<div class="thumb img_align">
+							<img src="http://www.christies.com/lotfinderimages/d59307/a_nishapur_pottery_bowl_north_east_iran_10th_century_d5930798h.jpg">
+						</div>
+						<div class="cont">
+							<p class="artist">Yoshihara Jiro</p>
+							<p class="title">Bekannt durch Film, Funk, Fernsehen und Polizeinotrufsäulen (A celebrity in film, radio, television and police call boxes)</p>
+							<p class="price"> £ 50,000 - £ 60,000</p>
+						</div>
+					</div>
+					<div class="result">
+						<p class="status">hammer</p>
+						<span> £ 105,000 </span>
+					</div>
+				</a>
+			</li>
+			<li class="past">
+				<div class="bg"></div>
+				<a href="#lotDetail/1584154" class="detail">
+					<p class="lot_no">Lot. 1</p>
+					<div class="c_wrap">
+						<div class="thumb img_align">
+							<img src="http://www.christies.com/lotfinderimages/d59307/a_nishapur_pottery_bowl_north_east_iran_10th_century_d5930798h.jpg">
+						</div>
+						<div class="cont">
+							<p class="artist">Yoshihara Jiro</p>
+							<p class="title">Bekannt durch Film, Funk, Fernsehen und Polizeinotrufsäulen (A celebrity in film, radio, television and police call boxes)</p>
+							<p class="price"> £ 50,000 - £ 60,000</p>
+						</div>
+					</div>
+					<div class="result">
+						<span class="c_black">Passed</span>
+					</div>
+				</a>
+			</li>
+			<li class="past">
+				<div class="bg"></div>
+				<a href="#lotDetail/1584154" class="detail">
+					<p class="lot_no">Lot. 1</p>
+					<div class="c_wrap">
+						<div class="thumb img_align">
+							<img src="http://www.christies.com/lotfinderimages/d59307/a_nishapur_pottery_bowl_north_east_iran_10th_century_d5930798h.jpg">
+						</div>
+						<div class="cont">
+							<p class="artist">Yoshihara Jiro</p>
+							<p class="title">Bekannt durch Film, Funk, Fernsehen und Polizeinotrufsäulen (A celebrity in film, radio, television and police call boxes)</p>
+							<p class="price"> £ 50,000 - £ 60,000</p>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li class="past">
+				<div class="bg"></div>
+				<a href="#lotDetail/1584154" class="detail">
+					<p class="lot_no">Lot. 1</p>
+					<div class="c_wrap">
+						<div class="thumb img_align">
+							<img src="http://www.christies.com/lotfinderimages/d59307/a_nishapur_pottery_bowl_north_east_iran_10th_century_d5930798h.jpg">
+						</div>
+						<div class="cont">
+							<p class="artist">Yoshihara Jiro</p>
+							<p class="title">Bekannt durch Film, Funk, Fernsehen und Polizeinotrufsäulen (A celebrity in film, radio, television and police call boxes)</p>
+							<p class="price"> £ 50,000 - £ 60,000</p>
+						</div>
+					</div>
+					<div class="result">
+						<span class="c_black">Passed</span>
+					</div>
+				</a>
+			</li>
+			<li class="past">
+				<div class="bg"></div>
+				<a href="#lotDetail/1584154" class="detail">
+					<p class="lot_no">Lot. 1</p>
+					<div class="c_wrap">
+						<div class="thumb img_align">
+							<img src="http://www.christies.com/lotfinderimages/d59307/a_nishapur_pottery_bowl_north_east_iran_10th_century_d5930798h.jpg">
+						</div>
+						<div class="cont">
+							<p class="artist">Yoshihara Jiro</p>
+							<p class="title">Bekannt durch Film, Funk, Fernsehen und Polizeinotrufsäulen (A celebrity in film, radio, television and police call boxes)</p>
+							<p class="price"> £ 50,000 - £ 60,000</p>
+						</div>
+					</div>
+					<div class="result">
+						<span class="c_black">Passed</span>
+					</div>
+				</a>
+			</li>
+		</ul>
+		<div id="btn-more-lot-wrap" class="btns">
+			<button id="btn-more-lot" class="btn-more">View More</button>
+			<select class="btn-more-lot-option">
+				<option value="">GO TO LOTS</option>
+				<option value="">NEXT 20 LOTS</option>
+				<option value="">Lots 1 - 20</option>
+				<option value="">Lots 21 - 40</option>
+				<option value="">Lots 41 - 60</option>
+				<option value="">Lots 61 - 80</option>
+				<option value="">Lots 81 - 100</option>
+				<option value="">Lots 101 - 120</option>
+				<option value="">Lots 121 - 140</option>
+				<option value="">Lots 141 - 160</option>
+				<option value="">Lots 161 - 180</option>
+				<option value="">Lots 181 - 200</option>
+			</select>
+		</div>
+
+
+	</div>
+	<span id="go_top" onclick="window.scrollTo(0,0)"></span></div>
+<!-- temp start -->
+<div class="temp-lotlist"></div>
+<!-- temp end -->
+</body>
+</html>

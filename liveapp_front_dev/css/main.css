@@ -25,6 +25,12 @@
 	src:url('fonts/gotham-bold.woff') format('woff'), local(times new romans);
 }
 
+@font-face {
+	font-family:'tl';
+	font-weight:400;
+	src:url('fonts/timeless-woff-webfont.woff') format('woff'), local(times new romans);
+}
+
 /* reset default browser setting */
 * {margin:0; padding:0; color:inherit; line-height:1em; font-size:inherit; font-family:inherit;}
 html {width:100%; height:100%; position:relative;}
@@ -55,7 +61,7 @@ pre {word-wrap: break-word}
 
 /*
 	color sets
-	#e44b3b	rgb:228,75,59		red			christies		c1	C
+	#e74b3c	rgb:228,75,59		red			christies		c1	C
 	#146ad1	rgb:20,106,209		blue		sothebys		c2	S
 	#603ab4 rgb:96,58,180		purple		bonhams			c3	B
 	#000000	rgb:0,0,0			black		phillips		c4	P
@@ -70,7 +76,7 @@ pre {word-wrap: break-word}
 	400		book 		normal
 	700		medium		bold
 */
-.c1 {color:#e44b3b;}
+.c1 {color:#e74b3c;}
 .c2 {color:#146ad1;}
 .c3 {color:#603ab4;}
 .c4 {color:#000000;}
@@ -79,7 +85,7 @@ pre {word-wrap: break-word}
 .c7 {color:#00b9bf;}
 .c8 {color:#000000;}
 
-.c1.b, .c1 .b {background-color:#e44b3b; color:#fff;}
+.c1.b, .c1 .b {background-color:#e74b3c; color:#fff;}
 .c2.b, .c2 .b {background-color:#146ad1; color:#fff;}
 .c3.b, .c3 .b {background-color:#603ab4; color:#fff;}
 .c4.b, .c4 .b {background-color:#000000; color:#fff;}
@@ -257,57 +263,6 @@ header .gohome img {display:none}
 .auction_list > li .loading {height: 212px;margin-top: 20px;overflow:hidden;font-size:20px;border:1px solid #eee;padding:20px;text-align:center;background:transparent url('../img/loading.png') no-repeat center 110px;}
 
 /* lot list */
-.lot_list .top_fix {position:fixed; top:50px; left:0; width:100%; height:65px; box-sizing:border-box; overflow:visible; background:#fff; z-index:100;}
-.move_other_auction {box-shadow:0 4px 0 rgba(203,203,203,0.5);}
-.move_other_auction .a {position:relative; display:block; width:100%; height:65px; box-sizing:border-box; padding:15px 16px 15px 62px;}
-
-/*.move_other_auction .a::after {content:''; position:absolute; right:20px; top:50%; margin-top:-4px; width:16px; height:8px; background:url('../img/ico_arrow_ud.png') no-repeat 0 0; background-size:16px 16px;}*/
-.move_other_auction .a::after {content:''; position:absolute; right:20px; top:50%; margin-top:-4px; width:16px; height:8px;}
-
-.move_other_auction .a.on::after {background-position:0 100%;}
-/*.move_other_auction .a .ico {position:absolute; top:15px; left:20px; width:34px; height:34px; box-sizing:border-box; border-radius:17px; border:1px solid; padding:5px 0; overflow:hidden; font-size:24px; font-weight:300; text-align:center;}*/
-/*.move_other_auction .a .ico.b {border:0; padding:6px 0;}*/
-/*.move_other_auction .c1 .a .ico,*/
-/*.move_other_auction .c6 .a .ico {letter-spacing:3px;}*/
-
-.move_other_auction .a .ico {position:absolute; top:15px; left:16px; width:34px; height:38px; text-indent:100px;overflow:hidden;background:none}
-.move_other_auction .c1 .a .ico {background: transparent url('../img/ico_c1_upcoming_s.png') no-repeat left top;background-size:100% auto}
-.move_other_auction .c2 .a .ico {background: transparent url('../img/ico_c2_upcoming_s.png') no-repeat left top;background-size:100% auto}
-.move_other_auction .c3 .a .ico {background: transparent url('../img/ico_c3_upcoming_s.png') no-repeat left top;background-size:100% auto}
-.move_other_auction .c4 .a .ico {background: transparent url('../img/ico_c4_upcoming_s.png') no-repeat left top;background-size:100% auto}
-.move_other_auction .c5 .a .ico {background: transparent url('../img/ico_c5_upcoming_s.png') no-repeat left top;background-size:100% auto}
-.move_other_auction .c6 .a .ico {background: transparent url('../img/ico_c6_upcoming_s.png') no-repeat left top;background-size:100% auto}
-.move_other_auction .c7 .a .ico {background: transparent url('../img/ico_c7_upcoming_s.png') no-repeat left top;background-size:100% auto}
-.move_other_auction .c8 .a .ico {background: transparent url('../img/ico_c8_upcoming_s.png') no-repeat left top;background-size:100% auto}
-
-.move_other_auction .c1 .a .ico.b {background: transparent url('../img/ico_c1_current_s.png') no-repeat left top;background-size:100% auto}
-.move_other_auction .c2 .a .ico.b {background: transparent url('../img/ico_c2_current_s.png') no-repeat left top;background-size:100% auto}
-.move_other_auction .c3 .a .ico.b {background: transparent url('../img/ico_c3_current_s.png') no-repeat left top;background-size:100% auto}
-.move_other_auction .c4 .a .ico.b {background: transparent url('../img/ico_c4_current_s.png') no-repeat left top;background-size:100% auto}
-.move_other_auction .c5 .a .ico.b {background: transparent url('../img/ico_c5_current_s.png') no-repeat left top;background-size:100% auto}
-.move_other_auction .c6 .a .ico.b {background: transparent url('../img/ico_c6_current_s.png') no-repeat left top;background-size:100% auto}
-.move_other_auction .c7 .a .ico.b {background: transparent url('../img/ico_c7_current_s.png') no-repeat left top;background-size:100% auto}
-.move_other_auction .c8 .a .ico.b {background: transparent url('../img/ico_c8_current_s.png') no-repeat left top;background-size:100% auto}
-
-.move_other_auction .c1 .a .ico.p {background: transparent url('../img/ico_c1_past_s.png') no-repeat left top;background-size:100% auto}
-.move_other_auction .c2 .a .ico.p {background: transparent url('../img/ico_c2_past_s.png') no-repeat left top;background-size:100% auto}
-.move_other_auction .c3 .a .ico.p {background: transparent url('../img/ico_c3_past_s.png') no-repeat left top;background-size:100% auto}
-.move_other_auction .c4 .a .ico.p {background: transparent url('../img/ico_c4_past_s.png') no-repeat left top;background-size:100% auto}
-.move_other_auction .c5 .a .ico.p {background: transparent url('../img/ico_c5_past_s.png') no-repeat left top;background-size:100% auto}
-.move_other_auction .c6 .a .ico.p {background: transparent url('../img/ico_c6_past_s.png') no-repeat left top;background-size:100% auto}
-.move_other_auction .c7 .a .ico.p {background: transparent url('../img/ico_c7_past_s.png') no-repeat left top;background-size:100% auto}
-.move_other_auction .c8 .a .ico.p {background: transparent url('../img/ico_c8_past_s.png') no-repeat left top;background-size:100% auto}
-
-
-.move_other_auction .a .cont {position:relative; top:1px;}
-.move_other_auction .a .cont p {width:100%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; line-height:1.3em;}
-.move_other_auction .a .cont .vendor {font-size:12.5px; color:#222;}
-.move_other_auction .a .cont .lots {font-size:13px; color:#777;letter-spacing: -1px}
-.move_other_auction .a .cont .title {font-size:13.5px; color:#222; font-weight:600;}
-.move_other_auction .other_auctions {position:absolute; top:65px; left:0; width:100%; max-height:180px; border-top:4px solid #ddd; border-bottom:1px solid #ddd; background:#ebebeb; z-index:101; display:none;}
-.move_other_auction .other_auctions li {width:100%; height:60px; border-top:1px solid #ddd;}
-.move_other_auction .other_auctions li:first-child {border-top:0;}
-.move_other_auction .other_auctions li .a::after {display:none;}
 
 .auction_sale_info {display:block; position:absolute; left:0; top:65px; min-width:100%; height:auto; overflow:hidden; padding:15px 20px; box-sizing:border-box; font-weight:300; font-size:19px; z-index:95;}
 .auction_sale_info .b {position:absolute; top:0; left:0; width:100%; height:100%; opacity:0.75; z-index:-1;}
@@ -442,7 +397,7 @@ header .gohome img {display:none}
 .auction_list > li .flip-clock-dot.top {position:absolute; display:block;top:20px; padding:0}
 .auction_list > li .flip-clock-dot.bottom {position:absolute; display:block;top:60px; padding:0}
 
-.c1 .flip-clock-dot.top, .c1 .flip-clock-dot.bottom {background-color:#e44b3b}
+.c1 .flip-clock-dot.top, .c1 .flip-clock-dot.bottom {background-color:#e74b3c}
 .c2 .flip-clock-dot.top, .c2 .flip-clock-dot.bottom {background-color:#146ad1}
 .c3 .flip-clock-dot.top, .c3 .flip-clock-dot.bottom {background-color:#603ab4}
 .c4 .flip-clock-dot.top, .c4 .flip-clock-dot.bottom {background-color:#000000}
@@ -452,7 +407,7 @@ header .gohome img {display:none}
 .c8 .flip-clock-dot.top, .c8 .flip-clock-dot.bottom {background-color:#000000}
 
 .flip-clock-wrapper ul li a div div.inn {background-color:#222; color:#fff;}
-.c1 .flip-clock-wrapper ul li a div div.inn {background-color:#e44b3b; color:#fff;}
+.c1 .flip-clock-wrapper ul li a div div.inn {background-color:#e74b3c; color:#fff;}
 .c2 .flip-clock-wrapper ul li a div div.inn {background-color:#146ad1; color:#fff;}
 .c3 .flip-clock-wrapper ul li a div div.inn {background-color:#603ab4; color:#fff;}
 .c4 .flip-clock-wrapper ul li a div div.inn {background-color:#000000; color:#fff;}
@@ -461,7 +416,7 @@ header .gohome img {display:none}
 .c7 .flip-clock-wrapper ul li a div div.inn {background-color:#00b9bf; color:#fff;}
 .c8 .flip-clock-wrapper ul li a div div.inn {background-color:#000000; color:#fff;}
 
-/*.c1 .flip-clock-wrapper ul li a div div.inn {color:#e44b3b; background-color:#fff;}*/
+/*.c1 .flip-clock-wrapper ul li a div div.inn {color:#e74b3c; background-color:#fff;}*/
 /*.c2 .flip-clock-wrapper ul li a div div.inn {color:#146ad1; background-color:#fff;}*/
 /*.c3 .flip-clock-wrapper ul li a div div.inn {color:#603ab4; background-color:#fff;}*/
 /*.c4 .flip-clock-wrapper ul li a div div.inn {color:#000000; background-color:#fff;}*/
@@ -656,7 +611,7 @@ header .gohome img {display:none}
 /* add acution list - active lot */
 
 .auction_list > li .detail .c_bot .soldfor {margin: -48px -15px -20px;padding: 58px 15px 20px;}
-.auction_list > li.c1 .detail .c_bot .soldfor {background:#e44b3b;}
+.auction_list > li.c1 .detail .c_bot .soldfor {background:#e74b3c;}
 .auction_list > li.c2 .detail .c_bot .soldfor {background:#146ad1;}
 .auction_list > li.c3 .detail .c_bot .soldfor {background:#603ab4;}
 .auction_list > li.c4 .detail .c_bot .soldfor {background:#000000;}
@@ -778,16 +733,16 @@ header .gohome img {display:none}
 	padding-left: 62px;
 }
 
-.lot_list .auction_sale_info.ongoing .prices::after {
-	content:'';
-	position:absolute;
-	right:0;
-	top:10px;
-	width:12px;
-	height:20px;
-	margin-right: 6px;
-	background:url('../img/bg_link_arr.png') no-repeat 0 0; background-size:10px 12px;
-}
+/*.lot_list .auction_sale_info.ongoing .prices::after {*/
+	/*content:'';*/
+	/*position:absolute;*/
+	/*right:0;*/
+	/*top:10px;*/
+	/*width:12px;*/
+	/*height:20px;*/
+	/*margin-right: 6px;*/
+	/*background:url('../img/bg_link_arr.png') no-repeat 0 0; background-size:10px 12px;*/
+/*}*/
 
 .lot_list .auction_sale_info.ongoing .tit {
 	display: inline-block;
@@ -798,12 +753,13 @@ header .gohome img {display:none}
 }
 .lot_list .auction_sale_info.ongoing .prices {
 	display: inline-block;
-	margin: 0 0 0 4px;
+	margin: 0;
 	padding:0;
 	font-size: 16px;
 }
 .lot_list .auction_sale_info.ongoing .prices .p1 {
-	margin: -2px 4px 0 0;
+	margin: 7px 4px 0 0;
+	display: block;
 }
 .lot_list .auction_sale_info.ongoing .prices .txt {
 	font-size: 10px;
@@ -821,23 +777,23 @@ header .gohome img {display:none}
 
 /* fix fixed lot summary */
 
-.lot_list .move_other_auction .lot_summary {
+.lot_list .auction-summary .lot_summary {
 	background-color: rgba(255,255,255,1);
 }
 
 
-.lot_list .move_other_auction .c1 .lot_summary {border:4px solid rgba(228,75,59,0.75);border-top:0;}
-.lot_list .move_other_auction .c2 .lot_summary {border:4px solid rgba(20,106,209,0.75);border-top:0;}
-.lot_list .move_other_auction .c3 .lot_summary {border:4px solid rgba(96,58,180,0.75);border-top:0;}
-.lot_list .move_other_auction .c4 .lot_summary {border:4px solid rgba(0,0,0,0.75);border-top:0;}
-.lot_list .move_other_auction .c5 .lot_summary {border:4px solid rgba(246,187,67,0.75);border-top:0;}
-.lot_list .move_other_auction .c6 .lot_summary {border:4px solid rgba(238,120,56,0.75);border-top:0;}
-.lot_list .move_other_auction .c7 .lot_summary {border:4px solid rgba(0,204,196,0.75);border-top:0;}
-.lot_list .move_other_auction .c8 .lot_summary {border:4px solid rgba(0,0,0,0.75);border-top:0;}
+.lot_list .auction-summary .c1 .lot_summary {border:4px solid rgba(228,75,59,0.75);border-top:0;}
+.lot_list .auction-summary .c2 .lot_summary {border:4px solid rgba(20,106,209,0.75);border-top:0;}
+.lot_list .auction-summary .c3 .lot_summary {border:4px solid rgba(96,58,180,0.75);border-top:0;}
+.lot_list .auction-summary .c4 .lot_summary {border:4px solid rgba(0,0,0,0.75);border-top:0;}
+.lot_list .auction-summary .c5 .lot_summary {border:4px solid rgba(246,187,67,0.75);border-top:0;}
+.lot_list .auction-summary .c6 .lot_summary {border:4px solid rgba(238,120,56,0.75);border-top:0;}
+.lot_list .auction-summary .c7 .lot_summary {border:4px solid rgba(0,204,196,0.75);border-top:0;}
+.lot_list .auction-summary .c8 .lot_summary {border:4px solid rgba(0,0,0,0.75);border-top:0;}
 
 
 
-.lot_list .move_other_auction .lot_summary img {
+.lot_list .auction-summary .lot_summary img {
 	display: block;
 	max-height: 50px;
 	max-width: 50px;
@@ -845,23 +801,23 @@ header .gohome img {display:none}
 	opacity: 1;
 }
 
-.lot_list .move_other_auction .lot_summary .cont .title {
+.lot_list .auction-summary .lot_summary .cont .title {
 	margin-top:5px;
 	font-size:12.5px;
 	font-weight:600;
 }
 
-.lot_list .move_other_auction .lot_summary .cont .artist {
+.lot_list .auction-summary .lot_summary .cont .artist {
 	font-size:14px;
 }
 
-.lot_list .move_other_auction .lot_summary .cont {
+.lot_list .auction-summary .lot_summary .cont {
 	margin-right: 10px;
 }
-.lot_list .move_other_auction .lot_summary .cont .price1 {
+.lot_list .auction-summary .lot_summary .cont .price1 {
 	font-size: 14px;
 }
-.lot_list .move_other_auction .lot_summary {
+.lot_list .auction-summary .lot_summary {
 	height: 78px;
 }
 
@@ -1035,3 +991,154 @@ header .refresh img {
 
 /* notification icon */
 header .show-noti {position:absolute; left: 10px; top: 10px;  width: 28px; height: 28px;background:transparent url('../img/noti_g.png') no-repeat 0 0;background-size: 28px auto;z-index: 2;}
+
+
+/* Change UI - ios app version 1.1.0 - 2015.12.24 by Lia*/
+
+
+/* lot detail */
+.lot_detail .default_info {position:relative;padding: 48px 12px 20px 12px;letter-spacing: -1px;}
+.lot_detail .default_info .artist_info .name {color:#222;font-size: 17px;font-weight: 600;letter-spacing: -0.5px;text-transform: uppercase;}
+.lot_detail .default_info .artist_info {margin-top: 20px;}
+.lot_detail .default_info .artist_info .info {margin-top: 2px; color:#868686;font-size: 12px;letter-spacing: 0;}
+.lot_detail .default_info .art_title {margin-top: 13px; color:#222;font-family: 'tl';font-style: italic;font-weight: 400;font-size: 22px;letter-spacing: -0.5px;line-height:23px}
+.lot_detail .default_info .price_info {position:relative;margin-top: 12px;margin-bottom: 15px;padding: 19px 0 15px 0; text-align:center; background:#f7f7f7;}
+.lot_detail .default_info .price_info .price1 {margin-top: 0px;font-size: 15px;font-weight: 400;letter-spacing: -0.5px;color:#868686;}
+.lot_detail .default_info .price_info .price2 {margin-top: 5px;font-size: 15px;color:#868686;}
+.lot_detail .default_info .price_info .price {margin-top: 0;margin-bottom: 4px;letter-spacing: -0.5px;}
+.lot_detail .default_info .price_info .price .currency {margin-top: 6px;display: inline-block;padding: 10px 12px 0 12px;}
+.lot_detail .default_info .price_info .price .currency .status {display: block;font-weight: 400;font-size: 14px;color: #222;margin-bottom: 4px;}
+.lot_detail .default_info .price_info .price .currency .amount {color: #222;font-weight: 600;font-size: 28px;display: inline-block;padding-right: 22px;background: transparent url('../img/sold_option_b.png') no-repeat right center;background-size: 14px auto;}
+.lot_detail .default_info .price_info .price .currency .origin {display: block;font-size: 15px;color: #222;margin-bottom: 4px;margin-top: 6px;}
+.lot_detail .default_info .price_info .price .currency .passed,
+.lot_detail .default_info .price_info .price .currency .withdrawn {color: #222;font-weight: 600;font-size: 28px;display: inline-block;}
+.lot_detail .header {position: fixed;width: 100%;height: 48px;color:#222;border-bottom: 1px solid #d7d3cf;z-index: 120;background-color:#fff}
+.lot_detail .header .lot-number { float: left;font-weight:300;font-size:19px;margin: 14px 0 0 13px;letter-spacing: -1px;text-transform: uppercase;}
+.lot_detail .header .btn { float: right;}
+.lot_detail .header .btn .btn-follow {position: absolute;right: 46px;top: 0;width: 48px;height: 48px;background: transparent url('../img/lotdetail_icon_follow.png') no-repeat center center;background-size: 22px auto;}
+.lot_detail .header .btn .btn-follow.following {background: transparent url('../img/lotdetail_icon_follow_on.png') no-repeat center center;background-size: 23px auto;}
+.lot_detail .header .btn .btn-close {position: absolute;right: 0;top: 0;width: 48px;height: 48px;background: transparent url('../img/lotdetail_icon_close.png') no-repeat center center;background-size: 22px auto;}
+.lot_detail .locale {font-weight: 400;}
+.lot_detail .default_info .art_info {margin-top: 0;}
+.follow-group {position:fixed; top: 0; left:0; box-sizing:border-box; width:100%; height: 100%;z-index: 130;display:none}
+.follow-group .mask {position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0); z-index:1;}
+.follow-group .btn-close {position: absolute;right: 46px;top: 0;width: 48px;height: 48px;background: transparent url('../img/lotdetail_icon_follow_on.png') no-repeat center center;background-size: 35px auto;z-index:100}
+.follow-group .btns {margin:49px 0 0 0;padding:0;z-index:100}
+.follow-group .btns::before {content: '';display:block;width:15px;height:8px;position: absolute;right: 62px;top: -7px;z-index:100;background: transparent url('../img/lotdetail_icon_follow_t.png') no-repeat top left;background-size: 15px auto;}
+.follow-group .btns li {margin:0;padding:0}
+.follow-group .btns li button {display:block;width:100%;height: 45px;line-height:45px;overflow:hidden;background-color:rgba(0,0,0,0.9);border-bottom: 1px solid rgba(100,100,100,0.5);text-align: center;font-weight: 300;font-size: 17px;color: #fff;}
+.follow-group .btns li button.selected .chk {display:inline-block;width:22px;height:17px;background:transparent url('../img/lotdetail_icon_following.png') no-repeat right center;background-size:17px auto }
+
+/* searching artist */
+.search-artist .header {box-sizing: border-box;position: fixed;width: 100%;padding: 9px 57px 0 16px;height: 48px;color:#222;z-index: 120;background-color:#fff;}
+.search-artist .header.cols-3 {padding: 9px 57px 0 59px;}
+.search-artist .header.type1 {border-bottom: 1px solid #d6d5d3;box-shadow: 0px 2px 2px rgba(0,0,0,0.1);}
+.search-artist .header.type2 {box-shadow: 0px 2px 2px rgba(0,0,0,0.1);}
+.search-artist .header .search { position: relative;font-weight:300;font-size:19px;letter-spacing: -1px;text-transform: uppercase;}
+.search-artist .header .search .search-input {font-weight: 300;font-size: 14px;letter-spacing: 0;border-radius: 5px;background: #f7f6f4 url('../img/gnb_icon_search.png') no-repeat 9px 8px;background-size: 13px auto;padding: 0 10px 0 30px;width: 100%;height: 29px;border: 0;color: #222;text-transform: uppercase;border: 1px sold;}
+.search-artist .header .search .search-reset {display:block;width: 30px;height: 31px;position: absolute;right: 2px;top: 0px;z-index:150;background: transparent url('../img/gnb_icon_delet.png') no-repeat center center;background-size: 15px auto;}
+.search-artist .header .btn {position: absolute;right: 0;top: 0;}
+.search-artist .header .btn.left {left: 0}
+.search-artist .header .btn .btn-close {width: 48px;height: 48px;background: transparent url('../img/lotdetail_icon_close.png') no-repeat center center;background-size: 22px auto;}
+.search-artist .header .btn .btn-refresh {width: 48px;height: 48px;background: transparent url('../img/gnb_icon_refresh.png') no-repeat center center;background-size: 22px auto;}
+.search-artist .header .btn .btn-back {width: 48px;height: 48px;background: transparent url('../img/gnb_icon_back.png') no-repeat center center;background-size: 22px auto;}
+.search-artist .scroll-body {width:100%;height:100%;padding: 49px 0 0 0;box-sizing: border-box;background-color:#f7f6f4;}
+.search-artist .scroll-body .results-count {box-sizing: border-box;height: 20px;padding: 1px 15px 0 15px;letter-spacing: -0.2px;color: #888888;background-color: #efeeec;}
+.search-artist .scroll-body .results-count::after {content: '';display:block;box-sizing: border-box;width:100%;height:1px;margin-top:2px;border-top: 1px solid #e0ddda;}
+.search-artist .scroll-body .results-count .text {display: inline-block;font-size: 11px;font-weight: 300;}
+.search-artist .scroll-body .results-count .count {display: inline-block;box-sizing: border-box;border-radius: 6px;padding: 2px 6px 3px 4px;background-color: #f7f6f4;margin-left: 5px;font-weight: 600;font-size: 10px;}
+.search-artist .scroll-body .results {padding: 0 15px 0 15px;box-sizing: border-box;}
+.search-artist .scroll-body .results .results-list li {box-sizing: border-box;height: 50px;text-transform: uppercase;font-size: 15px;font-weight: 400;padding: 17px 0 0 30px;border-bottom: 1px solid #e1dedb;}
+.search-artist .scroll-body .results .results-list li .searched {font-weight: 600;text-decoration: underline;}
+.search-artist .scroll-body .auction-past-text {letter-spacing: 1px;display:block;width: 166px;margin:0 auto;font-weight: 400;font-size: 14px;height: 40px;text-align: center;color:#aaa;background: transparent url('../img/lotlist_icon_past.png') no-repeat 0 14px;background-size: 13px auto;box-sizing:border-box;padding: 12px 0 0 22px;}
+.search-artist .scroll-body .auction-date {box-sizing: border-box;text-align: right;font-weight: 400;font-size: 11px;color: #777;height: 20px;text-transform: uppercase;padding: 5px 16px 0 0;}
+.search-artist .scroll-body .auction-result li {background-color: #fff;}
+.search-artist .scroll-body .auction-result .auction-summary {position:relative;box-sizing: border-box;padding: 13px 12px 0 58px;height: 55px;border-bottom: 0;background-color: #fff;}
+.search-artist .scroll-body .auction-result .auction-summary .ico {position: absolute;top: 18px;left: 17px;width: 31px;height: 31px;text-indent: 100px;overflow:hidden;}
+.search-artist .scroll-body .auction-result .auction-summary .cont .title {font-size: 14px;color: #222;font-weight: 400;display:block;display: -webkit-box;max-height: 32px;white-space: normal;-webkit-line-clamp: 2;-webkit-box-orient: vertical;overflow: hidden;text-overflow: ellipsis;letter-spacing: 0.1px;line-height: 15px;}
+.search-artist .scroll-body .auction-result .auction-summary .cont .vendor {font-size: 14px;font-weight: 400;color: #777777;letter-spacing: -0.5px;}
+.search-artist .scroll-body .auction-result .status {padding: 16px 15px 0px 15px;}
+.search-artist .scroll-body .auction-result .status .live {width:100%;height: 35px;border-radius: 3px;box-shadow: 0 4px 0 rgba(0,0,0,0.2);text-transform: uppercase;font-size: 16px;font-weight: 600;letter-spacing: 1px;}
+.search-artist .scroll-body .auction-result .lot-result {padding: 12px 15px 10px 15px;box-sizing: border-box}
+.search-artist .scroll-body .auction-result .lot-result li {box-sizing: border-box;position:relative;display:block;height:100px;border:1px solid #dfdcd9;border-bottom:0;padding: 10px 5px 10px 10px;box-shadow: 0 2px 2px rgba(0,0,0,0.1);}
+.search-artist .scroll-body .auction-result .lot-result li:last-child {border-bottom:1px solid #dfdcd9}
+.search-artist .scroll-body .auction-result .lot-result .thumb {display:block;float:left;max-width:60px;max-height:60px;text-align: center}
+.search-artist .scroll-body .auction-result .lot-result .thumb img {max-width:100%;max-width:100%;}
+.search-artist .scroll-body .auction-result .lot-result .cont {padding: 0px 0 0 74px;}
+.search-artist .scroll-body .auction-result .lot-result .cont .lot_no {font-size:10px;font-weight:600;text-transform: uppercase;margin: 2px 0 0 0;}
+.search-artist .scroll-body .auction-result .lot-result .cont .title {font-size: 14px;color: #222;font-family:'tl';font-weight: 400;display:block;display: -webkit-box;max-height: 14px;white-space: normal;-webkit-line-clamp: 1;-webkit-box-orient: vertical;overflow: hidden;text-overflow: ellipsis;margin-top: 6px;letter-spacing: -0.1px;line-height: 15px;font-style:italic}
+.search-artist .scroll-body .auction-result .lot-result .cont .price {font-size:14px;font-weight:400;color:#888;margin: 7px 0 0 0;}
+.search-artist .scroll-body .auction-result .lot-result .cont .price-local {font-size:12px;font-weight:400;color:#888;margin: 5px 0 0 0;}
+.search-artist .scroll-body .auction-result .lot-result .btns {margin:0;padding:0;position: absolute;right: 14px;bottom: 20px;}
+.search-artist .scroll-body .auction-result .lot-result .btns .btn-follow {width: 18px;height: 18px;background:transparent url('../img/lotdetail_icon_follow.png') no-repeat center center;background-size: 100% auto;opacity: 0.5}
+
+
+
+
+
+
+
+/* searching artist in auction */
+.auction-summary {position:relative;box-sizing: border-box;padding: 12px 0 0 47px;height: 55px;border-bottom: 1px solid #e0ddda;background-color: #efeeec;}
+.auction-summary .ico {position: absolute;top: 15px;left: 15px;width: 26px;height: 30px;text-indent: 100px;overflow:hidden;}
+.c1 .auction-summary .ico {background: transparent url('../img/ico_c1_upcoming_s.png') no-repeat left top;background-size:100% auto}
+.c2 .auction-summary .ico {background: transparent url('../img/ico_c2_upcoming_s.png') no-repeat left top;background-size:100% auto}
+.c3 .auction-summary .ico {background: transparent url('../img/ico_c3_upcoming_s.png') no-repeat left top;background-size:100% auto}
+.c4 .auction-summary .ico {background: transparent url('../img/ico_c4_upcoming_s.png') no-repeat left top;background-size:100% auto}
+.c5 .auction-summary .ico {background: transparent url('../img/ico_c5_upcoming_s.png') no-repeat left top;background-size:100% auto}
+.c6 .auction-summary .ico {background: transparent url('../img/ico_c6_upcoming_s.png') no-repeat left top;background-size:100% auto}
+.c7 .auction-summary .ico {background: transparent url('../img/ico_c7_upcoming_s.png') no-repeat left top;background-size:100% auto}
+.c8 .auction-summary .ico {background: transparent url('../img/ico_c8_upcoming_s.png') no-repeat left top;background-size:100% auto}
+
+.c1 .auction-summary .ico.b {background: transparent url('../img/ico_c1_current_s.png') no-repeat left top;background-size:100% auto}
+.c2 .auction-summary .ico.b {background: transparent url('../img/ico_c2_current_s.png') no-repeat left top;background-size:100% auto}
+.c3 .auction-summary .ico.b {background: transparent url('../img/ico_c3_current_s.png') no-repeat left top;background-size:100% auto}
+.c4 .auction-summary .ico.b {background: transparent url('../img/ico_c4_current_s.png') no-repeat left top;background-size:100% auto}
+.c5 .auction-summary .ico.b {background: transparent url('../img/ico_c5_current_s.png') no-repeat left top;background-size:100% auto}
+.c6 .auction-summary .ico.b {background: transparent url('../img/ico_c6_current_s.png') no-repeat left top;background-size:100% auto}
+.c7 .auction-summary .ico.b {background: transparent url('../img/ico_c7_current_s.png') no-repeat left top;background-size:100% auto}
+.c8 .auction-summary .ico.b {background: transparent url('../img/ico_c8_current_s.png') no-repeat left top;background-size:100% auto}
+
+.c1 .auction-summary .ico.p {background: transparent url('../img/ico_c1_past_s.png') no-repeat left top;background-size:100% auto}
+.c2 .auction-summary .ico.p {background: transparent url('../img/ico_c2_past_s.png') no-repeat left top;background-size:100% auto}
+.c3 .auction-summary .ico.p {background: transparent url('../img/ico_c3_past_s.png') no-repeat left top;background-size:100% auto}
+.c4 .auction-summary .ico.p {background: transparent url('../img/ico_c4_past_s.png') no-repeat left top;background-size:100% auto}
+.c5 .auction-summary .ico.p {background: transparent url('../img/ico_c5_past_s.png') no-repeat left top;background-size:100% auto}
+.c6 .auction-summary .ico.p {background: transparent url('../img/ico_c6_past_s.png') no-repeat left top;background-size:100% auto}
+.c7 .auction-summary .ico.p {background: transparent url('../img/ico_c7_past_s.png') no-repeat left top;background-size:100% auto}
+.c8 .auction-summary .ico.p {background: transparent url('../img/ico_c8_past_s.png') no-repeat left top;background-size:100% auto}
+
+.auction-summary .cont {display: inline-block;}
+.auction-summary .cont p {width:100%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; line-height:1.3em;}
+.auction-summary .cont .vendor {font-size:12.5px;font-weight: 300;color: #777777;letter-spacing: 0.5px;}
+.auction-summary .cont .lots {font-size:13px; color:#777;letter-spacing: -1px}
+.auction-summary .cont .title {font-size:13.5px;color: #888888; font-weight:600;display:block;display: -webkit-box;max-height:54px;white-space: normal;-webkit-line-clamp: 1;-webkit-box-orient: vertical;overflow: hidden;text-overflow: ellipsis;letter-spacing: 0.3px;}
+
+
+/* Lot List */
+.lots-list .header {box-sizing: border-box;position: fixed;width: 100%;padding: 9px 57px 0 16px;height: 48px;color:#222;z-index: 120;background-color:#fff;}
+.lots-list .header.type1 {border-bottom: 1px solid #d6d5d3;box-shadow: 0px 2px 2px rgba(0,0,0,0.1);}
+.lots-list .header.type2 {box-shadow: 0px 2px 2px rgba(0,0,0,0.1);}
+.lots-list .header .search { position: relative;font-weight:300;font-size:19px;letter-spacing: -1px;text-transform: uppercase;}
+.lots-list .header .search .search-input {font-weight: 300;font-size: 14px;letter-spacing: 0;border-radius: 5px;background: #f7f6f4 url('../img/gnb_icon_search.png') no-repeat 9px 8px;background-size: 13px auto;padding: 0 10px 0 30px;width: 100%;height: 29px;border: 0;color: #222;text-transform: uppercase;border: 1px sold;}
+.lots-list .header .search .search-reset {display:block;width: 30px;height: 31px;position: absolute;right: 2px;top: 0px;z-index:150;background: transparent url('../img/gnb_icon_delet.png') no-repeat center center;background-size: 15px auto;}
+.lots-list .header .btn {position: absolute;right: 0;top: 0;}
+.lots-list .header .btn .btn-close {width: 48px;height: 48px;background: transparent url('../img/lotdetail_icon_close.png') no-repeat center center;background-size: 22px auto;}
+.search-artist .scroll-body {width:100%;height:100%;padding: 49px 0 0 0;box-sizing: border-box;background-color:#f7f6f4;}
+.search-artist .scroll-body .results-count {box-sizing: border-box;height: 20px;padding: 1px 15px 0 15px;letter-spacing: -0.2px;color: #888888;background-color: #efeeec;}
+.search-artist .scroll-body .results-count::after {content: '';display:block;box-sizing: border-box;width:100%;height:1px;margin-top:2px;border-top: 1px solid #e0ddda;}
+.search-artist .scroll-body .results-count .text {display: inline-block;font-size: 11px;font-weight: 300;}
+.search-artist .scroll-body .results-count .count {display: inline-block;box-sizing: border-box;border-radius: 6px;padding: 2px 6px 3px 4px;background-color: #f7f6f4;margin-left: 5px;font-weight: 600;font-size: 10px;}
+.search-artist .scroll-body .results {padding: 0 15px 0 15px;box-sizing: border-box;}
+.search-artist .scroll-body .results .results-list li {box-sizing: border-box;height: 50px;text-transform: uppercase;font-size: 15px;font-weight: 400;padding: 17px 0 0 30px;border-bottom: 1px solid #e1dedb;}
+.search-artist .scroll-body .results .results-list li .searched {font-weight: 600;text-decoration: underline;}
+
+
+
+
+
+/* temp for html publishing */
+/*.temp-detail {display:block;position: absolute;top:0;left:0;width: 100%;height: 100%;opacity:0.5;background: transparent url('../temp_detail.png') 0 0;background-size: 100% auto;z-index:1000}*/
+/*.temp-search {display:block;position: absolute;top:0;left:0;width: 100%;height: 100%;opacity:0.5;background: transparent url('../temp_search.png') 0 0;background-size: 100% auto;z-index:1000}*/
+/*.temp-search-in-auction {display:block;position: absolute;top:0;left:0;width: 100%;height: 100%;opacity:0.5;background: transparent url('../temp_search_in_auction.png') 0 0;background-size: 100% auto;z-index:1000}*/
+/*.temp-search-result {display:block;position: absolute;top:0;left:0;width: 100%;height: 100%;opacity:0.5;background: transparent url('../temp_search_result.png') 0 0;background-size: 100% auto;z-index:1000}*/
