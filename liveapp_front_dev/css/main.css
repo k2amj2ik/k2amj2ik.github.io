@@ -1204,7 +1204,7 @@ header .show-noti {position:absolute; left: 10px; top: 10px;  width: 28px; heigh
 .search-result .scroll-body .auction-result .cont p {display:block;display: -webkit-box;white-space: normal;-webkit-line-clamp: 1;-webkit-box-orient: vertical;overflow: hidden;text-overflow: ellipsis;}
 .search-result .scroll-body .auction-result .lot_no {font-size: 11px;font-weight: 400;text-transform: uppercase;color: #888;margin: 0 0 0 0;}
 .search-result .scroll-body .auction-result .cont .artist {font-size: 13px;color: #222;font-weight: 600;margin-top: 5px;height: 13px;margin-bottom: 4px;text-transform: uppercase;}
-.search-result .scroll-body .auction-result .cont .title {font-size: 16px;color: #222;font-family:'tl';font-weight: 400;margin-top: 2px;line-height: 17px;font-style:italic;-webkit-line-clamp: 2;}
+.search-result .scroll-body .auction-result .cont .title {font-size: 16px;color: #222;font-family:'tl';font-weight: 400;margin-top: 2px;line-height: 17px;font-style:italic;/* -webkit-line-clamp: 2; */}
 .search-result .scroll-body .auction-result .cont .est {box-sizing: border-box;font-size: 14px;font-weight:400;color:#888;margin: 7px 0 0 0;padding-right: 32px;letter-spacing: -0.3px;-webkit-line-clamp: 2;}
 .search-result .scroll-body .auction-result .cont .est2 {box-sizing: border-box;font-size: 13px;font-weight:400;color:#888;margin: 10px 0 0 0;padding-right: 0;-webkit-line-clamp: 2;line-height: 14px;}
 .search-result .scroll-body .auction-result .cont .est-local {font-size: 12px;box-sizing: border-box;font-weight:400;color:#888;margin: 5px 0 0 0;padding-right: 32px;-webkit-line-clamp: 2;}
