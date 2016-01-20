@@ -858,7 +858,7 @@ header .show-noti {position:absolute; left: 10px; top: 10px;  width: 28px; heigh
 .header .btn .btn-back {width: 48px;height: 48px;background: transparent url('../img/gnb_icon_back.png') no-repeat center center;background-size: 22px auto;}
 .header .btn .btn-following {width: 51px;height: 48px;background: transparent url('../img/gnb_icon_follow.png') no-repeat center center;background-size: 24px auto;}
 .header .title {padding: 5px 0 0 9px;text-transform: uppercase;font-size: 20px;font-weight: 300;color:#222;text-align: center;}
-.auction-date {padding: 0 15px 0 0;/* position: fixed; */z-index: 5;box-sizing: border-box;text-align: right;font-weight: 400;font-size: 11px;color: #777;height: 14px;text-transform: uppercase;border: 0;background-color: #efeeec;width: 100%;margin-top: -2px;/* border-bottom: 1px solid #dfdcd9; *//* top: 40px; */}
+.auction-date {padding: 1px 15px 0 0;/* position: fixed; */z-index: 5;box-sizing: border-box;text-align: right;font-weight: 400;font-size: 11px;color: #777;height: 18px;text-transform: uppercase;border: 0;background-color: #efeeec;letter-spacing: -0.3;width: 100%;/* border-bottom: 1px solid #dfdcd9; *//* top: 40px; */}
 .badge-new {position:absolute;left:0;top:0;min-width: 18px;box-sizing: border-box;height: 18px;background-color:#ff0000;border-radius: 9px;color: #fff;text-align: center;overflow: hidden;padding: 4px;font-size: 11px;}
 @keyframes example {0% {opacity: 0;} 20% {opacity: 0;} 25% {opacity:1;} 80% {opacity:1;} 85% {opacity:0;} 100% {opacity:0;}}
 .sale-rate-ico {opacity:1;position: absolute;top: 42px;left: 5px;background-color: #fff;border-radius: 6px;font-size: 10.5px;text-align: center;width: 33px;height: 10px;/* overflow: hidden; */animation: example 4s ease 0s infinite alternate;}
@@ -947,17 +947,17 @@ header .show-noti {position:absolute; left: 10px; top: 10px;  width: 28px; heigh
 .auction-list .c7 .ico.p {background: transparent url('../img/ico_c7_past.png') no-repeat left top;background-size:100% auto}
 .auction-list .c8 .ico.p {background: transparent url('../img/ico_c8_past.png') no-repeat left top;background-size:100% auto}
 
-.auction-list .detail {position:relative; box-sizing:border-box;margin-top: 13px;/* padding: 14px 18px 14px 18px; */ border-top:0; background:#fff;box-shadow: 0 2px 4px rgba(0,0,0,0.1);height: 278px;overflow: hidden;border: 1px solid #dfdcd9;}
+.auction-list .detail {position:relative; box-sizing:border-box;margin-top: 13px;/* padding: 14px 18px 14px 18px; */ border-top:0; background:#fff;box-shadow: 0 2px 4px rgba(0,0,0,0.1);height: 300px;overflow: hidden;border: 1px solid #dfdcd9;}
 .auction-list .detail .line {position:absolute; top:0; left:0; height:0; border-top:2px solid;}
 .auction-list .detail .lot_no { font-size: 12px; font-weight: 400;color: #888;margin-top: 0;text-transform: uppercase;}
 .auction-list .detail .c_wrap {padding:0;text-align:center}
-.auction-list .detail .c_wrap .thumb {height: 80px;position: relative;margin-top: 10px;}
+.auction-list .detail .c_wrap .thumb {display: block;height: 80px;position: relative;margin-top: 13px;margin-bottom: 10px;}
 .auction-list .detail .c_wrap .thumb::after {content:''; position:absolute; top:0; left:0; width:100%; height:100%; overflow:hidden; box-sizing:border-box;}
 .auction-list .detail .c_wrap .thumb img {display:block;max-width: 150px;max-height:80px;margin: 0;position: absolute;top: 50%;left: 50%;margin-right: -50%;transform: translate(-50%, -50%)}
 .auction-list .detail .c_wrap .cont p {display:block;display: -webkit-box;white-space: normal;-webkit-line-clamp: 1;-webkit-box-orient: vertical;overflow: hidden;text-overflow: ellipsis;}
-.auction-list .detail .c_wrap .cont .artist {font-size: 13px;font-weight: 700; line-height: 18px;text-transform:uppercase;margin-top: 3px;color: #000;}
-.auction-list .detail .c_wrap .cont .title {font-size: 16px;color: #222;font-family:'tl';font-weight: 400;margin-top: 0;letter-spacing: -0.1px;line-height: 18px;font-style:italic}
-.auction-list .detail .c_wrap .cont .price {box-sizing: border-box;font-size: 14px;font-weight:400;color:#888;padding-right: 0;margin-top: 2px;}
+.auction-list .detail .c_wrap .cont .artist {font-size: 12px;font-weight: 700; line-height: 16px;text-transform:uppercase;margin-top: 3px;color: #000;}
+.auction-list .detail .c_wrap .cont .title {font-size: 14px;color: #222;font-family:'tl';font-weight: 400;margin-top: 0;letter-spacing: -0.1px;line-height: 15px;font-style:italic}
+.auction-list .detail .c_wrap .cont .price {box-sizing: border-box;font-size: 13px;font-weight:400;color:#888;padding-right: 0;margin-top: 2px;letter-spacing: -0.3px;}
 .auction-list .detail .btns {margin:0;padding:0;position: absolute;right: 0;top: 0;}
 .auction-list .detail .btns .btn-follow {width: 40px;height: 40px;background: transparent url('../img/lotdetail_icon_follow.png') no-repeat center center;background-size: 18px auto;opacity: 0.5}
 .auction-list .detail .btns .btn-follow.on {background: transparent url('../img/lotdetail_icon_follow_on.png') no-repeat center center;background-size: 18px auto;opacity: 1}
@@ -971,7 +971,7 @@ header .show-noti {position:absolute; left: 10px; top: 10px;  width: 28px; heigh
 .auction-list .scroll-body .auction-result .current-auction .detail .c_bot .time {box-sizing: border-box;position:absolute;top: 0;left: 0;padding-left: 50%;width:100%;height: 10px;text-align:center;margin: -21px 0 0 -57px;}
 .auction-list .scroll-body .auction-result .current-auction .detail .c_bot .time .flip-clock-wrapper {transform-origin: 0 0;transform: scale(.35);-ms-transform: scale(.35);-webkit-transform-origin: 0 0;-webkit-transform: scale(.3);-o-transform-origin: 0 0;-o-transform: scale(.35);-moz-transform-origin: 0 0;-moz-transform: scale(.35);width: 300px;}
 .auction-list .scroll-body .auction-result .current-auction .detail .c_bot .time .flip-clock-wrapper ul {height: 64px;line-height: 64px;}
-.auction-list .scroll-body .auction-result .current-auction .detail .c_bot .price {text-align: center;margin-top: 24px;height: 107px;background-color: #f7f6f4;padding: 18px 0 0 0;}
+.auction-list .scroll-body .auction-result .current-auction .detail .c_bot .price {text-align: center;margin-top: 24px;height: 107px;background-color: #f7f6f4;padding: 23px 0 0 0;}
 .auction-list .scroll-body .auction-result .current-auction .detail .c_bot .price .status {color: #222;font-weight:400;font-size:14px;letter-spacing:0;}
 .auction-list .scroll-body .auction-result .current-auction .detail .c_bot .price .currency {position:relative;display:inline-block;color:#000;font-size: 25px;font-weight: 600;margin: 4px 0 6px 0;padding: 7px 16px 2px 4px;letter-spacing: -1px;}
 .auction-list .scroll-body .auction-result .current-auction .detail .c_bot .price .currency::after {content:'';display: block;position: absolute;right: 0;top: 15px;width: 10px;height: 12px;background: transparent url('../img/sold_option_04.png') no-repeat center center;background-size: 100% auto;opacity: 1;}
@@ -1019,7 +1019,6 @@ header .show-noti {position:absolute; left: 10px; top: 10px;  width: 28px; heigh
 .auction-list .scroll-body .auction-result .past-auction .auction-summary .dashboard .status .hammer {font-size: 12px;font-weight: 400;letter-spacing: -0.3px;color: #777;}
 .auction-list .scroll-body .auction-result .past-auction .auction-summary .dashboard .past-time {display:inline-block;font-size: 11px;font-weight: 400;letter-spacing: -0.3px;color: #777;margin-left:5px;letter-spacing: -0.3;}
 .auction-list .scroll-body .auction-result .past-auction .auction-summary .dashboard .sale-total {font-size: 26px;font-weight: 600;/* color: #222; */letter-spacing: -1px;position: relative;display: inline-block;box-sizing: border-box;margin: 0;padding: 4px 16px 4px 0;}
-.auction-list .scroll-body .auction-result .past-auction .auction-summary .dashboard .sale-total.long {font-size: 21px;}
 .auction-list .scroll-body .auction-result .past-auction .auction-summary .dashboard .sale-total::after {content:'';display: block;position: absolute;right: 0;top: 8px;width: 11px;height: 11px;background: transparent url('../img/sold_option_04.png') no-repeat center center;background-size: 100% auto;opacity: 1;}
 .auction-list .scroll-body .auction-result .past-auction .auction-summary .dashboard .sale-total-local {font-size: 18px;font-weight: 400;color: #222;letter-spacing: -1px;margin-bottom: 8px;}
 .auction-list .scroll-body .auction-result .past-auction .btns {margin:0;padding:0;position: absolute;right: -10px;bottom: 0px;}
