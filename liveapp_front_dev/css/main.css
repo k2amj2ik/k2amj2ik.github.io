@@ -1293,11 +1293,12 @@ header .show-noti {position:absolute; left: 10px; top: 10px;  width: 28px; heigh
 .lot_detail .default_info .price_info .price .currency .passed,
 .lot_detail .default_info .price_info .price .currency .withdrawn {color: #222;font-weight: 600;font-size: 28px;display: inline-block;}
 .lot_detail .header {padding:0;border-bottom: 1px solid #d7d3cf;}
-.lot_detail .header .lot-number { float: left;font-weight:300;font-size:19px;margin: 14px 0 0 13px;letter-spacing: -1px;text-transform: uppercase;}
-.lot_detail .header .btn { float: right;}
+.lot_detail .header .lot-number { float: left;font-weight:300;font-size:19px;margin: 15px 0 0 50px;text-transform: uppercase;}
+.lot_detail .header .btn { position: absolute;left: 0;top: 0;width: 48px;height: 48px;}
 .lot_detail .header .btn .btn-follow {position: absolute;right: 46px;top: 0;width: 48px;height: 48px;background: transparent url('../img/lotdetail_icon_follow.png') no-repeat center center;background-size: 22px auto;}
 .lot_detail .header .btn .btn-follow.following {background: transparent url('../img/lotdetail_icon_follow_on.png') no-repeat center center;background-size: 23px auto;}
-.lot_detail .header .btn .btn-close {position: absolute;right: 0;top: 0;width: 48px;height: 48px;background: transparent url('../img/lotdetail_icon_close.png') no-repeat center center;background-size: 22px auto;}
+/* .lot_detail .header .btn .btn-close {position: absolute;right: 0;top: 0;width: 100%;height: 100%;background: transparent url('../img/lotdetail_icon_close.png') no-repeat center center;background-size: 22px auto;} */
+.lot_detail .header .btn .btn-close {width: 48px;height: 48px;background: transparent url('../img/gnb_icon_back.png') no-repeat center center;background-size: 22px auto;}
 .lot_detail .locale {font-weight: 400;}
 .lot_detail .default_info .art_info {margin-top: 0;}
 .follow-group {position:fixed; top: 0; left:0; box-sizing:border-box; width:100%; height: 100%;z-index: 130;display:none}
@@ -1596,22 +1597,24 @@ header .show-noti {position:absolute; left: 10px; top: 10px;  width: 28px; heigh
 .search-result .scroll-body .lots .status .upcoming {box-sizing: border-box;width:100%;height: 15px;font-size: 14px;font-weight: 600;letter-spacing: -0.3;padding: 0 0 0 43px;margin-top: -4px;}
 .search-result .scroll-body .lots .status .past {box-sizing: border-box;width:100%;height: 15px;color:#777777;font-size: 14px;font-weight: 400;letter-spacing: -0.3;padding: 0 0 0 43px;margin-top: -4px;}
 .search-result .scroll-body .lots {padding: 12px 0 0 0;box-sizing: border-box;}
-.search-result .scroll-body .lots li {box-sizing: border-box;position:relative;display:block;border: 0;border-top: 1px solid #e5e6e6;border-bottom: 1px solid #e5e6e6;padding: 14px 8px 25px 12px;margin: 0 0 7px 0;background-color: #fff;min-height: 110px;}
+.search-result .scroll-body .lots li {box-sizing: border-box;position:relative;display:block;border: 0;border-top: 1px solid #e5e6e6;border-bottom: 1px solid #e5e6e6;padding: 14px 8px 25px 12px;margin: 0 0 7px 0;background-color: #fff;min-height: 140px;}
+.search-result .scroll-body .lots li::after {content:''; position:absolute;right: 14px;top: 32px;width: 9px; height:20px;background: url('../img/detail.png') no-repeat 0 0;background-size: 6px auto;}
 .search-result .scroll-body .lots .lot_no {font-size: 11px;font-weight: 400;text-transform: uppercase;color: #222;margin: 0 0 0 0;}
-.search-result .scroll-body .lots .thumb {display:block;float:left;width: 75px;max-;height: 90px;text-align: center;}
+.search-result .scroll-body .lots .thumb {display:block;float:left;width: 75px;height: 90px;text-align: center;margin-top: 7px;}
 .search-result .scroll-body .lots .thumb img {max-width:100%;max-height: 100%;}
 .search-result .scroll-body .lots .cont {padding: 0px 0 0 86px;}
 .search-result .scroll-body .lots .cont p {display:block;display: -webkit-box;white-space: normal;-webkit-line-clamp: 1;-webkit-box-orient: vertical;overflow: hidden;text-overflow: ellipsis;}
-.search-result .scroll-body .lots .cont .artist {font-size: 13px;color: #222;font-weight: 600;margin-top: 6px;letter-spacing: -0.1px;line-height: 13px;text-transform: uppercase;}
-.search-result .scroll-body .lots .cont .title {font-size: 14px;color: #222;font-family:'tl';font-weight: 400;margin-top: 4px;letter-spacing: -0.1px;line-height: 15px;font-style:italic}
-.search-result .scroll-body .lots .cont .est {box-sizing: border-box;font-size: 14px;font-weight:400;color:#888;margin: 7px 0 0 0;padding-right: 32px;letter-spacing: -0.3px;-webkit-line-clamp: 2;}
-.search-result .scroll-body .lots .cont .est2 {box-sizing: border-box;font-size: 12px;font-weight:400;color:#888;margin: 7px 0 0 0;padding-right: 0;letter-spacing: -0.3px;-webkit-line-clamp: 2;}
-.search-result .scroll-body .lots .cont .est-local {font-size: 12px;box-sizing: border-box;font-weight:400;color:#888;margin: 5px 0 0 0;padding-right: 32px;-webkit-line-clamp: 2;}
-.search-result .scroll-body .lots .cont .hammer {position: relative;display: inline-block;box-sizing: border-box;font-size: 20px;font-weight: 600;margin: 0;padding: 5px 16px 3px 0;letter-spacing: -1.5px;}
-.search-result .scroll-body .lots .cont .hammer-local {box-sizing: border-box;font-size: 14px;font-weight:400;color:#222;margin: 3px 0 0 0;padding-right: 32px;letter-spacing: -0.3px;-webkit-line-clamp: 2;}
-.search-result .scroll-body .lots .cont .hammer-text {box-sizing: border-box;font-size: 11px;font-weight:400;margin: 7px 0 0 0;letter-spacing: -0.3px;}
+.search-result .scroll-body .lots .cont .artist {font-size: 13px;color: #222;font-weight: 600;margin-top: 6px;line-height: 13px;height: 14px;text-transform: uppercase;padding-right: 24px;}
+.search-result .scroll-body .lots .cont .title {font-size: 16px;color: #222;font-family:'tl';font-weight: 400;margin-top: 4px;line-height: 17px;font-style:italic;-webkit-line-clamp: 2;/* padding-right: 24px; */}
+.search-result .scroll-body .lots .cont .est {box-sizing: border-box;font-size: 16px;font-weight:400;color:#888;margin: 15px 0 0 0;padding-right: 32px;letter-spacing: -1.0px;-webkit-line-clamp: 2;}
+.search-result .scroll-body .lots .cont .est2 {box-sizing: border-box;font-size: 13px;font-weight:400;color:#888;margin: 7px 0 0 0;padding-right: 0;letter-spacing: -0.3px;-webkit-line-clamp: 2;}
+.search-result .scroll-body .lots .cont .est-local {font-size: 13px;box-sizing: border-box;font-weight:400;color:#888;margin: 5px 0 0 0;padding-right: 32px;-webkit-line-clamp: 2;}
+.search-result .scroll-body .lots .cont .hammer {position: relative;display: inline-block;box-sizing: border-box;font-size: 22px;font-weight: 600;margin: 0;padding: 5px 16px 3px 0;letter-spacing: -1.0px;/* color: #222; */}
+.search-result .scroll-body .lots .cont .hammer.long {font-size: 18px;}
+.search-result .scroll-body .lots .cont .hammer-local {box-sizing: border-box;font-size: 13px;font-weight:400;color:#222;margin: 3px 0 0 0;padding-right: 32px;-webkit-line-clamp: 2;}
+.search-result .scroll-body .lots .cont .hammer-text {box-sizing: border-box;font-size: 11px;font-weight:400;margin: 15px 0 0 0;color: #222;}
 .search-result .scroll-body .lots .cont .passed,
-.search-result .scroll-body .lots .cont .withdrawn {position: relative;display: inline-block;box-sizing: border-box;font-size: 22px;font-weight: 400;margin: 0 0 -11px 0;color: #222;padding: 10px 16px 3px 0;letter-spacing: -1px;}
+.search-result .scroll-body .lots .cont .withdrawn {position: relative;display: inline-block;box-sizing: border-box;font-size: 22px;font-weight: 400;margin: 4px 0 -11px 0;color: #222;padding: 10px 16px 8px 0;letter-spacing: -1px;}
 .search-result .scroll-body .lots .btns {margin:0;padding:0;position: absolute;right: 0;bottom: 0;}
 .search-result .scroll-body .lots .btns .btn-follow {width: 54px;height: 37px;background: transparent url('../img/lotdetail_icon_follow.png') no-repeat center 5px;background-size: 18px auto;opacity: 0.5}
 .search-result .scroll-body .lots .btns .btn-follow.on {background: transparent url('../img/lotdetail_icon_follow_on.png') no-repeat center center;background-size: 18px auto;opacity: 1}
