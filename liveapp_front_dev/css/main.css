@@ -956,14 +956,14 @@ header .show-noti {position:absolute; left: 10px; top: 10px;  width: 28px; heigh
 .auction-list .detail .c_wrap .thumb img {display:block;max-width: 150px;max-height:80px;margin: 0;position: absolute;top: 50%;left: 50%;margin-right: -50%;transform: translate(-50%, -50%);-webkit-transform: translate(-50%, -50%);}
 .auction-list .detail .c_wrap .cont p {display:block;display: -webkit-box;white-space: normal;-webkit-line-clamp: 1;-webkit-box-orient: vertical;overflow: hidden;text-overflow: ellipsis;}
 .auction-list .detail .c_wrap .cont .artist {font-size: 12px;font-weight: 700; line-height: 16px;text-transform:uppercase;margin-top: 3px;color: #000;}
-.auction-list .detail .c_wrap .cont .title {font-size: 14px;color: #222;font-family:'tl';font-weight: 400;margin-top: 0;letter-spacing: -0.1px;line-height: 15px;font-style:italic}
-.auction-list .detail .c_wrap .cont .price {box-sizing: border-box;font-size: 13px;font-weight:400;color:#888;padding-right: 0;margin-top: 2px;letter-spacing: -0.3px;}
+.auction-list .detail .c_wrap .cont .title {font-size: 16px;color: #222;font-family:'tl';font-weight: 400;margin-top: 0;letter-spacing: -0.1px;line-height: 20px;font-style:italic}
+.auction-list .detail .c_wrap .cont .price {box-sizing: border-box;font-size: 14px;font-weight:400;color:#888;padding-right: 0;margin-top: 2px;letter-spacing: -0.3px;}
 .auction-list .detail .btns {margin:0;padding:0;position: absolute;right: 0;top: 0;}
 .auction-list .detail .btns .btn-follow {width: 40px;height: 40px;background: transparent url('../img/lotdetail_icon_follow.png') no-repeat center center;background-size: 18px auto;opacity: 0.5}
 .auction-list .detail .btns .btn-follow.on {background: transparent url('../img/lotdetail_icon_follow_on.png') no-repeat center center;background-size: 18px auto;opacity: 1}
 .auction-list .detail .c_bot {position:relative}
-.auction-list .scroll-body .auction-result .current-auction.live .auction-summary .cont .vendor {color: #222;}
-.auction-list .scroll-body .auction-result .current-auction.live .auction-summary .cont .title {font-size: 14px;font-weight: 600;line-height: 16px;}
+.auction-list .scroll-body .auction-result .current-auction.live .auction-summary .cont .vendor {color: #777;}
+.auction-list .scroll-body .auction-result .current-auction.live .auction-summary .cont .title {font-size: 14px;font-weight: 400;line-height: 16px;-webkit-line-clamp: 1;}
 .auction-list .scroll-body .auction-result .current-auction .detail .c_bot .passed-lot {background-color: #777;margin: 20px 0 0 0;height: 100px;text-align: center;padding: 42px 15px 26px 15px;}
 .auction-list .scroll-body .auction-result .current-auction .detail .c_bot .passed-lot .passed {font-size:27px; color:#fff;text-align: center;margin-bottom:20px;}
 .auction-list .scroll-body .auction-result .current-auction .detail .c_bot .withdrawn-lot {background-color: #777;margin: 20px 0 0 0;height: 100px;text-align: center;padding: 42px 15px 26px 15px;}
