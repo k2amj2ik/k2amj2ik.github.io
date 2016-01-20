@@ -1134,7 +1134,7 @@ header .show-noti {position:absolute; left: 10px; top: 10px;  width: 28px; heigh
 .lot-list .scroll-body .lots .cont .est {box-sizing: border-box;font-size: 14px;font-weight:400;color:#888;margin: 7px 0 0 0;padding-right: 32px;letter-spacing: -0.3px;-webkit-line-clamp: 2;}
 .lot-list .scroll-body .lots .cont .est2 {box-sizing: border-box;font-size: 13px;font-weight:400;color:#888;margin: 7px 0 0 0;padding-right: 0;letter-spacing: -0.3px;-webkit-line-clamp: 2;}
 .lot-list .scroll-body .lots .cont .est-local {font-size: 12px;box-sizing: border-box;font-weight:400;color:#888;margin: 5px 0 0 0;padding-right: 32px;-webkit-line-clamp: 2;}
-.lot-list .scroll-body .lots .cont .hammer {position: relative;display: inline-block;box-sizing: border-box;font-size: 24px;font-weight: 600;margin: 0;padding: 5px 16px 3px 0;letter-spacing: -1.0px;}
+.lot-list .scroll-body .lots .cont .hammer {position: relative;display: inline-block;box-sizing: border-box;font-size: 24px;font-weight: 600;margin: 0;padding: 5px 16px 3px 0;letter-spacing: -1.0px;color: #222;}
 .lot-list .scroll-body .lots .cont .hammer.long {font-size: 18px;}
 .lot-list .scroll-body .lots .cont .hammer-local {box-sizing: border-box;font-size: 16px;font-weight:400;color:#222;margin: 3px 0 0 0;padding-right: 32px;-webkit-line-clamp: 2;}
 .lot-list .scroll-body .lots .cont .hammer-text {box-sizing: border-box;font-size: 11px;font-weight:400;margin: 12px 0 0 0;letter-spacing: -0.3px;}
@@ -1230,7 +1230,7 @@ header .show-noti {position:absolute; left: 10px; top: 10px;  width: 28px; heigh
 .search-result .scroll-body .results .results-list li {box-sizing: border-box;height: 50px;text-transform: uppercase;font-size: 15px;font-weight: 400;padding: 17px 0 0 30px;border-bottom: 1px solid #e1dedb;}
 .search-result .scroll-body .results .results-list li .searched {font-weight: 600;text-decoration: underline;}
 .search-result .no-results {width:100%;height:100%;background:transparent url('../img/nosearch.png') no-repeat center center;background-size:160px auto}
-.c1 .cont .hammer::after {content:'';display: block;position: absolute;right: 0;top: 8px;width: 11px;height: 11px;background: transparent url('../img/sold_option_01.png') no-repeat center center;background-size: 100% auto;}
+.c1 .cont .hammer::after {content:'';display: block;position: absolute;right: 0;top: 8px;width: 11px;height: 11px;background: transparent url('../img/sold_option_04.png') no-repeat center center;background-size: 100% auto;}
 .c2 .cont .hammer::after {content:'';display: block;position: absolute;right: 0;top: 8px;width: 11px;height: 11px;background: transparent url('../img/sold_option_02.png') no-repeat center center;background-size: 100% auto;}
 .c3 .cont .hammer::after {content:'';display: block;position: absolute;right: 0;top: 8px;width: 11px;height: 11px;background: transparent url('../img/sold_option_03.png') no-repeat center center;background-size: 100% auto;}
 .c4 .cont .hammer::after {content:'';display: block;position: absolute;right: 0;top: 8px;width: 11px;height: 11px;background: transparent url('../img/sold_option_04.png') no-repeat center center;background-size: 100% auto;}
