@@ -919,7 +919,7 @@ header .show-noti {position:absolute; left: 10px; top: 10px;  width: 28px; heigh
 .auction-list .scroll-body .auction-result .auction-summary .cont .status-info .text2 {font-weight: 400;font-size: 16px;margin: 7px 0 6px 0;padding: 4px 0 0 0;letter-spacing: -0.5px;}
 .auction-list .scroll-body .auction-result .achievement {padding-top: 10px;}
 .auction-list .scroll-body .auction-result .achievement .current-total {padding: 0 0 4px 51px;color: #222;font-size: 12px;font-weight: 400;letter-spacing: -0.3;}
-.auction-list .scroll-body .auction-result .achievement .current-total .price {font-weight: 600}
+.auction-list .scroll-body .auction-result .achievement .current-total .price {font-weight: 600;font-size: 11px;}
 .auction-list .c1 .ico {background: transparent url('../img/ico_c1_upcoming.png') no-repeat left top;background-size:100% auto}
 .auction-list .c2 .ico {background: transparent url('../img/ico_c2_upcoming.png') no-repeat left top;background-size:100% auto}
 .auction-list .c3 .ico {background: transparent url('../img/ico_c3_upcoming.png') no-repeat left top;background-size:100% auto}
@@ -1088,8 +1088,8 @@ header .show-noti {position:absolute; left: 10px; top: 10px;  width: 28px; heigh
 .achievement .chart .done.live::after {animation-duration: 1s;animation-name: slidein;animation-iteration-count: infinite;animation-timing-function: linear;content: "";position: absolute;top: 0; left: 0; bottom: 0; right: 0;background-image: -webkit-gradient(linear, 0 0, 100% 100%,color-stop(.25, rgba(255, 255, 255, .3)),color-stop(.25, transparent), color-stop(.5, transparent),color-stop(.5, rgba(255, 255, 255, .3)),color-stop(.75, rgba(255, 255, 255, .3)),color-stop(.75, transparent), to(transparent));background-size: 15px 15px;overflow: hidden;}
 @keyframes slidein {from {background-position: 0 0;}to {background-position: 15px 15px;}}
 .achievement .min-point {position:relative;box-sizing: border-box;width: 100%;}
-.achievement .min-point::before {content: 'Min'; display: inline-block;font-size: 9.5px;width: 20px;height: 10px;overflow: hidden;line-height: 10px;position: absolute;right: -9px;bottom: 10px;text-transform: uppercase;color: #777;}
-.achievement .min-point::after {content: '●';display: inline-block;font-size: 12px;width: 8px;height: 10px;overflow: hidden;line-height: 9px;position: absolute;right: -2px;bottom: -3px;text-shadow: -1px 0 #efeeec, 0 1px #efeeec, 1px 0 #efeeec, 0 -1px #efeeec;color:#b0adaa;}
+.achievement .min-point::before {content: 'Min'; display: inline-block;font-size: 9.5px;width: 20px;height: 10px;overflow: hidden;line-height: 10px;position: absolute;right: -9px;bottom: 8px;text-transform: uppercase;color: #777;}
+.achievement .min-point::after {content: '●';display: inline-block;font-size: 11px;width: 8px;height: 10px;overflow: hidden;line-height: 9px;position: absolute;right: -2px;bottom: -3px;text-shadow: -1px 0 #efeeec, 0 1px #efeeec, 1px 0 #efeeec, 0 -1px #efeeec;color:#b0adaa;}
 .achievement .to-max {position: relative;padding: 0 9%;}
 .achievement .to-max::before {content:'';display:block;box-sizing:border-box;position:absolute;top: 0;left: 0;width: 9%;height:4px;}
 /*.achievement .to-max::after {width:9%;animation-duration: 1s;animation-name: slidein;animation-iteration-count: infinite;animation-timing-function: linear;content: "";position: absolute;top: 0; left: 0; bottom: 0; right: 0;background-image: -webkit-gradient(linear, 0 0, 100% 100%,color-stop(.25, rgba(255, 255, 255, .3)),color-stop(.25, transparent), color-stop(.5, transparent),color-stop(.5, rgba(255, 255, 255, .3)),color-stop(.75, rgba(255, 255, 255, .3)),color-stop(.75, transparent), to(transparent));background-size: 15px 15px;overflow: hidden;}*/
@@ -1104,8 +1104,8 @@ header .show-noti {position:absolute; left: 10px; top: 10px;  width: 28px; heigh
 .achievement .to-max .min-point {position:relative;box-sizing: border-box;width: 0;}
 .achievement .to-max .min-point::after {color:#fff;text-shadow:-1px 0 #222, 0 1px #222, 1px 0 #222, 0 -1px #222}
 .achievement .max-point {position:relative;box-sizing: border-box;width: 91%;}
-.achievement .max-point::before {content: 'Max'; display: inline-block;font-size: 9.5px;width: 24px;height: 10px;overflow: hidden;line-height: 10px;position: absolute;right: -8px;bottom: 10px;text-transform: uppercase;color: #777;}
-.achievement .max-point::after {content: '●';display: inline-block;font-size: 12px;width: 8px;height: 10px;overflow: hidden;line-height: 9px;position: absolute;right: -2px;bottom: -3px;text-shadow: -1px 0 #efeeec, 0 1px #efeeec, 1px 0 #efeeec, 0 -1px #efeeec;}
+.achievement .max-point::before {content: 'Max'; display: inline-block;font-size: 9.5px;width: 24px;height: 10px;overflow: hidden;line-height: 10px;position: absolute;right: -11px;bottom: 8px;text-transform: uppercase;color: #777;}
+.achievement .max-point::after {content: '●';display: inline-block;font-size: 11px;width: 8px;height: 10px;overflow: hidden;line-height: 9px;position: absolute;right: -2px;bottom: -3px;text-shadow: -1px 0 #efeeec, 0 1px #efeeec, 1px 0 #efeeec, 0 -1px #efeeec;}
 .lot-list .auction-info .achievement .min-point::before {display:none}
 .lot-list .auction-info .achievement .max-point::before {display:none}
 .lot-list .scroll-body {width:100%;height:100%;padding: 0 0 0 0;box-sizing: border-box;background-color: #efeeec;}
