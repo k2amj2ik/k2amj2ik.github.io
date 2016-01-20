@@ -861,7 +861,7 @@ header .show-noti {position:absolute; left: 10px; top: 10px;  width: 28px; heigh
 .auction-date {padding: 1px 15px 0 0;/* position: fixed; */z-index: 5;box-sizing: border-box;text-align: right;font-weight: 400;font-size: 11px;color: #777;height: 18px;text-transform: uppercase;border: 0;background-color: #efeeec;letter-spacing: -0.3;width: 100%;/* border-bottom: 1px solid #dfdcd9; *//* top: 40px; */}
 .badge-new {position:absolute;left:0;top:0;min-width: 18px;box-sizing: border-box;height: 18px;background-color:#ff0000;border-radius: 9px;color: #fff;text-align: center;overflow: hidden;padding: 4px;font-size: 11px;}
 @keyframes example {0% {opacity: 0;} 20% {opacity: 0;} 25% {opacity:1;} 80% {opacity:1;} 85% {opacity:0;} 100% {opacity:0;}}
-.sale-rate-ico {opacity:1;position: absolute;top: 41px;left: 5px;background-color: #fff;border-radius: 6px;font-size: 10px;text-align: center;width: 33px;height: 10px;font-weight: 600;/* overflow: hidden; */animation: example 4s ease 0s infinite alternate;-webkit-animation: example 4s ease 0s infinite alternate;}
+.sale-rate-ico {opacity:1;position: absolute;top: 43px;left: 5px;background-color: #fff;border-radius: 6px;font-size: 10px;text-align: center;width: 33px;height: 10px;font-weight: 600;/* overflow: hidden; */animation: example 4s ease 0s infinite alternate;-webkit-animation: example 4s ease 0s infinite alternate;}
 /*.sale-rate-ico::after {content:'Sale Rate';display:block;position:absolute;left: -7px;top: 14px;white-space: nowrap;font-size: 7px;}*/
 
 /* search common UI */
