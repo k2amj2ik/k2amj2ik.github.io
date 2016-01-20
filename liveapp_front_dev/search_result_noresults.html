@@ -1,0 +1,30 @@
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<!-- Enable all requests, inline styles, and eval() -->
+	<meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
+	<!--  etc CSS  -->
+	<link rel="stylesheet" href="css/icecream/icecream-grid.css">
+	<!--<link rel="stylesheet" href="css/ratchet/ratchet.css">-->
+	<link rel="stylesheet" href="css/pageslider/pageslider.css">
+	<!--  main CSS  -->
+	<link rel="stylesheet" href="css/main.css">
+
+	<title>Live Auction App</title>
+	</head>
+<body>
+
+<div class="search-result">
+    <div class="header cols-3 type1">
+        <p class="btn left"><button class="btn-back"></button></p>
+        <div class="search">
+            <input type="text" class="search-input" placeholder="Live Auction Art" value="Pablo Picasso" onclick="showLayer('search-artist');">
+            <button class="search-reset"></button>
+        </div>
+        <p class="btn"><button class="btn-refresh"></button></p>
+    </div>
+    <div class="no-results"></div>
+
+</body>
+</html>

@@ -1,0 +1,425 @@
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<!-- Enable all requests, inline styles, and eval() -->
+	<meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
+	<!--  etc CSS  -->
+	<link rel="stylesheet" href="css/icecream/icecream-grid.css">
+	<!--<link rel="stylesheet" href="css/ratchet/ratchet.css">-->
+	<link rel="stylesheet" href="css/pageslider/pageslider.css">
+	<!--  main CSS  -->
+	<link rel="stylesheet" href="css/main.css">
+
+	<title>Live Auction App</title>
+	</head>
+<body>
+
+<div class="lot-list c1">
+    <div class="header cols-3 type2">
+        <!--<p class="btn left"><button class="btn-menu" onclick="showLayer('select-menu');"></button></p>-->
+        <p class="btn left"><button class="btn-back"></button></p>
+        <div class="search">
+            <input type="text" class="search-input" placeholder="Search within the auction" onclick="showLayer('search-artist-in-auction');">
+            <!--<button class="search-reset"></button>-->
+        </div>
+        <p class="btn"><button class="btn-refresh"></button></p>
+    </div>
+    <!-- past -->
+    <div class="auction-info" style="display:none">
+        <div class="basic-info">
+            <span id="ico" class="ico p">C</span> <!-- 진행중인 경우 class에 b 추가됩니다. -->
+            <div class="cont">
+                <p class="title">OUT OF THE ORDINARY OUT OF THE ORDINARY</p>
+                <p class="vendor">Christies · New York</p>
+                <p class="date">Nov 3rd 2015, 2:00 pm</p>
+                <p class="lot-range">Lots. 101 - 341</p>
+                <p class="sale-rate">
+                    <span class="text">Sale Rate</span>
+                    <span class="value">94.2%</span>
+                    <span class="desc">by Lot</span>
+                </p>
+            </div>
+        </div>
+        <div class="dashboard">
+            <p class="status">Sale Total</p>
+            <p class="sale-total" onclick="showLayer('change-currency');">₩ 240,000,000,000</p>
+            <p class="sale-total-local">($ 3,000,000,000)</p>
+            <p class="min-est-total"><span>MIN Est : $180k</span></p>
+            <p class="max-est-total"><span>MAX Est : $240k</span></p>
+        </div>
+        <div class="achievement">
+            <div class="chart">
+                <!-- min 미만 시-->
+                <div class="to-min" style="display:none">
+                    <div class="done b" style="width:100%"></div>
+                    <div class="min-point desc"></div>
+                </div>
+                <!-- min 초과 시-->
+                <div class="to-max" style="display:block">
+                    <div class="done b" style="width:100%"></div>
+                    <div class="min-point desc"></div>
+                </div>
+                <div class="max-point desc"></div>
+            </div>
+        </div>
+    </div>
+    <!-- 아직 경매결과가 없을때 -->
+    <div class="auction-info" style="display:block">
+        <div class="basic-info">
+            <span id="ico" class="ico b">C</span> <!-- 진행중인 경우 class에 b 추가됩니다. -->
+            <div class="cont">
+                <p class="title">OUT OF THE ORDINARY OUT OF THE ORDINARY</p>
+                <p class="vendor">Christies · New York</p>
+                <p class="date">Nov 3rd 2015, 2:00 pm</p>
+                <p class="lot-range">Lots. 101 - 341</p>
+            </div>
+        </div>
+        <div class="dashboard">
+            <p class="status">Current <span class="past-time">at 23:12:12</span></p>
+            <p class="sale-total no-data">Not sold yet</p>
+        </div>
+        <div class="achievement">
+            <p class="min-est-total"><span>MIN Est : $180k</span></p>
+            <p class="max-est-total"><span>MAX Est : $240k</span></p>
+            <div class="chart">
+                <!-- min 미만 시-->
+                <div class="to-min" style="display:none">
+                    <div class="done live b" style="width:100%"></div>
+                    <div class="min-point desc"></div>
+                </div>
+                <!-- min 초과 시-->
+                <div class="to-max" style="display:block">
+                    <div class="done live b" style="width:100%"></div>
+                    <div class="min-point desc"></div>
+                </div>
+                <div class="max-point desc"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- current -->
+    <div class="auction-info" style="display:none">
+        <div class="basic-info">
+            <span id="ico" class="ico b">C</span> <!-- 진행중인 경우 class에 b 추가됩니다. -->
+            <div class="cont">
+                <p class="title">OUT OF THE ORDINARY OUT OF THE ORDINARY</p>
+                <p class="vendor">Christies · New York</p>
+                <p class="date">Nov 3rd 2015, 2:00 pm</p>
+                <p class="lot-range">Lots. 101 - 341</p>
+                <p class="sale-rate">
+                    <span class="text">Sale Rate</span>
+                    <span class="value">94.2%</span>
+                    <span class="desc">by Lot</span>
+                </p>
+            </div>
+        </div>
+        <div class="dashboard">
+            <p class="status">Current <span class="past-time">at 23:12:12</span></p>
+            <p class="sale-total">₩ 240,000,000,000</p>
+            <p class="sale-total-local">($ 3,000,000,000)</p>
+            <p class="min-est-total"><span>MIN Est : $180k</span></p>
+            <p class="max-est-total"><span>MAX Est : $240k</span></p>
+        </div>
+        <div class="achievement">
+            <div class="chart">
+                <!-- min 미만 시-->
+                <div class="to-min" style="display:none">
+                    <div class="done live b" style="width:100%"></div>
+                    <div class="min-point desc"></div>
+                </div>
+                <!-- min 초과 시-->
+                <div class="to-max" style="display:block">
+                    <div class="done live b" style="width:100%"></div>
+                    <div class="min-point desc"></div>
+                </div>
+                <div class="max-point desc"></div>
+            </div>
+        </div>
+    </div>
+    <!-- upcoming -->
+    <div class="auction-info" style="display:none">
+        <div class="basic-info">
+            <span id="ico" class="ico">C</span> <!-- 진행중인 경우 class에 b 추가됩니다. -->
+            <div class="cont">
+                <p class="title">OUT OF THE ORDINARY OUT OF THE ORDINARY</p>
+                <p class="vendor">Christies · New York</p>
+                <p class="date">Nov 3rd 2015, 2:00 pm</p>
+                <p class="lot-range">Lots. 101 - 341</p>
+                <div class="remaining" style="display:none">
+                    <p class="tit">Starts in</p>
+                    <p class="times"><span>15</span>h <span>37</span>m <span>10</span>s</p>
+                </div>
+                <div class="remaining">
+                    <p class="tit">Starts in</p>
+                    <p class="times"><span>3</span>days</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="scroll-body">
+        <div class="btns-top">
+            <button class="btn-preview">Previous lots</button>
+        </div>
+        <ul class="lots">
+             <li onclick="showLayer('lot-detail-layer');">
+                <p class="lot_no">Lot. 158</p>
+                <div class="thumb">
+                    <img src="http://www.christies.com/lotfinderimages/d59307/a_nishapur_pottery_bowl_north_east_iran_10th_century_d5930798h.jpg">
+                </div>
+                <div class="cont">
+                    <p class="artist">Pablo Picasso Pablo Picasso Pablo Picasso</p>
+                    <p class="title">Le Repos (Marie-Thérèse Walter) Le Repos (Marie-Thérèse Walter)</p>
+                    <p class="est2"> HK$850,000 - HK$950,000</p>
+                    <p class="hammer-text"> hammer</p>
+                    <p class="hammer" onclick="showLayer('change-currency');"> HK$998,000,000,000</p>
+                    <p class="hammer-local"> $965,000,000</p>
+                </div>
+                <!--<div class="btns">-->
+                    <!--<button class="btn-follow"></button>-->
+                <!--</div>-->
+            </li>
+             <li onclick="showLayer('lot-detail-layer');">
+                <p class="lot_no">Lot. 158</p>
+                <div class="thumb">
+                    <img src="http://www.christies.com/lotfinderimages/d59307/a_nishapur_pottery_bowl_north_east_iran_10th_century_d5930798h.jpg">
+                </div>
+                <div class="cont">
+                    <p class="artist">Pablo Picasso Pablo Picasso Pablo Picasso</p>
+                    <p class="title">Creu de paper de diairi Creu de paper de diairi</p>
+                    <p class="est2"> HK$850,000,000,000 - HK$950,000,000,000</p>
+                    <p class="passed"> Passed</p>
+                </div>
+                <!--<div class="btns">-->
+                    <!--<button class="btn-follow"></button>-->
+                <!--</div>-->
+            </li>
+             <li onclick="showLayer('lot-detail-layer');">
+                <div class="thumb">
+                    <img src="http://www.christies.com/lotfinderimages/d59307/a_nishapur_pottery_bowl_north_east_iran_10th_century_d5930798h.jpg">
+                </div>
+                <div class="cont">
+                    <p class="lot_no">Lot. 158</p>
+                    <p class="artist">Pablo Picasso Pablo Picasso Pablo Picasso</p>
+                    <p class="title">Le Repos (Marie-Thérèse Walter) Le Repos (Marie-Thérèse Walter)</p>
+                    <p class="est2"> HK$850,000 - HK$950,000</p>
+                    <p class="withdrawn"> Withdrawn</p>
+                </div>
+                <!--<div class="btns">-->
+                    <!--<button class="btn-follow"></button>-->
+                <!--</div>-->
+            </li>
+             <li onclick="showLayer('lot-detail-layer');">
+                <div class="thumb">
+                    <img src="http://www.christies.com/lotfinderimages/d59307/a_nishapur_pottery_bowl_north_east_iran_10th_century_d5930798h.jpg">
+                </div>
+                <div class="cont">
+                    <p class="lot_no">Lot. 158</p>
+                    <p class="artist">Pablo Picasso Pablo Picasso Pablo Picasso</p>
+                    <p class="title">Le Repos (Marie-Thérèse Walter) Le Repos (Marie-Thérèse Walter)</p>
+                    <p class="est2"> HK$850,000,000,000 - HK$950,000,000,000</p>
+                    <p class="hammer-text"> hammer</p>
+                    <p class="hammer" onclick="showLayer('change-currency');"> HK$998,000,000,000</p>
+                    <p class="hammer-local"> $965,000,000</p>
+                </div>
+                <!--<div class="btns">-->
+                    <!--<button class="btn-follow"></button>-->
+                <!--</div>-->
+            </li>
+             <li onclick="showLayer('lot-detail-layer');">
+                <div class="thumb">
+                    <img src="http://www.christies.com/lotfinderimages/d59307/a_nishapur_pottery_bowl_north_east_iran_10th_century_d5930798h.jpg">
+                </div>
+                <div class="cont">
+                    <p class="lot_no">Lot. 158</p>
+                    <p class="artist">Pablo Picasso</p>
+                    <p class="title">Le Repos (Marie-Thérèse Walter) Le Repos (Marie-Thérèse Walter)</p>
+                    <p class="est"> £7,000 - £10,000</p>
+                    <p class="est-local"> $10,983 - $15,690</p>
+                </div>
+                <!--<div class="btns">-->
+                    <!--<button class="btn-follow"></button>-->
+                <!--</div>-->
+            </li>
+        </ul>
+        <div id="btn-more-lot-wrap" class="btns-bottom">
+            <button id="btn-more-lot" class="btn-more">View More</button>
+        </div>
+    </div>
+</div>
+<div class="lot_detail" id="lot-detail-layer"  style="display: none;">
+    <div class="default_info">
+        <div class="header">
+            <p class="lot-number">Lot. 134</p>
+            <p class="btn"><button class="btn-close" onclick="document.getElementById('lot-detail-layer').style.display='none'"></button></p>
+        </div>
+        <div class="lot_image img_align" id="lot_image_div">
+            <!--<img src="http://www.christies.com/lotfinderimages/d59465/roy_lichtenstein_interior_with_yves_klein_sculpture_d5946553h.jpg" class="lazyResult" data-original="http://www.christies.com/lotfinderimages/d59378/lynette_yiadom-boakye_knave_d5937851h.jpg" style="max-width: 250px; max-height: 250px; margin: auto 0px; display: inline;" alt="lot image">-->
+            <img src="http://www.christies.com/lotfinderimages/d59378/lynette_yiadom-boakye_knave_d5937851h.jpg" class="lazyResult" data-original="http://www.christies.com/lotfinderimages/d59378/lynette_yiadom-boakye_knave_d5937851h.jpg" style="max-width: 250px; max-height: 250px; margin: auto 0px; display: inline;" alt="lot image">
+        </div>
+
+        <div class="artist_info">
+            <p class="name" id="artistName">Lynette Yiadom-Boakye </p>
+            <p class="info" id="artistOriginYear">(b. 1977)</p>
+        </div>
+        <h2 class="art_title" id="workTitle">Knave</h2>
+
+
+
+        <!-- 시작전 -->
+        <div id="price_info" class="price_info" style="display:block">
+            <div id="currentPrice" class="price">
+                <p class="price1">₩132,000,000 - ₩132,00,000</p>
+                <p class="price2">($100,000 - $150,000)</p>
+            </div>
+        </div>
+        <!-- 종료후 - sold -->
+        <div id="price_info" class="price_info" style="display:none">
+            <div id="currentPrice" class="price">
+                <p class="price1">₩132,000,000 - ₩132,00,000</p>
+                <p class="price2">($100,000 - $150,000)</p>
+                <p class="currency" onclick="showLayer('change-currency');">
+                    <span class="status">hammer</span>
+                    <span class="locale">£</span>
+                    <span class="amount">1,500,000</span>
+                    <span class="origin">($10,000,000)</span>
+                </p>
+            </div>
+        </div>
+        <!-- 종료후 - passed -->
+        <div id="price_info" class="price_info" style="display:none">
+            <div id="currentPrice" class="price">
+                <p class="price1">₩132,000,000 - ₩132,00,000</p>
+                <p class="price2">($100,000 - $150,000)</p>
+                <p class="currency">
+                    <span class="passed">Passed</span>
+                </p>
+            </div>
+        </div>
+        <!-- 종료후 - withdrawn -->
+        <div id="price_info" class="price_info" style="display:none">
+            <div id="currentPrice" class="price">
+                <p class="price1">₩132,000,000 - ₩132,00,000</p>
+                <p class="price2">($100,000 - $150,000)</p>
+                <p class="currency">
+                    <span class="withdrawn">Withdrawn</span>
+                </p>
+            </div>
+            <!--</div>-->
+
+
+
+
+
+            <div class="art_info">
+                <pre><p id="artistSigned">signed with the artist’s initials, titled and dated ‘LYB 2011 Knave’ (on the reverse)</p></pre>
+                <pre><p id="medium">oil on canvas</p></pre>
+                <pre><p id="size">78 7/8 x 47 3/8in. <br>(200.3 x 120.2cm.)</p></pre>
+                <pre><p id="yearExecuted">2011</p></pre>
+                <pre><p id="other">blah blah</p></pre>
+            </div>
+        </div>
+        <div class="detail_info">
+            <h3 id="provenance" class="tit">Provenance</h3>
+            <div id="provenanceCont" class="cont">
+				<pre><p id="s_provenance">Corvi-Mora, London.
+                    Acquired from the above by the present owner in 2011.</p></pre>
+            </div>
+
+            <h3 id="exhibition" class="tit">Exhibition</h3>
+            <div id="exhibitionCont" class="cont">
+                <pre><p id="s_exhibition">Lyon, La Sucrière, <br><br><br><br>11th Biennale de Lyon: A Terrible Beauty is Born, 2011, p. 316 (illustrated, p. 101).</p></pre>
+            </div>
+
+            <h3 id="literature" class="tit">Literature</h3>
+            <div id="literatureCont" class="cont">
+                <pre><p id="s_literature">Frieze, Issue 146, April 2012 (detail  <br><br><br><br>illustrated in colour on the cover).</p></pre>
+            </div>
+
+            <h3 id="condition" class="tit" style="display: none;">Condition Report</h3>
+            <div id="conditionCont" class="cont" style="display: none;">
+                <pre><p id="s_condition">Frieze, Issue 146, April 2012 (detail  <br><br><br><br>illustrated in colour on the cover).</p></pre>
+            </div>
+
+            <h3 id="other" class="tit" style="display: none;">Other Description</h3>
+            <div id="otherCont" class="cont" style="display: none;">
+                <pre><p id="s_other">Frieze, Issue 146, April 2012 (detail  <br><br><br><br>illustrated in colour on the cover).</p></pre>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="change-currency" id="change-currency" style="display: none;">
+    <div class="mask" onclick="document.getElementById('change-currency').style.display='none'"></div>
+    <ul class="currency">
+        <li class="on"><span class="unit">$</span><p>U.S. Dollars</p></li>
+        <li><span class="unit">$</span><p>U.S. Dollars</p></li>
+        <li><span class="unit">$</span><p>U.S. Dollars</p></li>
+        <li><span class="unit">$</span><p>U.S. Dollars</p></li>
+        <li><span class="unit">$</span><p>U.S. Dollars</p></li>
+        <li><span class="unit">$</span><p>U.S. Dollars</p></li>
+        <li><span class="unit">$</span><p>U.S. Dollars</p></li>
+        <li><span class="unit">$</span><p>U.S. Dollars</p></li>
+        <li><span class="unit">$</span><p>U.S. Dollars</p></li>
+        <li><span class="unit">$</span><p>U.S. Dollars</p></li>
+    </ul>
+</div>
+
+<div class="search-artist" id="search-artist-in-auction" style="display: none;">
+    <div class="header type2">
+        <div class="search">
+            <input type="text" class="search-input" placeholder="Search within the auction">
+            <!--<button class="search-reset"></button>-->
+        </div>
+        <p class="btn"><button class="btn-close" onclick="document.getElementById('search-artist-in-auction').style.display='none'"></button></p>
+    </div>
+    <div class="scroll-body">
+        <div class="results-count">
+            <p class="text">Artists in this Auction</p>
+            <p class="count">28</p>
+        </div>
+        <div class="results">
+            <ul class="results-list">
+                <li><span class="searched">Pa</span>blo Picasso</li>
+                <li><span class="searched">Pa</span>blo Picasso</li>
+                <li><span class="searched">Pa</span>blo Picasso</li>
+                <li><span class="searched">Pa</span>blo Picasso</li>
+                <li><span class="searched">Pa</span>blo Picasso</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="select-menu" id="select-menu" style="display: none;">
+    <div class="mask" onclick="document.getElementById('select-menu').style.display='none'"></div>
+    <div class="btns">
+        <button class="btn-close" onclick="document.getElementById('select-menu').style.display='none'"></button>
+    </div>
+    <ul class="menu">
+        <li class="menu-search">
+            <div class="search">
+                <input type="text" class="search-input" placeholder="Search an artist" onclick="showLayer('search-artist');">
+            </div>
+        </li>
+        <li class="menu-major following">
+            <p class="title">Following</p>
+
+        </li>
+        <li class="menu-major notifications">
+            <p class="title">Notifications</p>
+
+        </li>
+        <li class="menu-minor">Home</li>
+        <li class="menu-minor">Settings</li>
+    </ul>
+</div>
+
+<!-- temp start -->
+<div class="temp-search-result-in-auction"></div>
+<!-- temp end -->
+<script>
+    function showLayer(layerId){
+        document.getElementById(layerId).style.display='block'
+    }
+</script>
+
+</body>
+</html>

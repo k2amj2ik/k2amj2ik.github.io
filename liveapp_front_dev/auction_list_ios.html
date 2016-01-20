@@ -1,0 +1,1269 @@
+<html><head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="date=no">
+	<meta name="format-detection" content="address=no">
+	<!-- Enable all requests, inline styles, and eval() -->
+	<meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
+	<!--  etc CSS  -->
+	<link rel="stylesheet" href="css/icecream/icecream-grid.css">
+	<link rel="stylesheet" href="css/pageslider/pageslider.css">
+	<link rel="stylesheet" href="css/flipclock/flipclock.css">
+	<!--  main CSS  -->
+	<link rel="stylesheet" href="css/main.css">
+	<title>Live Auction App</title>
+	<!--  Weinre Url  -->
+	<!--<script type="text/javascript" src="http://192.168.0.13:8080/target/target-script-min.js#anonymous"></script>-->
+	<style>a[href], button { touch-action: manipulation; }</style>
+	<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="app" src="module/app.js"></script>
+	<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="module-cfg" src="module/module-cfg.js">
+	</script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="../cordova" src="module/../cordova.js"></script>
+	<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="gval" src="module/gval.js"></script>
+	<script src="file:///Users/gsmacbook-pro/Library/Developer/CoreSimulator/Devices/CA3067F3-B0C5-42E5-9774-3CC6447E0863/data/Containers/Bundle/Application/79B7A7BD-AFEC-421B-8D4A-4AB7B5E0CEC9/Live%20Auction%20Art.app/www/cordova_plugins.js"></script>
+	<script src="file:///Users/gsmacbook-pro/Library/Developer/CoreSimulator/Devices/CA3067F3-B0C5-42E5-9774-3CC6447E0863/data/Containers/Bundle/Application/79B7A7BD-AFEC-421B-8D4A-4AB7B5E0CEC9/Live%20Auction%20Art.app/www/plugins/cordova-plugin-console/www/logger.js"></script>
+	<script src="file:///Users/gsmacbook-pro/Library/Developer/CoreSimulator/Devices/CA3067F3-B0C5-42E5-9774-3CC6447E0863/data/Containers/Bundle/Application/79B7A7BD-AFEC-421B-8D4A-4AB7B5E0CEC9/Live%20Auction%20Art.app/www/plugins/cordova-plugin-console/www/console-via-logger.js"></script>
+	<script src="file:///Users/gsmacbook-pro/Library/Developer/CoreSimulator/Devices/CA3067F3-B0C5-42E5-9774-3CC6447E0863/data/Containers/Bundle/Application/79B7A7BD-AFEC-421B-8D4A-4AB7B5E0CEC9/Live%20Auction%20Art.app/www/plugins/cordova-plugin-device/www/device.js"></script><script src="file:///Users/gsmacbook-pro/Library/Developer/CoreSimulator/Devices/CA3067F3-B0C5-42E5-9774-3CC6447E0863/data/Containers/Bundle/Application/79B7A7BD-AFEC-421B-8D4A-4AB7B5E0CEC9/Live%20Auction%20Art.app/www/plugins/cordova-plugin-device-motion/www/Acceleration.js"></script>
+	<script src="file:///Users/gsmacbook-pro/Library/Developer/CoreSimulator/Devices/CA3067F3-B0C5-42E5-9774-3CC6447E0863/data/Containers/Bundle/Application/79B7A7BD-AFEC-421B-8D4A-4AB7B5E0CEC9/Live%20Auction%20Art.app/www/plugins/cordova-plugin-device-motion/www/accelerometer.js"></script>
+	<script src="file:///Users/gsmacbook-pro/Library/Developer/CoreSimulator/Devices/CA3067F3-B0C5-42E5-9774-3CC6447E0863/data/Containers/Bundle/Application/79B7A7BD-AFEC-421B-8D4A-4AB7B5E0CEC9/Live%20Auction%20Art.app/www/plugins/cordova-plugin-device-orientation/www/CompassError.js"></script>
+	<script src="file:///Users/gsmacbook-pro/Library/Developer/CoreSimulator/Devices/CA3067F3-B0C5-42E5-9774-3CC6447E0863/data/Containers/Bundle/Application/79B7A7BD-AFEC-421B-8D4A-4AB7B5E0CEC9/Live%20Auction%20Art.app/www/plugins/cordova-plugin-device-orientation/www/CompassHeading.js"></script><script src="file:///Users/gsmacbook-pro/Library/Developer/CoreSimulator/Devices/CA3067F3-B0C5-42E5-9774-3CC6447E0863/data/Containers/Bundle/Application/79B7A7BD-AFEC-421B-8D4A-4AB7B5E0CEC9/Live%20Auction%20Art.app/www/plugins/cordova-plugin-device-orientation/www/compass.js"></script>
+	<script src="file:///Users/gsmacbook-pro/Library/Developer/CoreSimulator/Devices/CA3067F3-B0C5-42E5-9774-3CC6447E0863/data/Containers/Bundle/Application/79B7A7BD-AFEC-421B-8D4A-4AB7B5E0CEC9/Live%20Auction%20Art.app/www/plugins/cordova-plugin-dialogs/www/notification.js"></script>
+	<script src="file:///Users/gsmacbook-pro/Library/Developer/CoreSimulator/Devices/CA3067F3-B0C5-42E5-9774-3CC6447E0863/data/Containers/Bundle/Application/79B7A7BD-AFEC-421B-8D4A-4AB7B5E0CEC9/Live%20Auction%20Art.app/www/plugins/cordova-plugin-file/www/DirectoryEntry.js"></script>
+	<script src="file:///Users/gsmacbook-pro/Library/Developer/CoreSimulator/Devices/CA3067F3-B0C5-42E5-9774-3CC6447E0863/data/Containers/Bundle/Application/79B7A7BD-AFEC-421B-8D4A-4AB7B5E0CEC9/Live%20Auction%20Art.app/www/plugins/cordova-plugin-file/www/DirectoryReader.js"></script>
+	<script src="file:///Users/gsmacbook-pro/Library/Developer/CoreSimulator/Devices/CA3067F3-B0C5-42E5-9774-3CC6447E0863/data/Containers/Bundle/Application/79B7A7BD-AFEC-421B-8D4A-4AB7B5E0CEC9/Live%20Auction%20Art.app/www/plugins/cordova-plugin-file/www/Entry.js"></script><script src="file:///Users/gsmacbook-pro/Library/Developer/CoreSimulator/Devices/CA3067F3-B0C5-42E5-9774-3CC6447E0863/data/Containers/Bundle/Application/79B7A7BD-AFEC-421B-8D4A-4AB7B5E0CEC9/Live%20Auction%20Art.app/www/plugins/cordova-plugin-file/www/File.js"></script><script src="file:///Users/gsmacbook-pro/Library/Developer/CoreSimulator/Devices/CA3067F3-B0C5-42E5-9774-3CC6447E0863/data/Containers/Bundle/Application/79B7A7BD-AFEC-421B-8D4A-4AB7B5E0CEC9/Live%20Auction%20Art.app/www/plugins/cordova-plugin-file/www/FileEntry.js"></script><script src="file:///Users/gsmacbook-pro/Library/Developer/CoreSimulator/Devices/CA3067F3-B0C5-42E5-9774-3CC6447E0863/data/Containers/Bundle/Application/79B7A7BD-AFEC-421B-8D4A-4AB7B5E0CEC9/Live%20Auction%20Art.app/www/plugins/cordova-plugin-file/www/FileError.js"></script><script src="file:///Users/gsmacbook-pro/Library/Developer/CoreSimulator/Devices/CA3067F3-B0C5-42E5-9774-3CC6447E0863/data/Containers/Bundle/Application/79B7A7BD-AFEC-421B-8D4A-4AB7B5E0CEC9/Live%20Auction%20Art.app/www/plugins/cordova-plugin-file/www/FileReader.js"></script><script src="file:///Users/gsmacbook-pro/Library/Developer/CoreSimulator/Devices/CA3067F3-B0C5-42E5-9774-3CC6447E0863/data/Containers/Bundle/Application/79B7A7BD-AFEC-421B-8D4A-4AB7B5E0CEC9/Live%20Auction%20Art.app/www/plugins/cordova-plugin-file/www/FileSystem.js"></script>
+	<script src="file:///Users/gsmacbook-pro/Library/Developer/CoreSimulator/Devices/CA3067F3-B0C5-42E5-9774-3CC6447E0863/data/Containers/Bundle/Application/79B7A7BD-AFEC-421B-8D4A-4AB7B5E0CEC9/Live%20Auction%20Art.app/www/plugins/cordova-plugin-file/www/FileUploadOptions.js"></script>
+	<script src="file:///Users/gsmacbook-pro/Library/Developer/CoreSimulator/Devices/CA3067F3-B0C5-42E5-9774-3CC6447E0863/data/Containers/Bundle/Application/79B7A7BD-AFEC-421B-8D4A-4AB7B5E0CEC9/Live%20Auction%20Art.app/www/plugins/cordova-plugin-file/www/FileUploadResult.js"></script>
+	<script src="file:///Users/gsmacbook-pro/Library/Developer/CoreSimulator/Devices/CA3067F3-B0C5-42E5-9774-3CC6447E0863/data/Containers/Bundle/Application/79B7A7BD-AFEC-421B-8D4A-4AB7B5E0CEC9/Live%20Auction%20Art.app/www/plugins/cordova-plugin-file/www/FileWriter.js"></script><script src="file:///Users/gsmacbook-pro/Library/Developer/CoreSimulator/Devices/CA3067F3-B0C5-42E5-9774-3CC6447E0863/data/Containers/Bundle/Application/79B7A7BD-AFEC-421B-8D4A-4AB7B5E0CEC9/Live%20Auction%20Art.app/www/plugins/cordova-plugin-file/www/Flags.js"></script><script src="file:///Users/gsmacbook-pro/Library/Developer/CoreSimulator/Devices/CA3067F3-B0C5-42E5-9774-3CC6447E0863/data/Containers/Bundle/Application/79B7A7BD-AFEC-421B-8D4A-4AB7B5E0CEC9/Live%20Auction%20Art.app/www/plugins/cordova-plugin-file/www/LocalFileSystem.js"></script>
+	<script src="file:///Users/gsmacbook-pro/Library/Developer/CoreSimulator/Devices/CA3067F3-B0C5-42E5-9774-3CC6447E0863/data/Containers/Bundle/Application/79B7A7BD-AFEC-421B-8D4A-4AB7B5E0CEC9/Live%20Auction%20Art.app/www/plugins/cordova-plugin-file/www/Metadata.js"></script><script src="file:///Users/gsmacbook-pro/Library/Developer/CoreSimulator/Devices/CA3067F3-B0C5-42E5-9774-3CC6447E0863/data/Containers/Bundle/Application/79B7A7BD-AFEC-421B-8D4A-4AB7B5E0CEC9/Live%20Auction%20Art.app/www/plugins/cordova-plugin-file/www/ProgressEvent.js"></script>
+	<script src="file:///Users/gsmacbook-pro/Library/Developer/CoreSimulator/Devices/CA3067F3-B0C5-42E5-9774-3CC6447E0863/data/Containers/Bundle/Application/79B7A7BD-AFEC-421B-8D4A-4AB7B5E0CEC9/Live%20Auction%20Art.app/www/plugins/cordova-plugin-file/www/fileSystems.js"></script><script src="file:///Users/gsmacbook-pro/Library/Developer/CoreSimulator/Devices/CA3067F3-B0C5-42E5-9774-3CC6447E0863/data/Containers/Bundle/Application/79B7A7BD-AFEC-421B-8D4A-4AB7B5E0CEC9/Live%20Auction%20Art.app/www/plugins/cordova-plugin-file/www/requestFileSystem.js"></script>
+	<script src="file:///Users/gsmacbook-pro/Library/Developer/CoreSimulator/Devices/CA3067F3-B0C5-42E5-9774-3CC6447E0863/data/Containers/Bundle/Application/79B7A7BD-AFEC-421B-8D4A-4AB7B5E0CEC9/Live%20Auction%20Art.app/www/plugins/cordova-plugin-file/www/resolveLocalFileSystemURI.js"></script>
+	<script src="file:///Users/gsmacbook-pro/Library/Developer/CoreSimulator/Devices/CA3067F3-B0C5-42E5-9774-3CC6447E0863/data/Containers/Bundle/Application/79B7A7BD-AFEC-421B-8D4A-4AB7B5E0CEC9/Live%20Auction%20Art.app/www/plugins/cordova-plugin-file/www/ios/FileSystem.js"></script>
+	<script src="file:///Users/gsmacbook-pro/Library/Developer/CoreSimulator/Devices/CA3067F3-B0C5-42E5-9774-3CC6447E0863/data/Containers/Bundle/Application/79B7A7BD-AFEC-421B-8D4A-4AB7B5E0CEC9/Live%20Auction%20Art.app/www/plugins/cordova-plugin-file/www/fileSystems-roots.js"></script>
+	<script src="file:///Users/gsmacbook-pro/Library/Developer/CoreSimulator/Devices/CA3067F3-B0C5-42E5-9774-3CC6447E0863/data/Containers/Bundle/Application/79B7A7BD-AFEC-421B-8D4A-4AB7B5E0CEC9/Live%20Auction%20Art.app/www/plugins/cordova-plugin-file/www/fileSystemPaths.js"></script>
+	<script src="file:///Users/gsmacbook-pro/Library/Developer/CoreSimulator/Devices/CA3067F3-B0C5-42E5-9774-3CC6447E0863/data/Containers/Bundle/Application/79B7A7BD-AFEC-421B-8D4A-4AB7B5E0CEC9/Live%20Auction%20Art.app/www/plugins/cordova-plugin-file-transfer/www/FileTransferError.js"></script>
+	<script src="file:///Users/gsmacbook-pro/Library/Developer/CoreSimulator/Devices/CA3067F3-B0C5-42E5-9774-3CC6447E0863/data/Containers/Bundle/Application/79B7A7BD-AFEC-421B-8D4A-4AB7B5E0CEC9/Live%20Auction%20Art.app/www/plugins/cordova-plugin-file-transfer/www/FileTransfer.js"></script>
+	<script src="file:///Users/gsmacbook-pro/Library/Developer/CoreSimulator/Devices/CA3067F3-B0C5-42E5-9774-3CC6447E0863/data/Containers/Bundle/Application/79B7A7BD-AFEC-421B-8D4A-4AB7B5E0CEC9/Live%20Auction%20Art.app/www/plugins/cordova-plugin-geolocation/www/Coordinates.js"></script><script src="file:///Users/gsmacbook-pro/Library/Developer/CoreSimulator/Devices/CA3067F3-B0C5-42E5-9774-3CC6447E0863/data/Containers/Bundle/Application/79B7A7BD-AFEC-421B-8D4A-4AB7B5E0CEC9/Live%20Auction%20Art.app/www/plugins/cordova-plugin-geolocation/www/PositionError.js"></script>
+	<script src="file:///Users/gsmacbook-pro/Library/Developer/CoreSimulator/Devices/CA3067F3-B0C5-42E5-9774-3CC6447E0863/data/Containers/Bundle/Application/79B7A7BD-AFEC-421B-8D4A-4AB7B5E0CEC9/Live%20Auction%20Art.app/www/plugins/cordova-plugin-geolocation/www/Position.js"></script><script src="file:///Users/gsmacbook-pro/Library/Developer/CoreSimulator/Devices/CA3067F3-B0C5-42E5-9774-3CC6447E0863/data/Containers/Bundle/Application/79B7A7BD-AFEC-421B-8D4A-4AB7B5E0CEC9/Live%20Auction%20Art.app/www/plugins/cordova-plugin-geolocation/www/geolocation.js"></script>
+	<script src="file:///Users/gsmacbook-pro/Library/Developer/CoreSimulator/Devices/CA3067F3-B0C5-42E5-9774-3CC6447E0863/data/Containers/Bundle/Application/79B7A7BD-AFEC-421B-8D4A-4AB7B5E0CEC9/Live%20Auction%20Art.app/www/plugins/cordova-plugin-inappbrowser/www/inappbrowser.js"></script>
+	<script src="file:///Users/gsmacbook-pro/Library/Developer/CoreSimulator/Devices/CA3067F3-B0C5-42E5-9774-3CC6447E0863/data/Containers/Bundle/Application/79B7A7BD-AFEC-421B-8D4A-4AB7B5E0CEC9/Live%20Auction%20Art.app/www/plugins/cordova-plugin-network-information/www/network.js"></script>
+	<script src="file:///Users/gsmacbook-pro/Library/Developer/CoreSimulator/Devices/CA3067F3-B0C5-42E5-9774-3CC6447E0863/data/Containers/Bundle/Application/79B7A7BD-AFEC-421B-8D4A-4AB7B5E0CEC9/Live%20Auction%20Art.app/www/plugins/cordova-plugin-network-information/www/Connection.js"></script>
+	<script src="file:///Users/gsmacbook-pro/Library/Developer/CoreSimulator/Devices/CA3067F3-B0C5-42E5-9774-3CC6447E0863/data/Containers/Bundle/Application/79B7A7BD-AFEC-421B-8D4A-4AB7B5E0CEC9/Live%20Auction%20Art.app/www/plugins/cordova-plugin-splashscreen/www/splashscreen.js"></script>
+	<script src="file:///Users/gsmacbook-pro/Library/Developer/CoreSimulator/Devices/CA3067F3-B0C5-42E5-9774-3CC6447E0863/data/Containers/Bundle/Application/79B7A7BD-AFEC-421B-8D4A-4AB7B5E0CEC9/Live%20Auction%20Art.app/www/plugins/cordova-plugin-vibration/www/vibration.js"></script><script src="file:///Users/gsmacbook-pro/Library/Developer/CoreSimulator/Devices/CA3067F3-B0C5-42E5-9774-3CC6447E0863/data/Containers/Bundle/Application/79B7A7BD-AFEC-421B-8D4A-4AB7B5E0CEC9/Live%20Auction%20Art.app/www/plugins/cordova-plugin-appversion/www/app-version.js"></script>
+	<script src="file:///Users/gsmacbook-pro/Library/Developer/CoreSimulator/Devices/CA3067F3-B0C5-42E5-9774-3CC6447E0863/data/Containers/Bundle/Application/79B7A7BD-AFEC-421B-8D4A-4AB7B5E0CEC9/Live%20Auction%20Art.app/www/plugins/phonegap-plugin-push/www/push.js"></script><script src="file:///Users/gsmacbook-pro/Library/Developer/CoreSimulator/Devices/CA3067F3-B0C5-42E5-9774-3CC6447E0863/data/Containers/Bundle/Application/79B7A7BD-AFEC-421B-8D4A-4AB7B5E0CEC9/Live%20Auction%20Art.app/www/plugins/org.pbernasconi.progressindicator/www/progressIndicator.js"></script>
+	<script src="file:///Users/gsmacbook-pro/Library/Developer/CoreSimulator/Devices/CA3067F3-B0C5-42E5-9774-3CC6447E0863/data/Containers/Bundle/Application/79B7A7BD-AFEC-421B-8D4A-4AB7B5E0CEC9/Live%20Auction%20Art.app/www/plugins/cordova-plugin-google-analytics/www/analytics.js"></script>
+	<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="idbUtil" src="module/utils/idbUtil.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="restUtil" src="module/utils/restUtil.js"></script>
+	<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="comUtil" src="module/utils/comUtil.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery" src="module/../lib/jquery/jquery.min.js"></script>
+	<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="backbone" src="module/../lib/backbone/backbone.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="underscore" src="module/../lib/underscore/underscore.js"></script>
+	<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="countdown" src="module/../lib/jquery/jquery.countdown.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="simplemodal" src="module/../lib/jquery/jquery.simplemodal.js"></script>
+	<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="lazyload" src="module/../lib/jquery/jquery.lazyload.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="flipclock" src="module/../lib/jquery/flipclock.js"></script>
+	<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="domReady" src="module/../lib/require/domReady.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="pageslider" src="module/../lib/pageslider/pageslider.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="AuctionModel" src="module/models/AuctionModel.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="LotModel" src="module/models/LotModel.js"></script>
+	<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="templates" src="module/utils/templates.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="AuctionListView" src="module/views/AuctionListView.js"></script>
+	<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="LotListView" src="module/views/LotListView.js"></script>
+	<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="LotDetailView" src="module/views/LotDetailView.js"></script>
+	<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="router" src="module/routers/AppRouter.js"></script></head>
+<body>
+<!-- Preload -->
+<script type="text/javascript" src="lib/jquery/json2.js"></script>
+<script type="text/javascript" src="lib/idbstore/basil.min.js"></script>
+<script type="text/javascript" src="lib/moment/moment.js"></script>
+<script type="text/javascript" src="lib/moment/moment-timezone-with-data.js"></script>
+<script type="text/javascript" src="lib/moment/twix.js"></script>
+<script data-main="module/app" src="lib/require/require.js"></script>
+
+<iframe src="gap://ready" style="display: none;"></iframe><div class="page center">
+	<div class="auction-list" id="wrapper">
+	<div class="header cols-2 type2">
+		<!--<p class="btn left"><button class="btn-menu" onclick="showLayer('select-menu');"></button></p>-->
+		<div class="search">
+			<button class="vendor" onclick="showLayer('filter-vendor');"></button>
+			<input type="text" class="search-input" placeholder="Live Auction Art" onclick="showLayer('search-artist');">
+			<button class="vendor" onclick="showLayer('filter-vendor');" style="display:none"></button>
+            <button class="vendor c1" onclick="showLayer('filter-vendor');"></button>
+		</div>
+		<p class="btn"><button class="btn-refresh"></button></p>
+	</div>
+	<div class="scroll-body" id="day_scroller">
+		<div class="btns-top" style="display: none;">
+			<button class="btn-preview">January 2016</button>
+		</div>
+        <ul class="auction-result">
+            <li class="auction-date">Mon, 30 Nov</li>
+            <li id="auc_idx_1012" class="auction upcoming-auction c1">
+                <div id="day_20" href="#lotList/1012" class="auction-summary">
+                    <span class="ico">C</span>
+                    <div class="cont">
+                        <p class="vendor">Christie's · London </p>
+                        <p class="title">19th Century European Art</p>
+                        <p class="date">Jan 20th 2016, 12:00 am</p>
+                    </div>
+                    <div id="aucInfo" name="aucInfo_1012" class="remaining">
+                        <p id="remainCountDownTitle_1012" class="tit">Starts in</p>
+                        <p id="remainCtDn_1012" class="times"><span>16</span> days</p>
+                    </div>
+                    <!--<div class="btns">-->
+                        <!--<button class="btn-follow"></button>-->
+                    <!--</div>-->
+                </div>
+            </li>
+            <li class="auction-date">Mon, 30 Nov</li>
+            <li id="auc_idx_1034" class="auction upcoming-auction c2">
+                <div id="day_20" href="#lotList/1034" class="auction-summary">
+                    <span class="ico">S</span>
+                    <div class="cont">
+                        <p class="vendor">Sotheby's · Hong Kong </p>
+                        <p class="title">Boundless: Contemporary Art</p>
+                        <p class="date">Jan 20th 2016, 6:00 pm</p>
+                    </div>
+                    <div id="aucInfo" name="aucInfo_1034" class="remaining">
+                        <p id="remainCountDownTitle_1034" class="tit">Starts in</p>
+                        <p id="remainCtDn_1034" class="times"><span>16</span> days</p>
+                    </div>
+                    <!--<div class="btns">-->
+                        <!--<button class="btn-follow"></button>-->
+                    <!--</div>-->
+                </div>
+                <button type="button" name="btn_sailInfo_1034" class="view_saleinfo" style="" onclick="$(this).next().toggle();$(this).toggleClass('on');">Sale Info</button>
+                <div class="sale_info">
+                    <p class="tit">Auction Times</p>
+                    <div class="texts">
+                        <p>January 20th 2016, 6:00 pm</p>
+                        <p> Lots. 1 - 111</p>
+                    </div>
+                    <p class="tit">Viewing Times</p>
+                    <div class="texts">
+<pre>FRI, 15 JAN 16
+10:00 AM - 06:00 PM HKT
+
+SAT, 16 JAN 16
+11:00 AM - 05:00 PM HKT
+
+SUN, 17 JAN 16
+11:00 AM - 05:00 PM HKT
+
+MON, 18 JAN 16
+10:00 AM - 06:00 PM HKT
+
+TUE, 19 JAN 16
+10:00 AM - 06:00 PM HKT
+
+WED, 20 JAN 16
+10:00 AM - 06:00 PM HKT
+</pre>
+                    </div>
+                </div>
+            </li>
+            <li id="auc_idx_1016" class="auction upcoming-auction c4">
+                <div id="day_21" href="#lotList/1016" class="auction-summary">
+                    <span class="ico">P</span>
+                    <div class="cont">
+                        <p class="vendor">Phillips · London </p>
+                        <p class="title">Evening &amp; Day Editions</p>
+                        <p class="date">Jan 21st 2016, 2:00 pm</p>
+                    </div>
+                    <div id="aucInfo" name="aucInfo_1016" class="remaining">
+                        <p id="remainCountDownTitle_1016" class="tit">Starts in</p>
+                        <p id="remainCtDn_1016" class="times"><span>17</span> days</p>
+                    </div>
+                    <!--<div class="btns">-->
+                        <!--<button class="btn-follow"></button>-->
+                    <!--</div>-->
+                </div>
+                <button type="button" name="btn_sailInfo_1016" class="view_saleinfo" style="" onclick="$(this).next().toggle();$(this).toggleClass('on');">Sale Info</button>
+                <div class="sale_info">
+                    <p class="tit">Auction Times</p>
+                    <div class="texts">
+                        <p>January 21st 2016, 2:00 pm</p>
+                        <p> Lots. 1 - 261</p>
+                    </div>
+                    <p class="tit">Viewing Times</p>
+                    <div class="texts">
+<pre>15 – 21 January
+
+Monday – Saturday
+10am-6pm
+
+Sunday
+12pm-6pm
+</pre>
+                    </div>
+                </div>
+            </li>
+            <li class="auction-date">Mon, 30 Nov</li>
+            <li id="auc_idx_1014" class="auction upcoming-auction c1">
+                <div id="day_27" href="#lotList/1014" class="auction-summary">
+                    <span class="ico">C</span>
+                    <div class="cont">
+                        <p class="vendor">Christie's · New York </p>
+                        <p class="title">Old Master and British Drawings</p>
+                        <p class="date">Jan 27th 2016, 2:00 pm</p>
+                    </div>
+                    <div id="aucInfo" name="aucInfo_1014" class="remaining">
+                        <p id="remainCountDownTitle_1014" class="tit">Starts in</p>
+                        <p id="remainCtDn_1014" class="times"><span>23</span> days</p>
+                    </div>
+                    <!--<div class="btns">-->
+                        <!--<button class="btn-follow"></button>-->
+                    <!--</div>-->
+                </div>
+                <button type="button" name="btn_sailInfo_1014" class="view_saleinfo" style="" onclick="$(this).next().toggle();$(this).toggleClass('on');">Sale Info</button>
+                <div class="sale_info">
+                    <p class="tit">Auction Times</p>
+                    <div class="texts">
+                        <p>January 27th 2016, 2:00 pm</p>
+                        <p> Lots. 1 - 133</p>
+                    </div>
+                    <p class="tit">Viewing Times</p>
+                    <div class="texts">
+<pre>15 – 21 January
+
+Monday – Saturday
+10am-6pm
+
+Sunday
+12pm-6pm
+</pre>
+                    </div>
+                </div>
+            </li>
+            <li id="auc_idx_1038" class="auction upcoming-auction c2">
+                <div id="day_27" href="#lotList/1038" class="auction-summary">
+                    <span class="ico">S</span>
+                    <div class="cont">
+                        <p class="vendor">Sotheby's · New York </p>
+                        <p class="title">The Collection of A. Alfred Taubman: Old Masters</p>
+                        <p class="date">Jan 27th 2016, 6:00 pm</p>
+                    </div>
+                    <div id="aucInfo" name="aucInfo_1038" class="remaining">
+                        <p id="remainCountDownTitle_1038" class="tit">Starts in</p>
+                        <p id="remainCtDn_1038" class="times"><span>23</span> days</p>
+                    </div>
+                    <!--<div class="btns">-->
+                        <!--<button class="btn-follow"></button>-->
+                    <!--</div>-->
+                </div>
+            </li>
+            <li id="auc_idx_1040" class="auction upcoming-auction c2">
+                <div id="day_28" href="#lotList/1040" class="auction-summary">
+                    <span class="ico">S</span>
+                    <div class="cont">
+                        <p class="vendor">Sotheby's · New York </p>
+                        <p class="title">Master Drawings</p>
+                        <p class="date">Jan 28th 2016, 10:00 am</p>
+                    </div>
+                    <div id="aucInfo" name="aucInfo_1040" class="remaining">
+                        <p id="remainCountDownTitle_1040" class="tit">Starts in</p>
+                        <p id="remainCtDn_1040" class="times"><span>24</span> days</p>
+                    </div>
+                    <!--<div class="btns">-->
+                        <!--<button class="btn-follow"></button>-->
+                    <!--</div>-->
+                </div>
+            </li>
+            <li id="auc_idx_1039" class="auction upcoming-auction c2">
+                <div id="day_28" href="#lotList/1039" class="auction-summary">
+                    <span class="ico">S</span>
+                    <div class="cont">
+                        <p class="vendor">Sotheby's · New York </p>
+                        <p class="title">Master Paintings Evening Sale</p>
+                        <p class="date">Jan 28th 2016, 6:00 pm</p>
+                    </div>
+                    <div id="aucInfo" name="aucInfo_1039" class="remaining">
+                        <p id="remainCountDownTitle_1039" class="tit">Starts in</p>
+                        <p id="remainCtDn_1039" class="times"><span>24</span> days</p>
+                    </div>
+                    <!--<div class="btns">-->
+                        <!--<button class="btn-follow"></button>-->
+                    <!--</div>-->
+                </div>
+            </li>
+            <li class="auction past-auction c1">
+                <div class="auction-summary">
+                    <span id="ico" class="ico p">C</span> <!-- 진행중인 경우 class에 b 추가됩니다. -->
+                    <div class="cont">
+                        <p class="vendor">Christies · Amsterdam</p>
+                        <p class="title">The South African Sale</p>
+                        <p class="date">30 Nov 2015, 2:00pm</p>
+                    </div>
+                    <div class="dashboard">
+                        <p class="status">Sale Total <span class="hammer">hammer</span></p>
+                        <p class="sale-total" onclick="showLayer('change-currency');">₩240,000,000,000</p>
+                        <p class="sale-total-local">($ 3,000,000,000)</p>
+                        <p class="sale-rate">
+                            <span class="text">Sale Rate</span>
+                            <span class="value">94.2%</span>
+                            <span class="desc">by Lot</span>
+                        </p>
+                    </div>
+                    <!--<div class="btns">-->
+                        <!--<button class="btn-follow"></button>-->
+                    <!--</div>-->
+
+                </div>
+            </li>
+            <li class="auction current-auction c1">
+                <div class="auction-summary">
+                    <span id="ico" class="ico b">C</span> <!-- 진행중인 경우 class에 b 추가됩니다. -->
+                    <div class="cont">
+                        <p class="vendor">Christies · Amsterdam</p>
+                        <p class="title">Day. 20th Century &amp; Contemporary Art Day Sale</p>
+                        <p class="date">30 Nov 2015, 2:00pm</p>
+                        <div class="status-info">
+                            <p class="text2">Waiting for Next Session</p>
+                        </div>
+                    </div>
+                    <!--<div class="btns">-->
+                        <!--<button class="btn-follow"></button>-->
+                    <!--</div>-->
+                </div>
+                <button type="button" class="view_saleinfo" onclick="$(this).next().slideToggle();$(this).toggleClass('on')">Sale Info</button>
+                <div class="sale_info">
+                    <p class="tit">Auction Times</p>
+                    <div class="texts">
+                        <p>Sep 8, 10:00 am</p>
+                        <p>Lots 1-336</p>
+                    </div>
+                    <p class="tit">Viewing Times</p>
+                    <p class="where">London, South Kensington</p>
+                    <div class="texts">
+                        <pre>Sep 1, 9:00am-5:00pm
+Sep 2, 9:00am-5:00pm
+Sep 3, 10:00am-5:00pm
+Sep 4, 10:00am-5:00pm
+Sep 5, 11:00am-5:00pm
+Sep 6, 11:00am-5:00pm
+Sep 7, 12:00pm-5:00pm</pre>
+                    </div>
+                </div>
+
+            </li>
+            <li class="auction-date">Mon, 30 Nov</li>
+            <li class="auction current-auction live c1">
+                <div class="alert-noti b" style="display: none;">
+                    <p>You will be notified starting auction.</p>
+                </div>
+                <div class="auction-summary">
+                    <span id="ico" class="ico b">C</span> <!-- 진행중인 경우 class에 b 추가됩니다. -->
+                    <div class="sale-rate-ico">94.5%</div>
+                    <div class="cont">
+                        <p class="vendor">Christies · Amsterdam</p>
+                        <p class="title">Day. 20th Century &amp; Contemporary Art Day Sale</p>
+                        <p class="date">30 Nov 2015, 2:00pm</p>
+                    </div>
+                </div>
+                <div class="achievement">
+                    <div class="current-total">Current total : <span class="price">$160K</span></div>
+                    <div class="chart">
+                        <div class="to-min">
+                            <div class="done live b" style="width:60%"></div>
+                            <div class="min-point desc"></div>
+                        </div>
+                        <div class="max-point desc"></div>
+                    </div>
+                </div>
+                <div class="achievement" style="display:none">
+                    <div class="current-total">Current total : <span class="price">$160K</span></div>
+                    <div class="chart">
+                        <div class="to-max">
+                            <div class="done live b" style="width:60%"></div>
+                            <div class="min-point desc"></div>
+                        </div>
+                        <div class="max-point desc"></div>
+                    </div>
+                </div>
+                <div id="aucInfo" onclick="showLayer('lot-detail-layer');" class="detail">
+                    <div class="c_wrap">
+                        <div class="thumb img_align">
+                            <img src="http://www.christies.com/lotfinderimages/d59516/shen_zhou_snowscape_d5951694h.jpg" class="lazyResult">
+                        </div>
+                        <p class="lot_no"> Lot. 157</p>
+                        <div class="cont">
+                            <p class="artist">PETER YOUNG</p>
+                            <p class="title">#15 – 1972</p>
+                            <p class="price">£7,00,000 - £10,000,000</p>
+                        </div>
+                    </div>
+                    <div class="c_bot">
+                        <div class="time">
+                            <div id="castLotTime" class="flip-clock-wrapper"><span class="flip-clock-divider minutes"><span class="flip-clock-dot top"></span><span class="flip-clock-dot bottom"></span></span><ul class="flip "><li class="flip-clock-before"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">9</div></div><div class="down"><div class="shadow"></div><div class="inn">9</div></div></a></li><li class="flip-clock-active"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">0</div></div><div class="down"><div class="shadow"></div><div class="inn">0</div></div></a></li></ul><ul class="flip "><li class="flip-clock-before"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">9</div></div><div class="down"><div class="shadow"></div><div class="inn">9</div></div></a></li><li class="flip-clock-active"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">0</div></div><div class="down"><div class="shadow"></div><div class="inn">0</div></div></a></li></ul><span class="flip-clock-divider seconds"><span class="flip-clock-dot top"></span><span class="flip-clock-dot bottom"></span></span><ul class="flip  play"><li class="flip-clock-before"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">4</div></div><div class="down"><div class="shadow"></div><div class="inn">4</div></div></a></li><li class="flip-clock-active"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">5</div></div><div class="down"><div class="shadow"></div><div class="inn">5</div></div></a></li></ul><ul class="flip  play"><li class="flip-clock-before"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">4</div></div><div class="down"><div class="shadow"></div><div class="inn">4</div></div></a></li><li class="flip-clock-active"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">5</div></div><div class="down"><div class="shadow"></div><div class="inn">5</div></div></a></li></ul></div>
+                        </div>
+                        <div id="currentPrice" class="price" onclick="showLayer('change-currency');">
+                            <p class="currency">HK$50,000,000,000</p>
+                            <p class="currency-local">($256,000,000)</p>
+                        </div>
+                    </div>
+                    <!--<div class="btns">-->
+                        <!--<button class="btn-follow on"></button>-->
+                    <!--</div>-->
+                </div>
+            </li>
+            <li class="auction current-auction live c2">
+                <div class="auction-summary">
+                    <span id="ico" class="ico b">C</span> <!-- 진행중인 경우 class에 b 추가됩니다. -->
+                    <div class="cont">
+                        <p class="vendor">Christies · Amsterdam</p>
+                        <p class="title">Day. 20th Century &amp; Contemporary Art Day Sale</p>
+                        <p class="date">30 Nov 2015, 2:00pm</p>
+                    </div>
+                </div>
+                <div class="achievement">
+                    <div class="current-total">Current total : <span class="price">$160K</span></div>
+                    <div class="chart">
+                        <div class="to-min">
+                            <div class="done live b" style="width:60%"></div>
+                            <div class="min-point desc"></div>
+                        </div>
+                        <div class="max-point desc"></div>
+                    </div>
+                </div>
+                <div class="achievement" style="display:none">
+                    <div class="current-total">Current total : <span class="price">$160K</span></div>
+                    <div class="chart">
+                        <div class="to-max">
+                            <div class="done live b" style="width:60%"></div>
+                            <div class="min-point desc"></div>
+                        </div>
+                        <div class="max-point desc"></div>
+                    </div>
+                </div>
+                <div id="aucInfo" onclick="showLayer('lot-detail-layer');" class="detail">
+                    <div class="c_wrap">
+                        <div class="thumb img_align">
+                            <img src="http://www.christies.com/lotfinderimages/d59516/shen_zhou_snowscape_d5951694h.jpg" class="lazyResult">
+                        </div>
+                        <p class="lot_no"> Lot. 157</p>
+                        <div class="cont">
+                            <p class="artist">PETER YOUNG</p>
+                            <p class="title">#15 – 1972</p>
+                            <p class="price">£7,00,000 - £10,000,000</p>
+                        </div>
+                    </div>
+                    <div class="c_bot">
+                        <div class="time">
+                            <div id="castLotTime" class="flip-clock-wrapper"><span class="flip-clock-divider minutes"><span class="flip-clock-dot top"></span><span class="flip-clock-dot bottom"></span></span><ul class="flip "><li class="flip-clock-before"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">9</div></div><div class="down"><div class="shadow"></div><div class="inn">9</div></div></a></li><li class="flip-clock-active"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">0</div></div><div class="down"><div class="shadow"></div><div class="inn">0</div></div></a></li></ul><ul class="flip "><li class="flip-clock-before"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">9</div></div><div class="down"><div class="shadow"></div><div class="inn">9</div></div></a></li><li class="flip-clock-active"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">0</div></div><div class="down"><div class="shadow"></div><div class="inn">0</div></div></a></li></ul><span class="flip-clock-divider seconds"><span class="flip-clock-dot top"></span><span class="flip-clock-dot bottom"></span></span><ul class="flip  play"><li class="flip-clock-before"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">4</div></div><div class="down"><div class="shadow"></div><div class="inn">4</div></div></a></li><li class="flip-clock-active"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">5</div></div><div class="down"><div class="shadow"></div><div class="inn">5</div></div></a></li></ul><ul class="flip  play"><li class="flip-clock-before"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">4</div></div><div class="down"><div class="shadow"></div><div class="inn">4</div></div></a></li><li class="flip-clock-active"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">5</div></div><div class="down"><div class="shadow"></div><div class="inn">5</div></div></a></li></ul></div>
+                        </div>
+                        <div id="currentPrice" class="price">
+                            <p class="currency">HK$50,000,000,000</p>
+                            <p class="currency-local">($256,000,000)</p>
+                        </div>
+                    </div>
+                    <!--<div class="btns">-->
+                        <!--<button class="btn-follow on"></button>-->
+                    <!--</div>-->
+                </div>
+            </li>
+            <li class="auction current-auction live c3">
+                <div class="auction-summary">
+                    <span id="ico" class="ico b">C</span> <!-- 진행중인 경우 class에 b 추가됩니다. -->
+                    <div class="cont">
+                        <p class="vendor">Christies · Amsterdam</p>
+                        <p class="title">Day. 20th Century &amp; Contemporary Art Day Sale</p>
+                        <p class="date">30 Nov 2015, 2:00pm</p>
+                    </div>
+                </div>
+                <div class="achievement">
+                    <div class="current-total">Current total : <span class="price">$160K</span></div>
+                    <div class="chart">
+                        <div class="to-min">
+                            <div class="done live b" style="width:60%"></div>
+                            <div class="min-point desc"></div>
+                        </div>
+                        <div class="max-point desc"></div>
+                    </div>
+                </div>
+                <div class="achievement" style="display:none">
+                    <div class="current-total">Current total : <span class="price">$160K</span></div>
+                    <div class="chart">
+                        <div class="to-max">
+                            <div class="done live b" style="width:60%"></div>
+                            <div class="min-point desc"></div>
+                        </div>
+                        <div class="max-point desc"></div>
+                    </div>
+                </div>
+                <div id="aucInfo" onclick="showLayer('lot-detail-layer');" class="detail">
+                    <div class="c_wrap">
+                        <div class="thumb img_align">
+                            <img src="http://www.christies.com/lotfinderimages/d59516/shen_zhou_snowscape_d5951694h.jpg" class="lazyResult">
+                        </div>
+                        <p class="lot_no"> Lot. 157</p>
+                        <div class="cont">
+                            <p class="artist">PETER YOUNG</p>
+                            <p class="title">#15 – 1972</p>
+                            <p class="price">£7,00,000 - £10,000,000</p>
+                        </div>
+                    </div>
+                    <div class="c_bot">
+                        <div class="time">
+                            <div id="castLotTime" class="flip-clock-wrapper"><span class="flip-clock-divider minutes"><span class="flip-clock-dot top"></span><span class="flip-clock-dot bottom"></span></span><ul class="flip "><li class="flip-clock-before"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">9</div></div><div class="down"><div class="shadow"></div><div class="inn">9</div></div></a></li><li class="flip-clock-active"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">0</div></div><div class="down"><div class="shadow"></div><div class="inn">0</div></div></a></li></ul><ul class="flip "><li class="flip-clock-before"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">9</div></div><div class="down"><div class="shadow"></div><div class="inn">9</div></div></a></li><li class="flip-clock-active"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">0</div></div><div class="down"><div class="shadow"></div><div class="inn">0</div></div></a></li></ul><span class="flip-clock-divider seconds"><span class="flip-clock-dot top"></span><span class="flip-clock-dot bottom"></span></span><ul class="flip  play"><li class="flip-clock-before"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">4</div></div><div class="down"><div class="shadow"></div><div class="inn">4</div></div></a></li><li class="flip-clock-active"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">5</div></div><div class="down"><div class="shadow"></div><div class="inn">5</div></div></a></li></ul><ul class="flip  play"><li class="flip-clock-before"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">4</div></div><div class="down"><div class="shadow"></div><div class="inn">4</div></div></a></li><li class="flip-clock-active"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">5</div></div><div class="down"><div class="shadow"></div><div class="inn">5</div></div></a></li></ul></div>
+                        </div>
+                        <div id="currentPrice" class="price">
+                            <p class="currency">HK$50,000,000,000</p>
+                            <p class="currency-local">($256,000,000)</p>
+                        </div>
+                    </div>
+                    <!--<div class="btns">-->
+                        <!--<button class="btn-follow on"></button>-->
+                    <!--</div>-->
+                </div>
+            </li>
+            <li class="auction current-auction live c4">
+                <div class="auction-summary">
+                    <span id="ico" class="ico b">C</span> <!-- 진행중인 경우 class에 b 추가됩니다. -->
+                    <div class="cont">
+                        <p class="vendor">Christies · Amsterdam</p>
+                        <p class="title">Day. 20th Century &amp; Contemporary Art Day Sale</p>
+                        <p class="date">30 Nov 2015, 2:00pm</p>
+                    </div>
+                </div>
+                <div class="achievement">
+                    <div class="current-total">Current total : <span class="price">$160K</span></div>
+                    <div class="chart">
+                        <div class="to-min">
+                            <div class="done live b" style="width:60%"></div>
+                            <div class="min-point desc"></div>
+                        </div>
+                        <div class="max-point desc"></div>
+                    </div>
+                </div>
+                <div class="achievement" style="display:none">
+                    <div class="current-total">Current total : <span class="price">$160K</span></div>
+                    <div class="chart">
+                        <div class="to-max">
+                            <div class="done live b" style="width:60%"></div>
+                            <div class="min-point desc"></div>
+                        </div>
+                        <div class="max-point desc"></div>
+                    </div>
+                </div>
+                <div id="aucInfo" onclick="showLayer('lot-detail-layer');" class="detail">
+                    <div class="c_wrap">
+                        <div class="thumb img_align">
+                            <img src="http://www.christies.com/lotfinderimages/d59516/shen_zhou_snowscape_d5951694h.jpg" class="lazyResult">
+                        </div>
+                        <p class="lot_no"> Lot. 157</p>
+                        <div class="cont">
+                            <p class="artist">PETER YOUNG</p>
+                            <p class="title">#15 – 1972</p>
+                            <p class="price">£7,00,000 - £10,000,000</p>
+                        </div>
+                    </div>
+                    <div class="c_bot">
+                        <div class="time">
+                            <div id="castLotTime" class="flip-clock-wrapper"><span class="flip-clock-divider minutes"><span class="flip-clock-dot top"></span><span class="flip-clock-dot bottom"></span></span><ul class="flip "><li class="flip-clock-before"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">9</div></div><div class="down"><div class="shadow"></div><div class="inn">9</div></div></a></li><li class="flip-clock-active"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">0</div></div><div class="down"><div class="shadow"></div><div class="inn">0</div></div></a></li></ul><ul class="flip "><li class="flip-clock-before"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">9</div></div><div class="down"><div class="shadow"></div><div class="inn">9</div></div></a></li><li class="flip-clock-active"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">0</div></div><div class="down"><div class="shadow"></div><div class="inn">0</div></div></a></li></ul><span class="flip-clock-divider seconds"><span class="flip-clock-dot top"></span><span class="flip-clock-dot bottom"></span></span><ul class="flip  play"><li class="flip-clock-before"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">4</div></div><div class="down"><div class="shadow"></div><div class="inn">4</div></div></a></li><li class="flip-clock-active"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">5</div></div><div class="down"><div class="shadow"></div><div class="inn">5</div></div></a></li></ul><ul class="flip  play"><li class="flip-clock-before"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">4</div></div><div class="down"><div class="shadow"></div><div class="inn">4</div></div></a></li><li class="flip-clock-active"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">5</div></div><div class="down"><div class="shadow"></div><div class="inn">5</div></div></a></li></ul></div>
+                        </div>
+                        <div id="currentPrice" class="price">
+                            <p class="currency">HK$50,000,000,000</p>
+                            <p class="currency-local">($256,000,000)</p>
+                        </div>
+                    </div>
+                    <!--<div class="btns">-->
+                        <!--<button class="btn-follow on"></button>-->
+                    <!--</div>-->
+                </div>
+            </li>
+            <li class="auction current-auction live c5">
+                <div class="auction-summary">
+                    <span id="ico" class="ico b">C</span> <!-- 진행중인 경우 class에 b 추가됩니다. -->
+                    <div class="cont">
+                        <p class="vendor">Christies · Amsterdam</p>
+                        <p class="title">Day. 20th Century &amp; Contemporary Art Day Sale</p>
+                        <p class="date">30 Nov 2015, 2:00pm</p>
+                    </div>
+                </div>
+                <div class="achievement">
+                    <div class="current-total">Current total : <span class="price">$160K</span></div>
+                    <div class="chart">
+                        <div class="to-min">
+                            <div class="done live b" style="width:60%"></div>
+                            <div class="min-point desc"></div>
+                        </div>
+                        <div class="max-point desc"></div>
+                    </div>
+                </div>
+                <div class="achievement" style="display:none">
+                    <div class="current-total">Current total : <span class="price">$160K</span></div>
+                    <div class="chart">
+                        <div class="to-max">
+                            <div class="done live b" style="width:60%"></div>
+                            <div class="min-point desc"></div>
+                        </div>
+                        <div class="max-point desc"></div>
+                    </div>
+                </div>
+                <div id="aucInfo" onclick="showLayer('lot-detail-layer');" class="detail">
+                    <div class="c_wrap">
+                        <div class="thumb img_align">
+                            <img src="http://www.christies.com/lotfinderimages/d59516/shen_zhou_snowscape_d5951694h.jpg" class="lazyResult">
+                        </div>
+                        <p class="lot_no"> Lot. 157</p>
+                        <div class="cont">
+                            <p class="artist">PETER YOUNG</p>
+                            <p class="title">#15 – 1972</p>
+                            <p class="price">£7,00,000 - £10,000,000</p>
+                        </div>
+                    </div>
+                    <div class="c_bot">
+                        <div class="time">
+                            <div id="castLotTime" class="flip-clock-wrapper"><span class="flip-clock-divider minutes"><span class="flip-clock-dot top"></span><span class="flip-clock-dot bottom"></span></span><ul class="flip "><li class="flip-clock-before"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">9</div></div><div class="down"><div class="shadow"></div><div class="inn">9</div></div></a></li><li class="flip-clock-active"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">0</div></div><div class="down"><div class="shadow"></div><div class="inn">0</div></div></a></li></ul><ul class="flip "><li class="flip-clock-before"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">9</div></div><div class="down"><div class="shadow"></div><div class="inn">9</div></div></a></li><li class="flip-clock-active"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">0</div></div><div class="down"><div class="shadow"></div><div class="inn">0</div></div></a></li></ul><span class="flip-clock-divider seconds"><span class="flip-clock-dot top"></span><span class="flip-clock-dot bottom"></span></span><ul class="flip  play"><li class="flip-clock-before"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">4</div></div><div class="down"><div class="shadow"></div><div class="inn">4</div></div></a></li><li class="flip-clock-active"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">5</div></div><div class="down"><div class="shadow"></div><div class="inn">5</div></div></a></li></ul><ul class="flip  play"><li class="flip-clock-before"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">4</div></div><div class="down"><div class="shadow"></div><div class="inn">4</div></div></a></li><li class="flip-clock-active"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">5</div></div><div class="down"><div class="shadow"></div><div class="inn">5</div></div></a></li></ul></div>
+                        </div>
+                        <div id="currentPrice" class="price">
+                            <p class="currency">HK$50,000,000,000</p>
+                            <p class="currency-local">($256,000,000)</p>
+                        </div>
+                    </div>
+                    <!--<div class="btns">-->
+                        <!--<button class="btn-follow on"></button>-->
+                    <!--</div>-->
+                </div>
+            </li>
+            <li class="auction current-auction live c6">
+                <div class="auction-summary">
+                    <span id="ico" class="ico b">C</span> <!-- 진행중인 경우 class에 b 추가됩니다. -->
+                    <div class="cont">
+                        <p class="vendor">Christies · Amsterdam</p>
+                        <p class="title">Day. 20th Century &amp; Contemporary Art Day Sale</p>
+                        <p class="date">30 Nov 2015, 2:00pm</p>
+                    </div>
+                </div>
+                <div class="achievement">
+                    <div class="current-total">Current total : <span class="price">$160K</span></div>
+                    <div class="chart">
+                        <div class="to-min">
+                            <div class="done live b" style="width:60%"></div>
+                            <div class="min-point desc"></div>
+                        </div>
+                        <div class="max-point desc"></div>
+                    </div>
+                </div>
+                <div class="achievement" style="display:none">
+                    <div class="current-total">Current total : <span class="price">$160K</span></div>
+                    <div class="chart">
+                        <div class="to-max">
+                            <div class="done live b" style="width:60%"></div>
+                            <div class="min-point desc"></div>
+                        </div>
+                        <div class="max-point desc"></div>
+                    </div>
+                </div>
+                <div id="aucInfo" onclick="showLayer('lot-detail-layer');" class="detail">
+                    <div class="c_wrap">
+                        <div class="thumb img_align">
+                            <img src="http://www.christies.com/lotfinderimages/d59516/shen_zhou_snowscape_d5951694h.jpg" class="lazyResult">
+                        </div>
+                        <p class="lot_no"> Lot. 157</p>
+                        <div class="cont">
+                            <p class="artist">PETER YOUNG</p>
+                            <p class="title">#15 – 1972</p>
+                            <p class="price">£7,00,000 - £10,000,000</p>
+                        </div>
+                    </div>
+                    <div class="c_bot">
+                        <div class="time">
+                            <div id="castLotTime" class="flip-clock-wrapper"><span class="flip-clock-divider minutes"><span class="flip-clock-dot top"></span><span class="flip-clock-dot bottom"></span></span><ul class="flip "><li class="flip-clock-before"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">9</div></div><div class="down"><div class="shadow"></div><div class="inn">9</div></div></a></li><li class="flip-clock-active"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">0</div></div><div class="down"><div class="shadow"></div><div class="inn">0</div></div></a></li></ul><ul class="flip "><li class="flip-clock-before"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">9</div></div><div class="down"><div class="shadow"></div><div class="inn">9</div></div></a></li><li class="flip-clock-active"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">0</div></div><div class="down"><div class="shadow"></div><div class="inn">0</div></div></a></li></ul><span class="flip-clock-divider seconds"><span class="flip-clock-dot top"></span><span class="flip-clock-dot bottom"></span></span><ul class="flip  play"><li class="flip-clock-before"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">4</div></div><div class="down"><div class="shadow"></div><div class="inn">4</div></div></a></li><li class="flip-clock-active"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">5</div></div><div class="down"><div class="shadow"></div><div class="inn">5</div></div></a></li></ul><ul class="flip  play"><li class="flip-clock-before"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">4</div></div><div class="down"><div class="shadow"></div><div class="inn">4</div></div></a></li><li class="flip-clock-active"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">5</div></div><div class="down"><div class="shadow"></div><div class="inn">5</div></div></a></li></ul></div>
+                        </div>
+                        <div id="currentPrice" class="price">
+                            <p class="currency">HK$50,000,000,000</p>
+                            <p class="currency-local">($256,000,000)</p>
+                        </div>
+                    </div>
+                    <!--<div class="btns">-->
+                        <!--<button class="btn-follow on"></button>-->
+                    <!--</div>-->
+                </div>
+            </li>
+            <li class="auction current-auction live c7">
+                <div class="auction-summary">
+                    <span id="ico" class="ico b">C</span> <!-- 진행중인 경우 class에 b 추가됩니다. -->
+                    <div class="cont">
+                        <p class="vendor">Christies · Amsterdam</p>
+                        <p class="title">Day. 20th Century &amp; Contemporary Art Day Sale</p>
+                        <p class="date">30 Nov 2015, 2:00pm</p>
+                    </div>
+                </div>
+                <div class="achievement">
+                    <div class="current-total">Current total : <span class="price">$160K</span></div>
+                    <div class="chart">
+                        <div class="to-min">
+                            <div class="done live b" style="width:60%"></div>
+                            <div class="min-point desc"></div>
+                        </div>
+                        <div class="max-point desc"></div>
+                    </div>
+                </div>
+                <div class="achievement" style="display:none">
+                    <div class="current-total">Current total : <span class="price">$160K</span></div>
+                    <div class="chart">
+                        <div class="to-max">
+                            <div class="done live b" style="width:60%"></div>
+                            <div class="min-point desc"></div>
+                        </div>
+                        <div class="max-point desc"></div>
+                    </div>
+                </div>
+                <div id="aucInfo" onclick="showLayer('lot-detail-layer');" class="detail">
+                    <div class="c_wrap">
+                        <div class="thumb img_align">
+                            <img src="http://www.christies.com/lotfinderimages/d59516/shen_zhou_snowscape_d5951694h.jpg" class="lazyResult">
+                        </div>
+                        <p class="lot_no"> Lot. 157</p>
+                        <div class="cont">
+                            <p class="artist">PETER YOUNG</p>
+                            <p class="title">#15 – 1972</p>
+                            <p class="price">£7,00,000 - £10,000,000</p>
+                        </div>
+                    </div>
+                    <div class="c_bot">
+                        <div class="time">
+                            <div id="castLotTime" class="flip-clock-wrapper"><span class="flip-clock-divider minutes"><span class="flip-clock-dot top"></span><span class="flip-clock-dot bottom"></span></span><ul class="flip "><li class="flip-clock-before"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">9</div></div><div class="down"><div class="shadow"></div><div class="inn">9</div></div></a></li><li class="flip-clock-active"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">0</div></div><div class="down"><div class="shadow"></div><div class="inn">0</div></div></a></li></ul><ul class="flip "><li class="flip-clock-before"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">9</div></div><div class="down"><div class="shadow"></div><div class="inn">9</div></div></a></li><li class="flip-clock-active"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">0</div></div><div class="down"><div class="shadow"></div><div class="inn">0</div></div></a></li></ul><span class="flip-clock-divider seconds"><span class="flip-clock-dot top"></span><span class="flip-clock-dot bottom"></span></span><ul class="flip  play"><li class="flip-clock-before"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">4</div></div><div class="down"><div class="shadow"></div><div class="inn">4</div></div></a></li><li class="flip-clock-active"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">5</div></div><div class="down"><div class="shadow"></div><div class="inn">5</div></div></a></li></ul><ul class="flip  play"><li class="flip-clock-before"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">4</div></div><div class="down"><div class="shadow"></div><div class="inn">4</div></div></a></li><li class="flip-clock-active"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">5</div></div><div class="down"><div class="shadow"></div><div class="inn">5</div></div></a></li></ul></div>
+                        </div>
+                        <div id="currentPrice" class="price">
+                            <p class="currency">HK$50,000,000,000</p>
+                            <p class="currency-local">($256,000,000)</p>
+                        </div>
+                    </div>
+                    <!--<div class="btns">-->
+                        <!--<button class="btn-follow on"></button>-->
+                    <!--</div>-->
+                </div>
+            </li>
+            <li class="auction current-auction live c8">
+                <div class="auction-summary">
+                    <span id="ico" class="ico b">C</span> <!-- 진행중인 경우 class에 b 추가됩니다. -->
+                    <div class="cont">
+                        <p class="vendor">Christies · Amsterdam</p>
+                        <p class="title">Day. 20th Century &amp; Contemporary Art Day Sale</p>
+                        <p class="date">30 Nov 2015, 2:00pm</p>
+                    </div>
+                </div>
+                <div class="achievement">
+                    <div class="current-total">Current total : <span class="price">$160K</span></div>
+                    <div class="chart">
+                        <div class="to-min">
+                            <div class="done live b" style="width:60%"></div>
+                            <div class="min-point desc"></div>
+                        </div>
+                        <div class="max-point desc"></div>
+                    </div>
+                </div>
+                <div class="achievement" style="display:none">
+                    <div class="current-total">Current total : <span class="price">$160K</span></div>
+                    <div class="chart">
+                        <div class="to-max">
+                            <div class="done live b" style="width:60%"></div>
+                            <div class="min-point desc"></div>
+                        </div>
+                        <div class="max-point desc"></div>
+                    </div>
+                </div>
+                <div id="aucInfo" onclick="showLayer('lot-detail-layer');" class="detail">
+                    <div class="c_wrap">
+                        <div class="thumb img_align">
+                            <img src="http://www.christies.com/lotfinderimages/d59516/shen_zhou_snowscape_d5951694h.jpg" class="lazyResult">
+                        </div>
+                        <p class="lot_no"> Lot. 157</p>
+                        <div class="cont">
+                            <p class="artist">PETER YOUNG</p>
+                            <p class="title">#15 – 1972</p>
+                            <p class="price">£7,00,000 - £10,000,000</p>
+                        </div>
+                    </div>
+                    <div class="c_bot">
+                        <div class="time">
+                            <div id="castLotTime" class="flip-clock-wrapper"><span class="flip-clock-divider minutes"><span class="flip-clock-dot top"></span><span class="flip-clock-dot bottom"></span></span><ul class="flip "><li class="flip-clock-before"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">9</div></div><div class="down"><div class="shadow"></div><div class="inn">9</div></div></a></li><li class="flip-clock-active"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">0</div></div><div class="down"><div class="shadow"></div><div class="inn">0</div></div></a></li></ul><ul class="flip "><li class="flip-clock-before"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">9</div></div><div class="down"><div class="shadow"></div><div class="inn">9</div></div></a></li><li class="flip-clock-active"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">0</div></div><div class="down"><div class="shadow"></div><div class="inn">0</div></div></a></li></ul><span class="flip-clock-divider seconds"><span class="flip-clock-dot top"></span><span class="flip-clock-dot bottom"></span></span><ul class="flip  play"><li class="flip-clock-before"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">4</div></div><div class="down"><div class="shadow"></div><div class="inn">4</div></div></a></li><li class="flip-clock-active"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">5</div></div><div class="down"><div class="shadow"></div><div class="inn">5</div></div></a></li></ul><ul class="flip  play"><li class="flip-clock-before"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">4</div></div><div class="down"><div class="shadow"></div><div class="inn">4</div></div></a></li><li class="flip-clock-active"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">5</div></div><div class="down"><div class="shadow"></div><div class="inn">5</div></div></a></li></ul></div>
+                        </div>
+                        <div id="currentPrice" class="price">
+                            <p class="currency">HK$50,000,000,000</p>
+                            <p class="currency-local">($256,000,000)</p>
+                        </div>
+                    </div>
+                    <!--<div class="btns">-->
+                        <!--<button class="btn-follow on"></button>-->
+                    <!--</div>-->
+                </div>
+            </li>
+            <li class="auction current-auction live c1">
+                <div class="auction-summary">
+                    <span id="ico" class="ico b">C</span> <!-- 진행중인 경우 class에 b 추가됩니다. -->
+                    <div class="cont">
+                        <p class="vendor">Christies · Amsterdam</p>
+                        <p class="title">Day. 20th Century &amp; Contemporary Art Day Sale</p>
+                        <p class="date">30 Nov 2015, 2:00pm</p>
+                    </div>
+                </div>
+                <div class="achievement">
+                    <div class="current-total">Current total : <span class="price">$160K</span></div>
+                    <div class="chart">
+                        <div class="to-min">
+                            <div class="done live b" style="width:60%"></div>
+                            <div class="min-point desc"></div>
+                        </div>
+                        <div class="max-point desc"></div>
+                    </div>
+                </div>
+                <div class="achievement" style="display:none">
+                    <div class="current-total">Current total : <span class="price">$160K</span></div>
+                    <div class="chart">
+                        <div class="to-max">
+                            <div class="done live b" style="width:60%"></div>
+                            <div class="min-point desc"></div>
+                        </div>
+                        <div class="max-point desc"></div>
+                    </div>
+                </div>
+                <div id="aucInfo" onclick="showLayer('lot-detail-layer');" class="detail">
+                    <div class="c_wrap">
+                        <div class="thumb img_align">
+                            <img src="http://www.christies.com/lotfinderimages/d59516/shen_zhou_snowscape_d5951694h.jpg" class="lazyResult">
+                        </div>
+                        <p class="lot_no"> Lot. 157</p>
+                        <div class="cont">
+                            <p class="artist">PETER YOUNG</p>
+                            <p class="title">#15 – 1972</p>
+                            <p class="price">£7,00,000 - £10,000,000</p>
+                        </div>
+                    </div>
+                    <div class="c_bot">
+                        <div class="withdrawn-lot">
+                            <p class="withdrawn">Withdrawn</p>
+                        </div>
+                    </div>
+                    <!--<div class="btns">-->
+                        <!--<button class="btn-follow on"></button>-->
+                    <!--</div>-->
+                </div>
+            </li>
+            <li class="auction current-auction live c1">
+                <div class="auction-summary">
+                    <span id="ico" class="ico b">C</span> <!-- 진행중인 경우 class에 b 추가됩니다. -->
+                    <div class="cont">
+                        <p class="vendor">Christies · Amsterdam</p>
+                        <p class="title">Day. 20th Century &amp; Contemporary Art Day Sale</p>
+                        <p class="date">30 Nov 2015, 2:00pm</p>
+                    </div>
+                </div>
+                <div class="achievement">
+                    <div class="current-total">Current total : <span class="price">$160K</span></div>
+                    <div class="chart">
+                        <div class="to-min">
+                            <div class="done live b" style="width:60%"></div>
+                            <div class="min-point desc"></div>
+                        </div>
+                        <div class="max-point desc"></div>
+                    </div>
+                </div>
+                <div class="achievement" style="display:none">
+                    <div class="current-total">Current total : <span class="price">$160K</span></div>
+                    <div class="chart">
+                        <div class="to-max">
+                            <div class="done live b" style="width:60%"></div>
+                            <div class="min-point desc"></div>
+                        </div>
+                        <div class="max-point desc"></div>
+                    </div>
+                </div>
+                <div id="aucInfo" onclick="showLayer('lot-detail-layer');" class="detail">
+                    <div class="c_wrap">
+                        <div class="thumb img_align">
+                            <img src="http://www.christies.com/lotfinderimages/d59516/shen_zhou_snowscape_d5951694h.jpg" class="lazyResult">
+                        </div>
+                        <p class="lot_no"> Lot. 157</p>
+                        <div class="cont">
+                            <p class="artist">PETER YOUNG</p>
+                            <p class="title">#15 – 1972</p>
+                            <p class="price">£7,00,000 - £10,000,000</p>
+                        </div>
+                    </div>
+                    <div class="c_bot">
+                        <div class="passed-lot">
+                            <p class="passed">Passed</p>
+                        </div>
+                    </div>
+                    <!--<div class="btns">-->
+                        <!--<button class="btn-follow on"></button>-->
+                    <!--</div>-->
+                </div>
+            </li>
+            <li class="auction current-auction live c1">
+                <div class="auction-summary">
+                    <span id="ico" class="ico b">C</span> <!-- 진행중인 경우 class에 b 추가됩니다. -->
+                    <div class="cont">
+                        <p class="vendor">Christies · Amsterdam</p>
+                        <p class="title">Day. 20th Century &amp; Contemporary Art Day Sale</p>
+                        <p class="date">30 Nov 2015, 2:00pm</p>
+                    </div>
+                </div>
+                <div class="achievement">
+                    <div class="current-total">Current total : <span class="price">$160K</span></div>
+                    <div class="chart">
+                        <div class="to-min">
+                            <div class="done live b" style="width:60%"></div>
+                            <div class="min-point desc"></div>
+                        </div>
+                        <div class="max-point desc"></div>
+                    </div>
+                </div>
+                <div class="achievement" style="display:none">
+                    <div class="current-total">Current total : <span class="price">$160K</span></div>
+                    <div class="chart">
+                        <div class="to-max">
+                            <div class="done live b" style="width:60%"></div>
+                            <div class="min-point desc"></div>
+                        </div>
+                        <div class="max-point desc"></div>
+                    </div>
+                </div>
+                <div id="aucInfo" onclick="showLayer('lot-detail-layer');" class="detail">
+                    <div class="c_wrap">
+                        <div class="thumb img_align">
+                            <img src="http://www.christies.com/lotfinderimages/d59516/shen_zhou_snowscape_d5951694h.jpg" class="lazyResult">
+                        </div>
+                        <p class="lot_no"> Lot. 157</p>
+                        <div class="cont">
+                            <p class="artist">PETER YOUNG</p>
+                            <p class="title">#15 – 1972</p>
+                            <p class="price">£7,00,000 - £10,000,000</p>
+                        </div>
+                    </div>
+                    <div class="c_bot">
+                        <div id="currentPrice" class="price soldfor">
+                            <p class="soldfor-text">Sold</p>
+                            <p class="hammer">hammer</p>
+                            <p class="currency">$500,000,000,000</p>
+                            <p class="currency-local">($256,000,000)</p>
+                        </div>
+                    </div>
+                    <!--<div class="btns">-->
+                        <!--<button class="btn-follow on"></button>-->
+                    <!--</div>-->
+                </div>
+            </li>
+            <li class="auction current-auction c1">
+                <div class="auction-summary">
+                    <span id="ico" class="ico b">C</span> <!-- 진행중인 경우 class에 b 추가됩니다. -->
+                    <div class="cont">
+                        <p class="vendor">Christies · Amsterdam</p>
+                        <p class="title">Day. 20th Century &amp; Contemporary Art Day Sale</p>
+                        <p class="date">30 Nov 2015, 2:00pm</p>
+
+                        <div class="status">
+                            <button class="live b">Watch Live</button>
+                        </div>
+                    </div>
+                    <!--<div class="btns">-->
+                        <!--<button class="btn-follow on"></button>-->
+                    <!--</div>-->
+                </div>
+            </li>
+            <li class="auction current-auction c1">
+                <div class="auction-summary">
+                    <span id="ico" class="ico b">C</span> <!-- 진행중인 경우 class에 b 추가됩니다. -->
+                    <div class="cont">
+                        <p class="vendor">Christies · Amsterdam</p>
+                        <p class="title">Day. 20th Century &amp; Contemporary Art Day Sale</p>
+                        <p class="date">30 Nov 2015, 2:00pm</p>
+                        <div class="status-info">
+                            <p class="text2">Waiting for Starting</p>
+                        </div>
+                    </div>
+                    <!--<div class="btns">-->
+                        <!--<button class="btn-follow on"></button>-->
+                    <!--</div>-->
+                </div>
+                <button type="button" class="view_saleinfo" onclick="$(this).next().slideToggle();$(this).toggleClass('on')">Sale Info</button>
+                <div class="sale_info">
+                    <p class="tit">Auction Times</p>
+                    <div class="texts">
+                        <p>Sep 8, 10:00 am</p>
+                        <p>Lots 1-336</p>
+                    </div>
+                    <p class="tit">Viewing Times</p>
+                    <p class="where">London, South Kensington</p>
+                    <div class="texts">
+                        <pre>Sep 1, 9:00am-5:00pm
+Sep 2, 9:00am-5:00pm
+Sep 3, 10:00am-5:00pm
+Sep 4, 10:00am-5:00pm
+Sep 5, 11:00am-5:00pm
+Sep 6, 11:00am-5:00pm
+Sep 7, 12:00pm-5:00pm</pre>
+                    </div>
+                </div>
+
+            </li>
+            <li class="auction upcoming-auction c1">
+                <div class="auction-summary">
+                    <span id="ico" class="ico">C</span> <!-- 진행중인 경우 class에 b 추가됩니다. -->
+                    <div class="cont">
+                        <p class="vendor">Christies · Amsterdam</p>
+                        <p class="title">Post-war &amp; Contemporary art</p>
+                        <p class="date">30 Nov 2015, 2:00pm</p>
+                        <div class="remaining">
+                            <p class="tit">Starts in</p>
+                            <p class="times"><span>15</span>h <span>37</span>m <span>10</span>s</p>
+                        </div>
+                    </div>
+                    <!--<div class="btns">-->
+                        <!--<button class="btn-follow on"></button>-->
+                    <!--</div>-->
+                </div>
+                <button type="button" class="view_saleinfo" onclick="$(this).next().slideToggle();$(this).toggleClass('on')">Sale Info</button>
+                <div class="sale_info" style="display: none;">
+                    <p class="tit">Auction Times</p>
+                    <div class="texts">
+                        <p>Sep 8, 10:00 am</p>
+                        <p>Lots 1-336</p>
+                    </div>
+                    <p class="tit">Viewing Times</p>
+                    <p class="where">London, South Kensington</p>
+                    <div class="texts">
+                        <pre>Sep 1, 9:00am-5:00pm
+Sep 2, 9:00am-5:00pm
+Sep 3, 10:00am-5:00pm
+Sep 4, 10:00am-5:00pm
+Sep 5, 11:00am-5:00pm
+Sep 6, 11:00am-5:00pm
+Sep 7, 12:00pm-5:00pm</pre>
+                    </div>
+                </div>
+            </li>
+            <li class="auction upcoming-auction c1">
+                <div class="auction-summary">
+                    <span id="ico" class="ico">C</span> <!-- 진행중인 경우 class에 b 추가됩니다. -->
+                    <div class="cont">
+                        <p class="vendor">Christies · Amsterdam</p>
+                        <p class="title">Post-war &amp; Contemporary art</p>
+                        <p class="date">30 Nov 2015, 2:00pm</p>
+                        <div class="remaining">
+                            <p class="tit">Starts in</p>
+                            <p class="times"><span>3</span>days</p>
+                        </div>
+
+                    </div>
+                    <!--<div class="btns">-->
+                        <!--<button class="btn-follow on"></button>-->
+                    <!--</div>-->
+                </div>
+                <button type="button" class="view_saleinfo" onclick="$(this).next().slideToggle();$(this).toggleClass('on')">Sale Info</button>
+                <div class="sale_info" style="display: none;">
+                    <p class="tit">Auction Times</p>
+                    <div class="texts">
+                        <p>Sep 8, 10:00 am</p>
+                        <p>Lots 1-336</p>
+                    </div>
+                    <p class="tit">Viewing Times</p>
+                    <p class="where">London, South Kensington</p>
+                    <div class="texts">
+                        <pre>Sep 1, 9:00am-5:00pm
+Sep 2, 9:00am-5:00pm
+Sep 3, 10:00am-5:00pm
+Sep 4, 10:00am-5:00pm
+Sep 5, 11:00am-5:00pm
+Sep 6, 11:00am-5:00pm
+Sep 7, 12:00pm-5:00pm</pre>
+                    </div>
+                </div>
+            </li>
+        </ul>
+		<div class="btns-bottom" style="display: block;">
+			<button class="btn-more">March 2016</button>
+		</div>
+	</div>
+</div>
+
+	<div class="filter-vendor" id="filter-vendor" style="display: none;">
+		<div class="mask" onclick="document.getElementById('filter-vendor').style.display='none'"></div>
+		<ul class="vendors">
+			<li class="all on">All Auction House</li>
+			<li class="christies">Christie's</li>
+			<li class="sothebys">Sotheby's</li>
+			<li class="bonhams">Bonhams</li>
+			<li class="phillips">Phillips</li>
+			<li class="seoul-auction">Seoul Auction</li>
+			<li class="k-auction">K Auction</li>
+		</ul>
+	</div>
+
+	<div class="change-currency" id="change-currency" style="display: none;">
+		<div class="mask" onclick="document.getElementById('change-currency').style.display='none'"></div>
+		<ul class="currency">
+			<li class="on"><span class="unit">$</span><p>U.S. Dollars</p></li>
+			<li><span class="unit">$</span><p>U.S. Dollars</p></li>
+			<li><span class="unit">$</span><p>U.S. Dollars</p></li>
+			<li><span class="unit">$</span><p>U.S. Dollars</p></li>
+			<li><span class="unit">$</span><p>U.S. Dollars</p></li>
+			<li><span class="unit">$</span><p>U.S. Dollars</p></li>
+			<li><span class="unit">$</span><p>U.S. Dollars</p></li>
+			<li><span class="unit">$</span><p>U.S. Dollars</p></li>
+			<li><span class="unit">$</span><p>U.S. Dollars</p></li>
+			<li><span class="unit">$</span><p>U.S. Dollars</p></li>
+		</ul>
+	</div>
+
+	<div class="search-artist" id="search-artist" style="display: none;">
+		<div class="header type1">
+			<div class="search">
+				<input type="text" class="search-input" placeholder="Search an artist">
+				<button class="search-reset"></button>
+			</div>
+			<p class="btn"><button class="btn-close" onclick="document.getElementById('search-artist').style.display='none'"></button></p>
+		</div>
+		<div class="scroll-body">
+			<div class="results">
+				<ul class="results-list">
+					<li>
+						<span class="searched">Pa</span>blo Picasso
+					</li>
+					<li>
+						<span class="searched">Pa</span>blo Picasso
+					</li>
+					<li>
+						<span class="searched">Pa</span>blo Picasso
+					</li>
+					<li>
+						<span class="searched">Pa</span>blo Picasso
+					</li>
+					<li>
+						<span class="searched">Pa</span>blo Picasso
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="lot_detail" id="lot-detail-layer"  style="display: none;">
+		<div class="default_info">
+			<div class="header">
+				<p class="lot-number">Lot. 134</p>
+				<p class="btn"><button class="btn-close" onclick="document.getElementById('lot-detail-layer').style.display='none'"></button></p>
+			</div>
+			<div class="lot_image img_align" id="lot_image_div">
+				<!--<img src="http://www.christies.com/lotfinderimages/d59465/roy_lichtenstein_interior_with_yves_klein_sculpture_d5946553h.jpg" class="lazyResult" data-original="http://www.christies.com/lotfinderimages/d59378/lynette_yiadom-boakye_knave_d5937851h.jpg" style="max-width: 250px; max-height: 250px; margin: auto 0px; display: inline;" alt="lot image">-->
+				<img src="http://www.christies.com/lotfinderimages/d59378/lynette_yiadom-boakye_knave_d5937851h.jpg" class="lazyResult" data-original="http://www.christies.com/lotfinderimages/d59378/lynette_yiadom-boakye_knave_d5937851h.jpg" style="max-width: 250px; max-height: 250px; margin: auto 0px; display: inline;" alt="lot image">
+			</div>
+
+			<div class="artist_info">
+				<p class="name" id="artistName">Lynette Yiadom-Boakye </p>
+				<p class="info" id="artistOriginYear">(b. 1977)</p>
+			</div>
+			<h2 class="art_title" id="workTitle">Knave</h2>
+
+
+
+            <!-- 시작전 -->
+            <!--<div id="price_info" class="price_info">-->
+                <!--<div id="currentPrice" class="price">-->
+                    <!--<p class="price1">₩132,000,000 - ₩132,00,000</p>-->
+                    <!--<p class="price2">($100,000 - $150,000)</p>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!-- 종료후 - sold -->
+            <div id="price_info" class="price_info">
+                <div id="currentPrice" class="price">
+                    <p class="price1">₩132,000,000 - ₩132,00,000</p>
+                    <p class="price2">($100,000 - $150,000)</p>
+                    <p class="currency" onclick="showLayer('change-currency');">
+                        <span class="status">hammer</span>
+                        <span class="locale">£</span>
+                        <span class="amount">1,500,000</span>
+                        <span class="origin">($10,000,000)</span>
+                    </p>
+                </div>
+            </div>
+            <!-- 종료후 - passed -->
+            <!--<div id="price_info" class="price_info">-->
+                <!--<div id="currentPrice" class="price">-->
+                    <!--<p class="price1">₩132,000,000 - ₩132,00,000</p>-->
+                    <!--<p class="price2">($100,000 - $150,000)</p>-->
+                    <!--<p class="currency">-->
+                        <!--<span class="passed">Passed</span>-->
+                    <!--</p>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--&lt;!&ndash; 종료후 - withdrawn &ndash;&gt;-->
+            <!--<div id="price_info" class="price_info">-->
+                <!--<div id="currentPrice" class="price">-->
+                    <!--<p class="price1">₩132,000,000 - ₩132,00,000</p>-->
+                    <!--<p class="price2">($100,000 - $150,000)</p>-->
+                    <!--<p class="currency">-->
+                        <!--<span class="withdrawn">Withdrawn</span>-->
+                    <!--</p>-->
+                <!--</div>-->
+            <!--</div>-->
+
+
+
+
+
+			<div class="art_info">
+				<pre><p id="artistSigned">signed with the artist’s initials, titled and dated ‘LYB 2011 Knave’ (on the reverse)</p></pre>
+				<pre><p id="medium">oil on canvas</p></pre>
+				<pre><p id="size">78 7/8 x 47 3/8in. <br>(200.3 x 120.2cm.)</p></pre>
+				<pre><p id="yearExecuted">2011</p></pre>
+				<pre><p id="other">blah blah</p></pre>
+			</div>
+		</div>
+		<div class="detail_info">
+			<h3 id="provenance" class="tit">Provenance</h3>
+			<div id="provenanceCont" class="cont">
+				<pre><p id="s_provenance">Corvi-Mora, London.
+					Acquired from the above by the present owner in 2011.</p></pre>
+			</div>
+
+			<h3 id="exhibition" class="tit">Exhibition</h3>
+			<div id="exhibitionCont" class="cont">
+				<pre><p id="s_exhibition">Lyon, La Sucrière, <br><br><br><br>11th Biennale de Lyon: A Terrible Beauty is Born, 2011, p. 316 (illustrated, p. 101).</p></pre>
+			</div>
+
+			<h3 id="literature" class="tit">Literature</h3>
+			<div id="literatureCont" class="cont">
+				<pre><p id="s_literature">Frieze, Issue 146, April 2012 (detail  <br><br><br><br>illustrated in colour on the cover).</p></pre>
+			</div>
+
+			<h3 id="condition" class="tit" style="display: none;">Condition Report</h3>
+			<div id="conditionCont" class="cont" style="display: none;">
+				<pre><p id="s_condition">Frieze, Issue 146, April 2012 (detail  <br><br><br><br>illustrated in colour on the cover).</p></pre>
+			</div>
+
+			<h3 id="other" class="tit" style="display: none;">Other Description</h3>
+			<div id="otherCont" class="cont" style="display: none;">
+				<pre><p id="s_other">Frieze, Issue 146, April 2012 (detail  <br><br><br><br>illustrated in colour on the cover).</p></pre>
+			</div>
+		</div>
+
+	</div>
+
+    <div class="select-menu" id="select-menu" style="display: none;">
+        <div class="mask" onclick="document.getElementById('select-menu').style.display='none'"></div>
+        <div class="btns">
+            <button class="btn-close" onclick="document.getElementById('select-menu').style.display='none'"></button>
+        </div>
+        <ul class="menu">
+            <li class="menu-search">
+                <div class="search">
+                    <input type="text" class="search-input" placeholder="Search an artist" onclick="showLayer('search-artist');">
+                </div>
+            </li>
+            <li class="menu-major following">
+                <p class="title">Following</p>
+                <span class="badge-new">4</span>
+            </li>
+            <li class="menu-major notifications">
+                <p class="title">Notifications</p>
+                <span class="badge-new">4</span>
+            </li>
+            <li class="menu-minor">Home</li>
+            <li class="menu-minor">Settings</li>
+        </ul>
+    </div>
+	<!-- temp start -->
+	<div class="temp-menu"></div>
+	<!-- temp end -->
+
+	<script>
+		function showLayer(layerId){
+			document.getElementById(layerId).style.display='block'
+		}
+	</script>
+
+</div>
+</body></html>
