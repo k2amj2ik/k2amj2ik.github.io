@@ -340,11 +340,11 @@ header .gohome img {display:none}
 .lot_detail .default_info .price_info.done .buyer {padding:0 0 10px; font-size:16px;}
 .lot_detail .default_info .price_info.done .not_sold {font-size:22px; color:#222; font-weight:600;}
 .lot_detail .default_info .art_info {margin-top:20px;}
-.lot_detail .default_info .art_info p {margin-bottom:4px;color:#222; line-height:20px; font-size: 15px;}
+.lot_detail .default_info .art_info p {/* margin-bottom:4px; */color:#222; line-height:20px; font-size: 15px;letter-spacing: -0.4px;}
 .lot_detail .detail_info {padding:40px 20px 20px 20px; background:#f7f7f7;}
 .lot_detail .detail_info .tit {background:#f7f7f7; color:#222; font-size:12px; font-weight:600;}
 .lot_detail .detail_info .cont {padding:15px 0 40px; font-size:16px; color:#444; line-height:1.5em; word-break:break-all;}
-.lot_detail .detail_info .cont p {line-height:20px;font-size: 14px;}
+.lot_detail .detail_info .cont p {line-height:20px;font-size: 14px;letter-spacing: -0.4px;}
 
 .lot_detail .similar_lots {margin-top:25px; text-align:center;}
 .lot_detail .similar_lots .tit {color:#868686; font-size:12px;}
@@ -1189,8 +1189,8 @@ header .show-noti {position:absolute; left: 10px; top: 10px;  width: 28px; heigh
 .search-result .auction-info .achievement .min-point::before {display:none}
 .search-result .auction-info .achievement .max-point::before {display:none}
 .search-result .search-keyword {position: fixed;background-color: #999;width: 100%;height:40px;top: 115px;z-index: 118;opacity: 0.8;}
-.search-result .search-keyword .text {display: block;height: 28px;padding:14px 40px 0 40px;text-transform:uppercase;color:#fff;font-weight: 600;font-size:13px;text-align:center;box-sizing: border-box;white-space: normal;-webkit-line-clamp: 1;-webkit-box-orient: vertical;overflow: hidden;text-overflow: ellipsis;letter-spacing: 0.9px;}
-.search-result .search-keyword .btns {position:absolute;right:0;top:0;width:40px;height:40px;display:inline-block;}
+.search-result .search-keyword .text {display: block;height: 28px;padding: 14px 45px 0 45px;text-transform:uppercase;color:#fff;font-weight: 600;font-size:13px;text-align:center;box-sizing: border-box;white-space: normal;-webkit-line-clamp: 1;-webkit-box-orient: vertical;overflow: hidden;text-overflow: ellipsis;letter-spacing: 0.9px;}
+.search-result .search-keyword .btns {position:absolute;right: 5px;top:0;width:40px;height:40px;display:inline-block;}
 .search-result .search-keyword .btns .delete {width:100%;height:100%;background:transparent url('../img/lotlist_icon_delet.png') no-repeat center center;background-size:18px auto}
 .search-result .scroll-body .auction-result {padding:10px 0 0 0}
 .search-result .scroll-body .auction-result {padding: 12px 0 0 0;box-sizing: border-box;}
