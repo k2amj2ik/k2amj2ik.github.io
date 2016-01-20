@@ -341,7 +341,7 @@ header .gohome img {display:none}
 .lot_detail .default_info .price_info.done .not_sold {font-size:22px; color:#222; font-weight:600;}
 .lot_detail .default_info .art_info {margin-top:20px;}
 .lot_detail .default_info .art_info p {/* margin-bottom:4px; */color:#222; line-height:20px; font-size: 15px;letter-spacing: -0.4px;}
-.lot_detail .detail_info {padding:40px 20px 20px 20px; background:#f7f7f7;}
+.lot_detail .detail_info {padding: 40px 20px 20px 13px; background:#f7f7f7;}
 .lot_detail .detail_info .tit {background:#f7f7f7; color:#222; font-size:12px; font-weight:600;}
 .lot_detail .detail_info .cont {padding:15px 0 40px; font-size:16px; color:#444; line-height:1.5em; word-break:break-all;}
 .lot_detail .detail_info .cont p {line-height:20px;font-size: 14px;letter-spacing: -0.4px;}
