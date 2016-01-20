@@ -1131,9 +1131,9 @@ header .show-noti {position:absolute; left: 10px; top: 10px;  width: 28px; heigh
 .lot-list .scroll-body .lots .cont p {display:block;display: -webkit-box;white-space: normal;-webkit-line-clamp: 1;-webkit-box-orient: vertical;overflow: hidden;text-overflow: ellipsis;word-break: break-all;}
 .lot-list .scroll-body .lots .cont .artist {font-size: 13px;color: #222;font-weight: 600;margin-top: 6px;line-height: 13px;height: 14px;text-transform: uppercase;padding-right: 24px;}
 .lot-list .scroll-body .lots .cont .title {font-size: 16px;color: #222;font-family:'tl';font-weight: 400;margin-top: 4px;line-height: 17px;font-style:italic;-webkit-line-clamp: 2;padding-right: 24px;}
-.lot-list .scroll-body .lots .cont .est {box-sizing: border-box;font-size: 14px;font-weight:400;color:#888;margin: 7px 0 0 0;padding-right: 32px;letter-spacing: -0.3px;-webkit-line-clamp: 2;}
+.lot-list .scroll-body .lots .cont .est {box-sizing: border-box;font-size: 16px;font-weight:400;color:#888;margin: 13px 0 0 0;padding-right: 32px;letter-spacing: -1.0px;-webkit-line-clamp: 2;}
 .lot-list .scroll-body .lots .cont .est2 {box-sizing: border-box;font-size: 13px;font-weight:400;color:#888;margin: 7px 0 0 0;padding-right: 0;letter-spacing: -0.3px;-webkit-line-clamp: 2;}
-.lot-list .scroll-body .lots .cont .est-local {font-size: 12px;box-sizing: border-box;font-weight:400;color:#888;margin: 5px 0 0 0;padding-right: 32px;-webkit-line-clamp: 2;}
+.lot-list .scroll-body .lots .cont .est-local {font-size: 13px;box-sizing: border-box;font-weight:400;color:#888;margin: 5px 0 0 0;padding-right: 32px;-webkit-line-clamp: 2;}
 .lot-list .scroll-body .lots .cont .hammer {position: relative;display: inline-block;box-sizing: border-box;font-size: 22px;font-weight: 600;margin: 0;padding: 5px 16px 3px 0;letter-spacing: -1.0px;/* color: #222; */}
 .lot-list .scroll-body .lots .cont .hammer.long {font-size: 18px;}
 .lot-list .scroll-body .lots .cont .hammer-local {box-sizing: border-box;font-size: 13px;font-weight:400;color:#222;margin: 3px 0 0 0;padding-right: 32px;-webkit-line-clamp: 2;}
