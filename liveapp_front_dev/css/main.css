@@ -340,11 +340,11 @@ header .gohome img {display:none}
 .lot_detail .default_info .price_info.done .buyer {padding:0 0 10px; font-size:16px;}
 .lot_detail .default_info .price_info.done .not_sold {font-size:22px; color:#222; font-weight:600;}
 .lot_detail .default_info .art_info {margin-top:20px;}
-.lot_detail .default_info .art_info p {margin-bottom:4px;color:#222; line-height:20px; font-size:16px;}
+.lot_detail .default_info .art_info p {margin-bottom:4px;color:#222; line-height:20px; font-size: 15px;}
 .lot_detail .detail_info {padding:40px 20px 20px 20px; background:#f7f7f7;}
 .lot_detail .detail_info .tit {background:#f7f7f7; color:#222; font-size:12px; font-weight:600;}
 .lot_detail .detail_info .cont {padding:15px 0 40px; font-size:16px; color:#444; line-height:1.5em; word-break:break-all;}
-.lot_detail .detail_info .cont p {line-height:20px}
+.lot_detail .detail_info .cont p {line-height:20px;font-size: 14px;}
 
 .lot_detail .similar_lots {margin-top:25px; text-align:center;}
 .lot_detail .similar_lots .tit {color:#868686; font-size:12px;}
@@ -1277,7 +1277,7 @@ header .show-noti {position:absolute; left: 10px; top: 10px;  width: 28px; heigh
 .auction-summary .cont .title {font-size:13.5px;color: #888888; font-weight:600;display:block;display: -webkit-box;max-height: 54px;white-space: normal;-webkit-line-clamp: 1;-webkit-box-orient: vertical;overflow: hidden;text-overflow: ellipsis;}
 
 /* lot detail */
-.lot_detail .default_info {position:relative;padding: 48px 12px 20px 12px;letter-spacing: -1px;}
+.lot_detail .default_info {position:relative;padding: 48px 12px 20px 12px;}
 .lot_detail .default_info .artist_info .name {color:#222;font-size: 17px;font-weight: 600;letter-spacing: -0.3px;text-transform: uppercase;}
 .lot_detail .default_info .artist_info {margin-top: 20px;}
 .lot_detail .default_info .artist_info .info {margin-top: 2px; color:#868686;font-size: 12px;letter-spacing: -0.3;}
