@@ -989,7 +989,7 @@ header .show-noti {position:absolute; left: 10px; top: 10px;  width: 28px; heigh
 .auction-list .scroll-body .auction-result .current-auction .btns .btn-follow {width: 40px;height: 40px;background: transparent url('../img/lotdetail_icon_follow.png') no-repeat center center;background-size: 18px auto;opacity: 0.5}
 .auction-list .scroll-body .auction-result .current-auction .btns .btn-follow.on {background: transparent url('../img/lotdetail_icon_follow_on.png') no-repeat center center;background-size: 18px auto;opacity: 1}
 .auction-list .scroll-body .auction-result .current-auction .status {padding: 15px 42px 0 0;}
-.auction-list .scroll-body .auction-result .current-auction .status .live {width:100%;height: 35px;border-radius: 4px;text-transform: uppercase;font-size: 16px;font-weight: 600;letter-spacing: 1px;padding-top: 4px;box-shadow:0 2px 2px rgba(0,0,0,0.1);border-bottom: 3px solid rgba(0,0,0,0.2);}
+.auction-list .scroll-body .auction-result .current-auction .status .live {width:100%;height: 35px;border-radius: 4px;text-transform: uppercase;font-size: 16px;font-weight: 600;letter-spacing: 1px;padding-top: 2px;box-shadow:0 2px 2px rgba(0,0,0,0.1);border-bottom: 3px solid rgba(0,0,0,0.2);}
 .auction-list .scroll-body .auction-result .current-auction.c1 .detail .c_bot .soldfor {background-color: #e44b3b;padding: 12px 0 16px 0;}
 .auction-list .scroll-body .auction-result .current-auction.c2 .detail .c_bot .soldfor {background:#146ad1;}
 .auction-list .scroll-body .auction-result .current-auction.c3 .detail .c_bot .soldfor {background:#603ab4;}
