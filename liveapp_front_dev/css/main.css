@@ -1120,20 +1120,21 @@ header .show-noti {position:absolute; left: 10px; top: 10px;  width: 28px; heigh
 .lot-list .scroll-body .lots .status .upcoming {box-sizing: border-box;width:100%;height: 15px;font-size: 14px;font-weight: 600;letter-spacing: -0.3;padding: 0 0 0 43px;margin-top: -4px;}
 .lot-list .scroll-body .lots .status .past {box-sizing: border-box;width:100%;height: 15px;color:#777777;font-size: 14px;font-weight: 400;letter-spacing: -0.3;padding: 0 0 0 43px;margin-top: -4px;}
 .lot-list .scroll-body .lots {padding: 12px 0 0 0;box-sizing: border-box;}
-.lot-list .scroll-body .lots li {box-sizing: border-box;position:relative;display:block;border: 0;border-top: 1px solid #e5e6e6;border-bottom: 1px solid #e5e6e6;padding: 14px 8px 25px 12px;margin: 0 0 7px 0;background-color: #fff;min-height: 110px;}
+.lot-list .scroll-body .lots li {box-sizing: border-box;position:relative;display:block;border: 0;border-top: 1px solid #e5e6e6;border-bottom: 1px solid #e5e6e6;padding: 14px 8px 25px 12px;margin: 0 0 7px 0;background-color: #fff;min-height: 140px;}
 .lot-list .scroll-body .lots .lot_no {font-size: 11px;font-weight: 400;text-transform: uppercase;color: #222;margin: 0 0 0 0;}
-.lot-list .scroll-body .lots .thumb {display:block;float:left;width: 75px;height: 90px;text-align: center}
+.lot-list .scroll-body .lots .thumb {display:block;float:left;width: 75px;height: 90px;text-align: center;margin-top: 7px;}
 .lot-list .scroll-body .lots .thumb img {max-width:100%;max-height: 100%;}
 .lot-list .scroll-body .lots .cont {padding: 0px 0 0 86px;}
 .lot-list .scroll-body .lots .cont p {display:block;display: -webkit-box;white-space: normal;-webkit-line-clamp: 1;-webkit-box-orient: vertical;overflow: hidden;text-overflow: ellipsis;}
-.lot-list .scroll-body .lots .cont .artist {font-size: 13px;color: #222;font-weight: 600;margin-top: 6px;letter-spacing: -0.1px;line-height: 13px;text-transform: uppercase;}
-.lot-list .scroll-body .lots .cont .title {font-size: 14px;color: #222;font-family:'tl';font-weight: 400;margin-top: 4px;letter-spacing: -0.1px;line-height: 15px;font-style:italic}
+.lot-list .scroll-body .lots .cont .artist {font-size: 14px;color: #222;font-weight: 600;margin-top: 6px;letter-spacing: -0.1px;line-height: 13px;text-transform: uppercase;}
+.lot-list .scroll-body .lots .cont .title {font-size: 16px;color: #222;font-family:'tl';font-weight: 400;margin-top: 4px;letter-spacing: -0.1px;line-height: 17px;font-style:italic;-webkit-line-clamp: 2;}
 .lot-list .scroll-body .lots .cont .est {box-sizing: border-box;font-size: 14px;font-weight:400;color:#888;margin: 7px 0 0 0;padding-right: 32px;letter-spacing: -0.3px;-webkit-line-clamp: 2;}
-.lot-list .scroll-body .lots .cont .est2 {box-sizing: border-box;font-size: 12px;font-weight:400;color:#888;margin: 7px 0 0 0;padding-right: 0;letter-spacing: -0.3px;-webkit-line-clamp: 2;}
+.lot-list .scroll-body .lots .cont .est2 {box-sizing: border-box;font-size: 13px;font-weight:400;color:#888;margin: 7px 0 0 0;padding-right: 0;letter-spacing: -0.3px;-webkit-line-clamp: 2;}
 .lot-list .scroll-body .lots .cont .est-local {font-size: 12px;box-sizing: border-box;font-weight:400;color:#888;margin: 5px 0 0 0;padding-right: 32px;-webkit-line-clamp: 2;}
-.lot-list .scroll-body .lots .cont .hammer {position: relative;display: inline-block;box-sizing: border-box;font-size: 20px;font-weight: 600;margin: 0;padding: 5px 16px 3px 0;letter-spacing: -1.5px;}
-.lot-list .scroll-body .lots .cont .hammer-local {box-sizing: border-box;font-size: 14px;font-weight:400;color:#222;margin: 3px 0 0 0;padding-right: 32px;letter-spacing: -0.3px;-webkit-line-clamp: 2;}
-.lot-list .scroll-body .lots .cont .hammer-text {box-sizing: border-box;font-size: 11px;font-weight:400;margin: 7px 0 0 0;letter-spacing: -0.3px;}
+.lot-list .scroll-body .lots .cont .hammer {position: relative;display: inline-block;box-sizing: border-box;font-size: 24px;font-weight: 600;margin: 0;padding: 5px 16px 3px 0;letter-spacing: -1.0px;}
+.lot-list .scroll-body .lots .cont .hammer.long {font-size: 18px;}
+.lot-list .scroll-body .lots .cont .hammer-local {box-sizing: border-box;font-size: 16px;font-weight:400;color:#222;margin: 3px 0 0 0;padding-right: 32px;-webkit-line-clamp: 2;}
+.lot-list .scroll-body .lots .cont .hammer-text {box-sizing: border-box;font-size: 11px;font-weight:400;margin: 12px 0 0 0;letter-spacing: -0.3px;}
 .lot-list .scroll-body .lots .cont .passed,
 .lot-list .scroll-body .lots .cont .withdrawn {position: relative;display: inline-block;box-sizing: border-box;font-size: 22px;font-weight: 400;margin: 0 0 -11px 0;color: #222;padding: 10px 16px 3px 0;letter-spacing: -1px;}
 .lot-list .scroll-body .lots .btns {margin:0;padding:0;position: absolute;right: 0;bottom: 0;}
