@@ -1127,7 +1127,7 @@ header .show-noti {position:absolute; left: 10px; top: 10px;  width: 28px; heigh
 .lot-list .scroll-body .lots .thumb img {max-width:100%;max-height: 100%;}
 .lot-list .scroll-body .lots .cont {padding: 0px 0 0 86px;}
 .lot-list .scroll-body .lots .cont p {display:block;display: -webkit-box;white-space: normal;-webkit-line-clamp: 1;-webkit-box-orient: vertical;overflow: hidden;text-overflow: ellipsis;}
-.lot-list .scroll-body .lots .cont .artist {font-size: 14px;color: #222;font-weight: 600;margin-top: 6px;letter-spacing: -0.1px;line-height: 13px;text-transform: uppercase;}
+.lot-list .scroll-body .lots .cont .artist {font-size: 14px;color: #222;font-weight: 600;margin-top: 6px;line-height: 13px;height: 14px;text-transform: uppercase;}
 .lot-list .scroll-body .lots .cont .title {font-size: 16px;color: #222;font-family:'tl';font-weight: 400;margin-top: 4px;letter-spacing: -0.1px;line-height: 17px;font-style:italic;-webkit-line-clamp: 2;}
 .lot-list .scroll-body .lots .cont .est {box-sizing: border-box;font-size: 14px;font-weight:400;color:#888;margin: 7px 0 0 0;padding-right: 32px;letter-spacing: -0.3px;-webkit-line-clamp: 2;}
 .lot-list .scroll-body .lots .cont .est2 {box-sizing: border-box;font-size: 13px;font-weight:400;color:#888;margin: 7px 0 0 0;padding-right: 0;letter-spacing: -0.3px;-webkit-line-clamp: 2;}
