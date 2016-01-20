@@ -905,7 +905,8 @@ header .show-noti {position:absolute; left: 10px; top: 10px;  width: 28px; heigh
 .auction-list .scroll-body .auction-result .auction-summary .ico {position: absolute;top: 2px;l;left: 0;width: 44px;height: 54px;text-indent: 100px;overflow:hidden;}
 .auction-list .scroll-body .auction-result .auction-summary .ico.p {/* top: 8px; */}
 .auction-list .scroll-body .auction-result .auction-summary .cont .title {font-size: 17px;color: #222;font-weight: 600;display:block;display: -webkit-box;white-space: normal;-webkit-line-clamp: 2;-webkit-box-orient: vertical;overflow: hidden;text-overflow: ellipsis;line-height: 18px;margin-bottom: 2px;}
-.auction-list .scroll-body .auction-result .auction-summary .cont .title::after {content:''; position:absolute;right: -10px;top: 22px;width: 7px; height:20px;background: url('../img/detail.png') no-repeat 0 0;background-size: 6px auto;}
+.auction-list .scroll-body .auction-result .auction-summary .cont .title::after {content:''; position:absolute;right: -10px;top: 24px;width: 7px; height:20px;background: url('../img/detail.png') no-repeat 0 0;background-size: 6px auto;}
+.auction-list .scroll-body .auction-result .current-auction.live .auction-summary .cont .title::after {TOP: 18px;}
 .auction-list .scroll-body .auction-result .auction-summary .cont .vendor {font-size: 15px;font-weight: 400;color: #222;letter-spacing: -0.3px;margin-bottom: 0px;}
 .auction-list .scroll-body .auction-result .past-auction .auction-summary .cont .vendor {color: #888;}
 .auction-list .scroll-body .auction-result .current-auction.live .auction-summary .cont .date {font-size: 13px;}
