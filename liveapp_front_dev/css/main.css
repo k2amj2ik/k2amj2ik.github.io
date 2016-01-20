@@ -1052,7 +1052,7 @@ header .show-noti {position:absolute; left: 10px; top: 10px;  width: 28px; heigh
 .lot-list .header .btn .btn-close {width: 48px;height: 48px;background: transparent url('../img/lotdetail_icon_close.png') no-repeat center center;background-size: 22px auto;}
 .lot-list .header .btn .btn-refresh {width: 48px;height: 48px;background: transparent url('../img/gnb_icon_refresh.png') no-repeat center center;background-size: 22px auto;}
 .lot-list .header .btn .btn-back {width: 48px;height: 48px;background: transparent url('../img/gnb_icon_back.png') no-repeat center center;background-size: 22px auto;}
-.lot-list .auction-info {box-sizing: border-box;position:relative;padding: 64px 14px 0 14px;background-color: #efeeec;/* background-color:#fff; *//* box-shadow: 0px 2px 2px rgba(0,0,0,0.1); */}
+.lot-list .auction-info {box-sizing: border-box;position:relative;padding: 64px 14px 4px 14px;background-color: #efeeec;/* background-color:#fff; *//* box-shadow: 0px 2px 2px rgba(0,0,0,0.1); */}
 .lot-list .auction-info .basic-info {padding-left: 41px;}
 .lot-list .auction-info .ico {position: absolute;top: 65px;left: 16px;width: 31px;height: 31px;text-indent: 100px;overflow:hidden;}
 .lot-list .auction-info .cont {margin-bottom: 6px;}
@@ -1065,8 +1065,8 @@ header .show-noti {position:absolute; left: 10px; top: 10px;  width: 28px; heigh
 .lot-list .auction-info .cont .remaining .times {display:inlin-block;float:left;font-weight:400;font-size: 15px;}
 .lot-list .auction-info .cont .remaining .times span {font-weight:600;}
 
-.lot-list .auction-info .cont .sale-rate {font-size: 14px;font-weight: 400;letter-spacing: -0.3px;}
-.lot-list .auction-info .cont .sale-rate .text {font-size: 14px;font-weight: 400;letter-spacing: -0.3px;}
+.lot-list .auction-info .cont .sale-rate {font-size: 14px;font-weight: 400;margin-top: 12px;}
+.lot-list .auction-info .cont .sale-rate .text {font-size: 14px;font-weight: 400;color: #222;}
 .lot-list .auction-info .cont .sale-rate .value {font-size: 15px;font-weight: 400;color: #222;letter-spacing: -0.3px;}
 .lot-list .auction-info .cont .sale-rate .desc {font-size: 12px;font-weight: 400;color: #777777;letter-spacing: -0.3px}
 .lot-list .auction-info .dashboard {padding: 7px 0 40px 41px;position: relative;}

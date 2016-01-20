@@ -26,7 +26,7 @@
         <p class="btn"><button class="btn-refresh"></button></p>
     </div>
     <!-- past -->
-    <div class="auction-info" style="display:none">
+    <div class="auction-info" style="display:block">
         <div class="basic-info">
             <span id="ico" class="ico p">C</span> <!-- 진행중인 경우 class에 b 추가됩니다. -->
             <div class="cont">
@@ -44,15 +44,17 @@
         <div class="dashboard">
             <p class="status">Sale Total</p>
             <p class="sale-total" onclick="showLayer('change-currency');">₩ 240,000,000,000</p>
-            <p class="sale-total-local">($ 3,000,000,000)</p>
-            <p class="min-est-total"><span>MIN Est : $180k</span></p>
-            <p class="max-est-total"><span>MAX Est : $240k</span></p>
+            <p class="sale-total-local">$ 3,000,000,000</p>
+
+
         </div>
         <div class="achievement">
+            <p class="min-est-total"><span>MIN Est : $180k</span></p>
+            <p class="max-est-total"><span>MAX Est : $240k</span></p>
             <div class="chart">
                 <!-- min 미만 시-->
                 <div class="to-min" style="display:none">
-                    <div class="done b" style="width:100%"></div>
+                    <div class="done live b" style="width:100%"></div>
                     <div class="min-point desc"></div>
                 </div>
                 <!-- min 초과 시-->
@@ -63,9 +65,10 @@
                 <div class="max-point desc"></div>
             </div>
         </div>
+
     </div>
     <!-- 아직 경매결과가 없을때 -->
-    <div class="auction-info" style="display:block">
+    <div class="auction-info" style="display:none">
         <div class="basic-info">
             <span id="ico" class="ico b">C</span> <!-- 진행중인 경우 class에 b 추가됩니다. -->
             <div class="cont">
@@ -117,11 +120,13 @@
         <div class="dashboard">
             <p class="status">Current <span class="past-time">at 23:12:12</span></p>
             <p class="sale-total">₩ 240,000,000,000</p>
-            <p class="sale-total-local">($ 3,000,000,000)</p>
-            <p class="min-est-total"><span>MIN Est : $180k</span></p>
-            <p class="max-est-total"><span>MAX Est : $240k</span></p>
+            <p class="sale-total-local">$ 3,000,000,000</p>
+
+
         </div>
-        <div class="achievement">
+        <div class="achievement"><p class="min-est-total"><span>MIN Est : $180k</span></p>
+            <p class="max-est-total"><span>MAX Est : $240k</span></p>
+
             <div class="chart">
                 <!-- min 미만 시-->
                 <div class="to-min" style="display:none">
@@ -158,7 +163,7 @@
         </div>
     </div>
     <div class="scroll-body">
-        <div class="btns-top" style="display: none">
+        <div class="btns-top" style="display:none">
             <button class="btn-preview">Previous lots</button>
         </div>
         <ul class="lots">
