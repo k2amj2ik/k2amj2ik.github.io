@@ -862,7 +862,7 @@ header .show-noti {position:absolute; left: 10px; top: 10px;  width: 28px; heigh
 .badge-new {position:absolute;left:0;top:0;min-width: 18px;box-sizing: border-box;height: 18px;background-color:#ff0000;border-radius: 9px;color: #fff;text-align: center;overflow: hidden;padding: 4px;font-size: 11px;}
 @keyframes example {0% {opacity: 0;} 20% {opacity: 0;} 25% {opacity:1;} 80% {opacity:1;} 85% {opacity:0;} 100% {opacity:0;}}
 .sale-rate-ico {opacity:1;position: absolute;top: 42px;left: 5px;background-color: #fff;border-radius: 6px;font-size: 10px;text-align: center;width: 33px;height: 10px;font-weight: 600;/* overflow: hidden; */animation: example 4s ease 0s infinite alternate;-webkit-animation: example 4s ease 0s infinite alternate;}
-/*.sale-rate-ico::after {content:'Sale Rate';display:block;position:absolute;left: -7px;top: 14px;white-space: nowrap;font-size: 7px;}*/
+.sale-rate-ico::after {content:'Sale Rate';display:block;position:absolute;left: -5px;top: 17px;white-space: nowrap;font-size: 10px;font-weight: 300;color: #777;}
 
 /* search common UI */
 .search { position: relative;font-weight:300;font-size:19px;/* text-transform: uppercase; */}
@@ -908,6 +908,7 @@ header .show-noti {position:absolute; left: 10px; top: 10px;  width: 28px; heigh
 .auction-list .scroll-body .auction-result .auction-summary .cont .title::after {content:''; position:absolute;right: -10px;top: 22px;width: 7px; height:20px;background: url('../img/detail.png') no-repeat 0 0;background-size: 6px auto;}
 .auction-list .scroll-body .auction-result .auction-summary .cont .vendor {font-size: 15px;font-weight: 400;color: #222;letter-spacing: -0.3px;margin-bottom: 0px;}
 .auction-list .scroll-body .auction-result .past-auction .auction-summary .cont .vendor {color: #888;}
+.auction-list .scroll-body .auction-result .current-auction.live .auction-summary .cont .date {font-size: 13px;}
 .auction-list .scroll-body .auction-result .auction-summary .cont .date {font-size: 15px;font-weight: 400;color: #888;letter-spacing: -0.3px;}
 .auction-list .scroll-body .auction-result .auction-summary .dashboard .sale-rate {display: inline-block;font-size: 14px;font-weight: 400;letter-spacing: -0.3px;margin-top: 8px;margin-bottom: 4px;}
 .auction-list .scroll-body .auction-result .auction-summary .dashboard .sale-rate .text {font-size: 13px;font-weight: 400;color: #888;}
@@ -962,8 +963,8 @@ header .show-noti {position:absolute; left: 10px; top: 10px;  width: 28px; heigh
 .auction-list .detail .btns .btn-follow {width: 40px;height: 40px;background: transparent url('../img/lotdetail_icon_follow.png') no-repeat center center;background-size: 18px auto;opacity: 0.5}
 .auction-list .detail .btns .btn-follow.on {background: transparent url('../img/lotdetail_icon_follow_on.png') no-repeat center center;background-size: 18px auto;opacity: 1}
 .auction-list .detail .c_bot {position:relative}
-.auction-list .scroll-body .auction-result .current-auction.live .auction-summary .cont .vendor {color: #777;}
-.auction-list .scroll-body .auction-result .current-auction.live .auction-summary .cont .title {font-size: 14px;font-weight: 400;line-height: 16px;-webkit-line-clamp: 1;}
+.auction-list .scroll-body .auction-result .current-auction.live .auction-summary .cont .vendor {color: #777;font-size: 13px;}
+.auction-list .scroll-body .auction-result .current-auction.live .auction-summary .cont .title {font-size: 13px;font-weight: 600;line-height: 16px;-webkit-line-clamp: 1;}
 .auction-list .scroll-body .auction-result .current-auction .detail .c_bot .passed-lot {background-color: #777;margin: 20px 0 0 0;height: 100px;text-align: center;padding: 42px 15px 26px 15px;}
 .auction-list .scroll-body .auction-result .current-auction .detail .c_bot .passed-lot .passed {font-size:27px; color:#fff;text-align: center;margin-bottom:20px;}
 .auction-list .scroll-body .auction-result .current-auction .detail .c_bot .withdrawn-lot {background-color: #777;margin: 20px 0 0 0;height: 100px;text-align: center;padding: 42px 15px 26px 15px;}
