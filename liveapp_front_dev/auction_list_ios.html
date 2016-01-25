@@ -72,18 +72,18 @@
 
 <iframe src="gap://ready" style="display: none;"></iframe><div class="page center">
 	<div class="auction-list" id="wrapper">
-	<div class="header cols-2 type2">
-		<!--<p class="btn left"><button class="btn-menu" onclick="showLayer('select-menu');"></button></p>-->
+	<div class="header cols-3 type2">
+		<p class="btn left"><button class="btn-home"></button></p>
 		<div class="search">
 			<button class="vendor" onclick="showLayer('filter-vendor');"></button>
 			<input type="text" class="search-input" placeholder="Live Auction Art" onclick="showLayer('search-artist');">
 			<button class="vendor" onclick="showLayer('filter-vendor');" style="display:none"></button>
-            <button class="vendor c1" onclick="showLayer('filter-vendor');"></button>
+            <button class="vendor" onclick="showLayer('filter-vendor');"></button>
 		</div>
 		<p class="btn"><button class="btn-refresh"></button></p>
 	</div>
 	<div class="scroll-body" id="day_scroller">
-		<div class="btns-top" style="display: none;">
+		<div class="btns-top" style="display: block;">
 			<button class="btn-preview">January 2016</button>
 		</div>
         <ul class="auction-result">
@@ -1045,11 +1045,47 @@ Sep 7, 12:00pm-5:00pm</pre>
                         <p class="title">Day. 20th Century &amp; Contemporary Art Day Sale</p>
                         <p class="date">30 Nov 2015, 2:00pm</p>
                         <div class="status-info">
-                            <p class="text2">Waiting for Starting</p>
+                            <p class="text1">Preparing...</p>
                         </div>
                     </div>
                     <!--<div class="btns">-->
                         <!--<button class="btn-follow on"></button>-->
+                    <!--</div>-->
+                </div>
+                <button type="button" class="view_saleinfo" onclick="$(this).next().slideToggle();$(this).toggleClass('on')">Sale Info</button>
+                <div class="sale_info">
+                    <p class="tit">Auction Times</p>
+                    <div class="texts">
+                        <p>Sep 8, 10:00 am</p>
+                        <p>Lots 1-336</p>
+                    </div>
+                    <p class="tit">Viewing Times</p>
+                    <p class="where">London, South Kensington</p>
+                    <div class="texts">
+                        <pre>Sep 1, 9:00am-5:00pm
+Sep 2, 9:00am-5:00pm
+Sep 3, 10:00am-5:00pm
+Sep 4, 10:00am-5:00pm
+Sep 5, 11:00am-5:00pm
+Sep 6, 11:00am-5:00pm
+Sep 7, 12:00pm-5:00pm</pre>
+                    </div>
+                </div>
+
+            </li>
+            <li class="auction current-auction c1">
+                <div class="auction-summary">
+                    <span id="ico" class="ico b">C</span> <!-- 진행중인 경우 class에 b 추가됩니다. -->
+                    <div class="cont">
+                        <p class="vendor">Christies · Amsterdam</p>
+                        <p class="title">Day. 20th Century &amp; Contemporary Art Day Sale</p>
+                        <p class="date">30 Nov 2015, 2:00pm</p>
+                        <div class="status-info">
+                            <p class="text2">Waiting for Starting</p>
+                        </div>
+                    </div>
+                    <!--<div class="btns">-->
+                    <!--<button class="btn-follow on"></button>-->
                     <!--</div>-->
                 </div>
                 <button type="button" class="view_saleinfo" onclick="$(this).next().slideToggle();$(this).toggleClass('on')">Sale Info</button>
