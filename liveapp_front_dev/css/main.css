@@ -1035,8 +1035,8 @@ header .show-noti {position:absolute; left: 10px; top: 10px;  width: 28px; heigh
 .auction-list .view_saleinfo.on::after {background-position:0 100%;}
 .auction-list .view_saleinfo.on::before {content:'CLOSE ';}
 .auction-list .sale_info {margin: 20px 0 0 0; padding:20px; background:#f7f7f7; display:none;}
-.auction-list .sale_info p {margin-top:3px; color:#868686; line-height:1.3em; font-size:14px; text-align:center;}
-.auction-list .sale_info .texts pre {text-align: center;font-size: 14px;line-height:20px;color:#868686}
+.auction-list .sale_info p {margin-top:3px; color:#868686; line-height:1.3em;font-size: 13px; text-align:center;}
+.auction-list .sale_info .texts pre {text-align: center;font-size: 13px;line-height:20px;color:#868686}
 .auction-list .sale_info .texts p span {display:inline-block; text-align:left;}
 .auction-list .sale_info .texts p .l {width:40px;}
 .auction-list .sale_info .texts p .r {width:115px;}
