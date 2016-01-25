@@ -1045,9 +1045,9 @@ header .show-noti {position:absolute; left: 10px; top: 10px;  width: 28px; heigh
 .auction-list .sale_info .where {color:#222; margin-bottom:5px;}
 .auction-list .btns-top {/* background-color: #efeeec; */}
 .auction-list .btns-top .btn-preview {position:relative}
-.auction-list .btns-top .btn-preview::after {content:'';display: block;position:absolute;right: 14px;top: 11px;width:20px;height:20px;background:transparent url('../img/bg_update2.png') no-repeat left top;background-size:auto 20px;opacity: 0.6;}
+/*.auction-list .btns-top .btn-preview::after {content:'';display: block;position:absolute;right: 14px;top: 11px;width:20px;height:20px;background:transparent url('../img/bg_update2.png') no-repeat left top;background-size:auto 20px;opacity: 0.6;}*/
 .auction-list .scroll-body .btns-bottom .btn-more {position:relative}
-.auction-list .scroll-body .btns-bottom .btn-more::after {content:'';display: block;position:absolute;right: 14px;top: 11px;width:20px;height:20px;background: transparent url('../img/bg_update2.png') no-repeat right top;background-size:auto 20px;opacity: 0.6;}
+/*.auction-list .scroll-body .btns-bottom .btn-more::after {content:'';display: block;position:absolute;right: 14px;top: 11px;width:20px;height:20px;background: transparent url('../img/bg_update2.png') no-repeat right top;background-size:auto 20px;opacity: 0.6;}*/
 
 /* lot list */
 .lot-list .header .btn {position: absolute;right: 0;top: 0;}
