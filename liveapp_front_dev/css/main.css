@@ -1026,7 +1026,7 @@ header .show-noti {position:absolute; left: 10px; top: 10px;  width: 28px; heigh
 .auction-list .scroll-body .auction-result .past-auction .auction-summary .dashboard .sale-total.long {font-size: 21px;}
 .auction-list .scroll-body .auction-result .past-auction .auction-summary .dashboard .sale-total::after {content:'';display: block;position: absolute;right: 0;top: 10px;width: 11px;height: 11px;background: transparent url('../img/sold_option_04.png') no-repeat center center;background-size: 100% auto;opacity: 1;}
 .auction-list .scroll-body .auction-result .past-auction .auction-summary .dashboard .sale-total .currency {display:inline-block;font-weight:400}
-.auction-list .scroll-body .auction-result .past-auction .auction-summary .dashboard .sale-total-local {font-size: 17px;font-weight: 400;color: #555;letter-spacing: -1px;margin-bottom: 8px;}
+.auction-list .scroll-body .auction-result .past-auction .auction-summary .dashboard .sale-total-local {font-size: 17px;font-weight: 400;color: #888;letter-spacing: -1px;margin-bottom: 8px;}
 .auction-list .scroll-body .auction-result .past-auction .btns {margin:0;padding:0;position: absolute;right: -10px;bottom: 0px;}
 .auction-list .scroll-body .auction-result .past-auction .btns .btn-follow {width: 40px;height: 40px;background: transparent url('../img/lotdetail_icon_follow.png') no-repeat center center;background-size: 18px auto;opacity: 0.5}
 .auction-list .scroll-body .auction-result .past-auction .btns .btn-follow.on {background: transparent url('../img/lotdetail_icon_follow_on.png') no-repeat center center;background-size: 18px auto;opacity: 1}
