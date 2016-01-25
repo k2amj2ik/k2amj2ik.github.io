@@ -1034,7 +1034,7 @@ header .show-noti {position:absolute; left: 10px; top: 10px;  width: 28px; heigh
 .auction-list .view_saleinfo::after {content:''; display:inline-block;width: 20px;height: 6px; margin-left:5px; overflow:hidden; vertical-align:middle; text-transform:uppercase; background:url('../img/ico_arrow_ud.png') no-repeat 0 0;background-size: 12px auto;}
 .auction-list .view_saleinfo.on::after {background-position:0 100%;}
 .auction-list .view_saleinfo.on::before {content:'CLOSE ';}
-.auction-list .sale_info {margin: 20px 0 0 0; padding:20px; background:#f7f7f7; display:none;}
+.auction-list .sale_info {margin: 20px 0 0 0; padding:20px; background:#f7f7f7;/* display:none; */}
 .auction-list .sale_info p {margin-top:3px; color:#868686; line-height:1.3em;font-size: 13px; text-align:center;}
 .auction-list .sale_info .texts pre {text-align: center;font-size: 13px;line-height:20px;color:#868686}
 .auction-list .sale_info .texts p span {display:inline-block; text-align:left;}
