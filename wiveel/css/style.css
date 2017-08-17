@@ -59,7 +59,7 @@
 
 
 .wiveel-search.login .content {
-    min-width: 400px;
+    min-width: 375px;
     width: inherit;
     max-width: 760px;
     height: 252px;
@@ -156,7 +156,7 @@
 }
 
 .wiveel-data {
-    min-width: 400px;
+    min-width: 375px;
     width: inherit;
     max-width: 760px;
     margin: 0 auto;
