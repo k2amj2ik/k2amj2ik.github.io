@@ -1,0 +1,14 @@
+.feedback {
+  position: absolute;
+  right: 48px;
+  bottom: 90px;
+  width: 79px;
+  height: 80px;
+  border: 0;
+  background-color: $bg-btn-primary;
+  padding: 6px 0 0 18px;
+  text-align: left;
+  color: $text-btn-primary;
+
+  @include text-style(btn-primary);
+}

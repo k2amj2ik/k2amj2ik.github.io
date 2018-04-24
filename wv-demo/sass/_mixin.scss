@@ -1,0 +1,17 @@
+@mixin text-style($name) {
+  font-family: $font-family-lato;
+  letter-spacing: -0.01rem;
+
+  @if $name == text-header {
+    font-size: 1.25rem;
+    font-weight: 900;
+    line-height: 1.3rem;
+  }
+
+  @if $name == btn-primary {
+    font-size: 1.25rem;
+    font-weight: 900;
+    line-height: 1.3rem;
+  }
+}
+
