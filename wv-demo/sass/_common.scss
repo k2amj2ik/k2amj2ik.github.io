@@ -1,14 +1,46 @@
+html, body {
+  height: 100%;
+}
+
+html, body, div, ul, ol, li, table, tr, td, h1, h2, h3, h4, span {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+input, button, select {
+  box-sizing: border-box;
+  &:focus {
+    outline: none;
+  }
+}
+
+a {
+  color: $link-default;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:visited {
+  color: rgba($link-default, 0.5);
+}
+a:active {
+  outline: none;
+}
+
 .feedback {
-  position: absolute;
+  position: fixed;
   right: 48px;
   bottom: 90px;
   width: 79px;
   height: 80px;
-  border: 0;
-  background-color: $bg-btn-primary;
   padding: 6px 0 0 18px;
   text-align: left;
-  color: $text-btn-primary;
-
+  z-index: $z-index-max;
   @include text-style(btn-primary);
+  @include box-style(btn-primary);
 }
