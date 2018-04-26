@@ -10,20 +10,33 @@ $z-index-max: 90; //max
 //text
 $font-family-lato: "Lato";
 $font-family-ptserif: "PT Serif";
+$font-family-opensans: "Open Sans";
 $text-btn-primary: #fff;
 $text-header: #4e4e4e;
 $text-subtitle: #808080;
 $text-primary: #c69c6d;
 $text-search-main-placeholder: #cbcbcb;
-$text-search-main: #838383;
-$link-default: #838383;
+$text-search-main: #4e4e4e;
+$text-search-top-placeholder: #9a9a9a;
+$text-search-top: #4e4e4e;
+$text-footer: #8a8a8a;
+$link-default: #707070;
+$link-navi: #efefef;
+$link-navi-here: #d6af63;
+$link-footer: #898989;
+
 
 //etc.
 $bg-main: #ebecec;
 $bg-btn-primary: #c69c6d;
+$bg-navigation: #202020;
+$bg-navi-input: #ffffff;
+$bg-footer: #202020;
 $box-shadow-primary: 0 0 20px rgba($bg-btn-primary, 0.7);
 $border-search: #b1b1b1;
+$border-footer: #4d4d4d;
 $icon-dot: #c2c2c2;
+$line-primary: #c69c6d;
 
 // text-style
 @mixin text-style($name) {
@@ -71,6 +84,37 @@ $icon-dot: #c2c2c2;
     font-weight: 900;
     line-height: 1.3rem;
   }
+  @if $name == text-top-navi {
+    font-family: $font-family-opensans;
+    letter-spacing: 0;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.3rem;
+  }
+  @if $name == text-search-top {
+    font-family: $font-family-ptserif;
+    font-size: 16px;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: $text-search-top;
+    line-height: 1.3rem;
+  }
+  @if $name == text-footer {
+    font-family: $font-family-opensans;
+    font-size: 15px;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: $text-footer;
+    line-height: 18px;
+  }
+  @if $name == link-footer {
+    font-family: $font-family-opensans;
+    font-size: 15px;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: $text-footer;
+    line-height: 16px;
+  }
 }
 
 // box-style
@@ -82,6 +126,20 @@ $icon-dot: #c2c2c2;
     border: 0;
     color: $text-btn-primary;
     background-color: $bg-btn-primary;
+  }
+}
+
+//link-color
+@mixin link-color($color) {
+  color: $color;
+  &:hover {
+    text-decoration: underline;
+  }
+  &:visited {
+    color: rgba($color, 0.5);
+  }
+  &:active {
+    outline: none;
   }
 }
 

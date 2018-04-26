@@ -1,8 +1,15 @@
+@import 'font_face';
+@import "mixin";
+@import "layout";
+
+
+
+//reest--------------------------------------------------------------------------------------
 html, body {
   height: 100%;
 }
 
-html, body, div, ul, ol, li, table, tr, td, h1, h2, h3, h4, span {
+html, body, div, ul, ol, li, table, tr, td, h1, h2, h3, h4, p, span {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -10,6 +17,17 @@ html, body, div, ul, ol, li, table, tr, td, h1, h2, h3, h4, span {
 
 li {
   list-style: none;
+}
+
+//default--------------------------------------------------------------------------------------
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  min-height: 100%;
+  padding-top: 4.5rem;
+  padding-bottom: 100px;
 }
 
 input, button, select {
@@ -21,27 +39,200 @@ input, button, select {
 
 a {
   color: $link-default;
-}
-a:hover {
-  text-decoration: underline;
-}
-a:visited {
-  color: rgba($link-default, 0.5);
-}
-a:active {
-  outline: none;
+  &:hover {
+    text-decoration: underline;
+  }
+  &:visited {
+    color: rgba($link-default, 0.5);
+  }
+  &:active {
+    outline: none;
+  }
 }
 
-.feedback {
-  position: fixed;
-  right: 48px;
-  bottom: 90px;
-  width: 79px;
-  height: 80px;
-  padding: 6px 0 0 18px;
-  text-align: left;
+
+
+
+//header--------------------------------------------------------------------------------------
+header {
+  .top-navigation {
+    height: 57px;
+    background-color: $bg-navigation;
+    padding: 0;
+    border-bottom: 3px solid $line-primary;
+    z-index: 1; //temp
+    .container {
+      padding: 0;
+      .navbar-nav {
+        .nav-item {
+          margin: 18px 29px 0 0;
+          @include text-style(text-top-navi);
+          padding: 0;
+          .nav-link {
+            padding: 0;
+            margin: 0.25rem 0 0 0;
+            @include link-color($link-navi);
+          }
+        }
+        .logo-top {
+          cursor: pointer;
+          margin: 16px -2px 16px 0;
+          padding-left: 88px;
+          width: 66px;
+          height: 31px;
+          background: transparent url("../images/logo_navigation.png") no-repeat top left;
+        }
+        .normal {
+          position: relative;
+          &::after {
+            content: '';
+            position: absolute;
+            right: -17px;
+            top: -6px;
+            margin: 1rem 0 1rem 0.8rem;
+            width: 5px;
+            height: 9px;
+            background: transparent url("../images/icon_navigation.png") no-repeat center right;
+          }
+        }
+        .active {
+          .nav-link {
+            @include link-color($link-navi-here);
+          }
+        }
+      }
+      .form-top-search {
+        position: relative;
+        margin: 0;
+        background-color: $bg-navi-input;
+        .form-group {
+          display: inline-block;
+          float: left;
+          padding-right: 55px;
+          .input {
+            width: 348px;
+            height: 37px;
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            border: 0;
+            border-radius: 0;
+            padding: 5px 0 4px 18px;
+            @include placeholder-color($text-search-top-placeholder);
+            @include text-style(text-search-top);
+          }
+        }
+        .btn-search {
+          display: inline-block;
+          float: left;
+          cursor: pointer;
+          width: 55px;
+          height: 37px;
+          margin-left: -55px;
+          border: 0;
+          overflow: hidden;
+          text-indent: 5rem;
+          background: transparent url('../images/icon_search_small.png') no-repeat center 9px;
+        }
+      }
+    }
+  }
+}
+
+
+//footer--------------------------------------------------------------------------------------
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background-color: $bg-footer;
+  .container {
+    position: relative;
+    .btn-top {
+      border:0;
+      position: absolute;
+      top: -71px;
+      right: -8px;
+      display: inline-block;
+      cursor: pointer;
+      width: 69px;
+      height: 69px;
+      background: transparent url('../images/btn_top.png') no-repeat right bottom;
+    }
+
+    .sites {
+      margin: 0 0 -14px 0;
+      li {
+        display: inline-block;
+        margin: 24px 19px 0 -1px;
+        @include text-style(link-footer);
+        position: relative;
+        &:last-child {
+          &::after {
+            display: none;
+          }
+        }
+        &::after {
+          content: '';
+          position: absolute;
+          right: -13px;
+          top: 1px;
+          width: 2px;
+          height: 15px;
+          background-color: $border-footer;
+        }
+        a {
+          @include link-color($link-footer);
+        }
+      }
+    }
+    .logo {
+      margin-bottom: 6px;
+      height: 23px;
+      background: transparent url('../images/logo_footer.png') no-repeat center center;
+    }
+    .copyright {
+      text-align: center;
+      @include text-style(text-footer);
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//for work--------------------------------------------------------------------------------------
+.bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+  display: block;
+  opacity: 0.5;
   z-index: $z-index-max;
-  @include text-style(btn-primary);
-  @include box-style(btn-primary);
+}
+.bg-main {
+  background: transparent url('../images/bg_main_1920x1080.png') no-repeat center center / 1920px 1080px;
+}
+.bg-artists {
+  background: transparent url('../images/bg_artists_1110x1080.png') no-repeat top center / 1110px 1080px;
 }
 
