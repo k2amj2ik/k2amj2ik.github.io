@@ -64,6 +64,28 @@
   url('../fonts/Lato-Italic.woff') format('woff'),
   url('../fonts/Lato-Italic.woff2') format('woff2'),
 }
+// Lato semibold 600 normal
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Lato-Semibold'),
+  url('../fonts/Lato-Semibold.eot') format('embedded-opentype'),
+  url('../fonts/Lato-Semibold.ttf') format('truetype'),
+  url('../fonts/Lato-Semibold.woff') format('woff'),
+  url('../fonts/Lato-Semibold.woff2') format('woff2'),
+}
+// Lato semibold 600 italic
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 600;
+  src: local('Lato-SemiboldItalic'),
+  url('../fonts/Lato-SemiboldItalic.eot') format('embedded-opentype'),
+  url('../fonts/Lato-SemiboldItalic.ttf') format('truetype'),
+  url('../fonts/Lato-BoldItalic.woff') format('woff'),
+  url('../fonts/Lato-BoldItalic.woff2') format('woff2'),
+}
 // Lato bold 700 normal
 @font-face {
   font-family: 'Lato';
@@ -75,7 +97,7 @@
   url('../fonts/Lato-Bold.woff') format('woff'),
   url('../fonts/Lato-Bold.woff2') format('woff2'),
 }
-// Lato black 700 italic
+// Lato bold 700 italic
 @font-face {
   font-family: 'Lato';
   font-style: italic;
@@ -256,3 +278,5 @@
   url('../fonts/OpenSans-ExtraBoldItalic.ttf') format('truetype'),
   url('../fonts/OpenSans-ExtraBoldItalic.woff') format('woff'),
 }
+
+

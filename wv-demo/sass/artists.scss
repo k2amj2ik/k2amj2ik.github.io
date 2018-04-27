@@ -1,17 +1,81 @@
 @import 'common';
 
-
-$break-small: 320px;
-$break-large: 1200px;
-
-.profile-pic {
-  float: left;
-  width: 250px;
-  @media screen and (max-width: $break-small) {
-    width: 100px;
-    float: none;
+.artists {
+  .text-header {
+    margin: 58px 0 0 24px;
+    @include text-style(text-artists-header);
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      left: -24px;
+      top: -15px;
+      margin: 0;
+      width: 9px;
+      height: 48px;
+      background-color: $border-artist-header;
+    }
+    .keyword {
+      @include text-style(text-artists-header-keyword);
+      a {
+        @include link-color($link-default);
+      }
+    }
   }
-  @media screen and (min-width: $break-large) {
-    float: right;
+  .result-count {
+    margin: 48px 0 0 0;
+    @include text-style(text-artist-result-count);
+  }
+  .submenu {
+    margin: 12px 0 0 0;
+    border-top: 3px solid $line-default;
+    border-bottom: 1px solid $line-default;
+    .btn {
+      margin-top: -3px;
+      border: 0;
+      display: inline-block;
+      padding: 17px 28px 12px 32px;
+      background-color: transparent;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      border-radius: 0;
+      @include text-style(text-submenu);
+      @include link-color($link-fairy);
+    }
+    .active {
+      border-top: 3px solid $line-primary;
+      @include text-style(text-submenu-active);
+      @include link-color($link-primary);
+    }
+  }
+  .results {
+    margin: 26px 0 0 0;
+    li {
+      display: inline-block;
+      min-width: 49%;
+      margin: 0 0 21px 0;
+      @include text-style(text-artist-result-name);
+      a {
+        @include link-color($link-default);
+        .description {
+          color: $link-fairy;
+        }
+      }
+    }
+    .active {
+      a {
+        @include link-color($link-primary);
+        .description {
+          color: $link-primary;
+        }
+      }
+    }
   }
 }
+
+
+
+
+
+
+

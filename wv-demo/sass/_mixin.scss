@@ -13,20 +13,28 @@ $font-family-ptserif: "PT Serif";
 $font-family-opensans: "Open Sans";
 $text-btn-primary: #fff;
 $text-header: #4e4e4e;
+$text-header-quote: #8a8a8a;
 $text-subtitle: #808080;
-$text-primary: #c69c6d;
+$text-primary: #a8835a;
+$text-default: #272727;
+$text-fairy: #9a9a9a;
 $text-search-main-placeholder: #cbcbcb;
 $text-search-main: #4e4e4e;
 $text-search-top-placeholder: #9a9a9a;
 $text-search-top: #4e4e4e;
 $text-footer: #8a8a8a;
+$text-artist-header: #272727;
 $link-default: #707070;
 $link-navi: #efefef;
 $link-navi-here: #d6af63;
 $link-footer: #898989;
+$link-primary: #a8835a;
+$link-default: #272727;
+$link-fairy: #9a9a9a;
 
 
 //etc.
+$bg-default: #fff;
 $bg-main: #ebecec;
 $bg-btn-primary: #c69c6d;
 $bg-navigation: #202020;
@@ -35,24 +43,28 @@ $bg-footer: #202020;
 $box-shadow-primary: 0 0 20px rgba($bg-btn-primary, 0.7);
 $border-search: #b1b1b1;
 $border-footer: #4d4d4d;
+$border-artist-header: #707070;
 $icon-dot: #c2c2c2;
 $line-primary: #c69c6d;
+$line-default: #e5e5e5;
+
 
 // text-style
 @mixin text-style($name) {
   @if $name == text-header {
     font-family: $font-family-lato;
-    font-size: 4.4rem;
+    font-size: 70px;
     font-weight: 900;
-    letter-spacing: -0.01rem;
-    line-height: 4.8rem;
+    letter-spacing: 0;
     color: $text-header;
     text-indent: -0.5rem;
     margin-left: 0.5rem;
+    line-height: 110%;
   }
   @if $name == text-header-quote {
     font-family: $font-family-ptserif;
     font-weight: 400;
+    color: $text-header-quote;
   }
   @if $name == text-subtitle {
     font-family: $font-family-lato;
@@ -71,11 +83,11 @@ $line-primary: #c69c6d;
   }
   @if $name == link-searchable {
     font-family: $font-family-lato;
-    font-size: 1.2rem;
-    letter-spacing: -0.04rem;
+    font-size: 18px;
+    letter-spacing: 0;
     font-weight: 400;
     color: $text-search-main;
-    line-height: 1.3rem;
+    line-height: 21px;
   }
   @if $name == btn-primary {
     font-family: $font-family-lato;
@@ -115,6 +127,55 @@ $line-primary: #c69c6d;
     color: $text-footer;
     line-height: 16px;
   }
+  @if $name == text-artists-header {
+    font-family: $font-family-lato;
+    font-size: 28px;
+    letter-spacing: 0;
+    font-weight: 600;
+    color: $text-artist-header;
+    line-height: 18px;
+  }
+  @if $name == text-artists-header-keyword {
+    font-family: $font-family-lato;
+    font-size: 28px;
+    letter-spacing: 0;
+    font-weight: 600;
+    font-style: italic;
+    color: $text-artist-header;
+    line-height: 18px;
+  }
+  @if $name == text-artist-result-count {
+    font-family: $font-family-lato;
+    font-size: 16px;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: $text-artist-header;
+    line-height: 18px;
+  }
+  @if $name == text-submenu {
+    font-family: $font-family-lato;
+    font-size: 13px;
+    letter-spacing: 0;
+    font-weight: 600;
+    color: $text-fairy;
+    line-height: 18px;
+  }
+  @if $name == text-submenu-active {
+    font-family: $font-family-lato;
+    font-size: 13px;
+    letter-spacing: 0;
+    font-weight: 600;
+    color: $text-primary;
+    line-height: 18px;
+  }
+  @if $name == text-artist-result-name {
+    font-family: $font-family-lato;
+    font-size: 18px;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: $text-artist-header;
+    line-height: 18px;
+  }
 }
 
 // box-style
@@ -131,15 +192,20 @@ $line-primary: #c69c6d;
 
 //link-color
 @mixin link-color($color) {
-  color: $color;
+  &:link {
+    color: $color;
+    text-decoration: none;
+  }
   &:hover {
     text-decoration: underline;
   }
   &:visited {
     color: rgba($color, 0.5);
+    text-decoration: none;
   }
   &:active {
     outline: none;
+    text-decoration: underline;
   }
 }
 

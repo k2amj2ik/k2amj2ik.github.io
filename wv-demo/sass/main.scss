@@ -1,14 +1,20 @@
 @import 'common';
 
 //main
+html, body {
+  height: 100%;
+}
+
 body {
   background: linear-gradient(to left, rgba($bg-main,0.9) 60%, rgba($bg-main,1));
-  min-height: 30rem;
-  padding: 1.6rem 1rem 1rem 1.4rem;
-  margin: 0;
+  padding: 6px 0 0 7px;
+  margin: 0 0 0 0;
 }
 
 .main-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
   position: relative;
   &::after {
     content: '';
@@ -22,6 +28,7 @@ body {
     background: transparent url("../images/logo_big.png") no-repeat right 17.5% center;
   }
   .inner-container {
+    margin: auto;
     max-width: 68rem;
     width: 100%;
     display: flex;
@@ -37,11 +44,11 @@ body {
     }
 
     .text-header {
-      margin: 1.2rem 0 0 0;
+      margin: 20px 0 0 0;
       @include text-style(text-header);
 
       .quote {
-        margin-left: -1rem;
+        margin-left: 0;
         @include text-style(text-header-quote);
       }
     }
@@ -89,7 +96,7 @@ body {
     }
     .recommend-keyword {
       width: 100%;
-      font-size: 1rem;
+      margin-top: 14px;
       a {
         float: left;
         display: inline-block;
@@ -112,8 +119,9 @@ body {
         &:last-child {
           &::after {
             content: '...';
-            margin-bottom: 1rem;
+            position: absolute;
             top: 0;
+            right: -9px;
             width: 0;
             height: 0;
             @include text-style(link-searchable);
