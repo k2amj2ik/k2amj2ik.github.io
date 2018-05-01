@@ -298,7 +298,199 @@
     font-style: normal;
     line-height: 15px;
   }
+@if $name == lot-artist-name {
+    font-family: $font-family-opensans;
+    font-size: 18px;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: $text-description;
+    font-style: normal;
+    line-height: 18px;
+    text-transform: uppercase;
+  }
+@if $name == lot-artist-desc {
+    font-family: $font-family-opensans;
+    font-size: 18px;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: $text-fairy;
+    font-style: normal;
+    line-height: 16px;
+    text-transform: uppercase;
+  }
+@if $name == lot-worktitle {
+    font-family: $font-family-ptserif;
+    font-size: 28px;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: $text-default;
+    font-style: italic;
+    line-height: 30px;
+  }
+@if $name == lot-work-desc {
+    font-family: $font-family-opensans;
+    font-size: 16px;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: $text-fairy2;
+    font-style: normal;
+    line-height: 24px;
+  }
+  @if $name == lot-sold-price {
+    font-family: $font-family-ptserif;
+    font-size: 24px;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: $text-default;
+    font-style: normal;
+    line-height: 24px;
+  }
+  @if $name == lot-premium {
+    font-family: $font-family-opensans;
+    font-size: 15px;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: $text-fairy;
+    font-style: normal;
+    line-height: 21px;
+  }
+  @if $name == lot-estimate {
+    font-family: $font-family-ptserif;
+    font-size: 20px;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: $text-description;
+    font-style: normal;
+    line-height: 21px;
+  }
+  @if $name == lot-sale-name {
+    font-family: $font-family-opensans;
+    font-size: 17px;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: $text-primary;
+    font-style: normal;
+    line-height: 25px;
+  }
+  @if $name == lot-sale-date {
+    font-family: $font-family-opensans;
+    font-size: 16px;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: $text-fairy2;
+    font-style: normal;
+    line-height: 24px;
+  }
+  @if $name == lot-etc-title {
+    font-family: $font-family-ptserif;
+    font-size: 24px;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: $text-default;
+    font-style: normal;
+    line-height: 24px;
+  }
+  @if $name == lot-etc-context {
+    font-family: $font-family-opensans;
+    font-size: 16px;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: $text-fairy2;
+    font-style: normal;
+    line-height: 24px;
+  }
+  @if $name == lot-related-title {
+    font-family: $font-family-opensans;
+    font-size: 18px;
+    letter-spacing: 0;
+    font-weight: 700;
+    color: $text-default;
+    font-style: normal;
+    line-height: 21px;
+  }
+  @if $name == lot-related-keyword {
+    font-family: $font-family-opensans;
+    font-size: 14px;
+    letter-spacing: 0;
+    font-weight: 300;
+    color: $text-default;
+    font-style: normal;
+    line-height: 24px;
+  }
+  @if $name == lot-related-artist-name {
+    font-family: $font-family-opensans;
+    font-size: 13px;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: $text-fairy2;
+    font-style: normal;
+    line-height: 14px;
+  }
+  @if $name == lot-related-worktitle {
+    font-family: $font-family-ptserif;
+    font-size: 18px;
+    letter-spacing: -1px;
+    font-weight: 400;
+    color: $text-default;
+    font-style: italic;
+    line-height: 19px;
+  }
+  @if $name == lot-related-work-desc {
+    font-family: $font-family-opensans;
+    font-size: 15px;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: $text-description;
+    font-style: normal;
+    line-height: 19px;
+  }
+  @if $name == lot-related-estimate {
+    font-family: $font-family-ptserif;
+    font-size: 17px;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: $text-description;
+    font-style: normal;
+    line-height: 19px;
+  }
+  @if $name == lot-related-sold-price {
+    font-family: $font-family-ptserif;
+    font-size: 17px;
+    letter-spacing: 0;
+    font-weight: 700;
+    color: $text-default;
+    font-style: normal;
+    line-height: 19px;
+  }
+  @if $name == lot-related-sale-info {
+    font-family: $font-family-opensans;
+    font-size: 15px;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: $text-description;
+    font-style: normal;
+    line-height: 19px;
+  }
+  @if $name == lot-related-performance-standard {
+    font-family: $font-family-opensans;
+    font-size: 13px;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: $text-fairy2;
+    font-style: normal;
+    line-height: 14px;
+  }
+  @if $name == lot-related-performance {
+    font-family: $font-family-opensans;
+    font-size: 13px;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: $text-btn-primary;
+    font-style: normal;
+    line-height: 24px;
+  }
 }
+
 
 // box-style
 @mixin box-style($box) {
@@ -349,17 +541,19 @@
 
 // cut-text
 @mixin cut-single-text($width) {
+  display: inline-block;
   text-overflow:ellipsis;
   white-space:nowrap;
   word-wrap:normal;
-  width:$width;
+  max-width:$width;
   overflow:hidden;
 }
 
 @mixin cut-multi-text($width,$height,$line-count) {
+  display: inline-block;
   text-overflow:ellipsis;
   word-wrap:break-word;
-  width:$width;
+  max-width:$width;
   height: $height;
   overflow:hidden;
   display: -webkit-box;

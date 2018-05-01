@@ -1,0 +1,156 @@
+@import 'common';
+
+
+.lot {
+  margin-top: 40px;
+  padding-bottom: 51px;
+  position: relative;
+  display: flex;
+  .detail {
+    display: inline-block;
+    width: 677px;
+    .lot-summary {
+      padding: 0 0 32px 0;
+      border-bottom: 1px solid $border-normal;
+      .img {
+        margin: 3px 0 0 0;
+      }
+      .artist-name {
+        display: inline-block;
+        margin: 21px 0 0 0;
+        @include text-style(lot-artist-name);
+      }
+      .artist-desc {
+        display: inline-block;
+        margin: 0 0 0 3px;
+        @include text-style(lot-artist-desc);
+      }
+      .worktitle {
+        margin: 6px 0 0 0;
+        @include text-style(lot-worktitle);
+      }
+      .work-desc {
+        margin: 5px 0 0 0;
+        @include text-style(lot-work-desc);
+      }
+    }
+    .lot-detail {
+      margin: 33px 0 0 0;
+      .sold-price {
+        display: inline-block;
+        @include text-style(lot-sold-price);
+      }
+      .premium {
+        display: inline-block;
+        margin: 0 0 0 5px;
+        @include text-style(lot-premium);
+      }
+      .estimate {
+        margin: 7px 0 0 0;
+        @include text-style(lot-estimate);
+      }
+      .sale-name {
+        margin: 11px 0 0 0;
+        @include text-style(lot-sale-name);
+      }
+      .sale-date {
+        padding: 0 0 31px 0;
+        border-bottom: 1px solid $border-normal;
+        @include text-style(lot-sale-date);
+      }
+      .etc {
+        margin: 34px 0 40px 0;
+        .title {
+          margin: 0 0 15px 0;
+          @include text-style(lot-etc-title);
+        }
+        .context {
+          @include text-style(lot-etc-context);
+        }
+      }
+    }
+    position: relative;
+    .btns {
+      position: absolute;
+      right: 0;
+      top: 0;
+      .follow {
+        margin: 3px 0 0 0;
+        width: 33px;
+        height: 33px;
+        border: 0;
+        background: transparent url('../images/btn_follow.png') no-repeat center center;
+      }
+      .share {
+        margin: 0 0 0 4px;
+        width: 33px;
+        height: 33px;
+        border: 0;
+        background: transparent url('../images/btn_share.png') no-repeat center center;
+      }
+    }
+  }
+  .related {
+    margin: 2px 0 0 57px;
+    padding: 21px 0 0 24px;
+    display: inline-block;
+    width: 376px;
+    background-color: $bg-table-tr;
+    .title {
+      @include text-style(lot-related-title);
+    }
+    .keywords {
+      display: flex;
+      flex-wrap: wrap;
+      border: 1px solid red;
+      padding: 16px 0 0 0;
+      .keyword {
+        white-space: nowrap;
+        margin: 0 6px 0 0;
+        padding: 0 8px 0 10px;
+        background-color: $bg-panel;
+        @include text-style(lot-related-keyword);
+      }
+    }
+    .btn-filter {
+      .filter {
+
+      }
+    }
+    .related-lots {
+      .lot {
+        .img {
+
+        }
+        .artist-name {
+          @include text-style(lot-related-artist-name);
+        }
+        .worktitle {
+          @include text-style(lot-related-worktitle);
+        }
+        .work-desc {
+          @include text-style(lot-related-work-desc);
+        }
+        .estimate {
+          @include text-style(lot-related-estimate);
+        }
+        .sold-price {
+          @include text-style(lot-related-sold-price);
+        }
+        .sale-name {
+          @include text-style(lot-related-sale-info);
+        }
+        .sale-date {
+          @include text-style(lot-related-sale-info);
+        }
+        .performance {
+          @include text-style(lot-related-performance);
+          &::before {
+            content: 'Low Est.';
+            @include text-style(lot-related-performance-standard);
+          }
+        }
+      }
+    }
+  }
+}
