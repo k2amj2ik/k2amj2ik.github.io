@@ -18,7 +18,7 @@
     .keyword {
       @include text-style(text-artists-header-keyword);
       a {
-        @include link-color($link-default);
+        @include link-color($link-keyword);
       }
     }
   }

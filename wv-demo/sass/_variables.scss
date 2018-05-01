@@ -1,0 +1,73 @@
+//z-index
+$z-index-min: 10; //min
+$z-index-1: 20;
+$z-index-2: 30;
+$z-index-3: 40;
+$z-index-4: 50;
+$z-index-5: 60;
+$z-index-max: 90; //max
+
+//font-family
+$font-family-lato: "Lato";
+$font-family-ptserif: "PT Serif";
+$font-family-opensans: "Open Sans";
+
+//color-text
+$text-btn-primary: #fff;
+$text-header: #4e4e4e;
+$text-header-quote: #8a8a8a;
+$text-subtitle: #808080;
+$text-description: #707070;
+$text-heavy: #181818;
+$text-primary: #a8835a;
+$text-primary2: #c19a4f;
+$text-default: #272727;
+$text-fairy: #9a9a9a;
+$text-fairy2: #898989;
+$text-search-main-placeholder: #cbcbcb;
+$text-search-main: #4e4e4e;
+$text-search-top-placeholder: #9a9a9a;
+$text-search-top: #4e4e4e;
+$text-footer: #8a8a8a;
+$text-artist-header: #272727;
+
+
+//color-link
+$link-keyword: #707070;
+$link-navi: #efefef;
+$link-navi-here: #d6af63;
+$link-weak: #898989;
+$link-primary: #a8835a;
+$link-default: #272727;
+$link-fairy: #9a9a9a;
+
+
+//color-bg
+$bg-default: #fff;
+$bg-main: #ebecec;
+$bg-btn-primary: #c69c6d;
+$bg-btn-normal: #e7e7e7;
+$bg-navigation: #202020;
+$bg-navi-input: #ffffff;
+$bg-footer: #202020;
+$bg-table-tr: #f7f7f7;
+
+//color-border
+$border-search: #b1b1b1;
+$border-footer: #4d4d4d;
+$border-artist-header: #707070;
+$border-normal: #dcdcdc;
+$border-table: #e5e5e5;
+
+//color-icon
+$icon-dot: #c2c2c2;
+$icon-bar: #d0d0d0;
+
+
+$line-primary: #c69c6d;
+$line-default: #e5e5e5;
+$line-normal: #dddddd;
+
+//style-box
+$box-shadow-primary: 0 0 20px rgba($bg-btn-primary, 0.7);
+

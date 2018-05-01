@@ -2,16 +2,16 @@
 //@import 'bootstrap-4.1.0/bootstrap-grid';
 //@import 'bootstrap-4.1.0/bootstrap-reboot';
 @import 'font_face';
+@import "variables";
 @import "mixin";
 @import "layout";
-
-
 
 //reest--------------------------------------------------------------------------------------
 html, body, div, ul, ol, li, table, tr, td, h1, h2, h3, h4, p, span {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  @include text-style(text-default);
 }
 
 li {
@@ -20,9 +20,10 @@ li {
 
 a {
   text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
+  color: $link-default;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 //default--------------------------------------------------------------------------------------
 html {
@@ -33,12 +34,39 @@ body {
   min-height: 100%;
   padding-top: 57px;
   padding-bottom: 100px;
+  z-index: $z-index-1;
 }
 
 input, button, select {
   box-sizing: border-box;
   &:focus {
     outline: none;
+  }
+}
+
+input[type="text"] {
+  border:1px solid $line-normal;
+}
+
+select {
+  border: 0;
+  @include text-style(text-select);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  th {
+    @include text-style(text-table-th);
+    text-align: left;
+  }
+  tbody {
+    tr {
+      &:hover {
+        background-color: $bg-table-tr;
+      }
+    }
   }
 }
 
@@ -53,12 +81,14 @@ input, button, select {
   background-color: $bg-navigation;
   padding: 0;
   border-bottom: 3px solid $line-primary;
+  z-index: $z-index-max;
   .container {
     .location {
       display: flex;
+      text-transform: uppercase;
       li {
         display: inline-block;
-        margin: 18px 29px 0 0;
+        margin: 18px 28px 0 0;
         @include text-style(text-top-navi);
         padding: 0;
         .nav-link {
@@ -69,7 +99,7 @@ input, button, select {
       }
       .logo-top {
         cursor: pointer;
-        margin: 16px -2px 16px 0;
+        margin: 12px -2px 16px 0;
         padding-left: 88px;
         width: 66px;
         height: 31px;
@@ -80,8 +110,8 @@ input, button, select {
         &::after {
           content: '';
           position: absolute;
-          right: -17px;
-          top: -6px;
+          right: -16px;
+          top: -10px;
           margin: 1rem 0 1rem 0.8rem;
           width: 5px;
           height: 9px;
@@ -171,7 +201,7 @@ input, button, select {
           background-color: $border-footer;
         }
         a {
-          @include link-color($link-footer);
+          @include link-color($link-weak);
         }
       }
     }
@@ -187,26 +217,68 @@ input, button, select {
   }
 }
 
+.paging {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0 40px 0;
+  //border:1px solid red;
+  @include text-style(text-paging);
+  position: relative;
+  a {
+    line-height: 45px;
+  }
+  .prev {
+    position: absolute;
+    top: 0;
+    left: 19px;
+    width: 64px;
+    height: 45px;
+    @include link-color($text-description);
+    &::before {
+      content: '';
+      position: absolute;
+      left: 1px;
+      top: 16px;
+      margin: 0 0 0 -20px;
+      width: 10px;
+      height: 12px;
+      //border:1px solid red;
+      background: transparent url('../images/icon_arrow2.png') no-repeat center center;
+    }
+  }
+  a.num {
+    margin:0 0 0 0;
+    width: 43px;
+    height: 45px;
+    text-align: center;
+    @include link-color($text-fairy);
+  }
+  a.active {
+    @include link-color($text-default);
+  }
+  .next {
+    position: absolute;
+    top: 0;
+    right: 19px;
+    width: 64px;
+    height: 45px;
+    text-align: right;
+    @include link-color($text-description);
+    &::before {
+      content: '';
+      position: absolute;
+      right: 1px;
+      top: 16px;
+      margin: 0 -20px 0 0;
+      width: 10px;
+      height: 12px;
+      //border:1px solid red;
+      background: transparent url('../images/icon_arrow3.png') no-repeat center center;
+    }
+  }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//for work--------------------------------------------------------------------------------------
+//for purblishing--------------------------------------------------------------------------------------
 .bg {
   position: absolute;
   width: 100%;
@@ -218,10 +290,9 @@ input, button, select {
   opacity: 0.5;
   z-index: $z-index-max;
 }
-.bg-main {
-  background: transparent url('../images/bg_main_1920x1080.png') no-repeat center center / 1920px 1080px;
-}
-.bg-artists {
-  background: transparent url('../images/bg_artists_1110x1080.png') no-repeat top center / 1110px 1080px;
-}
+.bg-main {background: transparent url('../images/bg_main_1920x1080.png') no-repeat center center / 1920px 1080px;}
+.bg-artists {background: transparent url('../images/bg_artists_1110x1080.png') no-repeat top center / 1110px 1080px;}
+.bg-lots {background: transparent url('../images/bg_lots_1110x1080.png') no-repeat top center / 1110px 1779px;}
+.bg-lots2 {background: transparent url('../images/bg_lots2_1110x1080.png') no-repeat top center / 1110px 1779px;}
+
 

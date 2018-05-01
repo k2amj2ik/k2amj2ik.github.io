@@ -1,56 +1,13 @@
-//z-index
-$z-index-min: 10; //min
-$z-index-1: 20;
-$z-index-2: 30;
-$z-index-3: 40;
-$z-index-4: 50;
-$z-index-5: 60;
-$z-index-max: 90; //max
-
-//text
-$font-family-lato: "Lato";
-$font-family-ptserif: "PT Serif";
-$font-family-opensans: "Open Sans";
-$text-btn-primary: #fff;
-$text-header: #4e4e4e;
-$text-header-quote: #8a8a8a;
-$text-subtitle: #808080;
-$text-primary: #a8835a;
-$text-default: #272727;
-$text-fairy: #9a9a9a;
-$text-search-main-placeholder: #cbcbcb;
-$text-search-main: #4e4e4e;
-$text-search-top-placeholder: #9a9a9a;
-$text-search-top: #4e4e4e;
-$text-footer: #8a8a8a;
-$text-artist-header: #272727;
-$link-default: #707070;
-$link-navi: #efefef;
-$link-navi-here: #d6af63;
-$link-footer: #898989;
-$link-primary: #a8835a;
-$link-default: #272727;
-$link-fairy: #9a9a9a;
-
-
-//etc.
-$bg-default: #fff;
-$bg-main: #ebecec;
-$bg-btn-primary: #c69c6d;
-$bg-navigation: #202020;
-$bg-navi-input: #ffffff;
-$bg-footer: #202020;
-$box-shadow-primary: 0 0 20px rgba($bg-btn-primary, 0.7);
-$border-search: #b1b1b1;
-$border-footer: #4d4d4d;
-$border-artist-header: #707070;
-$icon-dot: #c2c2c2;
-$line-primary: #c69c6d;
-$line-default: #e5e5e5;
-
-
 // text-style
 @mixin text-style($name) {
+  @if $name == text-default {
+    font-family: $font-family-opensans;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: $text-default;
+    line-height: 16px;
+  }
   @if $name == text-header {
     font-family: $font-family-lato;
     font-size: 70px;
@@ -68,18 +25,27 @@ $line-default: #e5e5e5;
   }
   @if $name == text-subtitle {
     font-family: $font-family-lato;
-    font-size: 1rem;
-    letter-spacing: 0.06rem;
+    font-size: 18px;
+    letter-spacing: 0;
+    font-weight: 400;
     color: $text-subtitle;
-    line-height: 1.3rem;
+    line-height: 21px;
+  }
+  @if $name == text-subtitle-strong {
+    font-family: $font-family-lato;
+    font-size: 18px;
+    letter-spacing: 0;
+    font-weight: 600;
+    color: $text-primary;
+    line-height: 21px;
   }
   @if $name == text-search-main {
     font-family: $font-family-lato;
-    font-size: 3rem;
-    letter-spacing: 0.2rem;
+    font-size: 50px;
+    letter-spacing: -1px;
     font-weight: 700;
     color: $text-search-main;
-    line-height: 4.2rem;
+    line-height: 18px;
   }
   @if $name == link-searchable {
     font-family: $font-family-lato;
@@ -110,6 +76,14 @@ $line-default: #e5e5e5;
     font-weight: 400;
     color: $text-search-top;
     line-height: 1.3rem;
+  }
+  @if $name == text-search-left {
+    font-family: $font-family-opensans;
+    font-size: 14px;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: $text-default;
+    line-height: 16px;
   }
   @if $name == text-footer {
     font-family: $font-family-opensans;
@@ -176,6 +150,154 @@ $line-default: #e5e5e5;
     color: $text-artist-header;
     line-height: 18px;
   }
+  @if $name == text-filter-title {
+    font-family: $font-family-opensans;
+    font-size: 14px;
+    letter-spacing: 0;
+    font-weight: 600;
+    color: $text-default;
+    line-height: 16px;
+    text-transform: uppercase;
+  }
+  @if $name == text-filter {
+    font-family: $font-family-opensans;
+    font-size: 14px;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: $link-weak;
+    line-height: 16px;
+    text-transform: capitalize;
+  }
+@if $name == text-btn-desc {
+    font-family: $font-family-opensans;
+    font-size: 12px;
+    letter-spacing: -1px;
+    font-weight: 400;
+    color: $text-fairy;
+    font-style: italic;
+    line-height: 38px;
+  }
+@if $name == text-filter-desc {
+    font-family: $font-family-opensans;
+    font-size: 14px;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: $text-description;
+    font-style: normal;
+    line-height: 17px;
+    text-transform: none;
+  }
+@if $name == text-title-desc {
+    font-family: $font-family-opensans;
+    font-size: 18px;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: $text-fairy;
+    font-style: normal;
+    line-height: 22px;
+    text-transform: none;
+  }
+@if $name == text-select {
+    font-family: $font-family-lato;
+    font-size: 16px;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: $text-description;
+    font-style: normal;
+    line-height: 22px;
+  }
+@if $name == text-table-th {
+    font-family: $font-family-lato;
+    font-size: 13px;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: $text-fairy;
+    font-style: normal;
+    line-height: 18px;
+    text-transform: uppercase;
+  }
+@if $name == text-worktitle {
+    font-family: $font-family-ptserif;
+    font-size: 17px;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: $text-default;
+    font-style: italic;
+    line-height: 18px;
+  }
+@if $name == text-summary {
+    font-family: $font-family-opensans;
+    font-size: 13px;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: $text-description;
+    font-style: normal;
+    line-height: 17px;
+  }
+@if $name == text-upcoming {
+    font-family: $font-family-opensans;
+    font-size: 13px;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: $text-primary2;
+    font-style: normal;
+    line-height: 17px;
+  }
+@if $name == text-vendor {
+    font-family: $font-family-opensans;
+    font-size: 13px;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: $text-default;
+    font-style: normal;
+    line-height: 15px;
+    text-transform: uppercase;
+  }
+@if $name == text-lot {
+    font-family: $font-family-opensans;
+    font-size: 13px;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: $text-fairy2;
+    font-style: normal;
+    line-height: 15px;
+  }
+@if $name == text-estimate {
+    font-family: $font-family-opensans;
+    font-size: 15px;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: $text-description;
+    font-style: normal;
+    line-height: 23px;
+  }
+@if $name == text-sold {
+    font-family: $font-family-ptserif;
+    font-size: 15px;
+    letter-spacing: 0;
+    font-weight: 700;
+    color: $text-heavy;
+    font-style: normal;
+    line-height: 15px;
+  }
+@if $name == text-sold-desc {
+    font-family: $font-family-opensans;
+    font-size: 13px;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: $text-fairy;
+    font-style: normal;
+    line-height: 15px;
+  }
+@if $name == text-paging {
+    font-family: $font-family-opensans;
+    font-size: 15px;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: $text-fairy;
+    font-style: normal;
+    line-height: 15px;
+  }
 }
 
 // box-style
@@ -210,18 +332,37 @@ $line-default: #e5e5e5;
 }
 
 //placeholder
-@mixin placeholder-color($color){
-  &.placeholder{
-    color: $color
-  }
-  &:-moz-placeholder{
-    color: $color
-  }
-  &::-webkit-input-placeholder{
-    color: $color
-  }
+@mixin placeholder-color($color) {
+  &.placeholder{color: $color}
+  &:-moz-placeholder{color: $color}
+  &::-webkit-input-placeholder{color: $color}
+  &:-ms-input-placeholder{color: $color}
+}
 
-  &:-ms-input-placeholder{
-    color: $color
-  }
+@mixin placeholder-font-style($font) {
+  &.placeholder{font-style: $font}
+  &:-moz-placeholder{font-style: $font}
+  &::-webkit-input-placeholder{font-style: $font}
+  &:-ms-input-placeholder{font-style: $font}
+}
+
+
+// cut-text
+@mixin cut-single-text($width) {
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  word-wrap:normal;
+  width:$width;
+  overflow:hidden;
+}
+
+@mixin cut-multi-text($width,$height,$line-count) {
+  text-overflow:ellipsis;
+  word-wrap:break-word;
+  width:$width;
+  height: $height;
+  overflow:hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: $line-count;
+  -webkit-box-orient: vertical;
 }
