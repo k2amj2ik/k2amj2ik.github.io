@@ -630,404 +630,206 @@ table tbody tr:hover {
   background: transparent url("../images/bg_lot_1110x1733.png") no-repeat top center/1110px 1733px;
 }
 
-.lot {
-  margin-top: 40px;
-  padding-bottom: 51px;
+html, body {
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(to left, rgba(235, 236, 236, 0.9) 60%, #ebecec);
+  padding: 6px 0 0 7px;
+  margin: 0 0 0 0;
+}
+
+.main-container {
+  width: 100%;
+  height: 100%;
   position: relative;
-  display: flex;
 }
-.lot .detail {
-  display: inline-block;
-  width: 677px;
-  position: relative;
-}
-.lot .detail .lot-summary {
-  padding: 0 0 32px 0;
-  border-bottom: 1px solid #dcdcdc;
-}
-.lot .detail .lot-summary .img {
-  margin: 3px 0 0 0;
-}
-.lot .detail .lot-summary .artist-name {
-  display: inline-block;
-  margin: 21px 0 0 0;
-  font-family: "Open Sans";
-  font-size: 18px;
-  letter-spacing: 0;
-  font-weight: 400;
-  color: #707070;
-  font-style: normal;
-  line-height: 18px;
-  text-transform: uppercase;
-}
-.lot .detail .lot-summary .artist-desc {
-  display: inline-block;
-  margin: 0 0 0 3px;
-  font-family: "Open Sans";
-  font-size: 18px;
-  letter-spacing: 0;
-  font-weight: 400;
-  color: #9a9a9a;
-  font-style: normal;
-  line-height: 16px;
-  text-transform: uppercase;
-}
-.lot .detail .lot-summary .worktitle {
-  margin: 6px 0 0 0;
-  font-family: "PT Serif";
-  font-size: 28px;
-  letter-spacing: 0;
-  font-weight: 400;
-  color: #272727;
-  font-style: italic;
-  line-height: 30px;
-}
-.lot .detail .lot-summary .work-desc {
-  margin: 5px 0 0 0;
-  font-family: "Open Sans";
-  font-size: 16px;
-  letter-spacing: 0;
-  font-weight: 400;
-  color: #898989;
-  font-style: normal;
-  line-height: 24px;
-}
-.lot .detail .lot-detail {
-  margin: 33px 0 0 0;
-}
-.lot .detail .lot-detail .sold-price {
-  display: inline-block;
-  font-family: "PT Serif";
-  font-size: 24px;
-  letter-spacing: 0;
-  font-weight: 400;
-  color: #272727;
-  font-style: normal;
-  line-height: 24px;
-}
-.lot .detail .lot-detail .premium {
-  display: inline-block;
-  margin: 0 0 0 5px;
-  font-family: "Open Sans";
-  font-size: 15px;
-  letter-spacing: 0;
-  font-weight: 400;
-  color: #9a9a9a;
-  font-style: normal;
-  line-height: 21px;
-}
-.lot .detail .lot-detail .estimate {
-  margin: 7px 0 0 0;
-  font-family: "PT Serif";
-  font-size: 20px;
-  letter-spacing: 0;
-  font-weight: 400;
-  color: #707070;
-  font-style: normal;
-  line-height: 21px;
-}
-.lot .detail .lot-detail .sale-name {
-  margin: 11px 0 0 0;
-  font-family: "Open Sans";
-  font-size: 17px;
-  letter-spacing: 0;
-  font-weight: 400;
-  color: #a8835a;
-  font-style: normal;
-  line-height: 25px;
-}
-.lot .detail .lot-detail .sale-date {
-  padding: 0 0 31px 0;
-  border-bottom: 1px solid #dcdcdc;
-  font-family: "Open Sans";
-  font-size: 16px;
-  letter-spacing: 0;
-  font-weight: 400;
-  color: #898989;
-  font-style: normal;
-  line-height: 24px;
-}
-.lot .detail .lot-detail .etc {
-  margin: 34px 0 40px 0;
-}
-.lot .detail .lot-detail .etc .title {
-  margin: 0 0 15px 0;
-  font-family: "PT Serif";
-  font-size: 24px;
-  letter-spacing: 0;
-  font-weight: 400;
-  color: #272727;
-  font-style: normal;
-  line-height: 24px;
-}
-.lot .detail .lot-detail .etc .context {
-  font-family: "Open Sans";
-  font-size: 16px;
-  letter-spacing: 0;
-  font-weight: 400;
-  color: #898989;
-  font-style: normal;
-  line-height: 24px;
-}
-.lot .detail .btns {
+.main-container::after {
+  content: '';
+  display: block;
   position: absolute;
-  right: 0;
+  left: 0;
   top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
 }
-.lot .detail .btns .follow {
-  cursor: pointer;
-  margin: 3px 0 0 0;
-  width: 33px;
-  height: 33px;
-  border: 0;
-  background: transparent url("../images/btn_follow.png") no-repeat center center;
+.main-container .inner-container {
+  z-index: 30;
+  padding: 4px 4px 30px 4px;
 }
-.lot .detail .btns .follow:hover {
-  background: transparent url("../images/btn_follow_on.png") no-repeat center center;
+.main-container .inner-container .logo-small {
+  display: block;
+  margin: 0 0 0 0;
+  width: 32.5px;
+  height: 23.5px;
+  background: transparent url("../images/logo_small.png") no-repeat left top/100% 100%;
 }
-.lot .detail .btns .share {
-  cursor: pointer;
-  margin: 0 0 0 4px;
-  width: 33px;
-  height: 33px;
-  border: 0;
-  background: transparent url("../images/btn_share.png") no-repeat center center;
+.main-container .inner-container .text-header {
+  margin: 28px 0 0 0;
+  font-family: "Lato";
+  font-size: 35px;
+  font-weight: 900;
+  letter-spacing: 0;
+  color: #4e4e4e;
+  text-indent: -0.5rem;
+  margin-left: 0.5rem;
+  line-height: 110%;
 }
-.lot .detail .btns .share:hover {
-  background: transparent url("../images/btn_share_on.png") no-repeat center center;
+.main-container .inner-container .text-header .quote {
+  margin-left: 0;
+  font-family: "PT Serif";
+  font-size: 35px;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: #8a8a8a;
+  line-height: 110%;
 }
-.lot .related {
-  margin: 2px 0 0 57px;
-  padding: 21px 0 0 24px;
-  display: inline-block;
-  width: 376px;
-  background-color: #f7f7f7;
-}
-.lot .related .title {
-  font-family: "Open Sans";
+.main-container .inner-container .text-subtitle {
+  margin: 1rem 0 0 0.3rem;
+  font-family: "Lato";
   font-size: 18px;
   letter-spacing: 0;
-  font-weight: 700;
-  color: #272727;
-  font-style: normal;
+  font-weight: 400;
+  color: #808080;
   line-height: 21px;
 }
-.lot .related .keywords {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 16px 48px 0 0;
-}
-.lot .related .keywords .keyword {
-  cursor: pointer;
-  white-space: nowrap;
-  margin: 0 6px 7px 0;
-  padding: 4px 7px 0 11px;
-  height: 22px;
-  background-color: #dddddd;
-  font-family: "Open Sans";
-  font-size: 14px;
+.main-container .inner-container .text-subtitle .strong {
+  font-family: "Lato";
+  font-size: 18px;
   letter-spacing: 0;
-  font-weight: 300;
-  color: #272727;
-  font-style: normal;
-  line-height: 14px;
+  font-weight: 600;
+  color: #a8835a;
+  line-height: 21px;
 }
-.lot .related .keywords .keyword:hover {
-  background-color: #c69c6d;
-  color: #fff;
+.main-container .inner-container .form-artist-search {
+  position: relative;
+  margin: 4rem 0 0 0.25rem;
 }
-.lot .related .keywords .btn-filter {
-  position: absolute;
-  right: 26px;
-  top: 60px;
-}
-.lot .related .keywords .btn-filter .filter {
-  cursor: pointer;
-  margin: 0 0 0 0;
-  width: 25px;
-  height: 22px;
+.main-container .inner-container .form-artist-search .form-group {
+  display: inline-block;
+  float: left;
   border: 0;
-  background: #dddddd url("../images/icon_filter.png") no-repeat center center;
+  border-bottom: 0.25rem solid #b1b1b1;
+  padding-right: 5rem;
 }
-.lot .related .keywords .btn-filter .filter:hover {
-  background: #c69c6d url("../images/icon_filter_on.png") no-repeat center center;
+.main-container .inner-container .form-artist-search .form-group .input {
+  width: 710px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border: 0;
+  border-radius: 0;
+  background-color: transparent;
+  padding: 0.8rem 0 0 0.4rem;
+  font-family: "Lato";
+  font-size: 50px;
+  letter-spacing: -1px;
+  font-weight: 700;
+  color: #4e4e4e;
+  line-height: 18px;
 }
-.lot .related .related-lots {
-  margin: 0 0 0 0;
+.main-container .inner-container .form-artist-search .form-group .input.placeholder {
+  color: #cbcbcb;
 }
-.lot .related .related-lots .related-lot {
+.main-container .inner-container .form-artist-search .form-group .input:-moz-placeholder {
+  color: #cbcbcb;
+}
+.main-container .inner-container .form-artist-search .form-group .input::-webkit-input-placeholder {
+  color: #cbcbcb;
+}
+.main-container .inner-container .form-artist-search .form-group .input:-ms-input-placeholder {
+  color: #cbcbcb;
+}
+.main-container .inner-container .form-artist-search .btn-search {
+  display: inline-block;
+  float: left;
   cursor: pointer;
-  margin: 35px 13px 0 0;
-  vertical-align: top;
-  padding: 0 0 249px 0;
-  border-bottom: 1px solid #dddddd;
+  width: 5rem;
+  height: 5rem;
+  margin-left: -5rem;
+  border: 0;
+  overflow: hidden;
+  text-indent: 5rem;
+  background: transparent url("../images/icon_search.png") no-repeat center 1.7rem;
 }
-.lot .related .related-lots .related-lot:hover .worktitle {
+.main-container .inner-container .recommend-keyword {
+  width: 100%;
+  margin-top: 14px;
+}
+.main-container .inner-container .recommend-keyword a {
+  float: left;
+  display: inline-block;
+  position: relative;
+  margin-right: 1.8rem;
+  margin-top: 0.35rem;
+  white-space: nowrap;
+  font-family: "Lato";
+  font-size: 18px;
+  letter-spacing: 0;
+  font-weight: 400;
+  color: #4e4e4e;
+  line-height: 21px;
+}
+.main-container .inner-container .recommend-keyword a:link {
+  color: #707070;
+  text-decoration: none;
+}
+.main-container .inner-container .recommend-keyword a:hover {
   text-decoration: underline;
 }
-.lot .related .related-lots .related-lot:last-child {
-  border-bottom: 0;
+.main-container .inner-container .recommend-keyword a:visited {
+  color: rgba(112, 112, 112, 0.5);
+  text-decoration: none;
 }
-.lot .related .related-lots .related-lot .img {
-  float: left;
-  width: 100px;
-  height: 93px;
-  position: relative;
+.main-container .inner-container .recommend-keyword a:active {
+  outline: none;
+  text-decoration: underline;
 }
-.lot .related .related-lots .related-lot .img img {
-  max-width: 100px;
-  max-height: 93px;
+.main-container .inner-container .recommend-keyword a::after {
+  content: '';
+  display: block;
+  border-radius: 50%;
   position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translate(0, -50%);
+  right: -1rem;
+  top: 0.5rem;
+  width: 0.25rem;
+  height: 0.25rem;
+  background-color: #c2c2c2;
 }
-.lot .related .related-lots .related-lot .description {
-  width: 210px;
-  margin: 0 0 0 17px;
-  float: left;
-  position: relative;
-}
-.lot .related .related-lots .related-lot .description .artist-name {
-  margin: -1px 0 0 0;
-  font-family: "Open Sans";
-  font-size: 13px;
-  letter-spacing: 0;
-  font-weight: 400;
-  color: #898989;
-  font-style: normal;
-  line-height: 14px;
-  text-transform: uppercase;
-  display: inline-block;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  word-wrap: normal;
-  max-width: 210px;
-  overflow: hidden;
-}
-.lot .related .related-lots .related-lot .description .worktitle {
-  margin: 1px 0 0 0;
-  font-family: "PT Serif";
+.main-container .inner-container .recommend-keyword a:last-child::after {
+  content: '...';
+  position: absolute;
+  top: 0;
+  right: -9px;
+  width: 0;
+  height: 0;
+  font-family: "Lato";
   font-size: 18px;
   letter-spacing: 0;
   font-weight: 400;
-  color: #272727;
-  font-style: italic;
-  line-height: 19px;
-  display: inline-block;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  word-wrap: normal;
-  max-width: 210px;
-  overflow: hidden;
+  color: #4e4e4e;
+  line-height: 21px;
 }
-.lot .related .related-lots .related-lot .description .work-desc {
-  margin: -2px 0 0 0;
-  font-family: "Open Sans";
-  font-size: 15px;
-  letter-spacing: 0;
-  font-weight: 400;
-  color: #707070;
-  font-style: normal;
-  line-height: 19px;
-  display: inline-block;
-  text-overflow: ellipsis;
-  word-wrap: break-word;
-  max-width: 210px;
-  height: 54px;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-}
-.lot .related .related-lots .related-lot .description .estimate {
-  margin: 15px 0 0 0;
-  font-family: "PT Serif";
-  font-size: 17px;
-  letter-spacing: 0;
-  font-weight: 400;
-  color: #707070;
-  font-style: normal;
-  line-height: 19px;
-}
-.lot .related .related-lots .related-lot .description .sold-price {
-  margin: 3px 0 0 0;
-  font-family: "PT Serif";
-  font-size: 17px;
-  letter-spacing: 0;
-  font-weight: 700;
-  color: #272727;
-  font-style: normal;
-  line-height: 19px;
-}
-.lot .related .related-lots .related-lot .description .sale-name {
-  margin: 16px 0 0 0;
-  font-family: "Open Sans";
-  font-size: 15px;
-  letter-spacing: 0;
-  font-weight: 400;
-  color: #707070;
-  font-style: normal;
-  line-height: 19px;
-  display: inline-block;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  word-wrap: normal;
-  max-width: 210px;
-  overflow: hidden;
-}
-.lot .related .related-lots .related-lot .description .sale-date {
-  margin: -3px 0 0 0;
-  font-family: "Open Sans";
-  font-size: 15px;
-  letter-spacing: 0;
-  font-weight: 400;
-  color: #707070;
-  font-style: normal;
-  line-height: 19px;
-}
-.lot .related .related-lots .related-lot .description .performance {
-  position: absolute;
-  left: -84px;
-  top: 110px;
-  display: inline-block;
-  width: 57px;
-  height: 20px;
-  text-align: center;
-  background-color: #9bbe46;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
+
+.feedback {
+  position: fixed;
+  right: 48px;
+  bottom: 90px;
+  width: 79px;
+  height: 80px;
+  padding: 6px 0 0 18px;
+  text-align: left;
+  z-index: 90;
+  font-family: "Lato";
+  letter-spacing: -0.01rem;
+  font-size: 1.25rem;
+  font-weight: 900;
+  line-height: 1.3rem;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 20px rgba(198, 156, 109, 0.7);
+  box-shadow: 0 0 20px rgba(198, 156, 109, 0.7);
+  border: 0;
   color: #fff;
-  font-family: "Open Sans";
-  font-size: 13px;
-  letter-spacing: 0;
-  font-weight: 400;
-  color: #fff;
-  font-style: normal;
-  line-height: 20px;
-}
-.lot .related .related-lots .related-lot .description .performance::before {
-  position: absolute;
-  left: -34px;
-  top: -4px;
-  display: block;
-  width: 28px;
-  content: 'Low Est.';
-  font-family: "Open Sans";
-  font-size: 13px;
-  letter-spacing: 0;
-  font-weight: 400;
-  color: #898989;
-  font-style: normal;
-  line-height: 14px;
-}
-.lot .related .related-lots .related-lot .description .good {
-  background-color: #9bbe46;
-}
-.lot .related .related-lots .related-lot .description .normal {
-  background-color: #61a7ef;
-}
-.lot .related .related-lots .related-lot .description .bad {
-  background-color: #f25544;
+  background-color: #c69c6d;
 }

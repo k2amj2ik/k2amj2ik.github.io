@@ -66,7 +66,7 @@
           &::after {
             content: '';
             position: absolute;
-            left: 105px;
+            left: 103px;
             top: 13px;
             margin: 0 0 0 0;
             width: 9px;
@@ -226,7 +226,7 @@
       }
       .options {
         position: absolute;
-        right: 3px;
+        right: 0;
         top: 107px;
         background-color: $bg-default;
         z-index: $z-index-5;
@@ -236,7 +236,7 @@
           @include text-style(text-select);
           border: 1px solid $border-normal;
           border-bottom: 0;
-          padding: 6px 14px 8px 14px;
+          padding: 6px 17px 8px 14px;
           &:last-child {
             border-bottom: 1px solid $border-normal;
           }

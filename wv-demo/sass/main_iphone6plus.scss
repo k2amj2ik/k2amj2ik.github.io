@@ -1,0 +1,129 @@
+@import 'common';
+
+//main
+html, body {
+  height: 100%;
+}
+
+body {
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  background: #fff url("../images/logo_big.png") no-repeat right bottom;
+}
+.main-container {
+  width: 100%;
+  height: 100%;
+  }
+  .inner-container {
+    z-index: $z-index-2;
+    padding: 4px 4px 30px 4px;
+    .logo-small {
+      display: block;
+      margin: 0 0 0 0;
+      width: 32.5px;
+      height: 23.5px;
+      background: transparent url('../images/logo_small.png') no-repeat left top / 100% 100%;
+    }
+
+    .text-header {
+      margin: 28px 0 0 0;
+      @include text-style(text-header-sx);
+      .quote {
+        margin-left: 0;
+        @include text-style(text-header-quote-sx);
+      }
+    }
+    .text-subtitle {
+      margin: 1rem 0 0 0.3rem;
+      @include text-style(text-subtitle);
+      .strong {
+        @include text-style(text-subtitle-strong);
+      }
+    }
+    .form-artist-search {
+      position: relative;
+      margin: 4rem 0 0 0.25rem;
+      .form-group {
+        display: inline-block;
+        float: left;
+        border: 0;
+        border-bottom: 0.25rem solid $border-search;
+        padding-right: 5rem;
+        .input {
+          width: 710px;
+          -webkit-border-radius: 0;
+          -moz-border-radius: 0;
+          border: 0;
+          border-radius: 0;
+          background-color: transparent;
+          padding: 0.8rem 0 0 0.4rem;
+          @include placeholder-color($text-search-main-placeholder);
+          @include text-style(text-search-main);
+        }
+      }
+      .btn-search {
+        display: inline-block;
+        float: left;
+        cursor: pointer;
+        width: 5rem;
+        height: 5rem;
+        margin-left: -5rem;
+        border: 0;
+        overflow: hidden;
+        text-indent: 5rem;
+        background: transparent url('../images/icon_search.png') no-repeat center 1.7rem;
+      }
+    }
+    .recommend-keyword {
+      width: 100%;
+      margin-top: 14px;
+      a {
+        float: left;
+        display: inline-block;
+        position: relative;
+        margin-right: 1.8rem;
+        margin-top: 0.35rem;
+        white-space: nowrap;
+        @include text-style(link-searchable);
+        @include link-color($link-keyword);
+        &::after {
+          content: '';
+          display: block;
+          border-radius: 50%;
+          position: absolute;
+          right: -1rem;
+          top: 0.5rem;
+          width: 0.25rem;
+          height: 0.25rem;
+          background-color: $icon-dot;
+        }
+        &:last-child {
+          &::after {
+            content: '...';
+            position: absolute;
+            top: 0;
+            right: -9px;
+            width: 0;
+            height: 0;
+            @include text-style(link-searchable);
+          }
+        }
+      }
+    }
+  }
+}
+
+.feedback {
+  position: fixed;
+  right: 48px;
+  bottom: 90px;
+  width: 79px;
+  height: 80px;
+  padding: 6px 0 0 18px;
+  text-align: left;
+  z-index: $z-index-max;
+  @include text-style(btn-primary);
+  @include box-style(btn-primary);
+}
+
+

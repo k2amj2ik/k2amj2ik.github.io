@@ -166,14 +166,6 @@
   font-weight: 900;
   src: local("OpenSans-ExtraBoldItalic"), url("../fonts/OpenSans-ExtraBoldItalic.ttf") format("truetype"), url("../fonts/OpenSans-ExtraBoldItalic.woff") format("woff");
 }
-.container {
-  width: 100%;
-  padding-right: 0;
-  padding-left: 0;
-  margin-right: auto;
-  margin-left: auto;
-}
-
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
@@ -404,81 +396,11 @@ table tbody tr:hover {
   background: transparent url("../images/icon_search_small.png") no-repeat center 9px;
 }
 
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 100px;
-  background-color: #202020;
-}
-.footer .container {
-  position: relative;
-}
-.footer .container .btn-top {
-  border: 0;
-  position: absolute;
-  top: -71px;
-  right: -8px;
-  display: inline-block;
-  cursor: pointer;
-  width: 69px;
-  height: 69px;
-  background: transparent url("../images/btn_top.png") no-repeat right bottom;
-}
-.footer .container .sites {
-  margin: 0 0 -14px 0;
-}
-.footer .container .sites li {
-  display: inline-block;
-  margin: 24px 19px 0 -1px;
-  font-family: "Open Sans";
-  font-size: 15px;
-  letter-spacing: 0;
-  font-weight: 400;
-  color: #8a8a8a;
-  line-height: 16px;
-  position: relative;
-}
-.footer .container .sites li:last-child::after {
-  display: none;
-}
-.footer .container .sites li::after {
-  content: '';
-  position: absolute;
-  right: -13px;
-  top: 1px;
-  width: 2px;
-  height: 15px;
-  background-color: #4d4d4d;
-}
-.footer .container .sites li a:link {
-  color: #898989;
-  text-decoration: none;
-}
-.footer .container .sites li a:hover {
-  text-decoration: underline;
-}
-.footer .container .sites li a:visited {
-  color: rgba(137, 137, 137, 0.5);
-  text-decoration: none;
-}
-.footer .container .sites li a:active {
-  outline: none;
-  text-decoration: underline;
-}
-.footer .container .logo {
-  margin-bottom: 6px;
-  height: 23px;
-  background: transparent url("../images/logo_footer.png") no-repeat center center;
-}
-.footer .container .copyright {
-  text-align: center;
-  font-family: "Open Sans";
-  font-size: 15px;
-  letter-spacing: 0;
-  font-weight: 400;
-  color: #8a8a8a;
-  line-height: 18px;
+.container {
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .paging {
@@ -597,6 +519,83 @@ table tbody tr:hover {
   width: 10px;
   height: 12px;
   background: transparent url("../images/icon_arrow3.png") no-repeat center center;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background-color: #202020;
+}
+.footer .container {
+  position: relative;
+}
+.footer .container .btn-top {
+  border: 0;
+  position: absolute;
+  top: -71px;
+  right: -8px;
+  display: inline-block;
+  cursor: pointer;
+  width: 69px;
+  height: 69px;
+  background: transparent url("../images/btn_top.png") no-repeat right bottom;
+}
+.footer .container .sites {
+  margin: 0 0 -14px 0;
+}
+.footer .container .sites li {
+  display: inline-block;
+  margin: 24px 19px 0 -1px;
+  font-family: "Open Sans";
+  font-size: 15px;
+  letter-spacing: 0;
+  font-weight: 400;
+  color: #8a8a8a;
+  line-height: 16px;
+  position: relative;
+}
+.footer .container .sites li:last-child::after {
+  display: none;
+}
+.footer .container .sites li::after {
+  content: '';
+  position: absolute;
+  right: -13px;
+  top: 1px;
+  width: 2px;
+  height: 15px;
+  background-color: #4d4d4d;
+}
+.footer .container .sites li a:link {
+  color: #898989;
+  text-decoration: none;
+}
+.footer .container .sites li a:hover {
+  text-decoration: underline;
+}
+.footer .container .sites li a:visited {
+  color: rgba(137, 137, 137, 0.5);
+  text-decoration: none;
+}
+.footer .container .sites li a:active {
+  outline: none;
+  text-decoration: underline;
+}
+.footer .container .logo {
+  margin-bottom: 6px;
+  height: 23px;
+  background: transparent url("../images/logo_footer.png") no-repeat center center;
+}
+.footer .container .copyright {
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 15px;
+  letter-spacing: 0;
+  font-weight: 400;
+  color: #8a8a8a;
+  line-height: 18px;
 }
 
 .bg {

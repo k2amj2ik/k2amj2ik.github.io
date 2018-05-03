@@ -157,63 +157,12 @@ table {
   }
 }
 
-
-//footer--------------------------------------------------------------------------------------
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 100px;
-  background-color: $bg-footer;
-  .container {
-    position: relative;
-    .btn-top {
-      border:0;
-      position: absolute;
-      top: -71px;
-      right: -8px;
-      display: inline-block;
-      cursor: pointer;
-      width: 69px;
-      height: 69px;
-      background: transparent url('../images/btn_top.png') no-repeat right bottom;
-    }
-    .sites {
-      margin: 0 0 -14px 0;
-      li {
-        display: inline-block;
-        margin: 24px 19px 0 -1px;
-        @include text-style(link-footer);
-        position: relative;
-        &:last-child {
-          &::after {
-            display: none;
-          }
-        }
-        &::after {
-          content: '';
-          position: absolute;
-          right: -13px;
-          top: 1px;
-          width: 2px;
-          height: 15px;
-          background-color: $border-footer;
-        }
-        a {
-          @include link-color($link-weak);
-        }
-      }
-    }
-    .logo {
-      margin-bottom: 6px;
-      height: 23px;
-      background: transparent url('../images/logo_footer.png') no-repeat center center;
-    }
-    .copyright {
-      text-align: center;
-      @include text-style(text-footer);
-    }
-  }
+//body--------------------------------------------------------------------------------------
+.container {
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .paging {
@@ -276,6 +225,66 @@ table {
     }
   }
 }
+
+//footer--------------------------------------------------------------------------------------
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background-color: $bg-footer;
+  .container {
+    position: relative;
+    .btn-top {
+      border:0;
+      position: absolute;
+      top: -71px;
+      right: -8px;
+      display: inline-block;
+      cursor: pointer;
+      width: 69px;
+      height: 69px;
+      background: transparent url('../images/btn_top.png') no-repeat right bottom;
+    }
+    .sites {
+      margin: 0 0 -14px 0;
+      li {
+        display: inline-block;
+        margin: 24px 19px 0 -1px;
+        @include text-style(link-footer);
+        position: relative;
+        &:last-child {
+          &::after {
+            display: none;
+          }
+        }
+        &::after {
+          content: '';
+          position: absolute;
+          right: -13px;
+          top: 1px;
+          width: 2px;
+          height: 15px;
+          background-color: $border-footer;
+        }
+        a {
+          @include link-color($link-weak);
+        }
+      }
+    }
+    .logo {
+      margin-bottom: 6px;
+      height: 23px;
+      background: transparent url('../images/logo_footer.png') no-repeat center center;
+    }
+    .copyright {
+      text-align: center;
+      @include text-style(text-footer);
+    }
+  }
+}
+
+
 
 //for purblishing--------------------------------------------------------------------------------------
 .bg {

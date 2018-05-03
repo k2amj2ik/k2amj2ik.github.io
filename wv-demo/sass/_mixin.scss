@@ -18,12 +18,30 @@
     margin-left: 0.5rem;
     line-height: 110%;
   }
+  @if $name == text-header-sx {
+    font-family: $font-family-lato;
+    font-size: 35px;
+    font-weight: 900;
+    letter-spacing: 0;
+    color: $text-header;
+    text-indent: -0.5rem;
+    margin-left: 0.5rem;
+    line-height: 110%;
+  }
   @if $name == text-header-quote {
     font-family: $font-family-ptserif;
     font-size: 70px;
     font-weight: 400;
     letter-spacing: 0;
     color: $text-header-quote;
+  }
+  @if $name == text-header-quote-sx {
+    font-family: $font-family-ptserif;
+    font-size: 35px;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: $text-header-quote;
+    line-height: 110%;
   }
   @if $name == text-subtitle {
     font-family: $font-family-lato;
