@@ -8,25 +8,24 @@ html, body {
 body {
   padding: 0 0 0 0;
   margin: 0 0 0 0;
-  background: #fff url("../images/logo_big.png") no-repeat right bottom;
+  background: $bg-main url("../images/logo_big.png") no-repeat right bottom /100%;
 }
 .main-container {
   width: 100%;
   height: 100%;
-  }
   .inner-container {
     z-index: $z-index-2;
-    padding: 4px 4px 30px 4px;
+    padding: 0 0 0 0;
     .logo-small {
       display: block;
-      margin: 0 0 0 0;
+      margin: 10px 0 0 10px;
       width: 32.5px;
       height: 23.5px;
       background: transparent url('../images/logo_small.png') no-repeat left top / 100% 100%;
     }
 
     .text-header {
-      margin: 28px 0 0 0;
+      margin: 10px 0 0 10px;
       @include text-style(text-header-sx);
       .quote {
         margin-left: 0;
@@ -34,7 +33,7 @@ body {
       }
     }
     .text-subtitle {
-      margin: 1rem 0 0 0.3rem;
+      margin: 16px 0 0 10px;
       @include text-style(text-subtitle);
       .strong {
         @include text-style(text-subtitle-strong);
@@ -42,41 +41,40 @@ body {
     }
     .form-artist-search {
       position: relative;
-      margin: 4rem 0 0 0.25rem;
+      margin: 50px 0 0 0;
       .form-group {
         display: inline-block;
         float: left;
-        border: 0;
-        border-bottom: 0.25rem solid $border-search;
-        padding-right: 5rem;
+        height: 78px;
         .input {
-          width: 710px;
-          -webkit-border-radius: 0;
-          -moz-border-radius: 0;
+          width: 100%;
           border: 0;
-          border-radius: 0;
-          background-color: transparent;
-          padding: 0.8rem 0 0 0.4rem;
+          border-top: 3px solid $border-search;
+          border-bottom: 3px solid $border-search;
+          background-color: $bg-default;
+          padding: 0 32px 0 6px;
+          margin: 0 0 0 0;
           @include placeholder-color($text-search-main-placeholder);
-          @include text-style(text-search-main);
+          @include text-style(text-search-main-sx);
         }
       }
       .btn-search {
         display: inline-block;
         float: left;
         cursor: pointer;
-        width: 5rem;
-        height: 5rem;
-        margin-left: -5rem;
+        width: 32px;
+        height: 32px;
+        margin: 24px 0 0 -87px;
         border: 0;
         overflow: hidden;
         text-indent: 5rem;
-        background: transparent url('../images/icon_search.png') no-repeat center 1.7rem;
+        background: transparent url('../images/icon_search.png') no-repeat center right / 100% 100%;
       }
+
     }
     .recommend-keyword {
       width: 100%;
-      margin-top: 14px;
+      padding: 100px 20px 200px 20px;
       a {
         float: left;
         display: inline-block;
@@ -84,7 +82,7 @@ body {
         margin-right: 1.8rem;
         margin-top: 0.35rem;
         white-space: nowrap;
-        @include text-style(link-searchable);
+        @include text-style(link-searchable-sx);
         @include link-color($link-keyword);
         &::after {
           content: '';
