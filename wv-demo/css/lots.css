@@ -241,17 +241,6 @@ input[type="text"] {
   border: 1px solid #dddddd;
 }
 
-select {
-  border: 0;
-  font-family: "Lato";
-  font-size: 16px;
-  letter-spacing: 0;
-  font-weight: 400;
-  color: #707070;
-  font-style: normal;
-  line-height: 22px;
-}
-
 table {
   width: 100%;
   border-collapse: collapse;
@@ -687,6 +676,10 @@ table tbody tr:hover {
   padding: 15px 0 13px 16px;
   margin: 0 0 20px 0;
   border-bottom: 1px solid #dddddd;
+}
+.lots .filters .filter-area .filter li {
+  cursor: pointer;
+  padding: 0 0 8px 21px;
   font-family: "Open Sans";
   font-size: 14px;
   letter-spacing: 0;
@@ -694,10 +687,6 @@ table tbody tr:hover {
   color: #898989;
   line-height: 16px;
   text-transform: capitalize;
-}
-.lots .filters .filter-area .filter li {
-  cursor: pointer;
-  padding: 0 0 8px 21px;
   position: relative;
 }
 .lots .filters .filter-area .filter li::before {
@@ -712,6 +701,15 @@ table tbody tr:hover {
 }
 .lots .filters .filter-area .filter li:hover {
   text-decoration: underline;
+}
+.lots .filters .filter-area .filter .active {
+  font-family: "Open Sans";
+  font-size: 14px;
+  letter-spacing: 0;
+  font-weight: 400;
+  color: #272727;
+  line-height: 16px;
+  text-transform: capitalize;
 }
 .lots .filters .filter-area .filter .active::before {
   background: transparent url("../images/icon_checked.png") no-repeat center center;
@@ -924,13 +922,71 @@ table tbody tr:hover {
   font-size: 16px;
   letter-spacing: 0;
   font-weight: 400;
-  color: #272727;
+  color: #707070;
   line-height: 18px;
 }
 .lots .result-area .sort {
+  cursor: pointer;
   display: inline-block;
   float: right;
-  margin: -19px 0 0 0;
+  margin: -21px 0 0 0;
+  padding: 10px 0 0 0;
+}
+.lots .result-area .sort:hover {
+  text-decoration: underline;
+}
+.lots .result-area .sort .sorted {
+  margin: -9px 18px 0 0;
+  font-family: "Lato";
+  font-size: 16px;
+  letter-spacing: 0;
+  font-weight: 400;
+  color: #707070;
+  font-style: normal;
+  line-height: 22px;
+  position: relative;
+}
+.lots .result-area .sort .sorted::after {
+  content: '';
+  position: absolute;
+  right: -18px;
+  top: 8px;
+  margin: 0;
+  width: 7px;
+  height: 6px;
+  background: transparent url("../images/icon_dropdown.png") no-repeat center center;
+}
+.lots .result-area .sort .options {
+  position: absolute;
+  right: 3px;
+  top: 107px;
+  background-color: #fff;
+  z-index: 60;
+  cursor: pointer;
+  -webkit-box-shadow: 4px 4px 4px rgba(247, 247, 247, 0.7);
+  box-shadow: 4px 4px 4px rgba(247, 247, 247, 0.7);
+  border: 0;
+  color: 4px 4px 4px rgba(247, 247, 247, 0.7);
+  background-color: 4px 4px 4px rgba(247, 247, 247, 0.7);
+}
+.lots .result-area .sort .options .option {
+  cursor: pointer;
+  font-family: "Lato";
+  font-size: 16px;
+  letter-spacing: 0;
+  font-weight: 400;
+  color: #707070;
+  font-style: normal;
+  line-height: 22px;
+  border: 1px solid #dcdcdc;
+  border-bottom: 0;
+  padding: 6px 14px 8px 14px;
+}
+.lots .result-area .sort .options .option:last-child {
+  border-bottom: 1px solid #dcdcdc;
+}
+.lots .result-area .sort .options .option:hover {
+  background-color: #f7f7f7;
 }
 .lots .result-area .results {
   margin: 11px 0 0 0;
@@ -966,6 +1022,9 @@ table tbody tr:hover {
 .lots .result-area .results tbody .lot-detail {
   vertical-align: top;
   padding: 14px 0 0 9px;
+}
+.lots .result-area .results tbody .lot-detail:hover .worktitle {
+  text-decoration: underline;
 }
 .lots .result-area .results tbody .lot-detail .img {
   float: left;

@@ -34,18 +34,20 @@ body {
     flex-direction: column;
     justify-content: center;
     z-index: $z-index-2;
-
+    padding: 0 0 0 12px;
     .logo-small {
       display: block;
+      margin: -19px 0 0 -4px;
       width: 65px;
       height: 47px;
       background: transparent url('../images/logo_small.png') no-repeat left top / auto;
     }
 
-    .text-header {
-      margin: 20px 0 0 0;
-      @include text-style(text-header);
 
+
+    .text-header {
+      margin: 28px 0 0 0;
+      @include text-style(text-header);
       .quote {
         margin-left: 0;
         @include text-style(text-header-quote);
@@ -103,6 +105,7 @@ body {
         margin-top: 0.35rem;
         white-space: nowrap;
         @include text-style(link-searchable);
+        @include link-color($link-keyword);
         &::after {
           content: '';
           display: block;

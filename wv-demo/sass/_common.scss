@@ -48,11 +48,6 @@ input[type="text"] {
   border:1px solid $line-normal;
 }
 
-select {
-  border: 0;
-  @include text-style(text-select);
-}
-
 table {
   width: 100%;
   border-collapse: collapse;

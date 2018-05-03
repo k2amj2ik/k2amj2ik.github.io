@@ -110,10 +110,15 @@
         <h1 class="text-header">Pablo Picasso<p class="description">Spain, France, 1881-1973</p></h1>
         <p class="result-count">Showing 21 Results</p>
         <div class="sort">
-            <select name="" id="">
-                <option value="" selected>Sort by Price (high to low)</option>
-                <option value="">Sort by Price (low to high)</option>
-            </select>
+            <div class="sorted">Sort by Recently Updated</div>
+            <!-- select options -->
+            <div class="options" style="display: none;">
+                <div class="option">Sort by Recently Updated</div>
+                <div class="option">Sort by Most Expensive</div>
+                <div class="option">Sort by Least Expensive</div>
+                <div class="option">Sort by Latest Auction</div>
+                <div class="option">Sort by Oldest Auction</div>
+            </div>
         </div>
         <table class="results">
             <thead>

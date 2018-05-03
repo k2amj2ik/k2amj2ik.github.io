@@ -241,17 +241,6 @@ input[type="text"] {
   border: 1px solid #dddddd;
 }
 
-select {
-  border: 0;
-  font-family: "Lato";
-  font-size: 16px;
-  letter-spacing: 0;
-  font-weight: 400;
-  color: #707070;
-  font-style: normal;
-  line-height: 22px;
-}
-
 table {
   width: 100%;
   border-collapse: collapse;
@@ -676,15 +665,17 @@ body {
   flex-direction: column;
   justify-content: center;
   z-index: 30;
+  padding: 0 0 0 12px;
 }
 .main-container .inner-container .logo-small {
   display: block;
+  margin: -19px 0 0 -4px;
   width: 65px;
   height: 47px;
   background: transparent url("../images/logo_small.png") no-repeat left top/auto;
 }
 .main-container .inner-container .text-header {
-  margin: 20px 0 0 0;
+  margin: 28px 0 0 0;
   font-family: "Lato";
   font-size: 70px;
   font-weight: 900;
@@ -697,7 +688,9 @@ body {
 .main-container .inner-container .text-header .quote {
   margin-left: 0;
   font-family: "PT Serif";
+  font-size: 70px;
   font-weight: 400;
+  letter-spacing: 0;
   color: #8a8a8a;
 }
 .main-container .inner-container .text-subtitle {
@@ -784,6 +777,21 @@ body {
   font-weight: 400;
   color: #4e4e4e;
   line-height: 21px;
+}
+.main-container .inner-container .recommend-keyword a:link {
+  color: #707070;
+  text-decoration: none;
+}
+.main-container .inner-container .recommend-keyword a:hover {
+  text-decoration: underline;
+}
+.main-container .inner-container .recommend-keyword a:visited {
+  color: rgba(112, 112, 112, 0.5);
+  text-decoration: none;
+}
+.main-container .inner-container .recommend-keyword a:active {
+  outline: none;
+  text-decoration: underline;
 }
 .main-container .inner-container .recommend-keyword a::after {
   content: '';

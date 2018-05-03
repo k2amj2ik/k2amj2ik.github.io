@@ -44,6 +44,7 @@ $link-fairy: #9a9a9a;
 
 //color-bg
 $bg-default: #fff;
+$bg-fairy: #f7f7f7;
 $bg-main: #ebecec;
 $bg-btn-primary: #c69c6d;
 $bg-btn-normal: #e7e7e7;
@@ -52,6 +53,9 @@ $bg-navi-input: #ffffff;
 $bg-footer: #202020;
 $bg-table-tr: #f7f7f7;
 $bg-panel: #dddddd;
+$bg-icon-good: #9bbe46;
+$bg-icon-normal: #61a7ef;
+$bg-icon-bad: #f25544;
 
 
 //color-border
@@ -72,4 +76,8 @@ $line-normal: #dddddd;
 
 //style-box
 $box-shadow-primary: 0 0 20px rgba($bg-btn-primary, 0.7);
+$box-shadow-select-options: 4px 4px 4px rgba($bg-fairy, 0.7);
+
+//size
+$description-size: 210px;
 

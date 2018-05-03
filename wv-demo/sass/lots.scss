@@ -31,10 +31,10 @@
         padding: 15px 0 13px 16px;
         margin: 0 0 20px 0;
         border-bottom: 1px solid $line-normal;
-        @include text-style(text-filter);
         li {
           cursor: pointer;
           padding: 0 0 8px 21px;
+          @include text-style(text-filter);
           position: relative;
           &::before {
             content: '';
@@ -51,6 +51,7 @@
           }
         }
         .active {
+          @include text-style(text-filter-active);
           &::before {
             background: transparent url("../images/icon_checked.png") no-repeat center center;
           }
@@ -200,9 +201,50 @@
       @include text-style(text-artist-result-count);
     }
     .sort {
+      cursor: pointer;
       display: inline-block;
       float: right;
-      margin: -19px 0 0 0;
+      margin: -21px 0 0 0;
+      padding: 10px 0 0 0;
+      &:hover {
+        text-decoration: underline;
+      }
+      .sorted {
+        margin: -9px 18px 0 0;
+        @include text-style(text-select);
+        position: relative;
+        &::after {
+          content: '';
+          position: absolute;
+          right: -18px;
+          top: 8px;
+          margin: 0;
+          width: 7px;
+          height: 6px;
+          background: transparent url("../images/icon_dropdown.png") no-repeat center center;
+        }
+      }
+      .options {
+        position: absolute;
+        right: 3px;
+        top: 107px;
+        background-color: $bg-default;
+        z-index: $z-index-5;
+        @include box-style(select-options);
+        .option {
+          cursor: pointer;
+          @include text-style(text-select);
+          border: 1px solid $border-normal;
+          border-bottom: 0;
+          padding: 6px 14px 8px 14px;
+          &:last-child {
+            border-bottom: 1px solid $border-normal;
+          }
+          &:hover {
+            background-color: $bg-fairy;
+          }
+        }
+      }
     }
     .results {
       margin: 11px 0 0 0;
@@ -236,6 +278,9 @@
         .lot-detail {
           vertical-align: top;
           padding: 14px 0 0 9px;
+          &:hover .worktitle {
+            text-decoration: underline;
+          }
           .img {
             float: left;
             width: 100px;

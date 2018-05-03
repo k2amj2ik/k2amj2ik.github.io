@@ -241,17 +241,6 @@ input[type="text"] {
   border: 1px solid #dddddd;
 }
 
-select {
-  border: 0;
-  font-family: "Lato";
-  font-size: 16px;
-  letter-spacing: 0;
-  font-weight: 400;
-  color: #707070;
-  font-style: normal;
-  line-height: 22px;
-}
-
 table {
   width: 100%;
   border-collapse: collapse;
@@ -692,7 +681,7 @@ table tbody tr:hover {
   font-size: 16px;
   letter-spacing: 0;
   font-weight: 400;
-  color: #272727;
+  color: #707070;
   line-height: 18px;
 }
 .artists .submenu {

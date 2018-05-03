@@ -20,7 +20,9 @@
   }
   @if $name == text-header-quote {
     font-family: $font-family-ptserif;
+    font-size: 70px;
     font-weight: 400;
+    letter-spacing: 0;
     color: $text-header-quote;
   }
   @if $name == text-subtitle {
@@ -123,7 +125,7 @@
     font-size: 16px;
     letter-spacing: 0;
     font-weight: 400;
-    color: $text-artist-header;
+    color: $text-description;
     line-height: 18px;
   }
   @if $name == text-submenu {
@@ -165,6 +167,15 @@
     letter-spacing: 0;
     font-weight: 400;
     color: $link-weak;
+    line-height: 16px;
+    text-transform: capitalize;
+  }
+  @if $name == text-filter-active {
+    font-family: $font-family-opensans;
+    font-size: 14px;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: $link-default;
     line-height: 16px;
     text-transform: capitalize;
   }
@@ -415,7 +426,7 @@
     font-weight: 300;
     color: $text-default;
     font-style: normal;
-    line-height: 24px;
+    line-height: 14px;
   }
   @if $name == lot-related-artist-name {
     font-family: $font-family-opensans;
@@ -425,11 +436,12 @@
     color: $text-fairy2;
     font-style: normal;
     line-height: 14px;
+    text-transform: uppercase;
   }
   @if $name == lot-related-worktitle {
     font-family: $font-family-ptserif;
     font-size: 18px;
-    letter-spacing: -1px;
+    letter-spacing: 0;
     font-weight: 400;
     color: $text-default;
     font-style: italic;
@@ -487,7 +499,7 @@
     font-weight: 400;
     color: $text-btn-primary;
     font-style: normal;
-    line-height: 24px;
+    line-height: 20px;
   }
 }
 
@@ -501,6 +513,14 @@
     border: 0;
     color: $text-btn-primary;
     background-color: $bg-btn-primary;
+  }
+  @if $box == select-options {
+    cursor: pointer;
+    -webkit-box-shadow: $box-shadow-select-options; // iOS <4.3 & Android <4.1
+    box-shadow: $box-shadow-select-options;
+    border: 0;
+    color: $box-shadow-select-options;
+    background-color: $box-shadow-select-options;
   }
 }
 
