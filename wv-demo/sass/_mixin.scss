@@ -20,7 +20,7 @@
   }
   @if $name == text-header-sx {
     font-family: $font-family-lato;
-    font-size: 35px;
+    font-size: 32px;
     font-weight: 900;
     letter-spacing: 0;
     color: $text-header;
@@ -35,7 +35,7 @@
   }
   @if $name == text-header-quote-sx {
     font-family: $font-family-ptserif;
-    font-size: 35px;
+    font-size: 32px;
     font-weight: 400;
     letter-spacing: 0;
     color: $text-header-quote;
@@ -67,7 +67,7 @@
   }
   @if $name == text-search-main-sx {
     font-family: $font-family-lato;
-    font-size: 32px;
+    font-size: 24px;
     letter-spacing: -1px;
     font-weight: 700;
     color: $text-search-main;
@@ -83,11 +83,11 @@
   }
 @if $name == link-searchable-sx {
     font-family: $font-family-lato;
-    font-size: 24px;
+    font-size: 18px;
     letter-spacing: 0;
     font-weight: 400;
     color: $text-search-main;
-    line-height: 28px;
+    line-height: 24px;
   }
   @if $name == btn-primary {
     font-family: $font-family-lato;
@@ -95,6 +95,13 @@
     font-size: 1.25rem;
     font-weight: 900;
     line-height: 1.3rem;
+  }
+  @if $name == btn-primary-sx {
+    font-family: $font-family-lato;
+    letter-spacing: 0;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
   }
   @if $name == text-top-navi {
     font-family: $font-family-opensans;

@@ -166,26 +166,6 @@
   font-weight: 900;
   src: local("OpenSans-ExtraBoldItalic"), url("../fonts/OpenSans-ExtraBoldItalic.ttf") format("truetype"), url("../fonts/OpenSans-ExtraBoldItalic.woff") format("woff");
 }
-@media (min-width: 576px) {
-  .container {
-    max-width: 540px;
-  }
-}
-@media (min-width: 768px) {
-  .container {
-    max-width: 720px;
-  }
-}
-@media (min-width: 992px) {
-  .container {
-    max-width: 960px;
-  }
-}
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1110px;
-  }
-}
 html, body, div, ul, ol, li, table, tr, td, h1, h2, h3, h4, p, span, input {
   margin: 0;
   padding: 0;
@@ -637,7 +617,9 @@ html, body {
 body {
   padding: 0 0 0 0;
   margin: 0 0 0 0;
-  background: #ebecec url("../images/logo_big.png") no-repeat right bottom/100%;
+  width: 100%;
+  height: 100%;
+  background: #ebecec url("../images/logo_big.png") no-repeat right bottom/100% auto;
 }
 
 .main-container {
@@ -657,8 +639,9 @@ body {
 }
 .main-container .inner-container .text-header {
   margin: 10px 0 0 10px;
+  word-wrap: break-word;
   font-family: "Lato";
-  font-size: 35px;
+  font-size: 32px;
   font-weight: 900;
   letter-spacing: 0;
   color: #4e4e4e;
@@ -667,7 +650,7 @@ body {
 .main-container .inner-container .text-header .quote {
   margin-left: 0;
   font-family: "PT Serif";
-  font-size: 35px;
+  font-size: 32px;
   font-weight: 400;
   letter-spacing: 0;
   color: #8a8a8a;
@@ -695,7 +678,7 @@ body {
   margin: 50px 0 0 0;
 }
 .main-container .inner-container .form-artist-search .form-group {
-  display: inline-block;
+  width: 100%;
   float: left;
   height: 78px;
 }
@@ -705,10 +688,10 @@ body {
   border-top: 3px solid #b1b1b1;
   border-bottom: 3px solid #b1b1b1;
   background-color: #fff;
-  padding: 0 32px 0 6px;
+  padding: 0 0 0 10px;
   margin: 0 0 0 0;
   font-family: "Lato";
-  font-size: 32px;
+  font-size: 24px;
   letter-spacing: -1px;
   font-weight: 700;
   color: #4e4e4e;
@@ -730,17 +713,17 @@ body {
   display: inline-block;
   float: left;
   cursor: pointer;
-  width: 32px;
-  height: 32px;
-  margin: 24px 0 0 -87px;
+  width: 50px;
+  height: 70px;
+  margin: 7px 0 0 -60px;
   border: 0;
   overflow: hidden;
   text-indent: 5rem;
-  background: transparent url("../images/icon_search.png") no-repeat center right/100% 100%;
+  background: transparent url("../images/icon_search.png") no-repeat center right/28px 28px;
 }
 .main-container .inner-container .recommend-keyword {
   width: 100%;
-  padding: 100px 20px 200px 20px;
+  padding: 100px 20px 200px 10px;
 }
 .main-container .inner-container .recommend-keyword a {
   float: left;
@@ -750,11 +733,11 @@ body {
   margin-top: 0.35rem;
   white-space: nowrap;
   font-family: "Lato";
-  font-size: 24px;
+  font-size: 18px;
   letter-spacing: 0;
   font-weight: 400;
   color: #4e4e4e;
-  line-height: 28px;
+  line-height: 24px;
 }
 .main-container .inner-container .recommend-keyword a:link {
   color: #707070;
@@ -800,17 +783,15 @@ body {
 .feedback {
   position: fixed;
   right: 48px;
-  bottom: 90px;
-  width: 79px;
-  height: 80px;
-  padding: 6px 0 0 18px;
+  bottom: 60px;
+  padding: 6px 10px 4px 10px;
   text-align: left;
   z-index: 90;
   font-family: "Lato";
-  letter-spacing: -0.01rem;
-  font-size: 1.25rem;
-  font-weight: 900;
-  line-height: 1.3rem;
+  letter-spacing: 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
   cursor: pointer;
   -webkit-box-shadow: 0 0 20px rgba(198, 156, 109, 0.7);
   box-shadow: 0 0 20px rgba(198, 156, 109, 0.7);
