@@ -166,11 +166,6 @@
   font-weight: 900;
   src: local("OpenSans-ExtraBoldItalic"), url("../fonts/OpenSans-ExtraBoldItalic.ttf") format("truetype"), url("../fonts/OpenSans-ExtraBoldItalic.woff") format("woff");
 }
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1110px;
-  }
-}
 html, body, div, ul, ol, li, table, tr, td, h1, h2, h3, h4, p, span, input {
   margin: 0;
   padding: 0;

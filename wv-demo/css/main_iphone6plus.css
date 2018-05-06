@@ -611,11 +611,11 @@ table tbody tr:hover {
 }
 
 html, body {
-  height: 100%;
+  height: inherit;
 }
 
 body {
-  padding: 0 0 0 0;
+  padding: 0 10px 0 10px;
   margin: 0 0 0 0;
   width: 100%;
   height: 100%;
@@ -632,13 +632,13 @@ body {
 }
 .main-container .inner-container .logo-small {
   display: block;
-  margin: 10px 0 0 10px;
+  margin: 14px 0 0 0;
   width: 32.5px;
   height: 23.5px;
   background: transparent url("../images/logo_small.png") no-repeat left top/100% 100%;
 }
 .main-container .inner-container .text-header {
-  margin: 10px 0 0 10px;
+  margin: 10px 0 0 0;
   word-wrap: break-word;
   font-family: "Lato";
   font-size: 32px;
@@ -657,7 +657,7 @@ body {
   line-height: 110%;
 }
 .main-container .inner-container .text-subtitle {
-  margin: 16px 0 0 10px;
+  margin: 16px 0 0 0;
   font-family: "Lato";
   font-size: 18px;
   letter-spacing: 0;
@@ -675,7 +675,7 @@ body {
 }
 .main-container .inner-container .form-artist-search {
   position: relative;
-  margin: 50px 0 0 0;
+  margin: 40px 0 0 0;
 }
 .main-container .inner-container .form-artist-search .form-group {
   width: 100%;
@@ -684,14 +684,12 @@ body {
 }
 .main-container .inner-container .form-artist-search .form-group .input {
   width: 100%;
-  border: 0;
-  border-top: 3px solid #b1b1b1;
-  border-bottom: 3px solid #b1b1b1;
+  border: 3px solid #b1b1b1;
   background-color: #fff;
   padding: 0 0 0 10px;
   margin: 0 0 0 0;
   font-family: "Lato";
-  font-size: 24px;
+  font-size: 32px;
   letter-spacing: -1px;
   font-weight: 700;
   color: #4e4e4e;
@@ -723,7 +721,7 @@ body {
 }
 .main-container .inner-container .recommend-keyword {
   width: 100%;
-  padding: 100px 20px 200px 10px;
+  padding: 90px 20px 100px 0;
 }
 .main-container .inner-container .recommend-keyword a {
   float: left;
