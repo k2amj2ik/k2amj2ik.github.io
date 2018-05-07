@@ -71,7 +71,6 @@
     letter-spacing: -1px;
     font-weight: 700;
     color: $text-search-main;
-    line-height: 78px;
   }
   @if $name == link-searchable {
     font-family: $font-family-lato;
@@ -148,7 +147,7 @@
     letter-spacing: 0;
     font-weight: 600;
     color: $text-artist-header;
-    line-height: 18px;
+    line-height: 110%;
   }
   @if $name == text-artists-header-keyword {
     font-family: $font-family-lato;

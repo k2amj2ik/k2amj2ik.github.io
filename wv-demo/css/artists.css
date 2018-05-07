@@ -166,7 +166,7 @@
   font-weight: 900;
   src: local("OpenSans-ExtraBoldItalic"), url("../fonts/OpenSans-ExtraBoldItalic.ttf") format("truetype"), url("../fonts/OpenSans-ExtraBoldItalic.woff") format("woff");
 }
-html, body, div, ul, ol, li, table, tr, td, h1, h2, h3, h4, p, span, input {
+html, body, div, ul, ol, li, table, tr, td, h1, h2, h3, h4, p, span, form, input {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -610,25 +610,18 @@ table tbody tr:hover {
   background: transparent url("../images/bg_lot_1110x1733.png") no-repeat top center/1110px 1733px;
 }
 
+.artists {
+  padding: 10px 10px 0 10px;
+}
 .artists .text-header {
-  margin: 58px 0 0 24px;
+  margin: 58px 0 0 0;
   font-family: "Lato";
   font-size: 28px;
   letter-spacing: 0;
   font-weight: 600;
   color: #272727;
-  line-height: 18px;
+  line-height: 110%;
   position: relative;
-}
-.artists .text-header::before {
-  content: '';
-  position: absolute;
-  left: -24px;
-  top: -15px;
-  margin: 0;
-  width: 9px;
-  height: 48px;
-  background-color: #707070;
 }
 .artists .text-header .keyword {
   font-family: "Lato";
