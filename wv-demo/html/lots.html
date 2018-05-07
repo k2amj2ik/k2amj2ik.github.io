@@ -7,7 +7,8 @@
     <meta name="author" content="Wiveel">
     <link rel="icon" href="../images/favicon.png">
     <title>WIVEEL-BETA</title>
-    <link href="../css/lots.css" rel="stylesheet">
+    <link rel="stylesheet" media="screen and (min-width: 810px)" href="../css/lots.css">
+    <link rel="stylesheet" media="screen and (max-width: 809.9px)" href="../css/lots_sx.css">
 </head>
 
 <body>
@@ -26,6 +27,10 @@
 </header>
 <div class="container lots">
     <div class="filters">
+        <div class="title">
+            <button class="btn" onclick="location.href='lots_filter.html'"></button>
+            <p class="text">Filters</p>
+        </div>
         <div class="filter-area">
             <div class="filter-title">Category</div>
             <ul class="filter list">

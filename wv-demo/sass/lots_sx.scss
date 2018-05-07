@@ -1,13 +1,42 @@
-@import 'common';
+@import 'common_sx';
 
 .lots {
-  margin-top:40px;
-  padding-bottom: 51px;
+  margin-top: 46px;
+  padding: 0 10px 51px 10px;
   position: relative;
-  display: flex;
   .filters {
-    width: 235px;
+    position: absolute;
+    left: -215px;
+    top: 0;
+    border-right: 2px solid $line-black;
+    @include box-shadow(10px 0 10px rgba(0,0,0,0.2));
+    background-color: $bg-default;
+    z-index: $z-index-max;
+    width: 255px;
+    height: 100%;
     margin-right: 25px;
+    padding: 0 10px 100px 10px;
+    .title {
+      .text {
+        margin: 8px 0 16px 0;
+        @include text-style(text-filter-area-title);
+      }
+      .btn {
+        //border: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 40px;
+        height: 40px;
+        border: 0;
+        cursor: pointer;
+        background: transparent url("../images/icon_filter.png") no-repeat center center;
+        &:hover {
+          background: $bg-btn-primary url("../images/icon_filter_on.png") no-repeat center center;
+        }
+      }
+
+    }
     .filter-area {
       .filter-title {
         padding: 0 0 0 15px;
@@ -162,50 +191,47 @@
       }
     }
   }
+  .active {
+    left: 0;
+    .title {
+      .btn {
+        background: none;
+        color: $text-primary;
+        &::before {
+          content: 'hide';
+        }
+        &:hover {
+          background: none;
+          text-decoration: underline;
+          color: $text-primary;
+        }
+      }
+    }
+  }
   .result-area {
-    width: 850px;
+    width: 100%;
+    padding-left: 40px;
     .text-header {
       display: inline-block;
       padding-right: 25px;
-      margin: 1px 0 0 26px;
-      @include text-style(text-artists-header);
+      margin: 7px 0 0 0;
+      @include text-style(text-artists-header-sx);
       position: relative;
       text-transform: uppercase;
-      &::before {
-        content: '';
-        position: absolute;
-        left: -26px;
-        top: 2px;
-        margin: 0;
-        width: 9px;
-        height: 48px;
-        background-color: $border-artist-header;
-      }
-      &::after {
-        content: '';
-        position: absolute;
-        right: -5px;
-        top: 3px;
-        margin: 0;
-        width: 21px;
-        height: 21px;
-        background: transparent url("../images/icon_info.png") no-repeat center center;
-      }
       .description {
         margin: -2px 0 0 1px;
         @include text-style(text-title-desc);
       }
     }
     .result-count {
-      margin: 31px 0 0 0;
+      margin: 17px 0 0 0;
       @include text-style(text-artist-result-count);
     }
     .sort {
+      border: 1px solid $border-normal;
       cursor: pointer;
-      display: inline-block;
-      float: right;
-      margin: -21px 0 0 0;
-      padding: 10px 0 0 0;
+      margin: 10px 0 0 0;
+      padding: 10px 10px 0 10px;
       &:hover {
         text-decoration: underline;
       }
@@ -224,10 +250,13 @@
           background: transparent url("../images/icon_dropdown.png") no-repeat center center;
         }
       }
+      position: relative;
       .options {
         position: absolute;
+        width: 100%;
         right: 0;
-        top: 107px;
+        top: -1px;
+        border: 1px solid red;
         background-color: $bg-default;
         z-index: $z-index-5;
         @include box-style(select-options);

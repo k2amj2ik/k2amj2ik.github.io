@@ -149,6 +149,14 @@
     color: $text-artist-header;
     line-height: 110%;
   }
+  @if $name == text-artists-header-sx {
+    font-family: $font-family-lato;
+    font-size: 20px;
+    letter-spacing: 0;
+    font-weight: 600;
+    color: $text-artist-header;
+    line-height: 110%;
+  }
   @if $name == text-artists-header-keyword {
     font-family: $font-family-lato;
     font-size: 28px;
@@ -539,6 +547,14 @@
     font-style: normal;
     line-height: 20px;
   }
+  @if $name == text-filter-area-title {
+    font-family: $font-family-lato;
+    font-size: 18px;
+    letter-spacing: 0;
+    font-weight: 600;
+    color: $text-primary;
+    line-height: 21px;
+  }
 }
 
 
@@ -560,6 +576,13 @@
     color: $box-shadow-select-options;
     background-color: $box-shadow-select-options;
   }
+}
+
+// box-shadow
+@mixin box-shadow($var) {
+  -webkit-box-shadow: $var;
+  -moz-box-shadow: $var;
+  box-shadow: $var;
 }
 
 //link-color
