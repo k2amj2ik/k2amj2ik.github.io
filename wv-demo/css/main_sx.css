@@ -662,6 +662,7 @@ body {
   letter-spacing: -1px;
   font-weight: 700;
   color: #4e4e4e;
+  line-height: 110%;
 }
 .main-container .inner-container .form-artist-search .form-group .input.placeholder {
   color: #cbcbcb;
