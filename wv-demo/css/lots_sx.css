@@ -474,7 +474,7 @@ table tbody tr:hover {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 100px;
+  height: 132px;
   background-color: #202020;
 }
 .footer .container {
@@ -492,7 +492,9 @@ table tbody tr:hover {
   background: transparent url("../images/btn_top.png") no-repeat right bottom;
 }
 .footer .container .sites {
-  margin: 0 0 -14px 0;
+  margin: 0 0 20px 0;
+  display: flex;
+  justify-content: center;
 }
 .footer .container .sites li {
   display: inline-block;
