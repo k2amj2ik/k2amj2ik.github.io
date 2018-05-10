@@ -71,6 +71,7 @@
     letter-spacing: -1px;
     font-weight: 700;
     color: $text-search-main;
+    line-height: 110%;
   }
   @if $name == link-searchable {
     font-family: $font-family-lato;
