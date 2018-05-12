@@ -61,15 +61,15 @@
   url('../fonts/Lato-Semibold.ttf') format('truetype'),
   url('../fonts/Lato-Semibold.woff') format('woff');
 }
-// Lato semibold 600 italic
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 600;
-  src: local('Lato-SemiboldItalic'),
-  url('../fonts/Lato-SemiboldItalic.ttf') format('truetype'),
-  url('../fonts/Lato-BoldItalic.woff') format('woff');
-}
+//// Lato semibold 600 italic
+//@font-face {
+//  font-family: 'Lato';
+//  font-style: italic;
+//  font-weight: 600;
+//  src: local('Lato-SemiboldItalic'),
+//  url('../fonts/Lato-SemiboldItalic.ttf') format('truetype'),
+//  url('../fonts/Lato-BoldItalic.woff') format('woff');
+//}
 // Lato bold 700 normal
 @font-face {
   font-family: 'Lato';
@@ -133,15 +133,15 @@
   url('../fonts/PTF55F.ttf') format('truetype'),
   url('../fonts/PTF55F.woff') format('woff'),
 }
-// PT Serif regular 400 italic
-@font-face {
-  font-family: 'PT Serif';
-  font-style: italic;
-  font-weight: 400;
-  src: local('PTF56F'),
-  url('../fonts/PTF56F.ttf') format('truetype'),
-  url('../fonts/PTF56F.woff') format('woff'),
-}
+//// PT Serif regular 400 italic
+//@font-face {
+//  font-family: 'PT Serif';
+//  font-style: italic;
+//  font-weight: 400;
+//  src: local('PTF56F'),
+//  url('../fonts/PTF56F.ttf') format('truetype'),
+//  url('../fonts/PTF56F.woff') format('woff'),
+//}
 // PT Serif bold 700 normal
 @font-face {
   font-family: 'PT Serif';
@@ -187,15 +187,15 @@
   url('../fonts/OpenSans-Regular.ttf') format('truetype'),
   url('../fonts/OpenSans-Regular.woff') format('woff'),
 }
-// Open Sans regular 400 italic
-@font-face {
-  font-family: 'Open Sans';
-  font-style: italic;
-  font-weight: 400;
-  src: local('OpenSans-Italic'),
-  url('../fonts/OpenSans-Italic.ttf') format('truetype'),
-  url('../fonts/OpenSans-Italic.woff') format('woff'),
-}
+//// Open Sans regular 400 italic
+//@font-face {
+//  font-family: 'Open Sans';
+//  font-style: italic;
+//  font-weight: 400;
+//  src: local('OpenSans-Italic'),
+//  url('../fonts/OpenSans-Italic.ttf') format('truetype'),
+//  url('../fonts/OpenSans-Italic.woff') format('woff'),
+//}
 // Open Sans semibold 600 normal
 @font-face {
   font-family: 'Open Sans';
