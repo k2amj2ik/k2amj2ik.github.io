@@ -163,7 +163,7 @@
         }
       }
       .size-range {
-        margin: -127px 0 103px 77px;
+        margin: -127px 0 103px 63px;
         width: 177px;
         height: 24px;
         @include text-style(text-btn-desc);
@@ -252,11 +252,11 @@
       }
       position: relative;
       .options {
+        display:none;
         position: absolute;
         width: 100%;
         right: 0;
         top: -1px;
-        border: 1px solid red;
         background-color: $bg-default;
         z-index: $z-index-5;
         @include box-style(select-options);
@@ -281,112 +281,141 @@
         border-top: 2px solid $border-table;
         border-bottom: 2px solid $border-table;
         th {
-          padding: 19px 0 14px 1px;
-          margin: 0;
-        }
-        .col-details {
-          width: 262px;
-          padding-left: 109px;
-        }
-        .col-date {
-          width: 145px;
-        }
-        .col-info {
-          width: 198px;
-        }
-        .col-price {
-          width: 134px;
+          display:none;
         }
       }
       tbody {
         tr {
-          height: 124px;
+          height: 174px;
           border-bottom: 1px solid $border-table;
-        }
-        cursor: pointer;
-        .lot-detail {
-          vertical-align: top;
-          padding: 14px 0 0 9px;
-          &:hover .worktitle {
-            text-decoration: underline;
-          }
-          .img {
+          cursor: pointer;
+          position: relative;
+          td {
+            display: block;
+            width: 100%;
             float: left;
-            width: 100px;
-            height: 93px;
+          }
+          .lot-detail {
+            vertical-align: top;
+            padding: 12px 0 0 9px;
+            &:hover .worktitle {
+              text-decoration: underline;
+            }
+            .img {
+              float: left;
+              width: 100px;
+              height: 93px;
+              position: relative;
+              img {
+                max-width: 100px;
+                max-height: 93px;
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translate(-50%, 0);
+              }
+            }
             position: relative;
-            img {
-              max-width: 100px;
-              max-height: 93px;
+            .worktitle {
               position: absolute;
-              top: 50%;
-              left: 50%;
-              transform: translate(-50%, -50%);
+              top: 10px;
+              left: 0;
+              padding-left: 120px;
+              width: 100%;
+              height: 22px;
+              @include text-style(text-worktitle);
+              @include cut-single-text(100%);
+            }
+            .summary {
+              position: absolute;
+              top: 40px;
+              left: 0;
+              padding-left: 122px;
+              width: 100%;
+              @include text-style(text-summary);
+              @include cut-multi-text(100%,36px,2);
             }
           }
-          .worktitle {
-            margin: 14px 0 0 18px;
-            float: left;
-            @include text-style(text-worktitle);
-            @include cut-single-text(220px);
-          }
-          .summary {
-            margin: 6px 0 0 18px;
-            float: left;
-            @include text-style(text-summary);
-            @include cut-multi-text(220px,54px,3);
-          }
-        }
-        .sale-date {
-          .date {
-            margin: 0 0 0 0;
-            @include text-style(text-summary);
-          }
-          .upcoming {
-            margin-top: 2px;
-            @include text-style(text-upcoming);
+          .sale-date {
             position: relative;
-            &::after {
-              content: '';
+            .date {
               position: absolute;
-              left: 63px;
-              top: 7px;
-              margin: 0;
-              width: 13px;
-              height: 8px;
-              background: transparent url("../images/icon_arrow.png") no-repeat center center;
+              top: 36px;
+              left: 0;
+              padding-left: 120px;
+              width: 100%;
+              margin: 0 0 0 0;
+              @include text-style(text-summary);
+            }
+            .upcoming {
+              position: absolute;
+              top: 34px;
+              left: 82px;
+              padding-left: 120px;
+              margin-top: 2px;
+              @include text-style(text-upcoming);
+              &::after {
+                content: '';
+                position: absolute;
+                left: 186px;
+                top: 6px;
+                margin: 0;
+                width: 13px;
+                height: 8px;
+                background: transparent url("../images/icon_arrow.png") no-repeat center center;
+              }
             }
           }
-        }
-        .sale-info {
-          vertical-align: top;
-          .vendor {
-            margin: 21px 0 0 0;
-            @include text-style(text-vendor);
+          .sale-info {
+            position: relative;
+            .vendor {
+              position: absolute;
+              top: 20px;
+              left: 0;
+              padding-left: 120px;
+              width: 100%;
+              @include text-style(text-vendor);
+              @include cut-single-text(100%);
+            }
+            .sale {
+              display: none;
+            }
+            .lot {
+              display: none;
+              position: absolute;
+              border: 1px solid blue;
+              top: 10px;
+              left: 0;
+              padding-left: 120px;
+              width: 100%;
+              margin: 5px 0 0 0;
+              @include text-style(text-lot);
+            }
           }
-          .sale {
-            margin: 9px 0 0 1px;
-            @include text-style(text-summary);
-            @include cut-multi-text(150px,36px,2);
-          }
-          .lot {
-            margin: 5px 0 0 0;
-            @include text-style(text-lot);
-          }
-        }
-        .price {
-          .estimate {
-            margin: 0 0 0 0;
-            @include text-style(text-estimate);
-            @include cut-multi-text(120px,44px,2);
-          }
-          .sold {
-            margin: 4px 0 0 0;
-            @include text-style(text-sold);
-            .premium {
-              display: block;
+          .price {
+            position: relative;
+            .estimate {
+              position: absolute;
+              top: -16px;
+              left: 0;
+              padding-left: 120px;
+              width: 100%;
+              @include text-style(text-estimate);
+              @include cut-multi-text(100%,44px,2);
+            }
+            .sold {
+              position: absolute;
+              top: -16px;
+              left: 0;
+              padding-left: 120px;
+              width: 100%;
+              height: 20px;
               margin: 4px 0 0 0;
-              @include text-style(text-sold-desc);
+              @include text-style(text-sold);
+              @include cut-single-text(100%);
+              .premium {
+                @include text-style(text-sold-desc);
+              }
             }
           }
         }

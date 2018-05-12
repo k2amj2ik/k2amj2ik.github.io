@@ -12,12 +12,6 @@
 }
 @font-face {
   font-family: 'Lato';
-  font-style: italic;
-  font-weight: 600;
-  src: local("Lato-SemiboldItalic"), url("../fonts/Lato-SemiboldItalic.ttf") format("truetype"), url("../fonts/Lato-BoldItalic.woff") format("woff");
-}
-@font-face {
-  font-family: 'Lato';
   font-style: normal;
   font-weight: 700;
   src: local("Lato-Bold"), url("../fonts/Lato-Bold.ttf") format("truetype"), url("../fonts/Lato-Bold.woff") format("woff");
@@ -36,12 +30,6 @@
 }
 @font-face {
   font-family: 'PT Serif';
-  font-style: italic;
-  font-weight: 400;
-  src: local("PTF56F"), url("../fonts/PTF56F.ttf") format("truetype"), url("../fonts/PTF56F.woff") format("woff");
-}
-@font-face {
-  font-family: 'PT Serif';
   font-style: normal;
   font-weight: 700;
   src: local("PTF75F"), url("../fonts/PTF75F.ttf") format("truetype"), url("../fonts/PTF75F.woff") format("woff");
@@ -57,12 +45,6 @@
   font-style: normal;
   font-weight: 400;
   src: local("OpenSans-Regular"), url("../fonts/OpenSans-Regular.ttf") format("truetype"), url("../fonts/OpenSans-Regular.woff") format("woff");
-}
-@font-face {
-  font-family: 'Open Sans';
-  font-style: italic;
-  font-weight: 400;
-  src: local("OpenSans-Italic"), url("../fonts/OpenSans-Italic.ttf") format("truetype"), url("../fonts/OpenSans-Italic.woff") format("woff");
 }
 @font-face {
   font-family: 'Open Sans';
@@ -114,7 +96,7 @@ html {
 body {
   min-height: 100%;
   padding-top: 57px;
-  padding-bottom: 100px;
+  padding-bottom: 132px;
   z-index: 20;
 }
 
@@ -759,7 +741,7 @@ table tbody tr:hover {
   background-color: #e7e7e7;
 }
 .lots .filters .filter-area .size-range {
-  margin: -127px 0 103px 77px;
+  margin: -127px 0 103px 63px;
   width: 177px;
   height: 24px;
   font-family: "Open Sans";
@@ -887,11 +869,11 @@ table tbody tr:hover {
   background: transparent url("../images/icon_dropdown.png") no-repeat center center;
 }
 .lots .result-area .sort .options {
+  display: none;
   position: absolute;
   width: 100%;
   right: 0;
   top: -1px;
-  border: 1px solid red;
   background-color: #fff;
   z-index: 60;
   cursor: pointer;
@@ -928,53 +910,48 @@ table tbody tr:hover {
   border-bottom: 2px solid #e5e5e5;
 }
 .lots .result-area .results thead th {
-  padding: 19px 0 14px 1px;
-  margin: 0;
-}
-.lots .result-area .results thead .col-details {
-  width: 262px;
-  padding-left: 109px;
-}
-.lots .result-area .results thead .col-date {
-  width: 145px;
-}
-.lots .result-area .results thead .col-info {
-  width: 198px;
-}
-.lots .result-area .results thead .col-price {
-  width: 134px;
-}
-.lots .result-area .results tbody {
-  cursor: pointer;
+  display: none;
 }
 .lots .result-area .results tbody tr {
-  height: 124px;
+  height: 174px;
   border-bottom: 1px solid #e5e5e5;
+  cursor: pointer;
+  position: relative;
 }
-.lots .result-area .results tbody .lot-detail {
+.lots .result-area .results tbody tr td {
+  display: block;
+  width: 100%;
+  float: left;
+}
+.lots .result-area .results tbody tr .lot-detail {
   vertical-align: top;
-  padding: 14px 0 0 9px;
+  padding: 12px 0 0 9px;
+  position: relative;
 }
-.lots .result-area .results tbody .lot-detail:hover .worktitle {
+.lots .result-area .results tbody tr .lot-detail:hover .worktitle {
   text-decoration: underline;
 }
-.lots .result-area .results tbody .lot-detail .img {
+.lots .result-area .results tbody tr .lot-detail .img {
   float: left;
   width: 100px;
   height: 93px;
   position: relative;
 }
-.lots .result-area .results tbody .lot-detail .img img {
+.lots .result-area .results tbody tr .lot-detail .img img {
   max-width: 100px;
   max-height: 93px;
   position: absolute;
-  top: 50%;
+  top: 0;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0);
 }
-.lots .result-area .results tbody .lot-detail .worktitle {
-  margin: 14px 0 0 18px;
-  float: left;
+.lots .result-area .results tbody tr .lot-detail .worktitle {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  padding-left: 120px;
+  width: 100%;
+  height: 22px;
   font-family: "PT Serif";
   font-size: 17px;
   letter-spacing: 0;
@@ -986,12 +963,15 @@ table tbody tr:hover {
   text-overflow: ellipsis;
   white-space: nowrap;
   word-wrap: normal;
-  max-width: 220px;
+  max-width: 100%;
   overflow: hidden;
 }
-.lots .result-area .results tbody .lot-detail .summary {
-  margin: 6px 0 0 18px;
-  float: left;
+.lots .result-area .results tbody tr .lot-detail .summary {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  padding-left: 122px;
+  width: 100%;
   font-family: "Open Sans";
   font-size: 13px;
   letter-spacing: 0;
@@ -1002,14 +982,22 @@ table tbody tr:hover {
   display: inline-block;
   text-overflow: ellipsis;
   word-wrap: break-word;
-  max-width: 220px;
-  height: 54px;
+  max-width: 100%;
+  height: 36px;
   overflow: hidden;
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
 }
-.lots .result-area .results tbody .sale-date .date {
+.lots .result-area .results tbody tr .sale-date {
+  position: relative;
+}
+.lots .result-area .results tbody tr .sale-date .date {
+  position: absolute;
+  top: 36px;
+  left: 0;
+  padding-left: 120px;
+  width: 100%;
   margin: 0 0 0 0;
   font-family: "Open Sans";
   font-size: 13px;
@@ -1019,7 +1007,11 @@ table tbody tr:hover {
   font-style: normal;
   line-height: 17px;
 }
-.lots .result-area .results tbody .sale-date .upcoming {
+.lots .result-area .results tbody tr .sale-date .upcoming {
+  position: absolute;
+  top: 34px;
+  left: 82px;
+  padding-left: 120px;
   margin-top: 2px;
   font-family: "Open Sans";
   font-size: 13px;
@@ -1028,23 +1020,26 @@ table tbody tr:hover {
   color: #c19a4f;
   font-style: normal;
   line-height: 17px;
-  position: relative;
 }
-.lots .result-area .results tbody .sale-date .upcoming::after {
+.lots .result-area .results tbody tr .sale-date .upcoming::after {
   content: '';
   position: absolute;
-  left: 63px;
-  top: 7px;
+  left: 186px;
+  top: 6px;
   margin: 0;
   width: 13px;
   height: 8px;
   background: transparent url("../images/icon_arrow.png") no-repeat center center;
 }
-.lots .result-area .results tbody .sale-info {
-  vertical-align: top;
+.lots .result-area .results tbody tr .sale-info {
+  position: relative;
 }
-.lots .result-area .results tbody .sale-info .vendor {
-  margin: 21px 0 0 0;
+.lots .result-area .results tbody tr .sale-info .vendor {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  padding-left: 120px;
+  width: 100%;
   font-family: "Open Sans";
   font-size: 13px;
   letter-spacing: 0;
@@ -1053,27 +1048,24 @@ table tbody tr:hover {
   font-style: normal;
   line-height: 15px;
   text-transform: uppercase;
-}
-.lots .result-area .results tbody .sale-info .sale {
-  margin: 9px 0 0 1px;
-  font-family: "Open Sans";
-  font-size: 13px;
-  letter-spacing: 0;
-  font-weight: 400;
-  color: #707070;
-  font-style: normal;
-  line-height: 17px;
   display: inline-block;
   text-overflow: ellipsis;
-  word-wrap: break-word;
-  max-width: 150px;
-  height: 36px;
+  white-space: nowrap;
+  word-wrap: normal;
+  max-width: 100%;
   overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
 }
-.lots .result-area .results tbody .sale-info .lot {
+.lots .result-area .results tbody tr .sale-info .sale {
+  display: none;
+}
+.lots .result-area .results tbody tr .sale-info .lot {
+  display: none;
+  position: absolute;
+  border: 1px solid blue;
+  top: 10px;
+  left: 0;
+  padding-left: 120px;
+  width: 100%;
   margin: 5px 0 0 0;
   font-family: "Open Sans";
   font-size: 13px;
@@ -1083,8 +1075,15 @@ table tbody tr:hover {
   font-style: normal;
   line-height: 15px;
 }
-.lots .result-area .results tbody .price .estimate {
-  margin: 0 0 0 0;
+.lots .result-area .results tbody tr .price {
+  position: relative;
+}
+.lots .result-area .results tbody tr .price .estimate {
+  position: absolute;
+  top: -16px;
+  left: 0;
+  padding-left: 120px;
+  width: 100%;
   font-family: "Open Sans";
   font-size: 15px;
   letter-spacing: 0;
@@ -1095,14 +1094,20 @@ table tbody tr:hover {
   display: inline-block;
   text-overflow: ellipsis;
   word-wrap: break-word;
-  max-width: 120px;
+  max-width: 100%;
   height: 44px;
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
 }
-.lots .result-area .results tbody .price .sold {
+.lots .result-area .results tbody tr .price .sold {
+  position: absolute;
+  top: -16px;
+  left: 0;
+  padding-left: 120px;
+  width: 100%;
+  height: 20px;
   margin: 4px 0 0 0;
   font-family: "PT Serif";
   font-size: 15px;
@@ -1111,10 +1116,14 @@ table tbody tr:hover {
   color: #181818;
   font-style: normal;
   line-height: 15px;
+  display: inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  max-width: 100%;
+  overflow: hidden;
 }
-.lots .result-area .results tbody .price .sold .premium {
-  display: block;
-  margin: 4px 0 0 0;
+.lots .result-area .results tbody tr .price .sold .premium {
   font-family: "Open Sans";
   font-size: 13px;
   letter-spacing: 0;

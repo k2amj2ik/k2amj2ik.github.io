@@ -12,12 +12,6 @@
 }
 @font-face {
   font-family: 'Lato';
-  font-style: italic;
-  font-weight: 600;
-  src: local("Lato-SemiboldItalic"), url("../fonts/Lato-SemiboldItalic.ttf") format("truetype"), url("../fonts/Lato-BoldItalic.woff") format("woff");
-}
-@font-face {
-  font-family: 'Lato';
   font-style: normal;
   font-weight: 700;
   src: local("Lato-Bold"), url("../fonts/Lato-Bold.ttf") format("truetype"), url("../fonts/Lato-Bold.woff") format("woff");
@@ -36,12 +30,6 @@
 }
 @font-face {
   font-family: 'PT Serif';
-  font-style: italic;
-  font-weight: 400;
-  src: local("PTF56F"), url("../fonts/PTF56F.ttf") format("truetype"), url("../fonts/PTF56F.woff") format("woff");
-}
-@font-face {
-  font-family: 'PT Serif';
   font-style: normal;
   font-weight: 700;
   src: local("PTF75F"), url("../fonts/PTF75F.ttf") format("truetype"), url("../fonts/PTF75F.woff") format("woff");
@@ -57,12 +45,6 @@
   font-style: normal;
   font-weight: 400;
   src: local("OpenSans-Regular"), url("../fonts/OpenSans-Regular.ttf") format("truetype"), url("../fonts/OpenSans-Regular.woff") format("woff");
-}
-@font-face {
-  font-family: 'Open Sans';
-  font-style: italic;
-  font-weight: 400;
-  src: local("OpenSans-Italic"), url("../fonts/OpenSans-Italic.ttf") format("truetype"), url("../fonts/OpenSans-Italic.woff") format("woff");
 }
 @font-face {
   font-family: 'Open Sans';
