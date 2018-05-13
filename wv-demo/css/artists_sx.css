@@ -95,7 +95,7 @@ html {
 
 body {
   min-height: 100%;
-  padding-top: 57px;
+  padding-top: 103px;
   padding-bottom: 132px;
   z-index: 20;
 }
@@ -132,7 +132,7 @@ table tbody tr:hover {
 }
 
 .top-navigation {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -148,12 +148,12 @@ table tbody tr:hover {
 }
 .top-navigation .container .location li {
   display: inline-block;
-  margin: 15px 28px 0 0;
+  margin: 4px 28px 0 0;
   font-family: "Open Sans";
   letter-spacing: 0;
   font-size: 17px;
   font-weight: 400;
-  line-height: 1.3rem;
+  line-height: 110%;
   padding: 0;
 }
 .top-navigation .container .location li .nav-link {
@@ -177,40 +177,59 @@ table tbody tr:hover {
 }
 .top-navigation .container .location .logo-top {
   cursor: pointer;
+  z-index: 90;
   margin: 12px -2px 16px 10px;
   padding-left: 88px;
   width: 66px;
   height: 31px;
   background: transparent url("../images/logo_navigation.png") no-repeat top left;
 }
-.top-navigation .container .location .normal {
+.top-navigation .container .location .home {
   position: relative;
 }
-.top-navigation .container .location .normal::after {
+.top-navigation .container .location .home::after {
   content: '';
   position: absolute;
   right: -17px;
-  top: -5px;
+  top: -9px;
   margin: 1rem 0 1rem 0.8rem;
   width: 5px;
   height: 9px;
   background: transparent url("../images/icon_navigation.png") no-repeat center right;
 }
-.top-navigation .container .location .normal .nav-link {
+.top-navigation .container .location .normal {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-left: 172px;
   display: inline-block;
   text-overflow: ellipsis;
-  white-space: nowrap;
-  word-wrap: normal;
-  max-width: 160px;
+  word-wrap: break-word;
+  max-width: 100%;
+  height: 20px;
   overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.top-navigation .container .location .active {
+  display: block;
+  margin: 0 0 0 0;
+  padding: 4px 4px 0 95px;
+  position: absolute;
+  left: 0;
+  top: 20px;
 }
 .top-navigation .container .location .active .nav-link {
   display: inline-block;
   text-overflow: ellipsis;
-  white-space: nowrap;
-  word-wrap: normal;
-  max-width: 250px;
+  word-wrap: break-word;
+  max-width: 100%;
+  height: 20px;
   overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
 }
 .top-navigation .container .location .active .nav-link:link {
   color: #d6af63;
@@ -303,10 +322,12 @@ table tbody tr:hover {
   line-height: 45px;
 }
 .paging .prev {
+  overflow: hidden;
+  text-indent: 40px;
   position: absolute;
   top: 0;
-  left: 19px;
-  width: 64px;
+  left: 0;
+  width: 20px;
   height: 45px;
 }
 .paging .prev:link {
@@ -327,7 +348,7 @@ table tbody tr:hover {
 .paging .prev::before {
   content: '';
   position: absolute;
-  left: 1px;
+  left: 24px;
   top: 16px;
   margin: 0 0 0 -20px;
   width: 10px;
@@ -336,7 +357,7 @@ table tbody tr:hover {
 }
 .paging a.num {
   margin: 0 0 0 0;
-  width: 43px;
+  width: 38px;
   height: 45px;
   text-align: center;
 }
@@ -371,10 +392,12 @@ table tbody tr:hover {
   text-decoration: underline;
 }
 .paging .next {
+  overflow: hidden;
+  text-indent: 40px;
   position: absolute;
   top: 0;
-  right: 19px;
-  width: 64px;
+  right: 0;
+  width: 20px;
   height: 45px;
   text-align: right;
 }
@@ -396,7 +419,7 @@ table tbody tr:hover {
 .paging .next::before {
   content: '';
   position: absolute;
-  right: 1px;
+  right: 24px;
   top: 16px;
   margin: 0 -20px 0 0;
   width: 10px;
@@ -519,7 +542,7 @@ table tbody tr:hover {
   padding: 10px 10px 100px 10px;
 }
 .artists .text-header {
-  margin: 58px 0 0 0;
+  margin: 10px 0 0 0;
   font-family: "Lato";
   font-size: 28px;
   letter-spacing: 0;
@@ -553,7 +576,7 @@ table tbody tr:hover {
   text-decoration: underline;
 }
 .artists .result-count {
-  margin: 48px 0 0 0;
+  margin: 38px 0 0 0;
   font-family: "Lato";
   font-size: 16px;
   letter-spacing: 0;

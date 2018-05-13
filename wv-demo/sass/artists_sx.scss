@@ -3,7 +3,7 @@
 .artists {
   padding: 10px 10px 100px 10px;
   .text-header {
-    margin: 58px 0 0 0;
+    margin: 10px 0 0 0;
     @include text-style(text-artists-header);
     position: relative;
     .keyword {
@@ -14,7 +14,7 @@
     }
   }
   .result-count {
-    margin: 48px 0 0 0;
+    margin: 38px 0 0 0;
     @include text-style(text-artist-result-count);
   }
   .submenu {
