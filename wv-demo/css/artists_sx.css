@@ -204,8 +204,8 @@ table tbody tr:hover {
   padding-left: 172px;
   display: inline-block;
   text-overflow: ellipsis;
-  word-wrap: break-word;
-  max-width: 100%;
+  word-break: break-all;
+  width: 100%;
   height: 20px;
   overflow: hidden;
   display: -webkit-box;
@@ -223,8 +223,8 @@ table tbody tr:hover {
 .top-navigation .container .location .active .nav-link {
   display: inline-block;
   text-overflow: ellipsis;
-  word-wrap: break-word;
-  max-width: 100%;
+  word-break: break-all;
+  width: 100%;
   height: 20px;
   overflow: hidden;
   display: -webkit-box;

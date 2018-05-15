@@ -27,14 +27,14 @@
     line-height: 110%;
   }
   @if $name == text-header-quote {
-    font-family: $font-family-ptserif;
+    font-family: $font-family-lato;
     font-size: 70px;
     font-weight: 400;
     letter-spacing: 0;
     color: $text-header-quote;
   }
   @if $name == text-header-quote-sx {
-    font-family: $font-family-ptserif;
+    font-family: $font-family-lato;
     font-size: 32px;
     font-weight: 400;
     letter-spacing: 0;
@@ -626,16 +626,18 @@
   display: inline-block;
   text-overflow:ellipsis;
   white-space:nowrap;
-  word-wrap:break-all;
-  max-width:$width;
+  //word-wrap:normal;
+  word-break: break-all;
+  width:$width;
   overflow:hidden;
 }
 
 @mixin cut-multi-text($width,$height,$line-count) {
   display: inline-block;
   text-overflow:ellipsis;
-  word-wrap:break-all;
-  max-width:$width;
+  //word-wrap:break-word;
+  word-break: break-all;
+  width:$width;
   height: $height;
   overflow:hidden;
   display: -webkit-box;

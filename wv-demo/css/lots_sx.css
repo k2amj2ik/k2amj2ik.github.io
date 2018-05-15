@@ -204,8 +204,8 @@ table tbody tr:hover {
   padding-left: 172px;
   display: inline-block;
   text-overflow: ellipsis;
-  word-wrap: break-word;
-  max-width: 100%;
+  word-break: break-all;
+  width: 100%;
   height: 20px;
   overflow: hidden;
   display: -webkit-box;
@@ -223,8 +223,8 @@ table tbody tr:hover {
 .top-navigation .container .location .active .nav-link {
   display: inline-block;
   text-overflow: ellipsis;
-  word-wrap: break-word;
-  max-width: 100%;
+  word-break: break-all;
+  width: 100%;
   height: 20px;
   overflow: hidden;
   display: -webkit-box;
@@ -1002,8 +1002,8 @@ table tbody tr:hover {
   display: inline-block;
   text-overflow: ellipsis;
   white-space: nowrap;
-  word-wrap: normal;
-  max-width: 100%;
+  word-break: break-all;
+  width: 100%;
   overflow: hidden;
 }
 .lots .result-area .results tbody tr .lot-detail .summary {
@@ -1021,8 +1021,8 @@ table tbody tr:hover {
   line-height: 17px;
   display: inline-block;
   text-overflow: ellipsis;
-  word-wrap: break-word;
-  max-width: 100%;
+  word-break: break-all;
+  width: 100%;
   height: 36px;
   overflow: hidden;
   display: -webkit-box;
@@ -1048,8 +1048,8 @@ table tbody tr:hover {
   line-height: 17px;
   display: inline-block;
   text-overflow: ellipsis;
-  word-wrap: break-word;
-  max-width: 100%;
+  word-break: break-all;
+  width: 100%;
   height: 20px;
   overflow: hidden;
   display: -webkit-box;
@@ -1098,8 +1098,8 @@ table tbody tr:hover {
   display: inline-block;
   text-overflow: ellipsis;
   white-space: nowrap;
-  word-wrap: normal;
-  max-width: 100%;
+  word-break: break-all;
+  width: 100%;
   overflow: hidden;
 }
 .lots .result-area .results tbody tr .sale-info .sale {
@@ -1140,8 +1140,8 @@ table tbody tr:hover {
   line-height: 23px;
   display: inline-block;
   text-overflow: ellipsis;
-  word-wrap: break-word;
-  max-width: 100%;
+  word-break: break-all;
+  width: 100%;
   height: 22px;
   overflow: hidden;
   display: -webkit-box;
@@ -1166,8 +1166,8 @@ table tbody tr:hover {
   display: inline-block;
   text-overflow: ellipsis;
   white-space: nowrap;
-  word-wrap: normal;
-  max-width: 100%;
+  word-break: break-all;
+  width: 100%;
   overflow: hidden;
 }
 .lots .result-area .results tbody tr .price .sold .premium {
