@@ -116,9 +116,11 @@ table {
       .normal {
         position: absolute;
         left: 0;
-        top: 0;
+        top: -4px;
         padding-left: 172px;
-        @include cut-multi-text(100%,20px,1);
+        .nav-link {
+          @include cut-multi-text(100%,20px,1);
+        }
       }
       .active {
         display: block;

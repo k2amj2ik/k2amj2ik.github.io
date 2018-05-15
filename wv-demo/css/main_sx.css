@@ -200,8 +200,10 @@ table tbody tr:hover {
 .top-navigation .container .location .normal {
   position: absolute;
   left: 0;
-  top: 0;
+  top: -4px;
   padding-left: 172px;
+}
+.top-navigation .container .location .normal .nav-link {
   display: inline-block;
   text-overflow: ellipsis;
   word-break: break-all;
