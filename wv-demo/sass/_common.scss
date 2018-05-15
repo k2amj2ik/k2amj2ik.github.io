@@ -99,6 +99,22 @@ table {
         height: 31px;
         background: transparent url("../images/logo_navigation.png") no-repeat top left;
       }
+      .home {
+        position: relative;
+        &::after {
+          content: '';
+          position: absolute;
+          right: -17px;
+          top: -5px;
+          margin: 1rem 0 1rem 0.8rem;
+          width: 5px;
+          height: 9px;
+          background: transparent url("../images/icon_navigation.png") no-repeat center right;
+        }
+        .nav-link {
+          @include cut-single-text(160px);
+        }
+      }
       .normal {
         position: relative;
         &::after {

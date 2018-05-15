@@ -7,7 +7,8 @@
     <meta name="author" content="Wiveel">
     <link rel="icon" href="../images/favicon.png">
     <title>WIVEEL-BETA</title>
-    <link href="../css/lot.css" rel="stylesheet">
+    <link rel="stylesheet" media="screen and (min-width: 810px)" href="../css/lot.css">
+    <link rel="stylesheet" media="screen and (max-width: 809.9px)" href="../css/lot_sx.css">
 </head>
 
 <body>
@@ -19,7 +20,7 @@
         </form>
         <ul class="location">
             <li class="logo-top" onClick="location.href='main.html'"></li>
-            <li class="normal"><a class="nav-link" href="main.html">HOME</a></li>
+            <li class="home"><a class="nav-link" href="main.html">HOME</a></li>
             <li class="normal"><a class="nav-link" href="lots.html">Pablo Picasso</a></li>
             <li class="active"><a class="nav-link" href="lot.html">Mousquetaire et nu assis</a></li>
         </ul>
@@ -163,7 +164,7 @@
 <footer class="footer">
     <div class="container">
         <p class="float-right">
-            <button class="btn-top"></button>
+            <button class="btn-top" onclick="location.href='#'"></button>
         </p>
         <ul class="sites">
             <li><a href="#">Live Auction Art</a></li>

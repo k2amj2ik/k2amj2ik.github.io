@@ -1,7 +1,7 @@
 @import 'common_sx';
 
 .lots {
-  margin-top: 46px;
+  margin-top: 0;
   padding: 0 10px 51px 10px;
   position: relative;
   .filters {
@@ -11,7 +11,7 @@
     border-right: 2px solid $line-black;
     @include box-shadow(10px 0 10px rgba(0,0,0,0.2));
     background-color: $bg-default;
-    z-index: $z-index-max;
+    z-index: $z-index-5;
     width: 255px;
     height: 100%;
     margin-right: 25px;
@@ -172,6 +172,16 @@
         }
       }
     }
+    .filter-btn {
+      .btn {
+        width: 100%;
+        height: 40px;
+        margin-bottom: 40px;
+        cursor: pointer;        
+        @include text-style(btn-primary);
+        @include box-style(btn-primary);
+      }
+    }
     .reset-search {
       text-align: right;
       position: relative;
@@ -210,11 +220,11 @@
   }
   .result-area {
     width: 100%;
-    padding-left: 40px;
+    padding-left: 46px;
     .text-header {
       display: inline-block;
       padding-right: 25px;
-      margin: 7px 0 0 0;
+      margin: 20px 0 0 0;
       @include text-style(text-artists-header-sx);
       position: relative;
       text-transform: uppercase;
@@ -346,18 +356,17 @@
               width: 100%;
               margin: 0 0 0 0;
               @include text-style(text-summary);
+              @include cut-multi-text(100%,20px,1);
             }
             .upcoming {
-              position: absolute;
-              top: 34px;
-              left: 82px;
-              padding-left: 120px;
-              margin-top: 2px;
+              display: inline-block;
+              margin: 0 0 0 6px;
               @include text-style(text-upcoming);
+              position: relative;
               &::after {
                 content: '';
                 position: absolute;
-                left: 186px;
+                right: -18px;
                 top: 6px;
                 margin: 0;
                 width: 13px;
@@ -401,7 +410,7 @@
               padding-left: 120px;
               width: 100%;
               @include text-style(text-estimate);
-              @include cut-multi-text(100%,44px,2);
+              @include cut-multi-text(100%,22px,1);
             }
             .sold {
               position: absolute;

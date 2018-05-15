@@ -108,7 +108,7 @@
     letter-spacing: 0;
     font-size: 17px;
     font-weight: 400;
-    line-height: 1.3rem;
+    line-height: 110%;
   }
   @if $name == text-search-top {
     font-family: $font-family-ptserif;
@@ -626,7 +626,7 @@
   display: inline-block;
   text-overflow:ellipsis;
   white-space:nowrap;
-  word-wrap:normal;
+  word-wrap:break-all;
   max-width:$width;
   overflow:hidden;
 }
@@ -634,7 +634,7 @@
 @mixin cut-multi-text($width,$height,$line-count) {
   display: inline-block;
   text-overflow:ellipsis;
-  word-wrap:break-word;
+  word-wrap:break-all;
   max-width:$width;
   height: $height;
   overflow:hidden;
