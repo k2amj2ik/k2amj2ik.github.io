@@ -68,7 +68,7 @@ html, body, div, ul, ol, li, table, tr, td, h1, h2, h3, h4, p, span, form, input
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Open Sans";
+  font-family: "Lato";
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0;
@@ -149,7 +149,7 @@ table tbody tr:hover {
 .top-navigation .container .location li {
   display: inline-block;
   margin: 4px 28px 0 0;
-  font-family: "Open Sans";
+  font-family: "Lato";
   letter-spacing: 0;
   font-size: 17px;
   font-weight: 400;
@@ -207,7 +207,7 @@ table tbody tr:hover {
   display: inline-block;
   text-overflow: ellipsis;
   word-break: break-all;
-  width: 100%;
+  max-width: 100%;
   height: 20px;
   overflow: hidden;
   display: -webkit-box;
@@ -226,7 +226,7 @@ table tbody tr:hover {
   display: inline-block;
   text-overflow: ellipsis;
   word-break: break-all;
-  width: 100%;
+  max-width: 100%;
   height: 20px;
   overflow: hidden;
   display: -webkit-box;
@@ -311,7 +311,7 @@ table tbody tr:hover {
   display: flex;
   justify-content: center;
   margin: 40px 0 40px 0;
-  font-family: "Open Sans";
+  font-family: "Lato";
   font-size: 15px;
   letter-spacing: 0;
   font-weight: 400;
@@ -458,7 +458,7 @@ table tbody tr:hover {
 .footer .container .sites li {
   display: inline-block;
   margin: 24px 19px 0 -1px;
-  font-family: "Open Sans";
+  font-family: "Lato";
   font-size: 15px;
   letter-spacing: 0;
   font-weight: 400;
@@ -500,7 +500,7 @@ table tbody tr:hover {
 }
 .footer .container .copyright {
   text-align: center;
-  font-family: "Open Sans";
+  font-family: "Lato";
   font-size: 15px;
   letter-spacing: 0;
   font-weight: 400;
@@ -557,7 +557,7 @@ table tbody tr:hover {
 .lot .detail .lot-summary .artist-name {
   display: inline-block;
   margin: 21px 0 0 0;
-  font-family: "Open Sans";
+  font-family: "Lato";
   font-size: 18px;
   letter-spacing: 0;
   font-weight: 400;
@@ -569,7 +569,7 @@ table tbody tr:hover {
 .lot .detail .lot-summary .artist-desc {
   display: inline-block;
   margin: 0 0 0 3px;
-  font-family: "Open Sans";
+  font-family: "Lato";
   font-size: 18px;
   letter-spacing: 0;
   font-weight: 400;
@@ -590,7 +590,7 @@ table tbody tr:hover {
 }
 .lot .detail .lot-summary .work-desc {
   margin: 5px 0 0 0;
-  font-family: "Open Sans";
+  font-family: "Lato";
   font-size: 16px;
   letter-spacing: 0;
   font-weight: 400;
@@ -614,7 +614,7 @@ table tbody tr:hover {
 .lot .detail .lot-detail .premium {
   display: inline-block;
   margin: 0 0 0 5px;
-  font-family: "Open Sans";
+  font-family: "Lato";
   font-size: 15px;
   letter-spacing: 0;
   font-weight: 400;
@@ -634,7 +634,7 @@ table tbody tr:hover {
 }
 .lot .detail .lot-detail .sale-name {
   margin: 11px 0 0 0;
-  font-family: "Open Sans";
+  font-family: "Lato";
   font-size: 17px;
   letter-spacing: 0;
   font-weight: 400;
@@ -645,7 +645,7 @@ table tbody tr:hover {
 .lot .detail .lot-detail .sale-date {
   padding: 0 0 31px 0;
   border-bottom: 1px solid #dcdcdc;
-  font-family: "Open Sans";
+  font-family: "Lato";
   font-size: 16px;
   letter-spacing: 0;
   font-weight: 400;
@@ -667,7 +667,7 @@ table tbody tr:hover {
   line-height: 24px;
 }
 .lot .detail .lot-detail .etc .context {
-  font-family: "Open Sans";
+  font-family: "Lato";
   font-size: 16px;
   letter-spacing: 0;
   font-weight: 400;
@@ -708,7 +708,7 @@ table tbody tr:hover {
   background-color: #f7f7f7;
 }
 .lot .related .title {
-  font-family: "Open Sans";
+  font-family: "Lato";
   font-size: 18px;
   letter-spacing: 0;
   font-weight: 700;
@@ -720,6 +720,7 @@ table tbody tr:hover {
   display: flex;
   flex-wrap: wrap;
   padding: 16px 48px 10px 0;
+  position: relative;
 }
 .lot .related .keywords .keyword {
   cursor: pointer;
@@ -728,7 +729,7 @@ table tbody tr:hover {
   padding: 4px 7px 0 11px;
   height: 22px;
   background-color: #dddddd;
-  font-family: "Open Sans";
+  font-family: "Lato";
   font-size: 14px;
   letter-spacing: 0;
   font-weight: 300;
@@ -742,8 +743,8 @@ table tbody tr:hover {
 }
 .lot .related .keywords .btn-filter {
   position: absolute;
-  right: 26px;
-  top: 60px;
+  right: 0;
+  top: 16px;
 }
 .lot .related .keywords .btn-filter .filter {
   cursor: pointer;
@@ -761,7 +762,7 @@ table tbody tr:hover {
 }
 .lot .related .related-lots .related-lot {
   cursor: pointer;
-  height: 377px;
+  height: 288px;
   margin: 0 0 0 0;
   vertical-align: top;
   padding: 20px 0 0 0;
@@ -792,7 +793,7 @@ table tbody tr:hover {
 }
 .lot .related .related-lots .related-lot .description .artist-name {
   margin: 10px 0 0 0;
-  font-family: "Open Sans";
+  font-family: "Lato";
   font-size: 13px;
   letter-spacing: 0;
   font-weight: 400;
@@ -803,7 +804,7 @@ table tbody tr:hover {
   display: inline-block;
   text-overflow: ellipsis;
   word-break: break-all;
-  width: 100%;
+  max-width: 100%;
   height: 20px;
   overflow: hidden;
   display: -webkit-box;
@@ -822,7 +823,7 @@ table tbody tr:hover {
   display: inline-block;
   text-overflow: ellipsis;
   word-break: break-all;
-  width: 100%;
+  max-width: 100%;
   height: 24px;
   overflow: hidden;
   display: -webkit-box;
@@ -830,23 +831,7 @@ table tbody tr:hover {
   -webkit-box-orient: vertical;
 }
 .lot .related .related-lots .related-lot .description .work-desc {
-  margin: -2px 0 0 0;
-  font-family: "Open Sans";
-  font-size: 15px;
-  letter-spacing: 0;
-  font-weight: 400;
-  color: #707070;
-  font-style: normal;
-  line-height: 19px;
-  display: inline-block;
-  text-overflow: ellipsis;
-  word-break: break-all;
-  width: 100%;
-  height: 54px;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
+  display: none;
 }
 .lot .related .related-lots .related-lot .description .estimate {
   margin: 15px 0 0 0;
@@ -869,64 +854,41 @@ table tbody tr:hover {
   line-height: 19px;
 }
 .lot .related .related-lots .related-lot .description .sale-name {
-  margin: 16px 0 0 0;
-  font-family: "Open Sans";
-  font-size: 15px;
-  letter-spacing: 0;
-  font-weight: 400;
-  color: #707070;
-  font-style: normal;
-  line-height: 19px;
-  display: inline-block;
-  text-overflow: ellipsis;
-  word-break: break-all;
-  width: 100%;
-  height: 20px;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
+  display: none;
 }
 .lot .related .related-lots .related-lot .description .sale-date {
-  margin: -3px 0 0 0;
-  font-family: "Open Sans";
-  font-size: 15px;
-  letter-spacing: 0;
-  font-weight: 400;
-  color: #707070;
-  font-style: normal;
-  line-height: 19px;
+  display: none;
 }
 .lot .related .related-lots .related-lot .description .performance {
   position: absolute;
-  right: 10px;
-  top: -55px;
+  left: 0;
+  top: 123px;
   display: inline-block;
-  width: 57px;
-  height: 20px;
+  width: 47px;
+  height: 17px;
   text-align: center;
   background-color: #9bbe46;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
   color: #fff;
-  font-family: "Open Sans";
-  font-size: 13px;
+  font-family: "Lato";
+  font-size: 12px;
   letter-spacing: 0;
   font-weight: 400;
   color: #fff;
   font-style: normal;
-  line-height: 20px;
+  line-height: 17px;
 }
 .lot .related .related-lots .related-lot .description .performance::before {
   position: absolute;
-  left: -34px;
-  top: -4px;
+  left: 50px;
+  top: 4px;
   display: block;
-  width: 28px;
-  content: 'Low Est.';
-  font-family: "Open Sans";
-  font-size: 13px;
+  width: 64px;
+  content: 'by low est.';
+  font-family: "Lato";
+  font-size: 12px;
   letter-spacing: 0;
   font-weight: 400;
   color: #898989;

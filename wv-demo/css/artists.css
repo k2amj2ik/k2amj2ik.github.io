@@ -68,7 +68,7 @@ html, body, div, ul, ol, li, table, tr, td, h1, h2, h3, h4, p, span, form, input
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Open Sans";
+  font-family: "Lato";
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0;
@@ -149,7 +149,7 @@ table tbody tr:hover {
 .top-navigation .container .location li {
   display: inline-block;
   margin: 15px 28px 0 0;
-  font-family: "Open Sans";
+  font-family: "Lato";
   letter-spacing: 0;
   font-size: 17px;
   font-weight: 400;
@@ -201,7 +201,7 @@ table tbody tr:hover {
   text-overflow: ellipsis;
   white-space: nowrap;
   word-break: break-all;
-  width: 160px;
+  max-width: 160px;
   overflow: hidden;
 }
 .top-navigation .container .location .normal {
@@ -222,7 +222,7 @@ table tbody tr:hover {
   text-overflow: ellipsis;
   white-space: nowrap;
   word-break: break-all;
-  width: 160px;
+  max-width: 160px;
   overflow: hidden;
 }
 .top-navigation .container .location .active .nav-link {
@@ -230,7 +230,7 @@ table tbody tr:hover {
   text-overflow: ellipsis;
   white-space: nowrap;
   word-break: break-all;
-  width: 250px;
+  max-width: 250px;
   overflow: hidden;
 }
 .top-navigation .container .location .active .nav-link:link {
@@ -307,7 +307,7 @@ table tbody tr:hover {
   display: flex;
   justify-content: center;
   margin: 40px 0 40px 0;
-  font-family: "Open Sans";
+  font-family: "Lato";
   font-size: 15px;
   letter-spacing: 0;
   font-weight: 400;
@@ -448,7 +448,7 @@ table tbody tr:hover {
 .footer .container .sites li {
   display: inline-block;
   margin: 24px 19px 0 -1px;
-  font-family: "Open Sans";
+  font-family: "Lato";
   font-size: 15px;
   letter-spacing: 0;
   font-weight: 400;
@@ -490,7 +490,7 @@ table tbody tr:hover {
 }
 .footer .container .copyright {
   text-align: center;
-  font-family: "Open Sans";
+  font-family: "Lato";
   font-size: 15px;
   letter-spacing: 0;
   font-weight: 400;

@@ -118,10 +118,11 @@
         }
         @include text-style(lot-related-keyword);
       }
+      position: relative;
       .btn-filter {
         position: absolute;
-        right: 26px;
-        top: 60px;
+        right: 0;
+        top: 16px;
         .filter {
           cursor: pointer;
           margin: 0 0 0 0;
@@ -139,7 +140,7 @@
       margin: 0 0 0 0;
       .related-lot {
         cursor: pointer;
-        height: 377px;
+        height: 288px;
         margin: 0 0 0 0;
         vertical-align: top;
         padding: 20px 0 0 0;
@@ -177,9 +178,10 @@
             @include cut-multi-text(100%,24px,1);
           }
           .work-desc {
-            margin: -2px 0 0 0;
-            @include text-style(lot-related-work-desc);
-            @include cut-multi-text(100%,54px,3);
+            display: none;
+            //margin: -2px 0 0 0;
+            //@include text-style(lot-related-work-desc);
+            //@include cut-multi-text(100%,54px,3);
           }
           .estimate {
             margin: 15px 0 0 0;
@@ -190,21 +192,23 @@
             @include text-style(lot-related-sold-price);
           }
           .sale-name {
-            margin: 16px 0 0 0;
-            @include text-style(lot-related-sale-info);
-            @include cut-multi-text(100%,20px,1);
+            display: none;
+            //margin: 16px 0 0 0;
+            //@include text-style(lot-related-sale-info);
+            //@include cut-multi-text(100%,20px,1);
           }
           .sale-date {
-            margin: -3px 0 0 0;
-            @include text-style(lot-related-sale-info);
+            display: none;
+            //margin: -3px 0 0 0;
+            //@include text-style(lot-related-sale-info);
           }
           .performance {
             position: absolute;
-            right: 10px;
-            top: -55px;
+            left: 0;
+            top: 123px;
             display: inline-block;
-            width: 57px;
-            height: 20px;
+            width: 47px;
+            height: 17px;
             text-align: center;
             background-color: $bg-icon-good;
             -webkit-border-radius: 2px;
@@ -214,11 +218,11 @@
             @include text-style(lot-related-performance);
             &::before {
               position: absolute;
-              left: -34px;
-              top: -4px;
+              left: 50px;
+              top: 4px;
               display: block;
-              width: 28px;
-              content: 'Low Est.';
+              width: 64px;
+              content: 'by low est.';
               @include text-style(lot-related-performance-standard);
             }
           }
