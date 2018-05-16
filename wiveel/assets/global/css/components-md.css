@@ -13833,7 +13833,7 @@ Custimized Bootstrap Wells
   padding: 20px; }
   .widget-socials .widget-socials-title {
     font-size: 25px;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 1.4;
     color: #fff;
     margin: 0 0 20px; }
@@ -14033,7 +14033,7 @@ Custimized Bootstrap Wells
     color: #9a7caf; }
   .widget-subscribe .widget-subscribe-title {
     font-size: 25px;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 1.4;
     margin: 0 0 15px 45px; }
   .widget-subscribe .widget-subscribe-subtitle {
@@ -15648,32 +15648,32 @@ body.stop-scrolling {
 .mt-element-step .step-no-background .active .mt-step-number {
   color: #32c5d2 !important;
   border-color: #32c5d2 !important;
-  font-weight: 700; }
+  font-weight: 600; }
 
 .mt-element-step .step-no-background .active .mt-step-title,
 .mt-element-step .step-no-background .active .mt-step-content {
   color: #32c5d2 !important;
-  font-weight: 700; }
+  font-weight: 600; }
 
 .mt-element-step .step-no-background .done .mt-step-number {
   color: #26C281 !important;
   border-color: #26C281 !important;
-  font-weight: 700; }
+  font-weight: 600; }
 
 .mt-element-step .step-no-background .done .mt-step-title,
 .mt-element-step .step-no-background .done .mt-step-content {
   color: #26C281 !important;
-  font-weight: 700; }
+  font-weight: 600; }
 
 .mt-element-step .step-no-background .error .mt-step-number {
   color: #E7505A !important;
   border-color: #E7505A !important;
-  font-weight: 700; }
+  font-weight: 600; }
 
 .mt-element-step .step-no-background .error .mt-step-title,
 .mt-element-step .step-no-background .error .mt-step-content {
   color: #E7505A !important;
-  font-weight: 700; }
+  font-weight: 600; }
 
 .mt-element-step .step-no-background-thin .mt-step-col {
   padding-top: 10px;
@@ -15701,32 +15701,32 @@ body.stop-scrolling {
 .mt-element-step .step-no-background-thin .active .mt-step-number {
   color: #32c5d2 !important;
   border-color: #32c5d2 !important;
-  font-weight: 700; }
+  font-weight: 600; }
 
 .mt-element-step .step-no-background-thin .active .mt-step-title,
 .mt-element-step .step-no-background-thin .active .mt-step-content {
   color: #32c5d2 !important;
-  font-weight: 700; }
+  font-weight: 600; }
 
 .mt-element-step .step-no-background-thin .done .mt-step-number {
   color: #26C281 !important;
   border-color: #26C281 !important;
-  font-weight: 700; }
+  font-weight: 600; }
 
 .mt-element-step .step-no-background-thin .done .mt-step-title,
 .mt-element-step .step-no-background-thin .done .mt-step-content {
   color: #26C281 !important;
-  font-weight: 700; }
+  font-weight: 600; }
 
 .mt-element-step .step-no-background-thin .error .mt-step-number {
   color: #E7505A !important;
   border-color: #E7505A !important;
-  font-weight: 700; }
+  font-weight: 600; }
 
 .mt-element-step .step-no-background-thin .error .mt-step-title,
 .mt-element-step .step-no-background-thin .error .mt-step-content {
   color: #E7505A !important;
-  font-weight: 700; }
+  font-weight: 600; }
 
 .mt-element-step .step-line .mt-step-col {
   padding: 30px 0;
@@ -15852,7 +15852,7 @@ body.stop-scrolling {
   .mt-element-list .list-default.mt-list-container .mt-list-title {
     padding-bottom: 15px;
     font-size: 14px;
-    font-weight: 700; }
+    font-weight: 600; }
   .mt-element-list .list-default.mt-list-container ul {
     margin-bottom: 0;
     padding: 0; }
@@ -15930,7 +15930,7 @@ body.stop-scrolling {
 .mt-element-list .list-default.group .list-toggle-container .list-toggle {
   padding: 15px;
   background-color: #2F353B;
-  font-weight: 700;
+  font-weight: 600;
   color: #fff;
   text-decoration: none; }
   .mt-element-list .list-default.group .list-toggle-container .list-toggle.done {
@@ -16028,7 +16028,7 @@ body.stop-scrolling {
 .mt-element-list .list-simple.group .list-toggle-container .list-toggle {
   padding: 15px;
   background-color: #34495e;
-  font-weight: 700;
+  font-weight: 600;
   color: #fff;
   text-decoration: none; }
   .mt-element-list .list-simple.group .list-toggle-container .list-toggle.done {

@@ -18,7 +18,7 @@ Invoice page 2
       .invoice-content-2 .invoice-head .invoice-logo > h1 {
         float: left;
         font-size: 17px;
-        font-weight: 700;
+        font-weight: 600;
         color: #39424a;
         margin-top: 48px; }
     .invoice-content-2 .invoice-head .company-address {
@@ -40,7 +40,7 @@ Invoice page 2
       font-weight: 400; }
     .invoice-content-2 .invoice-desc.grand-total {
       font-size: 16px;
-      font-weight: 700; }
+      font-weight: 600; }
   .invoice-content-2 .invoice-cust-add {
     margin-bottom: 50px; }
   .invoice-content-2 .invoice-body .text-center {

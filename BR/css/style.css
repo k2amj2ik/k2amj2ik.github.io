@@ -173,7 +173,7 @@ a {color:#000;}
 .main_work .txt .personal_info .left .name a {color:#000;}
 .main_work .txt .personal_info .left .name a:hover {text-decoration:underline; color:#0f7fc6; }
 .main_work .txt .personal_info .left .name span {position:relative; left:5px; top:3px;}
-.main_work .txt .personal_info .left .txt_box {margin-top:15px; font-weight: 700; font-size:13px;}
+.main_work .txt .personal_info .left .txt_box {margin-top:15px; font-weight: 600; font-size:13px;}
 .main_work .txt .personal_info .left .txt_box span {color:#ff9600; font-style:italic;}
 .main_work .txt .personal_info .left .normal {font-weight:400;}
 .main_work .txt .personal_info .right {float:right;}

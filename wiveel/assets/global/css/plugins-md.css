@@ -1950,7 +1950,7 @@ iframe[src="about:blank"] {
 .select2-container--bootstrap .select2-selection--multiple .select2-selection__choice__remove {
   cursor: pointer;
   display: inline-block;
-  font-weight: 700;
+  font-weight: 600;
   margin-right: 3px; }
 
 .select2-container--bootstrap .select2-results__group {

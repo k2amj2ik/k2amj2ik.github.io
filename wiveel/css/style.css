@@ -30,7 +30,7 @@
     color: #a0a9b4;
     font-size: 11px;
     letter-spacing: 1px;
-    font-weight: 700;
+    font-weight: 600;
     margin-bottom: 10px;
     margin-top: 40px;
 }
@@ -188,7 +188,7 @@
 
 .wiveel-data .dashboard-stat.blue .details .desc {
     color: rgba(0,0,0,0.2);
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .wiveel-login.login .content {

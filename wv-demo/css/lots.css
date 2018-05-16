@@ -5,64 +5,16 @@
   src: local("Lato-Regular"), url("../fonts/Lato-Regular.woff") format("woff");
 }
 @font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 600;
-  src: local("Lato-Semibold"), url("../fonts/Lato-Semibold.woff") format("woff");
-}
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 700;
-  src: local("Lato-Bold"), url("../fonts/Lato-Bold.woff") format("woff");
-}
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 900;
-  src: local("Lato-Heavy"), url("../fonts/Lato-Heavy.woff") format("woff");
-}
-@font-face {
   font-family: 'PT Serif';
   font-style: normal;
   font-weight: 400;
   src: local("PTF55F"), url("../fonts/PTF55F.woff") format("woff");
 }
 @font-face {
-  font-family: 'PT Serif';
-  font-style: normal;
-  font-weight: 700;
-  src: local("PTF75F"), url("../fonts/PTF75F.woff") format("woff");
-}
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 300;
-  src: local("OpenSans-Light"), url("../fonts/OpenSans-Light.woff") format("woff");
-}
-@font-face {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
   src: local("OpenSans-Regular"), url("../fonts/OpenSans-Regular.woff") format("woff");
-}
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 600;
-  src: local("OpenSans-Semibold"), url("../fonts/OpenSans-Semibold.woff") format("woff");
-}
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 700;
-  src: local("OpenSans-Bold"), url("../fonts/OpenSans-Bold.woff") format("woff");
-}
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 900;
-  src: local("OpenSans-ExtraBold"), url("../fonts/OpenSans-ExtraBold.woff") format("woff");
 }
 html, body, div, ul, ol, li, table, tr, td, h1, h2, h3, h4, p, span, form, input {
   margin: 0;
@@ -1100,7 +1052,7 @@ table tbody tr:hover {
   font-family: "PT Serif";
   font-size: 15px;
   letter-spacing: 0;
-  font-weight: 700;
+  font-weight: 600;
   color: #181818;
   font-style: normal;
   line-height: 15px;

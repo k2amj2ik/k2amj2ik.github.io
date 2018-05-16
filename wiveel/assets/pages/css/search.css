@@ -34,7 +34,7 @@ Search Page
     color: #a0a9b4;
     font-size: 11px;
     letter-spacing: 1px;
-    font-weight: 700;
+    font-weight: 600;
     margin-bottom: 10px;
     margin-top: 40px; }
     .search-page .search-filter > .search-label:first-child {
@@ -42,7 +42,7 @@ Search Page
   .search-page .search-filter input,
   .search-page .search-filter select {
     color: #727f89;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 14px; }
   .search-page .search-filter button {
     margin: 40px 0;

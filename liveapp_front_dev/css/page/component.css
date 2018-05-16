@@ -120,7 +120,7 @@ html, body { height: 100%; }
 .pt-touch-button {
 	border: none;
 	font-size: 13px;
-	font-weight: 700;
+	font-weight: 600;
 	text-transform: uppercase;
 	margin: 10px 0 20px;
 	padding: 0px 20px;

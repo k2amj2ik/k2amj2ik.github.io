@@ -956,7 +956,7 @@ header .show-noti {position:absolute; left: 10px; top: 10px;  width: 28px; heigh
 .auction-list .detail .c_wrap .thumb::after {content:''; position:absolute; top:0; left:0; width:100%; height:100%; overflow:hidden; box-sizing:border-box;}
 .auction-list .detail .c_wrap .thumb img {display:block;max-width: 150px;max-height:80px;margin: 0;position: absolute;top: 50%;left: 50%;margin-right: -50%;transform: translate(-50%, -50%)}
 .auction-list .detail .c_wrap .cont p {display:block;display: -webkit-box;white-space: normal;-webkit-line-clamp: 1;-webkit-box-orient: vertical;overflow: hidden;text-overflow: ellipsis;}
-.auction-list .detail .c_wrap .cont .artist {font-size: 12px;font-weight: 700; line-height: 16px;text-transform:uppercase;margin-top: 3px;color: #000;}
+.auction-list .detail .c_wrap .cont .artist {font-size: 12px;font-weight: 600; line-height: 16px;text-transform:uppercase;margin-top: 3px;color: #000;}
 .auction-list .detail .c_wrap .cont .title {font-size: 14px;color: #222;font-family:'tl';font-weight: 400;margin-top: 0;letter-spacing: -0.1px;line-height: 15px;font-style:italic}
 .auction-list .detail .c_wrap .cont .price {box-sizing: border-box;font-size: 13px;font-weight:400;color:#888;padding-right: 0;margin-top: 2px;letter-spacing: -0.3px;}
 .auction-list .detail .btns {margin:0;padding:0;position: absolute;right: 0;top: 0;}
@@ -977,7 +977,7 @@ header .show-noti {position:absolute; left: 10px; top: 10px;  width: 28px; heigh
 .auction-list .scroll-body .auction-result .current-auction .detail .c_bot .price .currency {position:relative;display:inline-block;color:#000;font-size: 25px;font-weight: 600;margin: 4px 0 6px 0;padding: 7px 16px 2px 4px;letter-spacing: -1px;}
 .auction-list .scroll-body .auction-result .current-auction .detail .c_bot .price .currency::after {content:'';display: block;position: absolute;right: 0;top: 15px;width: 10px;height: 12px;background: transparent url('../img/sold_option_04.png') no-repeat center center;background-size: 100% auto;opacity: 1;}
 .auction-list .scroll-body .auction-result .current-auction .detail .c_bot .price .currency-local {color:#000;font-size: 16px;font-weight: 400;}
-.auction-list .scroll-body .auction-result .current-auction .detail .c_bot .soldfor .soldfor-text {font-weight: 700;font-size: 18px;color: #222;text-transform: uppercase;}
+.auction-list .scroll-body .auction-result .current-auction .detail .c_bot .soldfor .soldfor-text {font-weight: 600;font-size: 18px;color: #222;text-transform: uppercase;}
 .auction-list .scroll-body .auction-result .current-auction .detail .c_bot .soldfor {text-align: center;margin-top: 20px;height: 100px;background-color: #f7f6f4;padding: 16px 0 0 0;}
 .auction-list .scroll-body .auction-result .current-auction .detail .c_bot .soldfor .hammer {color: #222;font-weight:400;font-size: 12px;letter-spacing:0;text-transform: lowercase;}
 .auction-list .scroll-body .auction-result .current-auction .detail .c_bot .soldfor .currency {position:relative;display:inline-block;color:#fff;font-size: 26px;font-weight: 600;margin: 4px 0 6px 0;padding: 0 20px 0 4px;letter-spacing: -1px;}
@@ -1392,7 +1392,7 @@ header .show-noti {position:absolute; left: 10px; top: 10px;  width: 28px; heigh
 .following .detail .c_wrap .thumb::after {content:''; position:absolute; top:0; left:0; width:100%; height:100%; overflow:hidden; box-sizing:border-box;}
 .following .detail .c_wrap .thumb img {display:block;max-width: 150px;max-height:80px;margin: 0;position: absolute;top: 50%;left: 50%;margin-right: -50%;transform: translate(-50%, -50%)}
 .following .detail .c_wrap .cont p {display:block;display: -webkit-box;white-space: normal;-webkit-line-clamp: 1;-webkit-box-orient: vertical;overflow: hidden;text-overflow: ellipsis;}
-.following .detail .c_wrap .cont .artist {font-size: 12px;font-weight: 700; line-height: 16px;text-transform:uppercase;margin-top: 3px;color: #000;}
+.following .detail .c_wrap .cont .artist {font-size: 12px;font-weight: 600; line-height: 16px;text-transform:uppercase;margin-top: 3px;color: #000;}
 .following .detail .c_wrap .cont .title {font-size: 14px;color: #222;font-family:'tl';font-weight: 400;margin-top: 0;letter-spacing: -0.1px;line-height: 15px;font-style:italic}
 .following .detail .c_wrap .cont .price {box-sizing: border-box;font-size: 13px;font-weight:400;color:#888;padding-right: 0;margin-top: 2px;letter-spacing: -0.3px;}
 .following .detail .btns {margin:0;padding:0;position: absolute;right: 0;top: 0;}
@@ -1413,7 +1413,7 @@ header .show-noti {position:absolute; left: 10px; top: 10px;  width: 28px; heigh
 .following .scroll-body .auction-result .current-auction .detail .c_bot .price .currency {position:relative;display:inline-block;color:#000;font-size: 25px;font-weight: 600;margin: 4px 0 6px 0;padding: 7px 16px 2px 4px;letter-spacing: -1px;}
 .following .scroll-body .auction-result .current-auction .detail .c_bot .price .currency::after {content:'';display: block;position: absolute;right: 0;top: 15px;width: 10px;height: 12px;background: transparent url('../img/sold_option_04.png') no-repeat center center;background-size: 100% auto;opacity: 1;}
 .following .scroll-body .auction-result .current-auction .detail .c_bot .price .currency-local {color:#000;font-size: 16px;font-weight: 400;}
-.following .scroll-body .auction-result .current-auction .detail .c_bot .soldfor .soldfor-text {font-weight: 700;font-size: 18px;color: #222;text-transform: uppercase;}
+.following .scroll-body .auction-result .current-auction .detail .c_bot .soldfor .soldfor-text {font-weight: 600;font-size: 18px;color: #222;text-transform: uppercase;}
 .following .scroll-body .auction-result .current-auction .detail .c_bot .soldfor {text-align: center;margin-top: 20px;height: 100px;background-color: #f7f6f4;padding: 16px 0 0 0;}
 .following .scroll-body .auction-result .current-auction .detail .c_bot .soldfor .hammer {color: #222;font-weight:400;font-size: 12px;letter-spacing:0;text-transform: lowercase;}
 .following .scroll-body .auction-result .current-auction .detail .c_bot .soldfor .currency {position:relative;display:inline-block;color:#fff;font-size: 26px;font-weight: 600;margin: 4px 0 6px 0;padding: 0 20px 0 4px;letter-spacing: -1px;}

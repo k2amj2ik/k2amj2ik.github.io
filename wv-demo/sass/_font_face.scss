@@ -52,15 +52,15 @@
 //  url('../fonts/Lato-Italic.ttf') format('truetype'),
 //  url('../fonts/Lato-Italic.woff') format('woff');
 //}
-// Lato semibold 600 normal
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 600;
-  src: local('Lato-Semibold'),
-  //url('../fonts/Lato-Semibold.ttf') format('truetype'),
-  url('../fonts/Lato-Semibold.woff') format('woff');
-}
+//// Lato semibold 600 normal
+//@font-face {
+//  font-family: 'Lato';
+//  font-style: normal;
+//  font-weight: 600;
+//  src: local('Lato-Semibold'),
+//  //url('../fonts/Lato-Semibold.ttf') format('truetype'),
+//  url('../fonts/Lato-Semibold.woff') format('woff');
+//}
 //// Lato semibold 600 italic
 //@font-face {
 //  font-family: 'Lato';
@@ -70,20 +70,20 @@
 //  url('../fonts/Lato-SemiboldItalic.ttf') format('truetype'),
 //  url('../fonts/Lato-BoldItalic.woff') format('woff');
 //}
-// Lato bold 700 normal
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Lato-Bold'),
-  //url('../fonts/Lato-Bold.ttf') format('truetype'),
-  url('../fonts/Lato-Bold.woff') format('woff');
-}
+//// Lato bold 700 normal
+//@font-face {
+//  font-family: 'Lato';
+//  font-style: normal;
+//  font-weight: 600;
+//  src: local('Lato-Bold'),
+//  //url('../fonts/Lato-Bold.ttf') format('truetype'),
+//  url('../fonts/Lato-Bold.woff') format('woff');
+//}
 //// Lato bold 700 italic
 //@font-face {
 //  font-family: 'Lato';
 //  font-style: italic;
-//  font-weight: 700;
+//  font-weight: 600;
 //  src: local('Lato-BoldItalic'),
 //  url('../fonts/Lato-BoldItalic.ttf') format('truetype'),
 //  url('../fonts/Lato-BoldItalic.woff') format('woff');
@@ -106,15 +106,15 @@
 //  url('../fonts/Lato-BlackItalic.ttf') format('truetype'),
 //  url('../fonts/Lato-BlackItalic.woff') format('woff');
 //}
-// Lato heavy 900 normal
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 900;
-  src: local('Lato-Heavy'),
-  //url('../fonts/Lato-Heavy.ttf') format('truetype'),
-  url('../fonts/Lato-Heavy.woff') format('woff');
-}
+//// Lato heavy 900 normal
+//@font-face {
+//  font-family: 'Lato';
+//  font-style: normal;
+//  font-weight: 900;
+//  src: local('Lato-Heavy'),
+//  //url('../fonts/Lato-Heavy.ttf') format('truetype'),
+//  url('../fonts/Lato-Heavy.woff') format('woff');
+//}
 //// Lato heavy 900 italic
 //@font-face {
 //  font-family: 'Lato';
@@ -143,32 +143,32 @@
 //  url('../fonts/PTF56F.woff') format('woff'),
 //}
 // PT Serif bold 700 normal
-@font-face {
-  font-family: 'PT Serif';
-  font-style: normal;
-  font-weight: 700;
-  src: local('PTF75F'),
-  //url('../fonts/PTF75F.ttf') format('truetype'),
-  url('../fonts/PTF75F.woff') format('woff'),
-}
+//@font-face {
+//  font-family: 'PT Serif';
+//  font-style: normal;
+//  font-weight: 600;
+//  src: local('PTF75F'),
+//  //url('../fonts/PTF75F.ttf') format('truetype'),
+//  url('../fonts/PTF75F.woff') format('woff'),
+//}
 //// PT Serif bold 700 italic
 //@font-face {
 //  font-family: 'PT Serif';
 //  font-style: italic;
-//  font-weight: 700;
+//  font-weight: 600;
 //  src: local('PTF76F'),
 //  url('../fonts/PTF76F.ttf') format('truetype'),
 //  url('../fonts/PTF76F.woff') format('woff'),
 //}
-// Open Sans light 300 normal
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 300;
-  src: local('OpenSans-Light'),
-  //url('../fonts/OpenSans-Light.ttf') format('truetype'),
-  url('../fonts/OpenSans-Light.woff') format('woff'),
-}
+//// Open Sans light 300 normal
+//@font-face {
+//  font-family: 'Open Sans';
+//  font-style: normal;
+//  font-weight: 300;
+//  src: local('OpenSans-Light'),
+//  //url('../fonts/OpenSans-Light.ttf') format('truetype'),
+//  url('../fonts/OpenSans-Light.woff') format('woff'),
+//}
 //// Open Sans light 300 italic
 //@font-face {
 //  font-family: 'Open Sans';
@@ -196,15 +196,15 @@
 //  url('../fonts/OpenSans-Italic.ttf') format('truetype'),
 //  url('../fonts/OpenSans-Italic.woff') format('woff'),
 //}
-// Open Sans semibold 600 normal
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 600;
-  src: local('OpenSans-Semibold'),
-  //url('../fonts/OpenSans-Semibold.ttf') format('truetype'),
-  url('../fonts/OpenSans-Semibold.woff') format('woff'),
-}
+//// Open Sans semibold 600 normal
+//@font-face {
+//  font-family: 'Open Sans';
+//  font-style: normal;
+//  font-weight: 600;
+//  src: local('OpenSans-Semibold'),
+//  //url('../fonts/OpenSans-Semibold.ttf') format('truetype'),
+//  url('../fonts/OpenSans-Semibold.woff') format('woff'),
+//}
 //// Open Sans semibold 600 italic
 //@font-face {
 //  font-family: 'Open Sans';
@@ -214,33 +214,33 @@
 //  url('../fonts/OpenSans-SemiboldItalic.ttf') format('truetype'),
 //  url('../fonts/OpenSans-SemiboldItalic.woff') format('woff'),
 //}
-// Open Sans bold 700 normal
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 700;
-  src: local('OpenSans-Bold'),
-  //url('../fonts/OpenSans-Bold.ttf') format('truetype'),
-  url('../fonts/OpenSans-Bold.woff') format('woff'),
-}
+//// Open Sans bold 700 normal
+//@font-face {
+//  font-family: 'Open Sans';
+//  font-style: normal;
+//  font-weight: 600;
+//  src: local('OpenSans-Bold'),
+//  //url('../fonts/OpenSans-Bold.ttf') format('truetype'),
+//  url('../fonts/OpenSans-Bold.woff') format('woff'),
+//}
 //// Open Sans bold 700 italic
 //@font-face {
 //  font-family: 'Open Sans';
 //  font-style: italic;
-//  font-weight: 700;
+//  font-weight: 600;
 //  src: local('OpenSans-BoldItalic'),
 //  url('../fonts/OpenSans-BoldItalic.ttf') format('truetype'),
 //  url('../fonts/OpenSans-BoldItalic.woff') format('woff'),
 //}
-// Open Sans extrabold 900 normal
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 900;
-  src: local('OpenSans-ExtraBold'),
-  //url('../fonts/OpenSans-ExtraBold.ttf') format('truetype'),
-  url('../fonts/OpenSans-ExtraBold.woff') format('woff'),
-}
+//// Open Sans extrabold 900 normal
+//@font-face {
+//  font-family: 'Open Sans';
+//  font-style: normal;
+//  font-weight: 900;
+//  src: local('OpenSans-ExtraBold'),
+//  //url('../fonts/OpenSans-ExtraBold.ttf') format('truetype'),
+//  url('../fonts/OpenSans-ExtraBold.woff') format('woff'),
+//}
 //// Open Sans extrabold 900 italic
 //@font-face {
 //  font-family: 'Open Sans';

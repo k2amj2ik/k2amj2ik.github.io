@@ -14,7 +14,7 @@
 
 @font-face {
     font-family: 'os';
-    font-weight: 700;
+    font-weight: 600;
     src: url('../fonts/OpenSans-Bold.woff') format('woff'), local('Open Sans Bold');
 }
 
@@ -368,7 +368,7 @@ a:hover {
 
 .list-area .exhibition-list .exhibition-container .exhibition .text .status {
     margin: 20px 0 0 126px;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 11px;
     text-indent: 2px;
 }
@@ -384,7 +384,7 @@ a:hover {
 
 .list-area .exhibition-list .exhibition-container .exhibition .text .artist {
     margin: 4px 0 0 126px;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 14px;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -536,7 +536,7 @@ a:hover {
 
 .gallery-info .gallery {
     /* border:1px solid blue; */
-    font-weight: 700;
+    font-weight: 600;
     font-size: 14px;
 }
 
@@ -724,7 +724,7 @@ a:hover {
 }
 
 .gallery-article .title {
-    font-weight: 700;
+    font-weight: 600;
     text-transform: uppercase;
     font-size: 12px;
 }
@@ -759,7 +759,7 @@ a:hover {
 }
 
 .gallery-auction .title {
-    font-weight: 700;
+    font-weight: 600;
     text-transform: uppercase;
     font-size: 12px;
 }
