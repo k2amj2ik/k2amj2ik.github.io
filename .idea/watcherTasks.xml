@@ -3,7 +3,7 @@
   <component name="ProjectTasksOptions">
     <TaskOptions isEnabled="true">
       <option name="arguments" value="--no-cache --update $FileName$:$ProjectFileDir$\auctionblue\publishing\assets\addedcss\$FileNameWithoutExtension$.css --style expanded --sourcemap=none" />
-      <option name="checkSyntaxErrors" value="true" />
+      <option name="checkSyntaxErrors" value="false" />
       <option name="description" />
       <option name="exitCodeBehavior" value="ERROR" />
       <option name="fileExtension" value="scss" />

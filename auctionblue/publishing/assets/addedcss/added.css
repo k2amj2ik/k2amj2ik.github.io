@@ -1,12 +1,22 @@
+html, body, div, ul, ol, li, table, tr, td, h1, h2, h3, h4, p, span, form, input {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .artworks .card-artwork {
   cursor: pointer;
   position: relative;
   padding: 10px 10px 10px 70px;
-  border: 1px solid #ccc;
-  box-shadow: 4px 4px 0 rgba(204, 204, 204, 0.5);
+  border: 0;
+  box-shadow: 0 0 0 0;
 }
 .artworks .card-artwork:hover {
   background-color: #fff;
+}
+.artworks .card-artwork:hover .text-bn {
+  background-color: #555;
+  color: #fff;
 }
 .artworks .card-artwork p {
   margin: 0 0 0 0;
@@ -16,34 +26,140 @@
 }
 .artworks .card-artwork .img-artwork {
   position: absolute;
-  top: 10px;
+  top: 28px;
   left: 10px;
 }
 .artworks .card-artwork .img-artwork img {
   max-width: 50px;
   max-height: 50px;
 }
+.artworks .card-artwork .text-bn {
+  margin-top: -10px !important;
+  margin-left: -70px;
+  margin-right: -10px;
+  padding: 1px 10px 2px 10px;
+  background-color: #ddd;
+}
 .artworks .card-artwork .text-artist {
   font-size: 100%;
   font-weight: bold;
-  margin: 0 0 2px 0;
+  margin: 6px 0 0 0 !important;
 }
 .artworks .card-artwork .text-worktitle {
   font-size: 120%;
   font-style: italic;
-  margin: 0 0 10px 0;
+  color: #1B73BF;
+  margin: 6px 0 0 0 !important;
 }
 .artworks .card-artwork .text-edition, .artworks .card-artwork .text-medium, .artworks .card-artwork .text-size {
   color: #777;
   display: inline-block;
-  padding: 0 10px 0 0;
-  border-right: 1px solid #ccc;
+  margin: 10px 0 0 0 !important;
+  padding: 0 6px 0 0;
+  border-right: 0;
 }
-.artworks .text-condition {
-  padding: 10px 0 0 0;
+.artworks .card-artwork .text-size {
+  border-right: 0;
 }
-.artworks .text-condition::before {
-  content: 'condition';
-  padding: 2px 4px 2px 4px;
-  background-color: #eee;
+.artworks .card-artwork .text-condition {
+  margin: 6px 0 0 0 !important;
+  color: #777;
+}
+
+.card-in {
+  cursor: pointer;
+  padding: 10px 10px 10px 10px;
+  border: 0;
+  box-shadow: 0 0 0 0;
+}
+.card-in:hover {
+  background-color: #fff;
+}
+.card-in:hover .text-type {
+  background-color: #555;
+  color: #fff;
+}
+.card-in:hover .text-days {
+  color: #fff;
+}
+.card-in .text-type {
+  margin-top: -10px !important;
+  margin-left: -10px;
+  margin-right: -10px;
+  padding: 1px 10px 2px 10px;
+  background-color: #ddd;
+}
+.card-in .text-days {
+  text-align: right;
+  margin-top: -21px !important;
+  height: 20px;
+  margin-bottom: 10px;
+}
+
+.card-auction {
+  cursor: pointer;
+  padding: 10px 10px 10px 10px;
+  border: 0;
+  box-shadow: 0 0 0 0;
+}
+.card-auction:hover {
+  background-color: #fff;
+}
+.card-auction:hover .text-pay {
+  background-color: #555;
+  color: #fff;
+}
+.card-auction:hover .text-pay .bad {
+  color: #ff7090;
+}
+.card-auction:hover .text-pay .good {
+  color: #36e6ff;
+}
+.card-auction:hover .text-soldprice {
+  color: #fff;
+}
+.card-auction .text-pay {
+  margin-top: -10px !important;
+  margin-left: -10px;
+  margin-right: -10px;
+  padding: 1px 10px 2px 10px;
+  background-color: #ddd;
+}
+.card-auction .text-pay .bad {
+  color: #ED1C24;
+}
+.card-auction .text-pay .good {
+  color: #1B73BF;
+}
+.card-auction .text-soldprice {
+  text-align: right;
+  margin-top: -21px !important;
+  height: 20px;
+  margin-bottom: 10px;
+}
+
+.card-out {
+  cursor: pointer;
+  padding: 10px 10px 10px 10px;
+  border: 0;
+  box-shadow: 0 0 0 0;
+}
+.card-out:hover {
+  background-color: #fff;
+}
+.card-out:hover .text-out-type {
+  background-color: #555;
+  color: #fff;
+}
+.card-out .text-out-type {
+  margin-top: -10px !important;
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-bottom: 10px;
+  padding: 1px 10px 2px 10px;
+  background-color: #ddd;
+}
+
+.text-current-location {
+  margin-top: 10px !important;
 }

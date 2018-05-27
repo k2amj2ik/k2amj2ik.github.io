@@ -331,19 +331,35 @@
                     <div class="portlet light bordered">
                         <div class="portlet-body">
                             <div id="sample_1_wrapper" class="dataTables_wrapper no-footer">
+                                <!--<div class="tabbable tabbable-tabdrop">-->
+                                    <!--<ul class="nav nav-tabs">-->
+                                        <!--<li class="active">-->
+                                            <!--<a href="#tab1" data-toggle="tab">Section 1</a>-->
+                                        <!--</li>-->
+                                        <!--<li>-->
+                                            <!--<a href="#tab2" data-toggle="tab">Section 2</a>-->
+                                        <!--</li>-->
+                                        <!--<li>-->
+                                            <!--<a href="#tab3" data-toggle="tab">Section 3</a>-->
+                                        <!--</li><li>-->
+                                            <!--<a href="#tab4" data-toggle="tab">Section 4</a>-->
+                                        <!--</li>-->
+                                    <!--</ul>-->
+                                <!--</div>-->
                                 <div class="table-scrollable">
                                     <table class="table table-striped table-bordered table-hover table-header-fixed dataTable no-footer" id="sample_1" role="grid" aria-describedby="sample_1_info">
                                         <thead class="small">
                                         <tr class="lot-header-type1">
                                             <th><input type="checkbox"></th>
                                             <th>작품</th>
-                                            <th>입고</th>
-                                            <th>경매</th>
-                                            <th>출고</th>
-                                            <th>보유상태</th>
+                                            <th>최초 입고</th>
+                                            <th>경매/판매</th>
+                                            <th>최근 출고</th>
+                                            <th>상태/위치</th>
                                         </tr>
                                         </thead>
                                         <tbody class="small">
+                                        <!-- 입고(위탁) - 경매전(미출) - 출고전(출고이력없음) -->
                                         <tr>
                                             <td>
                                                 <input type="checkbox">
@@ -354,7 +370,189 @@
                                                         <img alt="" src="../assets/global/img/portfolio/600x600/12.jpg">
                                                     </p>
                                                     <p class="text-bn">
-                                                        <a href="#" data-toggle="modal" data-target="#modalEditVendor"><strong>10589</strong></a>
+                                                        10589
+                                                    </p>
+                                                    <p class="text-artist">
+                                                        야요이 쿠사마 / Yayoi Kusama
+                                                    </p>
+                                                    <p class="text-worktitle">
+                                                        Lithograph(ed.95/120)
+                                                    </p>
+                                                    <p class="text-edition">
+                                                        95/120
+                                                    </p>
+                                                    <p class="text-medium">
+                                                        석판화 / Lithograph
+                                                    </p>
+                                                    <p class="text-size">
+                                                        56*76
+                                                    </p>
+                                                    <p class="text-condition">
+                                                        *갤러리 보증서 있음/작품관리팀 보관.
+                                                    </p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="card-in">
+                                                    <p class="text-type">
+                                                        위탁
+                                                    </p>
+                                                    <p class="text-days">
+                                                        <!--<i class="fa fa-clock-o"></i>-->
+                                                        234일 경과
+                                                    </p>
+                                                    <p class="text-consign-date">
+                                                        <i class="fa fa-calendar"></i>
+                                                        2018/05/06
+                                                    </p>
+                                                    <p class="text-usage">
+                                                        용도 - 블랙랏
+                                                    </p>
+
+                                                    <p class="text-warehouse">
+                                                        창고 - 언타이틀
+                                                    </p>
+                                                    <p class="text-insurance">
+                                                        보험 - 가입
+                                                    </p>
+                                                    <p class="text-consign-user">
+                                                        <span class="badge badge-default">위탁자</span>
+                                                        신미영(test_id_by_lia)
+                                                    </p>
+                                                    <p class="text-consign-manager">
+                                                        <span class="badge badge-default">담당자</span>
+                                                        이지희(user_id)
+                                                    </p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="card-auction">
+                                                    <p class="text-pay">
+                                                        경매미출
+                                                    </p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="card-out">
+                                                    <p class="text-out-type">
+                                                        출고이력없음
+                                                    </p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p class="text-current">
+                                                    <span class="label label-sm label-success">입고</span>
+                                                </p>
+                                                <p class="text-current-location">
+                                                    언타이틀
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <!-- 입고(위탁) - 경매전(미출) - 출고완료(미출출고) -->
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox">
+                                            </td>
+                                            <td>
+                                                <div class="card-artwork" data-toggle="modal" data-target="#modalEditVendor">
+                                                    <p class="img-artwork">
+                                                        <img alt="" src="../assets/global/img/portfolio/600x600/12.jpg">
+                                                    </p>
+                                                    <p class="text-bn">
+                                                        10589
+                                                    </p>
+                                                    <p class="text-artist">
+                                                        야요이 쿠사마 / Yayoi Kusama
+                                                    </p>
+                                                    <p class="text-worktitle">
+                                                        Lithograph(ed.95/120)
+                                                    </p>
+                                                    <p class="text-edition">
+                                                        95/120
+                                                    </p>
+                                                    <p class="text-medium">
+                                                        석판화 / Lithograph
+                                                    </p>
+                                                    <p class="text-size">
+                                                        56*76
+                                                    </p>
+                                                    <p class="text-condition">
+                                                        *갤러리 보증서 있음/작품관리팀 보관.
+                                                    </p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="card-in">
+                                                    <p class="text-type">
+                                                        위탁
+                                                    </p>
+                                                    <p class="text-days">
+                                                        <!--<i class="fa fa-clock-o"></i>-->
+                                                        234일 경과
+                                                    </p>
+                                                    <p class="text-consign-date">
+                                                        <i class="fa fa-calendar"></i>
+                                                        2018/05/06
+                                                    </p>
+                                                    <p class="text-usage">
+                                                        용도 - 블랙랏
+                                                    </p>
+
+                                                    <p class="text-warehouse">
+                                                        창고 - 언타이틀
+                                                    </p>
+                                                    <p class="text-insurance">
+                                                        보험 - 가입
+                                                    </p>
+                                                    <p class="text-consign-user">
+                                                        <span class="badge badge-default">위탁자</span>
+                                                        신미영(test_id_by_lia)
+                                                    </p>
+                                                    <p class="text-consign-manager">
+                                                        <span class="badge badge-default">담당자</span>
+                                                        이지희(user_id)
+                                                    </p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="card-auction">
+                                                    <p class="text-pay">
+                                                        경매미출
+                                                    </p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="card-out">
+                                                    <p class="text-out-type">
+                                                        미출출고
+                                                    </p>
+                                                    <p class="text-out-date">
+                                                        <i class="fa fa-calendar"></i>
+                                                        2018/05/09
+                                                    </p>
+                                                    <p class="text-delivery-way">
+                                                        직원배송
+                                                    </p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p class="text-current">
+                                                    <span class="label label-sm label-danger">출고</span>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <!-- 입고(위탁) - 경매준비(출품) - 일반출고(전시) -->
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox">
+                                            </td>
+                                            <td>
+                                                <div class="card-artwork" data-toggle="modal" data-target="#modalEditVendor">
+                                                    <p class="img-artwork">
+                                                        <img alt="" src="../assets/global/img/portfolio/600x600/12.jpg">
+                                                    </p>
+                                                    <p class="text-bn">
+                                                        10589
                                                     </p>
                                                     <p class="text-artist">
                                                         야요이 쿠사마 / Yayoi Kusama
@@ -375,44 +573,752 @@
                                                         *갤러리 보증서 있음/작품관리팀 보관
                                                     </p>
                                                 </div>
-
                                             </td>
                                             <td>
-                                                <div class="in">
+                                                <div class="card-in">
+                                                    <p class="text-type">
+                                                        위탁
+                                                    </p>
+                                                    <p class="text-days">
+                                                        <!--<i class="fa fa-clock-o"></i>-->
+                                                        234일 경과
+                                                    </p>
+                                                    <p class="text-consign-date">
+                                                        <i class="fa fa-calendar"></i>
+                                                        2018/05/06
+                                                    </p>
+                                                    <p class="text-usage">
+                                                        용도 - 블랙랏
+                                                    </p>
+
+                                                    <p class="text-warehouse">
+                                                        창고 - 언타이틀
+                                                    </p>
+                                                    <p class="text-insurance">
+                                                        보험 - 가입
+                                                    </p>
                                                     <p class="text-consign-user">
                                                         <span class="badge badge-default">위탁자</span>
                                                         신미영(test_id_by_lia)
                                                     </p>
                                                     <p class="text-consign-manager">
                                                         <span class="badge badge-default">담당자</span>
-                                                        이지희</p>
-                                                    <p class="text-type">
-                                                        <span class="badge badge-default">보관유형</span>
-                                                        위탁
+                                                        이지희(user_id)
                                                     </p>
-                                                    <p class="text-usage">
-                                                        <span class="badge badge-default">용도</span>
-                                                        블랙랏
-                                                    </p>
-
-                                                    <p class="text-warehouse">언타이틀</p>
-                                                    <p class="text-insurance">가입</p>
-                                                    <p class="text-consign-date">2018/05/06</p>
                                                 </div>
                                             </td>
                                             <td>
-                                                <span class="label label-sm label-success">입고</span>
+                                                <div class="card-auction">
+                                                    <p class="text-pay">
+                                                        출품
+                                                    </p>
+                                                    <p class="text-soldprice">
+                                                    </p>
+                                                    <p class="text-saledate">
+                                                        <i class="fa fa-calendar"></i>
+                                                        2018/05/09
+                                                    </p>
+                                                    <p class="text-auction">
+                                                        <a href="#">30TH BLUE NOW ART SUPERMARKET-3</a>
+                                                    </p>
+                                                    <p class="text-lotnumber">
+                                                        LOT #101
+                                                    </p>
+                                                    <p class="text-auction-manager">
+                                                        <span class="badge badge-default">플래너</span>
+                                                        이지희(user_id)</p>
+                                                </div>
                                             </td>
                                             <td>
-                                                <span class="label label-sm label-success">입고</span>
+                                                <div class="card-out">
+                                                    <p class="text-out-type">
+                                                        전시출고
+                                                    </p>
+                                                    <p class="text-out-date">
+                                                        <i class="fa fa-calendar"></i>
+                                                        2018/05/09
+                                                    </p>
+                                                    <p class="text-delivery-way">
+                                                        직원배송
+                                                    </p>
+                                                    <p class="text-out-warehouse">
+                                                        목적지 - 언타이틀
+                                                    </p>
+                                                </div>
                                             </td>
                                             <td>
-                                                <span class="label label-sm label-success">입고</span>
-                                                <span class="label label-sm label-default">임시</span>
-                                                <span class="label label-sm label-default">이동</span>
-                                                <span class="label label-sm label-warning">전시</span>
-                                                <span class="label label-sm label-danger">출고</span>
-                                                <span class="label label-sm label-success">입고</span>
+                                                <p class="text-current">
+                                                    <span class="label label-sm label-warning">재입고 예정</span>
+                                                </p>
+                                                <p class="text-current-location">
+                                                    언타이틀
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <!-- 입고(위탁) - 경매종료(유찰) - 유찰출고 -->
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox">
+                                            </td>
+                                            <td>
+                                                <div class="card-artwork" data-toggle="modal" data-target="#modalEditVendor">
+                                                    <p class="img-artwork">
+                                                        <img alt="" src="../assets/global/img/portfolio/600x600/12.jpg">
+                                                    </p>
+                                                    <p class="text-bn">
+                                                        10589
+                                                    </p>
+                                                    <p class="text-artist">
+                                                        야요이 쿠사마 / Yayoi Kusama
+                                                    </p>
+                                                    <p class="text-worktitle">
+                                                        Lithograph(ed.95/120)
+                                                    </p>
+                                                    <p class="text-edition">
+                                                        95/120
+                                                    </p>
+                                                    <p class="text-medium">
+                                                        석판화 / Lithograph
+                                                    </p>
+                                                    <p class="text-size">
+                                                        56*76
+                                                    </p>
+                                                    <p class="text-condition">
+                                                        *갤러리 보증서 있음/작품관리팀 보관
+                                                    </p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="card-in">
+                                                    <p class="text-type">
+                                                        위탁
+                                                    </p>
+                                                    <p class="text-days">
+                                                        <!--<i class="fa fa-clock-o"></i>-->
+                                                        234일 경과
+                                                    </p>
+                                                    <p class="text-consign-date">
+                                                        <i class="fa fa-calendar"></i>
+                                                        2018/05/06
+                                                    </p>
+                                                    <p class="text-usage">
+                                                        용도 - 블랙랏
+                                                    </p>
+
+                                                    <p class="text-warehouse">
+                                                        창고 - 언타이틀
+                                                    </p>
+                                                    <p class="text-insurance">
+                                                        보험 - 가입
+                                                    </p>
+                                                    <p class="text-consign-user">
+                                                        <span class="badge badge-default">위탁자</span>
+                                                        신미영(test_id_by_lia)
+                                                    </p>
+                                                    <p class="text-consign-manager">
+                                                        <span class="badge badge-default">담당자</span>
+                                                        이지희(user_id)
+                                                    </p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="card-auction">
+                                                    <p class="text-pay">
+                                                        유찰
+                                                    </p>
+                                                    <p class="text-soldprice">
+                                                    </p>
+                                                    <p class="text-saledate">
+                                                        <i class="fa fa-calendar"></i>
+                                                        2018/05/09
+                                                    </p>
+                                                    <p class="text-auction">
+                                                        <a href="#">30TH BLUE NOW ART SUPERMARKET-3</a>
+                                                    </p>
+                                                    <p class="text-lotnumber">
+                                                        LOT #101
+                                                    </p>
+                                                    <p class="text-auction-manager">
+                                                        <span class="badge badge-default">플래너</span>
+                                                        이지희(user_id)
+                                                    </p>
+                                                    <p class="text-winner-manager">
+                                                        <span class="badge badge-default">담당자</span>
+                                                        조효원(user_id2)
+                                                    </p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="card-out">
+                                                    <p class="text-out-type">
+                                                        유찰출고
+                                                    </p>
+                                                    <p class="text-out-date">
+                                                        <i class="fa fa-calendar"></i>
+                                                        2018/05/09
+                                                    </p>
+                                                    <p class="text-delivery-way">
+                                                        일반배송
+                                                    </p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p class="text-current">
+                                                    <span class="label label-sm label-danger">출고</span>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <!-- 입고(위탁) - 경매종료(낙찰-입금전) - 이동출고(재입고 대상) -->
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox">
+                                            </td>
+                                            <td>
+                                                <div class="card-artwork" data-toggle="modal" data-target="#modalEditVendor">
+                                                    <p class="img-artwork">
+                                                        <img alt="" src="../assets/global/img/portfolio/600x600/12.jpg">
+                                                    </p>
+                                                    <p class="text-bn">
+                                                        10589
+                                                    </p>
+                                                    <p class="text-artist">
+                                                        야요이 쿠사마 / Yayoi Kusama
+                                                    </p>
+                                                    <p class="text-worktitle">
+                                                        Lithograph(ed.95/120)
+                                                    </p>
+                                                    <p class="text-edition">
+                                                        95/120
+                                                    </p>
+                                                    <p class="text-medium">
+                                                        석판화 / Lithograph
+                                                    </p>
+                                                    <p class="text-size">
+                                                        56*76
+                                                    </p>
+                                                    <p class="text-condition">
+                                                        *갤러리 보증서 있음/작품관리팀 보관
+                                                    </p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="card-in">
+                                                    <p class="text-type">
+                                                        위탁
+                                                    </p>
+                                                    <p class="text-days">
+                                                        <!--<i class="fa fa-clock-o"></i>-->
+                                                        234일 경과
+                                                    </p>
+                                                    <p class="text-consign-date">
+                                                        <i class="fa fa-calendar"></i>
+                                                        2018/05/06
+                                                    </p>
+                                                    <p class="text-usage">
+                                                        용도 - 블랙랏
+                                                    </p>
+
+                                                    <p class="text-warehouse">
+                                                        창고 - 언타이틀
+                                                    </p>
+                                                    <p class="text-insurance">
+                                                        보험 - 가입
+                                                    </p>
+                                                    <p class="text-consign-user">
+                                                        <span class="badge badge-default">위탁자</span>
+                                                        신미영(test_id_by_lia)
+                                                    </p>
+                                                    <p class="text-consign-manager">
+                                                        <span class="badge badge-default">담당자</span>
+                                                        이지희(user_id)
+                                                    </p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="card-auction">
+                                                    <p class="text-pay">
+                                                        <span class="badge badge-danger">낙찰</span>
+                                                        <span class="bad">미입금</span>
+                                                    </p>
+                                                    <p class="text-soldprice">
+                                                        <i class="fa fa-won"></i>
+                                                        16,000,000
+                                                    </p>
+                                                    <p class="text-saledate">
+                                                        <i class="fa fa-calendar"></i>
+                                                        2018/05/09
+                                                    </p>
+                                                    <p class="text-auction">
+                                                        <a href="#">30TH BLUE NOW ART SUPERMARKET-3</a>
+                                                    </p>
+                                                    <p class="text-lotnumber">
+                                                        LOT #101
+                                                    </p>
+                                                    <p class="text-auction-manager">
+                                                        <span class="badge badge-default">플래너</span>
+                                                        이지희(user_id)
+                                                    </p>
+                                                    <p class="text-winner">
+                                                        <span class="badge badge-default">낙찰자</span>
+                                                        신미영(user_id3)
+                                                    </p>
+                                                    <p class="text-winner-manager">
+                                                        <span class="badge badge-default">담당자</span>
+                                                        조효원(user_id2)
+                                                    </p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="card-out">
+                                                    <p class="text-out-type">
+                                                        이동출고
+                                                    </p>
+                                                    <p class="text-out-date">
+                                                        <i class="fa fa-calendar"></i>
+                                                        2018/05/09
+                                                    </p>
+                                                    <p class="text-delivery-way">
+                                                        직접수령
+                                                    </p>
+                                                    <p class="text-out-warehouse">
+                                                        목적지 - 언타이틀
+                                                    </p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p class="text-current">
+                                                    <span class="label label-sm label-warning">재입고 예정</span>
+                                                </p>
+                                                <p class="text-current-location">
+                                                    언타이틀
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <!-- 입고(위탁) - 경매종료(낙찰-입금완료) - 전시출고(재입고 대상) -->
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox">
+                                            </td>
+                                            <td>
+                                                <div class="card-artwork" data-toggle="modal" data-target="#modalEditVendor">
+                                                    <p class="img-artwork">
+                                                        <img alt="" src="../assets/global/img/portfolio/600x600/12.jpg">
+                                                    </p>
+                                                    <p class="text-bn">
+                                                        10589
+                                                    </p>
+                                                    <p class="text-artist">
+                                                        야요이 쿠사마 / Yayoi Kusama
+                                                    </p>
+                                                    <p class="text-worktitle">
+                                                        Lithograph(ed.95/120)
+                                                    </p>
+                                                    <p class="text-edition">
+                                                        95/120
+                                                    </p>
+                                                    <p class="text-medium">
+                                                        석판화 / Lithograph
+                                                    </p>
+                                                    <p class="text-size">
+                                                        56*76
+                                                    </p>
+                                                    <p class="text-condition">
+                                                        *갤러리 보증서 있음/작품관리팀 보관
+                                                    </p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="card-in">
+                                                    <p class="text-type">
+                                                        위탁
+                                                    </p>
+                                                    <p class="text-days">
+                                                        <!--<i class="fa fa-clock-o"></i>-->
+                                                        234일 경과
+                                                    </p>
+                                                    <p class="text-consign-date">
+                                                        <i class="fa fa-calendar"></i>
+                                                        2018/05/06
+                                                    </p>
+                                                    <p class="text-usage">
+                                                        용도 - 블랙랏
+                                                    </p>
+
+                                                    <p class="text-warehouse">
+                                                        창고 - 언타이틀
+                                                    </p>
+                                                    <p class="text-insurance">
+                                                        보험 - 가입
+                                                    </p>
+                                                    <p class="text-consign-user">
+                                                        <span class="badge badge-default">위탁자</span>
+                                                        신미영(test_id_by_lia)
+                                                    </p>
+                                                    <p class="text-consign-manager">
+                                                        <span class="badge badge-default">담당자</span>
+                                                        이지희(user_id)
+                                                    </p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="card-auction">
+                                                    <p class="text-pay">
+                                                        <span class="badge badge-primary">낙찰</span>
+                                                        <span class="good">입금완료</span>
+                                                    </p>
+                                                    <p class="text-soldprice">
+                                                        <i class="fa fa-won"></i>
+                                                        16,000,000
+                                                    </p>
+                                                    <p class="text-saledate">
+                                                        <i class="fa fa-calendar"></i>
+                                                        2018/05/09
+                                                    </p>
+                                                    <p class="text-auction">
+                                                        <a href="#">30TH BLUE NOW ART SUPERMARKET-3</a>
+                                                    </p>
+                                                    <p class="text-lotnumber">
+                                                        LOT #101
+                                                    </p>
+                                                    <p class="text-auction-manager">
+                                                        <span class="badge badge-default">플래너</span>
+                                                        이지희(manager_id)
+                                                    </p>
+                                                    <p class="text-winner">
+                                                        <span class="badge badge-default">낙찰자</span>
+                                                        신미영(user_id3)
+                                                    </p>
+                                                    <p class="text-winner-manager">
+                                                        <span class="badge badge-default">담당자</span>
+                                                        조효원(manager_id2)
+                                                    </p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="card-out">
+                                                    <p class="text-out-type">
+                                                        전시출고
+                                                    </p>
+                                                    <p class="text-out-date">
+                                                        <i class="fa fa-calendar"></i>
+                                                        2018/05/09
+                                                    </p>
+                                                    <p class="text-delivery-way">
+                                                        직원배송
+                                                    </p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p class="text-current">
+                                                    <span class="label label-sm label-warning">재입고 예정</span>
+                                                </p>
+                                                <p class="text-current-location">
+                                                    언타이틀
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <!-- 입고(위탁) - 경매종료(낙찰-입금완료) - 출고완료(매출출고) -->
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox">
+                                            </td>
+                                            <td>
+                                                <div class="card-artwork" data-toggle="modal" data-target="#modalEditVendor">
+                                                    <p class="img-artwork">
+                                                        <img alt="" src="../assets/global/img/portfolio/600x600/12.jpg">
+                                                    </p>
+                                                    <p class="text-bn">
+                                                        10589
+                                                    </p>
+                                                    <p class="text-artist">
+                                                        야요이 쿠사마 / Yayoi Kusama
+                                                    </p>
+                                                    <p class="text-worktitle">
+                                                        Lithograph(ed.95/120)
+                                                    </p>
+                                                    <p class="text-edition">
+                                                        95/120
+                                                    </p>
+                                                    <p class="text-medium">
+                                                        석판화 / Lithograph
+                                                    </p>
+                                                    <p class="text-size">
+                                                        56*76
+                                                    </p>
+                                                    <p class="text-condition">
+                                                        *갤러리 보증서 있음/작품관리팀 보관
+                                                    </p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="card-in">
+                                                    <p class="text-type">
+                                                        위탁
+                                                    </p>
+                                                    <p class="text-days">
+                                                        <!--<i class="fa fa-clock-o"></i>-->
+                                                        234일 경과
+                                                    </p>
+                                                    <p class="text-consign-date">
+                                                        <i class="fa fa-calendar"></i>
+                                                        2018/05/06
+                                                    </p>
+                                                    <p class="text-usage">
+                                                        용도 - 블랙랏
+                                                    </p>
+
+                                                    <p class="text-warehouse">
+                                                        창고 - 언타이틀
+                                                    </p>
+                                                    <p class="text-insurance">
+                                                        보험 - 가입
+                                                    </p>
+                                                    <p class="text-consign-user">
+                                                        <span class="badge badge-default">위탁자</span>
+                                                        신미영(test_id_by_lia)
+                                                    </p>
+                                                    <p class="text-consign-manager">
+                                                        <span class="badge badge-default">담당자</span>
+                                                        이지희(user_id)
+                                                    </p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="card-auction">
+                                                    <p class="text-pay">
+                                                        <span class="badge badge-primary">낙찰</span>
+                                                        <span class="good">입금완료</span>
+                                                    </p>
+                                                    <p class="text-soldprice">
+                                                        <i class="fa fa-won"></i>
+                                                        16,000,000
+                                                    </p>
+                                                    <p class="text-saledate">
+                                                        <i class="fa fa-calendar"></i>
+                                                        2018/05/09
+                                                    </p>
+                                                    <p class="text-auction">
+                                                        <a href="#">30TH BLUE NOW ART SUPERMARKET-3</a>
+                                                    </p>
+                                                    <p class="text-lotnumber">
+                                                        LOT #101
+                                                    </p>
+                                                    <p class="text-auction-manager">
+                                                        <span class="badge badge-default">플래너</span>
+                                                        이지희(manager_id)
+                                                    </p>
+                                                    <p class="text-winner">
+                                                        <span class="badge badge-default">낙찰자</span>
+                                                        신미영(user_id3)
+                                                    </p>
+                                                    <p class="text-winner-manager">
+                                                        <span class="badge badge-default">담당자</span>
+                                                        조효원(manager_id2)
+                                                    </p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="card-out">
+                                                    <p class="text-out-type">
+                                                        매출출고
+                                                    </p>
+                                                    <p class="text-delivery-way">
+                                                        직원배송
+                                                    </p>
+                                                    <p class="text-out-date">
+                                                        <i class="fa fa-calendar"></i>
+                                                        2018/05/09
+                                                    </p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p class="text-current">
+                                                    <span class="label label-sm label-danger">출고</span>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <!-- 입고(담보) - 경매전 - 출고완료(담보해지) -->
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox">
+                                            </td>
+                                            <td>
+                                                <div class="card-artwork" data-toggle="modal" data-target="#modalEditVendor">
+                                                    <p class="img-artwork">
+                                                        <img alt="" src="../assets/global/img/portfolio/600x600/12.jpg">
+                                                    </p>
+                                                    <p class="text-bn">
+                                                        10589
+                                                    </p>
+                                                    <p class="text-artist">
+                                                        야요이 쿠사마 / Yayoi Kusama
+                                                    </p>
+                                                    <p class="text-worktitle">
+                                                        Lithograph(ed.95/120)
+                                                    </p>
+                                                    <p class="text-edition">
+                                                        95/120
+                                                    </p>
+                                                    <p class="text-medium">
+                                                        석판화 / Lithograph
+                                                    </p>
+                                                    <p class="text-size">
+                                                        56*76
+                                                    </p>
+                                                    <p class="text-condition">
+                                                        *갤러리 보증서 있음/작품관리팀 보관
+                                                    </p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="card-in">
+                                                    <p class="text-type">
+                                                        담보
+                                                    </p>
+                                                    <p class="text-days">
+                                                        <!--<i class="fa fa-clock-o"></i>-->
+                                                        234일 경과
+                                                    </p>
+                                                    <p class="text-consign-date">
+                                                        <i class="fa fa-calendar"></i>
+                                                        2018/05/06
+                                                    </p>
+                                                    <p class="text-usage">
+                                                        용도 - 담보
+                                                    </p>
+                                                    <p class="text-warehouse">
+                                                        창고 - 언타이틀
+                                                    </p>
+                                                    <p class="text-insurance">
+                                                        보험 - 가입
+                                                    </p>
+                                                    <p class="text-consign-user">
+                                                        <span class="badge badge-default">위탁자</span>
+                                                        신미영(test_id_by_lia)
+                                                    </p>
+                                                    <p class="text-consign-manager">
+                                                        <span class="badge badge-default">담당자</span>
+                                                        이지희(user_id)
+                                                    </p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="card-auction">
+                                                    <p class="text-pay">
+                                                        경매미출
+                                                    </p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="card-out">
+                                                    <p class="text-out-type">
+                                                        담보해지출고
+                                                    </p>
+                                                    <p class="text-delivery-way">
+                                                        직원배송
+                                                    </p>
+                                                    <p class="text-out-date">
+                                                        <i class="fa fa-calendar"></i>
+                                                        2018/05/09
+                                                    </p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p class="text-current">
+                                                    <span class="label label-sm label-danger">출고</span>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <!-- 입고(보관) - 경매전 - 출고완료(보관만기) -->
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox">
+                                            </td>
+                                            <td>
+                                                <div class="card-artwork" data-toggle="modal" data-target="#modalEditVendor">
+                                                    <p class="img-artwork">
+                                                        <img alt="" src="../assets/global/img/portfolio/600x600/12.jpg">
+                                                    </p>
+                                                    <p class="text-bn">
+                                                        10589
+                                                    </p>
+                                                    <p class="text-artist">
+                                                        야요이 쿠사마 / Yayoi Kusama
+                                                    </p>
+                                                    <p class="text-worktitle">
+                                                        Lithograph(ed.95/120)
+                                                    </p>
+                                                    <p class="text-edition">
+                                                        95/120
+                                                    </p>
+                                                    <p class="text-medium">
+                                                        석판화 / Lithograph
+                                                    </p>
+                                                    <p class="text-size">
+                                                        56*76
+                                                    </p>
+                                                    <p class="text-condition">
+                                                        *갤러리 보증서 있음/작품관리팀 보관
+                                                    </p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="card-in">
+                                                    <p class="text-type">
+                                                        보관
+                                                    </p>
+                                                    <p class="text-days">
+                                                        <!--<i class="fa fa-clock-o"></i>-->
+                                                        234일 경과
+                                                    </p>
+                                                    <p class="text-consign-date">
+                                                        <i class="fa fa-calendar"></i>
+                                                        2018/05/06
+                                                    </p>
+                                                    <p class="text-usage">
+                                                        용도 - 보관
+                                                    </p>
+                                                    <p class="text-warehouse">
+                                                        창고 - 언타이틀
+                                                    </p>
+                                                    <p class="text-insurance">
+                                                        보험 - 가입
+                                                    </p>
+                                                    <p class="text-consign-user">
+                                                        <span class="badge badge-default">위탁자</span>
+                                                        신미영(test_id_by_lia)
+                                                    </p>
+                                                    <p class="text-consign-manager">
+                                                        <span class="badge badge-default">담당자</span>
+                                                        이지희(user_id)
+                                                    </p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="card-auction">
+                                                    <p class="text-pay">
+                                                        경매미출
+                                                    </p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="card-out">
+                                                    <p class="text-out-type">
+                                                        보관만기출고
+                                                    </p>
+                                                    <p class="text-delivery-way">
+                                                        직원배송
+                                                    </p>
+                                                    <p class="text-out-date">
+                                                        <i class="fa fa-calendar"></i>
+                                                        2018/05/09
+                                                    </p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p class="text-current">
+                                                    <span class="label label-sm label-danger">출고</span>
+                                                </p>
                                             </td>
                                         </tr>
                                         </tbody>
