@@ -1,0 +1,49 @@
+.artworks .card-artwork {
+  cursor: pointer;
+  position: relative;
+  padding: 10px 10px 10px 70px;
+  border: 1px solid #ccc;
+  box-shadow: 4px 4px 0 rgba(204, 204, 204, 0.5);
+}
+.artworks .card-artwork:hover {
+  background-color: #fff;
+}
+.artworks .card-artwork p {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  letter-spacing: -1px;
+  display: block;
+}
+.artworks .card-artwork .img-artwork {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.artworks .card-artwork .img-artwork img {
+  max-width: 50px;
+  max-height: 50px;
+}
+.artworks .card-artwork .text-artist {
+  font-size: 100%;
+  font-weight: bold;
+  margin: 0 0 2px 0;
+}
+.artworks .card-artwork .text-worktitle {
+  font-size: 120%;
+  font-style: italic;
+  margin: 0 0 10px 0;
+}
+.artworks .card-artwork .text-edition, .artworks .card-artwork .text-medium, .artworks .card-artwork .text-size {
+  color: #777;
+  display: inline-block;
+  padding: 0 10px 0 0;
+  border-right: 1px solid #ccc;
+}
+.artworks .text-condition {
+  padding: 10px 0 0 0;
+}
+.artworks .text-condition::before {
+  content: 'condition';
+  padding: 2px 4px 2px 4px;
+  background-color: #eee;
+}

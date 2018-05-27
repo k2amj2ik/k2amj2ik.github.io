@@ -1,0 +1,81 @@
+$card-artwork-image-max-width: 50px;
+$card-artwork-image-max-height: 50px;
+$card-artwork-bgcolor-hover: #fff;
+$card-artwork-padding-top: 10px;
+$card-artwork-padding-right: 10px;
+$card-artwork-padding-bottom: 10px;
+$card-artwork-padding-left: 10px;
+$font-color-fairy: #777;
+$border-default: 1px solid #ccc;
+$shadow-default: 4px 4px 0 rgba(#ccc,0.5);
+$bgcolor-fairy: #eee;
+
+
+//reest--------------------------------------------------------------------------------------
+html, body, div, ul, ol, li, table, tr, td, h1, h2, h3, h4, p, span, form, input {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+//-------------------------------------------------------------------------------------------
+
+.artworks {
+  .card-artwork {
+    cursor: pointer;
+    position: relative;
+    padding: $card-artwork-padding-top $card-artwork-padding-right $card-artwork-padding-bottom $card-artwork-image-max-width + $card-artwork-padding-left + 10px;
+    border: $border-default;
+    box-shadow: $shadow-default;
+    &:hover {
+      background-color: $card-artwork-bgcolor-hover;
+    }
+    p {
+      margin: 0 0 0 0;
+      padding: 0 0 0 0;
+      letter-spacing: -1px;
+      display: block;
+    }
+    .img-artwork {
+      position: absolute;
+      top: $card-artwork-padding-top;
+      left: $card-artwork-padding-left;
+      img {
+        max-width: $card-artwork-image-max-width;
+        max-height: $card-artwork-image-max-height;
+      }
+    }
+    .text-artist {
+      font-size: 100%;
+      font-weight: bold;
+      margin: 0 0 2px 0;
+    }
+    .text-worktitle {
+      font-size: 120%;
+      font-style: italic;
+      margin: 0 0 10px 0;
+    }
+    .text-edition, .text-medium, .text-size {
+      color: $font-color-fairy;
+      display: inline-block;
+      padding: 0 10px 0 0;
+      border-right: $border-default;
+    }
+  }
+  .text-condition {
+    padding: 10px 0 0 0;
+    margin: 0;
+    &::before {
+      content: 'condition';
+      padding: 2px 10px 2px 10px;
+      background-color: $bgcolor-fairy;
+    }
+  }
+
+  .in {
+    .text-type {
+
+    }
+  }
+}
+
+
+
