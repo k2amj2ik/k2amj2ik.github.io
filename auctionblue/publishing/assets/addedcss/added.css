@@ -104,11 +104,11 @@ html, body, div, ul, ol, li, table, tr, td, h1, h2, h3, h4, p, span, form, input
   display: inline-block;
   text-overflow: ellipsis;
   word-break: break-all;
-  max-width: 200px;
-  height: 68px;
+  max-width: 150px;
+  height: 93px;
   overflow: hidden;
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
 }
 
@@ -140,6 +140,19 @@ html, body, div, ul, ol, li, table, tr, td, h1, h2, h3, h4, p, span, form, input
   margin-top: -21px !important;
   height: 20px;
   margin-bottom: 10px;
+}
+
+.text-memo {
+  display: inline-block;
+  display: inline-block;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  max-width: 150px;
+  height: 93px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
 }
 
 .card-auction {

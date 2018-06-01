@@ -124,7 +124,7 @@ html, body, div, ul, ol, li, table, tr, td, h1, h2, h3, h4, p, span, form, input
 }
 .text-condition {
   display: inline-block;
-  @include cut-multi-text(200px,68px,3);
+  @include cut-multi-text(150px,93px,5);
 }
 
 .card-in {
@@ -155,6 +155,10 @@ html, body, div, ul, ol, li, table, tr, td, h1, h2, h3, h4, p, span, form, input
     height: 20px;
     margin-bottom: 10px;
   }
+}
+.text-memo {
+  display: inline-block;
+  @include cut-multi-text(150px,93px,5);
 }
 .card-auction {
   cursor: pointer;
@@ -223,4 +227,5 @@ html, body, div, ul, ol, li, table, tr, td, h1, h2, h3, h4, p, span, form, input
     background-color: $bgcolor-fairy;
   }
 }
+
 
