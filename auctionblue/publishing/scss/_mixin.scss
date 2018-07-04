@@ -1,0 +1,13 @@
+// cut-text
+@mixin cut-multi-text($width,$height,$line-count) {
+  display: inline-block;
+  text-overflow:ellipsis;
+  //word-wrap:break-word;
+  word-break: break-all;
+  max-width:$width;
+  height: $height;
+  overflow:hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: $line-count;
+  -webkit-box-orient: vertical;
+}

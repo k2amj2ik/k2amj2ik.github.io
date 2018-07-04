@@ -316,15 +316,15 @@
                             <h3 class="uppercase">작품관리</h3>
                         </li>
                         <li class="nav-item active">
-                            <a href="#" class="nav-link">
+                            <a href="inventory.html" class="nav-link">
                                 <i class="icon-picture"></i>
                                 <span class="title">보유작품</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="inouthistory.html" class="nav-link">
                                 <i class="icon-tag"></i>
-                                <span class="title">입출고</span>
+                                <span class="title">입출고이력</span>
                                 <!--<span class="badge badge-success"> 5 </span>-->
                             </a>
                         </li>
@@ -403,18 +403,158 @@
                     <!-- BEGIN PAGE HEADER-->
                     <!-- BEGIN PAGE TITLE-->
                     <h1 class="page-title"> 보유작품
-                        <small>작품 입고에서 출고까지 모든 여정을 관리합니다.</small>
-                        <div class="btn-groups">
-                            <a href="javascript:;" class="btn default" data-toggle="modal" data-target="#modalAddVendor">입고등록</a>
-                        </div>
+                        <!--<div class="btn-groups major-btn-groups">-->
+                            <!--<a href="javascript:;" class="btn default" data-toggle="modal" data-target="#modalAddVendor">입고등록</a>-->
+                        <!--</div>-->
                     </h1>
                     <!-- END PAGE TITLE-->
                     <!-- END PAGE HEADER-->
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="m-heading-1 border-green m-bordered">
-                                <p> 검색조건 추가 </p>
+                            <div class="portlet user-guide">
+                                <div class="portlet-title">
+                                    <div class="tools">
+                                        <a href="javascript:;" class="expand"><span class="icon-info text-default btn-guide"></span></a>
+                                    </div>
+                                    <!--이용 가이드 요약 내용 시작-->
+                                    <ul class="contents">
+                                        <li class="paragraph">
+                                            우측 상단 <span class="icon-info text-default btn-guide"></span> 를 클릭하면 이용 가이드 전체가 표시됩니다.
+                                        </li>
+                                    </ul>
+                                    <!--이용 가이드 요약 내용 끝-->
+                                </div>
+                                <div class="portlet-body display-hide">
+                                    <!--이용 가이드 전체 내용 시작-->
+                                    <ul class="contents">
+                                        <li class="paragraph">
+                                            보유중인 작품의 입출고 여부를 확인할 수 있습니다. (수정은 작품관리팀만 가능합니다)
+                                        </li>
+                                        <li class="paragraph">
+                                            본인이 담당하는 위탁자가 아니면 이름이 ****** 로 표시됩니다.
+                                        </li>
+                                        <li class="paragraph">
+                                            <span class="badge badge-danger" data-toggle="tooltip" title="경매 출품이 불가한 작품입니다."><i class="fa fa-lock"></i>판매중</span>
+                                            표시가 있으면 판매할 수 없는 작품입니다.
+                                        </li>
+                                        <li class="paragraph">
+                                            입고요청서를 작성해야만 입고로 등록할 수 있습니다.
+                                        </li>
+                                        <li class="paragraph">
+                                            임시/전시/이동출고 중인 경우는 "입고" 상태로 표시됩니다.
+                                        </li>
+                                    </ul>
+                                    <!--이용 가이드 전체 내용 끝-->
+                                </div>
                             </div>
+                            <form role="form">
+                                <div class="portlet solid grey-cascade top-search">
+                                    <div class="portlet-title">
+                                        <div class="tools">
+                                            <a href="javascript:;" class="expand"></a>
+                                        </div>
+                                        <!--주요검색 시작-->
+                                        <div class="form-inline major-search">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control input-small" placeholder="BN">
+                                            </div>
+                                            <div class="form-group">
+                                                <select class="form-control input-small">
+                                                    <option selected>입출고 전체</option>
+                                                    <option>입고</option>
+                                                    <option>출고</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <select class="form-control input-small">
+                                                    <option selected>판매유무 전체</option>
+                                                    <option>경매출품</option>
+                                                    <option>경매미출</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <select class="form-control input-small">
+                                                    <option selected></option>
+                                                    <option>위탁</option>
+                                                    <option>재고</option>보관유형 전체
+                                                    <option>담보</option>
+                                                    <option>보관</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <select class="form-control input-small">
+                                                    <option selected>보험 여부 전체</option>
+                                                    <option>보험 가입</option>
+                                                    <option>보험 미가입</option>
+                                                    <option>보험 미입력</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <!--주요검색 끝-->
+                                    </div>
+                                    <div class="portlet-body display-hide">
+                                        <!--상세검색 시작-->
+                                        <div class="form-inline">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control input-small" placeholder="작가명">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control input-small" placeholder="작품명">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control input-small" placeholder="재질">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control input-small" placeholder="용도">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control input-small" placeholder="위탁자">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control input-small" placeholder="담당자">
+                                            </div>
+                                        </div>
+                                        <div class="form-inline">
+                                            <div class="form-group">
+                                                <select class="form-control">
+                                                    <option selected>작품위치</option>
+                                                    <option>창고명1</option>
+                                                    <option>창고명2</option>
+                                                    <option>창고명3</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <select class="form-control">
+                                                    <option selected>입고일</option>
+                                                    <option>출고일</option>
+                                                </select>
+                                                <input type="text" class="form-control input-small" placeholder="ex) 20180101"> -
+                                                <input type="text" class="form-control input-small" placeholder="ex) 20180131">
+                                            </div>
+                                        </div>
+                                        <div class="form-inline">
+                                            <div class="form-group">
+                                                <select class="form-control">
+                                                    <option selected>경매명</option>
+                                                    <option>경매명1</option>
+                                                    <option>경매명2</option>
+                                                    <option>경매명3</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control input-small" placeholder="랏번호">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control input-small" placeholder="낙찰자">
+                                            </div>
+                                            <div class="form-group">
+                                                <button type="submit" class="btn btn-success">검색</button>
+                                            </div>
+                                        </div>
+                                        <!--상세검색 끝-->
+                                    </div>
+                                </div>
+                            </form>
                             <!-- BEGIN PAGE BASE CONTENT -->
                             <div id="sample_1_wrapper" class="dataTables_wrapper no-footer">
                                 <div class="table-scrollable">
@@ -429,10 +569,9 @@
                                             </th>
                                             <th>BN</th>
                                             <th>작품</th>
-                                            <th>컨디션</th>
+                                            <th class="hidden-xs hidden-sm">컨디션</th>
                                             <th>보관정보</th>
-                                            <th>메모</th>
-                                            <th>최근 판매</th>
+                                            <th class="hidden-xs hidden-sm">최근 판매</th>
                                             <th>입고일</th>
                                             <th>최근 출고</th>
                                             <th>보험</th>
@@ -475,7 +614,7 @@
                                                     </p>
                                                 </div>
                                             </td>
-                                            <td>
+                                            <td class="hidden-xs hidden-sm">
                                                 <p class="text-condition">
                                                     *갤러리 보증서 있음/작품관리팀 보관.*갤러리 보증서 있음/작품관리팀 보관.*갤러리 보증서 있음/작품관리팀 보관.*갤러리 보증서 있음/작품관리팀 보관.
                                                 </p>
@@ -489,19 +628,15 @@
                                                 </p>
                                                 <p class="text-consign-user">
                                                     <span class="badge badge-default">위탁자</span>
-                                                    <span data-toggle="tooltip" title="test_id_by_lia">신미영</span>
+                                                    <span data-toggle="tooltip" title="******">******</span>
                                                 </p>
                                                 <p class="text-consign-manager">
                                                     <span class="badge badge-default">담당자</span>
-                                                    <span data-toggle="tooltip" title="user_id">이지희</span>
+                                                    <span data-toggle="tooltip" title="user_id">구유미</span>
                                                 </p>
                                             </td>
-                                            <td>
-                                                <p class="text-memo">
-                                                    무슨 메모를 입력하게 될까요? 무슨 메모를 입력하게 될까요? 무슨 메모를 입력하게 될까요?
-                                                </p>
-                                            </td>
-                                            <td>
+                                            
+                                            <td class="hidden-xs hidden-sm">
                                                 <span class="badge badge-danger" data-toggle="tooltip" title="경매 출품이 불가한 작품입니다.">
                                                     <i class="fa fa-lock"></i>
                                                     판매중</span>
@@ -522,7 +657,7 @@
                                                 <button type="button" class="btn default" data-toggle="tooltip" title="">N</button>
                                             </td>
                                             <td>
-                                                <button type="button" class="btn default">이력</button>
+                                                <button type="button" class="btn default" data-toggle="modal" data-target="#modalHistory">이력</button>
                                             </td>
                                         </tr>
                                         <!-- 출고(담보) - 경매전(미출) - 출고완료(담보해지) -->
@@ -560,7 +695,7 @@
                                                     </p>
                                                 </div>
                                             </td>
-                                            <td>
+                                            <td class="hidden-xs hidden-sm">
                                                 <p class="text-condition">
                                                     *갤러리 보증서 있음/작품관리팀 보관.*갤러리 보증서 있음/작품관리팀 보관.*갤러리 보증서 있음/작품관리팀 보관.*갤러리 보증서 있음/작품관리팀 보관.
                                                 </p>
@@ -581,9 +716,7 @@
                                                     <span data-toggle="tooltip" title="user_id">이지희</span>
                                                 </p>
                                             </td>
-                                            <td>
-                                            </td>
-                                            <td>
+                                            <td class="hidden-xs hidden-sm">
                                             </td>
                                             <td>
                                                 <p class="text-consign-date">
@@ -647,7 +780,7 @@
                                                     </p>
                                                 </div>
                                             </td>
-                                            <td>
+                                            <td class="hidden-xs hidden-sm">
                                                 <p class="text-condition">
                                                     *갤러리 보증서 있음/작품관리팀 보관.*갤러리 보증서 있음/작품관리팀 보관.*갤러리 보증서 있음/작품관리팀 보관.*갤러리 보증서 있음/작품관리팀 보관.
                                                 </p>
@@ -668,9 +801,7 @@
                                                     <span data-toggle="tooltip" title="user_id">이지희</span>
                                                 </p>
                                             </td>
-                                            <td>
-                                            </td>
-                                            <td>
+                                            <td class="hidden-xs hidden-sm">
                                             </td>
                                             <td>
                                                 <p class="text-consign-date">
@@ -690,6 +821,91 @@
                                                 <p class="text-out-type">
                                                     <i class="fa fa-location-arrow"></i>
                                                     보관만기
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <button type="button" class="btn blue-madison" data-toggle="tooltip" title="보험가: 200,000원">Y</button>
+                                            </td>
+                                            <td>
+                                                <button type="button" class="btn blue-madison">이력</button>
+                                            </td>
+                                        </tr>
+                                        <!-- 출고(재고) - 경매전(미출) - 출고완료(미출) -->
+                                        <tr>
+                                            <td>
+                                                <label class="mt-checkbox mt-checkbox-single mt-checkbox-outline">
+                                                    <input type="checkbox" class="group-checkable">
+                                                    <span></span>
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <p class="text-current">
+                                                    <span class="badge badge-warning">출고</span>
+                                                </p>
+                                                <p class="text-bn">
+                                                    10589
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <div class="card-artwork" data-toggle="modal" data-target="#modalEditVendor">
+                                                    <p class="img-artwork">
+                                                        <img alt="" src="../assets/global/img/portfolio/600x600/12.jpg">
+                                                    </p>
+                                                    <p class="text-bn">
+                                                        <span class="badge badge-default">재고</span>
+                                                    </p>
+                                                    <p class="text-artist">
+                                                        야요이 쿠사마 / Yayoi Kusama
+                                                    </p>
+                                                    <p class="text-worktitle">
+                                                        Lithograph(ed.95/120)
+                                                    </p>
+                                                    <p class="text-description">
+                                                        1978, 석판화 / Lithograph, 56 x 76 cm
+                                                    </p>
+                                                </div>
+                                            </td>
+                                            <td class="hidden-xs hidden-sm">
+                                                <p class="text-condition">
+                                                    *갤러리 보증서 있음/작품관리팀 보관.*갤러리 보증서 있음/작품관리팀 보관.*갤러리 보증서 있음/작품관리팀 보관.*갤러리 보증서 있음/작품관리팀 보관.
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p class="text-current-location">
+                                                    <span class="badge badge-default">위치</span> 호림아트센터 1층 A섹터
+                                                </p>
+                                                <p class="text-usage">
+                                                    <span class="badge badge-default">용도</span> 차기 온라인
+                                                </p>
+                                                <p class="text-consign-user">
+                                                    <span class="badge badge-default">위탁자</span>
+                                                    <span data-toggle="tooltip" title="test_id_by_lia">신미영</span>
+                                                </p>
+                                                <p class="text-consign-manager">
+                                                    <span class="badge badge-default">담당자</span>
+                                                    <span data-toggle="tooltip" title="user_id">이지희</span>
+                                                </p>
+                                            </td>
+                                            <td class="hidden-xs hidden-sm">
+                                            </td>
+                                            <td>
+                                                <p class="text-consign-date">
+                                                    <!--<i class="fa fa-calendar"></i>-->
+                                                    2018/05/06
+                                                </p>
+                                                <p class="text-days">
+                                                    <i class="fa fa-clock-o"></i>
+                                                    234 일
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p class="text-consign-date">
+                                                    <!--<i class="fa fa-calendar"></i>-->
+                                                    2018/05/06
+                                                </p>
+                                                <p class="text-out-type">
+                                                    <i class="fa fa-location-arrow"></i>
+                                                    미출
                                                 </p>
                                             </td>
                                             <td>
@@ -734,7 +950,7 @@
                                                     </p>
                                                 </div>
                                             </td>
-                                            <td>
+                                            <td class="hidden-xs hidden-sm">
                                             </td>
                                             <td>
                                                 <p class="text-current-location">
@@ -748,9 +964,7 @@
                                                     <span data-toggle="tooltip" title="user_id">이지희</span>
                                                 </p>
                                             </td>
-                                            <td>
-                                            </td>
-                                            <td>
+                                            <td class="hidden-xs hidden-sm">
                                                 <div class="card-auction">
                                                     <p class="text-pay">
                                                         <span class="badge badge-danger">출품</span>
@@ -825,7 +1039,7 @@
                                                     </p>
                                                 </div>
                                             </td>
-                                            <td>
+                                            <td class="hidden-xs hidden-sm">
                                             </td>
                                             <td>
                                                 <p class="text-current-location">
@@ -839,9 +1053,7 @@
                                                     <span data-toggle="tooltip" title="user_id">이지희</span>
                                                 </p>
                                             </td>
-                                            <td>
-                                            </td>
-                                            <td>
+                                            <td class="hidden-xs hidden-sm">
                                                 <div class="card-auction">
                                                     <p class="text-pay">
                                                         <span class="badge badge-danger">낙찰</span>
@@ -851,9 +1063,8 @@
                                                         <span class="badge badge-default">낙찰자</span>
                                                         <span data-toggle="tooltip" title="test_id_by_lia">신미영</span>
                                                     </p>
-                                                    <p class="text-bidding-manager">
-                                                        <span class="badge badge-default">응찰 담당자</span>
-                                                        <span data-toggle="tooltip" title="user_id2">조효원</span>
+                                                    <p class="text-winner">
+                                                        <span class="badge badge-default">낙찰가</span> 2,000,000원
                                                     </p>
                                                     <p class="text-winner-manager">
                                                         <span class="badge badge-default">낙찰 담당자</span>
@@ -923,7 +1134,7 @@
                                                     </p>
                                                 </div>
                                             </td>
-                                            <td>
+                                            <td class="hidden-xs hidden-sm">
                                             </td>
                                             <td>
                                                 <p class="text-current-location">
@@ -937,21 +1148,18 @@
                                                     <span data-toggle="tooltip" title="user_id">이지희</span>
                                                 </p>
                                             </td>
-                                            <td>
-                                            </td>
-                                            <td>
+                                            <td class="hidden-xs hidden-sm">
                                                 <div class="card-auction">
                                                     <p class="text-pay">
                                                         <span class="badge badge-danger">낙찰</span>
-                                                        <span class="text-danger">미입금</span>
+                                                        <span class="text-danger">입금완료</span>
                                                     </p>
                                                     <p class="text-winner">
                                                         <span class="badge badge-default">낙찰자</span>
                                                         <span data-toggle="tooltip" title="test_id_by_lia">신미영</span>
                                                     </p>
-                                                    <p class="text-bidding-manager">
-                                                        <span class="badge badge-default">응찰 담당자</span>
-                                                        <span data-toggle="tooltip" title="user_id2">조효원</span>
+                                                    <p class="text-winner">
+                                                        <span class="badge badge-default">낙찰가</span> 2,000,000원
                                                     </p>
                                                     <p class="text-winner-manager">
                                                         <span class="badge badge-default">낙찰 담당자</span>
@@ -977,6 +1185,291 @@
                                                 <p class="text-out-type">
                                                     <i class="fa fa-location-arrow"></i>
                                                     이동
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <button type="button" class="btn default" data-toggle="tooltip" title="">N</button>
+                                            </td>
+                                            <td>
+                                                <button type="button" class="btn blue-madison">이력</button>
+                                            </td>
+                                        </tr>
+                                        <!-- 출고(재고) - 경매완료 - 출고완료(낙찰) -->
+                                        <tr>
+                                            <td>
+                                                <label class="mt-checkbox mt-checkbox-single mt-checkbox-outline">
+                                                    <input type="checkbox" class="group-checkable" >
+                                                    <span></span>
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <p class="text-current">
+                                                    <span class="badge badge-warning">출고</span>
+                                                </p>
+                                                <p class="text-bn">
+                                                    10589
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <div class="card-artwork" data-toggle="modal" data-target="#modalEditVendor">
+                                                    <p class="img-artwork">
+                                                        <img alt="" src="../assets/global/img/portfolio/600x600/12.jpg">
+                                                    </p>
+                                                    <p class="text-bn">
+                                                        <span class="badge badge-default">재고</span>
+                                                    </p>
+                                                    <p class="text-artist">
+                                                        야요이 쿠사마 / Yayoi Kusama
+                                                    </p>
+                                                    <p class="text-worktitle">
+                                                        Lithograph(ed.95/120)
+                                                    </p>
+                                                    <p class="text-description">
+                                                        1978, 석판화 / Lithograph, 56 x 76 cm
+                                                    </p>
+                                                </div>
+                                            </td>
+                                            <td class="hidden-xs hidden-sm">
+                                            </td>
+                                            <td>
+                                                <p class="text-current-location">
+                                                    <span class="badge badge-default">위치</span> 언타이틀
+                                                </p>
+                                                <p class="text-usage">
+                                                    <span class="badge badge-default">용도</span> 차기 온라인
+                                                </p>
+                                                <p class="text-consign-manager">
+                                                    <span class="badge badge-default">담당자</span>
+                                                    <span data-toggle="tooltip" title="user_id">이지희</span>
+                                                </p>
+                                            </td>
+                                            <td class="hidden-xs hidden-sm">
+                                                <div class="card-auction">
+                                                    <p class="text-pay">
+                                                        <span class="badge badge-danger">낙찰</span>
+                                                        <span class="text-danger">입금완료</span>
+                                                    </p>
+                                                    <p class="text-winner">
+                                                        <span class="badge badge-default">낙찰자</span>
+                                                        <span data-toggle="tooltip" title="test_id_by_lia">신미영</span>
+                                                    </p>
+                                                    <p class="text-winner">
+                                                        <span class="badge badge-default">낙찰가</span> 2,000,000원
+                                                    </p>
+                                                    <p class="text-winner-manager">
+                                                        <span class="badge badge-default">낙찰 담당자</span>
+                                                        <span data-toggle="tooltip" title="user_id3">구유미</span>
+                                                    </p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p class="text-consign-date">
+                                                    <!--<i class="fa fa-calendar"></i>-->
+                                                    2018/05/06
+                                                </p>
+                                                <p class="text-days">
+                                                    <i class="fa fa-clock-o"></i>
+                                                    234 일
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p class="text-consign-date">
+                                                    <!--<i class="fa fa-calendar"></i>-->
+                                                    2018/05/06
+                                                </p>
+                                                <p class="text-out-type">
+                                                    <i class="fa fa-location-arrow"></i>
+                                                    낙찰
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <button type="button" class="btn default" data-toggle="tooltip" title="">N</button>
+                                            </td>
+                                            <td>
+                                                <button type="button" class="btn blue-madison">이력</button>
+                                            </td>
+                                        </tr>
+                                        <!-- 출고(재고) - 경매완료 - 출고완료(A/S) -->
+                                        <tr>
+                                            <td>
+                                                <label class="mt-checkbox mt-checkbox-single mt-checkbox-outline">
+                                                    <input type="checkbox" class="group-checkable" >
+                                                    <span></span>
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <p class="text-current">
+                                                    <span class="badge badge-warning">출고</span>
+                                                </p>
+                                                <p class="text-bn">
+                                                    10589
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <div class="card-artwork" data-toggle="modal" data-target="#modalEditVendor">
+                                                    <p class="img-artwork">
+                                                        <img alt="" src="../assets/global/img/portfolio/600x600/12.jpg">
+                                                    </p>
+                                                    <p class="text-bn">
+                                                        <span class="badge badge-default">재고</span>
+                                                    </p>
+                                                    <p class="text-artist">
+                                                        야요이 쿠사마 / Yayoi Kusama
+                                                    </p>
+                                                    <p class="text-worktitle">
+                                                        Lithograph(ed.95/120)
+                                                    </p>
+                                                    <p class="text-description">
+                                                        1978, 석판화 / Lithograph, 56 x 76 cm
+                                                    </p>
+                                                </div>
+                                            </td>
+                                            <td class="hidden-xs hidden-sm">
+                                            </td>
+                                            <td>
+                                                <p class="text-current-location">
+                                                    <span class="badge badge-default">위치</span> 언타이틀
+                                                </p>
+                                                <p class="text-usage">
+                                                    <span class="badge badge-default">용도</span> 차기 온라인
+                                                </p>
+                                                <p class="text-consign-manager">
+                                                    <span class="badge badge-default">담당자</span>
+                                                    <span data-toggle="tooltip" title="user_id">이지희</span>
+                                                </p>
+                                            </td>
+                                            <td class="hidden-xs hidden-sm">
+                                                <div class="card-auction">
+                                                    <p class="text-pay">
+                                                        <span class="badge badge-danger">낙찰</span>
+                                                        <span class="text-danger">입금완료</span>
+                                                    </p>
+                                                    <p class="text-winner">
+                                                        <span class="badge badge-default">낙찰자</span>
+                                                        <span data-toggle="tooltip" title="test_id_by_lia">신미영</span>
+                                                    </p>
+                                                    <p class="text-winner">
+                                                        <span class="badge badge-default">낙찰가</span> 2,000,000원
+                                                    </p>
+                                                    <p class="text-winner-manager">
+                                                        <span class="badge badge-default">낙찰 담당자</span>
+                                                        <span data-toggle="tooltip" title="user_id3">구유미</span>
+                                                    </p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p class="text-consign-date">
+                                                    <!--<i class="fa fa-calendar"></i>-->
+                                                    2018/05/06
+                                                </p>
+                                                <p class="text-days">
+                                                    <i class="fa fa-clock-o"></i>
+                                                    234 일
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p class="text-consign-date">
+                                                    <!--<i class="fa fa-calendar"></i>-->
+                                                    2018/05/06
+                                                </p>
+                                                <p class="text-out-type">
+                                                    <i class="fa fa-location-arrow"></i>
+                                                    A/S
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <button type="button" class="btn default" data-toggle="tooltip" title="">N</button>
+                                            </td>
+                                            <td>
+                                                <button type="button" class="btn blue-madison">이력</button>
+                                            </td>
+                                        </tr>
+                                        <!-- 출고(재고) - 경매완료 - 출고완료(P/S) -->
+                                        <tr>
+                                            <td>
+                                                <label class="mt-checkbox mt-checkbox-single mt-checkbox-outline">
+                                                    <input type="checkbox" class="group-checkable" >
+                                                    <span></span>
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <p class="text-current">
+                                                    <span class="badge badge-warning">출고</span>
+                                                </p>
+                                                <p class="text-bn">
+                                                    10589
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <div class="card-artwork" data-toggle="modal" data-target="#modalEditVendor">
+                                                    <p class="img-artwork">
+                                                        <img alt="" src="../assets/global/img/portfolio/600x600/12.jpg">
+                                                    </p>
+                                                    <p class="text-bn">
+                                                        <span class="badge badge-default">재고</span>
+                                                    </p>
+                                                    <p class="text-artist">
+                                                        야요이 쿠사마 / Yayoi Kusama
+                                                    </p>
+                                                    <p class="text-worktitle">
+                                                        Lithograph(ed.95/120)
+                                                    </p>
+                                                    <p class="text-description">
+                                                        1978, 석판화 / Lithograph, 56 x 76 cm
+                                                    </p>
+                                                </div>
+                                            </td>
+                                            <td class="hidden-xs hidden-sm">
+                                            </td>
+                                            <td>
+                                                <p class="text-current-location">
+                                                    <span class="badge badge-default">위치</span> 언타이틀
+                                                </p>
+                                                <p class="text-usage">
+                                                    <span class="badge badge-default">용도</span> 차기 온라인
+                                                </p>
+                                                <p class="text-consign-manager">
+                                                    <span class="badge badge-default">담당자</span>
+                                                    <span data-toggle="tooltip" title="user_id">이지희</span>
+                                                </p>
+                                            </td>
+                                            <td class="hidden-xs hidden-sm">
+                                                <div class="card-auction">
+                                                    <p class="text-pay">
+                                                        <span class="badge badge-danger">낙찰</span>
+                                                        <span class="text-danger">입금완료</span>
+                                                    </p>
+                                                    <p class="text-winner">
+                                                        <span class="badge badge-default">낙찰자</span>
+                                                        <span data-toggle="tooltip" title="test_id_by_lia">신미영</span>
+                                                    </p>
+                                                    <p class="text-winner">
+                                                        <span class="badge badge-default">낙찰가</span> 2,000,000원
+                                                    </p>
+                                                    <p class="text-winner-manager">
+                                                        <span class="badge badge-default">낙찰 담당자</span>
+                                                        <span data-toggle="tooltip" title="user_id3">구유미</span>
+                                                    </p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p class="text-consign-date">
+                                                    <!--<i class="fa fa-calendar"></i>-->
+                                                    2018/05/06
+                                                </p>
+                                                <p class="text-days">
+                                                    <i class="fa fa-clock-o"></i>
+                                                    234 일
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p class="text-consign-date">
+                                                    <!--<i class="fa fa-calendar"></i>-->
+                                                    2018/05/06
+                                                </p>
+                                                <p class="text-out-type">
+                                                    <i class="fa fa-location-arrow"></i>
+                                                    P/S
                                                 </p>
                                             </td>
                                             <td>
@@ -1171,7 +1664,198 @@
                 </div>
             </div>
         </div>
-        <div class="modal fade" id="modalEditVendor" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="modalHistory" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">
+                            작품 이력 (BN: 10589)
+                        </h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="card-artwork view-only" data-toggle="modal">
+                            <p class="img-artwork">
+                                <img alt="" src="../assets/global/img/portfolio/600x600/12.jpg">
+                            </p>
+                            <p class="text-bn">
+                                <span class="badge badge-default">위탁</span>
+                            </p>
+                            <p class="text-artist">
+                                야요이 쿠사마 / Yayoi Kusama
+                            </p>
+                            <p class="text-worktitle">
+                                Lithograph(ed.95/120) Lithograph(ed.95/120)Lithograph(ed.95/120)Lithograph(ed.95/120)Lithograph(ed.95/120)Lithograph(ed.95/120)Lithograph(ed.95/120) Lithograph(ed.95/120)Lithograph(ed.95/120)Lithograph(ed.95/120)Lithograph(ed.95/120)Lithograph(ed.95/120)Lithograph(ed.95/120) Lithograph(ed.95/120)Lithograph(ed.95/120)Lithograph(ed.95/120)Lithograph(ed.95/120)Lithograph(ed.95/120)Lithograph(ed.95/120) Lithograph(ed.95/120)Lithograph(ed.95/120)Lithograph(ed.95/120)Lithograph(ed.95/120)Lithograph(ed.95/120)
+                            </p>
+                            <p class="text-description">
+                                1978, 석판화 / Lithograph, 56 x 76 cm
+                            </p>
+                        </div>
+                        <table class="table table-striped table-bordered table-hover table-header-fixed dataTable no-footer">
+                            <thead class="small">
+                            <tr class="lot-header-type1">
+                                <th>NO</th>
+                                <th>처리일시</th>
+                                <th>입출고</th>
+                                <th>유형</th>
+                                <th>목적지</th>
+                                <th>정보</th>
+                                <th>메모</th>
+                                <th>처리자</th>
+
+                            </tr>
+                            </thead>
+                            <tbody class="small">
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    2018/01/01<br>
+                                    23:23:23
+                                </td>
+                                <td><span class="badge badge-primary">입고</span></td>
+                                <td>입고</td>
+                                <td>
+                                    언타이틀 2A
+                                </td>
+                                <td>
+                                    <span class="badge badge-default">요청자</span> 신미영 <br>
+                                    <span class="badge badge-default">배송유형</span> 운송<br>
+                                    <span class="badge badge-default">픽업주소</span> 서울시 동대문구 휘경동 12-11 김영철 (010-1111-1111)<br>
+                                </td>
+                                <td>
+                                    언타이틀 → 강남 / KS특송 / 손님 뷰잉건으로 임시출고 예정
+                                </td>
+                                <td>
+                                    전은양
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>
+                                    2018/01/02<br>
+                                    23:23:23
+                                </td>
+                                <td>
+                                    <span class="badge badge-warning">출고</span>
+                                </td>
+                                <td>
+                                    이동
+                                </td>
+                                <td>
+                                    호림아트센터 1층 2A
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                    전은양
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>
+                                    2018/01/03<br>
+                                    23:23:23
+                                </td>
+                                <td><span class="badge badge-primary">입고</span></td>
+                                <td>이동</td>
+                                <td>
+                                    언타이틀 2A
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                    전은양
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>
+                                    2018/01/04<br>
+                                    23:23:23
+                                </td>
+                                <td>
+                                    <span class="badge badge-warning">출고</span>
+                                </td>
+                                <td>
+                                    전시
+                                </td>
+                                <td>
+                                    가나아트센터 2B
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                    전은양
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>
+                                    2018/01/05<br>
+                                    23:23:23
+                                </td>
+                                <td><span class="badge badge-primary">입고</span></td>
+                                <td>재입고</td>
+                                <td>
+                                    언타이틀 2A
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                    전은양
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>
+                                    2018/01/07<br>
+                                    23:23:23
+                                </td>
+                                <td>
+                                    <span class="badge badge-warning">출고</span>
+                                </td>
+                                <td>낙찰</td>
+                                <td>
+                                    서울시 동대문구 휘경동
+                                </td>
+                                <td>
+                                    <p class="text-auction">
+                                        <span class="badge badge-default">경매</span> <a href="#">30th Seoul Auction Blue Online Sale</a>
+                                    </p>
+                                    <p class="text-lot">
+                                        <span class="badge badge-default">LOT</span> 101
+                                    </p>
+                                    <p class="text-winner">
+                                        <span class="badge badge-default">낙찰자</span> 신미영
+                                    </p>
+                                    <p class="text-winner">
+                                        <span class="badge badge-default">낙찰가</span> 2,000,000원
+                                    </p>
+                                </td>
+                                <td>직원출고(2018.04.03 김현희 총괄) / 김현희
+                                </td>
+                                <td>
+                                    전은양
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modalEditVendor" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">

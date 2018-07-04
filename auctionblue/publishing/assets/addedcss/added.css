@@ -24,53 +24,94 @@ html, body, div, ul, ol, li, table, tr, td, h1, h2, h3, h4, p, span, form, input
   opacity: 0.3 !important;
 }
 
-.artworks .page-title {
-  margin-top: 0;
+.user-guide .btn-guide {
+  font-size: 140%;
 }
-.artworks .page-title .btn-groups {
-  float: right;
+.user-guide > .portlet-title {
+  padding-right: 13px;
 }
-.artworks .card-artwork {
+.user-guide > .portlet-title > .tools > a.expand {
+  background-image: none;
+}
+.user-guide > .portlet-title > .tools > a.collapse {
+  background-image: none;
+}
+.user-guide > .portlet-title > .contents {
+  list-style-type: circle;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+.user-guide > .portlet-title > .contents > .paragraph {
+  margin: 0 0 0 30px;
+  padding: 10px 0 10px 0;
+  border-bottom: 1px solid #e1e5ec;
+}
+.user-guide > .portlet-title > .contents > .paragraph:last-child {
+  border-bottom: 0;
+}
+.user-guide > .portlet-body > .contents {
+  list-style-type: circle;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+.user-guide > .portlet-body > .contents > .paragraph {
+  margin: 0 0 0 30px;
+  padding: 10px 0 10px 0;
+  border-bottom: 1px solid #e1e5ec;
+}
+
+.top-search .major-search {
+  margin: 10px 0 -20px 0;
+}
+.top-search .portlet-body .form-inline {
+  display: inline-block;
+  margin-bottom: 6px;
+}
+.top-search .portlet-body .form-inline .input-xlarge {
+  width: auto !important;
+}
+
+.card-artwork {
   cursor: pointer;
   position: relative;
   padding: 10px 10px 10px 70px;
   border: 1px solid #e1e5ec;
   box-shadow: 0 0 0 0;
 }
-.artworks .card-artwork:hover {
+.card-artwork:hover {
   background-color: #fff;
 }
-.artworks .card-artwork:hover .text-bn {
+.card-artwork:hover .text-bn {
   background-color: #555;
   color: #fff;
 }
-.artworks .card-artwork p {
+.card-artwork p {
   margin: 0 0 0 0;
   padding: 0 0 0 0;
   display: block;
 }
-.artworks .card-artwork .img-artwork {
+.card-artwork .img-artwork {
   position: absolute;
   top: 28px;
   left: 10px;
 }
-.artworks .card-artwork .img-artwork img {
+.card-artwork .img-artwork img {
   max-width: 50px;
   max-height: 50px;
 }
-.artworks .card-artwork .text-bn {
+.card-artwork .text-bn {
   margin-top: -10px !important;
   margin-left: -70px;
   margin-right: -10px;
   padding: 1px 10px 2px 10px;
   background-color: #e1e5ec;
 }
-.artworks .card-artwork .text-artist {
+.card-artwork .text-artist {
   font-size: 100%;
   font-weight: bold;
   margin: 6px 0 0 0 !important;
 }
-.artworks .card-artwork .text-worktitle {
+.card-artwork .text-worktitle {
   font-size: 110%;
   font-style: italic;
   color: #1B73BF;
@@ -85,7 +126,7 @@ html, body, div, ul, ol, li, table, tr, td, h1, h2, h3, h4, p, span, form, input
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
 }
-.artworks .card-artwork .text-description {
+.card-artwork .text-description {
   margin: 0 0 0 0 !important;
   color: #777;
   display: inline-block;
@@ -99,85 +140,114 @@ html, body, div, ul, ol, li, table, tr, td, h1, h2, h3, h4, p, span, form, input
   -webkit-box-orient: vertical;
 }
 
-.text-condition {
+.view-only {
+  cursor: default;
+  margin-bottom: 10px;
+}
+.view-only:hover {
+  background-color: #fff;
+}
+.view-only:hover .text-bn {
+  background-color: #e1e5ec;
+  color: #fff;
+}
+
+.artworks .page-title {
+  margin-top: 0;
+}
+.artworks .page-title .major-btn-groups {
+  float: right;
+  margin-right: 25px !important;
+}
+@media (max-width: 767px) {
+  .artworks .page-title .major-btn-groups {
+    margin: 20px 0 0 0 !important;
+    padding-right: 25px;
+    width: 100%;
+    float: none;
+    text-align: right;
+  }
+}
+.artworks .text-condition {
   display: inline-block;
+  font-size: 85%;
+  color: #777;
   display: inline-block;
   text-overflow: ellipsis;
   word-break: break-all;
-  max-width: 150px;
-  height: 93px;
+  max-width: 120px;
+  height: 98px;
   overflow: hidden;
   display: -webkit-box;
-  -webkit-line-clamp: 5;
+  -webkit-line-clamp: 6;
   -webkit-box-orient: vertical;
 }
-
-.card-in {
+.artworks .card-in {
   cursor: pointer;
   padding: 10px 10px 10px 10px;
   border: 1px solid #e1e5ec;
   box-shadow: 0 0 0 0;
 }
-.card-in:hover {
+.artworks .card-in:hover {
   background-color: #fff;
 }
-.card-in:hover .text-type {
+.artworks .card-in:hover .text-type {
   background-color: #555;
   color: #fff;
 }
-.card-in:hover .text-days {
+.artworks .card-in:hover .text-days {
   color: #fff;
 }
-.card-in .text-type {
+.artworks .card-in .text-type {
   margin-top: -10px !important;
   margin-left: -10px;
   margin-right: -10px;
   padding: 1px 10px 2px 10px;
   background-color: #e1e5ec;
 }
-.card-in .text-days {
+.artworks .card-in .text-days {
   text-align: right;
   margin-top: -21px !important;
   height: 20px;
   margin-bottom: 10px;
 }
-
-.text-memo {
+.artworks .text-memo {
   display: inline-block;
+  font-size: 85%;
+  color: #777;
   display: inline-block;
   text-overflow: ellipsis;
   word-break: break-all;
-  max-width: 150px;
-  height: 93px;
+  max-width: 120px;
+  height: 98px;
   overflow: hidden;
   display: -webkit-box;
-  -webkit-line-clamp: 5;
+  -webkit-line-clamp: 6;
   -webkit-box-orient: vertical;
 }
-
-.card-auction {
+.artworks .card-auction {
   cursor: pointer;
   padding: 10px 10px 10px 10px;
   border: 1px solid #e1e5ec;
   box-shadow: 0 0 0 0;
 }
-.card-auction:hover {
+.artworks .card-auction:hover {
   background-color: #fff;
 }
-.card-auction:hover .text-pay {
+.artworks .card-auction:hover .text-pay {
   background-color: #555;
   color: #fff;
 }
-.card-auction:hover .text-pay .bad {
+.artworks .card-auction:hover .text-pay .bad {
   color: #ff7090;
 }
-.card-auction:hover .text-pay .good {
+.artworks .card-auction:hover .text-pay .good {
   color: #36e6ff;
 }
-.card-auction:hover .text-soldprice {
+.artworks .card-auction:hover .text-soldprice {
   color: #fff;
 }
-.card-auction .text-pay {
+.artworks .card-auction .text-pay {
   margin-top: -10px !important;
   margin-left: -10px;
   margin-right: -10px;
@@ -185,19 +255,19 @@ html, body, div, ul, ol, li, table, tr, td, h1, h2, h3, h4, p, span, form, input
   padding: 1px 10px 2px 10px;
   background-color: #e1e5ec;
 }
-.card-auction .text-pay .bad {
+.artworks .card-auction .text-pay .bad {
   color: #ED1C24;
 }
-.card-auction .text-pay .good {
+.artworks .card-auction .text-pay .good {
   color: #1B73BF;
 }
-.card-auction .text-soldprice {
+.artworks .card-auction .text-soldprice {
   text-align: right;
   margin-top: -21px !important;
   height: 20px;
   margin-bottom: 10px;
 }
-.card-auction .text-auction {
+.artworks .card-auction .text-auction {
   display: inline-block;
   text-overflow: ellipsis;
   word-break: break-all;
@@ -209,21 +279,20 @@ html, body, div, ul, ol, li, table, tr, td, h1, h2, h3, h4, p, span, form, input
   -webkit-box-orient: vertical;
   color: #1B73BF;
 }
-
-.card-out {
+.artworks .card-out {
   cursor: pointer;
   padding: 10px 10px 10px 10px;
   border: 1px solid #e1e5ec;
   box-shadow: 0 0 0 0;
 }
-.card-out:hover {
+.artworks .card-out:hover {
   background-color: #fff;
 }
-.card-out:hover .text-out-type {
+.artworks .card-out:hover .text-out-type {
   background-color: #555;
   color: #fff;
 }
-.card-out .text-out-type {
+.artworks .card-out .text-out-type {
   margin-top: -10px !important;
   margin-left: -10px;
   margin-right: -10px;
