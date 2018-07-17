@@ -1,16 +1,17 @@
 @import "mixin";
 
 
-$card-artwork-image-max-width: 50px;
-$card-artwork-image-max-height: 50px;
-$card-artwork-bgcolor-hover: #fff;
-$card-artwork-padding-top: 10px;
-$card-artwork-padding-right: 10px;
-$card-artwork-padding-bottom: 10px;
-$card-artwork-padding-left: 10px;
+$card-inventory-image-max-width: 50px;
+$card-inventory-image-max-height: 50px;
+$card-inventory-bgcolor-hover: #fff;
+$card-inventory-padding-top: 10px;
+$card-inventory-padding-right: 10px;
+$card-inventory-padding-bottom: 10px;
+$card-inventory-padding-left: 10px;
 $font-color-fairy: #777;
 //$font-color-point: #FF7F27;
 $font-color-point: #1B73BF;
+$font-color-info: #2AB4C0;
 $font-color-white: #fff;
 $font-color-danger: #ED1C24;
 $border-default: 1px solid #e1e5ec;
@@ -19,7 +20,10 @@ $border-bar: 1px solid #ccc;
 //$shadow-default: 4px 4px 0 rgba(#ccc,0.5);
 $shadow-default: 0 0 0 0;
 $bgcolor-fairy: #e1e5ec;
+$bgcolor-veryfairy: #f5f5f5;
 $bgcolor-default: #555;
+$bgcolor-th: #e1e5ec;
+
 
 
 //reest--------------------------------------------------------------------------------------
@@ -30,7 +34,25 @@ html, body, div, ul, ol, li, table, tr, td, h1, h2, h3, h4, p, span, form, input
 }
 
 
+//common ui-------------------------------------------------------------------------------------------
+.td-text-info {
+  margin: 4px 0 4px 0 !important;
+  color: $font-color-info;
+}
+.td-text-info-inline {}
+
+
+.textarea-high-medium {
+  min-height: 100px;
+}
 //change metonic ui-------------------------------------------------------------------------------------------
+
+a {
+  text-decoration: underline;
+}
+th {
+  background-color: $bgcolor-th;
+}
 
 .page-header.navbar .page-logo .logo-default {
   margin-top: 5px;
@@ -50,6 +72,25 @@ html, body, div, ul, ol, li, table, tr, td, h1, h2, h3, h4, p, span, form, input
     }
   }
 }
+
+.page-content-white .page-title {
+  margin-top: 0 !important;
+}
+
+.form .form-bordered .form-group {
+  &:last-child {
+    border-bottom: 0;
+  }
+}
+
+.mt-checkbox-inline, .mt-radio-inline {
+  padding: 0 0 !important;
+}
+
+.form-control {
+  display: inline-block;
+}
+
 
 
 //user-guide-------------------------------------------------------------------------------------------
@@ -99,35 +140,58 @@ html, body, div, ul, ol, li, table, tr, td, h1, h2, h3, h4, p, span, form, input
 
 //search-------------------------------------------------------------------------------------------
 .top-search {
-  .major-search {
-    margin: 10px 0 -20px 0;
-    //border:1px solid red;
+  select {
+    margin-bottom: -1px;
+  }
+  .portlet-title {
+    .major-search {
+      margin: 10px 0 -10px 10px !important;
+      .form-group {
+      }
+    }
   }
   .portlet-body {
+    margin: 10px 0 0 10px !important;
     .form-inline {
       display: inline-block;
       margin-bottom: 6px;
-      //border: 1px solid red;
       .input-xlarge {
         width: auto !important;
       }
-      //.input-small {
-      //  border: 3px solid red;
-      //  width: 100px !important;
-      //}
+    }
+  }
+  .form-edge {
+    padding-right: 60px !important;
+  }
+}
+
+//page layout-----------------------------------------------------------------------------------------
+.page-title {
+  margin-top: 0;
+  .major-btn-groups {
+    float: right;
+    margin-right: 0 !important;
+    @media (max-width: 767px) {
+      margin: 20px 0 0 0 !important;
+      padding-right: 25px;
+      width: 100%;
+      float: none;
+      text-align: right;
     }
   }
 }
 
-//artwork-------------------------------------------------------------------------------------------
-.card-artwork {
+
+
+//inventory-------------------------------------------------------------------------------------------
+.card-inventory {
   cursor: pointer;
   position: relative;
-  padding: $card-artwork-padding-top $card-artwork-padding-right $card-artwork-padding-bottom $card-artwork-image-max-width + $card-artwork-padding-left + 10px;
+  padding: $card-inventory-padding-top $card-inventory-padding-right $card-inventory-padding-bottom $card-inventory-image-max-width + $card-inventory-padding-left + 10px;
   border: $border-default;
   box-shadow: $shadow-default;
   &:hover {
-    background-color: $card-artwork-bgcolor-hover;
+    background-color: $card-inventory-bgcolor-hover;
     .text-bn {
       background-color: $bgcolor-default;
       color: $font-color-white;
@@ -140,17 +204,17 @@ html, body, div, ul, ol, li, table, tr, td, h1, h2, h3, h4, p, span, form, input
   }
   .img-artwork {
     position: absolute;
-    top: $card-artwork-padding-top+18px;
-    left: $card-artwork-padding-left;
+    top: $card-inventory-padding-top+18px;
+    left: $card-inventory-padding-left;
     img {
-      max-width: $card-artwork-image-max-width;
-      max-height: $card-artwork-image-max-height;
+      max-width: $card-inventory-image-max-width;
+      max-height: $card-inventory-image-max-height;
     }
   }
   .text-bn {
-    margin-top: -$card-artwork-padding-top !important;
-    margin-left: -$card-artwork-padding-left - $card-artwork-image-max-width - 10px;
-    margin-right: -$card-artwork-padding-right;
+    margin-top: -$card-inventory-padding-top !important;
+    margin-left: -$card-inventory-padding-left - $card-inventory-image-max-width - 10px;
+    margin-right: -$card-inventory-padding-right;
     padding: 1px 10px 2px 10px;
     background-color: $bgcolor-fairy;
   }
@@ -176,10 +240,110 @@ html, body, div, ul, ol, li, table, tr, td, h1, h2, h3, h4, p, span, form, input
   cursor: default;
   margin-bottom: 10px;
   &:hover {
-    background-color: $card-artwork-bgcolor-hover;
+    background-color: $card-inventory-bgcolor-hover;
     .text-bn {
       background-color: $bgcolor-fairy;
       color: $font-color-white;
     }
   }
+}
+
+//auction-------------------------------------------------------------------------------------------
+.card-auction {
+  cursor: pointer;
+  //padding: $card-inventory-padding-top $card-inventory-padding-right $card-inventory-padding-bottom $card-inventory-padding-left;
+  //border: $border-default;
+  //box-shadow: $shadow-default;
+  //&:hover {
+  //  background-color: $card-inventory-bgcolor-hover;
+  //  .text-pay {
+  //    background-color: $bgcolor-default;
+  //    color: $font-color-white;
+  //    .bad {
+  //      color: $font-color-danger*4;
+  //    }
+  //    .good {
+  //      color: $font-color-point*2;
+  //    }
+  //  }
+  //  .text-soldprice {
+  //    color: $font-color-white;
+  //  }
+  //}
+  .text-pay {
+    margin-top: -$card-inventory-padding-top !important;
+    margin-left: -$card-inventory-padding-left;
+    margin-right: -$card-inventory-padding-right;
+    margin-bottom: 10px;
+    padding: 1px 10px 2px 10px;
+    background-color: $bgcolor-fairy;
+    .bad {
+      color: $font-color-danger;
+    }
+    .good {
+      color: $font-color-point;
+    }
+  }
+  .text-soldprice {
+    text-align: right;
+    margin-top: -$card-inventory-padding-top - 11px !important;
+    height: 20px;
+    margin-bottom: 10px;
+  }
+  .text-sale-status {
+    display: inline-block;
+  }
+  .text-auction-type {
+    display: inline-block;
+    color: $font-color-fairy;
+  }
+  .text-sale-turn {
+    display: inline-block;
+    color: $font-color-fairy;
+  }
+  .text-auction {
+    @include cut-multi-text(100%,20px,1);
+    color: $font-color-point;
+    font-size: 120%;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+}
+//common ui-------------------------------------------------------------------------------------------
+.img-sale-banner {
+  display: inline-block;
+  img {
+    max-width: 110px;
+    max-height: 30px;
+    margin: 4px 0;
+  }
+}
+
+.search-managers {
+  //border: $border-default;
+  //padding: 10px;
+  ul {
+    //margin: 14px 0 10px 0;
+    .manager {
+      margin: 10px 0 10px 0;
+      font-size: 90%;
+      list-style-type: none;
+    }
+  }
+}
+.single {
+  border: 0;
+  padding: 0;
+  ul {
+    display: inline-block;
+    margin: 0 0 0 0;
+    .manager {
+      margin: 0 0 0 4px;
+      display: inline-block;
+    }
+  }
+}
+
+.icon-must {
+  color: $font-color-danger;
 }

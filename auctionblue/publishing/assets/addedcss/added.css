@@ -4,6 +4,23 @@ html, body, div, ul, ol, li, table, tr, td, h1, h2, h3, h4, p, span, form, input
   box-sizing: border-box;
 }
 
+.td-text-info {
+  margin: 4px 0 4px 0 !important;
+  color: #2AB4C0;
+}
+
+.textarea-high-medium {
+  min-height: 100px;
+}
+
+a {
+  text-decoration: underline;
+}
+
+th {
+  background-color: #e1e5ec;
+}
+
 .page-header.navbar .page-logo .logo-default {
   margin-top: 5px;
 }
@@ -22,6 +39,22 @@ html, body, div, ul, ol, li, table, tr, td, h1, h2, h3, h4, p, span, form, input
 }
 .page-content-white .theme-panel .toggler:hover {
   opacity: 0.3 !important;
+}
+
+.page-content-white .page-title {
+  margin-top: 0 !important;
+}
+
+.form .form-bordered .form-group:last-child {
+  border-bottom: 0;
+}
+
+.mt-checkbox-inline, .mt-radio-inline {
+  padding: 0 0 !important;
+}
+
+.form-control {
+  display: inline-block;
 }
 
 .user-guide .btn-guide {
@@ -60,8 +93,14 @@ html, body, div, ul, ol, li, table, tr, td, h1, h2, h3, h4, p, span, form, input
   border-bottom: 1px solid #e1e5ec;
 }
 
-.top-search .major-search {
-  margin: 10px 0 -20px 0;
+.top-search select {
+  margin-bottom: -1px;
+}
+.top-search .portlet-title .major-search {
+  margin: 10px 0 -10px 10px !important;
+}
+.top-search .portlet-body {
+  margin: 10px 0 0 10px !important;
 }
 .top-search .portlet-body .form-inline {
   display: inline-block;
@@ -70,48 +109,68 @@ html, body, div, ul, ol, li, table, tr, td, h1, h2, h3, h4, p, span, form, input
 .top-search .portlet-body .form-inline .input-xlarge {
   width: auto !important;
 }
+.top-search .form-edge {
+  padding-right: 60px !important;
+}
 
-.card-artwork {
+.page-title {
+  margin-top: 0;
+}
+.page-title .major-btn-groups {
+  float: right;
+  margin-right: 0 !important;
+}
+@media (max-width: 767px) {
+  .page-title .major-btn-groups {
+    margin: 20px 0 0 0 !important;
+    padding-right: 25px;
+    width: 100%;
+    float: none;
+    text-align: right;
+  }
+}
+
+.card-inventory {
   cursor: pointer;
   position: relative;
   padding: 10px 10px 10px 70px;
   border: 1px solid #e1e5ec;
   box-shadow: 0 0 0 0;
 }
-.card-artwork:hover {
+.card-inventory:hover {
   background-color: #fff;
 }
-.card-artwork:hover .text-bn {
+.card-inventory:hover .text-bn {
   background-color: #555;
   color: #fff;
 }
-.card-artwork p {
+.card-inventory p {
   margin: 0 0 0 0;
   padding: 0 0 0 0;
   display: block;
 }
-.card-artwork .img-artwork {
+.card-inventory .img-artwork {
   position: absolute;
   top: 28px;
   left: 10px;
 }
-.card-artwork .img-artwork img {
+.card-inventory .img-artwork img {
   max-width: 50px;
   max-height: 50px;
 }
-.card-artwork .text-bn {
+.card-inventory .text-bn {
   margin-top: -10px !important;
   margin-left: -70px;
   margin-right: -10px;
   padding: 1px 10px 2px 10px;
   background-color: #e1e5ec;
 }
-.card-artwork .text-artist {
+.card-inventory .text-artist {
   font-size: 100%;
   font-weight: bold;
   margin: 6px 0 0 0 !important;
 }
-.card-artwork .text-worktitle {
+.card-inventory .text-worktitle {
   font-size: 110%;
   font-style: italic;
   color: #1B73BF;
@@ -126,7 +185,7 @@ html, body, div, ul, ol, li, table, tr, td, h1, h2, h3, h4, p, span, form, input
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
 }
-.card-artwork .text-description {
+.card-inventory .text-description {
   margin: 0 0 0 0 !important;
   color: #777;
   display: inline-block;
@@ -152,102 +211,10 @@ html, body, div, ul, ol, li, table, tr, td, h1, h2, h3, h4, p, span, form, input
   color: #fff;
 }
 
-.artworks .page-title {
-  margin-top: 0;
-}
-.artworks .page-title .major-btn-groups {
-  float: right;
-  margin-right: 25px !important;
-}
-@media (max-width: 767px) {
-  .artworks .page-title .major-btn-groups {
-    margin: 20px 0 0 0 !important;
-    padding-right: 25px;
-    width: 100%;
-    float: none;
-    text-align: right;
-  }
-}
-.artworks .text-condition {
-  display: inline-block;
-  font-size: 85%;
-  color: #777;
-  display: inline-block;
-  text-overflow: ellipsis;
-  word-break: break-all;
-  max-width: 120px;
-  height: 98px;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 6;
-  -webkit-box-orient: vertical;
-}
-.artworks .card-in {
+.card-auction {
   cursor: pointer;
-  padding: 10px 10px 10px 10px;
-  border: 1px solid #e1e5ec;
-  box-shadow: 0 0 0 0;
 }
-.artworks .card-in:hover {
-  background-color: #fff;
-}
-.artworks .card-in:hover .text-type {
-  background-color: #555;
-  color: #fff;
-}
-.artworks .card-in:hover .text-days {
-  color: #fff;
-}
-.artworks .card-in .text-type {
-  margin-top: -10px !important;
-  margin-left: -10px;
-  margin-right: -10px;
-  padding: 1px 10px 2px 10px;
-  background-color: #e1e5ec;
-}
-.artworks .card-in .text-days {
-  text-align: right;
-  margin-top: -21px !important;
-  height: 20px;
-  margin-bottom: 10px;
-}
-.artworks .text-memo {
-  display: inline-block;
-  font-size: 85%;
-  color: #777;
-  display: inline-block;
-  text-overflow: ellipsis;
-  word-break: break-all;
-  max-width: 120px;
-  height: 98px;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 6;
-  -webkit-box-orient: vertical;
-}
-.artworks .card-auction {
-  cursor: pointer;
-  padding: 10px 10px 10px 10px;
-  border: 1px solid #e1e5ec;
-  box-shadow: 0 0 0 0;
-}
-.artworks .card-auction:hover {
-  background-color: #fff;
-}
-.artworks .card-auction:hover .text-pay {
-  background-color: #555;
-  color: #fff;
-}
-.artworks .card-auction:hover .text-pay .bad {
-  color: #ff7090;
-}
-.artworks .card-auction:hover .text-pay .good {
-  color: #36e6ff;
-}
-.artworks .card-auction:hover .text-soldprice {
-  color: #fff;
-}
-.artworks .card-auction .text-pay {
+.card-auction .text-pay {
   margin-top: -10px !important;
   margin-left: -10px;
   margin-right: -10px;
@@ -255,48 +222,186 @@ html, body, div, ul, ol, li, table, tr, td, h1, h2, h3, h4, p, span, form, input
   padding: 1px 10px 2px 10px;
   background-color: #e1e5ec;
 }
-.artworks .card-auction .text-pay .bad {
+.card-auction .text-pay .bad {
   color: #ED1C24;
 }
-.artworks .card-auction .text-pay .good {
+.card-auction .text-pay .good {
   color: #1B73BF;
 }
-.artworks .card-auction .text-soldprice {
+.card-auction .text-soldprice {
   text-align: right;
   margin-top: -21px !important;
   height: 20px;
   margin-bottom: 10px;
 }
-.artworks .card-auction .text-auction {
+.card-auction .text-sale-status {
+  display: inline-block;
+}
+.card-auction .text-auction-type {
+  display: inline-block;
+  color: #777;
+}
+.card-auction .text-sale-turn {
+  display: inline-block;
+  color: #777;
+}
+.card-auction .text-auction {
   display: inline-block;
   text-overflow: ellipsis;
   word-break: break-all;
-  max-width: 150px;
+  max-width: 100%;
   height: 20px;
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   color: #1B73BF;
+  font-size: 120%;
+  font-weight: 600;
+  margin-bottom: 4px;
 }
-.artworks .card-out {
+
+.img-sale-banner {
+  display: inline-block;
+}
+.img-sale-banner img {
+  max-width: 110px;
+  max-height: 30px;
+  margin: 4px 0;
+}
+
+.search-managers ul .manager {
+  margin: 10px 0 10px 0;
+  font-size: 90%;
+  list-style-type: none;
+}
+
+.single {
+  border: 0;
+  padding: 0;
+}
+.single ul {
+  display: inline-block;
+  margin: 0 0 0 0;
+}
+.single ul .manager {
+  margin: 0 0 0 4px;
+  display: inline-block;
+}
+
+.icon-must {
+  color: #ED1C24;
+}
+
+.inventory .text-condition {
+  display: inline-block;
+  font-size: 85%;
+  color: #777;
+  display: inline-block;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  max-width: 120px;
+  height: 98px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+}
+.inventory .card-in {
   cursor: pointer;
   padding: 10px 10px 10px 10px;
   border: 1px solid #e1e5ec;
   box-shadow: 0 0 0 0;
 }
-.artworks .card-out:hover {
+.inventory .card-in:hover {
   background-color: #fff;
 }
-.artworks .card-out:hover .text-out-type {
+.inventory .card-in:hover .text-type {
   background-color: #555;
   color: #fff;
 }
-.artworks .card-out .text-out-type {
+.inventory .card-in:hover .text-days {
+  color: #fff;
+}
+.inventory .card-in .text-type {
+  margin-top: -10px !important;
+  margin-left: -10px;
+  margin-right: -10px;
+  padding: 1px 10px 2px 10px;
+  background-color: #e1e5ec;
+}
+.inventory .card-in .text-days {
+  text-align: right;
+  margin-top: -21px !important;
+  height: 20px;
+  margin-bottom: 10px;
+}
+.inventory .text-memo {
+  display: inline-block;
+  font-size: 85%;
+  color: #777;
+  display: inline-block;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  max-width: 120px;
+  height: 98px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+}
+.inventory .card-out {
+  cursor: pointer;
+  padding: 10px 10px 10px 10px;
+  border: 1px solid #e1e5ec;
+  box-shadow: 0 0 0 0;
+}
+.inventory .card-out:hover {
+  background-color: #fff;
+}
+.inventory .card-out:hover .text-out-type {
+  background-color: #555;
+  color: #fff;
+}
+.inventory .card-out .text-out-type {
   margin-top: -10px !important;
   margin-left: -10px;
   margin-right: -10px;
   margin-bottom: 10px;
   padding: 1px 10px 2px 10px;
   background-color: #e1e5ec;
+}
+
+.auctions .text-lot-count {
+  margin-bottom: 4px;
+}
+.auctions .text-lot-count button {
+  width: 100%;
+}
+.auctions .text-bn-count button {
+  width: 100%;
+}
+.auctions .btn-preview {
+  margin-bottom: 4px;
+}
+.auctions .text-sale-type {
+  display: inline-block;
+}
+.auctions .text-bid-type,
+.auctions .text-bid-end-type,
+.auctions .text-view-auction,
+.auctions .text-view-lot,
+.auctions .text-sold-count,
+.auctions .text-sold-amount,
+.auctions .text-sold-rate {
+  min-width: 60px;
+}
+.auctions .text-bid-type::before,
+.auctions .text-bid-end-type::before,
+.auctions .text-view-auction::before,
+.auctions .text-view-lot::before,
+.auctions .text-sold-count::before,
+.auctions .text-sold-amount::before,
+.auctions .text-sold-rate::before {
+  content: '-';
 }
