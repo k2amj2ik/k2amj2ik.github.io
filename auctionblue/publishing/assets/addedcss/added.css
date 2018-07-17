@@ -260,6 +260,14 @@ th {
   font-weight: 600;
   margin-bottom: 4px;
 }
+.card-auction .img-sale-banner {
+  display: inline-block;
+}
+.card-auction .img-sale-banner img {
+  max-width: 110px;
+  max-height: 30px;
+  margin: 4px 0;
+}
 
 .img-sale-banner {
   display: inline-block;
