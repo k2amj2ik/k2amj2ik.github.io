@@ -1,20 +1,7 @@
 @import "common";
 
-.artworks {
-  .page-title {
-    margin-top: 0;
-    .major-btn-groups {
-      float: right;
-      margin-right: 25px !important;
-      @media (max-width: 767px) {
-        margin: 20px 0 0 0 !important;
-        padding-right: 25px;
-        width: 100%;
-        float: none;
-        text-align: right;
-      }
-    }
-  }
+
+.inventory {
   .text-condition {
     display: inline-block;
     font-size: 85%;
@@ -24,11 +11,11 @@
 
   .card-in {
     cursor: pointer;
-    padding: $card-artwork-padding-top $card-artwork-padding-right $card-artwork-padding-bottom $card-artwork-padding-left;
+    padding: $card-inventory-padding-top $card-inventory-padding-right $card-inventory-padding-bottom $card-inventory-padding-left;
     border: $border-default;
     box-shadow: $shadow-default;
     &:hover {
-      background-color: $card-artwork-bgcolor-hover;
+      background-color: $card-inventory-bgcolor-hover;
       .text-type {
         background-color: $bgcolor-default;
         color: $font-color-white;
@@ -38,15 +25,15 @@
       }
     }
     .text-type {
-      margin-top: -$card-artwork-padding-top !important;
-      margin-left: -$card-artwork-padding-left;
-      margin-right: -$card-artwork-padding-right;
+      margin-top: -$card-inventory-padding-top !important;
+      margin-left: -$card-inventory-padding-left;
+      margin-right: -$card-inventory-padding-right;
       padding: 1px 10px 2px 10px;
       background-color: $bgcolor-fairy;
     }
     .text-days {
       text-align: right;
-      margin-top: -$card-artwork-padding-top - 11px !important;
+      margin-top: -$card-inventory-padding-top - 11px !important;
       height: 20px;
       margin-bottom: 10px;
     }
@@ -57,68 +44,22 @@
     color: $font-color-fairy;
     @include cut-multi-text(120px,98px,6);
   }
-  .card-auction {
-    cursor: pointer;
-    padding: $card-artwork-padding-top $card-artwork-padding-right $card-artwork-padding-bottom $card-artwork-padding-left;
-    border: $border-default;
-    box-shadow: $shadow-default;
-    &:hover {
-      background-color: $card-artwork-bgcolor-hover;
-      .text-pay {
-        background-color: $bgcolor-default;
-        color: $font-color-white;
-        .bad {
-          color: $font-color-danger*4;
-        }
-        .good {
-          color: $font-color-point*2;
-        }
-      }
-      .text-soldprice {
-        color: $font-color-white;
-      }
-    }
-    .text-pay {
-      margin-top: -$card-artwork-padding-top !important;
-      margin-left: -$card-artwork-padding-left;
-      margin-right: -$card-artwork-padding-right;
-      margin-bottom: 10px;
-      padding: 1px 10px 2px 10px;
-      background-color: $bgcolor-fairy;
-      .bad {
-        color: $font-color-danger;
-      }
-      .good {
-        color: $font-color-point;
-      }
-    }
-    .text-soldprice {
-      text-align: right;
-      margin-top: -$card-artwork-padding-top - 11px !important;
-      height: 20px;
-      margin-bottom: 10px;
-    }
-    .text-auction {
-      @include cut-multi-text(150px,20px,1);
-      color: $font-color-point;
-    }
-  }
   .card-out {
     cursor: pointer;
-    padding: $card-artwork-padding-top $card-artwork-padding-right $card-artwork-padding-bottom $card-artwork-padding-left;
+    padding: $card-inventory-padding-top $card-inventory-padding-right $card-inventory-padding-bottom $card-inventory-padding-left;
     border: $border-default;
     box-shadow: $shadow-default;
     &:hover {
-      background-color: $card-artwork-bgcolor-hover;
+      background-color: $card-inventory-bgcolor-hover;
       .text-out-type {
         background-color: $bgcolor-default;
         color: $font-color-white;
       }
     }
     .text-out-type {
-      margin-top: -$card-artwork-padding-top !important;
-      margin-left: -$card-artwork-padding-left;
-      margin-right: -$card-artwork-padding-right;
+      margin-top: -$card-inventory-padding-top !important;
+      margin-left: -$card-inventory-padding-left;
+      margin-right: -$card-inventory-padding-right;
       margin-bottom: 10px;
       padding: 1px 10px 2px 10px;
       background-color: $bgcolor-fairy;
@@ -126,3 +67,48 @@
   }
 }
 
+
+.auctions {
+  .text-sale-id {}
+  .text-bid-end-time {}
+  .text-sale-turn {}
+  .text-start-time {}
+  .text-end-start-time {}
+  .text-manager {}
+  .text-catalogue {}
+  .text-view-auction {}
+  .text-view-lot {}
+  .text-lot-count {
+    margin-bottom: 4px;
+    button {
+      width: 100%;
+    }
+  }
+  .text-bn-count {
+    button {
+      width: 100%;
+    }
+  }
+  .btn-preview {
+    margin-bottom:4px;
+  }
+  .btn-register-lots {
+
+  }
+  .text-sale-type {
+    display: inline-block;
+  }
+  .text-bid-type,
+  .text-bid-end-type,
+  .text-view-auction,
+  .text-view-lot,
+  .text-sold-count,
+  .text-sold-amount,
+  .text-sold-rate {
+    min-width: 60px;
+
+    &::before {
+      content: '-';
+    }
+  }
+}
