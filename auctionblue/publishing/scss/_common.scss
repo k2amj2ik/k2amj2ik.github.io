@@ -8,8 +8,8 @@ $card-inventory-padding-top: 10px;
 $card-inventory-padding-right: 10px;
 $card-inventory-padding-bottom: 10px;
 $card-inventory-padding-left: 10px;
+$font-color-default: #555;
 $font-color-fairy: #777;
-//$font-color-point: #FF7F27;
 $font-color-point: #1B73BF;
 $font-color-info: #2AB4C0;
 $font-color-white: #fff;
@@ -91,7 +91,15 @@ th {
   display: inline-block;
 }
 
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  color: $font-color-default;
+  line-height: 32px;
+  margin-bottom: -1px;
+}
 
+.select2-container .select2-selection--single {
+  height: 34px;
+}
 
 //user-guide-------------------------------------------------------------------------------------------
 .user-guide {

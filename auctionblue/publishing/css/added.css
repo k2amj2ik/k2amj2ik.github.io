@@ -57,6 +57,16 @@ th {
   display: inline-block;
 }
 
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  color: #555;
+  line-height: 32px;
+  margin-bottom: -1px;
+}
+
+.select2-container .select2-selection--single {
+  height: 34px;
+}
+
 .user-guide .btn-guide {
   font-size: 140%;
 }
