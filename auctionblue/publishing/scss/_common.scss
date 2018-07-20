@@ -14,6 +14,7 @@ $font-color-point: #1B73BF;
 $font-color-info: #2AB4C0;
 $font-color-white: #fff;
 $font-color-danger: #ED1C24;
+$font-color-warning: orange;
 $border-default: 1px solid #e1e5ec;
 //$border-default: 0;
 $border-bar: 1px solid #ccc;
@@ -38,6 +39,10 @@ html, body, div, ul, ol, li, table, tr, td, h1, h2, h3, h4, p, span, form, input
 .td-text-info {
   margin: 4px 0 4px 0 !important;
   color: $font-color-info;
+}
+.td-text-warning {
+  margin: 4px 0 4px 0 !important;
+  color: $font-color-warning;
 }
 .td-text-info-inline {}
 
@@ -100,6 +105,7 @@ th {
 .select2-container .select2-selection--single {
   height: 34px;
 }
+
 
 //user-guide-------------------------------------------------------------------------------------------
 .user-guide {
@@ -335,7 +341,6 @@ th {
     //margin: 14px 0 10px 0;
     .manager {
       margin: 10px 0 10px 0;
-      font-size: 90%;
       list-style-type: none;
     }
   }
@@ -356,3 +361,6 @@ th {
 .icon-must {
   color: $font-color-danger;
 }
+
+
+

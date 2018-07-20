@@ -9,6 +9,11 @@ html, body, div, ul, ol, li, table, tr, td, h1, h2, h3, h4, p, span, form, input
   color: #2AB4C0;
 }
 
+.td-text-warning {
+  margin: 4px 0 4px 0 !important;
+  color: orange;
+}
+
 .textarea-high-medium {
   min-height: 100px;
 }
@@ -282,7 +287,6 @@ th {
 
 .search-managers ul .manager {
   margin: 10px 0 10px 0;
-  font-size: 90%;
   list-style-type: none;
 }
 
