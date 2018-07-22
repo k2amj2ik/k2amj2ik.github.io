@@ -148,7 +148,7 @@ th {
 .card-inventory {
   cursor: pointer;
   position: relative;
-  padding: 10px 10px 10px 70px;
+  padding: 0 0 0 60px;
   border: 1px solid #e1e5ec;
   box-shadow: 0 0 0 0;
 }
@@ -166,17 +166,17 @@ th {
 }
 .card-inventory .img-artwork {
   position: absolute;
-  top: 28px;
-  left: 10px;
+  top: 18px;
+  left: 0;
 }
 .card-inventory .img-artwork img {
   max-width: 50px;
   max-height: 50px;
 }
 .card-inventory .text-bn {
-  margin-top: -10px !important;
-  margin-left: -70px;
-  margin-right: -10px;
+  margin-top: 0 !important;
+  margin-left: -60px;
+  margin-right: 0;
   padding: 1px 10px 2px 10px;
   background-color: #e1e5ec;
 }
@@ -230,9 +230,9 @@ th {
   cursor: pointer;
 }
 .card-auction .text-pay {
-  margin-top: -10px !important;
-  margin-left: -10px;
-  margin-right: -10px;
+  margin-top: 0 !important;
+  margin-left: 0;
+  margin-right: 0;
   margin-bottom: 10px;
   padding: 1px 10px 2px 10px;
   background-color: #e1e5ec;
@@ -245,7 +245,7 @@ th {
 }
 .card-auction .text-soldprice {
   text-align: right;
-  margin-top: -21px !important;
+  margin-top: -11px !important;
   height: 20px;
   margin-bottom: 10px;
 }
@@ -273,6 +273,76 @@ th {
   color: #1B73BF;
   font-size: 120%;
   font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.card-lot {
+  position: relative;
+  padding-left: 60px;
+}
+.card-lot p {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  display: block;
+}
+.card-lot .img-lot {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.card-lot .img-lot img {
+  max-width: 50px;
+  max-height: 50px;
+}
+.card-lot .text-lot-artist {
+  font-size: 100%;
+  font-weight: bold;
+  margin: 6px 0 0 0 !important;
+}
+.card-lot .text-lot-worktitle {
+  font-size: 110%;
+  font-style: italic;
+  font-weight: 600;
+  color: #1B73BF;
+  margin: 2px 0 0 0 !important;
+  display: inline-block;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  max-width: 400px;
+  height: 24px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.card-lot .text-lot-description {
+  margin: 0 0 0 0 !important;
+  color: #777;
+  display: inline-block;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  max-width: 400px;
+  height: 20px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.text-lot-number {
+  font-size: 200%;
+  font-weight: 600;
+}
+
+.text-lot-id {
+  font-size: 90%;
+}
+
+.text-lot-bn {
+  font-size: 90%;
+}
+
+.text-lot-bidder-count {
   margin-bottom: 4px;
 }
 
@@ -323,7 +393,7 @@ th {
 }
 .inventory .card-in {
   cursor: pointer;
-  padding: 10px 10px 10px 10px;
+  padding: 0 0 0 0;
   border: 1px solid #e1e5ec;
   box-shadow: 0 0 0 0;
 }
@@ -338,15 +408,15 @@ th {
   color: #fff;
 }
 .inventory .card-in .text-type {
-  margin-top: -10px !important;
-  margin-left: -10px;
-  margin-right: -10px;
+  margin-top: 0 !important;
+  margin-left: 0;
+  margin-right: 0;
   padding: 1px 10px 2px 10px;
   background-color: #e1e5ec;
 }
 .inventory .card-in .text-days {
   text-align: right;
-  margin-top: -21px !important;
+  margin-top: -11px !important;
   height: 20px;
   margin-bottom: 10px;
 }
@@ -366,7 +436,7 @@ th {
 }
 .inventory .card-out {
   cursor: pointer;
-  padding: 10px 10px 10px 10px;
+  padding: 0 0 0 0;
   border: 1px solid #e1e5ec;
   box-shadow: 0 0 0 0;
 }
@@ -378,9 +448,9 @@ th {
   color: #fff;
 }
 .inventory .card-out .text-out-type {
-  margin-top: -10px !important;
-  margin-left: -10px;
-  margin-right: -10px;
+  margin-top: 0 !important;
+  margin-left: 0;
+  margin-right: 0;
   margin-bottom: 10px;
   padding: 1px 10px 2px 10px;
   background-color: #e1e5ec;

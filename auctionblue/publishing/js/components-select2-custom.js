@@ -12,8 +12,13 @@ var ComponentsSelect2 = function() {
 
 
         $(".auto-complete-auction").select2({
-            placeholder: "\"경매ID, 회차명, 소제목\"을 직접 입력하거나 클릭하여 선택하세요.",
+            placeholder: "경매검색 | \"경매ID, 회차명, 소제목\"을 입력하거나 선택하세요.",
             width: "resolve",
+        });
+
+        $(".auto-complete-lot").select2({
+            placeholder: "랏검색 | \"랏ID, 랏번호, 작가명, 작품명\"을 입력하거나 선택하세요.",
+            width: "450px",
         });
 
         // @see https://select2.github.io/examples.html#data-ajax

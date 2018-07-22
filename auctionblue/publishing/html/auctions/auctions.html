@@ -497,11 +497,12 @@
                                     <div class="form-group">
                                         <select class="form-control">
                                             <option selected>경매시작</option>
-                                            <option>경매종료</option>
+                                            <option>마감시작</option>
+                                            <option>마감종료</option>
                                         </select>
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" class="form-control input-medium input-icon-calendar" placeholder="시작일-종료일" name="datarangefilter" value="" />
+                                        <input type="text" class="form-control input-medium input-icon-calendar" placeholder="시작일-종료일" name="date-range" value="" />
                                     </div>
                                     <div class="form-group">
                                         <button type="button" class="btn grey-silver"><i class="fa fa-search"></i> 검색</button>
@@ -558,6 +559,7 @@
                                 <th>경매정보</th>
                                 <th class="text-center">판매시작</th>
                                 <th class="text-center">마감시작</th>
+                                <th class="text-center">마감종료</th>
                                 <th>응찰/마감</th>
                                 <th>전시</th>
                                 <th>결과</th>
@@ -606,6 +608,11 @@
                                         00:00 AM
                                     </p>
                                 </td>
+                                <td class="text-center">
+                                    <p class="text-end-start-time">
+                                        -
+                                    </p>
+                                </td>
                                 <td>
                                     <p class="text-bid-type">
                                         일반경매
@@ -623,11 +630,11 @@
                                     </p>
                                 </td>
                                 <td>
-                                    결과없음
+                                    -
                                 </td>
                                 <td class="text-center">
                                     <p class="text-lot-count">
-                                        <button type="button" class="btn default">LOT (0)</button>
+                                        <button type="button" class="btn default" onclick="location.href='lots.html'">LOT (0)</button>
                                     </p>
                                     <p class="text-bn-count">
                                         <button type="button" class="btn default">BN (0)</button>
@@ -679,6 +686,11 @@
                                         00:00 AM
                                     </p>
                                 </td>
+                                <td class="text-center">
+                                    <p class="text-end-start-time">
+                                        -
+                                    </p>
+                                </td>
                                 <td>
                                     <p class="text-bid-type">
                                         역경매
@@ -708,7 +720,7 @@
                                 </td>
                                 <td class="text-center">
                                     <p class="text-lot-count">
-                                        <button type="button" class="btn default">LOT (22)</button>
+                                        <button type="button" class="btn default" onclick="location.href='lots.html'">LOT (22)</button>
                                     </p>
                                     <p class="text-bn-count">
                                         <button type="button" class="btn default">BN (30)</button>
@@ -763,6 +775,12 @@
                                         00:00 AM
                                     </p>
                                 </td>
+                                <td class="text-center">
+                                    <p class="text-end-start-time">
+                                        2018/07/13<br>
+                                        08:00 AM
+                                    </p>
+                                </td>
                                 <td>
                                     <p class="text-bid-type">
                                         서면응찰
@@ -792,7 +810,7 @@
                                 </td>
                                 <td class="text-center">
                                     <p class="text-lot-count">
-                                        <button type="button" class="btn default">LOT (22)</button>
+                                        <button type="button" class="btn default" onclick="location.href='lots.html'">LOT (22)</button>
                                     </p>
                                     <p class="text-bn-count">
                                         <button type="button" class="btn default">BN (30)</button>
@@ -847,6 +865,11 @@
                                         12:59 AM
                                     </p>
                                 </td>
+                                <td class="text-center">
+                                    <p class="text-end-start-time">
+                                        -
+                                    </p>
+                                </td>
                                 <td>
                                     <p class="text-bid-type">
                                         즉시구매
@@ -873,7 +896,7 @@
                                 </td>
                                 <td class="text-center">
                                     <p class="text-lot-count">
-                                        <button type="button" class="btn default">LOT (0)</button>
+                                        <button type="button" class="btn default" onclick="location.href='lots.html'">LOT (0)</button>
                                     </p>
                                     <p class="text-bn-count">
                                         <button type="button" class="btn default">BN (0)</button>
@@ -922,6 +945,11 @@
                                         23:59 PM
                                     </p>
                                 </td>
+                                <td class="text-center">
+                                    <p class="text-end-start-time">
+                                        -
+                                    </p>
+                                </td>
                                 <td>
                                     <p class="text-bid-type">
                                         문의하기
@@ -939,19 +967,11 @@
                                     </p>
                                 </td>
                                 <td>
-                                    <p class="text-sold-count">
-                                        낙찰건 :  0
-                                    </p>
-                                    <p class="text-sold-amount">
-                                        낙찰액 : 0
-                                    </p>
-                                    <p class="text-sold-rate">
-                                        낙찰률 : 0.0%
-                                    </p>
+                                    -
                                 </td>
                                 <td class="text-center">
                                     <p class="text-lot-count">
-                                        <button type="button" class="btn default">LOT (150)</button>
+                                        <button type="button" class="btn default" onclick="location.href='lots.html'">LOT (150)</button>
                                     </p>
                                     <p class="text-bn-count">
                                         <button type="button" class="btn default">BN (0)</button>

@@ -4,10 +4,10 @@
 $card-inventory-image-max-width: 50px;
 $card-inventory-image-max-height: 50px;
 $card-inventory-bgcolor-hover: #fff;
-$card-inventory-padding-top: 10px;
-$card-inventory-padding-right: 10px;
-$card-inventory-padding-bottom: 10px;
-$card-inventory-padding-left: 10px;
+$card-inventory-padding-top: 0;
+$card-inventory-padding-right: 0;
+$card-inventory-padding-bottom: 0;
+$card-inventory-padding-left: 0;
 $font-color-default: #555;
 $font-color-fairy: #777;
 $font-color-point: #1B73BF;
@@ -265,25 +265,6 @@ th {
 //auction-------------------------------------------------------------------------------------------
 .card-auction {
   cursor: pointer;
-  //padding: $card-inventory-padding-top $card-inventory-padding-right $card-inventory-padding-bottom $card-inventory-padding-left;
-  //border: $border-default;
-  //box-shadow: $shadow-default;
-  //&:hover {
-  //  background-color: $card-inventory-bgcolor-hover;
-  //  .text-pay {
-  //    background-color: $bgcolor-default;
-  //    color: $font-color-white;
-  //    .bad {
-  //      color: $font-color-danger*4;
-  //    }
-  //    .good {
-  //      color: $font-color-point*2;
-  //    }
-  //  }
-  //  .text-soldprice {
-  //    color: $font-color-white;
-  //  }
-  //}
   .text-pay {
     margin-top: -$card-inventory-padding-top !important;
     margin-left: -$card-inventory-padding-left;
@@ -324,6 +305,60 @@ th {
   }
 
 }
+
+//lot -------------------------------------------------------------------------------------------
+
+.card-lot {
+  position: relative;
+  padding-left: $card-inventory-image-max-width +10px;
+  p {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    display: block;
+  }
+  .img-lot {
+    position: absolute;
+    top: $card-inventory-padding-top;
+    left: $card-inventory-padding-left;
+    img {
+      max-width: $card-inventory-image-max-width;
+      max-height: $card-inventory-image-max-height;
+    }
+  }
+  .text-lot-artist {
+    font-size: 100%;
+    font-weight: bold;
+    margin: 6px 0 0 0 !important;
+  }
+  .text-lot-worktitle {
+    font-size: 110%;
+    font-style: italic;
+    font-weight: 600;
+    color: $font-color-point;
+    margin: 2px 0 0 0 !important;
+    @include cut-multi-text(400px,24px,1);
+  }
+  .text-lot-description {
+    margin: 0 0 0 0 !important;
+    color: $font-color-fairy;
+    @include cut-multi-text(400px,20px,1);
+  }
+}
+
+.text-lot-number {
+  font-size: 200%;
+  font-weight: 600;
+}
+.text-lot-id {
+  font-size: 90%;
+}
+.text-lot-bn {
+  font-size: 90%;
+}
+.text-lot-bidder-count {
+  margin-bottom: 4px;
+}
+
 //common ui-------------------------------------------------------------------------------------------
 .img-sale-banner {
   display: inline-block;

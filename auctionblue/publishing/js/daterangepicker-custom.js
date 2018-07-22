@@ -328,7 +328,7 @@
 
 $(function() {
 
-    $('input[name="datarangefilter"]').daterangepicker({
+    $('input[name="date-range"]').daterangepicker({
         ranges: {
             '오늘': [moment(), moment()],
             '어제': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
@@ -340,30 +340,29 @@ $(function() {
         "alwaysShowCalendars": true,
     });
 
-    $('input[name="datarangefilter"]').on('apply.daterangepicker', function(ev, picker) {
+    $('input[name="date-range"]').on('apply.daterangepicker', function(ev, picker) {
         $(this).val(picker.startDate.format('YYYY/MM/DD') + ' - ' + picker.endDate.format('YYYY/MM/DD'));
     });
 
-    $('input[name="datarangefilter"]').on('cancel.daterangepicker', function(ev, picker) {
-        $(this).val('');
-    });
-
-    $('input[name="datesinglefilter"]').daterangepicker({
+    $('input[name="date-single-start-sale"]').daterangepicker({
         "singleDatePicker": true,
         "timePicker": true,
         "timePickerIncrement": 5,
-        startDate: moment().startOf('hour'),
-        locale: {
+        "startDate": moment().startOf('hour'),
+        "locale": {
             format: 'YYYY/MM/DD hh:mm A'
         }
     });
 
-    $('input[name="datesinglefilter"]').on('apply.daterangepicker', function(ev, picker) {
-        $(this).val(picker.startDate.format('YYYY/MM/DD hh:mm A'));
-    });
 
-    $('input[name="datesinglefilter"]').on('cancel.daterangepicker', function(ev, picker) {
-        $(this).val('');
+    $('input[name="date-single-start-end"]').daterangepicker({
+        "singleDatePicker": true,
+        "timePicker": true,
+        "timePickerIncrement": 5,
+        "startDate": moment().startOf('hour'),
+        "locale": {
+            format: 'YYYY/MM/DD hh:mm A'
+        }
     });
 
 
