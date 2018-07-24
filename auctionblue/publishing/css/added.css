@@ -72,6 +72,14 @@ th {
   height: 34px;
 }
 
+.login .content .form-actions {
+  border-bottom: 0;
+}
+
+.login .content h3 {
+  margin-top: 10px;
+}
+
 .user-guide .btn-guide {
   font-size: 140%;
 }
