@@ -334,8 +334,10 @@ $(function() {
             '어제': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
             '지난 7일': [moment().subtract(6, 'days'), moment()],
             '지난 30일': [moment().subtract(29, 'days'), moment()],
-            '이번 달': [moment().startOf('month'), moment().endOf('month')],
-            '지난 달': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+            // '이번 달': [moment().startOf('month'), moment().endOf('month')],
+            // '지난 달': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')],
+            '지난 1년': [moment().subtract(1, 'years'), moment()],
+            '작년': [moment().subtract(1, 'year').startOf('year'), moment().subtract(1, 'year').endOf('year')],
         },            autoUpdateInput: false,
         "alwaysShowCalendars": true,
     });

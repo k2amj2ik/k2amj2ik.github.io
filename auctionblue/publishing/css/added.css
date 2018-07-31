@@ -18,8 +18,27 @@ html, body, div, ul, ol, li, table, tr, td, h1, h2, h3, h4, p, span, form, input
   min-height: 100px;
 }
 
+.auction-info {
+  margin: 10px 0;
+  padding: 1px;
+  background-color: #fff;
+}
+.auction-info .table {
+  margin: 0;
+}
+
+.text-linkable {
+  cursor: pointer;
+  color: #1B73BF;
+  text-decoration: underline;
+}
+
 a {
   text-decoration: underline;
+}
+
+.btn {
+  text-decoration: none;
 }
 
 th {
@@ -78,6 +97,14 @@ th {
 
 .login .content h3 {
   margin-top: 10px;
+}
+
+.portlet.solid.grey-steel > .portlet-title > .tools > a.expand {
+  background-image: url(../assets/global/img/portlet-expand-icon.png);
+}
+
+.portlet.solid.grey-steel > .portlet-title > .tools > a.collapse {
+  background-image: url(../assets/global/img/portlet-collapse-icon.png);
 }
 
 .user-guide .btn-guide {
@@ -153,87 +180,6 @@ th {
   }
 }
 
-.card-inventory {
-  cursor: pointer;
-  position: relative;
-  padding: 0 0 0 60px;
-  border: 1px solid #e1e5ec;
-  box-shadow: 0 0 0 0;
-}
-.card-inventory:hover {
-  background-color: #fff;
-}
-.card-inventory:hover .text-bn {
-  background-color: #555;
-  color: #fff;
-}
-.card-inventory p {
-  margin: 0 0 0 0;
-  padding: 0 0 0 0;
-  display: block;
-}
-.card-inventory .img-artwork {
-  position: absolute;
-  top: 18px;
-  left: 0;
-}
-.card-inventory .img-artwork img {
-  max-width: 50px;
-  max-height: 50px;
-}
-.card-inventory .text-bn {
-  margin-top: 0 !important;
-  margin-left: -60px;
-  margin-right: 0;
-  padding: 1px 10px 2px 10px;
-  background-color: #e1e5ec;
-}
-.card-inventory .text-artist {
-  font-size: 100%;
-  font-weight: bold;
-  margin: 6px 0 0 0 !important;
-}
-.card-inventory .text-worktitle {
-  font-size: 110%;
-  font-style: italic;
-  color: #1B73BF;
-  margin: 2px 0 0 0 !important;
-  display: inline-block;
-  text-overflow: ellipsis;
-  word-break: break-all;
-  max-width: 400px;
-  height: 24px;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
-}
-.card-inventory .text-description {
-  margin: 0 0 0 0 !important;
-  color: #777;
-  display: inline-block;
-  text-overflow: ellipsis;
-  word-break: break-all;
-  max-width: 400px;
-  height: 20px;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
-}
-
-.view-only {
-  cursor: default;
-  margin-bottom: 10px;
-}
-.view-only:hover {
-  background-color: #fff;
-}
-.view-only:hover .text-bn {
-  background-color: #e1e5ec;
-  color: #fff;
-}
-
 .card-auction {
   cursor: pointer;
 }
@@ -284,30 +230,30 @@ th {
   margin-bottom: 4px;
 }
 
-.card-lot {
+.card-item, .card-lot {
   position: relative;
   padding-left: 60px;
 }
-.card-lot p {
+.card-item p, .card-lot p {
   margin: 0 0 0 0;
   padding: 0 0 0 0;
   display: block;
 }
-.card-lot .img-lot {
+.card-item .img-lot, .card-lot .img-lot {
   position: absolute;
   top: 0;
   left: 0;
 }
-.card-lot .img-lot img {
+.card-item .img-lot img, .card-lot .img-lot img {
   max-width: 50px;
   max-height: 50px;
 }
-.card-lot .text-lot-artist {
+.card-item .text-lot-artist, .card-lot .text-lot-artist {
   font-size: 100%;
   font-weight: bold;
-  margin: 6px 0 0 0 !important;
+  margin: 0 0 0 0 !important;
 }
-.card-lot .text-lot-worktitle {
+.card-item .text-lot-worktitle, .card-lot .text-lot-worktitle {
   font-size: 110%;
   font-style: italic;
   font-weight: 600;
@@ -323,7 +269,20 @@ th {
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
 }
-.card-lot .text-lot-description {
+.card-item .text-lot-description, .card-lot .text-lot-description {
+  margin: 0 0 0 0 !important;
+  color: #777;
+  display: inline-block;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  max-width: 400px;
+  height: 20px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.card-item .text-lot-sale-summary, .card-lot .text-lot-sale-summary {
   margin: 0 0 0 0 !important;
   color: #777;
   display: inline-block;
@@ -363,6 +322,9 @@ th {
   margin: 4px 0;
 }
 
+.search-managers > .btn {
+  margin-bottom: 4px;
+}
 .search-managers ul .manager {
   margin: 10px 0 10px 0;
   list-style-type: none;
@@ -385,7 +347,58 @@ th {
   color: #ED1C24;
 }
 
-.inventory .text-condition {
+.items p, .auctions p, .lots p, .lot-add p, .items p {
+  width: fit-content;
+}
+.items .actions, .auctions .actions, .lots .actions, .lot-add .actions, .items .actions {
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+.items .actions .buttons, .auctions .actions .buttons, .lots .actions .buttons, .lot-add .actions .buttons, .items .actions .buttons {
+  float: right;
+}
+.items .actions .buttons .button, .auctions .actions .buttons .button, .lots .actions .buttons .button, .lot-add .actions .buttons .button, .items .actions .buttons .button {
+  display: inline-block;
+  margin-left: 2px;
+}
+.items .text-condition, .auctions .text-condition, .lots .text-condition, .lot-add .text-condition, .items .text-condition {
+  display: inline-block;
+  font-size: 85%;
+  color: #777;
+  display: inline-block;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  max-width: 120px;
+  height: 64px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+.items .card-in, .auctions .card-in, .lots .card-in, .lot-add .card-in, .items .card-in {
+  cursor: pointer;
+  padding: 0 0 0 0;
+  border: 1px solid #e1e5ec;
+  box-shadow: 0 0 0 0;
+}
+.items .card-in:hover, .auctions .card-in:hover, .lots .card-in:hover, .lot-add .card-in:hover, .items .card-in:hover {
+  background-color: #fff;
+}
+.items .card-in:hover .text-type, .auctions .card-in:hover .text-type, .lots .card-in:hover .text-type, .lot-add .card-in:hover .text-type, .items .card-in:hover .text-type {
+  background-color: #555;
+  color: #fff;
+}
+.items .card-in:hover .text-days, .auctions .card-in:hover .text-days, .lots .card-in:hover .text-days, .lot-add .card-in:hover .text-days, .items .card-in:hover .text-days {
+  color: #fff;
+}
+.items .card-in .text-type, .auctions .card-in .text-type, .lots .card-in .text-type, .lot-add .card-in .text-type, .items .card-in .text-type {
+  margin-top: 0 !important;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 1px 10px 2px 10px;
+  background-color: #e1e5ec;
+}
+.items .text-memo, .auctions .text-memo, .lots .text-memo, .lot-add .text-memo, .items .text-memo {
   display: inline-block;
   font-size: 85%;
   color: #777;
@@ -399,63 +412,20 @@ th {
   -webkit-line-clamp: 6;
   -webkit-box-orient: vertical;
 }
-.inventory .card-in {
+.items .card-out, .auctions .card-out, .lots .card-out, .lot-add .card-out, .items .card-out {
   cursor: pointer;
   padding: 0 0 0 0;
   border: 1px solid #e1e5ec;
   box-shadow: 0 0 0 0;
 }
-.inventory .card-in:hover {
+.items .card-out:hover, .auctions .card-out:hover, .lots .card-out:hover, .lot-add .card-out:hover, .items .card-out:hover {
   background-color: #fff;
 }
-.inventory .card-in:hover .text-type {
+.items .card-out:hover .text-out-type, .auctions .card-out:hover .text-out-type, .lots .card-out:hover .text-out-type, .lot-add .card-out:hover .text-out-type, .items .card-out:hover .text-out-type {
   background-color: #555;
   color: #fff;
 }
-.inventory .card-in:hover .text-days {
-  color: #fff;
-}
-.inventory .card-in .text-type {
-  margin-top: 0 !important;
-  margin-left: 0;
-  margin-right: 0;
-  padding: 1px 10px 2px 10px;
-  background-color: #e1e5ec;
-}
-.inventory .card-in .text-days {
-  text-align: right;
-  margin-top: -11px !important;
-  height: 20px;
-  margin-bottom: 10px;
-}
-.inventory .text-memo {
-  display: inline-block;
-  font-size: 85%;
-  color: #777;
-  display: inline-block;
-  text-overflow: ellipsis;
-  word-break: break-all;
-  max-width: 120px;
-  height: 98px;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 6;
-  -webkit-box-orient: vertical;
-}
-.inventory .card-out {
-  cursor: pointer;
-  padding: 0 0 0 0;
-  border: 1px solid #e1e5ec;
-  box-shadow: 0 0 0 0;
-}
-.inventory .card-out:hover {
-  background-color: #fff;
-}
-.inventory .card-out:hover .text-out-type {
-  background-color: #555;
-  color: #fff;
-}
-.inventory .card-out .text-out-type {
+.items .card-out .text-out-type, .auctions .card-out .text-out-type, .lots .card-out .text-out-type, .lot-add .card-out .text-out-type, .items .card-out .text-out-type {
   margin-top: 0 !important;
   margin-left: 0;
   margin-right: 0;
@@ -463,37 +433,78 @@ th {
   padding: 1px 10px 2px 10px;
   background-color: #e1e5ec;
 }
-
-.auctions .text-lot-count {
+.items .text-lot-count, .items .btn-history-inout, .items .btn-history-auction, .items .text-bn-count, .auctions .text-lot-count, .auctions .btn-history-inout, .auctions .btn-history-auction, .auctions .text-bn-count, .lots .text-lot-count, .lots .btn-history-inout, .lots .btn-history-auction, .lots .text-bn-count, .lot-add .text-lot-count, .lot-add .btn-history-inout, .lot-add .btn-history-auction, .lot-add .text-bn-count, .items .text-lot-count, .items .btn-history-inout, .items .btn-history-auction, .items .text-bn-count {
   margin-bottom: 4px;
 }
-.auctions .text-lot-count button {
+.items .text-lot-count a.btn, .items .btn-history-inout a.btn, .items .btn-history-auction a.btn, .items .text-bn-count a.btn, .auctions .text-lot-count a.btn, .auctions .btn-history-inout a.btn, .auctions .btn-history-auction a.btn, .auctions .text-bn-count a.btn, .lots .text-lot-count a.btn, .lots .btn-history-inout a.btn, .lots .btn-history-auction a.btn, .lots .text-bn-count a.btn, .lot-add .text-lot-count a.btn, .lot-add .btn-history-inout a.btn, .lot-add .btn-history-auction a.btn, .lot-add .text-bn-count a.btn, .items .text-lot-count a.btn, .items .btn-history-inout a.btn, .items .btn-history-auction a.btn, .items .text-bn-count a.btn {
   width: 100%;
 }
-.auctions .text-bn-count button {
-  width: 100%;
-}
-.auctions .btn-preview {
+.items .btn-preview, .auctions .btn-preview, .lots .btn-preview, .lot-add .btn-preview, .items .btn-preview {
   margin-bottom: 4px;
 }
-.auctions .text-sale-type {
+.items .text-sale-type, .auctions .text-sale-type, .lots .text-sale-type, .lot-add .text-sale-type, .items .text-sale-type {
   display: inline-block;
 }
-.auctions .text-bid-type,
+.items .text-bid-type,
+.items .text-bid-end-type,
+.items .text-view-auction,
+.items .text-view-lot,
+.items .text-sold-count,
+.items .text-sold-amount,
+.items .text-sold-rate,
+.items .text-in-type,
+.items .text-in-date,
+.items .text-in-days,
+.items .text-in-purpose,
+.items .text-in-customer,
+.items .text-in-customer-manager, .auctions .text-bid-type,
 .auctions .text-bid-end-type,
 .auctions .text-view-auction,
 .auctions .text-view-lot,
 .auctions .text-sold-count,
 .auctions .text-sold-amount,
-.auctions .text-sold-rate {
+.auctions .text-sold-rate,
+.auctions .text-in-type,
+.auctions .text-in-date,
+.auctions .text-in-days,
+.auctions .text-in-purpose,
+.auctions .text-in-customer,
+.auctions .text-in-customer-manager, .lots .text-bid-type,
+.lots .text-bid-end-type,
+.lots .text-view-auction,
+.lots .text-view-lot,
+.lots .text-sold-count,
+.lots .text-sold-amount,
+.lots .text-sold-rate,
+.lots .text-in-type,
+.lots .text-in-date,
+.lots .text-in-days,
+.lots .text-in-purpose,
+.lots .text-in-customer,
+.lots .text-in-customer-manager, .lot-add .text-bid-type,
+.lot-add .text-bid-end-type,
+.lot-add .text-view-auction,
+.lot-add .text-view-lot,
+.lot-add .text-sold-count,
+.lot-add .text-sold-amount,
+.lot-add .text-sold-rate,
+.lot-add .text-in-type,
+.lot-add .text-in-date,
+.lot-add .text-in-days,
+.lot-add .text-in-purpose,
+.lot-add .text-in-customer,
+.lot-add .text-in-customer-manager, .items .text-bid-type,
+.items .text-bid-end-type,
+.items .text-view-auction,
+.items .text-view-lot,
+.items .text-sold-count,
+.items .text-sold-amount,
+.items .text-sold-rate,
+.items .text-in-type,
+.items .text-in-date,
+.items .text-in-days,
+.items .text-in-purpose,
+.items .text-in-customer,
+.items .text-in-customer-manager {
   min-width: 60px;
-}
-.auctions .text-bid-type::before,
-.auctions .text-bid-end-type::before,
-.auctions .text-view-auction::before,
-.auctions .text-view-lot::before,
-.auctions .text-sold-count::before,
-.auctions .text-sold-amount::before,
-.auctions .text-sold-rate::before {
-  content: '-';
 }
