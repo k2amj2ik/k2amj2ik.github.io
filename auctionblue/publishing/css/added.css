@@ -33,6 +33,27 @@ html, body, div, ul, ol, li, table, tr, td, h1, h2, h3, h4, p, span, form, input
   text-decoration: underline;
 }
 
+.form-btns {
+  float: right !important;
+}
+
+.main-link {
+  font-weight: 600;
+}
+
+.table-text-center table thead tr th {
+  text-align: center !important;
+}
+.table-text-center table thead tr th.text-left {
+  text-align: left !important;
+}
+.table-text-center table tbody tr td {
+  text-align: center !important;
+}
+.table-text-center table tbody tr td.text-left {
+  text-align: left !important;
+}
+
 a {
   text-decoration: underline;
 }
@@ -107,6 +128,11 @@ th {
   background-image: url(../assets/global/img/portlet-collapse-icon.png);
 }
 
+@media (min-width: 992px) {
+  .center-col-md {
+    margin-left: -10px !important;
+  }
+}
 .user-guide .btn-guide {
   font-size: 140%;
 }
@@ -143,11 +169,14 @@ th {
   border-bottom: 1px solid #e1e5ec;
 }
 
-.top-search select {
-  margin-bottom: -1px;
+.top-search {
+  font-size: 90% !important;
 }
 .top-search .portlet-title .major-search {
   margin: 10px 0 -10px 10px !important;
+}
+.top-search .portlet-title .form-btns {
+  margin-bottom: -10px;
 }
 .top-search .portlet-body {
   margin: 10px 0 0 10px !important;
@@ -160,7 +189,7 @@ th {
   width: auto !important;
 }
 .top-search .form-edge {
-  padding-right: 60px !important;
+  paddingr-ight: 60px !important;
 }
 
 .page-title {
@@ -433,10 +462,10 @@ th {
   padding: 1px 10px 2px 10px;
   background-color: #e1e5ec;
 }
-.items .text-lot-count, .items .btn-history-inout, .items .btn-history-auction, .items .text-bn-count, .auctions .text-lot-count, .auctions .btn-history-inout, .auctions .btn-history-auction, .auctions .text-bn-count, .lots .text-lot-count, .lots .btn-history-inout, .lots .btn-history-auction, .lots .text-bn-count, .lot-add .text-lot-count, .lot-add .btn-history-inout, .lot-add .btn-history-auction, .lot-add .text-bn-count, .items .text-lot-count, .items .btn-history-inout, .items .btn-history-auction, .items .text-bn-count {
-  margin-bottom: 4px;
+.items .btn-history-inout, .items .btn-history-auction, .items .text-bn-count, .auctions .btn-history-inout, .auctions .btn-history-auction, .auctions .text-bn-count, .lots .btn-history-inout, .lots .btn-history-auction, .lots .text-bn-count, .lot-add .btn-history-inout, .lot-add .btn-history-auction, .lot-add .text-bn-count, .items .btn-history-inout, .items .btn-history-auction, .items .text-bn-count {
+  margin: 4px;
 }
-.items .text-lot-count a.btn, .items .btn-history-inout a.btn, .items .btn-history-auction a.btn, .items .text-bn-count a.btn, .auctions .text-lot-count a.btn, .auctions .btn-history-inout a.btn, .auctions .btn-history-auction a.btn, .auctions .text-bn-count a.btn, .lots .text-lot-count a.btn, .lots .btn-history-inout a.btn, .lots .btn-history-auction a.btn, .lots .text-bn-count a.btn, .lot-add .text-lot-count a.btn, .lot-add .btn-history-inout a.btn, .lot-add .btn-history-auction a.btn, .lot-add .text-bn-count a.btn, .items .text-lot-count a.btn, .items .btn-history-inout a.btn, .items .btn-history-auction a.btn, .items .text-bn-count a.btn {
+.items .btn-history-inout a.btn, .items .btn-history-auction a.btn, .items .text-bn-count a.btn, .auctions .btn-history-inout a.btn, .auctions .btn-history-auction a.btn, .auctions .text-bn-count a.btn, .lots .btn-history-inout a.btn, .lots .btn-history-auction a.btn, .lots .text-bn-count a.btn, .lot-add .btn-history-inout a.btn, .lot-add .btn-history-auction a.btn, .lot-add .text-bn-count a.btn, .items .btn-history-inout a.btn, .items .btn-history-auction a.btn, .items .text-bn-count a.btn {
   width: 100%;
 }
 .items .btn-preview, .auctions .btn-preview, .lots .btn-preview, .lot-add .btn-preview, .items .btn-preview {
@@ -444,6 +473,9 @@ th {
 }
 .items .text-sale-type, .auctions .text-sale-type, .lots .text-sale-type, .lot-add .text-sale-type, .items .text-sale-type {
   display: inline-block;
+}
+.items .text-lot-price-sold, .auctions .text-lot-price-sold, .lots .text-lot-price-sold, .lot-add .text-lot-price-sold, .items .text-lot-price-sold {
+  color: orange;
 }
 .items .text-bid-type,
 .items .text-bid-end-type,

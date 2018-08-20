@@ -12,7 +12,7 @@ var ComponentsSelect2 = function() {
 
 
         $(".auto-complete-auction").select2({
-            placeholder: "경매검색 | \"회차명\"을 입력하거나 선택하세요.",
+            placeholder: "경매검색 | \"경매회차\"를 입력하거나 선택하세요.",
             width: "resolve",
         });
 

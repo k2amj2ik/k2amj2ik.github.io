@@ -4,6 +4,7 @@
 .items, .auctions, .lots, .lot-add, .items{
   p {
     width: fit-content;
+    //border:1px solid red;
   }
   .actions {
     margin-top: -10px;
@@ -82,8 +83,8 @@
   .text-catalogue {}
   .text-view-auction {}
   .text-view-lot {}
-  .text-lot-count, .btn-history-inout, .btn-history-auction, .text-bn-count {
-    margin-bottom: 4px;
+  .btn-history-inout, .btn-history-auction, .text-bn-count {
+    margin: 4px;
     a.btn {
       width: 100%;
     }
@@ -96,6 +97,14 @@
   }
   .text-sale-type {
     display: inline-block;
+  }
+  .text-lot-price-end-start{
+    //color: $font-color-fairy;
+  }
+  .text-lot-price-sold {
+    color: $font-color-warning;
+
+    //font-weight: 600;
   }
   .text-bid-type,
   .text-bid-end-type,

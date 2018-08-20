@@ -448,549 +448,400 @@
                     <form role="form">
                         <div class="portlet solid grey-steel top-search">
                             <div class="portlet-title">
-                                <div class="tools">
-                                    <a href="javascript:;" class="expand"></a>
+                                <div class="major-search">
+                                    <div class="form-horizontal">
+                                        <div class="form-group col-md-4 col-sm-12">
+                                            <label class="col-md-4 col-sm-5 control-label">경매구분</label>
+                                            <div class="col-md-8 col-sm-7">
+                                                <select class="form-control input-small">
+                                                    <option selected>전체</option>
+                                                    <option>경매</option>
+                                                    <option>비밀경매</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-md-8 col-sm-12">
+                                            <label class="col-md-2 col-sm-5 control-label">경매회차</label>
+                                            <div class="col-md-10 col-sm-7">
+                                                <select class="form-control auto-complete-auction select2">
+                                                <option></option>
+                                                <optgroup label="경매">
+                                                    <option value="10596">[10596][경매] 30TH BLUE NOW ART SUPERMARKET-3</option>
+                                                    <option value="10595">[10595][경매] 30TH BLUE NOW ART SUPERMARKET-2</option>
+                                                    <option value="10593">[10593][경매] 30TH BLUE NOW ART SUPERMARKET-1</option>
+                                                </optgroup>
+                                                <optgroup label="비밀경매">
+                                                    <option value="10589">[10589][비밀경매] 30TH BLUE NOW ART SUPERMARKET-3 재경매</option>
+                                                    <option value="10588">[10588][비밀경매] 30TH BLUE NOW ART SUPERMARKET-2 재경매</option>
+                                                </optgroup>
+                                                <optgroup label="개인판매">
+                                                    <option value="10579">[10579][개인판매] 홍길동 고객님 전용 판매입니다.</option>
+                                                    <option value="10578">[10578][개인판매] 신미영 고객님 전용 판매입니다.</option>
+                                                    <option value="10577">[10577][개인판매] 김재도 고객님 전용 판매입니다.</option>
+                                                    <option value="10576">[10576][개인판매] 김정민 고객님 전용 판매입니다.</option>
+                                                </optgroup>
+                                                <optgroup label="BUYNOW">
+                                                    <option value="10569">[10569][BUYNOW] BUYNOW - 2018.07</option>
+                                                    <option value="10568">[10568][BUYNOW] BUYNOW - 2018.06</option>
+                                                    <option value="10567">[10567][BUYNOW] BUYNOW - 2018.05</option>
+                                                </optgroup>
+                                                <optgroup label="해외경매">
+                                                    <option value="10559">[10559][해외경매] Sotheby's London | Impressionist & Modern Art Evening Sale</option>
+                                                    <option value="10558">[10558][해외경매] Sotheby's London | Impressionist & Modern Art Day Sale</option>
+                                                    <option value="10557">[10557][해외경매] Christie's New York | Impressionist & Modern Art Evening Sale</option>
+                                                    <option value="10556">[10556][해외경매] Christie's New York | Impressionist & Modern Art Day Sale</option>
+                                                </optgroup>
+                                            </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-horizontal">
+                                        <div class="form-group col-md-4 col-sm-12">
+                                            <label class="col-md-4 col-sm-5 control-label">경매담당자</label>
+                                            <div class="col-md-8 col-sm-7">
+                                                <input type="text" class="form-control input-inline input-small" placeholder="이름입력">
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-md-8 col-sm-12">
+                                            <label class="col-md-2 col-sm-5 control-label">경매기간</label>
+                                            <div class="col-md-10 col-sm-7">
+                                                <select class="form-control input-inline input-small">
+                                                    <option selected>판매시작</option>
+                                                    <option>마감시작</option>
+                                                </select>
+                                                <input type="text" class="form-control input-inline input-medium input-icon-calendar" placeholder="시작일-종료일" name="date-range" value="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-horizontal">
+                                        <div class="form-group col-md-4 col-sm-12">
+                                            <label class="col-md-4 col-sm-5 control-label">경매상태</label>
+                                            <div class="col-md-8 col-sm-7">
+                                                <select class="form-control input-inline input-small">
+                                                    <option selected>전체</option>
+                                                    <option>예정</option>
+                                                    <option>진행중</option>
+                                                    <option>종료</option>
+                                                    <option>일시중지</option>
+                                                    <option>경매취소</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-md-4 col-sm-12 center-col-md">
+                                            <label class="col-md-4 col-sm-5 control-label">마감방식</label>
+                                            <div class="col-md-8 col-sm-7">
+                                                <select class="form-control input-inline input-small">
+                                                    <option selected>전체</option>
+                                                    <option>순차</option>
+                                                    <option>일괄</option>
+                                                    <option>그룹</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-md-4 col-sm-12">
+                                            <label class="col-md-4 col-sm-5 control-label">응찰방식</label>
+                                            <div class="col-md-8 col-sm-7">
+                                                <select class="form-control input-inline input-small">
+                                                    <option selected>전체</option>
+                                                    <option>일반경매</option>
+                                                    <option>역경매</option>
+                                                    <option>서면응찰</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <!--주요검색 시작-->
-                                <div class="form-inline major-search">
-                                    <div class="form-group">
-                                        <select class="form-control input-small">
-                                            <option selected>경매구분 전체</option>
-                                            <option>경매</option>
-                                            <option>비밀경매</option>
-                                            <option>개인판매</option>
-                                            <option>BUYNOW</option>
-                                            <option>해외경매</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group form-edge">
-                                        <select class="form-control auto-complete-auction select2">
-                                            <option></option>
-                                            <optgroup label="경매">
-                                                <option value="10596">[10596][경매] 30TH BLUE NOW ART SUPERMARKET-3</option>
-                                                <option value="10595">[10595][경매] 30TH BLUE NOW ART SUPERMARKET-2</option>
-                                                <option value="10593">[10593][경매] 30TH BLUE NOW ART SUPERMARKET-1</option>
-                                            </optgroup>
-                                            <optgroup label="비밀경매">
-                                                <option value="10589">[10589][비밀경매] 30TH BLUE NOW ART SUPERMARKET-3 재경매</option>
-                                                <option value="10588">[10588][비밀경매] 30TH BLUE NOW ART SUPERMARKET-2 재경매</option>
-                                            </optgroup>
-                                            <optgroup label="개인판매">
-                                                <option value="10579">[10579][개인판매] 홍길동 고객님 전용 판매입니다.</option>
-                                                <option value="10578">[10578][개인판매] 신미영 고객님 전용 판매입니다.</option>
-                                                <option value="10577">[10577][개인판매] 김재도 고객님 전용 판매입니다.</option>
-                                                <option value="10576">[10576][개인판매] 김정민 고객님 전용 판매입니다.</option>
-                                            </optgroup>
-                                            <optgroup label="BUYNOW">
-                                                <option value="10569">[10569][BUYNOW] BUYNOW - 2018.07</option>
-                                                <option value="10568">[10568][BUYNOW] BUYNOW - 2018.06</option>
-                                                <option value="10567">[10567][BUYNOW] BUYNOW - 2018.05</option>
-                                            </optgroup>
-                                            <optgroup label="해외경매">
-                                                <option value="10559">[10559][해외경매] Sotheby's London | Impressionist & Modern Art Evening Sale</option>
-                                                <option value="10558">[10558][해외경매] Sotheby's London | Impressionist & Modern Art Day Sale</option>
-                                                <option value="10557">[10557][해외경매] Christie's New York | Impressionist & Modern Art Evening Sale</option>
-                                                <option value="10556">[10556][해외경매] Christie's New York | Impressionist & Modern Art Day Sale</option>
-                                            </optgroup>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <select class="form-control">
-                                            <option selected>경매시작</option>
-                                            <option>마감시작</option>
-                                            <option>마감종료</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" class="form-control input-medium input-icon-calendar" placeholder="시작일-종료일" name="date-range" value="" />
-                                    </div>
-                                    <div class="form-group">
-                                        <button type="button" class="btn grey-silver"><i class="fa fa-search"></i> 검색</button>
-                                        <button type="button" class="btn grey-salt">초기화</button>
-                                    </div>
+                                <div class="form-btns">
+                                    <button type="button" class="btn grey-silver"><i class="fa fa-search"></i> 검색</button>
+                                    <button type="button" class="btn grey-salt">초기화</button>
                                 </div>
-                                <!--주요검색 끝-->
-                            </div>
-                            <div class="portlet-body display-hide">
-                                <!--상세검색 시작-->
-                                <div class="form-inline">
-                                    <div class="form-group">
-                                        <select class="form-control input-small">
-                                            <option selected>경매상태 전체</option>
-                                            <option>예정</option>
-                                            <option>진행중</option>
-                                            <option>종료</option>
-                                            <option>일시중지</option>
-                                            <option>경매취소</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <select class="form-control input-small">
-                                            <option selected>응찰방식 전체</option>
-                                            <option>일반경매</option>
-                                            <option>역경매</option>
-                                            <option>서면응찰</option>
-                                            <option>문의하기</option>
-                                            <option>바로구매</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <select class="form-control input-small">
-                                            <option selected>마감방식 전체</option>
-                                            <option>순차</option>
-                                            <option>일괄</option>
-                                            <option>그룹</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" class="form-control input-small" placeholder="경매담당자명">
-                                    </div>
-                                </div>
-                                <!--상세검색 끝-->
                             </div>
                         </div>
+
                     </form>
                     <!-- BEGIN PAGE BASE CONTENT -->
                     <div id="sample_1_wrapper" class="dataTables_wrapper no-footer">
                         <div class="actions">
                             <div class="result-count">총 10,589 건</div>
                         </div>
-                        <table class="table table-striped table-bordered table-hover table-header-fixed dataTable no-footer" id="sample_1" role="grid" aria-describedby="sample_1_info">
-                            <thead class="small">
-                            <tr class="lot-header-type1">
-                                <th>구분/상태/ID</th>
-                                <th>경매정보</th>
-                                <th class="text-center">판매시작</th>
-                                <th class="text-center">마감시작</th>
-                                <th class="text-center">마감종료</th>
-                                <th>응찰/마감</th>
-                                <th>전시</th>
-                                <th>결과</th>
-                                <th class="text-center">랏 구성</th>
-                                <th class="text-center">작업</th>
-                            </tr>
-                            </thead>
-                            <tbody class="small">
-                            <tr>
-                                <td>
-                                    <p class="text-sale-type">
-                                        <span class="badge badge-default">경매</span>
-                                    </p>
-                                    <p class="text-sale-status">
+                        <div class="table-scrollable table-text-center">
+                            <table class="table table-striped table-bordered table-hover table-header-fixed dataTable no-footer" id="sample_1" role="grid" aria-describedby="sample_1_info">
+                                <thead class="small">
+                                <tr>
+                                    <th>구분</th>
+                                    <th>상태</th>
+                                    <th>이미지</th>
+                                    <th>경매유형</th>
+                                    <th>회차</th>
+                                    <th class="text-left">소제목</th>
+                                    <th>판매시작</th>
+                                    <th>마감시작</th>
+                                    <th>응찰방식</th>
+                                    <th>마감방식</th>
+                                    <th>경매노출</th>
+                                    <th>LOT노출</th>
+                                    <th>LOT-BN구성</th>
+                                    <th>보기</th>
+                                    <th>파일</th>
+                                    <th>이력</th>
+                                </tr>
+                                </thead>
+                                <tbody class="small">
+                                <tr>
+                                    <td>
+                                        경매
+                                    </td>
+                                    <td>
                                         <span class="badge badge-default">예정</span>
-                                    </p>
-                                    <p class="text-sale-id">
-                                        10589
-                                    </p>
-                                </td>
-                                <td>
-                                    <div class="card-auction">
-                                        <p class="text-auction">
-                                            <a href="auction_add.html">30TH BLUE NOW ART SUPERMARKET-3</a>
-                                        </p>
+                                    </td><td>
+
                                         <p class="img-sale-banner">
                                             <img src="../../images/no_image.png">
                                         </p>
+                                    </td>
+                                    <td>
                                         <p class="text-auction-type">
                                             BLUE NOW
                                         </p>
+                                    </td>
+                                    <td>
                                         <p class="text-sale-turn">
                                             #30
                                         </p>
-                                    </div>
-                                </td>
-                                <td class="text-center">
-                                    <p class="text-start-time">
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-auction main-link">
+                                            <a href="auction_add.html">ART SUPERMARKET-3</a>
+                                        </p>
+                                    </td>
+                                    <td>
                                         2018/07/07<br>
                                         00:00 AM
-                                    </p>
-                                </td>
-                                <td class="text-center">
-                                    <p class="text-end-start-time">
+                                    </td>
+                                    <td>
                                         2018/07/13<br>
                                         00:00 AM
-                                    </p>
-                                </td>
-                                <td class="text-center">
-                                    <p class="text-end-start-time">
-                                        -
-                                    </p>
-                                </td>
-                                <td>
-                                    <p class="text-bid-type">
+                                    </td>
+                                    <td>
                                         일반경매
-                                    </p>
-                                    <p class="text-bid-end-type">
+                                    </td>
+                                    <td>
                                         순차
-                                    </p>
-                                </td>
-                                <td>
-                                    <p class="text-view-auction">
-                                        경매 : <span class="text-danger">N</span>
-                                    </p>
-                                    <p class="text-view-lot">
-                                        LOT : <span class="text-danger">N</span>
-                                    </p>
-                                </td>
-                                <td>
-                                    -
-                                </td>
-                                <td class="text-center">
-                                    <p class="text-lot-count">
-                                        <a href="lots.html" target="_blank" class="btn default">LOT (0)</a>
-                                    </p>
-                                    <p class="text-bn-count">
-                                        <a href="#" target="_blank" class="btn default">BN (0)</a>
-                                    </p>
-                                </td>
-                                <td class="text-center">
-                                    <p class="btn-preview">
-                                        <button type="button" class="btn default" data-toggle="tooltip" data-original-title="미리보기"><span class="icon-screen-desktop"></span></button>
-                                    </p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p class="text-sale-type">
-                                        <span class="badge badge-default">비밀경매</span>
-                                    </p>
-                                    <p class="text-sale-status">
+                                    </td>
+                                    <td>
+                                        <a href="#">N</a>
+                                    </td>
+                                    <td>
+                                        <a href="#">N</a>
+                                    </td>
+                                    <td>
+                                        <a href="lots.html" target="_blank" class="btn default">
+                                            LOT (0) <br>
+                                            BN (0)
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#" target="_blank" class="btn default" data-toggle="tooltip" data-original-title="미리보기"><span class="icon-screen-desktop"></span></a>
+                                    </td>
+                                    <td>
+                                        <a href="#" target="_blank" class="btn default" data-toggle="tooltip" data-original-title="카탈로그 다운로드" onclick="location.href='../../data/27th_bluenow_catalogue.pdf';//새창으로 띄워주세요.><"><span class="glyphicon glyphicon-paperclip"></span></a>
+                                    </td>
+                                    <td>
+                                        <a href="#" target="_blank" class="btn default" data-toggle="tooltip" data-original-title="변경이력"><i class="fa fa-history"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        비밀경매
+                                    </td>
+                                    <td>
                                         <span class="badge badge-warning">진행중</span>
-                                    </p>
-                                    <p class="text-sale-id">
-                                        10589
-                                    </p>
-                                </td>
-                                <td>
-                                    <div class="card-auction">
-                                        <p class="text-auction">
-                                            <a href="auction_add.html">30TH BLUE NOW ART SUPERMARKET-3 재경매</a>
-                                        </p>
+                                    </td>
+                                    <td>
                                         <p class="img-sale-banner">
-                                            <img src="../../images/auction_banner.jpg">
+                                            <a href="../../images/auction_banner.jpg" target="_blank"><img src="../../images/auction_banner.jpg"></a>
                                         </p>
+                                    </td>
+                                    <td>
                                         <p class="text-auction-type">
                                             BLUE NOW
                                         </p>
+                                    </td>
+                                    <td>
                                         <p class="text-sale-turn">
-                                            #30
+                                            #29
                                         </p>
-                                    </div>
-                                </td>
-                                <td class="text-center">
-                                    <p class="text-start-time">
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-auction main-link">
+                                            <a href="auction_add.html">ART SUPERMARKET-2</a>
+                                        </p>
+                                    </td>
+                                    <td>
                                         2018/07/07<br>
                                         00:00 AM
-                                    </p>
-                                </td>
-                                <td class="text-center">
-                                    <p class="text-end-start-time">
+                                    </td>
+                                    <td>
                                         2018/07/13<br>
                                         00:00 AM
-                                    </p>
-                                </td>
-                                <td class="text-center">
-                                    <p class="text-end-start-time">
-                                        -
-                                    </p>
-                                </td>
-                                <td>
-                                    <p class="text-bid-type">
-                                        역경매
-                                    </p>
-                                    <p class="text-bid-end-type">
-                                        그룹
-                                    </p>
-                                </td>
-                                <td>
-                                    <p class="text-view-auction">
-                                        경매 : <span class="text-primary">Y</span>
-                                    </p>
-                                    <p class="text-view-lot">
-                                        LOT : <span class="text-primary">Y</span>
-                                    </p>
-                                </td>
-                                <td>
-                                    <p class="text-sold-count">
-                                        낙찰건 :  3
-                                    </p>
-                                    <p class="text-sold-amount">
-                                        낙찰액 : 1,000,000
-                                    </p>
-                                    <p class="text-sold-rate">
-                                        낙찰률 : 100.0%
-                                    </p>
-                                </td>
-                                <td class="text-center">
-                                    <p class="text-lot-count">
-                                        <a href class="btn default" onclick="location.href='lots.html'">LOT (22)</a>
-                                    </p>
-                                    <p class="text-bn-count">
-                                        <a href="#" target="_blank" class="btn default">BN (30)</a>
-                                    </p>
-                                </td>
-                                <td class="text-center">
-                                    <p class="btn-preview">
-                                        <button type="button" class="btn default" data-toggle="tooltip" data-original-title="미리보기"><span class="icon-screen-desktop"></span></button>
-                                    </p>
-                                    <p class="text-catalogue">
-                                        <button type="button" class="btn default" data-toggle="tooltip" data-original-title="카탈로그 다운로드" onclick="location.href='../../data/27th_bluenow_catalogue.pdf';//새창으로 띄워주세요.><"><span class="glyphicon glyphicon-paperclip"></span></button>
-                                    </p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p class="text-sale-type">
-                                        <span class="badge badge-default">개인판매</span>
-                                    </p>
-                                    <p class="text-sale-status">
+                                    </td>
+                                    <td>
+                                        일반경매
+                                    </td>
+                                    <td>
+                                        순차
+                                    </td>
+                                    <td>
+                                        <a href="#">Y</a>
+                                    </td>
+                                    <td>
+                                        <a href="#">Y</a>
+                                    </td>
+                                    <td>
+                                        <a href="lots.html" target="_blank" class="btn default">
+                                            LOT (24) <br>
+                                            BN (30)
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#" target="_blank" class="btn default" data-toggle="tooltip" data-original-title="미리보기"><span class="icon-screen-desktop"></span></a>
+                                    </td>
+                                    <td>
+                                        <a href="#" target="_blank" class="btn default" data-toggle="tooltip" data-original-title="카탈로그 다운로드" onclick="location.href='../../data/27th_bluenow_catalogue.pdf';//새창으로 띄워주세요.><"><span class="glyphicon glyphicon-paperclip"></span></a>
+                                    </td>
+                                    <td>
+                                        <a href="#" target="_blank" class="btn default" data-toggle="tooltip" data-original-title="변경이력"><i class="fa fa-history"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        경매
+                                    </td>
+                                    <td>
                                         <span class="badge badge-primary">종료</span>
-                                    </p>
-                                    <p class="text-sale-id">
-                                        10589
-                                    </p>
-                                </td>
-                                <td>
-                                    <div class="card-auction">
-                                        <p class="text-auction">
-                                            <a href="auction_add.html">홍길동 고객님 전용 판매입니다.</a>
-                                        </p>
+                                    </td>
+                                    <td>
                                         <p class="img-sale-banner">
-                                            <img src="../../images/auction_banner.jpg">
+                                            <a href="../../images/auction_banner.jpg" target="_blank"><img src="../../images/auction_banner.jpg"></a>
                                         </p>
+                                    </td>
+                                    <td>
                                         <p class="text-auction-type">
                                             BLUE NOW
                                         </p>
+                                    </td>
+                                    <td>
                                         <p class="text-sale-turn">
-                                            #30
+                                            #29
                                         </p>
-                                    </div>
-                                </td>
-                                <td class="text-center">
-                                    <p class="text-start-time">
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-auction main-link">
+                                            <a href="auction_add.html">ART SUPERMARKET-2</a>
+                                        </p>
+                                    </td>
+                                    <td>
                                         2018/07/07<br>
                                         00:00 AM
-                                    </p>
-                                </td>
-                                <td class="text-center">
-                                    <p class="text-end-start-time">
+                                    </td>
+                                    <td>
                                         2018/07/13<br>
                                         00:00 AM
-                                    </p>
-                                </td>
-                                <td class="text-center">
-                                    <p class="text-end-start-time">
-                                        2018/07/13<br>
-                                        08:00 AM
-                                    </p>
-                                </td>
-                                <td>
-                                    <p class="text-bid-type">
-                                        서면응찰
-                                    </p>
-                                    <p class="text-bid-end-type">
-                                        일괄
-                                    </p>
-                                </td>
-                                <td>
-                                    <p class="text-view-auction">
-                                        경매 : <span class="text-primary">Y</span>
-                                    </p>
-                                    <p class="text-view-lot">
-                                        LOT : <span class="text-primary">Y</span>
-                                    </p>
-                                </td>
-                                <td>
-                                    <p class="text-sold-count">
-                                        낙찰건 :  84
-                                    </p>
-                                    <p class="text-sold-amount">
-                                        낙찰액 : 211,000,000
-                                    </p>
-                                    <p class="text-sold-rate">
-                                        낙찰률 : 78.4%
-                                    </p>
-                                </td>
-                                <td class="text-center">
-                                    <p class="text-lot-count">
-                                        <a href="lots.html" target="_blank" class="btn default">LOT (22)</a>
-                                    </p>
-                                    <p class="text-bn-count">
-                                        <a href="#" target="_blank" class="btn default">BN (30)</a>
-                                    </p>
-                                </td>
-                                <td class="text-center">
-                                    <p class="btn-preview">
-                                        <button type="button" class="btn default" data-toggle="tooltip" data-original-title="미리보기"><span class="icon-screen-desktop"></span></button>
-                                    </p>
-                                    <p class="text-catalogue">
-                                        <button type="button" class="btn default" data-toggle="tooltip" data-original-title="카탈로그 다운로드" onclick="location.href='../../data/27th_bluenow_catalogue.pdf';//새창으로 띄워주세요.><"><span class="glyphicon glyphicon-paperclip"></span></button>
-                                    </p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p class="text-sale-type">
-                                        <span class="badge badge-default">BUYNOW</span>
-                                    </p>
-                                    <p class="text-sale-status">
-                                        <span class="badge badge-default">경매취소</span>
-                                    </p>
-                                    <p class="text-sale-id">
-                                        10589
-                                    </p>
-                                </td>
-                                <td>
-                                    <div class="card-auction">
-                                        <p class="text-auction">
-                                            <a href="auction_add.html">BUYNOW - 2018.07.W1</a>
-                                        </p>
-                                        <p class="img-sale-banner">
-                                            <img src="../../images/no_image.png">
-                                        </p>
-                                        <p class="text-auction-type">
-                                            BUYNOW
-                                        </p>
-                                        <p class="text-sale-turn">
-                                            #1
-                                        </p>
-                                    </div>
-                                </td>
-                                <td class="text-center">
-                                    <p class="text-start-time">
-                                        2018/07/02<br>
-                                        00:00 AM
-                                    </p>
-                                </td>
-                                <td class="text-center">
-                                    <p class="text-end-start-time">
-                                        2018/07/06<br>
-                                        12:59 AM
-                                    </p>
-                                </td>
-                                <td class="text-center">
-                                    <p class="text-end-start-time">
-                                        -
-                                    </p>
-                                </td>
-                                <td>
-                                    <p class="text-bid-type">
-                                        즉시구매
-                                    </p>
-                                </td>
-                                <td>
-                                    <p class="text-view-auction">
-                                        경매 : <span class="text-danger">N</span>
-                                    </p>
-                                    <p class="text-view-lot">
-                                        LOT : <span class="text-primary">Y</span>
-                                    </p>
-                                </td>
-                                <td>
-                                    <p class="text-sold-count">
-                                        낙찰건 : 20
-                                    </p>
-                                    <p class="text-sold-amount">
-                                        낙찰액 : 1,240,000
-                                    </p>
-                                    <p class="text-sold-rate">
-                                        낙찰률 : 80.5%
-                                    </p>
-                                </td>
-                                <td class="text-center">
-                                    <p class="text-lot-count">
-                                        <a href="lots.html" target="_blank" class="btn default">LOT (0)</a>
-                                    </p>
-                                    <p class="text-bn-count">
-                                        <a href="#" target="_blank" class="btn default">BN (0)</a>
-                                    </p>
-                                </td>
-                                <td class="text-center">
-                                    <p class="btn-preview">
-                                        <button type="button" class="btn default" data-toggle="tooltip" data-original-title="미리보기"><span class="icon-screen-desktop"></span></button>
-                                    </p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p class="text-sale-type">
-                                        <span class="badge badge-default">해외경매</span>
-                                    </p>
-                                    <p class="text-sale-status">
+                                    </td>
+                                    <td>
+                                        일반경매
+                                    </td>
+                                    <td>
+                                        순차
+                                    </td>
+                                    <td>
+                                        <a href="#">Y</a>
+                                    </td>
+                                    <td>
+                                        <a href="#">Y</a>
+                                    </td>
+                                    <td>
+                                        <a href="lots.html" target="_blank" class="btn default">
+                                            LOT (24) <br>
+                                            BN (30)
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#" target="_blank" class="btn default" data-toggle="tooltip" data-original-title="미리보기"><span class="icon-screen-desktop"></span></a>
+                                    </td>
+                                    <td>
+                                        <a href="#" target="_blank" class="btn default" data-toggle="tooltip" data-original-title="카탈로그 다운로드" onclick="location.href='../../data/27th_bluenow_catalogue.pdf';//새창으로 띄워주세요.><"><span class="glyphicon glyphicon-paperclip"></span></a>
+                                    </td>
+                                    <td>
+                                        <a href="#" target="_blank" class="btn default" data-toggle="tooltip" data-original-title="변경이력"><i class="fa fa-history"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        경매
+                                    </td>
+                                    <td>
                                         <span class="badge badge-danger">일시중지</span>
-                                    </p>
-                                    <p class="text-sale-id">
-                                        10589
-                                    </p>
-                                </td>
-                                <td>
-                                    <div class="card-auction">
-                                        <p class="text-auction">
-                                            <a href="auction_add.html">Impressionist & Modern Art Evening Sale</a>
-                                        </p>
+                                    </td>
+                                    <td>
                                         <p class="img-sale-banner">
-                                            <img src="../../images/auction_banner.jpg">
+                                            <a href="../../images/auction_banner.jpg" target="_blank"><img src="../../images/auction_banner.jpg"></a>
                                         </p>
+                                    </td>
+                                    <td>
                                         <p class="text-auction-type">
-                                            Sotheby's London
+                                            BLUE NOW
                                         </p>
-                                    </div>
-                                </td>
-                                <td class="text-center">
-                                    <p class="text-start-time">
-                                        2018/06/19<br>
-                                        07:00 PM
-                                    </p>
-                                </td>
-                                <td class="text-center">
-                                    <p class="text-end-start-time">
-                                        2018/06/27<br>
-                                        23:59 PM
-                                    </p>
-                                </td>
-                                <td class="text-center">
-                                    <p class="text-end-start-time">
-                                        -
-                                    </p>
-                                </td>
-                                <td>
-                                    <p class="text-bid-type">
-                                        문의하기
-                                    </p>
-                                    <p class="text-bid-end-type">
-                                        일괄
-                                    </p>
-                                </td>
-                                <td>
-                                    <p class="text-view-auction">
-                                        경매 : <span class="text-primary">Y</span>
-                                    </p>
-                                    <p class="text-view-lot">
-                                        LOT : <span class="text-primary">Y</span>
-                                    </p>
-                                </td>
-                                <td>
-                                    -
-                                </td>
-                                <td class="text-center">
-                                    <p class="text-lot-count">
-                                        <a href="lots.html" target="_blank" class="btn default">LOT (150)</a>
-                                    </p>
-                                    <p class="text-bn-count">
-                                        <a href="#" target="_blank" class="btn default">BN (0)</a>
-                                    </p>
-                                </td>
-                                <td class="text-center">
-                                    <p class="btn-preview">
-                                        <button type="button" class="btn default" data-toggle="tooltip" data-original-title="미리보기"><span class="icon-screen-desktop"></span></button>
-                                    </p>
-                                    <p class="text-catalogue">
-                                        <button type="button" class="btn default" data-toggle="tooltip" data-original-title="카탈로그 다운로드" onclick="location.href='../../data/27th_bluenow_catalogue.pdf';//새창으로 띄워주세요.><"><span class="glyphicon glyphicon-paperclip"></span></button>
-                                    </p>
-                                </td>
-                            </tr>
-                            </tbody>
-                        </table>
+                                    </td>
+                                    <td>
+                                        <p class="text-sale-turn">
+                                            #29
+                                        </p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p class="text-auction main-link">
+                                            <a href="auction_add.html">ART SUPERMARKET-2</a>
+                                        </p>
+                                    </td>
+                                    <td>
+                                        2018/07/07<br>
+                                        00:00 AM
+                                    </td>
+                                    <td>
+                                        2018/07/13<br>
+                                        00:00 AM
+                                    </td>
+                                    <td>
+                                        일반경매
+                                    </td>
+                                    <td>
+                                        순차
+                                    </td>
+                                    <td>
+                                        <a href="#">Y</a>
+                                    </td>
+                                    <td>
+                                        <a href="#">Y</a>
+                                    </td>
+                                    <td>
+                                        <a href="lots.html" target="_blank" class="btn default">
+                                            LOT (24) <br>
+                                            BN (30)
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#" target="_blank" class="btn default" data-toggle="tooltip" data-original-title="미리보기"><span class="icon-screen-desktop"></span></a>
+                                    </td>
+                                    <td>
+                                        <a href="#" target="_blank" class="btn default" data-toggle="tooltip" data-original-title="카탈로그 다운로드" onclick="location.href='../../data/27th_bluenow_catalogue.pdf';//새창으로 띄워주세요.><"><span class="glyphicon glyphicon-paperclip"></span></a>
+                                    </td>
+                                    <td>
+                                        <a href="#" target="_blank" class="btn default" data-toggle="tooltip" data-original-title="변경이력"><i class="fa fa-history"></i></a>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
                         <div class="row">
                             <div class="col-md-5 col-sm-5">
                                 <div class="dataTables_info" id="sample_1_info" role="status"
@@ -998,8 +849,8 @@
                                 </div>
                             </div>
                             <div class="col-md-7 col-sm-7">
-                                <div class="dataTables_paginate paging_bootstrap_number" id="sample_1_paginate">
-                                    <ul class="pagination" style="visibility: visible;">
+                                <div class="dataTables_paginate paging_bootstrap_number">
+                                    <ul class="pagination">
                                         <li class="prev disabled"><a href="#" title="Prev"><i
                                                 class="fa fa-angle-left"></i></a></li>
                                         <li class="active"><a href="#">1</a></li>

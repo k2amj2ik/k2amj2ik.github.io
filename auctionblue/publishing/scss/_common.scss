@@ -66,6 +66,39 @@ html, body, div, ul, ol, li, table, tr, td, h1, h2, h3, h4, p, span, form, input
   color: $font-color-point;
   text-decoration: underline;
 }
+
+.form-btns {
+  float: right !important;
+}
+
+.main-link {
+  font-weight: 600;
+}
+
+.table-text-center {
+  table {
+    thead {
+      tr {
+        th {
+          text-align: center !important;
+        }
+        th.text-left {
+          text-align: left !important;
+        }
+      }
+    }
+    tbody {
+      tr {
+        td {
+          text-align: center !important;
+        }
+        td.text-left {
+          text-align: left !important;
+        }
+      }
+    }
+  }
+}
 //change metonic ui-------------------------------------------------------------------------------------------
 
 a {
@@ -143,6 +176,13 @@ th {
   background-image: url(../assets/global/img/portlet-collapse-icon.png);
 }
 
+@media (min-width: 992px) {
+  .center-col-md {
+    margin-left: -10px !important;
+  }
+}
+
+
 //user-guide-------------------------------------------------------------------------------------------
 .user-guide {
   //margin-top: -51px !important;
@@ -190,14 +230,13 @@ th {
 
 //search-------------------------------------------------------------------------------------------
 .top-search {
-  select {
-    margin-bottom: -1px;
-  }
+  font-size: 90% !important;
   .portlet-title {
     .major-search {
       margin: 10px 0 -10px 10px !important;
-      .form-group {
-      }
+    }
+    .form-btns {
+      margin-bottom: -10px;
     }
   }
   .portlet-body {
@@ -211,7 +250,7 @@ th {
     }
   }
   .form-edge {
-    padding-right: 60px !important;
+    paddingr-ight: 60px !important;
   }
 }
 
