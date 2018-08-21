@@ -415,7 +415,7 @@
             <!-- BEGIN PAGE TITLE-->
             <h1 class="page-title"> 경매
                 <div class="btn-groups major-btn-groups">
-                    <button class="btn default" onclick="location.href='auction_add.html'">경매등록</button>
+                    <button class="btn btn-primary" onclick="location.href='auction_add.html'">경매등록</button>
                 </div>
             </h1>
             <!-- END PAGE TITLE-->
@@ -562,7 +562,17 @@
                     <!-- BEGIN PAGE BASE CONTENT -->
                     <div id="sample_1_wrapper" class="dataTables_wrapper no-footer">
                         <div class="actions">
-                            <div class="result-count">총 10,589 건</div>
+                            <div class="buttons">
+                                <select class="form-control input-small">
+                                    <option selected>최근 등록일 순</option>
+                                    <option>최근 판매시작일 순</option>
+                                    <option>최근 마감시작일 순</option>
+                                </select>
+                                <!--<p class="button"><a href="#" class="btn default">엑셀다운로드</a></p>-->
+                            </div>
+                            <div class="result-count">
+                                총 10,589 건
+                            </div>
                         </div>
                         <div class="table-scrollable table-text-center">
                             <table class="table table-striped table-bordered table-hover table-header-fixed dataTable no-footer" id="sample_1" role="grid" aria-describedby="sample_1_info">
@@ -636,7 +646,7 @@
                                         <a data-toggle="modal" href="#modalDisplayLot">N</a>
                                     </td>
                                     <td>
-                                        <a href="lots.html" target="_blank" class="btn default" data-toggle="tooltip" data-original-title="LOT목록으로 이동">LOT</a>
+                                        <a href="lots.html" target="_blank" class="btn default" data-toggle="tooltip" data-original-title="LOT목록으로 이동">32</a>
                                     </td>
                                     <td>
                                         <a href="lot_bn_summary.html" target="_blank" class="btn default" data-toggle="tooltip" data-original-title="LOT-BN구성 한눈에 보기">
@@ -701,7 +711,7 @@
                                         <a data-toggle="modal" href="#modalDisplayLot">Y</a>
                                     </td>
                                     <td>
-                                        <a href="lots.html" target="_blank" class="btn default" data-toggle="tooltip" data-original-title="LOT목록으로 이동">LOT</a>
+                                        <a href="lots.html" target="_blank" class="btn default" data-toggle="tooltip" data-original-title="LOT목록으로 이동">32</a>
                                     </td>
                                     <td>
                                         <a href="lot_bn_summary.html" target="_blank" class="btn default" data-toggle="tooltip" data-original-title="LOT-BN구성 한눈에 보기">
@@ -766,7 +776,7 @@
                                         <a data-toggle="modal" href="#modalDisplayLot">Y</a>
                                     </td>
                                     <td>
-                                        <a href="lots.html" target="_blank" class="btn default" data-toggle="tooltip" data-original-title="LOT목록으로 이동">LOT</a>
+                                        <a href="lots.html" target="_blank" class="btn default" data-toggle="tooltip" data-original-title="LOT목록으로 이동">32</a>
                                     </td>
                                     <td>
                                         <a href="lot_bn_summary.html" target="_blank" class="btn default" data-toggle="tooltip" data-original-title="LOT-BN구성 한눈에 보기">
@@ -831,7 +841,7 @@
                                         <a data-toggle="modal" href="#modalDisplayLot">Y</a>
                                     </td>
                                     <td>
-                                        <a href="lots.html" target="_blank" class="btn default" data-toggle="tooltip" data-original-title="LOT목록으로 이동">LOT</a>
+                                        <a href="lots.html" target="_blank" class="btn default" data-toggle="tooltip" data-original-title="LOT목록으로 이동">32</a>
                                     </td>
                                     <td>
                                         <a href="lot_bn_summary.html" target="_blank" class="btn default" data-toggle="tooltip" data-original-title="LOT-BN구성 한눈에 보기">
@@ -891,6 +901,7 @@
     </div>
 </div>
 <!-- END FOOTER -->
+
 <!-- BEGIN MODALS -->
 <div class="modal fade bs-modal-sm" id="modalDisplayAuction" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-sm">
@@ -943,6 +954,7 @@
     </div>
 </div>
 <!-- END MODALS -->
+
 <!--[if lt IE 9]>
 <script src="../../assets/global/plugins/respond.min.js"></script>
 <script src="../../assets/global/plugins/excanvas.min.js"></script>
@@ -977,9 +989,6 @@
     $(function () {
         $('[data-toggle="tooltip"]').tooltip()
     });
-    $('#modal').on('shown.bs.modal', function () {
-        $('#myInput').trigger('focus')
-    })
 </script>
 </body>
 </html>
