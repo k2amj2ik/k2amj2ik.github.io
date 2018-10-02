@@ -760,7 +760,7 @@
                                                 </select>
                                             </div>
                                             <div class="form-group">
-                                                <button type="button" class="btn grey"><i class="fa fa-search"></i> 정보 가져오기</button>
+                                                <button type="button" class="btn grey-cascade"><i class="fa fa-search"></i> 정보 가져오기</button>
                                             </div>
                                         </div>
                                     </div>
@@ -1087,7 +1087,7 @@
                                                 <label class="col-sm-2 control-label">경매 담당자 <span class="icon-must">*</span></label>
                                                 <div class="col-sm-10">
                                                     <div class="set-details single">
-                                                        <button type="button" class="btn grey">직원선택</button>
+                                                        <button type="button" class="btn grey" data-toggle="modal" data-target="#modalChooseSingleManager">직원선택</button>
                                                         <ul>
                                                             <li class="item">
                                                                 구유미 (test_id1) / 경매팀 / 010-1111-1111
@@ -1117,7 +1117,7 @@
                                                             <button type="button" class="btn grey">전시장 추가</button>
                                                             <table class="table table-striped table-bordered table-advance table-hover">
                                                                 <thead class="small">
-                                                                <tr class="lot-header-type1">
+                                                                <tr class="th-type1">
                                                                     <th>전시장</th>
                                                                     <th>전시기간<br>(시작/종료)</th>
                                                                     <th class="hidden-sm hidden-xs">추가정보</th>
@@ -1220,7 +1220,7 @@
                                                         <button type="button" class="btn grey">작가선택</button>
                                                         <table class="table table-striped table-bordered table-advance table-hover">
                                                             <thead class="small">
-                                                            <tr class="lot-header-type1">
+                                                            <tr class="th-type1">
                                                                 <th>작가ID</th>
                                                                 <th>작가명<br>(국문/영문)</th>
                                                                 <th>국적<br>(국문/영문)</th>
@@ -1285,10 +1285,10 @@
                                                 <label class="col-sm-2 control-label">경매공지</label>
                                                 <div class="col-sm-10">
                                                     <div class="set-details">
-                                                        <button type="button" class="btn grey">등록하기</button>
+                                                        <button type="button" class="btn grey" data-toggle="modal" data-target="#modalAddAuctionNotice">등록하기</button>
                                                         <table class="table table-striped table-bordered table-advance table-hover">
                                                             <thead class="small">
-                                                            <tr class="lot-header-type1">
+                                                            <tr class="th-type1">
                                                                 <th>순서</th>
                                                                 <th>조정</th>
                                                                 <th>공지제목</th>
@@ -1419,7 +1419,7 @@
                                                 <div class="col-sm-10">
                                                     <div class="set-details single">
                                                         <button type="button" class="btn grey">파일첨부</button>
-                                                        <p class="img-sale-banner">
+                                                        <p class="img-sale-banner-for-detail">
                                                             <img src="../../images/auction_banner.jpg">
                                                         </p>
                                                         <ul>
@@ -1441,7 +1441,7 @@
                                                 <div class="col-sm-10">
                                                     <div class="set-details single">
                                                         <button type="button" class="btn grey">파일첨부</button>
-                                                        <p class="img-sale-banner">
+                                                        <p class="img-sale-banner-for-detail">
                                                             <img src="../../images/auction_banner.jpg">
                                                         </p>
                                                         <ul>
@@ -1589,7 +1589,7 @@
                                 </div>
                             </div>
                             <div class="col-sm-2">
-                                <div class="text-biggest text-center text-default">
+                                <div class="arrow-type1">
                                     <span class="icon-arrow-right"></span>
                                 </div>
                             </div>
@@ -1600,10 +1600,10 @@
                                         <span class="caption-subject font-blue-dark bold uppercase">선택된 카테고리</span>
                                     </div>
                                 </div>
-                                <div class="portlet-body scroll-area bg-white">
-                                    <table class="table table-striped table-bordered table-advance table-hover">
+                                <div class="portlet-body scroll-area">
+                                    <table class="table bg-white table-bordered table-advance">
                                         <thead class="small">
-                                        <tr class="lot-header-type1">
+                                        <tr class="th-type1">
                                             <th>순서조정</th>
                                             <th>카테고리</th>
                                             <th>삭제</th>
@@ -1621,7 +1621,7 @@
                                                 Multiple & Edition
                                             </td>
                                             <td>
-                                                <button class="btn grey btn-xs">삭제</button>
+                                                <button class="btn grey btn-sm">삭제</button>
                                             </td>
                                         </tr>
                                         <tr>
@@ -1635,7 +1635,7 @@
                                                 Artworks
                                             </td>
                                             <td>
-                                                <button class="btn grey btn-xs">삭제</button>
+                                                <button class="btn grey btn-sm">삭제</button>
                                             </td>
                                         </tr>
                                         <tr>
@@ -1649,7 +1649,7 @@
                                                 Design
                                             </td>
                                             <td>
-                                                <button class="btn grey btn-xs">삭제</button>
+                                                <button class="btn grey btn-sm">삭제</button>
                                             </td>
                                         </tr>
                                         <tr>
@@ -1663,7 +1663,7 @@
                                                 Design
                                             </td>
                                             <td>
-                                                <button class="btn grey btn-xs">삭제</button>
+                                                <button class="btn grey btn-sm">삭제</button>
                                             </td>
                                         </tr>
                                         <tr>
@@ -1677,7 +1677,7 @@
                                                 Design
                                             </td>
                                             <td>
-                                                <button class="btn grey btn-xs">삭제</button>
+                                                <button class="btn grey btn-sm">삭제</button>
                                             </td>
                                         </tr>
                                         <tr>
@@ -1691,7 +1691,7 @@
                                                 Design
                                             </td>
                                             <td>
-                                                <button class="btn grey btn-xs">삭제</button>
+                                                <button class="btn grey btn-sm">삭제</button>
                                             </td>
                                         </tr>
                                         <tr>
@@ -1705,7 +1705,7 @@
                                                 Design
                                             </td>
                                             <td>
-                                                <button class="btn grey btn-xs">삭제</button>
+                                                <button class="btn grey btn-sm">삭제</button>
                                             </td>
                                         </tr>
                                         <tr>
@@ -1719,7 +1719,7 @@
                                                 Design
                                             </td>
                                             <td>
-                                                <button class="btn grey btn-xs">삭제</button>
+                                                <button class="btn grey btn-sm">삭제</button>
                                             </td>
                                         </tr>
                                         <tr>
@@ -1733,7 +1733,7 @@
                                                 Design
                                             </td>
                                             <td>
-                                                <button class="btn grey btn-xs">삭제</button>
+                                                <button class="btn grey btn-sm">삭제</button>
                                             </td>
                                         </tr>
                                         <tr>
@@ -1747,7 +1747,7 @@
                                                 Design
                                             </td>
                                             <td>
-                                                <button class="btn grey btn-xs">삭제</button>
+                                                <button class="btn grey btn-sm">삭제</button>
                                             </td>
                                         </tr>
                                         <tr>
@@ -1761,7 +1761,7 @@
                                                 Design
                                             </td>
                                             <td>
-                                                <button class="btn grey btn-xs">삭제</button>
+                                                <button class="btn grey btn-sm">삭제</button>
                                             </td>
                                         </tr>
                                         <tr>
@@ -1775,7 +1775,7 @@
                                                 Design
                                             </td>
                                             <td>
-                                                <button class="btn grey btn-xs">삭제</button>
+                                                <button class="btn grey btn-sm">삭제</button>
                                             </td>
                                         </tr>
                                         <tr>
@@ -1789,7 +1789,7 @@
                                                 Design
                                             </td>
                                             <td>
-                                                <button class="btn grey btn-xs">삭제</button>
+                                                <button class="btn grey btn-sm">삭제</button>
                                             </td>
                                         </tr>
                                         </tbody>
@@ -1800,6 +1800,348 @@
 
                     </div>
                 </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn dark btn-outline" data-dismiss="modal">닫기</button>
+                <button type="button" class="btn green">저장</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade bs-modal-lg" id="modalChooseSingleManager" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                <h4 class="modal-title">직원검색</h4>
+            </div>
+            <div class="modal-body">
+                <!-- BEGIN PAGE CONTENT -->
+                <div class="portlet user-guide">
+                    <div class="portlet-title">
+                        <div class="tools">
+                            <a href="javascript:;" class="expand"><span class="icon-info text-default btn-guide"></span></a>
+                        </div>
+                        <!--이용 가이드 요약 내용 시작-->
+                        <ul class="contents">
+                            <li class="paragraph">
+                                우측 상단 <span class="icon-info text-default btn-guide"></span> 를 클릭하면 이용 가이드 전체가 노출됩니다.
+                            </li>
+                        </ul>
+                        <!--이용 가이드 요약 내용 끝-->
+                    </div>
+                    <div class="portlet-body display-hide">
+                        <!--이용 가이드 전체 내용 시작-->
+                        <ul class="contents hidden-guide">
+                            <li class="paragraph">
+                                내용 추후에 채워야해요~
+                            </li>
+                            <li class="paragraph">
+                                내용 추후에 채워야해요~
+                            </li>
+                            <li class="paragraph">
+                                내용 추후에 채워야해요~
+                            </li>
+                            <li class="paragraph">
+                                내용 추후에 채워야해요~
+                            </li>
+                        </ul>
+                        <!--이용 가이드 전체 내용 끝-->
+                    </div>
+                </div>
+                <form role="form">
+                    <div class="portlet solid grey-steel top-search">
+                        <div class="portlet-title">
+                            <div class="major-search">
+                                <div class="form-horizontal">
+                                    <div class="form-group col-md-3 col-sm-12">
+                                        <label class="col-md-4 col-sm-5 control-label">이름</label>
+                                        <div class="col-md-8 col-sm-7">
+                                            <input type="text" class="form-control input-inline input-xsmall" placeholder="이름입력">
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-5 col-sm-12">
+                                        <label class="col-md-4 col-sm-5 control-label">이메일(ID)</label>
+                                        <div class="col-md-8 col-sm-7">
+                                            <input type="text" class="form-control input-inline input-medium" placeholder="mail@seoulauctionblue.com" value="@seoulauctionblue.com">
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-4 col-sm-12">
+                                        <label class="col-md-6 col-sm-5 control-label">부서</label>
+                                        <div class="col-md-6 col-sm-7">
+                                            <input type="text" class="form-control input-inline input-small" placeholder="ex) 작품관리팀">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-btns form-btns-popup">
+                                <button type="button" class="btn grey-salt">초기화</button>
+                                <button type="button" class="btn grey-cascade"><i class="fa fa-search"></i> 검색</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="table-scrollable table-text-center">
+                    <table class="table table-striped table-bordered table-advance table-hover">
+                        <thead class="small">
+                        <tr class="th-type1">
+                            <th>NO</th>
+                            <th>이름</th>
+                            <th>이메일(ID)</th>
+                            <th>휴대폰번호</th>
+                            <th>부서</th>
+                        </tr>
+                        </thead>
+                        <tbody class="small">
+                        <tr>
+                            <td>
+                                10
+                            </td>
+                            <td>
+                                <a href="#"><strong>홍길동</strong></a>
+                            </td>
+                            <td>
+                                lia.shin@seoulauctionblue.com
+                            </td>
+                            <td>
+                                011-1111-1111
+                            </td>
+                            <td>
+                                IT팀
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                10
+                            </td>
+                            <td>
+                                <a href="#"><strong>홍길동</strong></a>
+                            </td>
+                            <td>
+                                lia.shin@seoulauctionblue.com
+                            </td>
+                            <td>
+                                011-1111-1111
+                            </td>
+                            <td>
+                                IT팀
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                10
+                            </td>
+                            <td>
+                                <a href="#"><strong>홍길동</strong></a>
+                            </td>
+                            <td>
+                                lia.shin@seoulauctionblue.com
+                            </td>
+                            <td>
+                                011-1111-1111
+                            </td>
+                            <td>
+                                IT팀
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                10
+                            </td>
+                            <td>
+                                <a href="#"><strong>홍길동</strong></a>
+                            </td>
+                            <td>
+                                lia.shin@seoulauctionblue.com
+                            </td>
+                            <td>
+                                011-1111-1111
+                            </td>
+                            <td>
+                                IT팀
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                10
+                            </td>
+                            <td>
+                                <a href="#"><strong>홍길동</strong></a>
+                            </td>
+                            <td>
+                                lia.shin@seoulauctionblue.com
+                            </td>
+                            <td>
+                                011-1111-1111
+                            </td>
+                            <td>
+                                IT팀
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                10
+                            </td>
+                            <td>
+                                <a href="#"><strong>홍길동</strong></a>
+                            </td>
+                            <td>
+                                lia.shin@seoulauctionblue.com
+                            </td>
+                            <td>
+                                011-1111-1111
+                            </td>
+                            <td>
+                                IT팀
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                10
+                            </td>
+                            <td>
+                                <a href="#"><strong>홍길동</strong></a>
+                            </td>
+                            <td>
+                                lia.shin@seoulauctionblue.com
+                            </td>
+                            <td>
+                                011-1111-1111
+                            </td>
+                            <td>
+                                IT팀
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                10
+                            </td>
+                            <td>
+                                <a href="#"><strong>홍길동</strong></a>
+                            </td>
+                            <td>
+                                lia.shin@seoulauctionblue.com
+                            </td>
+                            <td>
+                                011-1111-1111
+                            </td>
+                            <td>
+                                IT팀
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                10
+                            </td>
+                            <td>
+                                <a href="#"><strong>홍길동</strong></a>
+                            </td>
+                            <td>
+                                lia.shin@seoulauctionblue.com
+                            </td>
+                            <td>
+                                011-1111-1111
+                            </td>
+                            <td>
+                                IT팀
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                10
+                            </td>
+                            <td>
+                                <a href="#"><strong>홍길동</strong></a>
+                            </td>
+                            <td>
+                                lia.shin@seoulauctionblue.com
+                            </td>
+                            <td>
+                                011-1111-1111
+                            </td>
+                            <td>
+                                IT팀
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="row">
+                    <div class="col-md-5 col-sm-5">
+                        <div class="dataTables_info" id="sample_1_info" role="status"
+                             aria-live="polite"><!-- Showing 1 to 20 of 43 entries -->
+                        </div>
+                    </div>
+                    <div class="col-md-7 col-sm-7">
+                        <div class="dataTables_paginate paging_bootstrap_number">
+                            <ul class="pagination">
+                                <li class="prev disabled"><a href="#" title="Prev"><i
+                                        class="fa fa-angle-left"></i></a></li>
+                                <li class="active"><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li class="next"><a href="#" title="Next"><i
+                                        class="fa fa-angle-right"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- END PAGE CONTENT -->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn dark btn-outline" data-dismiss="modal">닫기</button>
+                <button type="button" class="btn green">저장</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade bs-modal-lg" id="modalAddAuctionNotice" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                <h4 class="modal-title">경매공지 등록/수정</h4>
+            </div>
+            <div class="modal-body">
+                <!-- BEGIN PAGE CONTENT -->
+                <form action="#">
+                    <div class="modal-body">
+                        <div class="portlet light bordered">
+                            <div class="portlet-body form">
+                                <div class="form-horizontal form-bordered">
+                                    <div class="form-body">
+                                        <div class="form-group">
+                                            <label class="col-sm-3 control-label">노출여부</label>
+                                            <div class="col-sm-9">
+                                                <select class="form-control input-small">
+                                                    <option selected>노출</option>
+                                                    <option>숨김</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-3 control-label">표시내용</label>
+                                            <div class="col-sm-9">
+                                                <textarea class="form-control textarea-high-medium" placeholder="최대 2줄까지 표시 가능합니다."></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-3 control-label">관련공지글</label>
+                                            <div class="col-sm-9">
+                                                <select class="form-control auto-complete-notice select2">
+                                                    <option></option>
+                                                    <option value="10559">[공지사항] 2차 예금보험공사 특별경매: 2018 기업소장품 경매 결제 및 출고 안내</option>
+                                                    <option value="10558">[2018.07.20] 2차 예금보험공사 특별경매 (고미술)</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <!-- END PAGE CONTENT -->
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn dark btn-outline" data-dismiss="modal">닫기</button>

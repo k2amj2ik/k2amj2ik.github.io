@@ -1,129 +1,126 @@
 @import "common";
 
 
-.items, .auctions, .lots, .lot-add, .items{
-  p {
-    width: fit-content;
-    //border:1px solid red;
-  }
-  .actions {
-    margin-top: -10px;
-    margin-bottom: 20px;
-    .buttons {
-      float: right;
-      float: right;
-      .button {
-        display: inline-block;
-        margin-left: 2px;
-      }
-    }
-  }
-  .text-condition {
-    display: inline-block;
-    font-size: 85%;
-    color: $font-color-fairy;
-    @include cut-multi-text(120px,64px,4);
-  }
-
-  .card-in {
-    cursor: pointer;
-    padding: $card-inventory-padding-top $card-inventory-padding-right $card-inventory-padding-bottom $card-inventory-padding-left;
-    border: $border-default;
-    box-shadow: $shadow-default;
-    &:hover {
-      background-color: $card-inventory-bgcolor-hover;
-      .text-type {
-        background-color: $bgcolor-default;
-        color: $font-color-white;
-      }
-      .text-days {
-        color: $font-color-white;
-      }
-    }
-    .text-type {
-      margin-top: -$card-inventory-padding-top !important;
-      margin-left: -$card-inventory-padding-left;
-      margin-right: -$card-inventory-padding-right;
-      padding: 1px 10px 2px 10px;
-      background-color: $bgcolor-fairy;
-    }
-  }
-  .text-memo {
-    display: inline-block;
-    font-size: 85%;
-    color: $font-color-fairy;
-    @include cut-multi-text(120px,98px,6);
-  }
-  .card-out {
-    cursor: pointer;
-    padding: $card-inventory-padding-top $card-inventory-padding-right $card-inventory-padding-bottom $card-inventory-padding-left;
-    border: $border-default;
-    box-shadow: $shadow-default;
-    &:hover {
-      background-color: $card-inventory-bgcolor-hover;
-      .text-out-type {
-        background-color: $bgcolor-default;
-        color: $font-color-white;
-      }
-    }
-    .text-out-type {
-      margin-top: -$card-inventory-padding-top !important;
-      margin-left: -$card-inventory-padding-left;
-      margin-right: -$card-inventory-padding-right;
-      margin-bottom: 10px;
-      padding: 1px 10px 2px 10px;
-      background-color: $bgcolor-fairy;
-    }
-  }
-  .text-sale-id {}
-  .text-bid-end-time {}
-  .text-sale-turn {}
-  .text-start-time {}
-  .text-end-start-time {}
-  .text-manager {}
-  .text-catalogue {}
-  .text-view-auction {}
-  .text-view-lot {}
-  .btn-history-inout, .btn-history-auction, .text-bn-count {
-    margin: 4px;
-    a.btn {
-      width: 100%;
-    }
-  }
-  .btn-preview {
-    margin-bottom:4px;
-  }
-  .btn-register-lots {
-
-  }
-  .text-sale-type {
-    display: inline-block;
-  }
-  .text-lot-price-end-start{
-    //color: $font-color-fairy;
-  }
-  .text-lot-price-sold {
-    color: $font-color-warning;
-
-    //font-weight: 600;
-  }
-  .text-bid-type,
-  .text-bid-end-type,
-  .text-view-auction,
-  .text-view-lot,
-  .text-sold-count,
-  .text-sold-amount,
-  .text-sold-rate,
-  .text-in-type,
-  .text-in-date,
-  .text-in-days,
-  .text-in-purpose,
-  .text-in-customer,
-  .text-in-customer-manager {
-    min-width: 60px;
-    //&::before {
-    //  content: '-';
-    //}
-  }
-  .text-in-type {}
+p {
+  width: fit-content;
+  //border:1px solid red;
 }
+.actions {
+  margin-top: -10px;
+  margin-bottom: 20px;
+  .buttons {
+    float: right;
+    .button {
+      display: inline-block;
+      margin-left: 2px;
+    }
+  }
+}
+.text-condition {
+  display: inline-block;
+  font-size: 85%;
+  color: $font-color-fairy;
+  @include cut-multi-text(120px,64px,4);
+}
+
+.card-in {
+  cursor: pointer;
+  padding: $card-inventory-padding-top $card-inventory-padding-right $card-inventory-padding-bottom $card-inventory-padding-left;
+  border: $border-default;
+  box-shadow: $shadow-default;
+  &:hover {
+    background-color: $card-inventory-bgcolor-hover;
+    .text-type {
+      background-color: $bgcolor-default;
+      color: $font-color-white;
+    }
+    .text-days {
+      color: $font-color-white;
+    }
+  }
+  .text-type {
+    margin-top: -$card-inventory-padding-top !important;
+    margin-left: -$card-inventory-padding-left;
+    margin-right: -$card-inventory-padding-right;
+    padding: 1px 10px 2px 10px;
+    background-color: $bgcolor-fairy;
+  }
+}
+.text-memo {
+  display: inline-block;
+  font-size: 85%;
+  color: $font-color-fairy;
+  @include cut-multi-text(120px,98px,6);
+}
+.card-out {
+  cursor: pointer;
+  padding: $card-inventory-padding-top $card-inventory-padding-right $card-inventory-padding-bottom $card-inventory-padding-left;
+  border: $border-default;
+  box-shadow: $shadow-default;
+  &:hover {
+    background-color: $card-inventory-bgcolor-hover;
+    .text-out-type {
+      background-color: $bgcolor-default;
+      color: $font-color-white;
+    }
+  }
+  .text-out-type {
+    margin-top: -$card-inventory-padding-top !important;
+    margin-left: -$card-inventory-padding-left;
+    margin-right: -$card-inventory-padding-right;
+    margin-bottom: 10px;
+    padding: 1px 10px 2px 10px;
+    background-color: $bgcolor-fairy;
+  }
+}
+.text-sale-id {}
+.text-bid-end-time {}
+.text-sale-turn {}
+.text-start-time {}
+.text-end-start-time {}
+.text-manager {}
+.text-catalogue {}
+.text-view-auction {}
+.text-view-lot {}
+.btn-history-inout, .btn-history-auction, .text-bn-count {
+  margin: 4px;
+  a.btn {
+    width: 100%;
+  }
+}
+.btn-preview {
+  margin-bottom:4px;
+}
+.btn-register-lots {
+
+}
+.text-sale-type {
+  display: inline-block;
+}
+.text-lot-price-end-start{
+  //color: $font-color-fairy;
+}
+.text-lot-price-sold {
+  color: $font-color-warning;
+
+  //font-weight: 600;
+}
+.text-bid-type,
+.text-bid-end-type,
+.text-view-auction,
+.text-view-lot,
+.text-sold-count,
+.text-sold-amount,
+.text-sold-rate,
+.text-in-type,
+.text-in-date,
+.text-in-days,
+.text-in-purpose,
+.text-in-customer,
+.text-in-customer-manager {
+  min-width: 60px;
+  //&::before {
+  //  content: '-';
+  //}
+}
+.text-in-type {}

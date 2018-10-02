@@ -21,6 +21,11 @@ var ComponentsSelect2 = function() {
             width: "450px",
         });
 
+        $(".auto-complete-notice").select2({
+            placeholder: "공지글 선택 | 공지글을 선택해 주세요.",
+            width: "450px",
+        });
+
         // @see https://select2.github.io/examples.html#data-ajax
         function formatRepo(repo) {
             if (repo.loading) return repo.text;
