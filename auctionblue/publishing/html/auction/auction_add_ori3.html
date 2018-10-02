@@ -408,12 +408,12 @@
         <!-- END SIDEBAR -->
     </div>
     <!-- BEGIN CONTENT -->
-    <div class="page-content-wrapper lot-add">
+    <div class="page-content-wrapper auction-add">
         <!-- BEGIN CONTENT BODY -->
         <div class="page-content">
             <!-- BEGIN PAGE HEADER-->
             <!-- BEGIN PAGE TITLE-->
-            <h1 class="page-title"> 랏등록</h1>
+            <h1 class="page-title"> 경매수정</h1>
             <!-- END PAGE TITLE-->
             <!-- END PAGE HEADER-->
             <div class="row">
@@ -448,12 +448,13 @@
                                     <div class="caption">
                                         <i class="icon-pin font-blue-dark"></i>
                                         <span class="caption-subject font-blue-dark bold uppercase">
-                                            경매를 먼저 선택하세요.
+                                            기존 경매정보 활용하기
                                         </span>
                                     </div>
                                 </div>
                                 <div class="portlet-body form">
                                     <div class="form-horizontal form-bordered">
+                                        <p class="td-text-info">※ 기존 경매와 유사한 경매를 생성하는 경우 “정보 가져오기”를 이용하시면 편리합니다.</p>
                                         <div class="form-inline">
                                             <div class="form-group">
                                                 <select class="form-control auto-complete-auction select2">
@@ -487,119 +488,154 @@
                                                 </select>
                                             </div>
                                             <div class="form-group">
-                                                <button type="button" class="btn grey-silver"><i class="fa fa-search"></i> 확인</button>
+                                                <button type="button" class="btn grey"><i class="fa fa-search"></i> 정보 가져오기</button>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="auction-info">
-                                        <table class="table table-striped table-bordered table-hover table-header-fixed dataTable no-footer" id="sample_1" role="grid" aria-describedby="sample_1_info">
-                                            <thead class="small">
-                                            <tr class="lot-header-type1">
-                                                <th>구분/상태/ID</th>
-                                                <th>경매정보</th>
-                                                <th class="text-center">판매시작</th>
-                                                <th class="text-center">마감시작</th>
-                                                <th class="text-center">마감종료</th>
-                                                <th>응찰/마감</th>
-                                                <th>전시</th>
-                                                <th>결과</th>
-                                                <th class="text-center">랏 구성</th>
-                                                <th class="text-center">작업</th>
-                                            </tr>
-                                            </thead>
-                                            <tbody class="small">
-                                            <tr>
-                                                <td>
-                                                    <p class="text-sale-type">
-                                                        <span class="badge badge-default">개인판매</span>
-                                                    </p>
-                                                    <p class="text-sale-status">
-                                                        <span class="badge badge-primary">종료</span>
-                                                    </p>
-                                                    <p class="text-sale-id">
-                                                        10589
-                                                    </p>
-                                                </td>
-                                                <td>
-                                                    <div class="card-auction">
-                                                        <p class="text-auction">
-                                                            <a href="auction_add.html">홍길동 고객님 전용 판매입니다.</a>
-                                                        </p>
-                                                        <p class="img-sale-banner">
-                                                            <img src="../../images/auction_banner.jpg">
-                                                        </p>
-                                                        <p class="text-auction-type">
-                                                            BLUE NOW
-                                                        </p>
-                                                        <p class="text-sale-turn">
-                                                            #30
-                                                        </p>
+                                </div>
+                            </div>
+                            <div class="portlet light bordered">
+                                <div class="portlet-title">
+                                    <div class="caption">
+                                        <i class="icon-pin font-blue-dark"></i>
+                                        <span class="caption-subject font-blue-dark bold uppercase">
+                                            경매 상태 관리
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="portlet-body form">
+                                    <div class="form-horizontal form-bordered">
+                                        <div class="form-body">
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label">경매구분</label>
+                                                <div class="col-sm-4">
+                                                    <select class="form-control input-small">
+                                                        <option selected>경매</option>
+                                                        <option>비밀경매</option>
+                                                    </select>
+                                                </div>
+                                                <label class="col-sm-2 control-label">경매조치</label>
+                                                <div class="col-sm-4">
+                                                    <select class="form-control input-small">
+                                                        <option selected>정상경매</option>
+                                                        <option>일시중지</option>
+                                                        <option>경매취소</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label">경매노출</label>
+                                                <div class="col-sm-4">
+                                                    <select class="form-control input-small">
+                                                        <option selected>숨김</option>
+                                                        <option>노출</option>
+                                                    </select>
+                                                </div>
+                                                <label class="col-sm-2 control-label">LOT노출</label>
+                                                <div class="col-sm-4">
+                                                    <select class="form-control input-small">
+                                                        <option selected>숨김</option>
+                                                        <option>노출</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label">경매상태</label>
+                                                <div class="col-sm-10">
+                                                    <div class="mt-radio-inline">
+                                                        <label class="mt-radio">
+                                                            <input type="radio" name="name12" checked=""> 예정
+                                                            <span></span>
+                                                        </label>
+                                                        <label class="mt-radio">
+                                                            <input type="radio" name="name12" value="option2"> 진행중
+                                                            <span></span>
+                                                        </label>
+                                                        <label class="mt-radio">
+                                                            <input type="radio" name="name12" value="option2"> 종료
+                                                            <span></span>
+                                                        </label>
+                                                        <label class="mt-radio">
+                                                            <input type="radio" name="name12" value="option2"> 경매취소
+                                                            <span></span>
+                                                        </label>
+                                                        <label class="mt-radio">
+                                                            <input type="radio" name="name12" value="option2"> <i class="fa fa-warning text-danger"></i> 일시중지
+                                                            <span></span>
+                                                        </label>
                                                     </div>
-                                                </td>
-                                                <td class="text-center">
-                                                    <p class="text-start-time">
-                                                        2018/07/07<br>
-                                                        00:00 AM
-                                                    </p>
-                                                </td>
-                                                <td class="text-center">
-                                                    <p class="text-end-start-time">
-                                                        2018/07/13<br>
-                                                        00:00 AM
-                                                    </p>
-                                                </td>
-                                                <td class="text-center">
-                                                    <p class="text-end-start-time">
-                                                        2018/07/13<br>
-                                                        08:00 AM
-                                                    </p>
-                                                </td>
-                                                <td>
-                                                    <p class="text-bid-type">
-                                                        서면응찰
-                                                    </p>
-                                                    <p class="text-bid-end-type">
-                                                        일괄
-                                                    </p>
-                                                </td>
-                                                <td>
-                                                    <p class="text-view-auction">
-                                                        경매 : <span class="text-primary">Y</span>
-                                                    </p>
-                                                    <p class="text-view-lot">
-                                                        LOT : <span class="text-primary">Y</span>
-                                                    </p>
-                                                </td>
-                                                <td>
-                                                    <p class="text-sold-count">
-                                                        낙찰건 :  84
-                                                    </p>
-                                                    <p class="text-sold-amount">
-                                                        낙찰액 : 211,000,000
-                                                    </p>
-                                                    <p class="text-sold-rate">
-                                                        낙찰률 : 78.4%
-                                                    </p>
-                                                </td>
-                                                <td class="text-center">
-                                                    <p class="text-lot-count">
-                                                        <a href="lots.html" target="_blank" class="btn default">LOT (22)</a>
-                                                    </p>
-                                                    <p class="text-bn-count">
-                                                        <a href="#" target="_blank" class="btn default">BN (30)</a>
-                                                    </p>
-                                                </td>
-                                                <td class="text-center">
-                                                    <p class="btn-preview">
-                                                        <button type="button" class="btn default" data-toggle="tooltip" data-original-title="미리보기"><span class="icon-screen-desktop"></span></button>
-                                                    </p>
-                                                    <p class="text-catalogue">
-                                                        <button type="button" class="btn default" data-toggle="tooltip" data-original-title="카탈로그 다운로드" onclick="location.href='../../data/27th_bluenow_catalogue.pdf';//새창으로 띄워주세요.><"><span class="glyphicon glyphicon-paperclip"></span></button>
-                                                    </p>
-                                                </td>
-                                            </tr>
-                                            </tbody>
-                                        </table>
+                                                    <p class="td-text-warning">※ 경매가 취소되거나, 장애가 발생한 경우가 아니면 경매상태를 변경하지마세요. 자동으로 변경됩니다. </p>
+                                                    <p class="td-text-info">※ 예정 : 경매생성시 “예정”상태가 됩니다. 예정경매는 Front에 표시되지 않습니다.</p>
+                                                    <p class="td-text-info">※ 진행중 : 판매일시 이후 자동으로 “진행중”으로 변경됩니다. Front에 표시됩니다.</p>
+                                                    <p class="td-text-info">※ 종료 : 모든 유효한 랏이 마감되면 자동으로 “종료”로 변경됩니다.</p>
+                                                    <p class="td-text-info">※ 경매취소 : 사용자가 임의로 경매취소로 상태를 변경할 수 있습니다. Front에 표시되지 않습니다.</p>
+                                                    <p class="td-text-info">※ 일시중지: 마감중인 모든 랏의 남은 시간이 멈춥니다. 긴급한 장애 발생 등으로 경매를 중지해야 하는 경우에만 사용하세요.</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label">경매 표시</label>
+                                                <div class="col-sm-10">
+                                                    <div class="mt-radio-inline">
+                                                        <label class="mt-radio">
+                                                            <input type="radio" name="name1" checked=""> 표시
+                                                            <span></span>
+                                                        </label>
+                                                        <label class="mt-radio">
+                                                            <input type="radio" name="name1" value="option2"> 숨김
+                                                            <span></span>
+                                                        </label>
+                                                    </div>
+                                                    <p class="td-text-info">※ 홈페이지에 이 경매를 표시할지 결정합니다.</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label">랏 표시</label>
+                                                <div class="col-sm-10">
+                                                    <div class="mt-radio-inline">
+                                                        <label class="mt-radio">
+                                                            <input type="radio" name="name2" checked=""> 표시
+                                                            <span></span>
+                                                        </label>
+                                                        <label class="mt-radio">
+                                                            <input type="radio" name="name2"> 숨김
+                                                            <span></span>
+                                                        </label>
+                                                    </div>
+                                                    <p class="td-text-info">※ 홈페이지에 이 경매의 랏 정보를 표시할지 결정합니다.</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label">정산제한</label>
+                                                <div class="col-sm-10">
+                                                    <div class="mt-radio-inline">
+                                                        <label class="mt-radio">
+                                                            <input type="radio" name="name3" checked=""> 제한없음
+                                                            <span></span>
+                                                        </label>
+                                                        <label class="mt-radio">
+                                                            <input type="radio" name="name3"> 제한대상 설정
+                                                            <span></span>
+                                                        </label>
+                                                        <div class="set-details">
+                                                            <button type="button" class="btn grey">직원선택</button>
+                                                            <ul>
+                                                                <li class="item">
+                                                                    구유미 (test_id1) / 경매팀 / 010-1111-1111
+                                                                    <button class="btn grey btn-xs">
+                                                                        <i class="fa fa-times"></i></button>
+                                                                </li>
+                                                                <li class="item">
+                                                                    구유미 (test_id1) / 경매팀 / 010-1111-1111
+                                                                    <button class="btn grey btn-xs">
+                                                                        <i class="fa fa-times"></i></button>
+                                                                </li>
+                                                            </ul>
+                                                            <p class="td-text-info">※ 선택한 직원은 정산정보에 접근할 수 없습니다.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -616,196 +652,52 @@
                                     <div class="form-horizontal form-bordered">
                                         <div class="form-body">
                                             <div class="form-group">
-                                                <label class="col-sm-2 control-label">출품상태 <span class="icon-must">*</span></label>
+                                                <label class="col-sm-2 control-label">경매구분</label>
                                                 <div class="col-sm-10">
                                                     <div class="mt-radio-inline">
                                                         <label class="mt-radio">
-                                                            <input type="radio" name="name12" checked=""> 출품
+                                                            <input type="radio" name="name4" checked=""> 경매
                                                             <span></span>
                                                         </label>
                                                         <label class="mt-radio">
-                                                            <input type="radio" name="name12" value="option2"> 출품취소
+                                                            <input type="radio" name="name4"> 비밀경매
+                                                            <span></span>
+                                                        </label>
+                                                        <label class="mt-radio">
+                                                            <input type="radio" name="name4"> 개인판매
+                                                            <span></span>
+                                                        </label>
+                                                        <label class="mt-radio">
+                                                            <input type="radio" name="name4"> BUYNOW
+                                                            <span></span>
+                                                        </label>
+                                                        <label class="mt-radio mt-radio-disabled">
+                                                            <input type="radio" name="name4" disabled=""> 해외경매
                                                             <span></span>
                                                         </label>
                                                     </div>
-                                                    <p class="td-text-info">※ "출품"만 Front에 노출됩니다.</p>
+                                                    <p class="td-text-info">
+                                                        ※ 경매 : Black lots, Blue Now, Blue Day 등 옥션블루에서 진행되는 온라인 경매입니다. <br>
+                                                        ※ 비밀경매 : 특정 고객만 볼 수 있도록 설정 가능한 경매입니다. 해당 고객 마이페이지에 표시됩니다.<br>
+                                                        ※ 개인판매 : 특정 고객 전용 거래 페이지를 생성합니다. 해당 고객의 마이페이지에 표시됩니다.<br>
+                                                        ※ BUYNOW : 기존의 After Sale 입니다. 옥션블루 BUYNOW 메뉴에 표시됩니다.<br>
+                                                        ※ 해외경매는 시스템에서 자동 등록되므로 등록 기능을 제공하지 않습니다. (조회/수정은 가능합니다.)
+                                                    </p>
                                                 </div>
                                             </div>
                                             <div class="form-group">
-                                                <label class="col-sm-2 control-label">노출상태 <span class="icon-must">*</span></label>
+                                                <label class="col-sm-2 control-label">경매 담당자 <span class="icon-must">*</span></label>
                                                 <div class="col-sm-10">
-                                                    <div class="mt-radio-inline">
-                                                        <label class="mt-radio">
-                                                            <input type="radio" name="name1" checked=""> 표시
-                                                            <span></span>
-                                                        </label>
-                                                        <label class="mt-radio">
-                                                            <input type="radio" name="name1" value="option2"> 숨김
-                                                            <span></span>
-                                                        </label>
-                                                    </div>
-                                                    <div class="search-managers">
-                                                        <button type="button" class="btn grey-silver">관리직원 계정 선택</button>
+                                                    <div class="set-details single">
+                                                        <button type="button" class="btn grey">직원선택</button>
                                                         <ul>
-                                                            <li class="manager">
-                                                                구유미 (test_id1) / 경매팀 / 010-1111-1111
-                                                                <button class="btn grey btn-xs">
-                                                                    <i class="fa fa-times"></i></button>
-                                                            </li>
-                                                            <li class="manager">
+                                                            <li class="item">
                                                                 구유미 (test_id1) / 경매팀 / 010-1111-1111
                                                                 <button class="btn grey btn-xs">
                                                                     <i class="fa fa-times"></i></button>
                                                             </li>
                                                         </ul>
-                                                        <p class="td-text-info">※ 선택한 front 계정으로 로그인한 경우만 표시됩니다.</p>
                                                     </div>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="col-sm-2 control-label">보증서 발행 <span class="icon-must">*</span></label>
-                                                <div class="col-sm-10">
-                                                    <div class="mt-radio-inline">
-                                                        <label class="mt-radio">
-                                                            <input type="radio" name="name2" checked=""> 보증서 발행 가능
-                                                            <span></span>
-                                                        </label>
-                                                        <label class="mt-radio">
-                                                            <input type="radio" name="name2"> 보증서 발행 불가
-                                                            <span></span>
-                                                        </label>
-                                                    </div>
-                                                    <p class="td-text-info">※ 보증서 발행 불가 작품은 대신 구매확인서를 다운로드 받을 수 있습니다.</p>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="col-sm-2 control-label">카테고리</label>
-                                                <div class="col-sm-10">
-                                                    <div class="mt-radio-inline">
-                                                        <label class="mt-radio">
-                                                            <input type="radio" name="name5" checked=""> 사용안함
-                                                            <span></span>
-                                                        </label>
-                                                        <label class="mt-radio">
-                                                            <input type="radio" name="name5"> 사용함
-                                                            <span></span>
-                                                        </label>
-                                                    </div>
-                                                    <div class="search-managers">
-                                                        <button type="button" class="btn grey-silver">카테고리검색</button>
-                                                        <ul>
-                                                            <li class="manager">
-                                                                <button class="btn grey btn-sm">근현대<i class="fa fa-times"></i></button>
-                                                                <button class="btn grey btn-sm">럭셔리<i class="fa fa-times"></i></button>
-                                                                <button class="btn grey btn-sm">고미술<i class="fa fa-times"></i></button>
-                                                                <button class="btn grey btn-sm">디자인<i class="fa fa-times"></i></button>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="portlet light bordered">
-                                <div class="portlet-title">
-                                    <div class="caption">
-                                        <i class="icon-pin font-blue-dark"></i>
-                                        <span class="caption-subject font-blue-dark bold uppercase">
-                                            판매정보
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="portlet-body form">
-                                    <div class="form-horizontal form-bordered">
-                                        <div class="form-body">
-                                            <div class="form-group">
-                                                <label class="col-sm-2 control-label">응찰방식</label>
-                                                <div class="col-sm-10">
-                                                    문의하기
-                                                    <p class="td-text-info">
-                                                        ※ 해외경매는 문의하기만 가능합니다.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="col-sm-2 control-label">응찰방식</label>
-                                                <div class="col-sm-10">
-                                                    바로구매
-                                                    <p class="td-text-info">
-                                                        ※ 개인판매는 바로구매만 가능합니다.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="col-sm-2 control-label">응찰방식 <span class="icon-must">*</span></label>
-                                                <div class="col-sm-10">
-                                                    <div class="mt-radio-inline">
-                                                        <label class="mt-radio">
-                                                            <input type="radio" name="name4" checked=""> 바로구매
-                                                            <span></span>
-                                                        </label>
-                                                        <label class="mt-radio">
-                                                            <input type="radio" name="name4"> 문의하기
-                                                            <span></span>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="col-sm-2 control-label">응찰방식 <span class="icon-must">*</span></label>
-                                                <div class="col-sm-10">
-                                                    <div class="mt-radio-inline">
-                                                        <label class="mt-radio">
-                                                            <input type="radio" name="name5" checked=""> 일반경매
-                                                            <span></span>
-                                                        </label>
-                                                        <label class="mt-radio">
-                                                            <input type="radio" name="name5"> 역경매
-                                                            <span></span>
-                                                        </label>
-                                                        <label class="mt-radio">
-                                                            <input type="radio" name="name5"> 서면응찰
-                                                            <span></span>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="col-sm-2 control-label">판매시작 <span class="icon-must">*</span></label>
-                                                <div class="col-sm-10">
-                                                    <input type="text" class="form-control input-medium input-icon-pin" name="date-single-start-sale" value="" />
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="col-sm-2 control-label">하향금액단위 <span class="icon-must">*</span></label>
-                                                <div class="col-sm-10">
-                                                    <input type="text" class="form-control input-small" />
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="col-sm-2 control-label">시작가 <span class="icon-must">*</span></label>
-                                                <div class="col-sm-10">
-                                                    <input type="text" class="form-control input-small" />
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="col-sm-2 control-label">낮은 추정가</label>
-                                                <div class="col-sm-10">
-                                                    <input type="text" class="form-control input-small" />
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="col-sm-2 control-label">높은 추정가</label>
-                                                <div class="col-sm-10">
-                                                    <input type="text" class="form-control input-small" />
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="col-sm-2 control-label">즉시구매가 <span class="icon-must">*</span></label>
-                                                <div class="col-sm-10">
-                                                    <input type="text" class="form-control input-small" />
                                                 </div>
                                             </div>
                                             <div class="form-group">
@@ -815,25 +707,78 @@
                                                 </div>
                                             </div>
                                             <div class="form-group">
-                                                <label class="col-sm-2 control-label">외환가 표시</label>
+                                                <label class="col-sm-2 control-label">프리뷰 전시</label>
                                                 <div class="col-sm-10">
-                                                    <div class="mt-checkbox-inline">
-                                                        <label class="mt-checkbox mt-checkbox-outline">
-                                                            <input type="checkbox"> USD
+                                                    <div class="mt-radio-inline">
+                                                        <label class="mt-radio">
+                                                            <input type="radio" name="name6" checked=""> 없음
                                                             <span></span>
                                                         </label>
-                                                        <label class="mt-checkbox mt-checkbox-outline">
-                                                            <input type="checkbox"> HKD
+                                                        <label class="mt-radio">
+                                                            <input type="radio" name="name6"> 전시설정
                                                             <span></span>
                                                         </label>
-                                                        <label class="mt-checkbox mt-checkbox-outline">
-                                                            <input type="checkbox"> CNY
-                                                            <span></span>
-                                                        </label>
-                                                        <label class="mt-checkbox mt-checkbox-outline">
-                                                            <input type="checkbox"> JPY
-                                                            <span></span>
-                                                        </label>
+                                                    </div>
+                                                    <div class="set-details">
+                                                        <button type="button" class="btn grey">전시설정</button>
+                                                        <table class="table table-striped table-bordered table-hover table-header-fixed dataTable no-footer" id="sample_1" role="grid" aria-describedby="sample_1_info">
+                                                            <thead class="small">
+                                                            <tr class="lot-header-type1">
+                                                                <th>전시장</th>
+                                                                <th>전시시작일</th>
+                                                                <th>전시종료일</th>
+                                                                <th class="hidden-sm hidden-xs">추가정보</th>
+                                                                <th>랏</th>
+                                                                <th>작업</th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody class="small">
+                                                            <tr>
+                                                                <td>
+                                                                    호림아트센터
+                                                                </td>
+                                                                <td>
+                                                                    2018/05/05
+                                                                </td>
+                                                                <td>
+                                                                    2018/05/05
+                                                                </td>
+                                                                <td class="hidden-sm hidden-xs">
+                                                                    주중 : 오전 9시 - 오후 6시 <br>
+                                                                    주말 : 오전 10시 - 오후 3시 <br>
+                                                                    ※ 프리미엄 프리뷰 전시로 입장 시 초대권이 필요합니다.
+                                                                </td>
+                                                                <td>
+                                                                    1-23
+                                                                </td>
+                                                                <td>
+                                                                    <button class="btn grey">삭제</button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    호림아트센터
+                                                                </td>
+                                                                <td>
+                                                                    2018/05/05
+                                                                </td>
+                                                                <td>
+                                                                    2018/05/05
+                                                                </td>
+                                                                <td class="hidden-sm hidden-xs">
+                                                                    주중 : 오전 9시 - 오후 6시 <br>
+                                                                    주말 : 오전 10시 - 오후 3시 <br>
+                                                                    ※ 프리미엄 프리뷰 전시로 입장 시 초대권이 필요합니다.
+                                                                </td>
+                                                                <td>
+                                                                    24-50
+                                                                </td>
+                                                                <td>
+                                                                    <button class="btn grey">삭제</button>
+                                                                </td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
                                                     </div>
                                                 </div>
                                             </div>
@@ -846,7 +791,7 @@
                                     <div class="caption">
                                         <i class="icon-pin font-blue-dark"></i>
                                         <span class="caption-subject font-blue-dark bold uppercase">
-                                            작품정보(BN)
+                                            경매구분 - 개인판매
                                         </span>
                                     </div>
                                 </div>
@@ -856,15 +801,15 @@
                                             <div class="form-group">
                                                 <label class="col-sm-2 control-label">구매고객 <span class="icon-must">*</span></label>
                                                 <div class="col-sm-10">
-                                                    <div class="search-managers">
-                                                        <button type="button" class="btn grey-silver">고객검색</button>
+                                                    <div class="set-details">
+                                                        <button type="button" class="btn grey">고객검색</button>
                                                         <ul>
-                                                            <li class="manager">
+                                                            <li class="item">
                                                                 홍길동 (test_id1) / 010-1111-1111
                                                                 <button class="btn grey btn-xs">
                                                                     <i class="fa fa-times"></i></button>
                                                             </li>
-                                                            <li class="manager">
+                                                            <li class="item">
                                                                 홍길동 (test_id1) / 010-1111-1111
                                                                 <button class="btn grey btn-xs">
                                                                     <i class="fa fa-times"></i></button>
@@ -916,15 +861,15 @@
                                             <div class="form-group">
                                                 <label class="col-sm-2 control-label">참여고객 <span class="icon-must">*</span></label>
                                                 <div class="col-sm-10">
-                                                    <div class="search-managers">
-                                                        <button type="button" class="btn grey-silver">고객검색</button>
+                                                    <div class="set-details">
+                                                        <button type="button" class="btn grey">고객검색</button>
                                                         <ul>
-                                                            <li class="manager">
+                                                            <li class="item">
                                                                 홍길동 (test_id1) / 010-1111-1111
                                                                 <button class="btn grey btn-xs">
                                                                     <i class="fa fa-times"></i></button>
                                                             </li>
-                                                            <li class="manager">
+                                                            <li class="item">
                                                                 홍길동 (test_id1) / 010-1111-1111
                                                                 <button class="btn grey btn-xs">
                                                                     <i class="fa fa-times"></i></button>
@@ -974,7 +919,7 @@
                                                             <span></span>
                                                         </label>
                                                     </div>
-                                                    <div class="search-managers">
+                                                    <div class="set-details">
                                                         그룹단위: <input type="text" class="form-control input-small" /> 랏
                                                         <p class="td-text-info">
                                                             ※ 이전 랏/그룹이 마감되면 다음 랏/그룹 마감이 시작됩니다.
@@ -982,7 +927,12 @@
                                                     </div>
                                                 </div>
                                             </div>
-
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label">판매시작 <span class="icon-must">*</span></label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control input-medium input-icon-pin" name="date-single-start-sale" value="" />
+                                                </div>
+                                            </div>
                                             <div class="form-group">
                                                 <label class="col-sm-2 control-label">마감시작 <span class="icon-must">*</span></label>
                                                 <div class="col-sm-10">
@@ -1024,7 +974,7 @@
                                                 </div>
                                             </div>
                                             <div class="form-group">
-                                                <label class="col-sm-2 control-label">경매유형 <span class="icon-must">*</span></label>
+                                                <label class="col-sm-2 control-label">경매유형</label>
                                                 <div class="col-sm-10">
                                                     <select class="form-control input-medium">
                                                         <option selected>경매유형 선택</option>
@@ -1033,11 +983,11 @@
                                                         <option>...</option>
                                                         <option>경매유형N</option>
                                                     </select>
-                                                    <button type="button" class="btn grey-silver">경매유형관리</button>
+                                                    <button type="button" class="btn grey">경매유형관리</button>
                                                 </div>
                                             </div>
                                             <div class="form-group">
-                                                <label class="col-sm-2 control-label">회차  <span class="icon-must">*</span></label>
+                                                <label class="col-sm-2 control-label">회차</label>
                                                 <div class="col-sm-10">
                                                     <input type="text" class="form-control input-small" value="10" />
                                                 </div>
@@ -1059,8 +1009,8 @@
                                             <div class="form-group">
                                                 <label class="col-sm-2 control-label">경매공지</label>
                                                 <div class="col-sm-10">
-                                                    <div class="search-managers">
-                                                        <button type="button" class="btn grey-silver">경매공지관리</button>
+                                                    <div class="set-details">
+                                                        <button type="button" class="btn grey">경매공지관리</button>
                                                         <table class="table table-striped table-bordered table-hover table-header-fixed dataTable no-footer" id="sample_1" role="grid" aria-describedby="sample_1_info">
                                                             <thead class="small">
                                                             <tr class="lot-header-type1">
@@ -1082,7 +1032,7 @@
                                                                     <a href="#">링크보기</a>
                                                                 </td>
                                                                 <td>
-                                                                    <button class="btn default">삭제</button>
+                                                                    <button class="btn grey">삭제</button>
                                                                 </td>
                                                             </tr>
                                                             <tr>
@@ -1096,7 +1046,7 @@
                                                                     <a href="#">링크보기</a>
                                                                 </td>
                                                                 <td>
-                                                                    <button class="btn default">삭제</button>
+                                                                    <button class="btn grey">삭제</button>
                                                                 </td>
                                                             </tr>
                                                             <tr>
@@ -1110,7 +1060,7 @@
 
                                                                 </td>
                                                                 <td>
-                                                                    <button class="btn default">삭제</button>
+                                                                    <button class="btn grey">삭제</button>
                                                                 </td>
                                                             </tr>
                                                             <tr>
@@ -1124,7 +1074,7 @@
 
                                                                 </td>
                                                                 <td>
-                                                                    <button class="btn default">삭제</button>
+                                                                    <button class="btn grey">삭제</button>
                                                                 </td>
                                                             </tr>
                                                             </tbody>
@@ -1391,13 +1341,13 @@ All International packing and shipping costs related to the purchase of this 랏
                                             <div class="form-group">
                                                 <label class="col-sm-2 control-label">[PC] 경매 대표이미지</label>
                                                 <div class="col-sm-10">
-                                                    <div class="search-managers single">
-                                                        <button type="button" class="btn grey-silver">파일첨부</button>
+                                                    <div class="set-details single">
+                                                        <button type="button" class="btn grey">파일첨부</button>
                                                         <p class="img-sale-banner">
                                                             <img src="../../images/auction_banner.jpg">
                                                         </p>
                                                         <ul>
-                                                            <li class="manager">
+                                                            <li class="item">
                                                                 <a href="../../images/auction_banner.jpg" target="_blank">배너1.jpg</a>
                                                                 <button class="btn grey btn-xs">
                                                                     <i class="fa fa-times"></i></button>
@@ -1412,13 +1362,13 @@ All International packing and shipping costs related to the purchase of this 랏
                                             <div class="form-group">
                                                 <label class="col-sm-2 control-label">[PC] 랏목록 상단 배너</label>
                                                 <div class="col-sm-10">
-                                                    <div class="search-managers single">
-                                                        <button type="button" class="btn grey-silver">파일첨부</button>
+                                                    <div class="set-details single">
+                                                        <button type="button" class="btn grey">파일첨부</button>
                                                         <p class="img-sale-banner">
                                                             <img src="../../images/auction_banner.jpg">
                                                         </p>
                                                         <ul>
-                                                            <li class="manager">
+                                                            <li class="item">
                                                                 <a href="../../images/auction_banner.jpg" target="_blank">배너1.jpg</a>
                                                                 <button class="btn grey btn-xs">
                                                                     <i class="fa fa-times"></i></button>
@@ -1433,13 +1383,13 @@ All International packing and shipping costs related to the purchase of this 랏
                                             <div class="form-group">
                                                 <label class="col-sm-2 control-label">[모바일] 경매 대표이미지</label>
                                                 <div class="col-sm-10">
-                                                    <div class="search-managers single">
-                                                        <button type="button" class="btn grey-silver">파일첨부</button>
+                                                    <div class="set-details single">
+                                                        <button type="button" class="btn grey">파일첨부</button>
                                                         <p class="img-sale-banner">
                                                             <img src="../../images/auction_banner.jpg">
                                                         </p>
                                                         <ul>
-                                                            <li class="manager">
+                                                            <li class="item">
                                                                 <a href="../../images/auction_banner.jpg" target="_blank">배너1.jpg</a>
                                                                 <button class="btn grey btn-xs">
                                                                     <i class="fa fa-times"></i></button>
@@ -1454,13 +1404,13 @@ All International packing and shipping costs related to the purchase of this 랏
                                             <div class="form-group">
                                                 <label class="col-sm-2 control-label">[모바일] 랏목록 상단 배너</label>
                                                 <div class="col-sm-10">
-                                                    <div class="search-managers single">
-                                                        <button type="button" class="btn grey-silver">파일첨부</button>
+                                                    <div class="set-details single">
+                                                        <button type="button" class="btn grey">파일첨부</button>
                                                         <p class="img-sale-banner">
                                                             <img src="../../images/auction_banner.jpg">
                                                         </p>
                                                         <ul>
-                                                            <li class="manager">
+                                                            <li class="item">
                                                                 <a href="../../images/auction_banner.jpg" target="_blank">배너1.jpg</a>
                                                                 <button class="btn grey btn-xs">
                                                                     <i class="fa fa-times"></i></button>
@@ -1475,10 +1425,10 @@ All International packing and shipping costs related to the purchase of this 랏
                                             <div class="form-group">
                                                 <label class="col-sm-2 control-label">카탈로그</label>
                                                 <div class="col-sm-10">
-                                                    <div class="search-managers single">
-                                                        <button type="button" class="btn grey-silver">파일첨부</button>
+                                                    <div class="set-details single">
+                                                        <button type="button" class="btn grey">파일첨부</button>
                                                         <ul>
-                                                            <li class="manager">
+                                                            <li class="item">
                                                                 <a href="../../images/auction_banner.jpg" target="_blank">카탈로그.pdf</a>
                                                                 <button class="btn grey btn-xs">
                                                                     <i class="fa fa-times"></i></button>
@@ -1493,7 +1443,7 @@ All International packing and shipping costs related to the purchase of this 랏
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn default" onclick="location.href='auctions.html'">목록</button>
+                            <button type="button" class="btn grey" onclick="location.href='auctions.html'">목록</button>
                             <button type="submit" class="btn green">저장</button>
                         </div>
                     </form>

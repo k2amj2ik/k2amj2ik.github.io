@@ -4482,7 +4482,7 @@ Editableform based on Twitter Bootstrap
     
     //buttons
     $.fn.editableform.buttons = '<button type="submit" class="btn blue editable-submit"><i class="fa fa-check"></i></button>'+
-                                '<button type="button" class="btn default editable-cancel"><i class="fa fa-times"></i></button>';         
+                                '<button type="button" class="btn grey editable-cancel"><i class="fa fa-times"></i></button>';
     
     //error classes
     $.fn.editableform.errorGroupClass = 'has-error';
@@ -6220,7 +6220,7 @@ Automatically shown in inline mode.
         /**
         @property tpl 
         **/         
-        tpl:'<div class="input-group input-group-fixed date"><input type="text" readonly class="form-control input-medium pull-left"/><span class="input-group-btn pull-left"><button class="btn default" type="button"><i class="fa fa-calendar"></i></button></span></div>',
+        tpl:'<div class="input-group input-group-fixed date"><input type="text" readonly class="form-control input-medium pull-left"/><span class="input-group-btn pull-left"><button class="btn grey" type="button"><i class="fa fa-calendar"></i></button></span></div>',
         /**
         @property inputclass 
         @default 'input-small'

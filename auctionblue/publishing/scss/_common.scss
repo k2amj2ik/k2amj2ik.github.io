@@ -15,9 +15,11 @@ $font-color-info: #2AB4C0;
 $font-color-white: #fff;
 $font-color-danger: #ED1C24;
 $font-color-warning: orange;
+$border-color-default: #efefef;
 $border-default: 1px solid #e1e5ec;
 //$border-default: 0;
 $border-bar: 1px solid #ccc;
+$border-table: 1px solid #efefef;
 //$shadow-default: 4px 4px 0 rgba(#ccc,0.5);
 $shadow-default: 0 0 0 0;
 $bgcolor-fairy: #e1e5ec;
@@ -37,6 +39,12 @@ html, body, div, ul, ol, li, table, tr, td, h1, h2, h3, h4, p, span, form, input
 
 
 //common ui-------------------------------------------------------------------------------------------
+.text-normal {
+  color: $font-color-default;
+}
+.text-warning {
+  color: $font-color-warning !important;
+}
 .td-text-info {
   margin: 4px 0 4px 0 !important;
   color: $font-color-info;
@@ -99,7 +107,43 @@ html, body, div, ul, ol, li, table, tr, td, h1, h2, h3, h4, p, span, form, input
     }
   }
 }
+
+.info-layer {
+  label {
+    font-weight: 600;
+    color: $font-color-info;
+    font-size: 140%;
+  }
+  .content {
+    padding: 6px 5px 6px 0;
+    margin: 0 0 20px 0;
+    border-bottom: $border-default;
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+}
+.mid-cell {
+  border-right: $border-table;
+}
+
+.text-biggest {
+  font-size: 80px;
+}
+.scroll-area {
+  height: 300px;
+  overflow-y: scroll;
+  border: $border-default;
+  padding: 5px;
+  background-color: $bgcolor-veryfairy;
+}
+
 //change metonic ui-------------------------------------------------------------------------------------------
+body.modal-open {
+  overflow: hidden;
+  position: fixed;
+}
+
 
 a {
   text-decoration: underline;
@@ -149,6 +193,10 @@ th {
   display: inline-block;
 }
 
+.select2 {
+  min-width: 400px !important;
+}
+
 .select2-container--default .select2-selection--single .select2-selection__rendered {
   color: $font-color-default;
   line-height: 32px;
@@ -185,7 +233,10 @@ th {
 
 //user-guide-------------------------------------------------------------------------------------------
 .user-guide {
-  //margin-top: -51px !important;
+  margin-bottom: 0 !important;
+  .hidden-guide {
+    margin-bottom: 20px !important;
+  }
   .btn-guide {
     font-size: 140%;
   }
@@ -200,11 +251,11 @@ th {
       }
     }
     >.contents {
-      list-style-type: circle ;
+      list-style-type: none ;
       margin: 0 0 0 0;
       padding: 0 0 0 0;
       >.paragraph {
-        margin: 0 0 0 30px;
+        margin: 0 0 0 10px;
         padding: 10px 0 10px 0;
         border-bottom: $border-default;
         &:last-child {
@@ -215,11 +266,11 @@ th {
   }
   >.portlet-body {
     >.contents {
-      list-style-type: circle ;
+      list-style-type: none ;
       margin: 0 0 0 0;
       padding: 0 0 0 0;
       >.paragraph {
-        margin: 0 0 0 30px;
+        text-indent: 10px;
         padding: 10px 0 10px 0;
         border-bottom: $border-default;
       }
@@ -232,6 +283,7 @@ th {
 .top-search {
   font-size: 90% !important;
   .portlet-title {
+    margin-bottom: -10px !important;
     .major-search {
       margin: 10px 0 -10px 10px !important;
     }
@@ -379,13 +431,13 @@ th {
 .img-sale-banner {
   display: inline-block;
   img {
-    max-width: 110px;
-    max-height: 30px;
+    max-width: 100px;
+    max-height: 50px;
     margin: 4px 0;
   }
 }
 
-.search-managers {
+.set-details {
   //border: $border-default;
   //padding: 10px;
   >.btn {
@@ -393,7 +445,7 @@ th {
   }
   ul {
     //margin: 14px 0 10px 0;
-    .manager {
+    .item {
       margin: 10px 0 10px 0;
       list-style-type: none;
     }
@@ -405,8 +457,8 @@ th {
   ul {
     display: inline-block;
     margin: 0 0 0 0;
-    .manager {
-      margin: 0 0 0 4px;
+    .item {
+      margin: 0 20px 0 4px;
       display: inline-block;
     }
   }
@@ -416,5 +468,13 @@ th {
   color: $font-color-danger;
 }
 
-
+.drag-drop-area {
+  width: 100%;
+  height: 100px;
+  border: 2px dashed $border-color-default;
+  background: #fff;
+  padding-top: 40px;
+  margin: 0 auto;
+  text-align: center;
+}
 

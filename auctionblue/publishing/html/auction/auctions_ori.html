@@ -284,123 +284,395 @@
             <!-- BEGIN SIDEBAR MENU -->
             <ul class="page-sidebar-menu" data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200" style="padding-top: 20px">
                 <li class="nav-item start">
-                    <a href="index.html" class="nav-link nav-toggle">
+                    <a href="dashboard/dashboard.html" class="nav-link nav-toggle">
                         <i class="icon-home"></i>
-                        <span class="title">주요현황판</span>
+                        <span class="title">대시보드</span>
                         <span class="selected"></span>
                     </a>
                 </li>
-                <li class="heading">
-                    <h3 class="uppercase">고객관리</h3>
+                <li class="nav-item">
+                    <a href="javascript:;" class="nav-link nav-toggle">
+                        <i class="icon-users"></i>
+                        <span class="title">고객 관리</span>
+                        <span class="arrow"></span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li class="nav-item">
+                            <a href="../member/members.html" class="nav-link">
+                                <span class="title">고객관리</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../member/outmembers.html" class="nav-link">
+                                <span class="title">탈퇴고객관리</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../member/cs.html" class="nav-link">
+                                <span class="title">CS접수</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../member/questions.html" class="nav-link">
+                                <span class="title">1:1 문의관리</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../member/points.html" class="nav-link">
+                                <span class="title">포인트관리</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../member/checkings.html" class="nav-link">
+                                <span class="title">본인인증 결과조회</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../member/agreements.html" class="nav-link">
+                                <span class="title">경매안내 동의조회</span>
+                            </a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
-                        <i class="icon-call-end"></i>
-                        <span class="title">상담</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">
-                        <i class="icon-user"></i>
-                        <span class="title">회원관리</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">
-                        <i class="icon-user-following"></i>
-                        <span class="title">담당고객</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">
-                        <i class="icon-target"></i>
-                        <span class="title">응찰관리</span>
-                    </a>
-                </li>
-                <li class="heading">
-                    <h3 class="uppercase">작품관리</h3>
-                </li>
-                <li class="nav-item">
-                    <a href="../items/items.html" class="nav-link">
-                        <i class="icon-picture"></i>
-                        <span class="title">보유작품</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="inouthistory.html" class="nav-link">
-                        <i class="icon-tag"></i>
-                        <span class="title">입출고이력</span>
-                        <!--<span class="badge badge-success"> 5 </span>-->
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">
-                        <i class="icon-pointer"></i>
-                        <span class="title">장소</span>
-                    </a>
-                </li>
-                <li class="heading">
-                    <h3 class="uppercase">경매관리</h3>
-                </li>
-                <li class="nav-item active">
-                    <a href="auctions.html" class="nav-link">
+                    <a href="javascript:;" class="nav-link nav-toggle">
                         <i class="icon-social-dropbox"></i>
-                        <span class="title">경매</span>
+                        <span class="title">입출고 관리</span>
+                        <span class="arrow"></span>
                     </a>
+                    <ul class="sub-menu">
+                        <li class="nav-item">
+                            <a href="../item/items.html" class="nav-link">
+                                <span class="title">보유작품관리</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../item/requests.html" class="nav-link">
+                                <span class="title">입출고요청</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../item/history.html" class="nav-link">
+                                <span class="title">입출고이력</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../item/carts.html" class="nav-link">
+                                <span class="title">카트관리</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../item/storage.html" class="nav-link">
+                                <span class="title">창고관리</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../item/date.html" class="nav-link">
+                                <span class="title">운송일관리</span>
+                            </a>
+                        </li>
+                    </ul>
                 </li>
-                <li class="nav-item">
-                    <a href="buynow.html" class="nav-link">
-                        <i class="icon-social-dropbox"></i>
-                        <span class="title">BUYNOW</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="abroad.html" class="nav-link">
-                        <i class="icon-social-dropbox"></i>
-                        <span class="title">해외경매</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="lots.html" class="nav-link">
-                        <i class="icon-layers"></i>
-                        <span class="title">랏</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">
+                <li class="nav-item active open">
+                    <a href="javascript:;" class="nav-link nav-toggle">
                         <i class="icon-magic-wand"></i>
-                        <span class="title">대행</span>
+                        <span class="title">경매관리</span>
+                        <span class="arrow open"></span>
                     </a>
+                    <ul class="sub-menu">
+                        <li class="nav-item active">
+                            <a href="../auction/auctions.html" class="nav-link">
+                                <span class="title">경매회차관리</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../auction/lots.html" class="nav-link">
+                                <span class="title">LOT관리</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../auction/managerbids.html" class="nav-link">
+                                <span class="title">응찰대행관리</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../auction/bids.html" class="nav-link">
+                                <span class="title">응찰내역</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../auction/results.html" class="nav-link">
+                                <span class="title">경매결과</span>
+                            </a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
-                        <i class="icon-bar-chart"></i>
-                        <span class="title">성과</span>
+                    <a href="javascript:;" class="nav-link nav-toggle">
+                        <i class="icon-handbag"></i>
+                        <span class="title">BuyNow관리</span>
+                        <span class="arrow"></span>
                     </a>
-                </li>
-                <li class="heading">
-                    <h3 class="uppercase">정산관리</h3>
+                    <ul class="sub-menu">
+                        <li class="nav-item">
+                            <a href="../buynow/buynows.html" class="nav-link">
+                                <span class="title">BuyNow판매관리</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../buynow/works.html" class="nav-link">
+                                <span class="title">판매작품관리</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../buynow/deals.html" class="nav-link">
+                                <span class="title">거래작품현황</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../buynow/orders.html" class="nav-link">
+                                <span class="title">판매결과</span>
+                            </a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="javascript:;" class="nav-link nav-toggle">
+                        <i class="icon-plane"></i>
+                        <span class="title">해외경매대행</span>
+                        <span class="arrow"></span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li class="nav-item">
+                            <a href="../abroad/abroad_auctions.html" class="nav-link">
+                                <span class="title">해외경매관리</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../abroad/abroad_lots.html" class="nav-link">
+                                <span class="title">해외경매 LOT관리</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../abroad/abroad_requires.html" class="nav-link">
+                                <span class="title">응찰문의현황</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../abroad/abroad_results.html" class="nav-link">
+                                <span class="title">해외경매낙찰관리</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../abroad/abroad_commission.html" class="nav-link">
+                                <span class="title">경매사 수수료 관리</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:;" class="nav-link nav-toggle">
+                        <i class="icon-target"></i>
+                        <span class="title">영업관리</span>
+                        <span class="arrow"></span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li class="nav-item">
+                            <a href="../sales/consignments.html" class="nav-link">
+                                <span class="title">위탁현황관리</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../sales/sold.html" class="nav-link">
+                                <span class="title">판매현황관리</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../sales/customers.html" class="nav-link">
+                                <span class="title">담당고객관리</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:;" class="nav-link nav-toggle">
                         <i class="icon-calculator"></i>
                         <span class="title">정산관리</span>
+                        <span class="arrow"></span>
                     </a>
-                </li>
-                <li class="heading">
-                    <h3 class="uppercase">환경설정</h3>
+                    <ul class="sub-menu">
+                        <li class="nav-item">
+                            <a href="../settlement/confirm.html" class="nav-link">
+                                <span class="title">정산확인처리</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../settlement/settlements_auction.html" class="nav-link">
+                                <span class="title">경매 위탁/판매정산</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../settlement/settlements_buynow.html" class="nav-link">
+                                <span class="title">BuyNow 정산</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../settlement/receipts.html" class="nav-link">
+                                <span class="title">현금영수증처리</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../settlement/points.html" class="nav-link">
+                                <span class="title">포인트지급</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../settlement/movingcosts.html" class="nav-link">
+                                <span class="title">운송비조회</span>
+                            </a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="javascript:;" class="nav-link nav-toggle">
+                        <i class="icon-speech"></i>
+                        <span class="title">알림발송관리</span>
+                        <span class="arrow"></span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li class="nav-item">
+                            <a href="../notification/history_sms.html" class="nav-link">
+                                <span class="title">SMS 발송이력</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../notification/send_sms.html" class="nav-link">
+                                <span class="title">SMS 발송</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../notification/send_email.html" class="nav-link">
+                                <span class="title">E-mail 발송</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:;" class="nav-link nav-toggle">
+                        <i class="icon-settings"></i>
+                        <span class="title">사이트관리</span>
+                        <span class="arrow"></span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li class="nav-item">
+                            <a href="../manage_site/mainbanners.html" class="nav-link">
+                                <span class="title">메인 배너</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../manage_site/subbanners.html" class="nav-link">
+                                <span class="title">띠배너</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../manage_site/notice.html" class="nav-link">
+                                <span class="title">공지사항</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../manage_site/popup.html" class="nav-link">
+                                <span class="title">메인 팝업공지</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../setting/bluespick.html" class="nav-link">
+                                <span class="title">메인 블루스픽</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../setting/news.html" class="nav-link">
+                                <span class="title">메인 블루스뉴스</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../setting/faq.html" class="nav-link">
+                                <span class="title">FAQ</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:;" class="nav-link nav-toggle">
+                        <i class="icon-docs"></i>
+                        <span class="title">데이터관리</span>
+                        <span class="arrow"></span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li class="nav-item">
+                            <a href="../data/artists.html" class="nav-link">
+                                <span class="title">작가정보</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../data/mediums.html" class="nav-link">
+                                <span class="title">작품재료</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../data/styles.html" class="nav-link">
+                                <span class="title">작품스타일</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../data/categories.html" class="nav-link">
+                                <span class="title">카테고리</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../data/increases.html" class="nav-link">
+                                <span class="title">호가단위</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../data/showrooms.html" class="nav-link">
+                                <span class="title">전시장관리</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../data/templates.html" class="nav-link">
+                                <span class="title">템플릿관리</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:;" class="nav-link nav-toggle">
                         <i class="icon-lock"></i>
-                        <span class="title">운영자</span>
+                        <span class="title">어드민관리</span>
+                        <span class="arrow"></span>
                     </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">
-                        <i class="icon-list"></i>
-                        <span class="title">메뉴</span>
-                    </a>
+                    <ul class="sub-menu">
+                        <li class="nav-item">
+                            <a href="../manage_admin/authorizations.html" class="nav-link">
+                                <span class="title">권한그룹</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../manage_admin/managers.html" class="nav-link">
+                                <span class="title">관리자</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../manage_admin/notice.html" class="nav-link">
+                                <span class="title">Admin공지사항</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../manage_admin/guides.html" class="nav-link">
+                                <span class="title">Admin운영가이드</span>
+                            </a>
+                        </li>
+                    </ul>
                 </li>
             </ul>
             <!-- END SIDEBAR MENU -->
@@ -415,7 +687,7 @@
             <!-- BEGIN PAGE TITLE-->
             <h1 class="page-title"> 경매
                 <div class="btn-groups major-btn-groups">
-                    <button class="btn default" onclick="location.href='auction_add.html'">경매등록</button>
+                    <button class="btn grey" onclick="location.href='auction_add.html'">경매등록</button>
                 </div>
             </h1>
             <!-- END PAGE TITLE-->
@@ -505,7 +777,7 @@
                                         <input type="text" class="form-control input-medium input-icon-calendar" placeholder="시작일-종료일" name="date-range" value="" />
                                     </div>
                                     <div class="form-group">
-                                        <button type="button" class="btn grey-silver"><i class="fa fa-search"></i> 검색</button>
+                                        <button type="button" class="btn grey"><i class="fa fa-search"></i> 검색</button>
                                         <button type="button" class="btn grey-salt">초기화</button>
                                     </div>
                                 </div>
@@ -637,15 +909,15 @@
                                 </td>
                                 <td class="text-center">
                                     <p class="text-lot-count">
-                                        <a href="lots.html" target="_blank" class="btn default">LOT (0)</a>
+                                        <a href="lots.html" target="_blank" class="btn grey">LOT (0)</a>
                                     </p>
                                     <p class="text-bn-count">
-                                        <a href="#" target="_blank" class="btn default">BN (0)</a>
+                                        <a href="#" target="_blank" class="btn grey">BN (0)</a>
                                     </p>
                                 </td>
                                 <td class="text-center">
                                     <p class="btn-preview">
-                                        <button type="button" class="btn default" data-toggle="tooltip" data-original-title="미리보기"><span class="icon-screen-desktop"></span></button>
+                                        <button type="button" class="btn grey" data-toggle="tooltip" data-original-title="미리보기"><span class="icon-screen-desktop"></span></button>
                                     </p>
                                 </td>
                             </tr>
@@ -723,18 +995,18 @@
                                 </td>
                                 <td class="text-center">
                                     <p class="text-lot-count">
-                                        <a href class="btn default" onclick="location.href='lots.html'">LOT (22)</a>
+                                        <a href class="btn grey" onclick="location.href='lots.html'">LOT (22)</a>
                                     </p>
                                     <p class="text-bn-count">
-                                        <a href="#" target="_blank" class="btn default">BN (30)</a>
+                                        <a href="#" target="_blank" class="btn grey">BN (30)</a>
                                     </p>
                                 </td>
                                 <td class="text-center">
                                     <p class="btn-preview">
-                                        <button type="button" class="btn default" data-toggle="tooltip" data-original-title="미리보기"><span class="icon-screen-desktop"></span></button>
+                                        <button type="button" class="btn grey" data-toggle="tooltip" data-original-title="미리보기"><span class="icon-screen-desktop"></span></button>
                                     </p>
                                     <p class="text-catalogue">
-                                        <button type="button" class="btn default" data-toggle="tooltip" data-original-title="카탈로그 다운로드" onclick="location.href='../../data/27th_bluenow_catalogue.pdf';//새창으로 띄워주세요.><"><span class="glyphicon glyphicon-paperclip"></span></button>
+                                        <button type="button" class="btn grey" data-toggle="tooltip" data-original-title="카탈로그 다운로드" onclick="location.href='../../data/27th_bluenow_catalogue.pdf';//새창으로 띄워주세요.><"><span class="glyphicon glyphicon-paperclip"></span></button>
                                     </p>
                                 </td>
                             </tr>
@@ -813,18 +1085,18 @@
                                 </td>
                                 <td class="text-center">
                                     <p class="text-lot-count">
-                                        <a href="lots.html" target="_blank" class="btn default">LOT (22)</a>
+                                        <a href="lots.html" target="_blank" class="btn grey">LOT (22)</a>
                                     </p>
                                     <p class="text-bn-count">
-                                        <a href="#" target="_blank" class="btn default">BN (30)</a>
+                                        <a href="#" target="_blank" class="btn grey">BN (30)</a>
                                     </p>
                                 </td>
                                 <td class="text-center">
                                     <p class="btn-preview">
-                                        <button type="button" class="btn default" data-toggle="tooltip" data-original-title="미리보기"><span class="icon-screen-desktop"></span></button>
+                                        <button type="button" class="btn grey" data-toggle="tooltip" data-original-title="미리보기"><span class="icon-screen-desktop"></span></button>
                                     </p>
                                     <p class="text-catalogue">
-                                        <button type="button" class="btn default" data-toggle="tooltip" data-original-title="카탈로그 다운로드" onclick="location.href='../../data/27th_bluenow_catalogue.pdf';//새창으로 띄워주세요.><"><span class="glyphicon glyphicon-paperclip"></span></button>
+                                        <button type="button" class="btn grey" data-toggle="tooltip" data-original-title="카탈로그 다운로드" onclick="location.href='../../data/27th_bluenow_catalogue.pdf';//새창으로 띄워주세요.><"><span class="glyphicon glyphicon-paperclip"></span></button>
                                     </p>
                                 </td>
                             </tr>
@@ -899,15 +1171,15 @@
                                 </td>
                                 <td class="text-center">
                                     <p class="text-lot-count">
-                                        <a href="lots.html" target="_blank" class="btn default">LOT (0)</a>
+                                        <a href="lots.html" target="_blank" class="btn grey">LOT (0)</a>
                                     </p>
                                     <p class="text-bn-count">
-                                        <a href="#" target="_blank" class="btn default">BN (0)</a>
+                                        <a href="#" target="_blank" class="btn grey">BN (0)</a>
                                     </p>
                                 </td>
                                 <td class="text-center">
                                     <p class="btn-preview">
-                                        <button type="button" class="btn default" data-toggle="tooltip" data-original-title="미리보기"><span class="icon-screen-desktop"></span></button>
+                                        <button type="button" class="btn grey" data-toggle="tooltip" data-original-title="미리보기"><span class="icon-screen-desktop"></span></button>
                                     </p>
                                 </td>
                             </tr>
@@ -974,18 +1246,18 @@
                                 </td>
                                 <td class="text-center">
                                     <p class="text-lot-count">
-                                        <a href="lots.html" target="_blank" class="btn default">LOT (150)</a>
+                                        <a href="lots.html" target="_blank" class="btn grey">LOT (150)</a>
                                     </p>
                                     <p class="text-bn-count">
-                                        <a href="#" target="_blank" class="btn default">BN (0)</a>
+                                        <a href="#" target="_blank" class="btn grey">BN (0)</a>
                                     </p>
                                 </td>
                                 <td class="text-center">
                                     <p class="btn-preview">
-                                        <button type="button" class="btn default" data-toggle="tooltip" data-original-title="미리보기"><span class="icon-screen-desktop"></span></button>
+                                        <button type="button" class="btn grey" data-toggle="tooltip" data-original-title="미리보기"><span class="icon-screen-desktop"></span></button>
                                     </p>
                                     <p class="text-catalogue">
-                                        <button type="button" class="btn default" data-toggle="tooltip" data-original-title="카탈로그 다운로드" onclick="location.href='../../data/27th_bluenow_catalogue.pdf';//새창으로 띄워주세요.><"><span class="glyphicon glyphicon-paperclip"></span></button>
+                                        <button type="button" class="btn grey" data-toggle="tooltip" data-original-title="카탈로그 다운로드" onclick="location.href='../../data/27th_bluenow_catalogue.pdf';//새창으로 띄워주세요.><"><span class="glyphicon glyphicon-paperclip"></span></button>
                                     </p>
                                 </td>
                             </tr>
