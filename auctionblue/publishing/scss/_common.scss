@@ -54,11 +54,18 @@ html, body, div, ul, ol, li, table, tr, td, h1, h2, h3, h4, p, span, form, input
   margin: 4px 0 4px 0 !important;
   color: $font-color-warning;
 }
-.td-text-info-inline {}
 
 
-.textarea-high-medium {
+.textarea-height-high {
+  min-height: 200px;
+}
+
+.textarea-height-medium {
   min-height: 100px;
+}
+
+.textarea-height-small {
+  min-height: 50px;
 }
 
 .auction-info {
@@ -296,7 +303,7 @@ th {
       margin: 10px 0 -10px 10px !important;
     }
     .form-btns {
-      margin-bottom: -10px;
+      //margin-bottom: -10px;
     }
     .form-btns-popup {
       margin-bottom: 10px;
@@ -463,12 +470,9 @@ th {
   >.btn {
     margin-bottom: 4px;
   }
-  ul {
-    //margin: 14px 0 10px 0;
-    .item {
-      margin: 10px 0 10px 0;
-      list-style-type: none;
-    }
+  .item {
+    margin: 10px 0 10px 0;
+    list-style-type: none;
   }
 }
 .single {
@@ -497,4 +501,3 @@ th {
   margin: 0 auto;
   text-align: center;
 }
-

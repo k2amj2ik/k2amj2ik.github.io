@@ -17,6 +17,8 @@
     <!-- BEGIN PAGE LEVEL PLUGINS -->
     <link href="../../assets/global/plugins/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
     <link href="../../assets/global/plugins/select2/css/select2-bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="../../assets/global/plugins/bootstrap-summernote/summernote.css" rel="stylesheet" type="text/css" />
+
     <!-- END PAGE LEVEL PLUGINS -->
     <!-- BEGIN THEME GLOBAL STYLES -->
     <link href="../../assets/global/css/components.min.css" rel="stylesheet" id="style_components" type="text/css">
@@ -1174,7 +1176,7 @@
                                                         <div class="note note-info">
                                                             <h4 class="block">프리뷰 추가 안내</h4>
                                                             <p>
-                                                            <textarea class="form-control textarea-high-medium">
+                                                            <textarea class="form-control textarea-height-medium">
 ※ 프리미엄 프리뷰 전시로 입장 시 초대권이 필요합니다.
 ※ 1-23번 랏은 프리뷰 전시장이 05월 09일 부터 변경되어 진행됩니다.
                                                             </textarea>
@@ -1222,10 +1224,10 @@
                                                             <thead class="small">
                                                             <tr class="th-type1">
                                                                 <th>작가ID</th>
-                                                                <th>작가명<br>(국문/영문)</th>
-                                                                <th>국적<br>(국문/영문)</th>
-                                                                <th>생몰년도<br>(출생/사망)</th>
-                                                                <th>스타일<br>(국문/영문)</th>
+                                                                <th>작가명(국문/영문)</th>
+                                                                <th>국적(국문/영문)</th>
+                                                                <th>생몰년도(출생/사망)</th>
+                                                                <th>스타일(국문/영문)</th>
                                                                 <th>작업</th>
                                                             </tr>
                                                             </thead>
@@ -1485,6 +1487,302 @@
                                 <div class="portlet-title">
                                     <div class="caption">
                                         <i class="icon-pin font-blue-dark"></i>
+                                        <span class="caption-subject font-blue-dark bold uppercase">템플릿관리</span>
+                                    </div>
+                                </div>
+                                <div class="portlet-body form">
+                                    <div class="form-horizontal form-bordered">
+                                        <div class="form-body">
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label">응찰시 주의사항(국문)</label>
+                                                <div class="col-sm-10">
+                                                    <div class="set-details">
+                                                        <div class="item">
+                                                            템플릿 유형:
+                                                            <select class="form-control input-small">
+                                                                <option selected>유형선택</option>
+                                                                <option>경매용</option>
+                                                                <option>판매용</option>
+                                                                <option>...</option>
+                                                            </select>
+                                                            <select class="form-control input-xlarge">
+                                                                <option selected>템플릿을 선택하세요.</option>
+                                                                <option>낙찰결과통보서 (국문)– 블루용</option>
+                                                                <option>...</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="item">
+                                                            <div name="summernote" id="summernote_1" class="summernote"> </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label">응찰시 주의사항(영문)</label>
+                                                <div class="col-sm-10">
+                                                    <div class="set-details">
+                                                        <div class="item">
+                                                            템플릿 유형:
+                                                            <select class="form-control input-small">
+                                                                <option selected>유형선택</option>
+                                                                <option>경매용</option>
+                                                                <option>판매용</option>
+                                                                <option>...</option>
+                                                            </select>
+                                                            <select class="form-control input-xlarge">
+                                                                <option selected>템플릿을 선택하세요.</option>
+                                                                <option>낙찰결과통보서 (국문)– 블루용</option>
+                                                                <option>...</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="item">
+                                                            <div name="summernote" id="summernote_1" class="summernote"> </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label">응찰방법(국문)</label>
+                                                <div class="col-sm-10">
+                                                    <div class="set-details">
+                                                        <div class="item">
+                                                            템플릿 유형:
+                                                            <select class="form-control input-small">
+                                                                <option selected>유형선택</option>
+                                                                <option>경매용</option>
+                                                                <option>판매용</option>
+                                                                <option>...</option>
+                                                            </select>
+                                                            <select class="form-control input-xlarge">
+                                                                <option selected>템플릿을 선택하세요.</option>
+                                                                <option>낙찰결과통보서 (국문)– 블루용</option>
+                                                                <option>...</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="item">
+                                                            <div name="summernote" id="summernote_1" class="summernote"> </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label">응찰방법(영문)</label>
+                                                <div class="col-sm-10">
+                                                    <div class="set-details">
+                                                        <div class="item">
+                                                            템플릿 유형:
+                                                            <select class="form-control input-small">
+                                                                <option selected>유형선택</option>
+                                                                <option>경매용</option>
+                                                                <option>판매용</option>
+                                                                <option>...</option>
+                                                            </select>
+                                                            <select class="form-control input-xlarge">
+                                                                <option selected>템플릿을 선택하세요.</option>
+                                                                <option>낙찰결과통보서 (국문)– 블루용</option>
+                                                                <option>...</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="item">
+                                                            <div name="summernote" id="summernote_1" class="summernote"> </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label">낙찰 결과 통보서(국문)</label>
+                                                <div class="col-sm-10">
+                                                    템플릿 유형:
+                                                    <select class="form-control input-small">
+                                                        <option selected>유형선택</option>
+                                                        <option>경매용</option>
+                                                        <option>판매용</option>
+                                                        <option>...</option>
+                                                    </select>
+                                                    <select class="form-control input-xlarge">
+                                                        <option selected>템플릿을 선택하세요.</option>
+                                                        <option>낙찰결과통보서 (국문)– 블루용</option>
+                                                        <option>...</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label">낙찰 결과 통보서(영문)</label>
+                                                <div class="col-sm-10">
+                                                    템플릿 유형:
+                                                    <select class="form-control input-small">
+                                                        <option selected>유형선택</option>
+                                                        <option>경매용</option>
+                                                        <option>판매용</option>
+                                                        <option>...</option>
+                                                    </select>
+                                                    <select class="form-control input-xlarge">
+                                                        <option selected>템플릿을 선택하세요.</option>
+                                                        <option>낙찰결과통보서 (국문)– 블루용</option>
+                                                        <option>...</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label">판매 확인서(국문)</label>
+                                                <div class="col-sm-10">
+                                                    템플릿 유형:
+                                                    <select class="form-control input-small">
+                                                        <option selected>유형선택</option>
+                                                        <option>경매용</option>
+                                                        <option>판매용</option>
+                                                        <option>...</option>
+                                                    </select>
+                                                    <select class="form-control input-xlarge">
+                                                        <option selected>템플릿을 선택하세요.</option>
+                                                        <option>낙찰결과통보서 (국문)– 블루용</option>
+                                                        <option>...</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label">판매 확인서(영문)</label>
+                                                <div class="col-sm-10">
+                                                    템플릿 유형:
+                                                    <select class="form-control input-small">
+                                                        <option selected>유형선택</option>
+                                                        <option>경매용</option>
+                                                        <option>판매용</option>
+                                                        <option>...</option>
+                                                    </select>
+                                                    <select class="form-control input-xlarge">
+                                                        <option selected>템플릿을 선택하세요.</option>
+                                                        <option>낙찰결과통보서 (국문)– 블루용</option>
+                                                        <option>...</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label">보증서(국문)</label>
+                                                <div class="col-sm-10">
+                                                    템플릿 유형:
+                                                    <select class="form-control input-small">
+                                                        <option selected>유형선택</option>
+                                                        <option>경매용</option>
+                                                        <option>판매용</option>
+                                                        <option>...</option>
+                                                    </select>
+                                                    <select class="form-control input-xlarge">
+                                                        <option selected>템플릿을 선택하세요.</option>
+                                                        <option>낙찰결과통보서 (국문)– 블루용</option>
+                                                        <option>...</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label">보증서(영문)</label>
+                                                <div class="col-sm-10">
+                                                    템플릿 유형:
+                                                    <select class="form-control input-small">
+                                                        <option selected>유형선택</option>
+                                                        <option>경매용</option>
+                                                        <option>판매용</option>
+                                                        <option>...</option>
+                                                    </select>
+                                                    <select class="form-control input-xlarge">
+                                                        <option selected>템플릿을 선택하세요.</option>
+                                                        <option>낙찰결과통보서 (국문)– 블루용</option>
+                                                        <option>...</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label">대표 계좌(국내용)</label>
+                                                <div class="col-sm-10">
+                                                    <div class="set-details">
+                                                        <div class="item">
+                                                            템플릿 유형:
+                                                            <select class="form-control input-small">
+                                                                <option>유형선택</option>
+                                                                <option>경매용</option>
+                                                                <option>판매용</option>
+                                                                <option selected>계좌안내</optionselected>
+                                                            </select>
+                                                            <select class="form-control input-xlarge">
+                                                                <option>템플릿을 선택하세요.</option>
+                                                                <option selected>대표 계좌(국내용)</option>
+                                                                <option>외화 계좌</option>
+                                                                <option>...</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="item">
+                                                            <textarea class="form-control textarea-height-small">
+국민은행  000-0000-00000
+예금주: 서울옥션블루</textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label">외화 계좌</label>
+                                                <div class="col-sm-10">
+                                                    <div class="set-details">
+                                                        <div class="item">
+                                                            템플릿 유형:
+                                                            <select class="form-control input-small">
+                                                                <option>유형선택</option>
+                                                                <option>경매용</option>
+                                                                <option>판매용</option>
+                                                                <option selected>계좌안내</option>
+                                                            </select>
+                                                            <select class="form-control input-xlarge">
+                                                                <option>템플릿을 선택하세요.</option>
+                                                                <option>대표 계좌(국내용)</option>
+                                                                <option selected>외화 계좌</option>
+                                                                <option>...</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="item">
+                                                            <textarea class="form-control textarea-height-high">
+SEOUL AUCTION
+Woori Bank 1081-500-700549
+
+Woori Bank
+127, Pyeongchangmunhwa-ro, Jongno-gu, Seoul, Republic of Korea
+Swift Code: HVBKKRSEXXX</textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label">고객센터 연락처</label>
+                                                <div class="col-sm-10">
+                                                    <div class="set-details">
+                                                        <div class="item">
+                                                            템플릿 유형:
+                                                            <select class="form-control input-small">
+                                                                <option>유형선택</option>
+                                                                <option>경매용</option>
+                                                                <option>판매용</option>
+                                                                <option>계좌안내</option>
+                                                                <option selected>연락처</option>
+                                                            </select>
+                                                            <select class="form-control input-xlarge">
+                                                                <option>템플릿을 선택하세요.</option>
+                                                                <option selected>고객센터 연락처 - 블루용</option>
+                                                                <option>...</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="item">
+                                                            <textarea class="form-control textarea-height-small">
+TEL 02-514-2505, FAX  02-514-2515</textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portlet light bordered">
+                                <div class="portlet-title">
+                                    <div class="caption">
+                                        <i class="icon-pin font-blue-dark"></i>
                                         <span class="caption-subject font-blue-dark bold uppercase">변경메모</span>
                                     </div>
                                 </div>
@@ -1494,7 +1792,7 @@
                                             <div class="form-group">
                                                 <label class="col-sm-2 control-label">메모</label>
                                                 <div class="col-sm-10">
-                                                <textarea class="form-control textarea-high-medium" placeholder="변경사유를 입력해주세요."></textarea>
+                                                    <textarea class="form-control textarea-height-medium" placeholder="변경사유를 입력해주세요."></textarea>
                                                 </div>
                                             </div>
                                         </div>
@@ -2122,7 +2420,7 @@
                                         <div class="form-group">
                                             <label class="col-sm-3 control-label">표시내용</label>
                                             <div class="col-sm-9">
-                                                <textarea class="form-control textarea-high-medium" placeholder="최대 2줄까지 표시 가능합니다."></textarea>
+                                                <textarea class="form-control textarea-height-medium" placeholder="최대 2줄까지 표시 가능합니다."></textarea>
                                             </div>
                                         </div>
                                         <div class="form-group">
@@ -2167,6 +2465,8 @@
 <!-- END CORE PLUGINS -->
 <!-- BEGIN PAGE LEVEL PLUGINS -->
 <script src="../../assets/global/plugins/select2/js/select2.full.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/bootstrap-summernote/summernote.min.js" type="text/javascript"></script>
+
 <!-- END PAGE LEVEL PLUGINS -->
 <!-- BEGIN THEME GLOBAL SCRIPTS -->
 <script src="../../assets/global/scripts/app.min.js" type="text/javascript"></script>
@@ -2175,6 +2475,7 @@
 <!-- END THEME GLOBAL SCRIPTS -->
 <!-- BEGIN PAGE LEVEL SCRIPTS -->
 <script src="../../js/components-select2-custom.js" type="text/javascript"></script>
+<script src="../../assets/pages/scripts/components-editors.min.js" type="text/javascript"></script>
 <!-- END PAGE LEVEL SCRIPTS -->
 <!-- BEGIN THEME LAYOUT SCRIPTS -->
 <script src="../../assets/layouts/layout/scripts/layout.min.js" type="text/javascript"></script>
@@ -2189,6 +2490,9 @@
     $(function () {
         $('[data-toggle="popover"]').popover()
     })
+    $('.summernote').summernote({
+        height: 100   //set editable area's height
+    });
 </script>
 </body>
 </html>

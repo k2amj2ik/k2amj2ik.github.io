@@ -5,15 +5,26 @@ p {
   width: fit-content;
   //border:1px solid red;
 }
+.result-count {
+  margin: 0 0 10px 0;
+}
 .actions {
-  margin-top: -10px;
-  margin-bottom: 20px;
   .buttons {
     float: right;
+    margin-bottom: 10px;
     .button {
       display: inline-block;
       margin-left: 2px;
     }
+  }
+  .acts {
+    display: inline-block;
+    float: left;
+  }
+  .acts-detail {
+    margin-left: 10px;
+    display: inline-block;
+    float: left;
   }
 }
 .text-condition {
