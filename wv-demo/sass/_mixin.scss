@@ -28,7 +28,7 @@
   }
   @if $name == text-header-sx {
     font-family: $font-family-walbaum;
-    font-size: 62px;
+    font-size: 34px;
     font-weight: 400;
     letter-spacing: -1.5px;
     color: $text-header;
@@ -58,7 +58,7 @@
   }
   @if $name == text-subtitle-sx {
     font-family: $font-family-lato;
-    font-size: 26px;
+    font-size: 18px;
     letter-spacing: 0;
     font-weight: 400;
     color: $text-subtitle;
@@ -74,7 +74,7 @@
   }
   @if $name == text-subtitle-strong-sx {
     font-family: $font-family-lato;
-    font-size: 26px;
+    font-size: 18px;
     letter-spacing: 0;
     font-weight: 600;
     color: $text-primary;
@@ -87,15 +87,15 @@
     letter-spacing: -1px;
     font-weight: 400;
     color: $text-search-main;
-    line-height: 18px;
+    line-height: 100%;
   }
   @if $name == text-search-main-sx {
     font-family: $font-family-lato;
     font-size: 32px;
     letter-spacing: -1px;
-    font-weight: 600;
+    font-weight: 400;
     color: $text-search-main;
-    line-height: 110%;
+    line-height: 100%;
   }
   @if $name == link-searchable {
     font-family: $font-family-lato;

@@ -597,7 +597,7 @@ body {
   letter-spacing: -1px;
   font-weight: 400;
   color: #fff;
-  line-height: 18px;
+  line-height: 100%;
 }
 @keyframes bar-search-main {
   10% {

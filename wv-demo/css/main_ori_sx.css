@@ -529,7 +529,7 @@ body {
   margin: 10px 0 0 0;
   word-wrap: break-all;
   font-family: "Walbaum";
-  font-size: 62px;
+  font-size: 34px;
   font-weight: 400;
   letter-spacing: -1.5px;
   color: #fff;
@@ -578,9 +578,9 @@ body {
   font-family: "Lato";
   font-size: 32px;
   letter-spacing: -1px;
-  font-weight: 600;
+  font-weight: 400;
   color: #fff;
-  line-height: 110%;
+  line-height: 100%;
 }
 .main-container .inner-container .form-artist-search .form-group .input.placeholder {
   color: #676767;

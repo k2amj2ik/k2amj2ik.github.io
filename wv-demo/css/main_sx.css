@@ -508,14 +508,16 @@ body {
   height: 100%;
   position: relative;
   margin: 0 0 0 0;
-  padding: 0 0 0 0;
+  padding: 10px 0 0 0;
 }
 .main-container .logo-small {
   display: block;
-  margin: 46px auto;
-  width: 67px;
-  height: 60px;
-  background: transparent url("../images/logo_small_black.png") no-repeat left top/auto;
+  margin: 0 auto;
+  width: 40px;
+  height: 40px;
+  background: transparent url("../images/logo_small_black_sx.png") no-repeat left top/auto;
+  -webkit-background-size: 100%;
+  background-size: 100%;
 }
 .main-container .inner-container {
   margin: auto 0;
@@ -526,8 +528,9 @@ body {
 .main-container .inner-container .text-header {
   width: 100%;
   margin-top: 50px;
+  padding: 0 4px;
   font-family: "Walbaum";
-  font-size: 62px;
+  font-size: 34px;
   font-weight: 400;
   letter-spacing: -1.5px;
   color: #fff;
@@ -544,7 +547,7 @@ body {
 .main-container .inner-container .text-subtitle {
   margin: 23px 9px 0 0px;
   font-family: "Lato";
-  font-size: 26px;
+  font-size: 18px;
   letter-spacing: 0;
   font-weight: 400;
   color: #808080;
@@ -552,7 +555,7 @@ body {
 }
 .main-container .inner-container .text-subtitle .strong {
   font-family: "Lato";
-  font-size: 26px;
+  font-size: 18px;
   letter-spacing: 0;
   font-weight: 600;
   color: #a8835a;
@@ -562,21 +565,22 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  padding-top: 522px;
+  padding-top: 380px;
   left: 0;
   top: 0;
 }
 .main-container .inner-container .form-artist-search .form-group {
-  width: 710px;
+  position: relative;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   border: 0;
   height: 75px;
+  padding-right: 82px;
   border-bottom: 1px solid #a18246;
 }
 .main-container .inner-container .form-artist-search .form-group .input {
   /* The animation code */
-  float: left;
   z-index: 90;
   margin: 8px 0 0 12px;
   border: 0;
@@ -584,7 +588,7 @@ body {
   animation-name: bar-search-main;
   animation-duration: 1s;
   animation-iteration-count: infinite;
-  width: 628px;
+  width: 100%;
   height: 56px;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -595,9 +599,9 @@ body {
   font-family: "Lato";
   font-size: 32px;
   letter-spacing: -1px;
-  font-weight: 600;
+  font-weight: 400;
   color: #fff;
-  line-height: 110%;
+  line-height: 100%;
 }
 @keyframes bar-search-main {
   10% {
@@ -626,16 +630,18 @@ body {
   color: #676767;
 }
 .main-container .inner-container .form-artist-search .form-group .btn-search {
+  position: absolute;
+  top: 0;
+  right: 0;
   display: inline-block;
-  float: left;
   cursor: pointer;
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   border: 0;
   overflow: hidden;
   text-indent: 100px;
-  background: transparent url(../images/icon_search.png) no-repeat 6px 14px;
-  background-size: 40px;
+  background: transparent url(../images/icon_search.png) no-repeat 12px 22px;
+  background-size: 28px;
 }
 .main-container .inner-container .fade {
   background-color: rgba(0, 0, 0, 0.5);

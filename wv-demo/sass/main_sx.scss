@@ -17,13 +17,16 @@ body {
   height: 100%;
   position: relative;
   margin: 0 0 0 0;
-  padding: 0 0 0 0;
+  padding: 10px 0 0 0;
   .logo-small {
     display: block;
-    margin: 46px auto;
-    width: 67px;
-    height: 60px;
-    background: transparent url('../images/logo_small_black.png') no-repeat left top / auto;
+    margin: 0 auto;
+    width: 40px;
+    height: 40px;
+    background: transparent url('../images/logo_small_black_sx.png') no-repeat left top / auto;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+
   }
   .inner-container {
     margin: auto 0;
@@ -34,6 +37,7 @@ body {
     .text-header {
       width: 100%;
       margin-top: 50px;
+      padding: 0 4px;
       @include text-style(text-header-sx);
       .quote {
         margin-left: 0;
@@ -51,15 +55,17 @@ body {
       position: absolute;
       width: 100%;
       height: 100%;
-      padding-top:522px;
+      padding-top:380px;
       left:0;
       top:0;
       .form-group {
-        width: 710px;
+        position: relative;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
         border: 0;
         height: 75px;
+        padding-right: 82px;
         border-bottom: 1px solid $border-search;
         .input {
           /* The animation code */
@@ -68,7 +74,6 @@ body {
             30% {border-left-color: $bar-input-cursor;}
             100%   {border-left-color: $bg-main;}
           }
-          float: left;
           z-index: $z-index-max;
           margin:8px 0 0 12px;
           border: 0;
@@ -76,7 +81,7 @@ body {
           animation-name: bar-search-main;
           animation-duration: 1s;
           animation-iteration-count: infinite;
-          width: 628px;
+          width: 100%;
           height: 56px;
           -webkit-border-radius: 0;
           -moz-border-radius: 0;
@@ -91,16 +96,18 @@ body {
           @include text-style(text-search-main-sx);
         }
         .btn-search {
+          position: absolute;
+          top: 0;
+          right: 0;
           display: inline-block;
-          float: left;
           cursor: pointer;
-          width: 70px;
-          height: 70px;
+          width: 60px;
+          height: 60px;
           border: 0;
           overflow: hidden;
           text-indent: 100px;
-          background: transparent url(../images/icon_search.png) no-repeat 6px 14px;
-          background-size: 40px;
+          background: transparent url(../images/icon_search.png) no-repeat 12px 22px;
+          background-size: 28px;
         }
       }
     }
