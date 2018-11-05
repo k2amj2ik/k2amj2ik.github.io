@@ -1,34 +1,39 @@
-@import 'common_sx';
+@import 'common';
 
 //main
 html, body {
-  height: inherit;
+  height: 100%;
 }
 
 body {
-  padding: 0 10px 0 10px;
-  margin: 0 0 0 0;
-  width: 100%;
-  height: 100%;
-  background: $bg-main url("../images/logo_big.png") no-repeat right bottom /100% auto;
+  padding: 0 0 0 0 !important;
+  margin: 0 0 0 0 !important;
+  background-color: $bg-main;
 }
+
 .main-container {
+  display: block;
   width: 100%;
   height: 100%;
+  position: relative;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  .logo-small {
+    display: block;
+    margin: 46px auto;
+    width: 67px;
+    height: 60px;
+    background: transparent url('../images/logo_small_black.png') no-repeat left top / auto;
+  }
   .inner-container {
+    margin: auto 0;
+    width: 100%;
     z-index: $z-index-2;
-    padding: 0 0 0 0;
-    .logo-small {
-      display: block;
-      margin: 14px 0 0 0;
-      width: 32.5px;
-      height: 23.5px;
-      background: transparent url('../images/logo_small.png') no-repeat left top / 100% 100%;
-    }
+    text-align: center;
 
     .text-header {
-      margin: 10px 0 0 0;
-      word-wrap: break-all;
+      width: 100%;
+      margin-top: 50px;
       @include text-style(text-header-sx);
       .quote {
         margin-left: 0;
@@ -36,46 +41,75 @@ body {
       }
     }
     .text-subtitle {
-      margin: 16px 0 0 0;
-      @include text-style(text-subtitle);
+      margin: 23px 9px 0 0px;
+      @include text-style(text-subtitle-sx);
       .strong {
-        @include text-style(text-subtitle-strong);
+        @include text-style(text-subtitle-strong-sx);
       }
     }
     .form-artist-search {
-      position: relative;
-      margin: 40px 0 0 0;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      padding-top:522px;
+      left:0;
+      top:0;
       .form-group {
-        width: 100%;
-        float: left;
+        width: 710px;
+        margin-left: auto;
+        margin-right: auto;
+        border: 0;
+        height: 75px;
+        border-bottom: 1px solid $border-search;
         .input {
-          width: 100%;
-          height: 60px;
-          border: 3px solid $border-search;
-          background-color: $bg-default;
-          padding: 0 0 0 10px;
-          margin: 0 0 0 0;
+          /* The animation code */
+          @keyframes bar-search-main {
+            10%   {border-left-color: $bg-main;}
+            30% {border-left-color: $bar-input-cursor;}
+            100%   {border-left-color: $bg-main;}
+          }
+          float: left;
+          z-index: $z-index-max;
+          margin:8px 0 0 12px;
+          border: 0;
+          border-left: 2px solid $bg-main;
+          animation-name: bar-search-main;
+          animation-duration: 1s;
+          animation-iteration-count: infinite;
+          width: 628px;
+          height: 56px;
+          -webkit-border-radius: 0;
+          -moz-border-radius: 0;
+          border-radius: 0;
+          background-color: transparent;
+          padding: 0 0 0 0;
+          text-indent: 14px;
+          &:focus {
+            animation: none;
+          }
           @include placeholder-color($text-search-main-placeholder);
           @include text-style(text-search-main-sx);
         }
+        .btn-search {
+          display: inline-block;
+          float: left;
+          cursor: pointer;
+          width: 70px;
+          height: 70px;
+          border: 0;
+          overflow: hidden;
+          text-indent: 100px;
+          background: transparent url(../images/icon_search.png) no-repeat 6px 14px;
+          background-size: 40px;
+        }
       }
-      .btn-search {
-        display: inline-block;
-        float: left;
-        cursor: pointer;
-        width: 50px;
-        height: 60px;
-        margin: 0 0 0 -60px;
-        border: 0;
-        overflow: hidden;
-        text-indent: 5rem;
-        background: transparent url('../images/icon_search.png') no-repeat center right / 28px 28px;
-      }
-
+    }
+    .fade {
+      background-color: rgba(0,0,0,0.5);
     }
     .recommend-keyword {
       width: 100%;
-      padding: 90px 20px 100px 0;
+      margin-top: 14px;
       a {
         float: left;
         display: inline-block;
@@ -104,7 +138,7 @@ body {
             right: -9px;
             width: 0;
             height: 0;
-            @include text-style(link-searchable);
+            @include text-style(link-searchable-sx);
           }
         }
       }
@@ -112,15 +146,23 @@ body {
   }
 }
 
-.feedback {
-  position: fixed;
-  right: 48px;
-  bottom: 60px;
-  padding: 6px 10px 4px 10px;
-  text-align: left;
-  z-index: $z-index-max;
-  @include text-style(btn-primary-sx);
-  @include box-style(btn-primary);
+.main-container-fade {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index: $z-index-5;
 }
 
 
+.feedback {
+  position: fixed;
+  right: 48px;
+  bottom: 90px;
+  width: 79px;
+  height: 80px;
+  padding: 6px 0 0 18px;
+  text-align: left;
+  z-index: $z-index-max;
+  @include text-style(btn-primary-sx);
+  @include box-style(btn-primary-sx);
+}

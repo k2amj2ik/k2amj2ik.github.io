@@ -1,4 +1,10 @@
 @font-face {
+  font-family: 'Walbaum';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Walbaum"), url("../fonts/WalbaumLT-Roman.woff") format("woff");
+}
+@font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
@@ -462,6 +468,10 @@ table tbody tr:hover {
   z-index: 90;
 }
 
+.bg-main_ori {
+  background: transparent url("../images/bg_main_1920x1080.png") no-repeat center center/1920px 1080px;
+}
+
 .bg-main {
   background: transparent url("../images/bg_main_1920x1080.png") no-repeat center center/1920px 1080px;
 }
@@ -487,53 +497,40 @@ html, body {
 }
 
 body {
-  background: linear-gradient(to left, rgba(235, 236, 236, 0.9) 60%, #ebecec);
-  padding: 6px 0 0 7px;
-  margin: 0 0 0 0;
+  padding: 0 0 0 0 !important;
+  margin: 0 0 0 0 !important;
+  background-color: #090909;
 }
 
 .main-container {
-  display: flex;
+  display: block;
   width: 100%;
   height: 100%;
   position: relative;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
 }
-.main-container::after {
-  content: '';
+.main-container .logo-small {
   display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 20;
-  background: transparent url("../images/logo_big.png") no-repeat right 17.5% center;
+  margin: 46px auto;
+  width: 67px;
+  height: 60px;
+  background: transparent url("../images/logo_small_black.png") no-repeat left top/auto;
 }
 .main-container .inner-container {
-  margin: auto;
-  width: 1100px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  margin: auto 0;
+  width: 100%;
   z-index: 30;
-  padding: 0 0 0 12px;
-}
-.main-container .inner-container .logo-small {
-  display: block;
-  margin: -19px 0 0 -4px;
-  width: 65px;
-  height: 47px;
-  background: transparent url("../images/logo_small.png") no-repeat left top/auto;
+  text-align: center;
 }
 .main-container .inner-container .text-header {
-  margin: 28px 0 0 0;
-  font-family: "Lato";
-  font-size: 70px;
-  font-weight: 900;
-  letter-spacing: 0;
-  color: #4e4e4e;
-  text-indent: -0.5rem;
-  margin-left: 0.5rem;
+  width: 100%;
+  margin-top: 248px;
+  font-family: "Walbaum";
+  font-size: 62px;
+  font-weight: 400;
+  letter-spacing: -1.5px;
+  color: #fff;
   line-height: 110%;
 }
 .main-container .inner-container .text-header .quote {
@@ -545,9 +542,9 @@ body {
   color: #8a8a8a;
 }
 .main-container .inner-container .text-subtitle {
-  margin: 1rem 0 0 0.3rem;
+  margin: 23px 9px 0 0px;
   font-family: "Lato";
-  font-size: 18px;
+  font-size: 26px;
   letter-spacing: 0;
   font-weight: 400;
   color: #808080;
@@ -555,61 +552,93 @@ body {
 }
 .main-container .inner-container .text-subtitle .strong {
   font-family: "Lato";
-  font-size: 18px;
+  font-size: 26px;
   letter-spacing: 0;
   font-weight: 600;
   color: #a8835a;
   line-height: 21px;
 }
 .main-container .inner-container .form-artist-search {
-  position: relative;
-  margin: 4rem 0 0 0.25rem;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding-top: 522px;
+  left: 0;
+  top: 0;
 }
 .main-container .inner-container .form-artist-search .form-group {
-  display: inline-block;
-  float: left;
+  width: 710px;
+  margin-left: auto;
+  margin-right: auto;
   border: 0;
-  border-bottom: 0.25rem solid #b1b1b1;
-  padding-right: 5rem;
+  height: 75px;
+  border-bottom: 1px solid #a18246;
 }
 .main-container .inner-container .form-artist-search .form-group .input {
-  width: 710px;
+  /* The animation code */
+  float: left;
+  z-index: 90;
+  margin: 8px 0 0 12px;
+  border: 0;
+  border-left: 2px solid #090909;
+  animation-name: bar-search-main;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  width: 628px;
+  height: 56px;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
-  border: 0;
   border-radius: 0;
   background-color: transparent;
-  padding: 0.8rem 0 0 0.4rem;
+  padding: 0 0 0 0;
+  text-indent: 14px;
   font-family: "Lato";
   font-size: 50px;
   letter-spacing: -1px;
-  font-weight: 600;
-  color: #4e4e4e;
+  font-weight: 400;
+  color: #fff;
   line-height: 18px;
 }
+@keyframes bar-search-main {
+  10% {
+    border-left-color: #090909;
+  }
+  30% {
+    border-left-color: #fff;
+  }
+  100% {
+    border-left-color: #090909;
+  }
+}
+.main-container .inner-container .form-artist-search .form-group .input:focus {
+  animation: none;
+}
 .main-container .inner-container .form-artist-search .form-group .input.placeholder {
-  color: #cbcbcb;
+  color: #676767;
 }
 .main-container .inner-container .form-artist-search .form-group .input:-moz-placeholder {
-  color: #cbcbcb;
+  color: #676767;
 }
 .main-container .inner-container .form-artist-search .form-group .input::-webkit-input-placeholder {
-  color: #cbcbcb;
+  color: #676767;
 }
 .main-container .inner-container .form-artist-search .form-group .input:-ms-input-placeholder {
-  color: #cbcbcb;
+  color: #676767;
 }
-.main-container .inner-container .form-artist-search .btn-search {
+.main-container .inner-container .form-artist-search .form-group .btn-search {
   display: inline-block;
   float: left;
   cursor: pointer;
-  width: 5rem;
-  height: 5rem;
-  margin-left: -5rem;
+  width: 70px;
+  height: 70px;
   border: 0;
   overflow: hidden;
-  text-indent: 5rem;
-  background: transparent url("../images/icon_search.png") no-repeat center 1.7rem;
+  text-indent: 100px;
+  background: transparent url(../images/icon_search.png) no-repeat 6px 14px;
+  background-size: 40px;
+}
+.main-container .inner-container .fade {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .main-container .inner-container .recommend-keyword {
   width: 100%;
@@ -626,7 +655,7 @@ body {
   font-size: 18px;
   letter-spacing: 0;
   font-weight: 400;
-  color: #4e4e4e;
+  color: #fff;
   line-height: 21px;
 }
 .main-container .inner-container .recommend-keyword a:link {
@@ -666,8 +695,15 @@ body {
   font-size: 18px;
   letter-spacing: 0;
   font-weight: 400;
-  color: #4e4e4e;
+  color: #fff;
   line-height: 21px;
+}
+
+.main-container-fade {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 60;
 }
 
 .feedback {
@@ -691,3 +727,5 @@ body {
   color: #fff;
   background-color: #c69c6d;
 }
+
+/*# sourceMappingURL=main.css.map */

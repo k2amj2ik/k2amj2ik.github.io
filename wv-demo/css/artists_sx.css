@@ -1,4 +1,10 @@
 @font-face {
+  font-family: 'Walbaum';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Walbaum"), url("../fonts/WalbaumLT-Roman.woff") format("woff");
+}
+@font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
@@ -648,3 +654,5 @@ table tbody tr:hover {
 .artists .results .active a .description {
   color: #a8835a;
 }
+
+/*# sourceMappingURL=artists_sx.css.map */

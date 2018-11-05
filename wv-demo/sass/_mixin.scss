@@ -8,7 +8,7 @@
     color: $text-default;
     line-height: 16px;
   }
-  @if $name == text-header {
+  @if $name == text-header_ori {
     font-family: $font-family-lato;
     font-size: 70px;
     font-weight: 900;
@@ -18,11 +18,19 @@
     margin-left: 0.5rem;
     line-height: 110%;
   }
+  @if $name == text-header {
+    font-family: $font-family-walbaum;
+    font-size: 62px;
+    font-weight: 400;
+    letter-spacing: -1.5px;
+    color: $text-header;
+    line-height: 110%;
+  }
   @if $name == text-header-sx {
-    font-family: $font-family-lato;
-    font-size: 32px;
-    font-weight: 900;
-    letter-spacing: 0;
+    font-family: $font-family-walbaum;
+    font-size: 62px;
+    font-weight: 400;
+    letter-spacing: -1.5px;
     color: $text-header;
     line-height: 110%;
   }
@@ -35,15 +43,22 @@
   }
   @if $name == text-header-quote-sx {
     font-family: $font-family-lato;
-    font-size: 32px;
+    font-size: 70px;
     font-weight: 400;
     letter-spacing: 0;
     color: $text-header-quote;
-    line-height: 110%;
   }
   @if $name == text-subtitle {
     font-family: $font-family-lato;
-    font-size: 18px;
+    font-size: 26px;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: $text-subtitle;
+    line-height: 21px;
+  }
+  @if $name == text-subtitle-sx {
+    font-family: $font-family-lato;
+    font-size: 26px;
     letter-spacing: 0;
     font-weight: 400;
     color: $text-subtitle;
@@ -51,17 +66,26 @@
   }
   @if $name == text-subtitle-strong {
     font-family: $font-family-lato;
-    font-size: 18px;
+    font-size: 26px;
     letter-spacing: 0;
     font-weight: 600;
     color: $text-primary;
     line-height: 21px;
   }
+  @if $name == text-subtitle-strong-sx {
+    font-family: $font-family-lato;
+    font-size: 26px;
+    letter-spacing: 0;
+    font-weight: 600;
+    color: $text-primary;
+    line-height: 21px;
+  }
+
   @if $name == text-search-main {
     font-family: $font-family-lato;
     font-size: 50px;
     letter-spacing: -1px;
-    font-weight: 600;
+    font-weight: 400;
     color: $text-search-main;
     line-height: 18px;
   }

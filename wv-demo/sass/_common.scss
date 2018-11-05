@@ -314,6 +314,7 @@ table {
   opacity: 0.5;
   z-index: $z-index-max;
 }
+.bg-main_ori {background: transparent url('../images/bg_main_1920x1080.png') no-repeat center center / 1920px 1080px;}
 .bg-main {background: transparent url('../images/bg_main_1920x1080.png') no-repeat center center / 1920px 1080px;}
 .bg-artists {background: transparent url('../images/bg_artists_1110x1080.png') no-repeat top center / 1110px 1080px;}
 .bg-lots {background: transparent url('../images/bg_lots_1110x1080.png') no-repeat top center / 1110px 1779px;}

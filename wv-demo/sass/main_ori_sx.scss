@@ -1,0 +1,129 @@
+@import 'common_sx';
+
+
+//main
+html, body {
+  height: inherit;
+}
+
+body {
+  padding: 0 10px 0 10px;
+  margin: 0 0 0 0;
+  width: 100%;
+  height: 100%;
+  background: $bg-main url("../images/logo_big.png") no-repeat right bottom /100% auto;
+}
+.main-container {
+  width: 100%;
+  height: 100%;
+  .inner-container {
+    z-index: $z-index-2;
+    padding: 0 0 0 0;
+    .logo-small {
+      display: block;
+      margin: 14px 0 0 0;
+      width: 32.5px;
+      height: 23.5px;
+      background: transparent url('../images/logo_small.png') no-repeat left top / 100% 100%;
+    }
+
+    .text-header {
+      margin: 10px 0 0 0;
+      word-wrap: break-all;
+      @include text-style(text-header-sx);
+      .quote {
+        margin-left: 0;
+        @include text-style(text-header-quote-sx);
+      }
+    }
+    .text-subtitle {
+      margin: 16px 0 0 0;
+      @include text-style(text-subtitle);
+      .strong {
+        @include text-style(text-subtitle-strong);
+      }
+    }
+    .form-artist-search {
+      position: relative;
+      margin: 40px 0 0 0;
+      .form-group {
+        width: 100%;
+        float: left;
+        .input {
+          width: 100%;
+          height: 60px;
+          border: 3px solid $border-search;
+          background-color: $bg-default;
+          padding: 0 0 0 10px;
+          margin: 0 0 0 0;
+          @include placeholder-color($text-search-main-placeholder);
+          @include text-style(text-search-main-sx);
+        }
+      }
+      .btn-search {
+        display: inline-block;
+        float: left;
+        cursor: pointer;
+        width: 50px;
+        height: 60px;
+        margin: 0 0 0 -60px;
+        border: 0;
+        overflow: hidden;
+        text-indent: 5rem;
+        background: transparent url('../images/icon_search.png') no-repeat center right / 28px 28px;
+      }
+
+    }
+    .recommend-keyword {
+      width: 100%;
+      padding: 90px 20px 100px 0;
+      a {
+        float: left;
+        display: inline-block;
+        position: relative;
+        margin-right: 1.8rem;
+        margin-top: 0.35rem;
+        white-space: nowrap;
+        @include text-style(link-searchable-sx);
+        @include link-color($link-keyword);
+        &::after {
+          content: '';
+          display: block;
+          border-radius: 50%;
+          position: absolute;
+          right: -1rem;
+          top: 0.5rem;
+          width: 0.25rem;
+          height: 0.25rem;
+          background-color: $icon-dot;
+        }
+        &:last-child {
+          &::after {
+            content: '...';
+            position: absolute;
+            top: 0;
+            right: -9px;
+            width: 0;
+            height: 0;
+            @include text-style(link-searchable);
+          }
+        }
+      }
+    }
+  }
+}
+
+.feedback {
+  position: fixed;
+  right: 48px;
+  bottom: 60px;
+  padding: 6px 10px 4px 10px;
+  text-align: left;
+  z-index: $z-index-max;
+  @include text-style(btn-primary-sx);
+  @include box-style(btn-primary);
+}
+
+
+
+

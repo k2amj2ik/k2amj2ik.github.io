@@ -1,4 +1,10 @@
 @font-face {
+  font-family: 'Walbaum';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Walbaum"), url("../fonts/WalbaumLT-Roman.woff") format("woff");
+}
+@font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
@@ -462,6 +468,10 @@ table tbody tr:hover {
   z-index: 90;
 }
 
+.bg-main_ori {
+  background: transparent url("../images/bg_main_1920x1080.png") no-repeat center center/1920px 1080px;
+}
+
 .bg-main {
   background: transparent url("../images/bg_main_1920x1080.png") no-repeat center center/1920px 1080px;
 }
@@ -883,3 +893,5 @@ table tbody tr:hover {
 .lot .related .related-lots .related-lot .description .bad {
   background-color: #f25544;
 }
+
+/*# sourceMappingURL=lot.css.map */
