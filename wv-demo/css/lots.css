@@ -759,7 +759,7 @@ table tbody tr:hover {
   margin: 1px 0 0 26px;
   font-family: "Lato";
   font-size: 28px;
-  letter-spacing: 0;
+  letter-spacing: -0.5px;
   font-weight: 600;
   color: #272727;
   line-height: 110%;

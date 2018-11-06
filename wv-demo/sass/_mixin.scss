@@ -169,7 +169,7 @@
   @if $name == text-artists-header {
     font-family: $font-family-lato;
     font-size: 28px;
-    letter-spacing: 0;
+    letter-spacing: -0.5px;
     font-weight: 600;
     color: $text-artist-header;
     line-height: 110%;
