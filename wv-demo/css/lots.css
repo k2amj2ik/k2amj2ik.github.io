@@ -975,6 +975,7 @@ table tbody tr:hover {
   line-height: 17px;
 }
 .lots .result-area .results tbody .sale-date .upcoming {
+  display: block;
   margin-top: 2px;
   font-family: "Lato";
   font-size: 13px;

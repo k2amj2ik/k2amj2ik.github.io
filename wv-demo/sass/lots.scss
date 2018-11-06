@@ -331,6 +331,7 @@
             @include text-style(text-summary);
           }
           .upcoming {
+            display: block;
             margin-top: 2px;
             @include text-style(text-upcoming);
             position: relative;
