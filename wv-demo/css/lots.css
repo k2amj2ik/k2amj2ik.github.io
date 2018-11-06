@@ -797,6 +797,9 @@ table tbody tr:hover {
   line-height: 22px;
   text-transform: none;
 }
+.lots .result-area .btn-filter {
+  display: none;
+}
 .lots .result-area .result-count {
   margin: 31px 0 0 0;
   font-family: "Lato";
