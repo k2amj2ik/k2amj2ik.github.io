@@ -505,20 +505,42 @@ table tbody tr:hover {
 }
 .lots .filters {
   position: absolute;
-  left: -215px;
   top: 0;
-  border-right: 2px solid #000000;
-  -webkit-box-shadow: 10px 0 10px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 10px 0 10px rgba(0, 0, 0, 0.2);
-  box-shadow: 10px 0 10px rgba(0, 0, 0, 0.2);
-  background-color: #fff;
-  z-index: 60;
-  width: 255px;
+  right: 0;
+  width: 100%;
   height: 100%;
-  margin-right: 25px;
-  padding: 0 10px 100px 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 50;
 }
-.lots .filters .title .text {
+.lots .filters .filters-area {
+  position: absolute;
+  top: 0;
+  /* The animation code */
+  right: 0;
+  width: 255px;
+  animation-name: filter;
+  animation-duration: 1s;
+  height: 100%;
+  padding: 0 10px 100px 10px;
+  border-left: 2px solid #000000;
+  background-color: #fff;
+}
+@keyframes filter {
+  from {
+    right: 0;
+    width: 0;
+    overflow-x: hidden;
+  }
+  to {
+    right: 0;
+    width: 255px;
+    overflow-x: hidden;
+  }
+}
+.lots .filters .filters-area .title {
+  position: relative;
+}
+.lots .filters .filters-area .title .text {
   margin: 8px 0 16px 0;
   font-family: "Lato";
   font-size: 18px;
@@ -527,20 +549,26 @@ table tbody tr:hover {
   color: #a8835a;
   line-height: 21px;
 }
-.lots .filters .title .btn {
+.lots .filters .filters-area .title .btn {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -10px;
+  left: 200px;
   width: 40px;
   height: 40px;
   border: 0;
   cursor: pointer;
-  background: transparent url("../images/icon_filter.png") no-repeat center center;
+  background: transparent url("../images/icon_filter_hide.png") no-repeat center center;
+  -webkit-background-size: 16px;
+  background-size: 16px;
 }
-.lots .filters .title .btn:hover {
+.lots .filters .filters-area .title .btn:hover {
   background: #c69c6d url("../images/icon_filter_on.png") no-repeat center center;
 }
-.lots .filters .filter-area .filter-title {
+.lots .filters .filters-area .filter-area {
+  width: 235px;
+  background-color: #fff;
+}
+.lots .filters .filters-area .filter-area .filter-title {
   padding: 0 0 0 15px;
   font-family: "Lato";
   font-size: 14px;
@@ -551,7 +579,7 @@ table tbody tr:hover {
   text-transform: uppercase;
   position: relative;
 }
-.lots .filters .filter-area .filter-title::before {
+.lots .filters .filters-area .filter-area .filter-title::before {
   content: '';
   position: absolute;
   left: 0;
@@ -561,7 +589,7 @@ table tbody tr:hover {
   height: 2px;
   background-color: #d0d0d0;
 }
-.lots .filters .filter-area .filter-title .description {
+.lots .filters .filters-area .filter-area .filter-title .description {
   font-family: "Lato";
   font-size: 14px;
   letter-spacing: 0;
@@ -571,12 +599,12 @@ table tbody tr:hover {
   line-height: 17px;
   text-transform: none;
 }
-.lots .filters .filter-area .filter {
+.lots .filters .filters-area .filter-area .filter {
   padding: 15px 0 13px 16px;
   margin: 0 0 20px 0;
   border-bottom: 1px solid #dddddd;
 }
-.lots .filters .filter-area .filter li {
+.lots .filters .filters-area .filter-area .filter li {
   cursor: pointer;
   padding: 0 0 8px 21px;
   font-family: "Lato";
@@ -588,7 +616,7 @@ table tbody tr:hover {
   text-transform: capitalize;
   position: relative;
 }
-.lots .filters .filter-area .filter li::before {
+.lots .filters .filters-area .filter-area .filter li::before {
   content: '';
   position: absolute;
   left: 0;
@@ -598,10 +626,10 @@ table tbody tr:hover {
   height: 14px;
   background: transparent url("../images/icon_unchecked.png") no-repeat center center;
 }
-.lots .filters .filter-area .filter li:hover {
+.lots .filters .filters-area .filter-area .filter li:hover {
   text-decoration: underline;
 }
-.lots .filters .filter-area .filter .active {
+.lots .filters .filters-area .filter-area .filter .active {
   font-family: "Lato";
   font-size: 14px;
   letter-spacing: 0;
@@ -610,14 +638,14 @@ table tbody tr:hover {
   line-height: 16px;
   text-transform: capitalize;
 }
-.lots .filters .filter-area .filter .active::before {
+.lots .filters .filters-area .filter-area .filter .active::before {
   background: transparent url("../images/icon_checked.png") no-repeat center center;
 }
-.lots .filters .filter-area .range .range-input {
+.lots .filters .filters-area .filter-area .range .range-input {
   margin: 9px 0 0 -21px;
   position: relative;
 }
-.lots .filters .filter-area .range .range-input::after {
+.lots .filters .filters-area .filter-area .range .range-input::after {
   content: '';
   position: absolute;
   left: 103px;
@@ -627,31 +655,31 @@ table tbody tr:hover {
   height: 1px;
   background-color: #dddddd;
 }
-.lots .filters .filter-area .range .range-input input {
+.lots .filters .filters-area .filter-area .range .range-input input {
   width: 93px;
   height: 27px;
   padding: 0 0 0 11px;
 }
-.lots .filters .filter-area .range .range-input input.placeholder {
+.lots .filters .filters-area .filter-area .range .range-input input.placeholder {
   color: #9a9a9a;
 }
-.lots .filters .filter-area .range .range-input input:-moz-placeholder {
+.lots .filters .filters-area .filter-area .range .range-input input:-moz-placeholder {
   color: #9a9a9a;
 }
-.lots .filters .filter-area .range .range-input input::-webkit-input-placeholder {
+.lots .filters .filters-area .filter-area .range .range-input input::-webkit-input-placeholder {
   color: #9a9a9a;
 }
-.lots .filters .filter-area .range .range-input input:-ms-input-placeholder {
+.lots .filters .filters-area .filter-area .range .range-input input:-ms-input-placeholder {
   color: #9a9a9a;
 }
-.lots .filters .filter-area .range .range-input .from {
+.lots .filters .filters-area .filter-area .range .range-input .from {
   margin: 0 28px 0 0;
 }
-.lots .filters .filter-area .search {
+.lots .filters .filters-area .filter-area .search {
   position: relative;
   padding-bottom: 49px;
 }
-.lots .filters .filter-area .search .input {
+.lots .filters .filters-area .filter-area .search .input {
   float: left;
   width: 184px;
   height: 27px;
@@ -663,31 +691,31 @@ table tbody tr:hover {
   color: #272727;
   line-height: 16px;
 }
-.lots .filters .filter-area .search .input.placeholder {
+.lots .filters .filters-area .filter-area .search .input.placeholder {
   color: #9a9a9a;
 }
-.lots .filters .filter-area .search .input:-moz-placeholder {
+.lots .filters .filters-area .filter-area .search .input:-moz-placeholder {
   color: #9a9a9a;
 }
-.lots .filters .filter-area .search .input::-webkit-input-placeholder {
+.lots .filters .filters-area .filter-area .search .input::-webkit-input-placeholder {
   color: #9a9a9a;
 }
-.lots .filters .filter-area .search .input:-ms-input-placeholder {
+.lots .filters .filters-area .filter-area .search .input:-ms-input-placeholder {
   color: #9a9a9a;
 }
-.lots .filters .filter-area .search .input.placeholder {
+.lots .filters .filters-area .filter-area .search .input.placeholder {
   font-style: italic;
 }
-.lots .filters .filter-area .search .input:-moz-placeholder {
+.lots .filters .filters-area .filter-area .search .input:-moz-placeholder {
   font-style: italic;
 }
-.lots .filters .filter-area .search .input::-webkit-input-placeholder {
+.lots .filters .filters-area .filter-area .search .input::-webkit-input-placeholder {
   font-style: italic;
 }
-.lots .filters .filter-area .search .input:-ms-input-placeholder {
+.lots .filters .filters-area .filter-area .search .input:-ms-input-placeholder {
   font-style: italic;
 }
-.lots .filters .filter-area .search .btn-search {
+.lots .filters .filters-area .filter-area .search .btn-search {
   float: left;
   display: inline-block;
   cursor: pointer;
@@ -701,11 +729,11 @@ table tbody tr:hover {
   text-indent: 5rem;
   background: #fff url("../images/icon_search_tiny.png") no-repeat center center;
 }
-.lots .filters .filter-area .btn {
+.lots .filters .filters-area .filter-area .btn {
   position: relative;
   padding-bottom: 64px;
 }
-.lots .filters .filter-area .btn li {
+.lots .filters .filters-area .filter-area .btn li {
   width: 42px;
   height: 42px;
   border: 1px solid #dcdcdc;
@@ -714,16 +742,16 @@ table tbody tr:hover {
   float: left;
   padding: 12px 0 0 0;
 }
-.lots .filters .filter-area .btn li:last-child {
+.lots .filters .filters-area .filter-area .btn li:last-child {
   border-right: 1px solid #dcdcdc;
 }
-.lots .filters .filter-area .btn li::before {
+.lots .filters .filters-area .filter-area .btn li::before {
   display: none;
 }
-.lots .filters .filter-area .btn .active {
+.lots .filters .filters-area .filter-area .btn .active {
   background-color: #e7e7e7;
 }
-.lots .filters .filter-area .size-range {
+.lots .filters .filters-area .filter-area .size-range {
   margin: -127px 0 103px 63px;
   width: 177px;
   height: 24px;
@@ -735,10 +763,10 @@ table tbody tr:hover {
   font-style: italic;
   line-height: 38px;
 }
-.lots .filters .filter-area .size-range .num {
+.lots .filters .filters-area .filter-area .size-range .num {
   color: #a8835a;
 }
-.lots .filters .filter-btn .btn {
+.lots .filters .filters-area .filter-btn .btn {
   width: 100%;
   height: 40px;
   margin-bottom: 40px;
@@ -755,27 +783,27 @@ table tbody tr:hover {
   color: #fff;
   background-color: #c69c6d;
 }
-.lots .filters .reset-search {
+.lots .filters .filters-area .reset-search {
   text-align: right;
   position: relative;
   margin: -10px 2px 100px 0;
 }
-.lots .filters .reset-search a:link {
+.lots .filters .filters-area .reset-search a:link {
   color: #707070;
   text-decoration: none;
 }
-.lots .filters .reset-search a:hover {
+.lots .filters .filters-area .reset-search a:hover {
   text-decoration: underline;
 }
-.lots .filters .reset-search a:visited {
+.lots .filters .filters-area .reset-search a:visited {
   color: rgba(112, 112, 112, 0.5);
   text-decoration: none;
 }
-.lots .filters .reset-search a:active {
+.lots .filters .filters-area .reset-search a:active {
   outline: none;
   text-decoration: underline;
 }
-.lots .filters .reset-search::before {
+.lots .filters .filters-area .reset-search::before {
   content: '';
   position: absolute;
   right: 90px;
@@ -785,24 +813,13 @@ table tbody tr:hover {
   height: 14px;
   background: transparent url("../images/icon_reset.png") no-repeat center center;
 }
-.lots .active {
-  left: 0;
-}
-.lots .active .title .btn {
-  background: none;
-  color: #a8835a;
-}
-.lots .active .title .btn::before {
-  content: 'hide';
-}
-.lots .active .title .btn:hover {
-  background: none;
-  text-decoration: underline;
-  color: #a8835a;
+.lots .hide {
+  display: none !important;
 }
 .lots .result-area {
+  position: relative;
   width: 100%;
-  padding-left: 46px;
+  z-index: 20;
 }
 .lots .result-area .text-header {
   display: inline-block;
@@ -827,6 +844,20 @@ table tbody tr:hover {
   font-style: normal;
   line-height: 22px;
   text-transform: none;
+}
+.lots .result-area .btn-filter {
+  display: inline-block;
+  position: absolute;
+  top: 20px;
+  right: 0;
+  padding: 4px 10px;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 20px rgba(198, 156, 109, 0.7);
+  box-shadow: 0 0 20px rgba(198, 156, 109, 0.7);
+  border: 0;
+  color: #fff;
+  background-color: #c69c6d;
+  box-shadow: none;
 }
 .lots .result-area .result-count {
   margin: 17px 0 0 0;

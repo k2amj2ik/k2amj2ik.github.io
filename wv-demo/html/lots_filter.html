@@ -7,8 +7,8 @@
     <meta name="author" content="Wiveel">
     <link rel="icon" href="../images/favicon.png">
     <title>WIVEEL-BETA</title>
-    <link rel="stylesheet" media="screen and (min-width: 810px)" href="../css/lots.css">
-    <link rel="stylesheet" media="screen and (max-width: 809.9px)" href="../css/lots_sx.css">
+    <link rel="stylesheet" media="screen and (min-width: 1020px)" href="../css/lots.css">
+    <link rel="stylesheet" media="screen and (max-width: 1019.9px)" href="../css/lots_sx.css">
 </head>
 
 <body>
@@ -26,91 +26,93 @@
     </div>
 </header>
 <div class="container lots">
-    <div class="filters active">
-        <div class="title">
-            <button class="btn" onclick="location.href='lots.html'"></button>
-            <p class="text">Filters</p>
-        </div>
-        <div class="filter-area">
-            <div class="filter-title">Category</div>
-            <ul class="filter list">
-                <li class="item active">All</li>
-                <li class="item">Paintings</li>
-                <li class="item">Photograph</li>
-                <li class="item">Print & Multiples</li>
-                <li class="item">Sculptures</li>
-                <li class="item">Works on paper</li>
-            </ul>
-        </div>
-        <div class="filter-area">
-            <div class="filter-title">Year</div>
-            <ul class="filter range">
-                <li class="active">Any</li>
-                <li>
-                    <p>Set range</p>
-                    <!-- set range 활성화 시 노출-->
-                    <div class="range-input">
-                        <input type="text" class="from" placeholder="1900"><input type="text" class="to" placeholder="1950">
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div class="filter-area">
-            <div class="filter-title">Search by</div>
-            <div class="filter search">
-                <input type="text" class="input" placeholder="Worktitle, Medium...">
-                <button type="submit" class="btn-search">Search</button>
+    <div class="filters">
+        <div class="filters-area">
+            <div class="title">
+                <button class="btn" onclick="location.href='lots.html'"></button>
+                <p class="text">Filters</p>
             </div>
-        </div>
-        <div class="filter-area">
-            <div class="filter-title">Price</div>
-            <ul class="filter list">
-                <li class="item active">All</li>
-                <li class="item">Up To $5,000</li>
-                <li class="item">$5,000 - $10,000</li>
-                <li class="item">$10,000 - $50,000</li>
-                <li class="item">$50,000 - $100,000</li>
-                <li class="item">Over $100,000</li>
-            </ul>
-        </div>
-        <div class="filter-area">
-            <div class="filter-title">Size</div>
-            <ul class="filter btn">
-                <li>All</li>
-                <li>S</li>
-                <li class="active">M</li>
-                <li>L</li>
-                <li>XL</li>
-            </ul>
-            <p class="size-range">The longest side is up to <span class="num">38</span> inches</p>
-        </div>
-        <div class="filter-area">
-            <div class="filter-title">Date</div>
-            <ul class="filter list">
-                <li class="item active">All</li>
-                <li class="item">Upcoming Auction</li>
-                <li class="item">Ended in last 1 year</li>
-                <li class="item">Ended in last 3 year</li>
-                <li class="item">Ended in last 5 year</li>
-                <li class="item">5 years Before</li>
-            </ul>
-        </div>
-        <div class="filter-area">
-            <div class="filter-title">estimated price <p class="description">(based on million USD)</p></div>
-            <ul class="filter list">
-                <li class="item active">Any</li>
-                <li class="item">Up To $5,000</li>
-                <li class="item">$5,000 - $10,000</li>
-                <li class="item">$10,000 - $50,000</li>
-                <li class="item">$50,000 - $100,000</li>
-                <li class="item">Over $100,000</li>
-            </ul>
-        </div>
-        <div class="filter-btn">
-            <button class="btn">Search</button>
-        </div>
-        <div class="reset-search">
-            <a href="#">Reset Search</a>
+            <div class="filter-area">
+                <div class="filter-title">Category</div>
+                <ul class="filter list">
+                    <li class="item active">All</li>
+                    <li class="item">Paintings</li>
+                    <li class="item">Photograph</li>
+                    <li class="item">Print & Multiples</li>
+                    <li class="item">Sculptures</li>
+                    <li class="item">Works on paper</li>
+                </ul>
+            </div>
+            <div class="filter-area">
+                <div class="filter-title">Year</div>
+                <ul class="filter range">
+                    <li class="active">Any</li>
+                    <li>
+                        <p>Set range</p>
+                        <!-- set range 활성화 시 노출-->
+                        <div class="range-input">
+                            <input type="text" class="from" placeholder="1900"><input type="text" class="to" placeholder="1950">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="filter-area">
+                <div class="filter-title">Search by</div>
+                <div class="filter search">
+                    <input type="text" class="input" placeholder="Worktitle, Medium...">
+                    <button type="submit" class="btn-search">Search</button>
+                </div>
+            </div>
+            <div class="filter-area">
+                <div class="filter-title">Price</div>
+                <ul class="filter list">
+                    <li class="item active">All</li>
+                    <li class="item">Up To $5,000</li>
+                    <li class="item">$5,000 - $10,000</li>
+                    <li class="item">$10,000 - $50,000</li>
+                    <li class="item">$50,000 - $100,000</li>
+                    <li class="item">Over $100,000</li>
+                </ul>
+            </div>
+            <div class="filter-area">
+                <div class="filter-title">Size</div>
+                <ul class="filter btn">
+                    <li>All</li>
+                    <li>S</li>
+                    <li class="active">M</li>
+                    <li>L</li>
+                    <li>XL</li>
+                </ul>
+                <p class="size-range">The longest side is up to <span class="num">38</span> inches</p>
+            </div>
+            <div class="filter-area">
+                <div class="filter-title">Date</div>
+                <ul class="filter list">
+                    <li class="item active">All</li>
+                    <li class="item">Upcoming Auction</li>
+                    <li class="item">Ended in last 1 year</li>
+                    <li class="item">Ended in last 3 year</li>
+                    <li class="item">Ended in last 5 year</li>
+                    <li class="item">5 years Before</li>
+                </ul>
+            </div>
+            <div class="filter-area">
+                <div class="filter-title">estimated price <p class="description">(based on million USD)</p></div>
+                <ul class="filter list">
+                    <li class="item active">Any</li>
+                    <li class="item">Up To $5,000</li>
+                    <li class="item">$5,000 - $10,000</li>
+                    <li class="item">$10,000 - $50,000</li>
+                    <li class="item">$50,000 - $100,000</li>
+                    <li class="item">Over $100,000</li>
+                </ul>
+            </div>
+            <div class="filter-btn">
+                <button class="btn">Search</button>
+            </div>
+            <div class="reset-search">
+                <a href="#">Reset Search</a>
+            </div>
         </div>
     </div>
     <div class="result-area">
