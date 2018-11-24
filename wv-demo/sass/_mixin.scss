@@ -587,11 +587,27 @@
 @mixin box-style($box) {
   @if $box == btn-primary {
     cursor: pointer;
-    -webkit-box-shadow: $box-shadow-primary; // iOS <4.3 & Android <4.1
-    box-shadow: $box-shadow-primary;
     border: 0;
-    color: $text-btn-primary;
-    background-color: $bg-btn-primary;
+    color: $text-default;
+    background-color: $bg-btn-normal;
+    //@include text-style(btn-primary);
+      &:hover {
+        /* The animation code */
+        @keyframes btn-animation {
+          from {
+            color: $text-default;
+            background-color: $bg-btn-normal;
+          }
+          to {
+            color: $text-btn-primary;
+            background-color: $bg-btn-primary;
+          }
+        }
+        animation-name: btn-animation;
+        animation-duration: 0.2s;
+        color: $text-btn-primary;
+        background-color: $bg-btn-primary;
+      }
   }
   @if $box == select-options {
     cursor: pointer;

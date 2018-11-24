@@ -658,6 +658,56 @@ table tbody tr:hover {
 .lot .detail .btns .share:hover {
   background: transparent url("../images/btn_share_on.png") no-repeat center center;
 }
+.lot .compare {
+  margin: 2px 0 0 57px;
+  padding: 21px 24px 0 24px;
+  display: inline-block;
+  width: 376px;
+  background-color: #f7f7f7;
+}
+.lot .compare .title {
+  font-family: "Lato";
+  font-size: 18px;
+  letter-spacing: 0;
+  font-weight: 600;
+  color: #272727;
+  font-style: normal;
+  line-height: 21px;
+}
+.lot .compare .lots {
+  margin: 16px 0 10px 0;
+}
+.lot .compare .lots li {
+  display: inline-block;
+}
+.lot .compare .lots li a img {
+  height: 50px;
+}
+.lot .compare .btn .btn-compare {
+  width: 100%;
+  height: 38px;
+  cursor: pointer;
+  border: 0;
+  color: #272727;
+  background-color: #e7e7e7;
+}
+.lot .compare .btn .btn-compare:hover {
+  /* The animation code */
+  animation-name: btn-animation;
+  animation-duration: 0.2s;
+  color: #fff;
+  background-color: #c69c6d;
+}
+@keyframes btn-animation {
+  from {
+    color: #272727;
+    background-color: #e7e7e7;
+  }
+  to {
+    color: #fff;
+    background-color: #c69c6d;
+  }
+}
 .lot .related {
   margin: 2px 0 0 57px;
   padding: 21px 0 0 24px;

@@ -527,7 +527,7 @@ body {
 }
 .main-container .inner-container .text-header {
   width: 100%;
-  margin-top: 248px;
+  margin-top: 210px;
   font-family: "Walbaum";
   font-size: 62px;
   font-weight: 400;
@@ -564,7 +564,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  padding-top: 522px;
+  padding-top: 515px;
   left: 0;
   top: 0;
 }
@@ -578,6 +578,9 @@ body {
 }
 .main-container .inner-container .form-artist-search .form-group .input {
   /* The animation code */
+  animation-name: bar-search-main;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
   float: left;
   z-index: 90;
   margin: 8px 0 0 12px;
@@ -720,11 +723,26 @@ body {
   font-weight: 900;
   line-height: 1.3rem;
   cursor: pointer;
-  -webkit-box-shadow: 0 0 20px rgba(198, 156, 109, 0.7);
-  box-shadow: 0 0 20px rgba(198, 156, 109, 0.7);
   border: 0;
+  color: #272727;
+  background-color: #e7e7e7;
+}
+.feedback:hover {
+  /* The animation code */
+  animation-name: btn-animation;
+  animation-duration: 0.2s;
   color: #fff;
   background-color: #c69c6d;
+}
+@keyframes btn-animation {
+  from {
+    color: #272727;
+    background-color: #e7e7e7;
+  }
+  to {
+    color: #fff;
+    background-color: #c69c6d;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

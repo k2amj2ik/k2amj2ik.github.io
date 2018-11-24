@@ -777,11 +777,26 @@ table tbody tr:hover {
   font-weight: 900;
   line-height: 1.3rem;
   cursor: pointer;
-  -webkit-box-shadow: 0 0 20px rgba(198, 156, 109, 0.7);
-  box-shadow: 0 0 20px rgba(198, 156, 109, 0.7);
   border: 0;
+  color: #272727;
+  background-color: #e7e7e7;
+}
+.lots .filters .filters-area .filter-btn .btn:hover {
+  /* The animation code */
+  animation-name: btn-animation;
+  animation-duration: 0.2s;
   color: #fff;
   background-color: #c69c6d;
+}
+@keyframes btn-animation {
+  from {
+    color: #272727;
+    background-color: #e7e7e7;
+  }
+  to {
+    color: #fff;
+    background-color: #c69c6d;
+  }
 }
 .lots .filters .filters-area .reset-search {
   text-align: right;
@@ -852,12 +867,27 @@ table tbody tr:hover {
   right: 0;
   padding: 4px 10px;
   cursor: pointer;
-  -webkit-box-shadow: 0 0 20px rgba(198, 156, 109, 0.7);
-  box-shadow: 0 0 20px rgba(198, 156, 109, 0.7);
   border: 0;
+  color: #272727;
+  background-color: #e7e7e7;
+  box-shadow: none;
+}
+.lots .result-area .btn-filter:hover {
+  /* The animation code */
+  animation-name: btn-animation;
+  animation-duration: 0.2s;
   color: #fff;
   background-color: #c69c6d;
-  box-shadow: none;
+}
+@keyframes btn-animation {
+  from {
+    color: #272727;
+    background-color: #e7e7e7;
+  }
+  to {
+    color: #fff;
+    background-color: #c69c6d;
+  }
 }
 .lots .result-area .result-count {
   margin: 17px 0 0 0;

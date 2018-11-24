@@ -678,11 +678,26 @@ body {
   font-weight: 600;
   line-height: 20px;
   cursor: pointer;
-  -webkit-box-shadow: 0 0 20px rgba(198, 156, 109, 0.7);
-  box-shadow: 0 0 20px rgba(198, 156, 109, 0.7);
   border: 0;
+  color: #272727;
+  background-color: #e7e7e7;
+}
+.feedback:hover {
+  /* The animation code */
+  animation-name: btn-animation;
+  animation-duration: 0.2s;
   color: #fff;
   background-color: #c69c6d;
+}
+@keyframes btn-animation {
+  from {
+    color: #272727;
+    background-color: #e7e7e7;
+  }
+  to {
+    color: #fff;
+    background-color: #c69c6d;
+  }
 }
 
 /*# sourceMappingURL=main_ori_sx.css.map */
