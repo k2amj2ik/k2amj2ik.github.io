@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="kr">
+<head>
+    <meta charset="utf-8">
+    <title>Live Auction Art - Blue Index</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="Live Auction Art Management System" name="description">
+    <meta content="" name="author">
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
+    <link href="../assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
+    <!-- END GLOBAL MANDATORY STYLES -->
+    <!-- BEGIN THEME GLOBAL STYLES -->
+    <link href="../assets/global/css/components.min.css" rel="stylesheet" id="style_components" type="text/css" />
+    <link href="../assets/global/css/plugins.min.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/global/plugins/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" type="text/css" />
+    <!-- END THEME GLOBAL STYLES -->
+    <!-- BEGIN THEME LAYOUT STYLES -->
+    <link href="../assets/layouts/layout/css/layout.min.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/layouts/layout/css/themes/darkblue.min.css" rel="stylesheet" type="text/css" id="style_color" />
+    <link href="../assets/layouts/layout/css/added.css" rel="stylesheet" type="text/css" />
+    <!-- END THEME LAYOUT STYLES -->
+    <link rel="shortcut icon" href="../assets/layouts/layout/img/favicon.png" />
+</head>
+<!-- END HEAD -->
+
+<body class="page-header-fixed page-sidebar-fixed page-sidebar-closed-hide-logo page-content-white">
+<!-- BEGIN HEADER -->
+<div class="page-header navbar navbar-fixed-top">
+    <!-- BEGIN HEADER INNER -->
+    <div class="page-header-inner ">
+        <!-- BEGIN LOGO -->
+        <div class="page-logo">
+            <a href="index.html">
+                <img src="../assets/layouts/layout/img/logo.png" alt="logo" class="logo-default"> </a>
+            <div class="menu-toggler sidebar-toggler">
+                <span></span>
+            </div>
+        </div>
+        <!-- END LOGO -->
+        <!-- BEGIN RESPONSIVE MENU TOGGLER -->
+        <a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse">
+            <span></span>
+        </a>
+        <!-- END RESPONSIVE MENU TOGGLER -->
+        <div class="page-top">
+            <!-- BEGIN TOP NAVIGATION MENU -->
+            <div class="top-menu">
+                <ul class="nav navbar-nav pull-right">
+                    <li class="separator hide"> </li>
+                    <!-- BEGIN NOTIFICATION DROPDOWN -->
+                    <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+                    <!-- DOC: Apply "dropdown-hoverable" class after "dropdown" and remove data-toggle="dropdown" data-hover="dropdown" data-close-others="true" attributes to enable hover dropdown mode -->
+                    <!-- DOC: Remove "dropdown-hoverable" and add data-toggle="dropdown" data-hover="dropdown" data-close-others="true" attributes to the below A element with dropdown-toggle class -->
+                    <li class="dropdown dropdown-user dropdown-dark">
+                        <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                            <span class="username username-hide-on-mobile"> Lia </span>
+                            <!-- DOC: Do not remove below empty space(&nbsp;) as its purposely used -->
+                            <img alt="" class="img-circle" src="../assets/layouts/layout/img/avatar.png"> </a>
+                        <ul class="dropdown-menu dropdown-menu-default">
+                            <li>
+                                <a href="log.html">
+                                    <i class="fa fa-file-text-o"></i> My Task Logs
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../member/login.html">
+                                    <i class="icon-key"></i> Log Out </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown dropdown-quick-sidebar-toggler">
+                        <a href="javascript:;" class="dropdown-toggle" title="Log Out">
+                            <i class="icon-logout"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- END TOP NAVIGATION MENU -->
+        </div>
+        <!-- BEGIN PAGE ACTIONS -->
+        <!-- DOC: Remove "hide" class to enable the page header actions -->
+        <!-- END PAGE ACTIONS -->
+    </div>
+    <!-- END HEADER INNER -->
+</div>
+<!-- END HEADER -->
+<!-- BEGIN HEADER & CONTENT DIVIDER -->
+<div class="clearfix"> </div>
+<!-- END HEADER & CONTENT DIVIDER -->
+<!-- BEGIN CONTAINER -->
+<div class="page-container">
+    <div class="page-sidebar-wrapper">
+        <!-- BEGIN SIDEBAR -->
+        <!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
+        <!-- DOC: Change data-auto-speed="200" to adjust the sub menu slide up/down speed -->
+        <div class="page-sidebar navbar-collapse collapse">
+            <!-- BEGIN SIDEBAR MENU -->
+            <ul class="page-sidebar-menu" data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200" style="padding-top: 20px">
+                <li class="nav-item start">
+                    <a href="Javascript:;" class="nav-link nav-toggle">
+                        <i class="icon-home"></i>
+                        <span class="title">Home</span>
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a href="layout_list.html" class="nav-link nav-toggle">
+                        <i class="icon-magic-wand"></i>
+                        <span class="title">Auction</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:;" class="nav-link nav-toggle">
+                        <i class="icon-picture"></i>
+                        <span class="title">Lot</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:;" class="nav-link nav-toggle">
+                        <i class="icon-users"></i>
+                        <span class="title">Artist</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:;" class="nav-link nav-toggle">
+                        <i class="icon-bar-chart"></i>
+                        <span class="title">Performance Rank</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:;" class="nav-link nav-toggle">
+                        <i class="icon-book-open"></i>
+                        <span class="title">News</span>
+                        <span class="arrow"></span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li class="nav-item">
+                            <a href="javascript:;" class="nav-link">
+                                <span class="title">List</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:;" class="nav-link">
+                                <span class="title">Press</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:;" class="nav-link nav-toggle">
+                        <i class="fa fa-usd"></i>
+                        <span class="title">Advertisement</span>
+                        <span class="arrow"></span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li class="nav-item">
+                            <a href="javascript:;" class="nav-link">
+                                <span class="title">Matching List</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:;" class="nav-link">
+                                <span class="title">Banner</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:;" class="nav-link">
+                                <span class="title">Vendor</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:;" class="nav-link">
+                                <span class="title">Gallery</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:;" class="nav-link">
+                                <span class="title">SNS</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:;" class="nav-link nav-toggle">
+                        <i class="glyphicon glyphicon-phone"></i>
+                        <span class="title">App Setting</span>
+                        <span class="arrow"></span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li class="nav-item">
+                            <a href="javascript:;" class="nav-link">
+                                <span class="title">Notice</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:;" class="nav-link">
+                                <span class="title">Help</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:;" class="nav-link">
+                                <span class="title">Update</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:;" class="nav-link">
+                                <span class="title">Vendor Priority</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:;" class="nav-link">
+                                <span class="title">Sponsor</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a href="javascript:;" class="nav-link nav-toggle">
+                        <i class="icon-screen-desktop"></i>
+                        <span class="title">Site Setting</span>
+                        <span class="arrow"></span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li class="nav-item">
+                            <a href="javascript:;" class="nav-link">
+                                <span class="title">User(Admin)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:;" class="nav-link">
+                                <span class="title">Guide</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- END SIDEBAR MENU -->
+        </div>
+        <!-- END SIDEBAR -->
+    </div>
+    <!-- BEGIN CONTENT -->
+    <div class="page-content-wrapper">
+        <!-- BEGIN CONTENT BODY -->
+        <div class="page-content">
+            <!-- BEGIN PAGE HEADER-->
+            <!-- BEGIN PAGE TITLE-->
+            <h1 class="page-title"> Auction
+                <div class="btn-groups major-btn-groups">
+                    <button type="button" class="btn default">일정 내려받기</button>
+                    <a href="layout_add.html" class="btn btn-primary">경매등록</a>
+                </div>
+            </h1>
+            <!-- END PAGE TITLE-->
+            <!-- END PAGE HEADER-->
+            <!-- BEGIN PAGE CONTENT -->
+            <div class="portlet user-guide">
+                <div class="portlet-title">
+                    <div class="tools">
+                        <a href="javascript:;" class="expand"><span class="icon-info text-default btn-guide"></span></a>
+                    </div>
+                    <!--이용 가이드 요약 내용 시작-->
+                    <ul class="contents">
+                        <li class="paragraph">
+                            우측 상단 <span class="icon-info text-default btn-guide"></span> 를 클릭하면 이용 가이드 전체가 노출됩니다.
+                        </li>
+                    </ul>
+                    <!--이용 가이드 요약 내용 끝-->
+                </div>
+                <div class="portlet-body display-hide">
+                    <!--이용 가이드 전체 내용 시작-->
+                    <ul class="contents hidden-guide">
+                        <li class="paragraph">
+                            내용 추후에 채워야해요~
+                        </li>
+                        <li class="paragraph">
+                            내용 추후에 채워야해요~
+                        </li>
+                        <li class="paragraph">
+                            내용 추후에 채워야해요~
+                        </li>
+                        <li class="paragraph">
+                            내용 추후에 채워야해요~
+                        </li>
+                    </ul>
+                    <!--이용 가이드 전체 내용 끝-->
+                </div>
+            </div>
+            <form role="form">
+                <div class="portlet solid grey-steel top-search">
+                    <div class="portlet-title">
+                        <div class="major-search">
+                            <div class="form-horizontal">
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label class="col-md-3 control-label">경매번호</label>
+                                        <div class="col-md-9">
+                                            <input type="text" class="form-control input-inline input-small" placeholder="idx입력">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label class="col-md-3 control-label">경매명</label>
+                                        <div class="col-md-9">
+                                            <input type="text" class="form-control input-inline input-medium" placeholder="경매 타이틀 검색">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label class="col-md-3 control-label">기간</label>
+                                        <div class="col-md-9">
+                                            <input type="text" class="form-control input-inline input-medium input-icon-calendar" placeholder="시작일-종료일" name="date-range" value="" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label class="col-md-3 control-label">경매사</label>
+                                        <div class="col-md-9">
+                                            <select class="form-control input-small">
+                                                <option>전체</option>
+                                                <option>Christie's</option>
+                                                <option>Sotheby's</option>
+                                                <option>Phillips</option>
+                                                <option>Bonhams</option>
+                                                <option>Seoul Auction</option>
+                                                <option>Artcurial</option>
+                                                <option>Wright</option>
+                                                <option>SBI Art Auction</option>
+                                                <option>Heritage</option>
+                                                <option>China Guardian</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-horizontal">
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label class="col-md-3 control-label">경매상태</label>
+                                        <div class="col-md-9">
+                                            <select class="form-control input-small">
+                                                <option>전체</option>
+                                                <option>READY</option>
+                                                <option>OFF-AIR</option>
+                                                <option>ON-AIR</option>
+                                                <option>HOLDING</option>
+                                                <option>SESSION-OFF</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label class="col-md-3 control-label">지역</label>
+                                        <div class="col-md-9">
+                                            <select class="form-control input-small">
+                                                <option>전체</option>
+                                                <option>New York</option>
+                                                <option>London</option>
+                                                <option>Hong Kong</option>
+                                                <option>...</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label class="col-md-3 control-label">경매옵션</label>
+                                        <div class="col-md-9">
+                                            <select class="form-control input-medium">
+                                                <option>Day & Evening Sale</option>
+                                                <option>Evening Sale Only</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-btns">
+                                        <button type="button" class="btn grey-salt">초기화</button>
+                                        <button type="button" class="btn grey-cascade"><i class="fa fa-search"></i> 검색</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <!-- BEGIN PAGINATION -->
+            <div class="row">
+                <div class="col-sm-12 col-md-4">
+                    <div class="result-count">
+                        총 13,425 건
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-8">
+                    <ul class="pagination pagination-sm">
+                        <li class="page-item disabled"><a class="page-link" href="#"><i class="fa fa-angle-left"></i></a></li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                        <li class="page-item"><a class="page-link" href="#">6</a></li>
+                        <li class="page-item"><a class="page-link" href="#">7</a></li>
+                        <li class="page-item"><a class="page-link" href="#">8</a></li>
+                        <li class="page-item"><a class="page-link" href="#">9</a></li>
+                        <li class="page-item"><a class="page-link" href="#">10</a></li>
+                        <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-right"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- END PAGINATION -->
+
+            <div class="table-scrollable table-text-center">
+                <table class="table table-bordered">
+                    <thead class="small">
+                    <tr class="th-type1">
+                        <th>월</th>
+                        <th>Vendor</th>
+                        <th>City</th>
+                        <th>Sale No</th>
+                        <th>idx</th>
+                        <th class="text-left">경매명</th>
+                        <th>현지시간</th>
+                        <th>한국시간</th>
+                        <th>Lot No</th>
+                        <th>Lot 수</th>
+                        <th>설정</th>
+                        <th>Updated</th>
+                        <th>상태</th>
+                        <th>작업</th>
+                        <th>방송</th>
+                    </tr>
+                    </thead>
+                    <tbody class="small">
+                    <tr>
+                        <td>
+                            1
+                        </td>
+                        <td>
+                            Christie's
+                        </td>
+                        <td>
+                            New York
+                        </td>
+                        <td>
+                            <a href="https://www.christies.com/salelanding/index.aspx?lid=1&intsaleid=27909&dt=1212201831159&saletitle=" target="_blank" class="main-link" data-toggle="tooltip" data-original-title="Go to site">24647</a><br>
+                            <span class="text-info">16395</span>
+                        </td>
+                        <td>
+                            <a href="javascript:;" target="_blank" class="main-link" data-toggle="tooltip" data-original-title="Go to lots">3547</a><br>
+                            <a href="javascript:;" target="_blank" class="btn btn-warning btn-xs" data-toggle="tooltip" data-original-title="모름;;">VIEW</a>
+                        </td>
+                        <td class="text-left">
+                            <a href="javascript:;" target="_blank" class="main-link" data-toggle="tooltip" data-original-title="Go to edit this auction">Master Paintings Evening Sale</a>
+                        </td>
+                        <td>
+                            2018/06/04 <span class="text-info">13:00 PM</span><br>
+                        </td>
+                        <td>
+                            2018/06/04 <span class="text-info">13:00 PM</span><br>
+                        </td>
+                        <td>
+                            1-10
+                        </td>
+                        <td>
+                            <span data-toggle="tooltip" data-original-title="Total Lot Count">T : 123 </span><br>
+                            <span data-toggle="tooltip" data-original-title="Processing Lot Count">P : 122 </span><br>
+                            <span data-toggle="tooltip" data-original-title="Sold Lot Count">S : 121 </span>
+                        </td>
+                        <td class="bg-good">
+                            <span title="Applied to Live">반영 : Y</span><br>
+                            <span title="Displayed in app's auction list">노출 :
+                                <a data-toggle="modal" href="#modalDisplayAuction">Y</a></span><br>
+                            <span title="Ready to Live Cast">방송 : Y</span>
+                        </td>
+                        <td>
+                            <span>2018/06/04<br>00:00 AM</span><br>
+                            <span class="text-info small">10일 이후 스크랩</span>
+                        </td>
+                        <td>
+                            <!--<span class="label label-sm label-default">OFF-AIR</span>-->
+                            <span class="text-default">OFF-AIR</span>
+                        </td>
+                        <td class="td-btn-groups">
+                            <a href="#" class="btn btn-warning btn-block">Pre Check</a>
+                            <a href="#" class="btn btn-danger btn-block">Total Check - X</a>
+                        </td>
+                        <td class="td-btn-groups">
+                            <a href="#" class="btn blue btn-outline btn-block">DEV</a>
+                            <a href="#" class="btn red btn-outline btn-block">LIVE</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            1
+                        </td>
+                        <td>
+                            Christie's
+                        </td>
+                        <td>
+                            New York
+                        </td>
+                        <td>
+                            <a href="https://www.christies.com/salelanding/index.aspx?lid=1&intsaleid=27909&dt=1212201831159&saletitle=" target="_blank" class="main-link" data-toggle="tooltip" data-original-title="Go to site">24647</a><br>
+                        </td>
+                        <td>
+                            <a href="javascript:;" target="_blank" class="main-link" data-toggle="tooltip" data-original-title="Go to lots">3547</a><br>
+                        </td>
+                        <td class="text-left">
+                            <a href="javascript:;" target="_blank" class="main-link" data-toggle="tooltip" data-original-title="Go to edit this auction">Master Paintings Evening Sale</a>
+                        </td>
+                        <td>
+                            2018/06/04 <span class="text-info">13:00 PM</span><br>
+                            2018/06/04 <span class="text-info">14:00 PM</span><br>
+                            2018/06/04 <span class="text-info">15:00 PM</span><br>
+                        </td>
+                        <td>
+                            2018/06/04 <span class="text-info">13:00 PM</span><br>
+                            2018/06/04 <span class="text-info">14:00 PM</span><br>
+                            2018/06/04 <span class="text-info">15:00 PM</span><br>
+                        </td>
+                        <td>
+                            1-99<br>
+                            100-199<br>
+                            200-299
+                        </td>
+                        <td>
+                            <span data-toggle="tooltip" data-original-title="Total Lot Count">T : 123 </span><br>
+                            <span data-toggle="tooltip" data-original-title="Processing Lot Count">P : 122 </span><br>
+                            <span data-toggle="tooltip" data-original-title="Sold Lot Count">S : 121 </span>
+                        </td>
+                        <td class="bg-bad">
+                            <span title="Applied to Live">반영 : Y</span><br>
+                            <span title="Displayed in app's auction list">노출 :
+                                <a data-toggle="modal" href="#modalDisplayAuction" class="link-color-danger">N</a></span><br>
+                            <span title="Ready to Live Cast">방송 : Y</span>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                            <!--<span class="label label-sm label-info">SESSION OFF</span>-->
+                            <span class="text-info">SESSION OFF</span>
+                        </td>
+                        <td class="td-btn-groups">
+                            <a href="#" class="btn btn-danger btn-block">Total Check - O</a>
+                            <a href="#" class="btn btn-primary btn-block">Auto Check (12)</a>
+                        </td>
+                        <td class="td-btn-groups">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            1
+                        </td>
+                        <td>
+                            Christie's
+                        </td>
+                        <td>
+                            New York
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td class="text-left bg-good">
+                            <a href="javascript:;" target="_blank" class="main-link" data-toggle="tooltip" data-original-title="Go to edit this auction">Master Paintings Evening Sale</a>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                            <!--<span class="label label-sm label-danger label-outline">ON-AIR</span>-->
+                            <span class="text-danger">ON-AIR</span>
+                        </td>
+                        <td class="td-btn-groups">
+                        </td>
+                        <td class="td-btn-groups">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            1
+                        </td>
+                        <td>
+                            Christie's
+                        </td>
+                        <td>
+                            New York
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td class="text-left">
+                            <a href="javascript:;" target="_blank" class="main-link" data-toggle="tooltip" data-original-title="Go to edit this auction">Master Paintings Evening Sale</a>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                            <!--<span class="label label-sm label-warning">READY</span>-->
+                            <span class="text-warning">READY</span>
+                        </td>
+                        <td class="td-btn-groups">
+                        </td>
+                        <td class="td-btn-groups">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            1
+                        </td>
+                        <td>
+                            Christie's
+                        </td>
+                        <td>
+                            New York
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td class="text-left">
+                            <a href="javascript:;" target="_blank" class="main-link" data-toggle="tooltip" data-original-title="Go to edit this auction">Master Paintings Evening Sale</a>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                            <!--<span class="label label-sm label-primary">HOLDING</span>-->
+                            <span class="text-primary">HOLDING</span>
+                        </td>
+                        <td class="td-btn-groups">
+                        </td>
+                        <td class="td-btn-groups">
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- BEGIN PAGINATION -->
+            <div class="row">
+                <div class="col-sm-12 col-md-4">
+                    <div class="result-count">
+                        총 13,425 건
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-8">
+                    <ul class="pagination pagination-sm">
+                        <li class="page-item disabled"><a class="page-link" href="#"><i class="fa fa-angle-left"></i></a></li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                        <li class="page-item"><a class="page-link" href="#">6</a></li>
+                        <li class="page-item"><a class="page-link" href="#">7</a></li>
+                        <li class="page-item"><a class="page-link" href="#">8</a></li>
+                        <li class="page-item"><a class="page-link" href="#">9</a></li>
+                        <li class="page-item"><a class="page-link" href="#">10</a></li>
+                        <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-right"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- END PAGINATION -->
+
+            <!-- END PAGE CONTENT -->
+        </div>
+        <!-- END CONTENT BODY -->
+    </div>
+    <!-- END CONTENT -->
+</div>
+<!-- END CONTAINER -->
+<!-- BEGIN MODALS -->
+<div class="modal fade bs-modal-sm in" id="modalDisplayAuction">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                <h4 class="modal-title">경매 노출 변경</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group row">
+                    <div class="col-md-4">
+                        <label class="col-form-label">상태값</label>
+                    </div>
+                    <div class="col-md-8">
+                        <select class="form-control input-small">
+                            <option selected="">노출</option>
+                            <option>숨김</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn dark btn-outline" data-dismiss="modal">취소</button>
+                <button type="button" class="btn green">확인</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--END MODALS-->
+
+<!--[if lt IE 9]>
+<script src="../assets/global/plugins/respond.min.js"></script>
+<script src="../assets/global/plugins/excanvas.min.js"></script>
+<script src="../assets/global/plugins/ie8.fix.min.js"></script>
+<![endif]-->
+<!-- BEGIN CORE PLUGINS -->
+<script src="../assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+<script src="../assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="../assets/global/plugins/js.cookie.min.js" type="text/javascript"></script>
+<script src="../assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+<script src="../assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
+<script src="../assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
+<!-- END CORE PLUGINS -->
+<!-- BEGIN THEME GLOBAL SCRIPTS -->
+<script src="../assets/global/scripts/app.min.js" type="text/javascript"></script>
+<script src="../assets/global/plugins/bootstrap-daterangepicker/moment-custom.js" type="text/javascript"></script>
+<script src="../assets/global/plugins/bootstrap-daterangepicker/daterangepicker-custom.js" type="text/javascript"></script>
+<!-- END THEME GLOBAL SCRIPTS -->
+<!-- BEGIN THEME LAYOUT SCRIPTS -->
+<script src="../assets/layouts/layout/scripts/layout.min.js" type="text/javascript"></script>
+<script src="../assets/layouts/layout/scripts/demo.min.js" type="text/javascript"></script>
+<script src="../assets/layouts/global/scripts/quick-sidebar.min.js" type="text/javascript"></script>
+<script src="../assets/layouts/global/scripts/quick-nav.min.js" type="text/javascript"></script>
+<!-- END THEME LAYOUT SCRIPTS -->
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    });
+    $(function () {
+        $('[data-toggle="popover"]').popover()
+    })
+</script>
+</body>
+
+</html>
