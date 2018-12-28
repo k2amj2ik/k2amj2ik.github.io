@@ -1,0 +1,187 @@
+@media screen and (max-width: 1200px) {
+  .content {
+    width: calc( 100% - 30px);
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .content {
+    max-width: 1200px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .login-content, .forget-content, .register-content {
+    flex-direction: column;
+    -moz-flex-direction: column;
+    -webkit-flex-direction: column;
+    -o-flex-direction: column;
+    -ms-flex-direction: column;
+    justify-content: center;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    -o-justify-content: center;
+    -ms-justify-content: center;
+    padding-right: 0 !important;
+  }
+
+  .login-form, .forget-form, .register-form {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    /* box-sizing: border-box; */
+    padding: 0 30px;
+  }
+
+  .login-image, .forget-image, .register-image {
+    display: none;
+  }
+
+  .login-form, .login-image, .forget-form, .signin-image, .register-form, .register-image {
+    width: auto !important;
+  }
+
+  .social-login {
+    justify-content: center;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    -o-justify-content: center;
+    -ms-justify-content: center;
+  }
+
+  .form-button {
+    text-align: center;
+  }
+
+  .login-form {
+    order: 1;
+    -moz-order: 1;
+    -webkit-order: 1;
+    -o-order: 1;
+    -ms-order: 1;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding: 0 30px;
+  }
+
+  .form-title {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 400px) {
+  .social-login {
+    flex-direction: column;
+    -moz-flex-direction: column;
+    -webkit-flex-direction: column;
+    -o-flex-direction: column;
+    -ms-flex-direction: column;
+  }
+
+  .social-label {
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+}
+.login-type2 {
+  background: #f8f8f8 !important;
+}
+.login-type2 .content {
+  width: 900px;
+  background: #fff;
+  margin: 0 auto;
+  box-shadow: 0px 15px 16.83px 0.17px rgba(0, 0, 0, 0.05) !important;
+  -moz-box-shadow: 0px 15px 16.83px 0.17px rgba(0, 0, 0, 0.05) !important;
+  -webkit-box-shadow: 0px 15px 16.83px 0.17px rgba(0, 0, 0, 0.05) !important;
+  -o-box-shadow: 0px 15px 16.83px 0.17px rgba(0, 0, 0, 0.05) !important;
+  -ms-box-shadow: 0px 15px 16.83px 0.17px rgba(0, 0, 0, 0.05) !important;
+  border-radius: 20px !important;
+  -moz-border-radius: 20px !important;
+  -webkit-border-radius: 20px !important;
+  -o-border-radius: 20px !important;
+  -ms-border-radius: 20px !important;
+}
+.login-type2 .content .login-content {
+  position: relative;
+  padding: 0 50% 0 0;
+}
+.login-type2 .content .login-content .login-form {
+  margin: 30px 30px 20px 30px;
+  overflow: hidden;
+  height: 380px;
+}
+.login-type2 .content .login-content .login-form .links {
+  text-align: right;
+  margin-top: 20px;
+}
+.login-type2 .content .login-content .login-form .links a {
+  display: block;
+  margin: 10px 0;
+}
+.login-type2 .content .login-content .login-form .login-image {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  width: 45%;
+  height: 380px;
+  overflow: hidden;
+  background: transparent url("../../../global/img/login_img_01.jpg") left top no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.login-type2 .content .forget-content {
+  position: relative;
+  padding: 0 50% 0 0;
+}
+.login-type2 .content .forget-content .forget-form {
+  margin: 30px 30px 20px 30px;
+  overflow: hidden;
+  height: 380px;
+}
+.login-type2 .content .forget-content .forget-form .links {
+  text-align: right;
+  margin-top: 20px;
+}
+.login-type2 .content .forget-content .forget-form .links a {
+  display: block;
+  margin: 10px 0;
+}
+.login-type2 .content .forget-content .forget-form .forget-image {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  width: 45%;
+  height: 380px;
+  overflow: hidden;
+  background: transparent url("../../../global/img/login_img_02.jpg") left top no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.login-type2 .content .register-content {
+  position: relative;
+  padding: 0 50% 0 0;
+}
+.login-type2 .content .register-content .register-form {
+  margin: 30px 30px 20px 30px;
+  overflow: hidden;
+  height: 380px;
+}
+.login-type2 .content .register-content .register-form .links {
+  text-align: right;
+  margin-top: 20px;
+}
+.login-type2 .content .register-content .register-form .links a {
+  display: block;
+  margin: 10px 0;
+}
+.login-type2 .content .register-content .register-form .register-image {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  width: 45%;
+  height: 380px;
+  overflow: hidden;
+  background: transparent url("../../../global/img/login_img_03.jpg") left top no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+/*# sourceMappingURL=login_type2.css.map */
