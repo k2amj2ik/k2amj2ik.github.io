@@ -90,6 +90,26 @@ html, body, div, ul, ol, li, table, tr, td, h1, h2, h3, h4, p, span, form, input
 
 .main-link {
   font-weight: 600;
+  font-size: 120%;
+}
+
+.ul-default {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.ul-default li {
+  text-align: left !important;
+  padding: 2px 0 4px 2px;
+  border-bottom: 1px solid #f5f5f5;
+}
+.ul-default li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.ul-center li {
+  text-align: center !important;
 }
 
 .link-color-danger:active, .link-color-danger:visited, .link-color-danger:link {
