@@ -84,6 +84,10 @@
 .login-type2 {
   background: #f8f8f8 !important;
 }
+.login-type2 .logo a img {
+  width: 250px;
+  /*height: 48px;*/
+}
 .login-type2 .content {
   width: 900px;
   background: #fff;

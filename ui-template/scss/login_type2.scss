@@ -144,6 +144,14 @@
 
 .login-type2 {
   background: #f8f8f8 !important;
+  .logo {
+    a {
+      img {
+        width: 50%;
+        border:1px solid red;
+      }
+    }
+  }
   .content {
     width: 900px;
     background: #fff;

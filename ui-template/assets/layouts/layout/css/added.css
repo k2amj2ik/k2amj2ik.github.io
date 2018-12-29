@@ -196,6 +196,10 @@ th {
   background-color: #e1e5ec !important;
 }
 
+.page-logo > a > img {
+  width: 126px;
+}
+
 .form-edit .modal-body {
   padding: 0 !important;
 }

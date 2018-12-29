@@ -247,6 +247,15 @@ th {
   background-color: $bgcolor-th !important;
 }
 
+.page-logo {
+  >a {
+    >img {
+      width: 126px;
+      //height: 15px;
+    }
+  }
+}
+
 .form-edit {
   .modal-body {
     padding: 0 !important;
