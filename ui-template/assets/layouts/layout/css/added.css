@@ -44,7 +44,8 @@ html, body, div, ul, ol, li, table, tr, td, h1, h2, h3, h4, p, span, form, input
   min-height: 50px;
 }
 
-.td-btn-groups .btn {
+.td-btn-groups .btn, .td-btn-groups .label {
+  display: inline-block;
   margin-bottom: 2px;
 }
 
@@ -90,7 +91,7 @@ html, body, div, ul, ol, li, table, tr, td, h1, h2, h3, h4, p, span, form, input
 
 .main-link {
   font-weight: 600;
-  font-size: 120%;
+  font-size: 110%;
 }
 
 .ul-default {
@@ -368,145 +369,11 @@ th {
 }
 @media (max-width: 767px) {
   .page-title .major-btn-groups {
-    margin: 20px 0 0 0 !important;
-    padding-right: 25px;
+    margin: -25px 0 0 0 !important;
     width: 100%;
     float: none;
     text-align: right;
   }
-}
-
-.card-auction {
-  cursor: pointer;
-}
-.card-auction .text-pay {
-  margin-top: 0 !important;
-  margin-left: 0;
-  margin-right: 0;
-  margin-bottom: 10px;
-  padding: 1px 10px 2px 10px;
-  background-color: #BFBFBF;
-}
-.card-auction .text-pay .bad {
-  color: #ED1C24;
-}
-.card-auction .text-pay .good {
-  color: #1B73BF;
-}
-.card-auction .text-soldprice {
-  text-align: right;
-  margin-top: -11px !important;
-  height: 20px;
-  margin-bottom: 10px;
-}
-.card-auction .text-sale-status {
-  display: inline-block;
-}
-.card-auction .text-auction-type {
-  display: inline-block;
-  color: #777;
-}
-.card-auction .text-sale-turn {
-  display: inline-block;
-  color: #777;
-}
-.card-auction .text-auction {
-  display: inline-block;
-  text-overflow: ellipsis;
-  word-break: break-all;
-  max-width: 100%;
-  height: 20px;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
-  color: #1B73BF;
-  font-size: 120%;
-  font-weight: 600;
-  margin-bottom: 4px;
-}
-
-.card-item, .card-lot {
-  position: relative;
-  padding-left: 60px;
-}
-.card-item p, .card-lot p {
-  margin: 0 0 0 0;
-  padding: 0 0 0 0;
-  display: block;
-}
-.card-item .img-lot, .card-lot .img-lot {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.card-item .img-lot img, .card-lot .img-lot img {
-  max-width: 50px;
-  max-height: 50px;
-}
-.card-item .text-lot-artist, .card-lot .text-lot-artist {
-  font-size: 100%;
-  font-weight: bold;
-  margin: 0 0 0 0 !important;
-}
-.card-item .text-lot-worktitle, .card-lot .text-lot-worktitle {
-  font-size: 110%;
-  font-style: italic;
-  font-weight: 600;
-  color: #1B73BF;
-  margin: 2px 0 0 0 !important;
-  display: inline-block;
-  text-overflow: ellipsis;
-  word-break: break-all;
-  max-width: 400px;
-  height: 24px;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
-}
-.card-item .text-lot-description, .card-lot .text-lot-description {
-  margin: 0 0 0 0 !important;
-  color: #777;
-  display: inline-block;
-  text-overflow: ellipsis;
-  word-break: break-all;
-  max-width: 400px;
-  height: 20px;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
-}
-.card-item .text-lot-sale-summary, .card-lot .text-lot-sale-summary {
-  margin: 0 0 0 0 !important;
-  color: #777;
-  display: inline-block;
-  text-overflow: ellipsis;
-  word-break: break-all;
-  max-width: 400px;
-  height: 20px;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
-}
-
-.text-lot-number {
-  font-size: 200%;
-  font-weight: 600;
-}
-
-.text-lot-id {
-  font-size: 90%;
-}
-
-.text-lot-bn {
-  font-size: 90%;
-}
-
-.text-lot-bidder-count {
-  margin-bottom: 4px;
 }
 
 .img-sale-banner-for-list {
@@ -646,6 +513,10 @@ th {
 }
 .fixed-container .unfixed-area {
   border: 1px solid violet;
+}
+
+.client-image {
+  width: 25px;
 }
 
 /*# sourceMappingURL=added.css.map */

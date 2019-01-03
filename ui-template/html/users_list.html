@@ -5,7 +5,7 @@
 <html lang="kr">
 <head>
     <meta charset="utf-8">
-    <title>Members - Blue Index</title>
+    <title>User Authentication Service - Blue Index</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="Blue Index Members Management System" name="description">
@@ -38,7 +38,7 @@
     <div class="page-header-inner ">
         <!-- BEGIN LOGO -->
         <div class="page-logo">
-            <a href="members_list.html">
+            <a href="users_list.html">
                 <img src="../assets/layouts/layout/img/logo_members1.png" alt="logo" class="logo-default"> </a>
             <div class="menu-toggler sidebar-toggler">
                 <span></span>
@@ -60,7 +60,7 @@
                     <!-- DOC: Apply "dropdown-hoverable" class after "dropdown" and remove data-toggle="dropdown" data-hover="dropdown" data-close-others="true" attributes to enable hover dropdown mode -->
                     <!-- DOC: Remove "dropdown-hoverable" and add data-toggle="dropdown" data-hover="dropdown" data-close-others="true" attributes to the below A element with dropdown-toggle class -->
                     <li class="dropdown dropdown-user dropdown-dark">
-                        <a href="member_edit.html" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                        <a href="users_edit.html" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
                             <span class="username username-hide-on-mobile"> Lia </span>
                             <!-- DOC: Do not remove below empty space(&nbsp;) as its purposely used -->
                             <img alt="" class="img-circle" src="../assets/layouts/layout/img/avatar.png"> </a>
@@ -94,19 +94,25 @@
             <!-- BEGIN SIDEBAR MENU -->
             <ul class="page-sidebar-menu" data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200" style="padding-top: 20px">
                 <li class="nav-item start active">
-                    <a href="members_list.html" class="nav-link nav-toggle">
+                    <a href="users_list.html" class="nav-link nav-toggle">
                         <i class="icon-users"></i>
                         <span class="title">Users</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="members_add_user.html" class="nav-link nav-toggle">
-                        <i class="icon-user-follow"></i>
-                        <span class="title">Add User</span>
+                    <a href="clients_list.html" class="nav-link nav-toggle">
+                        <i class="icon-tag"></i>
+                        <span class="title">Clients</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="members_login.html" class="nav-link nav-toggle">
+                    <a href="managers_list.html" class="nav-link nav-toggle">
+                        <i class="icon-settings"></i>
+                        <span class="title">Managers</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="login.html" class="nav-link nav-toggle">
                         <i class="icon-login"></i>
                         <span class="title">Log In</span>
                     </a>
@@ -124,7 +130,7 @@
             <!-- BEGIN PAGE TITLE-->
             <h1 class="page-title"> Users
                 <div class="btn-groups major-btn-groups">
-                    <a href="layout_add.html" class="btn btn-primary">Add User</a>
+                    <a href="users_add.html" class="btn btn-primary">Add User</a>
                 </div>
             </h1>
             <!-- END PAGE TITLE-->
@@ -138,12 +144,7 @@
                     <!--이용 가이드 요약 내용 시작-->
                     <ul class="contents">
                         <li class="paragraph">
-                            1. 회원가입에서 전화번호 삭제 <br>
-                            2. 관리자 / 회원 분리<br>
-                            3. 회원정보에서 공통항목으로 추리고, Expire Time 항목 추가<br>
-                            4. 관리자 승인처리 기능 추가.<br>
-                            5. 로그인 화면 로고 수정.<br>
-                            6. 조회/편집 분리할 필요없음.<br>
+                            우측 상단 <span class="icon-info text-default btn-guide"></span> 를 클릭하면 이용 가이드 전체가 노출됩니다.
                         </li>
                     </ul>
                     <!--이용 가이드 요약 내용 끝-->
@@ -174,7 +175,7 @@
                             <div class="form-horizontal">
                                 <div class="col-xl-3 col-lg-6">
                                     <div class="form-group">
-                                        <label class="col-lg-3 col-sm-3 control-label">Idx</label>
+                                        <label class="col-lg-3 col-sm-3 control-label">ID</label>
                                         <div class="col-lg-9 col-sm-9">
                                             <input type="text" class="form-control input-inline input-medium" placeholder="ID입력">
                                         </div>
@@ -205,13 +206,15 @@
                                 </div>
                                 <div class="col-xl-3 col-lg-6">
                                     <div class="form-group">
-                                        <label class="col-lg-3 col-sm-3 control-label">상태</label>
+                                        <label class="col-lg-3 col-sm-3 control-label">Client</label>
                                         <div class="col-lg-9 col-sm-9">
                                             <select class="form-control input-medium">
                                                 <option>전체</option>
-                                                <option>Awaiting</option>
-                                                <option>Enable</option>
-                                                <option>Disable</option>
+                                                <option>Wiveel</option>
+                                                <option>Live Auction Art</option>
+                                                <option>Artist Service</option>
+                                                <option>HW x WV</option>
+                                                <option>...</option>
                                             </select>
                                         </div>
                                     </div>
@@ -226,7 +229,20 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-xl-9 col-lg-6">
+                                <div class="col-xl-3 col-lg-6">
+                                    <div class="form-group">
+                                        <label class="col-lg-3 col-sm-3 control-label">상태</label>
+                                        <div class="col-lg-9 col-sm-9">
+                                            <select class="form-control input-medium">
+                                                <option>전체</option>
+                                                <option>Awaiting</option>
+                                                <option>Enable</option>
+                                                <option>Disable</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-12">
                                     <div class="form-btns">
                                         <button type="button" class="btn grey-salt">초기화</button>
                                         <button type="button" class="btn grey-cascade"><i class="fa fa-search"></i> 검색</button>
@@ -241,7 +257,7 @@
             <div class="row">
                 <div class="col-sm-12 col-md-4">
                     <div class="result-count">
-                        총 13,425 건
+                        Total 13,425
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-8">
@@ -268,38 +284,32 @@
                     <thead class="small">
                     <tr class="th-type1">
                         <th>Idx</th>
+                        <th>ID</th>
                         <th>Full Name</th>
-                        <th>Phone / Email</th>
-                        <th>Description</th>
-                        <th>Status @Sign up Route</th>
+                        <th>Signed up Route</th>
+                        <th>Clients to Access</th>
                         <th>Registered</th>
                         <th>Last Accessed</th>
+                        <th>Expire Time</th>
+                        <th>Status</th>
                         <th>Actions</th>
                     </tr>
                     </thead>
                     <tbody class="small">
                     <tr>
+                        <td>1233</td>
                         <td>
-                            111
+                            <a href="users_edit.html" class="main-link">kkamjjik</a><br>
                         </td>
                         <td>
-                            <a href="members_detail.html" target="_blank" class="main-link">Lia Shin</a><br>
+                            Lia Shin
                         </td>
                         <td>
-                            <ul class="ul-default">
-                                <li>+82-10-9254-1145</li>
-                                <li>kkamjjik@email.com</li>
-                            </ul>
+                            Live Auction Art
                         </td>
-                        <td>
-                            Wiveel 관리자
-                        </td>
-                        <td>
-                            <ul class="ul-default ul-center">
-                                <li><span class="text-primary">Enable</span> @Live Auction Art</li>
-                                <li><span class="text-warning">Awating</span> @Wiveel</li>
-                                <li><span class="text-danger">Disable</span> @Artist Service</li>
-                            </ul>
+                        <td class="text-left td-btn-groups">
+                            <span class="label label-default label-sm">Live Auction Art</span>
+                            <span class="label label-default label-sm">Wiveel</span>
                         </td>
                         <td>
                             2018/06/04<br>
@@ -308,30 +318,33 @@
                         <td>
                             2018/06/04<br>
                             <span class="text-info">13:00 PM</span>
+                        </td>
+                        <td>
+                            2018/06/04<br>
+                            <span class="text-info">13:00 PM</span>
+                        </td>
+                        <td>
+                            <span class="text-primary"> Enabled </span>
                         </td>
                         <td class="td-btn-groups">
-                            <a href="members_edit.html" class="btn blue btn-outline btn-block">Edit</a>
+                            <a href="users_reset_password.html" class="btn blue btn-outline btn-block btn-sm">Password</a>
                         </td>
                     </tr>
                     <tr>
+                        <td>1233</td>
                         <td>
-                            111
+                            <a href="users_edit.html" class="main-link">kkamjjik</a><br>
                         </td>
                         <td>
-                            <a href="members_detail.html" target="_blank" class="main-link">Lia Shin</a><br>
+                            Lia Shin
                         </td>
                         <td>
-                            <ul class="ul-default">
-                                <li>kkamjjik@email.com</li>
-                            </ul>
+                            Wiveel
                         </td>
-                        <td>
-                            대표님 손님.
-                        </td>
-                        <td>
-                            <ul class="ul-default ul-center">
-                                <li><span class="text-warning">Awating</span> @Wiveel</li>
-                            </ul>
+                        <td class="text-left td-btn-groups">
+                            <span class="label label-default label-sm">Wiveel</span>
+                            <span class="label label-default label-sm">Artist Service</span>
+                            <span class="label label-default label-sm">Data Miner</span>
                         </td>
                         <td>
                             2018/06/04<br>
@@ -340,9 +353,16 @@
                         <td>
                             2018/06/04<br>
                             <span class="text-info">13:00 PM</span>
+                        </td>
+                        <td>
+                            2018/06/04<br>
+                            <span class="text-info">13:00 PM</span>
+                        </td>
+                        <td>
+                            <span class="text-danger"> Disabled </span>
                         </td>
                         <td class="td-btn-groups">
-                            <a href="members_edit.html" class="btn blue btn-outline btn-block">Edit</a>
+                            <a href="users_reset_password.html" class="btn blue btn-outline btn-block btn-sm">Password</a>
                         </td>
                     </tr>
                     </tbody>
@@ -353,7 +373,7 @@
             <div class="row">
                 <div class="col-sm-12 col-md-4">
                     <div class="result-count">
-                        총 13,425 건
+                        Total 13,425
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-8">
