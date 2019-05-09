@@ -1,0 +1,2178 @@
+/* media query*/
+/* common */
+html, body {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+input [type="checkbox"] {
+  display: none;
+}
+input [type="checkbox"] + label span {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin: -2px 13px 0px 0px;
+  vertical-align: middle;
+  background: url("../img/custom_input.png") -32px top no-repeat;
+  cursor: pointer;
+}
+input [type="checkbox"]:checked + label span {
+  background: url("../img/custom_input.png") -48px top no-repeat;
+}
+input [type="radio"] {
+  display: none;
+}
+input [type="radio"] + label {
+  color: #222222;
+}
+input [type="radio"] + label span {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin: -2px 10px 0px 0px;
+  vertical-align: middle;
+  background: url("../img/custom_input.png") -64px top no-repeat;
+  cursor: pointer;
+}
+input [type="radio"]:checked + label span {
+  background: url("../img/custom_input.png") -80px top no-repeat;
+}
+
+.sticky {
+  position: fixed;
+  top: 83px;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+.footer_watermark {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  margin-left: -780px;
+  z-index: -1 !important;
+  width: 1562px;
+  z-index: 99999;
+  height: 170px;
+  background: url(../images/pc/bg_logo.png) no-repeat;
+}
+
+.footarea {
+  height: 170px;
+}
+
+.pc_wrap {
+  width: 1190px;
+  margin: 0 auto;
+}
+
+.txt_center {
+  text-align: center;
+}
+
+.search_main {
+  overflow: hidden;
+  background-color: #232629;
+  padding: 36px 30px 78px 30px;
+  margin-top: 79px;
+  box-sizing: border-box;
+}
+.search_main p {
+  font-size: 16.67px;
+  line-height: 16.67px;
+  color: #7e8a95;
+}
+.search_main .search_title {
+  font-size: 56px;
+  color: #fff;
+  font-weight: 700;
+  width: 100%;
+  line-height: 48px;
+}
+
+.search_list .search_nav {
+  height: 64px;
+  display: block;
+  width: 100%;
+  background-color: #eff3f6 !important;
+  box-sizing: border-box;
+  position: relative;
+}
+.search_list .search_nav li {
+  float: left;
+}
+.search_list .list_total {
+  font-family: inherit;
+  font-size: 14px;
+  height: 64px;
+  line-height: 64px;
+  text-align: left;
+  color: #888888;
+  padding-left: 30px;
+  font-weight: 400;
+}
+.search_list .list_total span {
+  font-weight: 700;
+}
+
+.user_intro {
+  /* intro  */
+  background-color: #232629;
+  clear: both;
+}
+.user_intro .wrap {
+  min-height: 100%;
+  margin: 0 auto;
+  margin-bottom: -170px;
+}
+.user_intro .footarea {
+  height: 170px;
+}
+.user_intro #footer {
+  position: relative;
+  text-align: center;
+  background-color: transparent !important;
+  padding-left: 0px;
+  height: 170px;
+  width: 100%;
+  display: block;
+}
+.user_intro #footer p {
+  padding-top: 18px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #454d54;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+  color: #4d555b;
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+}
+.user_intro #contents {
+  clear: both;
+  height: 580px;
+  padding-top: 173px;
+  box-sizing: border-box;
+  width: 500px;
+}
+.user_intro #contents .forget_pass_link {
+  font-size: 14px;
+  color: #7e8a95;
+  text-align: right;
+  font-style: none;
+  text-decoration: underline;
+  margin-top: 14px;
+  display: block;
+  font-weight: 300;
+  text-decoration: none;
+  line-height: 19px;
+  border-bottom: solid 1px #7e8a95 !important;
+  width: 146px;
+  float: right;
+  display: block;
+}
+.user_intro #contents .monopoly {
+  margin-top: 141px;
+  width: 100%;
+  height: 60px;
+  border: solid 1px #454d54;
+  text-align: left;
+  line-height: 60px;
+  font-size: 16px;
+  color: #7e8a95;
+  display: block;
+  padding: 0 0 0 19px;
+  box-sizing: border-box;
+  position: relative;
+}
+.user_intro #contents .monopoly:after {
+  content: url("../images/00_arrow.png");
+  position: absolute;
+  top: 0px;
+  right: 20px;
+}
+.user_intro #contents .search_form {
+  position: relative;
+}
+.user_intro #contents form {
+  font-family: inherit;
+}
+.user_intro #contents form .search_box {
+  width: 100%;
+  height: 56px;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #fff;
+  border-bottom: solid 1px #454d54;
+  background-color: transparent;
+  padding-right: 50px;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+  display: block;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.user_intro #contents form .search_box ::placeholder {
+  color: #454d54;
+}
+.user_intro #contents form .search_box:active, .user_intro #contents form .search_box:hover, .user_intro #contents form .search_box:focus {
+  color: #fff;
+  border-bottom: solid 1px #ffffff !important;
+}
+.user_intro #contents form #search_button {
+  background: url(../images/m_search_icon.png) no-repeat center center;
+  position: absolute;
+  top: 0px;
+  right: 1px;
+  width: 50px;
+  height: 56px;
+  display: block;
+  text-indent: -10000px;
+}
+.user_intro #contents form fieldset legend {
+  width: 0px;
+  height: 0px;
+  display: none;
+}
+.user_intro #contents form fieldset ul {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.user_intro #contents form fieldset ul li input {
+  width: 100%;
+  height: 56px;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #fff;
+  background-color: transparent;
+  border-bottom: solid 1px #454545;
+}
+.user_intro #contents form fieldset ul li input ::placeholder {
+  color: #454d54;
+}
+.user_intro #contents form fieldset ul li input:active, .user_intro #contents form fieldset ul li input:hover, .user_intro #contents form fieldset ul li input:focus {
+  color: #fff;
+  border-bottom: solid 1px #ffffff !important;
+}
+.user_intro #contents form fieldset #remember_id {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  border: solid 1px #7e8a95;
+  display: none;
+}
+.user_intro #contents form fieldset #remember_id + label span {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin: -2px 10px 0px 0px;
+  vertical-align: middle;
+  background: url("../img/custom_input.png") left top no-repeat;
+  cursor: pointer;
+}
+.user_intro #contents form fieldset #remember_id:checked + label span {
+  background: url("../img/custom_input.png") -16px top no-repeat;
+}
+.user_intro #contents form fieldset .remember_class {
+  font-size: 14px;
+  color: #7e8a95;
+  font-weight: 300;
+}
+.user_intro #contents form fieldset .btn_login {
+  margin-top: 30px;
+  width: 100%;
+  height: 64px;
+  background-color: #fff;
+  text-align: center;
+  color: #000000;
+  font-size: 16px;
+  display: block;
+  appearance: none;
+  -moz-appearance: none;
+  /* Firefox */
+  -webkit-appearance: none;
+  /* Safari and Chrome */
+  font-weight: 700;
+}
+
+.artist_page {
+  min-width: 1190px;
+  clear: both;
+}
+.artist_page .wrap {
+  min-height: 100%;
+  margin: 0 auto;
+  margin-bottom: -120px;
+}
+.artist_page .footarea {
+  height: 120px;
+}
+.artist_page #footer {
+  height: 120px;
+  background-color: #eef3f6;
+  line-height: 120px;
+  position: relative;
+}
+.artist_page #footer img {
+  width: 128px;
+  height: 17px;
+  margin: 0px 40px 0px 40px;
+}
+.artist_page #footer p {
+  font-family: "Roboto";
+  font-size: 12px;
+  display: inline-block;
+  margin-left: 13px;
+  color: #acaeb5;
+}
+.artist_page #footer ul {
+  position: absolute;
+  top: 0px;
+  right: 40px;
+}
+.artist_page #footer ul li {
+  float: left;
+  font-family: "Roboto";
+  font-size: 14px;
+  color: #acaeb5;
+}
+.artist_page #footer ul li:first-child:after {
+  content: '|';
+  padding: 0px 10px;
+}
+.artist_page #footer ul li a {
+  display: inline-block;
+  color: inherit;
+  font-family: inherit;
+}
+.artist_page .artist_list_area {
+  font-family: "Roboto", sans-serif;
+}
+.artist_page .artist_list_area .artist_list .list_total {
+  padding-left: 0px !important;
+  border-bottom: solid 1px #ebf0f2;
+}
+.artist_page .artist_list_area .artist_nav li {
+  float: left;
+  width: 220px;
+  height: 64px;
+  text-transform: uppercase;
+  background-color: #eff3f6 !important;
+}
+.artist_page .artist_list_area .artist_nav li:first-child a {
+  background: url("../images/m_artistlist_nav1.png") no-repeat;
+  background-size: 10px 13px;
+  background-position: 74px;
+  padding-left: 92px;
+}
+.artist_page .artist_list_area .artist_nav li:nth-child(2) a {
+  background: url("../images/m_artistlist_nav2.png") no-repeat;
+  background-size: 12px 8px;
+  background-position: 62px;
+  padding-left: 80px;
+}
+.artist_page .artist_list_area .artist_nav li:last-child a {
+  background: url("../images/m_artistlist_nav3.png") no-repeat;
+  background-size: 11px 18px;
+  background-position: 70px;
+  padding-left: 85px;
+}
+.artist_page .artist_list_area .artist_nav li a {
+  width: 100%;
+  height: 64px;
+  display: block;
+  font-family: "Roboto";
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: 1px;
+  box-sizing: border-box;
+  color: #888;
+}
+.artist_page .artist_list_area .artist_nav li a:hover {
+  background-color: #dde4e8;
+}
+.artist_page .artist_list_area .artist_nav li.artist_nav_select {
+  background-color: #fff !important;
+}
+.artist_page .artist_list_area .artist_nav li.artist_nav_select a {
+  color: #222;
+}
+.artist_page .artist_list_area .artist_nav li.artist_nav_select a:hover {
+  background-color: #dde4e8;
+}
+.artist_page .artist_list_area .artist_list .artist_noresult {
+  padding-left: 52px;
+}
+.artist_page .artist_list_area .artist_list .artist_noresult span {
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.11;
+  text-align: left;
+  color: #222222;
+  margin: 20px 0px 22px 0px;
+  display: block;
+}
+.artist_page .artist_list_area .artist_list .artist_noresult p {
+  font-family: "Roboto";
+  font-size: 14px;
+  line-height: 1.43;
+  text-align: left;
+  color: #999999;
+  font-weight: 300;
+  margin-bottom: 151px;
+}
+.artist_page .artist_list_area .artist_list .artist_noresult button {
+  width: 300px;
+  height: 64px;
+  margin: 0 auto;
+  display: block;
+  border: solid 1px #c1ccd6;
+  background-color: #ffffff;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+}
+.artist_page .artist_list_area .artist_list ul {
+  padding-left: 52px;
+}
+.artist_page .artist_list_area .artist_list ul li a {
+  min-height: 74px;
+  border-bottom: solid 1px #eff5f7;
+  padding: 20px 40px 20px 0px;
+  box-sizing: border-box;
+  display: block;
+  position: relative;
+}
+.artist_page .artist_list_area .artist_list ul li a:after {
+  content: '';
+  width: 11px;
+  height: 17px;
+  background-image: url("../images/artist_list_arrow2.png");
+  background-size: 11px 17px;
+  position: absolute;
+  top: 50%;
+  margin-top: -6px;
+  right: 0px;
+}
+.artist_page .artist_list_area .artist_list ul li a span {
+  font-family: inherit;
+  font-size: 12px;
+  text-align: left;
+  color: #999999;
+  line-height: 12px;
+}
+.artist_page .artist_list_area .artist_list ul li a p {
+  display: inline-block;
+  font-family: inherit;
+  margin-bottom: 4px;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: left;
+  color: #222222;
+}
+
+.artwork_page {
+  clear: both;
+  background-color: #eff3f6;
+  min-width: 1190px;
+  /*artwork_list start*/
+  /*pagenation*/
+}
+.artwork_page .wrap {
+  min-height: 100%;
+  margin: 0 auto;
+  margin-bottom: -69px;
+}
+.artwork_page .footarea {
+  height: 69px;
+}
+.artwork_page #footer {
+  clear: both;
+  height: 69px;
+  position: relative;
+  line-height: 69px;
+  background-color: #fff;
+}
+.artwork_page #footer img {
+  width: 128px;
+  height: 17px;
+  margin: 0px 0px 0px 40px;
+}
+.artwork_page #footer p {
+  font-family: "Roboto";
+  font-size: 12px;
+  display: inline-block;
+  margin-left: 13px;
+  color: #acaeb5;
+}
+.artwork_page #footer ul {
+  position: absolute;
+  top: 0px;
+  right: 40px;
+}
+.artwork_page #footer ul li {
+  float: left;
+  font-family: "Roboto";
+  font-size: 14px;
+  color: #acaeb5;
+}
+.artwork_page #footer ul li:first-child:after {
+  content: '|';
+  padding: 0px 10px;
+}
+.artwork_page #footer ul li a {
+  display: inline-block;
+  color: inherit;
+  font-family: inherit;
+}
+.artwork_page .artwork_search {
+  height: 211px;
+  padding-bottom: 30px;
+}
+.artwork_page .artwork_search p {
+  margin-top: 20px;
+}
+.artwork_page .search_list {
+  width: 100%;
+}
+.artwork_page .search_list .filter_wrap {
+  position: relative;
+  height: auto;
+  margin-bottom: 80px;
+}
+.artwork_page .search_list .slider_body {
+  height: auto;
+  padding-bottom: 40px;
+  background-color: #ffffff;
+  /*form end*/
+}
+.artwork_page .search_list .slider_body form {
+  /*artwork - filter slide*/
+}
+.artwork_page .search_list .slider_body form .filter_search {
+  position: absolute;
+  bottom: -80px;
+  left: 50%;
+  margin-left: -100px;
+  width: 200px;
+  height: 50px;
+  background-color: #000000;
+  line-height: 50px;
+  font-family: inherit;
+  font-size: 15px;
+  letter-spacing: 0.9px;
+  text-align: center;
+  color: #ffffff;
+}
+.artwork_page .search_list .slider_body form .toggle_btn {
+  cursor: pointer;
+  position: absolute;
+  bottom: 10px;
+  right: 50%;
+  margin-right: -595px;
+  font-family: "Roboto";
+  font-size: 12px;
+  text-align: left;
+  color: #666666;
+}
+.artwork_page .search_list .slider_body form .toggle_btn img {
+  width: 12px;
+  height: 7px;
+  display: inline-block;
+  margin-left: 9px;
+  background-size: 12px 7px;
+}
+.artwork_page .search_list .slider_body form .toggle_chk1 {
+  display: none;
+}
+.artwork_page .search_list .slider_body form .filter_refresh {
+  position: absolute;
+  bottom: -80px;
+  right: 50%;
+  margin-right: -160px;
+  border: solid 1px #a7afb7;
+  text-indent: -99990px;
+  width: 50px;
+  height: 50px;
+}
+.artwork_page .search_list .slider_body form .filter_refresh span {
+  background: url("../images/pc/filter_refresh.png") no-repeat center center;
+  display: inline-block;
+  width: 23px;
+  height: 18px;
+  position: absolute;
+  top: 16px;
+  left: 13px;
+}
+.artwork_page .search_list .slider_body form .toggle_area {
+  display: none;
+}
+.artwork_page .search_list .slider_body form fieldset {
+  margin-top: 20px;
+  border-top: solid 1px #77818a;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+}
+.artwork_page .search_list .slider_body form fieldset legend {
+  display: block;
+  width: 100%;
+  margin: 20px 0px 20px 0px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+  color: #222222;
+  float: left;
+}
+.artwork_page .search_list .slider_body form fieldset legend select {
+  float: right;
+  width: 55px;
+  font-size: 14px;
+  text-align: left;
+  color: #000;
+  font-weight: normal;
+  font-family: inherit;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  border-bottom: 1px solid #666;
+  border-radius: 0px;
+  background-size: 8px 4px !important;
+}
+.artwork_page .search_list .slider_body form fieldset legend select::-ms-expand {
+  /* for IE 11 */
+  display: none;
+}
+.artwork_page .search_list .slider_body form fieldset ul {
+  display: inline-block;
+}
+.artwork_page .search_list .slider_body form fieldset.f_category {
+  /* padding: 30px 30px 30px 0px; */
+  width: 406px;
+  margin-right: 35px;
+  box-sizing: border-box;
+}
+.artwork_page .search_list .slider_body form fieldset.f_category .more {
+  display: inline-block;
+  font-family: "Roboto";
+  font-weight: normal;
+  font-size: 14px;
+  text-align: left;
+  color: #000000;
+  border-bottom: solid 1px #000;
+  float: right;
+}
+.artwork_page .search_list .slider_body form fieldset.f_category .filter_medium {
+  width: 100%;
+}
+.artwork_page .search_list .slider_body form fieldset.f_category .f_chk_list_medium {
+  clear: both;
+  padding-top: 20px;
+  width: 100%;
+}
+.artwork_page .search_list .slider_body form fieldset.f_slider_year {
+  width: 222px;
+  margin-right: 35px;
+}
+.artwork_page .search_list .slider_body form fieldset.f_size {
+  width: 222px;
+  margin-right: 35px;
+}
+.artwork_page .search_list .slider_body form fieldset.f_size .custom-select {
+  float: right;
+}
+.artwork_page .search_list .slider_body form fieldset.f_size .select-items div {
+  width: 75px;
+}
+.artwork_page .search_list .slider_body form fieldset.f_price {
+  width: 222px;
+}
+.artwork_page .search_list .slider_body form fieldset.f_price legend span {
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.14;
+  text-align: left;
+  color: #888888;
+  margin-left: 9px;
+}
+.artwork_page .search_list .slider_body form fieldset.f_title {
+  width: 406px;
+  margin-right: 35px;
+  margin-top: 50px;
+}
+.artwork_page .search_list .slider_body form fieldset.f_house_title {
+  width: 477px;
+  margin-right: 35px;
+  margin-top: 50px;
+}
+.artwork_page .search_list .slider_body form fieldset.f_house_title input {
+  width: 100%;
+}
+.artwork_page .search_list .slider_body form fieldset.f_date_number {
+  width: 222px;
+  margin-top: 50px;
+}
+.artwork_page .search_list .slider_body form fieldset .f_second {
+  margin-top: 18px;
+}
+.artwork_page .search_list .slider_body form .filter_slider {
+  height: 335px;
+  background-color: #fff;
+}
+.artwork_page .search_list .slider_body form .filter_input {
+  width: 100%;
+  height: 31px;
+  border-radius: 2px;
+  display: block;
+  background-color: #eef3f6;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.07;
+  text-align: left;
+  padding: 0px 12px 0px 12px;
+  box-sizing: border-box;
+}
+.artwork_page .search_list .slider_body form .filter_input::placeholder {
+  color: #bbb !important;
+}
+.artwork_page .search_list .slider_body form .accordion label {
+  position: relative;
+}
+.artwork_page .search_list .slider_body form .accordion label:after {
+  content: url("../images/m_accordian_down.png");
+  position: absolute;
+  top: 29px;
+  right: 22px;
+}
+.artwork_page .search_list .slider_body form .advanced .inputarea li:not(.sub_legend) {
+  margin-bottom: 16px;
+}
+.artwork_page .search_list .slider_body form .f_i2_to {
+  font-family: inherit;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1.6;
+  display: inline-block;
+  color: #444444;
+}
+.artwork_page .search_list .slider_body form .filter_input2 {
+  background-color: #eef3f6;
+  height: 30px;
+  width: 98.5px;
+  padding: 0px 12px 0px 12px;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.07;
+  text-align: left;
+  color: #444;
+}
+.artwork_page .search_list .slider_body form .art_ex {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  text-align: left;
+  color: #222222;
+  width: 220px;
+  margin-bottom: 10px;
+}
+.artwork_page .search_list .slider_body form .slider_year legend {
+  display: block;
+  width: 100%;
+}
+.artwork_page .search_list .slider_body form .sub_legend {
+  font-family: inherit;
+  font-size: 11px;
+  text-align: left;
+  color: #666666;
+  margin-bottom: 11px;
+  /* margin-top: 4px; */
+  font-weight: 400;
+  line-height: 11px;
+}
+.artwork_page .search_list .slider_body form .slider_border {
+  border-bottom: solid 2px #eef3f6;
+  margin: 20px 0px 20px 0px;
+}
+.artwork_page .search_list .slider_body form .chk_all {
+  font-family: inherit;
+  font-size: 14px;
+  text-align: left;
+  color: #000000;
+  float: right;
+}
+.artwork_page .search_list .slider_body form .check_all {
+  display: inline-block;
+  font-family: inherit;
+  font-size: 14px;
+  text-align: left;
+  color: #000000;
+}
+.artwork_page .search_list .slider_body form ul li {
+  line-height: 25px;
+}
+.artwork_page .search_list .slider_body form ul li label {
+  font-family: inherit;
+  font-size: 14px;
+  text-align: left;
+  color: #999999;
+  font-weight: normal;
+}
+.artwork_page .search_list .slider_body form ul.f_chk_list {
+  float: left;
+}
+.artwork_page .search_list .slider_body form ul.f_chk_list.fr_list {
+  margin-right: 70px;
+}
+.artwork_page .search_list .artwork_list {
+  clear: both;
+  margin-top: 19px;
+}
+.artwork_page .search_list .artwork_list .table_caption li {
+  float: left;
+  font-family: "Roboto";
+  font-size: 14px;
+  text-align: left;
+  color: #888888;
+  margin-bottom: 13px;
+}
+.artwork_page .search_list .artwork_list .table_caption li.select {
+  float: right;
+}
+.artwork_page .search_list .artwork_list table {
+  clear: both;
+  background-color: #fff;
+  width: 100%;
+  padding: 0px 50px 0px 50px;
+  margin-top: 12px;
+}
+.artwork_page .search_list .artwork_list table tr {
+  border-bottom: solid 1px #eef4f6;
+}
+.artwork_page .search_list .artwork_list table tr th {
+  width: auto;
+  height: 52px;
+  font-family: "Roboto";
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 52px;
+  text-align: center;
+  color: #888888;
+  text-transform: uppercase;
+}
+.artwork_page .search_list .artwork_list table tr td {
+  vertical-align: top;
+  padding-top: 43px;
+  padding-bottom: 43px;
+}
+.artwork_page .search_list .artwork_list table tr td.lot_detail {
+  padding-left: 50px;
+  width: 529px;
+  box-sizing: border-box;
+}
+.artwork_page .search_list .artwork_list table tr td.lot_detail .img_area {
+  float: left;
+  width: 110px;
+  height: 87px;
+}
+.artwork_page .search_list .artwork_list table tr td.lot_detail .img_area img {
+  max-height: 150px;
+  max-width: 110px;
+  display: block;
+  margin: 0 auto;
+}
+.artwork_page .search_list .artwork_list table tr td.lot_detail .txt_area {
+  padding-left: 110px;
+  width: 100%;
+  margin-left: -110px;
+  float: left;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.artwork_page .search_list .artwork_list table tr td.lot_detail .txt_area .a_t_w {
+  margin: 0 auto;
+}
+.artwork_page .search_list .artwork_list table tr td.lot_detail .txt_area p {
+  padding-left: 20px;
+}
+.artwork_page .search_list .artwork_list table tr td.lot_detail .txt_area .title_artist {
+  font-weight: 500;
+}
+.artwork_page .search_list .artwork_list table tr td.lot_detail .txt_area .title_art {
+  /* text-transform: uppercase; */
+  box-sizing: border-box;
+  font-family: inherit;
+  line-height: 20px;
+  font-weight: bold;
+  text-align: left;
+  color: #222222;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+  display: block;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  margin-top: 16px;
+  text-transform: uppercase;
+}
+.artwork_page .search_list .artwork_list table tr td.lot_detail .txt_area .info_art {
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: left;
+  color: #222222;
+  width: 380px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+  display: block;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  line-height: 20px;
+}
+.artwork_page .search_list .artwork_list table tr td.sale_info {
+  width: 176px;
+}
+.artwork_page .search_list .artwork_list table tr td.sale_info .art_auction_info {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 16px;
+  color: #666666;
+  margin-bottom: 14px;
+}
+.artwork_page .search_list .artwork_list table tr td.sale_info .art_auction_info span {
+  display: inline-block;
+  width: 66px;
+  height: 19px;
+  border-radius: 9px;
+  background-color: #a7afb7;
+  font-family: "Roboto";
+  font-size: 10px;
+  font-weight: bold;
+  line-height: 19px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.artwork_page .search_list .artwork_list table tr td.sale_info .art_aution_place {
+  font-family: inherit;
+  font-size: 13px;
+  line-height: 13px;
+  text-align: left;
+  line-height: 19px;
+  color: #444444;
+  font-weight: 300;
+}
+.artwork_page .search_list .artwork_list table tr td.sale_info .art_aution_place b {
+  display: block;
+}
+.artwork_page .search_list .artwork_list table tr td.est_price {
+  width: 372px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  /* padding-right: 50px; */
+  padding-left: 15px;
+  padding-left: 15px;
+}
+.artwork_page .search_list .artwork_list table tr td.est_price .info_art_price_1 {
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: left;
+  color: #666666;
+  font-weight: 300;
+}
+.artwork_page .search_list .artwork_list table tr td.est_price .info_art_price_1_1 {
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: -0.4px;
+  text-align: left;
+  font-weight: 300;
+  color: #666666;
+}
+.artwork_page .search_list .artwork_list table tr td.est_price .info_art_price_2_1 {
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.29;
+  letter-spacing: -0.4px;
+  text-align: left;
+  color: #666;
+}
+.artwork_page .search_list .artwork_list table tr td.est_price .info_art_price_2 {
+  margin-top: 12px;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: -0.5px;
+  text-align: left;
+  color: #222222;
+}
+.artwork_page .search_list .artwork_list table tr td.est_price .info_art_price_2 span {
+  display: inline-block;
+  letter-spacing: normal;
+  margin-left: 8px;
+  font-family: "Roboto";
+  font-size: 11px;
+  font-weight: 500;
+  text-align: left;
+  color: #aaaaaa;
+}
+.artwork_page .pagination {
+  position: relative;
+  padding: 61px 0px 68px 0px;
+}
+.artwork_page .pagination .pagination_wrap {
+  width: 140px;
+  margin: 0 auto;
+}
+.artwork_page .pagination .pagination_wrap a {
+  margin: 0px 7px;
+  color: black;
+  float: left;
+  text-decoration: none;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: bold;
+  text-align: left;
+  color: #888888;
+}
+.artwork_page .pagination .pagination_wrap a:hover.next_page, .artwork_page .pagination .pagination_wrap a:hover.prev_page {
+  color: #232629;
+}
+.artwork_page .pagination .pagination_wrap a:hover.next_page {
+  background-image: url("../images/pc/select_next_page.png");
+}
+.artwork_page .pagination .pagination_wrap a:hover.prev_page {
+  background-image: url("../images/pc/select_prev_page.png");
+}
+.artwork_page .pagination .pagination_wrap a.next_page, .artwork_page .pagination .pagination_wrap a.prev_page {
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: normal;
+  color: #888888;
+  margin: 0px;
+  padding: 0px;
+}
+.artwork_page .pagination .pagination_wrap a.next_page {
+  text-align: left;
+  position: absolute;
+  right: 0px;
+  width: 59px;
+  background-image: url("../images/pc/default_next_page.png");
+  background-position: right;
+  background-repeat: no-repeat;
+}
+.artwork_page .pagination .pagination_wrap a.prev_page {
+  text-align: right;
+  position: absolute;
+  left: 0px;
+  width: 79px;
+  background-image: url("../images/pc/default_prev_page.png");
+  background-position: left;
+  background-repeat: no-repeat;
+}
+.artwork_page .pagination .pagination_wrap a.active {
+  border-bottom: solid 1px #000;
+  color: #000;
+}
+
+.artwork_detail {
+  clear: both;
+  min-width: 1190px;
+}
+.artwork_detail .wrap {
+  min-height: 100%;
+  margin: 0 auto;
+  margin-bottom: -83px;
+}
+.artwork_detail .footarea {
+  height: 83px;
+}
+.artwork_detail #footer {
+  position: relative;
+  line-height: 83px;
+  height: 83px;
+  background-color: #fff;
+}
+.artwork_detail #footer img {
+  width: 128px;
+  height: 17px;
+  margin: 0px 0px 0px 40px;
+}
+.artwork_detail #footer p {
+  font-family: "Roboto";
+  font-size: 12px;
+  display: inline-block;
+  line-height: 95px;
+  margin-left: 13px;
+  color: #acaeb5;
+}
+.artwork_detail #footer ul {
+  position: absolute;
+  top: 0px;
+  right: 40px;
+}
+.artwork_detail #footer ul li {
+  float: left;
+  font-family: "Roboto";
+  font-size: 14px;
+  color: #acaeb5;
+}
+.artwork_detail #footer ul li:first-child:after {
+  content: '|';
+  padding: 0px 10px;
+}
+.artwork_detail #footer ul li a {
+  display: inline-block;
+  color: inherit;
+  font-family: inherit;
+}
+.artwork_detail .detail_wrap {
+  box-sizing: border-box;
+  padding-left: 136px;
+}
+.artwork_detail .detail_info {
+  padding-top: 80px;
+  box-sizing: border-box;
+  height: 333px;
+  border-bottom: solid 1px #eef3f6;
+}
+.artwork_detail .detail_info .d_more {
+  margin-left: 30px;
+  display: block;
+  width: 46px;
+  height: 19px;
+  line-height: 19px;
+  text-align: center;
+  border-radius: 9px;
+  background-color: #a7afb7;
+  color: #fff;
+  font-family: inherit;
+  font-size: 10px;
+  font-weight: 700;
+}
+.artwork_detail .detail_slide {
+  overflow: hidden;
+  height: 172px;
+  border-bottom: solid 1px #eef3f6;
+  padding-top: 42px;
+  box-sizing: border-box;
+}
+.artwork_detail .detail_slide a {
+  display: block;
+}
+.artwork_detail .detail_slide a:hover span {
+  border-bottom: solid 1px #222222;
+}
+.artwork_detail .detail_slide .slide_wrap {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.artwork_detail .detail_slide .slide_wrap ul {
+  display: flex;
+}
+.artwork_detail .detail_slide .slide_wrap ul li {
+  min-width: 56px;
+  height: 57px;
+  float: left;
+  margin-right: 5px;
+}
+.artwork_detail .detail_slide .slide_wrap ul li.show_num {
+  font-family: "Roboto";
+  line-height: 57px;
+  text-align: center !important;
+  font-size: 34px;
+  font-weight: 300;
+  text-align: left;
+  color: #dadfe1;
+}
+.artwork_detail .detail_slide span {
+  width: 165px;
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  display: inline-block;
+  letter-spacing: normal;
+  text-align: left;
+  color: #222;
+  border-bottom: solid 1px #fff;
+}
+.artwork_detail .detail_price {
+  padding-top: 49px;
+  box-sizing: border-box;
+  min-height: 341px;
+  border-bottom: solid 3px #eef3f6;
+}
+.artwork_detail .detail_price .price_list {
+  font-weight: 300;
+}
+.artwork_detail .detail_price .price_list .range {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 21px;
+  color: #bbbbbb;
+}
+.artwork_detail .detail_price .price_list .price1 {
+  font-family: inherit;
+  font-size: 28px;
+  line-height: 28px;
+  letter-spacing: -0.8px;
+  color: #222222;
+  margin-top: 9px;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+.artwork_detail .detail_price .price_list .price1 span {
+  font-family: inherit;
+  font-size: 10px;
+  line-height: 10px;
+  color: #888888;
+  font-weight: normal;
+  letter-spacing: normal;
+}
+.artwork_detail .detail_price .price_list .price2 {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 25px;
+  letter-spacing: -0.5px;
+  text-align: left;
+  color: #222222;
+}
+.artwork_detail .detail_price .price_info {
+  margin-top: 30px;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 20px;
+  color: #444444;
+  font-weight: 300;
+}
+.artwork_detail .detail_price .price_info .date {
+  color: #666666;
+  font-weight: 300;
+}
+.artwork_detail .detail_price .price_info .place {
+  font-weight: 700;
+}
+.artwork_detail .detail_info .d_img_wrap {
+  width: 100px;
+  float: left;
+}
+.artwork_detail .detail_info .d_img_wrap img {
+  display: block;
+  margin: 0 auto;
+}
+.artwork_detail .detail_info .d_img_wrap img.d_main_img {
+  max-width: 100px;
+  max-height: 110px;
+}
+.artwork_detail .detail_info .d_img_wrap img.d_sub_img {
+  width: 67px;
+  height: 46px;
+  margin-top: 20px;
+}
+.artwork_detail .detail_info .detail_define {
+  padding-left: 100px;
+  width: 100%;
+  margin-left: -100px;
+  float: left;
+  box-sizing: border-box;
+}
+.artwork_detail .detail_info .detail_define dt, .artwork_detail .detail_info .detail_define dd {
+  padding-left: 36px;
+}
+.artwork_detail .detail_info .detail_define .artist {
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 20px;
+  color: #444;
+  margin-bottom: 10px;
+}
+.artwork_detail .detail_info .detail_define .artist_ex {
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 12px;
+  color: #a7afb7;
+  margin-bottom: 20px;
+}
+.artwork_detail .detail_info .detail_define .art_name {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  color: #222222;
+  margin-bottom: 8px;
+}
+.artwork_detail .detail_txt {
+  height: 800px;
+  width: 100%;
+  padding-top: 81px;
+  box-sizing: border-box;
+  background-color: #eff3f7;
+}
+.artwork_detail .detail_txt dl dt {
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 28px;
+  text-align: left;
+  color: #222;
+}
+.artwork_detail .detail_txt dl dd {
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 300;
+  text-align: left;
+  color: #484848;
+  margin-bottom: 46px;
+}
+.artwork_detail .detail_txt dl dd p {
+  margin-bottom: 20px;
+}
+
+.comparables_page {
+  clear: both;
+}
+.comparables_page .wrap {
+  min-height: 100%;
+  margin: 0 auto;
+  margin-bottom: -80px;
+}
+.comparables_page .footarea {
+  height: 80px;
+}
+.comparables_page #footer {
+  height: 80px;
+  line-height: 80px;
+  position: relative;
+  background-color: #eef3f6;
+}
+.comparables_page #footer img {
+  width: 128px;
+  height: 17px;
+  margin: 0px 0px 0px 40px;
+}
+.comparables_page #footer p {
+  font-family: "Roboto";
+  font-size: 12px;
+  display: inline-block;
+  line-height: 80px;
+  margin-left: 13px;
+  color: #acaeb5;
+}
+.comparables_page #footer ul {
+  position: absolute;
+  top: 0px;
+  right: 40px;
+}
+.comparables_page #footer ul li {
+  float: left;
+  font-family: "Roboto";
+  font-size: 14px;
+  color: #acaeb5;
+}
+.comparables_page #footer ul li:first-child:after {
+  content: '|';
+  padding: 0px 10px;
+}
+.comparables_page #footer ul li a {
+  display: inline-block;
+  color: inherit;
+  font-family: inherit;
+}
+.comparables_page .search_main {
+  height: 212px;
+}
+.comparables_page .search_main p {
+  padding-left: 77px;
+  margin-bottom: 19px;
+}
+.comparables_page .search_main h2 {
+  padding-left: 77px;
+}
+.comparables_page .fixed_area {
+  width: 100%;
+  height: 172px;
+  z-index: 9999;
+  background-color: #eff3f6;
+}
+.comparables_page .fixed_area .c_m_txt,
+.comparables_page .fixed_area .c_f_txt {
+  width: auto !important;
+  font-size: 18px !important;
+  font-weight: 300;
+  letter-spacing: center;
+  line-height: 100px;
+  text-align: center;
+  color: #222222;
+}
+.comparables_page .fixed_area .title_artist {
+  font-size: 14px !important;
+}
+.comparables_page .fixed_area .title_artist_info {
+  font-size: 14px !important;
+  line-height: 1.14;
+  text-align: left;
+  color: #9fabb3;
+}
+.comparables_page .fixed_area .info_art_price_2 {
+  margin-top: 23px !important;
+}
+.comparables_page table .c_artwork {
+  width: 362px !important;
+  padding-left: 50px;
+  width: 529px;
+  box-sizing: border-box;
+  padding-top: 37px !important;
+  padding-bottom: 40px;
+}
+.comparables_page table .c_artwork .img_area {
+  float: left;
+  width: 110px;
+  height: 87px;
+}
+.comparables_page table .c_artwork .img_area img {
+  max-height: 150px;
+  max-width: 110px;
+  display: block;
+  margin: 0 auto;
+}
+.comparables_page table .c_artwork .txt_area {
+  padding-left: 110px;
+  width: 100%;
+  margin-left: -110px;
+  float: left;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.comparables_page table .c_artwork .txt_area .a_t_w {
+  margin: 0 auto;
+}
+.comparables_page table .c_artwork .txt_area p {
+  padding-left: 20px;
+}
+.comparables_page table .c_artwork .txt_area .title_artist {
+  font-weight: 500;
+}
+.comparables_page table .c_artwork .txt_area .title_art {
+  /* text-transform: uppercase; */
+  box-sizing: border-box;
+  font-family: inherit;
+  line-height: 20px;
+  font-weight: bold;
+  text-align: left;
+  color: #222222;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+  display: block;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  margin-top: 16px;
+  text-transform: uppercase;
+}
+.comparables_page table .c_artwork .txt_area .info_art {
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: left;
+  color: #222222;
+  width: 380px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+  display: block;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  line-height: 20px;
+}
+.comparables_page table .c_artwork .img_area {
+  width: 90px !important;
+  height: 90px !important;
+}
+.comparables_page table .c_artwork .title_art {
+  font-size: 16px;
+  line-height: 20px !important;
+  font-weight: 500 !important;
+  text-align: left !important;
+  text-transform: uppercase;
+  color: #444444 !important;
+  margin-top: 14px !important;
+}
+.comparables_page table .c_artwork .title_artist {
+  font-size: 12px;
+  text-align: left;
+  font-weight: 500;
+  color: #444444 !important;
+}
+.comparables_page table .c_medium {
+  width: 123px;
+}
+.comparables_page table .c_size {
+  width: 123px;
+}
+.comparables_page table .c_year {
+  width: 123px;
+}
+.comparables_page table .c_price {
+  vertical-align: top;
+  width: 372px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  /* padding-right: 50px; */
+  padding-left: 15px;
+  padding-left: 15px;
+  width: 296px;
+  padding: 37px 0px 0px 54px !important;
+}
+.comparables_page table .c_price .info_art_price_1 {
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: left;
+  color: #666666;
+  font-weight: 300;
+}
+.comparables_page table .c_price .info_art_price_1_1 {
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: -0.4px;
+  text-align: left;
+  font-weight: 300;
+  color: #666666;
+}
+.comparables_page table .c_price .info_art_price_2_1 {
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.29;
+  letter-spacing: -0.4px;
+  text-align: left;
+  color: #666;
+}
+.comparables_page table .c_price .info_art_price_2 {
+  margin-top: 12px;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: -0.5px;
+  text-align: left;
+  color: #222222;
+}
+.comparables_page table .c_price .info_art_price_2 span {
+  display: inline-block;
+  letter-spacing: normal;
+  margin-left: 8px;
+  font-family: "Roboto";
+  font-size: 11px;
+  font-weight: 500;
+  text-align: left;
+  color: #aaaaaa;
+}
+.comparables_page table .c_saleinfo {
+  vertical-align: top;
+  width: 161px;
+  padding-top: 65px !important;
+  font-weight: 400;
+}
+.comparables_page table .c_saleinfo p {
+  font-size: 13px;
+  text-align: left;
+  color: #888888;
+}
+.comparables_page table .c_saleinfo p b {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  color: #222222;
+  margin-bottom: 7px;
+}
+.comparables_page table tr {
+  padding-bottom: 40px !important;
+  border-bottom: solid 1px #eef4f6;
+}
+.comparables_page table tr .c_m_txt {
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 300;
+  color: #888888;
+  text-align: center;
+  width: 35px;
+  line-height: 17px;
+  margin: 0 auto;
+}
+.comparables_page table tr .c_figure {
+  vertical-align: middle;
+}
+.comparables_page table tr .c_figure img {
+  display: block;
+  width: 25px;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+.comparables_page table tr .c_f_txt {
+  font-family: "Roboto";
+  font-size: 12px;
+  font-weight: 300;
+  color: #888888;
+  text-align: center;
+  line-height: 18px;
+}
+.comparables_page table tr .c_f_txt span {
+  display: block;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  color: #222;
+}
+.comparables_page table tr th {
+  width: 58px;
+  height: 62px;
+  line-height: 62px;
+  font-family: "Roboto";
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #9fabb3;
+  text-transform: uppercase;
+}
+
+#header {
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  box-sizing: border-box;
+  background-color: #232629;
+  z-index: 300;
+}
+#header a {
+  width: 240px;
+  height: 60px;
+  display: block;
+}
+#header a .header_logo {
+  position: absolute;
+  top: 30px;
+  left: 50px;
+}
+#header .go_back {
+  width: 13px;
+  height: 23px;
+  background: url("../images/m_header_arrow.png") no-repeat;
+  text-indent: -9999px;
+  border: solid 0px white;
+}
+#header .go_search {
+  width: 22px;
+  height: 23px;
+  background: url("../images/m_search_icon.png") no-repeat;
+  text-indent: -9999px;
+  border: solid 0px white;
+}
+#header .header_default a {
+  width: 240px;
+  height: 60px;
+}
+#header .header_default a .header_logo {
+  top: 30px;
+  left: 50px;
+}
+#header .header_default a .go_back {
+  position: absolute;
+  top: 18px;
+  left: 30px;
+}
+#header .header_default a .go_search {
+  position: absolute;
+  top: 17px;
+  right: 29px;
+}
+#header .header_search {
+  display: none;
+}
+
+.detail_header {
+  height: 83px !important;
+}
+.detail_header .header_default .logo {
+  float: left;
+}
+.detail_header .header_default .header_step {
+  position: absolute;
+  right: 370px;
+  top: 33px;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  color: #77818a;
+  text-transform: uppercase;
+  text-align: left;
+}
+.detail_header .header_default .header_step li {
+  float: left;
+}
+.detail_header .header_default .header_step li.search_name {
+  color: #ffffff;
+}
+.detail_header .header_default .header_step li:first-child:after {
+  content: '>';
+  padding: 0px 10px;
+}
+.detail_header .header_default form {
+  position: absolute;
+  right: 40px;
+  top: 20px;
+}
+.detail_header .header_default form input[type="text"] {
+  width: 300px;
+  height: 40px;
+  border-radius: 2px;
+  padding: 13px 10px 13px 10px;
+  box-sizing: border-box;
+  border: solid 1px #77818a;
+  background-color: #232629;
+  color: #fff;
+}
+.detail_header .header_default form input[type="submit"] {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  background: url("../images/m_search_icon.png") no-repeat;
+  background-size: cover;
+  width: 17px;
+  height: 17px;
+  text-indent: -9999px;
+}
+
+#contents {
+  display: block;
+  box-sizing: border-box;
+  /* start - main*/
+  /* main end */
+  /* forget password page stop */
+}
+#contents .main_txtarea {
+  color: #7e8a95;
+  font-family: inherit;
+  font-size: 13px;
+  line-height: 17px;
+  width: 100%;
+  font-weight: 400;
+  margin-top: 125px;
+  word-break: break-all;
+}
+#contents .main_txtarea p {
+  display: block;
+  margin-bottom: 23px;
+}
+#contents .artist_search {
+  min-height: 157px;
+}
+#contents .art_ex {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  text-align: left;
+  color: #222222;
+  width: 220px;
+  margin-bottom: 13px;
+}
+
+/* # content end */
+/* forget password page start*/
+.forget_pass #contents h2 {
+  font-family: "Roboto";
+  font-size: 24px;
+  line-height: 1.25;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 10px !important;
+}
+.forget_pass #contents h2 .err_status {
+  font-family: "Roboto";
+  font-size: 70px;
+  font-weight: 100;
+  display: block;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.43;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ea7963;
+  margin-bottom: 40px;
+}
+.forget_pass #contents p {
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 15px;
+  color: #93a1ad;
+  margin: 0 auto;
+  display: block;
+  font-weight: 300;
+  line-height: 1.47;
+  word-break: break-all;
+  margin-bottom: 24px;
+}
+.forget_pass #contents .p_email {
+  text-decoration: underline;
+}
+.forget_pass #contents img {
+  margin: 0 auto;
+  width: 77px;
+  height: 50px;
+  display: block;
+  margin-bottom: 39px;
+}
+.forget_pass #contents .forget_email {
+  width: 100%;
+  height: 56px;
+  font-size: 20px;
+  font-family: "Roboto";
+  font-weight: 100;
+  color: #fff;
+  border-bottom: solid 1px #454d54;
+  background-color: transparent;
+  padding-right: 30px;
+  box-sizing: border-box;
+}
+.forget_pass #contents .forget_email ::placeholder {
+  color: #454d54;
+}
+.forget_pass #contents .forget_email:active, .forget_pass #contents .forget_email:hover, .forget_pass #contents .forget_email:focus {
+  color: #fff;
+  border-bottom: solid 1px #ffffff !important;
+}
+.forget_pass #contents .submit {
+  display: block;
+  text-decoration: none;
+  width: 100%;
+  height: 64px;
+  line-height: 64px;
+  text-align: center;
+  border: solid 1px #454d54;
+  font-family: "Roboto";
+  color: #ffffff;
+  margin-top: 30px;
+}
+.forget_pass #contents .done {
+  display: block;
+  text-decoration: none;
+  width: 100%;
+  height: 64px;
+  line-height: 64px;
+  text-align: center;
+  border: solid 1px #454d54;
+  font-family: "Roboto";
+  color: #ffffff;
+  width: 125px;
+  height: 44px;
+  line-height: 44px;
+  color: #a3b3c2;
+  margin: 0 auto;
+  margin-top: 30px;
+  font-size: 15px;
+}
+.forget_pass #contents .long_done {
+  display: block;
+  text-decoration: none;
+  width: 100%;
+  height: 64px;
+  line-height: 64px;
+  text-align: center;
+  border: solid 1px #454d54;
+  font-family: "Roboto";
+  color: #ffffff;
+  width: 162px;
+  height: 44px;
+  line-height: 44px;
+  color: #a3b3c2;
+  margin: 0 auto;
+  margin-top: 30px;
+  font-size: 15px;
+}
+.forget_pass #contents .save_password {
+  display: block;
+  text-decoration: none;
+  width: 100%;
+  height: 64px;
+  line-height: 64px;
+  text-align: center;
+  border: solid 1px #454d54;
+  font-family: "Roboto";
+  color: #ffffff;
+  border: solid 1px #454d54;
+  background-color: #ffffff;
+  color: #000;
+  margin-bottom: 28px;
+  font-weight: 700;
+}
+.forget_pass #contents .back_sign {
+  display: block;
+  width: 93px;
+  margin: 0 auto;
+  font-family: "Roboto";
+  font-size: 14px;
+  text-align: center;
+  color: #ffffff;
+  border-bottom: solid 1px #fff;
+  font-weight: 300;
+}
+.forget_pass #contents .wrap_set_pass {
+  margin-top: 50px;
+  margin-bottom: 29px;
+}
+.forget_pass #contents .input_set_pass {
+  /*set_password.html*/
+  margin-top: 30px;
+}
+.forget_pass #contents .input_set_pass .set_pass {
+  width: 100%;
+  height: 56px;
+  font-size: 20px;
+  font-family: "Roboto";
+  font-weight: 100;
+  color: #fff;
+  border-bottom: solid 1px #454d54;
+  background-color: transparent;
+  padding-right: 30px;
+  box-sizing: border-box;
+  height: 50px !important;
+}
+.forget_pass #contents .input_set_pass .set_pass ::placeholder {
+  color: #454d54;
+}
+.forget_pass #contents .input_set_pass .set_pass:active, .forget_pass #contents .input_set_pass .set_pass:hover, .forget_pass #contents .input_set_pass .set_pass:focus {
+  color: #fff;
+  border-bottom: solid 1px #ffffff !important;
+}
+.forget_pass #contents .input_set_pass p {
+  font-size: 12px;
+  color: #4d565e;
+  margin: 0 !important;
+}
+.forget_pass #contents .input_err .forget_email {
+  border-bottom: solid 1px #ff836a !important;
+  margin: 0px;
+  padding: 0px;
+}
+.forget_pass #contents .input_err .forget_email:active, .forget_pass #contents .input_err .forget_email:hover, .forget_pass #contents .input_err .forget_email:focus {
+  border-bottom: solid 1px #ff836a !important;
+}
+.forget_pass #contents .input_err .set_pass {
+  border-bottom: solid 1px #ff836a !important;
+  margin: 0px;
+  padding: 0px;
+}
+.forget_pass #contents .input_err .set_pass:active, .forget_pass #contents .input_err .set_pass:hover, .forget_pass #contents .input_err .set_pass:focus {
+  border-bottom: solid 1px #ff836a !important;
+}
+.forget_pass #contents .input_err .alert_err {
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.21;
+  text-align: left;
+  color: #ff836a;
+  margin-top: 7px;
+  display: block;
+}
+.forget_pass #contents .alert_err {
+  display: none;
+}
+
+/* autocomplete start*/
+/*the container must be positioned relative:*/
+.autocomplete {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+}
+
+.autocomplete-items {
+  height: 243px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: absolute;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+.autocomplete-items div {
+  padding: 0px 5.56% 0px 5.56%;
+  height: 56px;
+  box-sizing: border-box;
+  line-height: 56px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 300;
+  font-size: 14px;
+  background-color: #fff;
+  background-color: #32363a;
+}
+
+/*the container must be positioned relative:*/
+.custom-select {
+  position: relative;
+  font-family: Arial;
+}
+
+.custom-select select {
+  display: none;
+  /*hide original SELECT element:*/
+}
+
+.select-selected {
+  background-color: none;
+}
+
+.select-selected {
+  font-size: 14px;
+  text-align: left;
+  color: #666;
+  font-weight: 500;
+  font-family: inherit;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  border-bottom: 1px solid #666;
+  border-radius: 0px;
+}
+
+select::-ms-expand {
+  /* for IE 11 */
+  display: none;
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  background-image: url("../images/pc/f_toggle_down.png");
+  background-size: cover;
+  top: 2px;
+  right: 0px;
+  width: 12px;
+  height: 7px;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  position: absolute;
+  content: "";
+  background-image: url("../images/pc/f_toggle_up.png");
+  background-size: cover;
+  top: 2px;
+  right: 0px;
+  width: 12px;
+  height: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div {
+  width: 192px;
+  height: 34px;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 0px 14px;
+  border-top: 1px solid #d9e0e7;
+  cursor: pointer;
+  user-select: none;
+  letter-spacing: normal;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 34px;
+  text-align: left;
+  color: #838383;
+}
+.select-items div.first-child {
+  border-top: none;
+}
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: #fff;
+  top: 125%;
+  left: -16px;
+  z-index: 99;
+  border: 1px solid #d9e0e7;
+}
+.select-items.first-child {
+  border-top: none;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: #eff3f6;
+}
+
+.bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+  display: block;
+  opacity: 0.5;
+  z-index: 90;
+}
+
+.bg-login {
+  background: transparent url("../images/bg_login_1920x920.png") no-repeat top center/1920px 920px;
+}
+
+/*# sourceMappingURL=pc.css.map */

@@ -31,7 +31,7 @@ var ComponentsSelect2 = function() {
             if (repo.loading) return repo.text;
 
             var markup = "<div class='select2-result-repository clearfix'>" +
-                "<div class='select2-result-repository__avatar'><img src='" + repo.owner.avatar_url + "' /></div>" +
+                "<div class='select2-result-repository__avatar'><images src='" + repo.owner.avatar_url + "' /></div>" +
                 "<div class='select2-result-repository__meta'>" +
                 "<div class='select2-result-repository__title'>" + repo.full_name + "</div>";
 

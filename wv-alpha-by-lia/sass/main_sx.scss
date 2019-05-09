@@ -1,0 +1,175 @@
+@import 'common';
+
+//main
+html, body {
+  height: 100%;
+}
+
+body {
+  padding: 0 0 0 0 !important;
+  margin: 0 0 0 0 !important;
+  background-color: $bg-main;
+}
+
+.main-container {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin: 0 0 0 0;
+  padding: 10px 0 0 0;
+  .logo-small {
+    display: block;
+    margin: 0 auto;
+    width: 40px;
+    height: 40px;
+    background: transparent url('../images/logo_small_black_sx.png') no-repeat left top / auto;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+
+  }
+  .inner-container {
+    margin: auto 0;
+    width: 100%;
+    z-index: $z-index-2;
+    text-align: center;
+
+    .text-header {
+      width: 100%;
+      margin-top: 50px;
+      padding: 0 4px;
+      @include text-style(text-header-sx);
+      .quote {
+        margin-left: 0;
+        @include text-style(text-header-quote-sx);
+      }
+    }
+    .text-subtitle {
+      margin: 23px 9px 0 0px;
+      @include text-style(text-subtitle-sx);
+      .strong {
+        @include text-style(text-subtitle-strong-sx);
+      }
+    }
+    .form-artist-search {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      padding-top:380px;
+      left:0;
+      top:0;
+      .form-group {
+        position: relative;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        border: 0;
+        height: 75px;
+        padding-right: 82px;
+        border-bottom: 1px solid $border-search;
+        .input {
+          /* The animation code */
+          @keyframes bar-search-main {
+            10%   {border-left-color: $bg-main;}
+            30% {border-left-color: $bar-input-cursor;}
+            100%   {border-left-color: $bg-main;}
+          }
+          z-index: $z-index-max;
+          margin:8px 0 0 12px;
+          border: 0;
+          border-left: 2px solid $bg-main;
+          animation-name: bar-search-main;
+          animation-duration: 1s;
+          animation-iteration-count: infinite;
+          width: 100%;
+          height: 56px;
+          -webkit-border-radius: 0;
+          -moz-border-radius: 0;
+          border-radius: 0;
+          background-color: transparent;
+          padding: 0 0 0 0;
+          text-indent: 14px;
+          &:focus {
+            animation: none;
+          }
+          @include placeholder-color($text-search-main-placeholder);
+          @include text-style(text-search-main-sx);
+        }
+        .btn-search {
+          position: absolute;
+          top: 0;
+          right: 0;
+          display: inline-block;
+          cursor: pointer;
+          width: 60px;
+          height: 60px;
+          border: 0;
+          overflow: hidden;
+          text-indent: 100px;
+          background: transparent url(../images/icon_search.png) no-repeat 12px 22px;
+          background-size: 28px;
+        }
+      }
+    }
+    .fade {
+      background-color: rgba(0,0,0,0.5);
+    }
+    .recommend-keyword {
+      width: 100%;
+      margin-top: 14px;
+      a {
+        float: left;
+        display: inline-block;
+        position: relative;
+        margin-right: 1.8rem;
+        margin-top: 0.35rem;
+        white-space: nowrap;
+        @include text-style(link-searchable-sx);
+        @include link-color($link-keyword);
+        &::after {
+          content: '';
+          display: block;
+          border-radius: 50%;
+          position: absolute;
+          right: -1rem;
+          top: 0.5rem;
+          width: 0.25rem;
+          height: 0.25rem;
+          background-color: $icon-dot;
+        }
+        &:last-child {
+          &::after {
+            content: '...';
+            position: absolute;
+            top: 0;
+            right: -9px;
+            width: 0;
+            height: 0;
+            @include text-style(link-searchable-sx);
+          }
+        }
+      }
+    }
+  }
+}
+
+.main-container-fade {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index: $z-index-5;
+}
+
+
+.feedback {
+  position: fixed;
+  right: 48px;
+  bottom: 90px;
+  width: 79px;
+  height: 80px;
+  padding: 6px 0 0 18px;
+  text-align: left;
+  z-index: $z-index-max;
+  @include text-style(btn-primary-sx);
+  @include box-style(btn-primary-sx);
+}

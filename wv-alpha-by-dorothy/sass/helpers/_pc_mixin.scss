@@ -1,0 +1,144 @@
+@mixin select_ui($s_font_size, $s_font_color, $s_font_weight){
+    font-size: $s_font_size;
+    text-align: left;
+    color: $s_font_color;
+    font-weight: $s_font_weight;
+    font-family: inherit;
+    // background: url(../images/pc/pc_more.png) no-repeat 95% 50%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    border-bottom: 1px solid #666;
+    border-radius: 0px;
+}
+
+@mixin set_footer($footer_height){
+    clear: both;
+    .wrap{
+        min-height: 100%;
+        margin: 0 auto;
+        margin-bottom:-$footer_height;
+    }
+    
+    .footarea{height: $footer_height;}
+}
+
+@mixin lot_detail($ellip){
+    padding-left: 50px;
+    width:529px;
+    box-sizing: border-box;
+    .img_area{
+        float: left;
+        width: 110px;
+        height: 87px;   
+        img{
+            max-height: 150px;
+            max-width:110px;
+            display: block;
+            margin:0 auto;
+        }
+    }
+    
+    .txt_area{
+        padding-left: 110px;
+        width: 100%;
+        margin-left: -110px;
+        float: left;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        // position: relative;
+        .a_t_w{
+            // position: absolute;
+            // z-index: 0;
+            // background-color:hotpink;
+            // width: 100%;
+            // height:auto;
+            margin: 0 auto;
+        }
+        p{
+            padding-left:20px;
+        }
+        .title_artist{
+            font-weight: 500;       
+        }
+        .title_art {
+            /* text-transform: uppercase; */
+            box-sizing: border-box;
+            font-family: inherit;
+            line-height: 20px;
+            font-weight: bold;
+            text-align: left;
+            color: #222222;
+            width: 100%;
+            @include ellipsis($ellip);
+            margin-top: 16px;
+            text-transform: uppercase;
+        }
+        .info_art {
+            font-family: inherit;
+            font-size: 14px;
+            font-weight: 300;
+            text-align: left;
+            color: #222222;
+            width: 380px;
+            @include ellipsis($ellip);
+            line-height: 20px;
+        }
+    }
+}
+@mixin info_art_price(){
+    width: 372px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    /* padding-right: 50px; */
+    padding-left: 15px;
+    padding-left: 15px;
+    .info_art_price_1 {
+        font-family: inherit;
+        font-size: 18px;
+        line-height: 18px;
+        text-align: left;
+        color: #666666;
+        font-weight: 300;
+    }
+    .info_art_price_1_1{
+        font-family: inherit;
+        font-size: 14px;
+        line-height: 1.43;
+        letter-spacing: -0.4px;
+        text-align: left;
+        font-weight:300;
+        color: #666666;
+    }
+    .info_art_price_2_1{
+        font-family: inherit;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 1.29;
+        letter-spacing: -0.4px;
+        text-align: left;
+        color: #666;
+    }
+    .info_art_price_2 {
+        margin-top: 12px;
+        font-family: inherit;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 18px;
+        letter-spacing: -0.5px;
+        text-align: left;
+        color: #222222;
+        span {
+            display: inline-block;
+            letter-spacing: normal;
+            margin-left:8px;
+            font-family: $font-family-roboto;
+            font-size: 11px;
+            font-weight: 500;
+            text-align: left;
+            color: #aaaaaa;
+        }
+    }
+                            
+}

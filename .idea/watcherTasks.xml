@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ProjectTasksOptions">
     <TaskOptions isEnabled="true">
-      <option name="arguments" value="--no-cache --update $FileName$:$ProjectFileDir$\ui-template\assets\layouts\layout\css\$FileNameWithoutExtension$.css --style expanded --sourcemap" />
-      <option name="checkSyntaxErrors" value="false" />
+      <option name="arguments" value="--no-cache --update $FileName$:$ProjectFileDir$\wv-alpha\css\$FileNameWithoutExtension$.css --style expanded --sourcemap" />
+      <option name="checkSyntaxErrors" value="true" />
       <option name="description" />
-      <option name="exitCodeBehavior" value="ERROR" />
+      <option name="exitCodeBehavior" value="NEVER" />
       <option name="fileExtension" value="scss" />
       <option name="immediateSync" value="true" />
       <option name="name" value="SCSS" />

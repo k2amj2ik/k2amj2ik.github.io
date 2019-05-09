@@ -1,0 +1,72 @@
+@import 'common_sx';
+
+.artists {
+  padding: 10px 10px 100px 10px;
+  .text-header {
+    margin: 10px 0 0 0;
+    @include text-style(text-artists-header);
+    position: relative;
+    .keyword {
+      @include text-style(text-artists-header-keyword);
+      a {
+        @include link-color($link-keyword);
+      }
+    }
+  }
+  .result-count {
+    margin: 38px 0 0 0;
+    @include text-style(text-artist-result-count);
+  }
+  .submenu {
+    margin: 12px 0 0 0;
+    border-top: 3px solid $line-default;
+    border-bottom: 1px solid $line-default;
+    .btn {
+      margin-top: -3px;
+      border: 0;
+      display: inline-block;
+      padding: 17px 10px 12px 10px;
+      background-color: transparent;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      border-radius: 0;
+      @include text-style(text-submenu);
+      @include link-color($link-fairy);
+    }
+    .active {
+      border-top: 3px solid $line-primary;
+      @include text-style(text-submenu-active);
+      @include link-color($link-primary);
+    }
+  }
+  .results {
+    margin: 26px 0 0 0;
+    li {
+      display: inline-block;
+      min-width: 49%;
+      margin: 0 0 21px 0;
+      @include text-style(text-artist-result-name);
+      a {
+        @include link-color($link-default);
+        .description {
+          color: $link-fairy;
+        }
+      }
+    }
+    .active {
+      a {
+        @include link-color($link-primary);
+        .description {
+          color: $link-primary;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
