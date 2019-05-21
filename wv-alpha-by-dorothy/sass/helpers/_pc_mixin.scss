@@ -1,10 +1,19 @@
+/*
+    20180404 dorothy 해당 파일은 pc 에서 사용 가능한 mixin을 모아놓았습니다.
+    pc페이지의 공통 ui를 만듭니다.
+        -select_ui : selectbox를 구성
+        -set_footer : 모든 페이지에서 footer를 구성
+        -lot_detail : lot의 글씨 및 레이아웃
+        -info_art_price : 글씨 및 레이아웃
+*/
+
 @mixin select_ui($s_font_size, $s_font_color, $s_font_weight){
     font-size: $s_font_size;
     text-align: left;
     color: $s_font_color;
     font-weight: $s_font_weight;
     font-family: inherit;
-    // background: url(../images/pc/pc_more.png) no-repeat 95% 50%;
+    // background: url(../img/pc/pc_more.png) no-repeat 95% 50%;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -133,7 +142,7 @@
             display: inline-block;
             letter-spacing: normal;
             margin-left:8px;
-            font-family: $font-family-roboto;
+            font-family: $default_font;
             font-size: 11px;
             font-weight: 500;
             text-align: left;

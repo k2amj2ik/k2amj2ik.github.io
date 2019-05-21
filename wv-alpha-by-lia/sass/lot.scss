@@ -249,7 +249,7 @@
             border-radius: 2px;
             color: $text-btn-primary;
             @include text-style(lot-related-performance);
-            &::before {
+            &:before {
               position: absolute;
               left: -34px;
               top: -4px;

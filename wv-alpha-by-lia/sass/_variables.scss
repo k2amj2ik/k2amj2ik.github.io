@@ -8,51 +8,61 @@ $z-index-5: 60;
 $z-index-max: 90; //max
 
 //font-family
-$font-family-walbaum: "Walbaum";
-$font-family-lato: "Lato";
-$font-family-ptserif: "PT Serif";
-$font-family-opensans: "Open Sans";
+$font-family-roboto: "Roboto";
 
 //color-text
 $text-btn-primary: #fff;
+$text-black: #000;
 $text-header: #fff;
-$text-header-quote: #8a8a8a;
 $text-subtitle: #808080;
-$text-description: #707070;
+$text-description: #888888;
 $text-heavy: #181818;
-$text-primary: #a8835a;
-$text-primary2: #c19a4f;
-$text-default: #272727;
-$text-fairy: #9a9a9a;
-$text-fairy2: #898989;
-$text-search-main-placeholder: #676767;
+$text-default-bgdark: #b9c556;
+$text-default: #222222;
+$text-default2: #c19a4f;
+$text-fairy: #acaeb5;
+$text-veryfairy: #dadfe1;
 $text-search-main: #fff;
 $text-search-top-placeholder: #9a9a9a;
-$text-search-top: #4e4e4e;
-$text-footer: #8a8a8a;
+$text-search-top: #fff;
+$text-deepdark: #444444;
+$text-darkgray: #666666;
+$text-gray: #8a8a8a;
+$text-lightgray: #999999;
 $text-artist-header: #272727;
+$text-input-bgdark: #fff;
+$text-input-placeholder-bgdark: #454d54;
+$text-input-placeholder-light-bgdark: #888888;
+$text-white: #fff;
+$text-default-bgdark: #7e8a95;
+$text-default-placeholder: #bbbbbb;
 
 
 //color-link
 $link-keyword: #707070;
-$link-navi: #efefef;
-$link-navi-here: #d6af63;
+$link-navi: #77818a;
+$link-navi-here: #fff;
 $link-weak: #898989;
-$link-primary: #a8835a;
+$link-primary: #222222;
+$link-primary-bgdark: #7e8a95;
 $link-default: #272727;
 $link-fairy: #9a9a9a;
 
 
 //color-bg
+$bg-dark: #232629;
+$bg-darkgray: #a7afb7;
+$bg-gray: #32363a;
+$bg-gray-hover: #2f3236;
 $bg-default: #fff;
-$bg-fairy: #f7f7f7;
-$bg-main-ori: #ebecec;
-$bg-main: #090909;
-$bg-btn-primary: #c69c6d;
+$bg-lightgray: #dde4e8;
+$bg-light: #eff3f6;
+$bg-fairy: #f7fafc;
+$bg-white: #fff;
+$bg-black: #000;
+$bg-btn-primary: #b9c556;
 $bg-btn-normal: #e7e7e7;
-$bg-navigation: #202020;
 $bg-navi-input: #ffffff;
-$bg-footer: #202020;
 $bg-table-tr: #f7f7f7;
 $bg-panel: #dddddd;
 $bg-icon-good: #9bbe46;
@@ -61,11 +71,19 @@ $bg-icon-bad: #f25544;
 
 
 //color-border
-$border-search: #a18246;;
+$border-input-bottom: #454d54;
+$border-input-bottom-focus: #fff;
+$border-search: #454d54;
 $border-footer: #4d4d4d;
 $border-artist-header: #707070;
 $border-normal: #dcdcdc;
-$border-table: #e5e5e5;
+$border-table: #eef4f6;
+$border-checkbox: #7e8a95;
+$border-btn-primary: #c1ccd6;
+$border-btn-minor: #a7afb7;
+$border-filter: #77818a;
+
+
 
 //color-bar
 $bar-input-cursor: #fff;
@@ -79,6 +97,8 @@ $line-primary: #c69c6d;
 $line-default: #e5e5e5;
 $line-normal: #dddddd;
 $line-black: #000000;
+$line-gray: #d6e1e7;
+$line-lightgray: #eff4f7;
 
 //style-box
 $box-shadow-primary: 0 0 10px rgba($bg-btn-primary, 0.7);
@@ -87,4 +107,4 @@ $box-shadow-side-menu: 0 4px 4px rgba($bg-fairy, 0.7);
 
 //size
 $description-size: 210px;
-
+$width-inner-container : 1184px;

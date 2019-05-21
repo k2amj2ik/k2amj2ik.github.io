@@ -3,39 +3,70 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="We'll do the Research, You Decide. Reveal the Market Price. Wiveel.">
-    <meta name="author" content="Wiveel">
+    <meta name="description" content="We'll do the Research, You Decide. Reveal the Market Price. BLUE INDEX.">
+    <meta name="author" content="BLUE INDEX">
     <link rel="icon" href="../images/favicon.png">
-    <title>WIVEEL-BETA</title>
+    <title>BLUE INDEX - MAIN</title>
     <link rel="stylesheet" media="screen and (min-width: 1020px)" href="../css/main.css">
     <link rel="stylesheet" media="screen and (max-width: 1019.9px)" href="../css/main_sx.css">
 </head>
 
-<body>
-<div class="main-container">
-    <div class="logo-small"></div>
+<body class="bgdark">
+<div class="container-main">
+    <header>
+        <a href="login.html" class="logo"></a>
+        <div class="sites">
+            <a href="http://liveauctionart.com" target="_blank" class="site">LIVE AUCTION ART</a>
+            <a href="http://inartpress.com" target="_blank" class="site">IN ART PRESS</a>
+            <a href="http://company.blueindex.com" target="_blank" class="site">ABOUT US</a>
+        </div>
+    </header>
     <div class="inner-container">
-        <h1 class="text-header">We'll do the Research, You Decide</h1>
-        <p class="text-subtitle">Reveal the Market Price <span class="strong">WIVEEL</span></p>
-        <!--<form class="form-artist-search fade" action="artists.html">-->
+        <!-- active 붙이면 검색어 자동완성 레이어 표시됩니다. -->
         <form class="form-artist-search" action="artists.html">
             <div class="form-group">
-                <input type="text" class="input" placeholder="Search by artist">
+                <input type="text" class="input-bgdark" placeholder="Search by Artist" value="Warhol">
                 <button type="submit" class="btn-search">Search</button>
             </div>
-
+            <div class="layer-search">
+                <a href="artists.html" class="artist">
+                    <span class="name">Andy <span class="matching">Warhol</span></span>
+                    <span class="description">(American, 1928-1987)</span>
+                </a>
+                <a href="artists.html" class="artist">
+                    <span class="name">Andy Andy Andy Andy Andy Andy Andy Andy Andy Andy Andy Andy Andy Andy Andy Andy Andy Andy Andy Andy Andy Andy Andy Andy Andy Andy Andy Andy Andy Andy Andy Andy Andy Hope</span>
+                    <span class="description">(German, B.1963)</span>
+                </a>
+                <a href="artists.html" class="artist">
+                    <span class="name">Andy Warhol</span>
+                    <span class="description">(American, 1928-1987)</span>
+                </a>
+                <a href="artists.html" class="artist">
+                    <span class="name">Andy Hope</span>
+                    <span class="description">(German, B.1963)</span>
+                </a>
+            </div>
+            <div class="description">
+                <p>
+                    Powered by Blue Index Monopoly.
+                </p>
+                <p>
+                    Blue Index Monopoly is a blockchain based platform where industry participants contribute the
+                    data to be validated by other verified professionals.
+                </p>
+                <p>
+                    By proceeding to the website by clicking "Search" button, you acknowledge and indemnify Blue Index, its contributors and validators or anyone else connected with Blue Index in any way whatsoever cannot be responsible for the appearance of any inaccurate or libelous information or for your use of the information contained in or linked from these web pages. The information provided on Blue Index and Blue Index Monopoly is not controlled nor owned by Blue Index and Blue Index Monopoly.
+                </p>
+            </div>
         </form>
-        <!--<div class="recommend-keyword">-->
-            <!--<a href="lots.html">Pablo Picasso</a>-->
-            <!--<a href="lots.html">Andy Warhol</a>-->
-            <!--<a href="lots.html">Rene Magritte</a>-->
-            <!--<a href="lots.html">Claude Monet</a>-->
-            <!--<a href="lots.html">Amedeo Modigliani</a>-->
-            <!--<a href="lots.html">Francis Bacon</a>-->
-        <!--</div>-->
     </div>
+    <footer class="footer-main">
+        <div class="container">
+            <p class="copyright">Copyright &copy 2019 BLUE INDEX</p>
+        </div>
+    </footer>
 </div>
-<!--<button class="feedback">Let's talk.</button>-->
 <!--<div class="bg bg-main"></div>-->
+<!--<div class="bg bg-main-layer"></div>-->
 </body>
 </html>

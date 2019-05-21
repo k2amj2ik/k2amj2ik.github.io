@@ -133,7 +133,7 @@ function focusable( element, isTabIndexNotNaN ) {
 		if ( !element.href || !mapName || map.nodeName.toLowerCase() !== "map" ) {
 			return false;
 		}
-		img = $( "images[usemap=#" + mapName + "]" )[0];
+		img = $( "img[usemap=#" + mapName + "]" )[0];
 		return !!img && visible( img );
 	}
 	return ( /input|select|textarea|button|object/.test( nodeName ) ?
@@ -1237,10 +1237,10 @@ $.extend(Datepicker.prototype, {
 			var buttonText = this._get(inst, 'buttonText');
 			var buttonImage = this._get(inst, 'buttonImage');
 			inst.trigger = $(this._get(inst, 'buttonImageOnly') ?
-				$('<images/>').addClass(this._triggerClass).
+				$('<img/>').addClass(this._triggerClass).
 					attr({ src: buttonImage, alt: buttonText, title: buttonText }) :
 				$('<button type="button"></button>').addClass(this._triggerClass).
-					html(buttonImage == '' ? buttonText : $('<images/>').attr(
+					html(buttonImage == '' ? buttonText : $('<img/>').attr(
 					{ src:buttonImage, alt:buttonText, title:buttonText })));
 			input[isRTL ? 'before' : 'after'](inst.trigger);
 			inst.trigger.click(function() {
@@ -1862,7 +1862,7 @@ $.extend(Datepicker.prototype, {
 			$.datepicker._hideDatepicker();
 	},
 
-	/* Adjust one of the date html-fields. */
+	/* Adjust one of the date sub-fields. */
 	_adjustDate: function(id, offset, period) {
 		var target = $(id);
 		var inst = this._getInst(target[0]);
@@ -2687,7 +2687,7 @@ $.extend(Datepicker.prototype, {
 		return html;
 	},
 
-	/* Adjust one of the date html-fields. */
+	/* Adjust one of the date sub-fields. */
 	_adjustInstDate: function(inst, offset, period) {
 		var year = inst.drawYear + (period == 'Y' ? offset : 0);
 		var month = inst.drawMonth + (period == 'M' ? offset : 0);

@@ -1,25 +1,15 @@
 // text-style
 @mixin text-style($name) {
   @if $name == text-default {
-    font-family: $font-family-lato; //font-family: $font-family-opensans;
+    font-family: $font-family-roboto;
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 0;
     color: $text-default;
     line-height: 16px;
   }
-  @if $name == text-header_ori {
-    font-family: $font-family-lato;
-    font-size: 70px;
-    font-weight: 900;
-    letter-spacing: 0;
-    color: $text-header;
-    text-indent: -0.5rem;
-    margin-left: 0.5rem;
-    line-height: 110%;
-  }
   @if $name == text-header {
-    font-family: $font-family-walbaum;
+    font-family: $font-family-roboto;
     font-size: 62px;
     font-weight: 400;
     letter-spacing: -1.5px;
@@ -27,29 +17,15 @@
     line-height: 110%;
   }
   @if $name == text-header-sx {
-    font-family: $font-family-walbaum;
+    font-family: $font-family-roboto;
     font-size: 34px;
     font-weight: 400;
     letter-spacing: -1.5px;
     color: $text-header;
     line-height: 110%;
   }
-  @if $name == text-header-quote {
-    font-family: $font-family-lato;
-    font-size: 70px;
-    font-weight: 400;
-    letter-spacing: 0;
-    color: $text-header-quote;
-  }
-  @if $name == text-header-quote-sx {
-    font-family: $font-family-lato;
-    font-size: 70px;
-    font-weight: 400;
-    letter-spacing: 0;
-    color: $text-header-quote;
-  }
   @if $name == text-subtitle {
-    font-family: $font-family-lato;
+    font-family: $font-family-roboto;
     font-size: 26px;
     letter-spacing: 0;
     font-weight: 400;
@@ -57,7 +33,7 @@
     line-height: 21px;
   }
   @if $name == text-subtitle-sx {
-    font-family: $font-family-lato;
+    font-family: $font-family-roboto;
     font-size: 18px;
     letter-spacing: 0;
     font-weight: 400;
@@ -65,32 +41,104 @@
     line-height: 21px;
   }
   @if $name == text-subtitle-strong {
-    font-family: $font-family-lato;
+    font-family: $font-family-roboto;
     font-size: 26px;
     letter-spacing: 0;
     font-weight: 600;
-    color: $text-primary;
+    color: $text-default;
     line-height: 21px;
   }
   @if $name == text-subtitle-strong-sx {
-    font-family: $font-family-lato;
+    font-family: $font-family-roboto;
     font-size: 18px;
     letter-spacing: 0;
     font-weight: 600;
-    color: $text-primary;
+    color: $text-default;
     line-height: 21px;
   }
 
-  @if $name == text-search-main {
-    font-family: $font-family-lato;
-    font-size: 50px;
+  @if $name == text-input-bgdark {
+    font-family: $font-family-roboto;
+    font-size: 18px;
+    letter-spacing: 0;
+    font-weight: 300;
+    color: $text-input-bgdark;
+    line-height: 100%;
+  }
+  @if $name == text-input {
+    font-family: $font-family-roboto;
+    font-size: 15px;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: $text-lightgray;
+    line-height: 100%;
+  }
+  @if $name == text-little-small {
+    font-family: $font-family-roboto;
+    font-size: 12px;
+    letter-spacing: 0;
+    font-weight: 500;
+    color: $text-darkgray;
+    line-height: 100%;
+  }
+  @if $name == text-small {
+    font-family: $font-family-roboto;
+    font-size: 10px;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: $text-gray;
+    line-height: 100%;
+  }
+  @if $name == text-input-sx {
+    font-family: $font-family-roboto;
+    font-size: 32px;
     letter-spacing: -1px;
     font-weight: 400;
     color: $text-search-main;
     line-height: 100%;
   }
+  @if $name == text-checkbox {
+    font-family: $font-family-roboto;
+    font-size: 14px;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: $text-default-bgdark;
+    line-height: 100%;
+  }
+  @if $name == text-default-bgdark {
+    font-family: $font-family-roboto;
+    font-size: 13px;
+    letter-spacing: -0.1px;
+    font-weight: 300;
+    color: $text-default-bgdark;
+    line-height: 16px;
+  }
+  @if $name == text-keyword-title {
+    font-family: $font-family-roboto;
+    font-size: 17px;
+    letter-spacing: -0.3px;
+    font-weight: 300;
+    color: $text-default-bgdark;
+    line-height: 100%;
+  }
+  @if $name == text-keyword-big {
+    font-family: $font-family-roboto;
+    font-size: 56px;
+    letter-spacing: 0.1px;
+    font-weight: 700;
+    color: $text-white;
+    line-height: 100%;
+  }
+  @if $name == text-search-main {
+    font-family: $font-family-roboto;
+    font-size: 20px;
+    letter-spacing: -0.1px;
+    font-weight: 300;
+    color: $text-input-bgdark;
+    line-height: 100%;
+  }
   @if $name == text-search-main-sx {
-    font-family: $font-family-lato;
+    font-family: $font-family-roboto;
     font-size: 32px;
     letter-spacing: -1px;
     font-weight: 400;
@@ -98,76 +146,107 @@
     line-height: 100%;
   }
   @if $name == link-searchable {
-    font-family: $font-family-lato;
+    font-family: $font-family-roboto;
     font-size: 18px;
     letter-spacing: 0;
     font-weight: 400;
     color: $text-search-main;
     line-height: 21px;
   }
-@if $name == link-searchable-sx {
-    font-family: $font-family-lato;
+  @if $name == link-searchable-sx {
+    font-family: $font-family-roboto;
     font-size: 18px;
     letter-spacing: 0;
     font-weight: 400;
     color: $text-search-main;
     line-height: 24px;
   }
-  @if $name == btn-primary {
-    font-family: $font-family-lato;
-    letter-spacing: -0.01rem;
-    font-size: 1.25rem;
-    font-weight: 900;
-    line-height: 1.3rem;
+  @if $name == link-primary-bgdark {
+    font-family: $font-family-roboto;
+    font-size: 14px;
+    letter-spacing: -0.1px;
+    font-weight: 400;
+    line-height: 100%;
+  }
+  @if $name == btn-primary-bgdark {
+    font-family: $font-family-roboto;
+    letter-spacing: 0;
+    font-size: 16px;
+    font-weight: 700;
+    color: $text-black;
+    line-height: 100%;
+  }
+  @if $name == btn-secondary-bgdark {
+    font-family: $font-family-roboto;
+    letter-spacing: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: $text-default-bgdark;
+    line-height: 100%;
   }
   @if $name == btn-primary-sx {
-    font-family: $font-family-lato;
+    font-family: $font-family-roboto;
     letter-spacing: 0;
     font-size: 18px;
     font-weight: 600;
     line-height: 20px;
   }
   @if $name == text-top-navi {
-    font-family: $font-family-lato; //font-family: $font-family-opensans;
-    letter-spacing: 0;
-    font-size: 17px;
+    font-family: $font-family-roboto;
+    letter-spacing: -0.3px;
+    font-size: 16px;
     font-weight: 400;
-    line-height: 110%;
+    line-height: 100%;
+  }
+  @if $name == text-top-navi-here {
+    font-family: $font-family-roboto;
+    letter-spacing: 0;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 100%;
   }
   @if $name == text-search-top {
-    font-family: $font-family-ptserif;
+    font-family: $font-family-roboto;
     font-size: 16px;
     letter-spacing: 0;
     font-weight: 400;
     color: $text-search-top;
-    line-height: 1.3rem;
+    line-height: 100%;
   }
   @if $name == text-search-left {
-    font-family: $font-family-lato; //font-family: $font-family-opensans;
+    font-family: $font-family-roboto; //font-family: $font-family-opensans;
     font-size: 14px;
     letter-spacing: 0;
     font-weight: 400;
     color: $text-default;
     line-height: 16px;
   }
-  @if $name == text-footer {
-    font-family: $font-family-lato; //font-family: $font-family-opensans;
-    font-size: 15px;
-    letter-spacing: 0;
+  @if $name == text-footer-main {
+    font-family: $font-family-roboto;
+    font-size: 12px;
+    letter-spacing: -0.3px;
     font-weight: 400;
-    color: $text-footer;
-    line-height: 18px;
+    color: $text-gray;
+    line-height: 100%;
+  }
+  @if $name == text-footer {
+    font-family: $font-family-roboto;
+    font-size: 12px;
+    letter-spacing: -0.3px;
+    font-weight: 400;
+    color: $text-fairy;
+    line-height: 100%;
   }
   @if $name == link-footer {
-    font-family: $font-family-lato; //font-family: $font-family-opensans;
-    font-size: 15px;
-    letter-spacing: 0;
+    font-family: $font-family-roboto;
+    font-size: 14px;
+    letter-spacing: -0.2px;
     font-weight: 400;
-    color: $text-footer;
-    line-height: 16px;
+    color: $text-fairy;
+    line-height: 100%;
   }
   @if $name == text-artists-header {
-    font-family: $font-family-lato;
+    font-family: $font-family-roboto;
     font-size: 28px;
     letter-spacing: -0.5px;
     font-weight: 600;
@@ -175,7 +254,7 @@
     line-height: 110%;
   }
   @if $name == text-artists-header-sx {
-    font-family: $font-family-lato;
+    font-family: $font-family-roboto;
     font-size: 20px;
     letter-spacing: 0;
     font-weight: 600;
@@ -183,7 +262,7 @@
     line-height: 110%;
   }
   @if $name == text-artists-header-keyword {
-    font-family: $font-family-lato;
+    font-family: $font-family-roboto;
     font-size: 28px;
     letter-spacing: 0;
     font-weight: 600;
@@ -192,48 +271,82 @@
     line-height: 18px;
   }
   @if $name == text-artist-result-count {
-    font-family: $font-family-lato;
-    font-size: 16px;
+    font-family: $font-family-roboto;
+    font-size: 14px;
     letter-spacing: 0;
     font-weight: 400;
     color: $text-description;
-    line-height: 18px;
+    line-height: 140%;
   }
   @if $name == text-submenu {
-    font-family: $font-family-lato;
-    font-size: 13px;
-    letter-spacing: 0;
-    font-weight: 600;
-    color: $text-fairy;
+    font-family: $font-family-roboto;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: $text-gray;
     line-height: 18px;
   }
   @if $name == text-submenu-active {
-    font-family: $font-family-lato;
-    font-size: 13px;
-    letter-spacing: 0;
-    font-weight: 600;
-    color: $text-primary;
-    line-height: 18px;
+    font-family: $font-family-roboto;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: $text-default;
+    line-height: 100%;
   }
   @if $name == text-artist-result-name {
-    font-family: $font-family-lato;
-    font-size: 18px;
+    font-family: $font-family-roboto;
+    font-size: 16px;
     letter-spacing: 0;
     font-weight: 400;
-    color: $text-artist-header;
-    line-height: 18px;
+    color: $text-default;
+    line-height: 140%;
+  }
+  @if $name == text-artist-result-name-matching {
+    font-family: $font-family-roboto;
+    font-size: 16px;
+    letter-spacing: 0;
+    font-weight: 700;
+    color: $text-default;
+    line-height: 140%;
+  }
+  @if $name == text-artist-result-description {
+    font-family: $font-family-roboto;
+    font-size: 12px;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: $text-gray;
+    line-height: 140%;
   }
   @if $name == text-filter-title {
-    font-family: $font-family-lato; //font-family: $font-family-opensans;
+    font-family: $font-family-roboto;
+    font-size: 16px;
+    letter-spacing: 0;
+    font-weight: 700;
+    color: $text-default;
+    line-height: 100%;
+    text-transform: uppercase;
+  }
+  @if $name == text-filter-title-description {
+    font-family: $font-family-roboto;
     font-size: 14px;
     letter-spacing: 0;
-    font-weight: 600;
-    color: $text-default;
-    line-height: 16px;
+    font-weight: 400;
+    color: $text-description;
+    line-height: 100%;
+    text-transform: none;
+  }
+  @if $name == text-filter-subtitle {
+    font-family: $font-family-roboto;
+    font-size: 11px;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: $text-darkgray;
+    line-height: 100%;
     text-transform: uppercase;
   }
   @if $name == text-filter {
-    font-family: $font-family-lato; //font-family: $font-family-opensans;
+    font-family: $font-family-roboto; //font-family: $font-family-opensans;
     font-size: 14px;
     letter-spacing: 0;
     font-weight: 400;
@@ -242,7 +355,7 @@
     text-transform: capitalize;
   }
   @if $name == text-filter-active {
-    font-family: $font-family-lato; //font-family: $font-family-opensans;
+    font-family: $font-family-roboto; //font-family: $font-family-opensans;
     font-size: 14px;
     letter-spacing: 0;
     font-weight: 400;
@@ -251,7 +364,7 @@
     text-transform: capitalize;
   }
 @if $name == text-btn-desc {
-    font-family: $font-family-lato; //font-family: $font-family-opensans;
+    font-family: $font-family-roboto; //font-family: $font-family-opensans;
     font-size: 12px;
     letter-spacing: -1px;
     font-weight: 400;
@@ -260,7 +373,7 @@
     line-height: 38px;
   }
 @if $name == text-filter-desc {
-    font-family: $font-family-lato; //font-family: $font-family-opensans;
+    font-family: $font-family-roboto; //font-family: $font-family-opensans;
     font-size: 14px;
     letter-spacing: 0;
     font-weight: 400;
@@ -270,7 +383,7 @@
     text-transform: none;
   }
 @if $name == text-title-desc {
-    font-family: $font-family-lato; //font-family: $font-family-opensans;
+    font-family: $font-family-roboto; //font-family: $font-family-opensans;
     font-size: 18px;
     letter-spacing: 0;
     font-weight: 400;
@@ -279,100 +392,112 @@
     line-height: 22px;
     text-transform: none;
   }
-@if $name == text-select {
-    font-family: $font-family-lato;
+@if $name == text-selected {
+    font-family: $font-family-roboto;
+    font-size: 14px;
+    letter-spacing: 0;
+    font-weight: 500;
+    color: $text-darkgray;
+    font-style: normal;
+    line-height: 140%;
+  }
+  @if $name == text-select-target {
+    font-family: $font-family-roboto;
+    font-size: 14px;
+    letter-spacing: 0;
+    font-weight: 300;
+    color: $text-default;
+    font-style: normal;
+    line-height: 140%;
+  }
+@if $name == text-table-th {
+    font-family: $font-family-roboto;
+    font-size: 12px;
+    letter-spacing: 0;
+    font-weight: 700;
+    color: $text-description;
+    font-style: normal;
+    line-height: 140%;
+    text-transform: uppercase;
+  }
+  @if $name == text-table-artist {
+    font-family: $font-family-roboto;
+    font-size: 14px;
+    letter-spacing: 0;
+    font-weight: 500;
+    color: $text-default;
+    line-height: 140%;
+  }
+  @if $name == text-table-worktitle {
+    font-family: $font-family-roboto;
+    font-size: 20px;
+    letter-spacing: 0.1px;
+    font-weight: 700;
+    color: $text-default;
+    line-height: 140%;
+    text-transform: uppercase;
+  }
+  @if $name == text-table-summary {
+    font-family: $font-family-roboto;
+    font-size: 14px;
+    letter-spacing: -0.4px;
+    font-weight: 300;
+    color: $text-default;
+    line-height: 19px;
+  }
+  @if $name == text-table-date {
+    font-family: $font-family-roboto;
     font-size: 16px;
     letter-spacing: 0;
-    font-weight: 400;
-    color: $text-description;
+    font-weight: 300;
+    color: $text-darkgray;
+    line-height: 18px;
+  }
+@if $name == text-table-upcoming {
+    font-family: $font-family-roboto;
+    font-size: 10px;
+    letter-spacing: 0;
+    font-weight: 700;
+    color: $text-white;
+    font-style: normal;
+    line-height: 100%;
+  }
+@if $name == text-table-vendor {
+    font-family: $font-family-roboto;
+    font-size: 13px;
+    letter-spacing: 0;
+    font-weight: 700;
+    color: $text-default;
+    line-height: 140%;
+    text-transform: uppercase;
+  }
+@if $name == text-table-estimate {
+    font-family: $font-family-roboto;
+    font-size: 18px;
+    letter-spacing: -0.3px;
+    font-weight: 300;
+    color: $text-darkgray;
+    line-height: 23px;
+  }
+@if $name == text-table-sold {
+    font-family: $font-family-roboto;
+    font-size: 18px;
+    letter-spacing: -0.3px;
+    font-weight: 700;
+    color: $text-default;
     font-style: normal;
     line-height: 22px;
   }
-@if $name == text-table-th {
-    font-family: $font-family-lato;
-    font-size: 13px;
-    letter-spacing: 0;
-    font-weight: 400;
-    color: $text-fairy;
-    font-style: normal;
-    line-height: 18px;
-    text-transform: uppercase;
-  }
-@if $name == text-worktitle {
-    font-family: $font-family-ptserif;
-    font-size: 17px;
-    letter-spacing: 0;
-    font-weight: 400;
-    color: $text-default;
-    font-style: italic;
-    line-height: 18px;
-  }
-@if $name == text-summary {
-    font-family: $font-family-lato; //font-family: $font-family-opensans;
-    font-size: 13px;
-    letter-spacing: 0;
-    font-weight: 400;
+@if $name == text-table-sold-desc {
+    font-family: $font-family-roboto;
+    font-size: 11px;
+    letter-spacing: -0.6px;
+    font-weight: 500;
     color: $text-description;
-    font-style: normal;
-    line-height: 17px;
-  }
-@if $name == text-upcoming {
-    font-family: $font-family-lato; //font-family: $font-family-opensans;
-    font-size: 13px;
-    letter-spacing: 0;
-    font-weight: 400;
-    color: $text-primary2;
-    font-style: normal;
-    line-height: 17px;
-  }
-@if $name == text-vendor {
-    font-family: $font-family-lato; //font-family: $font-family-opensans;
-    font-size: 13px;
-    letter-spacing: 0;
-    font-weight: 400;
-    color: $text-default;
-    font-style: normal;
-    line-height: 15px;
-    text-transform: uppercase;
-  }
-@if $name == text-lot {
-    font-family: $font-family-lato; //font-family: $font-family-opensans;
-    font-size: 13px;
-    letter-spacing: 0;
-    font-weight: 400;
-    color: $text-fairy2;
-    font-style: normal;
-    line-height: 15px;
-  }
-@if $name == text-estimate {
-    font-family: $font-family-lato; //font-family: $font-family-opensans;
-    font-size: 15px;
-    letter-spacing: 0;
-    font-weight: 400;
-    color: $text-description;
-    font-style: normal;
-    line-height: 23px;
-  }
-@if $name == text-sold {
-    font-family: $font-family-ptserif;
-    font-size: 15px;
-    letter-spacing: 0;
-    font-weight: 600;
-    color: $text-heavy;
-    font-style: normal;
-    line-height: 15px;
-  }
-@if $name == text-sold-desc {
-    font-family: $font-family-lato; //font-family: $font-family-opensans;
-    font-size: 13px;
-    letter-spacing: 0;
-    font-weight: 400;
-    color: $text-fairy;
-    font-style: normal;
-    line-height: 15px;
+    line-height: 13px;
   }
 @if $name == text-paging {
-    font-family: $font-family-lato; //font-family: $font-family-opensans;
+    font-family: $font-family-roboto; //font-family: $font-family-opensans;
     font-size: 15px;
     letter-spacing: 0;
     font-weight: 400;
@@ -381,108 +506,142 @@
     line-height: 15px;
   }
 @if $name == lot-artist-name {
-    font-family: $font-family-lato; //font-family: $font-family-opensans;
-    font-size: 18px;
+    font-family: $font-family-roboto;
+    font-size: 20px;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: $text-deepdark;
+    line-height: 24px;
+  }
+@if $name == lot-artist-desc {
+    font-family: $font-family-roboto;
+    font-size: 12px;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: $text-lightgray;
+    line-height: 16px;
+  }
+@if $name == lot-worktitle {
+    font-family: $font-family-roboto;
+    font-size: 16px;
+    letter-spacing: 0;
+    font-weight: 700;
+    color: $text-default;
+    text-transform: uppercase;
+    line-height: 20px;
+  }
+@if $name == lot-work-desc {
+    font-family: $font-family-roboto;
+    font-size: 16px;
+    letter-spacing: 0;
+    font-weight: 300;
+    color: $text-default;
+    line-height: 24px;
+  }
+  @if $name == lot-comparables-title {
+    font-family: $font-family-roboto;
+    font-size: 24px;
+    letter-spacing: 0;
+    font-weight: 500;
+    color: $text-default;
+    line-height: 28px;
+  }
+  @if $name == lot-comparables-text {
+    font-family: $font-family-roboto;
+    font-size: 34px;
+    letter-spacing: 0;
+    font-weight: 300;
+    color: $text-veryfairy;
+    line-height: 34px;
+  }
+  @if $name == lot-sold-price {
+    font-family: $font-family-roboto;
+    font-size: 28px;
+    letter-spacing: -0.9px;
+    font-weight: 700;
+    color: $text-default;
+    font-style: normal;
+    line-height: 32px;
+  }
+  @if $name == lot-sold-price-custom-currency {
+    font-family: $font-family-roboto;
+    font-size: 16px;
+    letter-spacing: -0.6px;
+    font-weight: 700;
+    color: $text-default;
+    font-style: normal;
+    line-height: 20px;
+  }
+  @if $name == lot-premium {
+    font-family: $font-family-roboto; //font-family: $font-family-opensans;
+    font-size: 10px;
     letter-spacing: 0;
     font-weight: 400;
     color: $text-description;
-    font-style: normal;
-    line-height: 18px;
-    text-transform: uppercase;
-  }
-@if $name == lot-artist-desc {
-    font-family: $font-family-lato; //font-family: $font-family-opensans;
-    font-size: 18px;
-    letter-spacing: 0;
-    font-weight: 400;
-    color: $text-fairy;
-    font-style: normal;
-    line-height: 16px;
-    text-transform: uppercase;
-  }
-@if $name == lot-worktitle {
-    font-family: $font-family-ptserif;
-    font-size: 28px;
-    letter-spacing: 0;
-    font-weight: 400;
-    color: $text-default;
-    font-style: italic;
-    line-height: 30px;
-  }
-@if $name == lot-work-desc {
-    font-family: $font-family-lato; //font-family: $font-family-opensans;
-    font-size: 16px;
-    letter-spacing: 0;
-    font-weight: 400;
-    color: $text-fairy2;
-    font-style: normal;
-    line-height: 24px;
-  }
-  @if $name == lot-sold-price {
-    font-family: $font-family-ptserif;
-    font-size: 24px;
-    letter-spacing: 0;
-    font-weight: 400;
-    color: $text-default;
-    font-style: normal;
-    line-height: 24px;
-  }
-  @if $name == lot-premium {
-    font-family: $font-family-lato; //font-family: $font-family-opensans;
-    font-size: 15px;
-    letter-spacing: 0;
-    font-weight: 400;
-    color: $text-fairy;
     font-style: normal;
     line-height: 21px;
   }
   @if $name == lot-estimate {
-    font-family: $font-family-ptserif;
-    font-size: 20px;
-    letter-spacing: 0;
-    font-weight: 400;
-    color: $text-description;
-    font-style: normal;
-    line-height: 21px;
-  }
-  @if $name == lot-sale-name {
-    font-family: $font-family-lato; //font-family: $font-family-opensans;
-    font-size: 17px;
-    letter-spacing: 0;
-    font-weight: 400;
-    color: $text-primary;
-    font-style: normal;
-    line-height: 25px;
-  }
-  @if $name == lot-sale-date {
-    font-family: $font-family-lato; //font-family: $font-family-opensans;
+    font-family: $font-family-roboto;
     font-size: 16px;
     letter-spacing: 0;
     font-weight: 400;
-    color: $text-fairy2;
+    color: $text-default-placeholder;
     font-style: normal;
-    line-height: 24px;
+    line-height: 20px;
   }
-  @if $name == lot-etc-title {
-    font-family: $font-family-ptserif;
-    font-size: 24px;
+  @if $name == lot-sale-name {
+    font-family: $font-family-roboto;
+    font-size: 14px;
     letter-spacing: 0;
     font-weight: 400;
-    color: $text-default;
+    color: $text-deepdark;
+    line-height: 20px;
+  }
+  @if $name == lot-sale-lot-number {
+    font-family: $font-family-roboto;
+    font-size: 14px;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: $text-deepdark;
+    line-height: 18px;
+  }
+  @if $name == lot-sale-date {
+    font-family: $font-family-roboto; //font-family: $font-family-opensans;
+    font-size: 14px;
+    letter-spacing: 0;
+    font-weight: 300;
+    color: $text-darkgray;
     font-style: normal;
+    line-height: 18px;
+  }
+  @if $name == lot-sale-vendor {
+    font-family: $font-family-roboto;
+    font-size: 14px;
+    letter-spacing: 0;
+    font-weight: 700;
+    color: $text-deepdark;
+    font-style: normal;
+    line-height: 17px;
+  }
+  @if $name == lot-etc-title {
+    font-family: $font-family-roboto;
+    font-size: 24px;
+    letter-spacing: 0;
+    font-weight: 500;
+    color: $text-default;
     line-height: 24px;
   }
   @if $name == lot-etc-context {
-    font-family: $font-family-lato; //font-family: $font-family-opensans;
+    font-family: $font-family-roboto;
     font-size: 16px;
     letter-spacing: 0;
-    font-weight: 400;
-    color: $text-fairy2;
-    font-style: normal;
-    line-height: 24px;
+    font-weight: 300;
+    color: $text-deepdark;
+    line-height: 22px;
   }
   @if $name == lot-related-title {
-    font-family: $font-family-lato; //font-family: $font-family-opensans;
+    font-family: $font-family-roboto; //font-family: $font-family-opensans;
     font-size: 18px;
     letter-spacing: 0;
     font-weight: 600;
@@ -491,7 +650,7 @@
     line-height: 21px;
   }
   @if $name == lot-related-keyword {
-    font-family: $font-family-lato; //font-family: $font-family-opensans;
+    font-family: $font-family-roboto; //font-family: $font-family-opensans;
     font-size: 14px;
     letter-spacing: 0;
     font-weight: 300;
@@ -500,17 +659,17 @@
     line-height: 14px;
   }
   @if $name == lot-related-artist-name {
-    font-family: $font-family-lato; //font-family: $font-family-opensans;
+    font-family: $font-family-roboto; //font-family: $font-family-opensans;
     font-size: 13px;
     letter-spacing: 0;
     font-weight: 400;
-    color: $text-fairy2;
+    color: $text-fairy;
     font-style: normal;
     line-height: 14px;
     text-transform: uppercase;
   }
   @if $name == lot-related-worktitle {
-    font-family: $font-family-ptserif;
+    font-family: $font-family-roboto;
     font-size: 18px;
     letter-spacing: 0;
     font-weight: 400;
@@ -519,7 +678,7 @@
     line-height: 19px;
   }
   @if $name == lot-related-work-desc {
-    font-family: $font-family-lato; //font-family: $font-family-opensans;
+    font-family: $font-family-roboto; //font-family: $font-family-opensans;
     font-size: 15px;
     letter-spacing: 0;
     font-weight: 400;
@@ -528,7 +687,7 @@
     line-height: 19px;
   }
   @if $name == lot-related-estimate {
-    font-family: $font-family-ptserif;
+    font-family: $font-family-roboto;
     font-size: 17px;
     letter-spacing: 0;
     font-weight: 400;
@@ -537,7 +696,7 @@
     line-height: 19px;
   }
   @if $name == lot-related-sold-price {
-    font-family: $font-family-ptserif;
+    font-family: $font-family-roboto;
     font-size: 17px;
     letter-spacing: 0;
     font-weight: 600;
@@ -546,7 +705,7 @@
     line-height: 19px;
   }
   @if $name == lot-related-sale-info {
-    font-family: $font-family-lato; //font-family: $font-family-opensans;
+    font-family: $font-family-roboto; //font-family: $font-family-opensans;
     font-size: 15px;
     letter-spacing: 0;
     font-weight: 400;
@@ -555,16 +714,16 @@
     line-height: 19px;
   }
   @if $name == lot-related-performance-standard {
-    font-family: $font-family-lato; //font-family: $font-family-opensans;
+    font-family: $font-family-roboto; //font-family: $font-family-opensans;
     font-size: 12px;
     letter-spacing: 0;
     font-weight: 400;
-    color: $text-fairy2;
+    color: $text-fairy;
     font-style: normal;
     line-height: 14px;
   }
   @if $name == lot-related-performance {
-    font-family: $font-family-lato; //font-family: $font-family-opensans;
+    font-family: $font-family-roboto; //font-family: $font-family-opensans;
     font-size: 12px;
     letter-spacing: 0;
     font-weight: 400;
@@ -573,41 +732,79 @@
     line-height: 17px;
   }
   @if $name == text-filter-area-title {
-    font-family: $font-family-lato;
+    font-family: $font-family-roboto;
     font-size: 18px;
     letter-spacing: 0;
     font-weight: 600;
-    color: $text-primary;
+    color: $text-default;
     line-height: 21px;
+  }
+  @if $name == text-default-bgdark-icon {
+    font-family: $font-family-roboto;
+    font-size: 14px;
+    letter-spacing: 0;
+    font-weight: 100;
+    color: $text-white;
+    line-height: 100%;
+  }
+  @if $name == text-search-layer-bold {
+    font-family: $font-family-roboto;
+    font-size: 14px;
+    letter-spacing: -0.8px;
+    font-weight: 700;
+    color: $text-white;
+    line-height: 140%;
+  }
+  @if $name == text-search-layer-normal {
+    font-family: $font-family-roboto;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    font-weight: 300;
+    color: $text-white;
+    line-height: 100%;
+  }
+  @if $name == text-badge {
+    font-family: $font-family-roboto;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    font-weight: 300;
+    color: $text-white;
+    line-height: 100%;
   }
 }
 
 
 // box-style
 @mixin box-style($box) {
-  @if $box == btn-primary {
+  @if $box == btn-primary-bgdark {
     cursor: pointer;
     border: 0;
-    color: $text-default;
+    padding: 25px 4px 23px 4px !important;
+    @include text-style(btn-primary-bgdark);
     background-color: $bg-btn-normal;
-    //@include text-style(btn-primary);
-      &:hover {
-        /* The animation code */
-        @keyframes btn-animation {
-          from {
-            color: $text-default;
-            background-color: $bg-btn-normal;
-          }
-          to {
-            color: $text-btn-primary;
-            background-color: $bg-btn-primary;
-          }
-        }
-        animation-name: btn-animation;
-        animation-duration: 0.2s;
-        color: $text-btn-primary;
-        background-color: $bg-btn-primary;
-      }
+    &:hover {
+      background-color: $text-default-bgdark;
+      text-decoration: none;
+    }
+  }
+  @if $box == btn-secondary-bgdark {
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    padding: 22px 20px 20px 19px !important;
+    text-align: left;
+    background-color: $bg-dark;
+    border:1px solid $border-input-bottom;
+    @include text-style(btn-secondary-bgdark);
+    @include overlap-image(transparent,'../images/icon_arrow_right.png',9px,13px);
+    &:after{
+      left: 94.3%;
+      top:22px;
+    }
+    &:hover {
+      border-color: rgba(0,0,0,1);
+      text-decoration: none;
+    }
   }
   @if $box == select-options {
     cursor: pointer;
@@ -617,7 +814,78 @@
     color: $box-shadow-select-options;
     background-color: $box-shadow-select-options;
   }
-}
+  @if $box == input-text-bgdark {
+    cursor: pointer;
+    border: 0;
+    border-bottom: 1px solid $border-input-bottom;
+    &:focus {
+      border-bottom: 1px solid $border-input-bottom-focus;
+    }
+  }
+  @if $box == link-primary-bgdark {
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    padding: 9px 0 0 0;
+  }
+  @if $box == btn-primary {
+    cursor: pointer;
+    border: 1px solid $border-btn-primary;
+    padding: 23px 126px 21px 126px;
+    margin-right: 14px;
+    font-family: $font-family-roboto;
+    letter-spacing: 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: $text-black;
+    line-height: 100%;
+    background-color: $bg-white;
+    &:hover {
+      background-color: $bg-fairy;
+      text-decoration: none;
+    }
+  }
+  @if $box == btn-action {
+    cursor: pointer;
+    padding: 17px 78px 16px 76px;
+    margin-right: 14px;
+    font-family: $font-family-roboto;
+    letter-spacing: 0;
+    font-size: 15px;
+    font-weight: 700;
+    color: $text-white;
+    line-height: 100%;
+    background-color: $bg-black;
+    border: 1px solid $bg-black;
+    &:hover {
+      background-color: $bg-gray;
+      border: 1px solid $bg-black;
+      text-decoration: none;
+    }
+  }
+  @if $box == badge {
+    background-color: $bg-darkgray;
+    padding: 3px 8px 2px 8px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    @include text-style(text-table-upcoming);
+  }
+  @if $box == btn-badge {
+    cursor: pointer;
+    background-color: $bg-darkgray;
+    padding: 3px 8px 2px 8px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    @include text-style(text-table-upcoming);
+    &:hover {
+      background-color: $bg-black;
+      text-decoration: none;
+    }
+  }}
 
 // box-shadow
 @mixin box-shadow($var) {
@@ -649,14 +917,14 @@
 @mixin placeholder-color($color) {
   &.placeholder{color: $color}
   &:-moz-placeholder{color: $color}
-  &::-webkit-input-placeholder{color: $color}
+  &:-webkit-input-placeholder{color: $color}
   &:-ms-input-placeholder{color: $color}
 }
 
 @mixin placeholder-font-style($font) {
   &.placeholder{font-style: $font}
   &:-moz-placeholder{font-style: $font}
-  &::-webkit-input-placeholder{font-style: $font}
+  &:-webkit-input-placeholder{font-style: $font}
   &:-ms-input-placeholder{font-style: $font}
 }
 
@@ -683,4 +951,47 @@
   display: -webkit-box;
   -webkit-line-clamp: $line-count;
   -webkit-box-orient: vertical;
+}
+
+// overlap image
+@mixin overlap-image($bgcolor,$url,$width,$height) {
+  position: relative;
+  &:after {
+    content: " ";
+    display: inline-block;
+    overflow: hidden;
+    width: $width;
+    height: $height;
+    position: absolute;
+    left:0;
+    top:0;
+    background-color: $bgcolor;
+    background-image: url($url);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: $width $height;
+  }
+}
+
+// icons
+@mixin icons($url,$img-width,$img-height) {
+  position: relative;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  &:after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 4px;
+    width: 18px;
+    height: 18px;
+    background-color: transparent;
+    background-image: url($url);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: $img-width $img-height;
+    opacity: 0.5;
+  }
 }

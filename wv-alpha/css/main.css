@@ -510,12 +510,12 @@ body {
   margin: 0 0 0 0;
   padding: 0 0 0 0;
 }
-.main-container .logo-small {
+.main-container .logo {
   display: block;
   margin: 46px auto;
   width: 60px;
   height: 60px;
-  background: transparent url("../images/logo_small_black.png") no-repeat left top/auto;
+  background: transparent url("../images/m_logo2_2x.png") no-repeat left top/auto;
   -webkit-background-size: 100%;
   background-size: 100%;
 }

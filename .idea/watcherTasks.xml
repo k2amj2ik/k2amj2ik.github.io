@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectTasksOptions">
     <TaskOptions isEnabled="true">
-      <option name="arguments" value="--no-cache --update $FileName$:$ProjectFileDir$\wv-alpha\css\$FileNameWithoutExtension$.css --style expanded --sourcemap" />
+      <option name="arguments" value="--no-cache --update $FileName$:$ProjectFileDir$\wv-alpha-by-lia\css\$FileNameWithoutExtension$.css --style expanded --sourcemap" />
       <option name="checkSyntaxErrors" value="true" />
       <option name="description" />
       <option name="exitCodeBehavior" value="NEVER" />

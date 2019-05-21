@@ -528,7 +528,7 @@ body {
   z-index: 30;
   padding: 0 0 0 12px;
 }
-.main-container .inner-container .logo-small {
+.main-container .inner-container .logo {
   display: block;
   margin: -19px 0 0 -4px;
   width: 65px;

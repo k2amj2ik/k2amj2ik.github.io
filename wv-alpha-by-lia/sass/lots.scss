@@ -16,7 +16,7 @@
         padding: 0 0 0 15px;
         @include text-style(text-filter-title);
         position: relative;
-        &::before {
+        &:before {
           content: '';
           position: absolute;
           left: 0;
@@ -39,7 +39,7 @@
           padding: 0 0 8px 21px;
           @include text-style(text-filter);
           position: relative;
-          &::before {
+          &:before {
             content: '';
             position: absolute;
             left: 0;
@@ -55,7 +55,7 @@
         }
         .active {
           @include text-style(text-filter-active);
-          &::before {
+          &:before {
             background: transparent url("../images/icon_checked.png") no-repeat center center;
           }
         }
@@ -66,7 +66,7 @@
         .range-input {
           margin: 9px 0 0 -21px;
           position: relative;
-          &::after {
+          &:after {
             content: '';
             position: absolute;
             left: 103px;
@@ -128,7 +128,7 @@
           &:last-child {
             border-right:1px solid $border-normal;
           }
-          &::before {
+          &:before {
             display:none;
           }
         }
@@ -142,7 +142,7 @@
         height: 24px;
         @include text-style(text-btn-desc);
         .num {
-          color: $text-primary;
+          color: $text-default;
         }
       }
     }
@@ -164,7 +164,7 @@
       a {
         @include link-color($link-keyword);
       }
-      &::before {
+      &:before {
         content: '';
         position: absolute;
         right: 90px;
@@ -185,7 +185,7 @@
       @include text-style(text-artists-header);
       position: relative;
       text-transform: uppercase;
-      &::before {
+      &:before {
         content: '';
         position: absolute;
         left: -26px;
@@ -195,7 +195,7 @@
         height: 48px;
         background-color: $border-artist-header;
       }
-      &::after {
+      &:after {
         content: '';
         position: absolute;
         right: -5px;
@@ -230,7 +230,7 @@
         margin: -9px 18px 0 0;
         @include text-style(text-select);
         position: relative;
-        &::after {
+        &:after {
           content: '';
           position: absolute;
           right: -18px;
@@ -338,7 +338,7 @@
             margin-top: 2px;
             @include text-style(text-upcoming);
             position: relative;
-            &::after {
+            &:after {
               content: '';
               position: absolute;
               left: 63px;
