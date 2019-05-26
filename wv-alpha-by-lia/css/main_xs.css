@@ -767,10 +767,10 @@ body > .container .inner-container .footer .copyright {
   background-color: #232629;
   border: 1px solid #454d54;
   font-family: "Roboto";
-  letter-spacing: 0;
-  font-size: 16px;
-  font-weight: 400;
-  color: #7e8a95;
+  letter-spacing: 0.9px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
   line-height: 100%;
   position: relative;
 }
@@ -1016,7 +1016,7 @@ body > .container .inner-container .footer .copyright {
 }
 
 .bg-login {
-  background: transparent url("../images/bg_PC_00_login_1920x920.png") no-repeat top center/1920px 920px;
+  background: transparent url("../images/bg_mobile_01.login_360x640.png") no-repeat top center/360px 640px;
 }
 
 .bg-main {
@@ -1055,21 +1055,230 @@ body > .container .inner-container .footer .copyright {
   background: transparent url("../images/PC_05_compare_1920x1685.png") no-repeat top center/1920px 1685px;
 }
 
-.lots {
-  margin-top: 40px;
-  padding-bottom: 51px;
+.bgdark {
+  background: #232629 url("../images/logo_pc_type2.png") no-repeat bottom center/auto 213px;
+}
+
+.container-main .header-container {
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: #232629;
+  z-index: 90;
+}
+
+.container.artists .inner-container > .keyword {
+  width: 100%;
+  height: 209px;
+  background-color: #232629;
+}
+.container.artists .inner-container > .keyword .title {
+  max-width: 1184px;
+  margin: 0 auto;
+  padding: 38px 0 0 75px;
+  font-family: "Roboto";
+  font-size: 17px;
+  letter-spacing: -0.3px;
+  font-weight: 300;
+  color: #7e8a95;
+  line-height: 100%;
+}
+.container.artists .inner-container > .keyword .word {
+  max-width: 1184px;
+  margin: 0 auto;
+  padding: 12px 0 0 79px;
+  font-family: "Roboto";
+  font-size: 56px;
+  letter-spacing: 0.1px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 100%;
+}
+.container.artists .inner-container .submenu {
+  background-color: #eff3f6;
+  height: 64px;
+}
+.container.artists .inner-container .submenu .area {
+  max-width: 1184px;
+  margin: 0 auto;
+  height: 100%;
+}
+.container.artists .inner-container .submenu .area .btn {
+  float: left;
+  border: 0;
+  display: inline-block;
+  overflow: hidden;
+  width: 218px;
+  height: 64px;
+  padding: 19px 56px 0 56px;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  color: #8a8a8a;
+  line-height: 18px;
+}
+.container.artists .inner-container .submenu .area .btn.active {
+  font-family: "Roboto";
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  color: #222222;
+  line-height: 100%;
+  background-color: #fff;
+}
+.container.artists .inner-container .submenu .area .btn.active .icon:after {
+  opacity: 1;
+}
+.container.artists .inner-container .submenu .area .btn:hover {
+  background-color: #dde4e8;
+  text-decoration: none;
+}
+.container.artists .inner-container .result-count {
+  max-width: 1184px;
+  margin: 0 auto;
+  margin-top: 58px;
+  padding: 0 0 19px 10px;
+  border-bottom: 1px solid #eef4f6;
+  font-family: "Roboto";
+  font-size: 14px;
+  letter-spacing: 0;
+  font-weight: 400;
+  color: #888888;
+  line-height: 140%;
+}
+.container.artists .inner-container .result-count .count {
+  font-weight: 700;
+}
+.container.artists .inner-container .results {
+  max-width: 1184px;
+  margin: 0 auto;
+}
+.container.artists .inner-container .results .no-result {
+  padding: 18px 40px 17.5px 60px;
+}
+.container.artists .inner-container .results .no-result .title {
+  margin: 0 0 16px 0;
+  font-family: "Roboto";
+  font-size: 16px;
+  letter-spacing: 0;
+  font-weight: 700;
+  color: #222222;
+  line-height: 140%;
+  letter-spacing: 0.9px;
+}
+.container.artists .inner-container .results .no-result .description {
+  color: #999999;
+}
+.container.artists .inner-container .results .no-result .btns {
+  text-align: center;
+  margin: 176px 0 0 0;
+}
+.container.artists .inner-container .results .result {
+  border-bottom: 1px solid #eef4f6;
+  display: block;
+  padding: 18px 40px 17.5px 60px;
+  font-family: "Roboto";
+  font-size: 16px;
+  letter-spacing: 0;
+  font-weight: 400;
+  color: #222222;
+  line-height: 140%;
   position: relative;
-  display: flex;
 }
-.lots .filters {
-  width: 235px;
-  margin-right: 25px;
+.container.artists .inner-container .results .result:after {
+  content: " ";
+  display: inline-block;
+  overflow: hidden;
+  width: 11px;
+  height: 17px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: transparent;
+  background-image: url("../images/icon_arrow_big_right.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 11px 17px;
 }
-.lots .filters .title {
-  display: none;
+.container.artists .inner-container .results .result:after {
+  left: unset;
+  right: 28px;
+  top: -webkit-calc(50% - 7.5px);
+  top: -moz-calc(50% - 7.5px);
+  top: calc(50% - 7.5px);
+  opacity: 0.3;
 }
-.lots .filters .filter-area .filter-title {
-  padding: 0 0 0 15px;
+.container.artists .inner-container .results .result:hover:after {
+  opacity: 1;
+}
+.container.artists .inner-container .results .result .matching {
+  font-family: "Roboto";
+  font-size: 16px;
+  letter-spacing: 0;
+  font-weight: 700;
+  color: #222222;
+  line-height: 140%;
+}
+.container.artists .inner-container .results .result .description {
+  font-family: "Roboto";
+  font-size: 12px;
+  letter-spacing: 0;
+  font-weight: 400;
+  color: #8a8a8a;
+  line-height: 140%;
+}
+.container.lots .inner-container {
+  background-color: #eff3f6;
+}
+.container.lots .inner-container .keyword {
+  width: 100%;
+  height: 209px;
+  background-color: #232629;
+}
+.container.lots .inner-container .keyword .title {
+  max-width: 1184px;
+  margin: 0 auto;
+  padding: 17px 0 0 56px;
+  font-family: "Roboto";
+  font-size: 17px;
+  letter-spacing: -0.3px;
+  font-weight: 300;
+  color: #7e8a95;
+  line-height: 100%;
+}
+.container.lots .inner-container .keyword .word {
+  max-width: 1184px;
+  margin: 0 auto;
+  padding: 36px 0 0 55px;
+  font-family: "Roboto";
+  font-size: 56px;
+  letter-spacing: 0.1px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 100%;
+}
+.container.lots .inner-container .form-filters .default {
+  background-color: #fff;
+  padding-top: 20px;
+  height: 328px;
+}
+.container.lots .inner-container .form-filters .default .filters {
+  width: 1184px;
+  margin: 0 auto;
+  position: relative;
+}
+.container.lots .inner-container .form-filters .default .filters .filter {
+  float: left;
+  border-top: 1px solid #77818a;
+}
+.container.lots .inner-container .form-filters .default .filters .filter .header {
+  margin: 19px 0 0 0;
+}
+.container.lots .inner-container .form-filters .default .filters .filter .header .title {
+  float: left;
   font-family: "Roboto";
   font-size: 16px;
   letter-spacing: 0;
@@ -1077,250 +1286,274 @@ body > .container .inner-container .footer .copyright {
   color: #222222;
   line-height: 100%;
   text-transform: uppercase;
-  position: relative;
 }
-.lots .filters .filter-area .filter-title:before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 7px;
-  margin: 0 0 0 0;
-  width: 9px;
-  height: 2px;
-  background-color: #d0d0d0;
-}
-.lots .filters .filter-area .filter-title .description {
+.container.lots .inner-container .form-filters .default .filters .filter .header .title .unit {
   font-family: "Roboto";
   font-size: 14px;
   letter-spacing: 0;
   font-weight: 400;
   color: #888888;
-  font-style: normal;
-  line-height: 17px;
+  line-height: 100%;
   text-transform: none;
 }
-.lots .filters .filter-area .filter {
-  padding: 15px 0 13px 16px;
-  margin: 0 0 20px 0;
-  border-bottom: 1px solid #dddddd;
+.container.lots .inner-container .form-filters .default .filters .filter .header .btn-link-tiny {
+  float: right;
 }
-.lots .filters .filter-area .filter li {
-  cursor: pointer;
-  padding: 0 0 8px 21px;
-  font-family: "Roboto";
-  font-size: 14px;
-  letter-spacing: 0;
-  font-weight: 400;
-  color: #898989;
-  line-height: 16px;
-  text-transform: capitalize;
-  position: relative;
+.container.lots .inner-container .form-filters .default .filters .filter .contents {
+  border-top: 1px solid transparent;
+  clear: both;
+  margin-top: 20px;
+  width: 100%;
 }
-.lots .filters .filter-area .filter li:before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  margin: 0 0 0 0;
-  width: 14px;
-  height: 14px;
-  background: transparent url("../images/icon_unchecked.png") no-repeat center center;
-}
-.lots .filters .filter-area .filter li:hover {
-  text-decoration: underline;
-}
-.lots .filters .filter-area .filter .active {
-  font-family: "Roboto";
-  font-size: 14px;
-  letter-spacing: 0;
-  font-weight: 400;
-  color: #272727;
-  line-height: 16px;
-  text-transform: capitalize;
-}
-.lots .filters .filter-area .filter .active:before {
-  background: transparent url("../images/icon_checked.png") no-repeat center center;
-}
-.lots .filters .filter-area .range .range-input {
-  margin: 9px 0 0 -21px;
-  position: relative;
-}
-.lots .filters .filter-area .range .range-input:after {
-  content: '';
-  position: absolute;
-  left: 103px;
-  top: 13px;
-  margin: 0 0 0 0;
-  width: 9px;
-  height: 1px;
-  background-color: #dddddd;
-}
-.lots .filters .filter-area .range .range-input input {
-  width: 93px;
-  height: 27px;
-  padding: 0 0 0 11px;
-}
-.lots .filters .filter-area .range .range-input input.placeholder {
-  color: #acaeb5;
-}
-.lots .filters .filter-area .range .range-input input:-moz-placeholder {
-  color: #acaeb5;
-}
-.lots .filters .filter-area .range .range-input input:-webkit-input-placeholder {
-  color: #acaeb5;
-}
-.lots .filters .filter-area .range .range-input input:-ms-input-placeholder {
-  color: #acaeb5;
-}
-.lots .filters .filter-area .range .range-input .from {
-  margin: 0 28px 0 0;
-}
-.lots .filters .filter-area .search {
-  position: relative;
-  padding-bottom: 49px;
-}
-.lots .filters .filter-area .search .input {
+.container.lots .inner-container .form-filters .default .filters .filter .contents .group.half {
+  width: 200px;
   float: left;
-  width: 184px;
-  height: 27px;
-  padding: 0 0 0 9px;
+}
+.container.lots .inner-container .form-filters .default .filters .filter .contents .group .subtitle {
+  margin: 25px 0 10px 0;
   font-family: "Roboto";
-  font-size: 14px;
+  font-size: 11px;
   letter-spacing: 0;
   font-weight: 400;
-  color: #222222;
-  line-height: 16px;
+  color: #666666;
+  line-height: 100%;
+  text-transform: uppercase;
 }
-.lots .filters .filter-area .search .input.placeholder {
-  color: #acaeb5;
+.container.lots .inner-container .form-filters .default .filters .filter .contents .group .inputs {
+  height: 25px;
+  margin-top: 10px;
 }
-.lots .filters .filter-area .search .input:-moz-placeholder {
-  color: #acaeb5;
+.container.lots .inner-container .form-filters .default .filters .filter .contents .group .inputs .input-small {
+  width: 97px;
+  float: left;
 }
-.lots .filters .filter-area .search .input:-webkit-input-placeholder {
-  color: #acaeb5;
-}
-.lots .filters .filter-area .search .input:-ms-input-placeholder {
-  color: #acaeb5;
-}
-.lots .filters .filter-area .search .input.placeholder {
-  font-style: italic;
-}
-.lots .filters .filter-area .search .input:-moz-placeholder {
-  font-style: italic;
-}
-.lots .filters .filter-area .search .input:-webkit-input-placeholder {
-  font-style: italic;
-}
-.lots .filters .filter-area .search .input:-ms-input-placeholder {
-  font-style: italic;
-}
-.lots .filters .filter-area .search .btn-search {
+.container.lots .inner-container .form-filters .default .filters .filter .contents .group .inputs .to {
   float: left;
   display: inline-block;
-  cursor: pointer;
-  border: 1px solid #dddddd;
-  border-left: 0;
-  padding: 0;
-  margin: 0;
-  width: 26px;
-  height: 27px;
-  overflow: hidden;
-  text-indent: 5rem;
-  background: #fff url("../images/icon_search_tiny.png") no-repeat center center;
+  padding: 10px 7px 8px 8px;
+  font-family: "Roboto";
+  font-size: 10px;
+  letter-spacing: 0;
+  font-weight: 400;
+  color: #8a8a8a;
+  line-height: 100%;
 }
-.lots .filters .filter-area .btn {
-  position: relative;
-  padding-bottom: 64px;
+.container.lots .inner-container .form-filters .default .filters .filter .contents .group .words {
+  margin: 0 0 20px 0;
 }
-.lots .filters .filter-area .btn li {
-  width: 42px;
-  height: 42px;
-  border: 1px solid #dcdcdc;
-  border-right: 0;
-  text-align: center;
-  float: left;
-  padding: 12px 0 0 0;
+.container.lots .inner-container .form-filters .default .filters .filter .contents .group .words .word {
+  margin: 9px 0 9px 0;
 }
-.lots .filters .filter-area .btn li:last-child {
-  border-right: 1px solid #dcdcdc;
+.container.lots .inner-container .form-filters .default .filters .filter .contents .group .words .word .form-check-label {
+  margin-left: 11px;
 }
-.lots .filters .filter-area .btn li:before {
-  display: none;
+.container.lots .inner-container .form-filters .default .filters .filter.category {
+  width: 402px;
 }
-.lots .filters .filter-area .btn .active {
-  background-color: #e7e7e7;
+.container.lots .inner-container .form-filters .default .filters .filter.year {
+  margin-left: 41px;
+  width: 221px;
 }
-.lots .filters .filter-area .size-range {
-  margin: -127px 0 103px 63px;
-  width: 177px;
-  height: 24px;
+.container.lots .inner-container .form-filters .default .filters .filter.size {
+  margin-left: 41px;
+  width: 221px;
+}
+.container.lots .inner-container .form-filters .default .filters .filter.price {
+  margin-left: 36px;
+  width: 221px;
+}
+.container.lots .inner-container .form-filters .default .filters .btn-down-toggle {
+  position: absolute;
+  padding: 4px 4px 4px 10px;
+  text-align: right;
+  top: 283px;
+  right: 0;
   font-family: "Roboto";
   font-size: 12px;
-  letter-spacing: -1px;
-  font-weight: 400;
-  color: #acaeb5;
-  font-style: italic;
-  line-height: 38px;
-}
-.lots .filters .filter-area .size-range .num {
-  color: #222222;
-}
-.lots .filters .filter-btn .btn {
-  width: 100%;
-  height: 40px;
-  margin-bottom: 40px;
-  cursor: pointer;
-  cursor: pointer;
-  border: 1px solid #c1ccd6;
-  padding: 23px 126px 21px 126px;
-  margin-right: 14px;
-  font-family: "Roboto";
   letter-spacing: 0;
-  font-size: 16px;
   font-weight: 500;
-  color: #000;
+  color: #666666;
   line-height: 100%;
+}
+.container.lots .inner-container .form-filters .more {
+  display: none;
   background-color: #fff;
+  height: 235px;
 }
-.lots .filters .filter-btn .btn:hover {
-  background-color: #f7fafc;
-  text-decoration: none;
-}
-.lots .filters .reset-search {
-  text-align: right;
+.container.lots .inner-container .form-filters .more .filters {
+  width: 1184px;
+  margin: 0 auto;
   position: relative;
-  margin: -10px 2px 100px 0;
 }
-.lots .filters .reset-search a:link {
-  color: #707070;
-  text-decoration: none;
+.container.lots .inner-container .form-filters .more .filters .filter {
+  float: left;
+  border-top: 1px solid #77818a;
+  width: 100%;
 }
-.lots .filters .reset-search a:hover {
-  text-decoration: underline;
+.container.lots .inner-container .form-filters .more .filters .filter .header {
+  margin: 19px 0 0 0;
 }
-.lots .filters .reset-search a:visited {
-  color: rgba(112, 112, 112, 0.5);
-  text-decoration: none;
+.container.lots .inner-container .form-filters .more .filters .filter .header .title {
+  float: left;
+  font-family: "Roboto";
+  font-size: 16px;
+  letter-spacing: 0;
+  font-weight: 700;
+  color: #222222;
+  line-height: 100%;
+  text-transform: uppercase;
 }
-.lots .filters .reset-search a:active {
-  outline: none;
-  text-decoration: underline;
+.container.lots .inner-container .form-filters .more .filters .filter .header .title .unit {
+  font-family: "Roboto";
+  font-size: 14px;
+  letter-spacing: 0;
+  font-weight: 400;
+  color: #888888;
+  line-height: 100%;
+  text-transform: none;
 }
-.lots .filters .reset-search:before {
-  content: '';
+.container.lots .inner-container .form-filters .more .filters .filter .header .btn-link-tiny {
+  float: right;
+}
+.container.lots .inner-container .form-filters .more .filters .filter .contents {
+  border: 1px solid transparent;
+  clear: both;
+  margin-top: 20px;
+  width: 100%;
+}
+.container.lots .inner-container .form-filters .more .filters .filter .contents .group.half {
+  width: 200px;
+  float: left;
+}
+.container.lots .inner-container .form-filters .more .filters .filter .contents .group .subtitle {
+  margin: 25px 0 10px 0;
+  font-family: "Roboto";
+  font-size: 11px;
+  letter-spacing: 0;
+  font-weight: 400;
+  color: #666666;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+.container.lots .inner-container .form-filters .more .filters .filter .contents .group .inputs {
+  height: 25px;
+  margin-top: 10px;
+}
+.container.lots .inner-container .form-filters .more .filters .filter .contents .group .inputs .input-small {
+  width: 97px;
+  float: left;
+}
+.container.lots .inner-container .form-filters .more .filters .filter .contents .group .inputs .to {
+  float: left;
+  display: inline-block;
+  padding: 10px 7px 8px 8px;
+  font-family: "Roboto";
+  font-size: 10px;
+  letter-spacing: 0;
+  font-weight: 400;
+  color: #8a8a8a;
+  line-height: 100%;
+}
+.container.lots .inner-container .form-filters .more .filters .filter .contents .group .words {
+  margin: 0 0 20px 0;
+}
+.container.lots .inner-container .form-filters .more .filters .filter .contents .group .words .word {
+  margin: 9px 0 9px 0;
+}
+.container.lots .inner-container .form-filters .more .filters .filter .contents .group .words .word .form-check-label {
+  margin-left: 11px;
+}
+.container.lots .inner-container .form-filters .more .filters .filter.title {
+  clear: both;
+  width: 402px;
+  height: 177px;
+  margin-top: 18px;
+  padding-top: 8px;
+}
+.container.lots .inner-container .form-filters .more .filters .filter.auction-house {
+  width: 478px;
+  margin-top: 18px;
+  margin-left: 44px;
+}
+.container.lots .inner-container .form-filters .more .filters .filter.sale-title {
+  width: 478px;
+  margin-top: 14px;
+  margin-left: 44px;
+  border-top: 0;
+}
+.container.lots .inner-container .form-filters .more .filters .filter.sale-date {
+  width: 221px;
+  margin-top: -77px;
+  margin-left: 39px;
+}
+.container.lots .inner-container .form-filters .more .filters .filter.lot-number {
+  width: 221px;
+  margin-top: 15px;
+  margin-left: 39px;
+  border-top: 0;
+}
+.container.lots .inner-container .form-filters .more .filters .btn-down-toggle {
   position: absolute;
-  right: 90px;
-  top: 1px;
-  margin: 0 0 0 0;
-  width: 14px;
-  height: 14px;
-  background: transparent url("../images/icon_reset.png") no-repeat center center;
+  padding: 4px 4px 4px 10px;
+  text-align: right;
+  top: 210px;
+  right: 0;
+  font-family: "Roboto";
+  font-size: 12px;
+  letter-spacing: 0;
+  font-weight: 500;
+  color: #666666;
+  line-height: 100%;
 }
-.lots .result-area {
-  width: 850px;
+.container.lots .inner-container .form-filters .btns {
+  background-color: #eff3f6;
+  border-top: 1px solid #line-gray;
+  width: 100%;
+  padding: 30px 0 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.lots .result-area .text-header {
+.container.lots .inner-container .form-filters.open .default .btn-down-toggle {
+  display: none;
+}
+.container.lots .inner-container .form-filters.open .more {
+  display: block;
+}
+.container.lots .inner-container .result-area {
+  width: 1184px;
+  margin: 0 auto;
+  margin-top: 92px;
+}
+.container.lots .inner-container .result-area .search-words {
+  padding-right: 200px;
+  margin: 18px 0 0 0;
+}
+.container.lots .inner-container .result-area .search-words .word {
+  cursor: pointer;
+  display: inline-block;
+  padding: 9px 10px 6px 9px;
+  margin: 0 4px 6px 0;
+  background-color: #a7afb7;
+  font-family: "Roboto";
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  font-weight: 300;
+  color: #fff;
+  line-height: 100%;
+}
+.container.lots .inner-container .result-area .search-words .word:after {
+  content: 'X';
+  color: #666666;
+  padding-left: 10px;
+}
+.container.lots .inner-container .result-area .search-words .word:hover {
+  background-color: #32363a;
+}
+.container.lots .inner-container .result-area .search-words .word:hover:after {
+  color: #fff;
+}
+.container.lots .inner-container .result-area .text-header {
   display: inline-block;
   padding-right: 25px;
   margin: 1px 0 0 26px;
@@ -1333,7 +1566,7 @@ body > .container .inner-container .footer .copyright {
   position: relative;
   text-transform: uppercase;
 }
-.lots .result-area .text-header:before {
+.container.lots .inner-container .result-area .text-header:before {
   content: '';
   position: absolute;
   left: -26px;
@@ -1343,7 +1576,7 @@ body > .container .inner-container .footer .copyright {
   height: 48px;
   background-color: #707070;
 }
-.lots .result-area .text-header:after {
+.container.lots .inner-container .result-area .text-header:after {
   content: '';
   position: absolute;
   right: -5px;
@@ -1353,7 +1586,7 @@ body > .container .inner-container .footer .copyright {
   height: 21px;
   background: transparent url("../images/icon_info.png") no-repeat center center;
 }
-.lots .result-area .text-header .description {
+.container.lots .inner-container .result-area .text-header .description {
   margin: -2px 0 0 1px;
   font-family: "Roboto";
   font-size: 18px;
@@ -1364,10 +1597,7 @@ body > .container .inner-container .footer .copyright {
   line-height: 22px;
   text-transform: none;
 }
-.lots .result-area .btn-filter {
-  display: none;
-}
-.lots .result-area .result-count {
+.container.lots .inner-container .result-area .result-count {
   margin: 31px 0 0 0;
   font-family: "Roboto";
   font-size: 14px;
@@ -1376,21 +1606,29 @@ body > .container .inner-container .footer .copyright {
   color: #888888;
   line-height: 140%;
 }
-.lots .result-area .sort {
+.container.lots .inner-container .result-area .sort {
+  position: relative;
   cursor: pointer;
   display: inline-block;
   float: right;
-  margin: -21px 0 0 0;
-  padding: 10px 0 0 0;
+  margin: -25px 0 0 0;
+  padding: 4px 0px 4px 10px;
 }
-.lots .result-area .sort:hover {
+.container.lots .inner-container .result-area .sort:hover {
   text-decoration: underline;
 }
-.lots .result-area .sort .sorted {
-  margin: -9px 18px 0 0;
+.container.lots .inner-container .result-area .sort .sorted {
+  margin: 0 0 0 0;
+  font-family: "Roboto";
+  font-size: 14px;
+  letter-spacing: 0;
+  font-weight: 500;
+  color: #666666;
+  font-style: normal;
+  line-height: 140%;
   position: relative;
 }
-.lots .result-area .sort .sorted:after {
+.container.lots .inner-container .result-area .sort .sorted:after {
   content: '';
   position: absolute;
   right: -18px;
@@ -1400,10 +1638,11 @@ body > .container .inner-container .footer .copyright {
   height: 6px;
   background: transparent url("../images/icon_dropdown.png") no-repeat center center;
 }
-.lots .result-area .sort .options {
+.container.lots .inner-container .result-area .sort .options {
+  display: none;
   position: absolute;
   right: 0;
-  top: 107px;
+  top: 30px;
   background-color: #fff;
   z-index: 60;
   cursor: pointer;
@@ -1413,156 +1652,550 @@ body > .container .inner-container .footer .copyright {
   color: 4px 4px 4px rgba(247, 250, 252, 0.7);
   background-color: 4px 4px 4px rgba(247, 250, 252, 0.7);
 }
-.lots .result-area .sort .options .option {
+.container.lots .inner-container .result-area .sort .options.active {
+  display: block;
+}
+.container.lots .inner-container .result-area .sort .options .option {
   cursor: pointer;
+  font-family: "Roboto";
+  font-size: 14px;
+  letter-spacing: 0;
+  font-weight: 300;
+  color: #222222;
+  font-style: normal;
+  line-height: 140%;
   border: 1px solid #dcdcdc;
   border-bottom: 0;
-  padding: 6px 17px 8px 14px;
+  padding: 6px 0 8px 26px;
+  width: 204px;
 }
-.lots .result-area .sort .options .option:last-child {
+.container.lots .inner-container .result-area .sort .options .option:last-child {
   border-bottom: 1px solid #dcdcdc;
 }
-.lots .result-area .sort .options .option:hover {
+.container.lots .inner-container .result-area .sort .options .option:hover {
   background-color: #f7fafc;
 }
-.lots .result-area .results {
+.container.lots .inner-container .result-area .results {
+  width: 100%;
+  background-color: #fff;
   margin: 11px 0 0 0;
 }
-.lots .result-area .results thead {
-  border-top: 2px solid #eef4f6;
-  border-bottom: 2px solid #eef4f6;
-}
-.lots .result-area .results thead th {
-  padding: 19px 0 14px 1px;
-  margin: 0;
-}
-.lots .result-area .results thead .col-details {
-  width: 262px;
-  padding-left: 109px;
-}
-.lots .result-area .results thead .col-date {
-  width: 145px;
-}
-.lots .result-area .results thead .col-info {
-  width: 198px;
-}
-.lots .result-area .results thead .col-price {
-  width: 134px;
-}
-.lots .result-area .results tbody {
-  cursor: pointer;
-}
-.lots .result-area .results tbody tr {
-  height: 124px;
+.container.lots .inner-container .result-area .results thead tr .col {
+  border: 0;
   border-bottom: 1px solid #eef4f6;
+  text-align: center;
+  height: 47px;
+  padding: 0 0 0 0;
+  font-family: "Roboto";
+  font-size: 12px;
+  letter-spacing: 0;
+  font-weight: 700;
+  color: #888888;
+  font-style: normal;
+  line-height: 140%;
+  text-transform: uppercase;
 }
-.lots .result-area .results tbody .lot-detail {
+.container.lots .inner-container .result-area .results thead tr .col.details {
+  width: 604px;
+}
+.container.lots .inner-container .result-area .results thead tr .col.info {
+  width: 208px;
+}
+.container.lots .inner-container .result-area .results tbody tr td {
+  height: 200px;
+  border-bottom: 1px solid #eef4f6;
+  cursor: pointer;
+  position: relative;
+}
+.container.lots .inner-container .result-area .results tbody tr td.lot-detail {
   vertical-align: top;
-  padding: 14px 0 0 9px;
+  padding: 40px 50px 0 180px;
   position: relative;
 }
-.lots .result-area .results tbody .lot-detail:hover .worktitle {
-  text-decoration: underline;
+.container.lots .inner-container .result-area .results tbody tr td.lot-detail .img {
+  width: 110px;
+  height: 110px;
+  position: absolute;
+  left: 50px;
+  top: 30px;
 }
-.lots .result-area .results tbody .lot-detail .img {
-  float: left;
-  width: 100px;
-  height: 93px;
-  position: relative;
-}
-.lots .result-area .results tbody .lot-detail .img img {
-  max-width: 100px;
-  max-height: 93px;
+.container.lots .inner-container .result-area .results tbody tr td.lot-detail .img img {
+  max-width: 100%;
+  max-height: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.lots .result-area .results tbody .lot-detail .worktitle {
-  position: absolute;
-  left: 120px;
-  top: 14px;
+.container.lots .inner-container .result-area .results tbody tr td.lot-detail .work-info .artist {
+  margin-bottom: 6px;
+  font-family: "Roboto";
+  font-size: 14px;
+  letter-spacing: 0;
+  font-weight: 500;
+  color: #222222;
+  line-height: 140%;
   display: inline-block;
   text-overflow: ellipsis;
   word-break: break-all;
   max-width: 100%;
-  height: 24px;
+  max-height: 18px;
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
 }
-.lots .result-area .results tbody .lot-detail .summary {
-  position: absolute;
-  left: 120px;
-  top: 42px;
+.container.lots .inner-container .result-area .results tbody tr td.lot-detail .work-info .worktitle {
+  margin-bottom: 10px;
+  font-family: "Roboto";
+  font-size: 20px;
+  letter-spacing: 0.1px;
+  font-weight: 700;
+  color: #222222;
+  line-height: 140%;
+  text-transform: uppercase;
   display: inline-block;
   text-overflow: ellipsis;
   word-break: break-all;
-  max-width: 220px;
-  height: 54px;
+  max-width: 100%;
+  max-height: 24px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.container.lots .inner-container .result-area .results tbody tr td.lot-detail .work-info .summary {
+  font-family: "Roboto";
+  font-size: 14px;
+  letter-spacing: -0.4px;
+  font-weight: 300;
+  color: #222222;
+  line-height: 19px;
+  display: inline-block;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  max-width: 100%;
+  max-height: 54px;
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
 }
-.lots .result-area .results tbody .sale-date .date {
-  margin: 0 0 0 0;
+.container.lots .inner-container .result-area .results tbody tr td.sale-info {
+  vertical-align: top;
+  padding-top: 44px;
 }
-.lots .result-area .results tbody .sale-date .upcoming {
-  display: block;
-  margin-top: 2px;
+.container.lots .inner-container .result-area .results tbody tr td.sale-info .date {
+  font-family: "Roboto";
+  font-size: 16px;
+  letter-spacing: 0;
+  font-weight: 300;
+  color: #666666;
+  line-height: 18px;
+  margin-bottom: 15px;
+}
+.container.lots .inner-container .result-area .results tbody tr td.sale-info .upcoming {
+  background-color: #a7afb7;
+  padding: 3px 8px 2px 8px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-family: "Roboto";
+  font-size: 10px;
+  letter-spacing: 0;
+  font-weight: 700;
+  color: #fff;
+  font-style: normal;
+  line-height: 100%;
+}
+.container.lots .inner-container .result-area .results tbody tr td.sale-info .vendor {
+  font-family: "Roboto";
+  font-size: 13px;
+  letter-spacing: 0;
+  font-weight: 700;
+  color: #222222;
+  line-height: 140%;
+  text-transform: uppercase;
+}
+.container.lots .inner-container .result-area .results tbody tr td.sale-info .sale {
+  font-family: "Roboto";
+  font-size: 14px;
+  letter-spacing: -0.4px;
+  font-weight: 300;
+  color: #222222;
+  line-height: 19px;
+  display: inline-block;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  max-width: 100%;
+  max-height: 18px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.container.lots .inner-container .result-area .results tbody tr td.sale-info .lot {
+  font-family: "Roboto";
+  font-size: 14px;
+  letter-spacing: -0.4px;
+  font-weight: 300;
+  color: #222222;
+  line-height: 19px;
+}
+.container.lots .inner-container .result-area .results tbody tr td.price {
+  vertical-align: top;
+  padding-top: 41px;
+}
+.container.lots .inner-container .result-area .results tbody tr td.price .estimate {
+  margin-bottom: 16px;
+  font-family: "Roboto";
+  font-size: 18px;
+  letter-spacing: -0.3px;
+  font-weight: 300;
+  color: #666666;
+  line-height: 23px;
+  display: inline-block;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  max-width: 100%;
+  max-height: 23px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.container.lots .inner-container .result-area .results tbody tr td.price .estimate.custom-currency {
+  margin-top: -18px;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+.container.lots .inner-container .result-area .results tbody tr td.price .sold {
+  font-family: "Roboto";
+  font-size: 18px;
+  letter-spacing: -0.3px;
+  font-weight: 700;
+  color: #222222;
+  font-style: normal;
+  line-height: 22px;
+}
+.container.lots .inner-container .result-area .results tbody tr td.price .sold .premium {
+  display: inline-block;
+  margin: 4px 0 0 0;
+  font-family: "Roboto";
+  font-size: 11px;
+  letter-spacing: -0.6px;
+  font-weight: 500;
+  color: #888888;
+  line-height: 13px;
+}
+.container.lots .inner-container .result-area .results tbody tr td.price .sold.custom-currency {
+  font-family: "Roboto";
+  font-size: 18px;
+  letter-spacing: -0.3px;
+  font-weight: 300;
+  color: #666666;
+  line-height: 23px;
+  font-size: 14px;
+}
+.container.lots .inner-container .result-area .results tbody tr:hover {
+  background-color: #f7fafc;
+}
+.container.lots .inner-container .result-area .paging .prev .icon-arrow-left {
   position: relative;
 }
-.lots .result-area .results tbody .sale-date .upcoming:after {
-  content: '';
+.container.lots .inner-container .result-area .paging .prev .icon-arrow-left:after {
+  content: " ";
+  display: inline-block;
+  overflow: hidden;
+  width: 10px;
+  height: 18px;
   position: absolute;
-  left: 63px;
-  top: 7px;
-  margin: 0;
-  width: 13px;
-  height: 8px;
-  background: transparent url("../images/icon_arrow.png") no-repeat center center;
+  left: 0;
+  top: 0;
+  background-color: transparent;
+  background-image: url("../images/icon_arrow_main_left.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 10px 18px;
 }
-.lots .result-area .results tbody .sale-info {
-  vertical-align: top;
+.container.lots .inner-container .result-area .paging .prev .icon-arrow-left:after {
+  left: -18px;
+  opacity: 0.3;
 }
-.lots .result-area .results tbody .sale-info .vendor {
-  margin: 21px 0 0 0;
+.container.lots .inner-container .result-area .paging .prev:hover {
+  color: #000;
+  text-decoration: none;
 }
-.lots .result-area .results tbody .sale-info .sale {
-  margin: 9px 0 0 1px;
+.container.lots .inner-container .result-area .paging .prev:hover .icon-arrow-left:after {
+  opacity: 1;
+}
+.container.lots .inner-container .result-area .paging .next .icon-arrow-right {
+  position: relative;
+}
+.container.lots .inner-container .result-area .paging .next .icon-arrow-right:after {
+  content: " ";
   display: inline-block;
-  text-overflow: ellipsis;
-  word-break: break-all;
-  max-width: 150px;
-  height: 36px;
   overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
+  width: 10px;
+  height: 18px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: transparent;
+  background-image: url("../images/icon_arrow_main_right.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 10px 18px;
 }
-.lots .result-area .results tbody .sale-info .lot {
-  margin: 5px 0 0 0;
+.container.lots .inner-container .result-area .paging .next .icon-arrow-right:after {
+  left: unset;
+  right: -20px;
+  opacity: 0.3;
 }
-.lots .result-area .results tbody .price .estimate {
-  margin: 0 0 0 0;
+.container.lots .inner-container .result-area .paging .next:hover {
+  color: #000;
+  text-decoration: none;
+}
+.container.lots .inner-container .result-area .paging .next:hover .icon-arrow-right:after {
+  opacity: 1;
+}
+.container.lot .inner-container {
+  background-color: #eff3f6;
+}
+.container.lot .inner-container .lot-summary {
+  background-color: #fff;
+  border-bottom: 1px solid #eff4f7;
+}
+.container.lot .inner-container .lot-summary .data {
+  max-width: 1184px;
+  margin: 0 auto;
+  padding: 78px 0 51px 138px;
+  position: relative;
+}
+.container.lot .inner-container .lot-summary .data .lot-img {
+  position: absolute;
+  left: 0;
+  top: 81px;
+  width: 110px;
+  height: 110px;
+  text-align: center;
+}
+.container.lot .inner-container .lot-summary .data .lot-img img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.container.lot .inner-container .lot-summary .data .guarantee {
+  position: absolute;
+  left: 19px;
+  top: 212px;
+  width: 64px;
+  height: 46px;
+}
+.container.lot .inner-container .lot-summary .data .guarantee img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.container.lot .inner-container .lot-summary .data .artist-name {
+  margin: 0 0 3px 0;
+  font-family: "Roboto";
+  font-size: 20px;
+  letter-spacing: 0;
+  font-weight: 400;
+  color: #444444;
+  line-height: 24px;
+}
+.container.lot .inner-container .lot-summary .data .artist-desc {
+  margin: 0 0 16px 0;
+  font-family: "Roboto";
+  font-size: 12px;
+  letter-spacing: 0;
+  font-weight: 400;
+  color: #999999;
+  line-height: 16px;
+}
+.container.lot .inner-container .lot-summary .data .worktitle {
+  margin: 0 0 4px 0;
+  font-family: "Roboto";
+  font-size: 16px;
+  letter-spacing: 0;
+  font-weight: 700;
+  color: #222222;
+  text-transform: uppercase;
+  line-height: 20px;
+}
+.container.lot .inner-container .lot-summary .data .work-desc {
+  margin: 0 0 12px 1px;
+  font-family: "Roboto";
+  font-size: 16px;
+  letter-spacing: 0;
+  font-weight: 300;
+  color: #222222;
+  line-height: 24px;
+}
+.container.lot .inner-container .lot-comparables {
+  background-color: #fff;
+  border-bottom: 1px solid #eff4f7;
+}
+.container.lot .inner-container .lot-comparables .data {
+  max-width: 1184px;
+  margin: 0 auto;
+  padding: 37px 0 32px 138px;
+  position: relative;
+}
+.container.lot .inner-container .lot-comparables .data .title {
   display: inline-block;
-  text-overflow: ellipsis;
-  word-break: break-all;
-  max-width: 120px;
-  height: 44px;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
+  font-family: "Roboto";
+  font-size: 24px;
+  letter-spacing: 0;
+  font-weight: 500;
+  color: #222222;
+  line-height: 28px;
 }
-.lots .result-area .results tbody .price .sold {
-  margin: 4px 0 0 0;
+.container.lot .inner-container .lot-comparables .data .images {
+  margin-top: 7px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
-.lots .result-area .results tbody .price .sold .premium {
+.container.lot .inner-container .lot-comparables .data .images .img {
+  display: inline-block;
+  height: 56px;
+  margin: 0 5px 5px 0;
+  position: relative;
+  border: 1px solid transparent;
+}
+.container.lot .inner-container .lot-comparables .data .images .img:hover {
+  border: 1px solid #dcdcdc;
+}
+.container.lot .inner-container .lot-comparables .data .images .img img {
+  height: 100%;
+}
+.container.lot .inner-container .lot-comparables .data .images .more {
+  display: inline-block;
+  width: 56px;
+  height: 56px;
+  padding-top: 11px;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 34px;
+  letter-spacing: 0;
+  font-weight: 300;
+  color: #dadfe1;
+  line-height: 34px;
+}
+.container.lot .inner-container .lot-sale-info {
+  background-color: #fff;
+  border-bottom: 1px solid #eff4f7;
+}
+.container.lot .inner-container .lot-sale-info .data {
+  max-width: 1184px;
+  margin: 0 auto;
+  padding: 41px 0 0 134px;
+  position: relative;
+}
+.container.lot .inner-container .lot-sale-info .data .estimate {
+  margin: 10px 0 11px 0;
+  font-family: "Roboto";
+  font-size: 16px;
+  letter-spacing: 0;
+  font-weight: 400;
+  color: #bbbbbb;
+  font-style: normal;
+  line-height: 20px;
+}
+.container.lot .inner-container .lot-sale-info .data .estimate.custom-currency {
+  margin: -10px 0 8px 0;
+}
+.container.lot .inner-container .lot-sale-info .data .sold-price {
+  display: inline-block;
+  margin: 0 0 5px 0;
+  font-family: "Roboto";
+  font-size: 28px;
+  letter-spacing: -0.9px;
+  font-weight: 700;
+  color: #222222;
+  font-style: normal;
+  line-height: 32px;
+}
+.container.lot .inner-container .lot-sale-info .data .sold-price.custom-currency {
   display: block;
-  margin: 4px 0 0 0;
+  font-family: "Roboto";
+  font-size: 16px;
+  letter-spacing: -0.6px;
+  font-weight: 700;
+  color: #222222;
+  font-style: normal;
+  line-height: 20px;
+}
+.container.lot .inner-container .lot-sale-info .data .premium {
+  display: inline-block;
+  margin: 0 0 0 5px;
+  font-family: "Roboto";
+  font-size: 10px;
+  letter-spacing: 0;
+  font-weight: 400;
+  color: #888888;
+  font-style: normal;
+  line-height: 21px;
+}
+.container.lot .inner-container .lot-sale-info .data .sale-date {
+  padding: 30px 0 2px 1px;
+  font-family: "Roboto";
+  font-size: 14px;
+  letter-spacing: 0;
+  font-weight: 300;
+  color: #666666;
+  font-style: normal;
+  line-height: 18px;
+}
+.container.lot .inner-container .lot-sale-info .data .sale-vendor {
+  padding: 0 0 2px 0;
+}
+.container.lot .inner-container .lot-sale-info .data .sale-name {
+  margin: 0 0 0 0;
+  font-family: "Roboto";
+  font-size: 14px;
+  letter-spacing: 0;
+  font-weight: 400;
+  color: #444444;
+  line-height: 20px;
+}
+.container.lot .inner-container .lot-sale-info .data .sale-lot-number {
+  padding: 0 0 77px 0;
+  font-family: "Roboto";
+  font-size: 14px;
+  letter-spacing: 0;
+  font-weight: 400;
+  color: #444444;
+  line-height: 18px;
+}
+.container.lot .inner-container .lot-detail .data {
+  max-width: 1184px;
+  margin: 0 auto;
+  padding: 76px 0 95px 134px;
+  position: relative;
+}
+.container.lot .inner-container .lot-detail .data .etc {
+  padding: 0 0 40px 0;
+}
+.container.lot .inner-container .lot-detail .data .etc .title {
+  margin: 0 0 21px 0;
+  font-family: "Roboto";
+  font-size: 24px;
+  letter-spacing: 0;
+  font-weight: 500;
+  color: #222222;
+  line-height: 24px;
+}
+.container.lot .inner-container .lot-detail .data .etc .context {
+  padding: 0 0 0 2px;
+  font-family: "Roboto";
+  font-size: 16px;
+  letter-spacing: 0;
+  font-weight: 300;
+  color: #444444;
+  line-height: 22px;
 }
 
-/*# sourceMappingURL=lots.css.map */
+/*# sourceMappingURL=main_xs.css.map */

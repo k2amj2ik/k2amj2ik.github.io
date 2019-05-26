@@ -28,7 +28,7 @@ html {
   height: 100%;
   padding: 0 0 0 0 !important;
   margin: 0 0 0 0 !important;
-  overflow: hidden;
+  //overflow: hidden;
 }
 body {
   height: 100%;
@@ -206,13 +206,6 @@ body>.container {
           }
         }
       }
-    }
-    .btn-back {
-      float: right;
-      margin: 16px 40px 0 0;
-      width: 261px;
-      @include box-style(btn-third-bgdark);
-
     }
     .location {
       float: right;
@@ -475,13 +468,6 @@ body>.container {
   margin-left: 4px;
   background: transparent url(../images/icon_arrow_up.png) no-repeat 0 0 /12px 7px;
 }
-.icon-arrow-left {
-  display: inline-block;
-  width: 17px;
-  height: 16px;
-  margin-right: 4px;
-  background: transparent url(../images/icon_arrow_left.png) no-repeat 0 0 /17px 16px;
-}
 .icon-arrow-down {
   display: inline-block;
   width: 12px;
@@ -504,7 +490,7 @@ body>.container {
   opacity: 0.8;
   z-index: $z-index-max;
 }
-.bg-login {background: transparent url('../images/bg_PC_00_login_1920x920.png') no-repeat top center / 1920px 920px;}
+.bg-login {background: transparent url('../images/bg_mobile_01.login_360x640.png') no-repeat top center / 360px 640px;}
 .bg-main {background: transparent url('../images/bg_PC_01_main_1920x920.png') no-repeat top center / 1920px 920px;}
 .bg-main-layer {background: transparent url('../images/bg_PC_01_main_layer_1920x920.png') no-repeat top center / 1920px 920px;}
 .bg-artists {background: transparent url('../images/bg_PC_02_artist_list_1920x1087.png') no-repeat top center / 1920px 1087px;}

@@ -178,10 +178,10 @@
   }
   @if $name == btn-secondary-bgdark {
     font-family: $font-family-roboto;
-    letter-spacing: 0;
-    font-size: 16px;
-    font-weight: 400;
-    color: $text-default-bgdark;
+    letter-spacing: 0.9px;
+    font-size: 15px;
+    font-weight: 700;
+    color: $text-white;
     line-height: 100%;
   }
   @if $name == btn-primary-sx {
@@ -428,6 +428,14 @@
     color: $text-default;
     line-height: 140%;
   }
+  @if $name == text-table-artist-origin {
+    font-family: $font-family-roboto;
+    font-size: 14px;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: $text-gray;
+    line-height: 18px;
+  }
   @if $name == text-table-worktitle {
     font-family: $font-family-roboto;
     font-size: 20px;
@@ -435,6 +443,64 @@
     font-weight: 700;
     color: $text-default;
     line-height: 140%;
+    text-transform: uppercase;
+  }
+  @if $name == text-comparable-worktitle {
+    font-family: $font-family-roboto;
+    font-size: 16px;
+    letter-spacing: 0;
+    font-weight: 700;
+    color: $text-deepdark;
+    line-height: 18px;
+    text-transform: uppercase;
+  }
+  @if $name == text-comparable-medium {
+    font-family: $font-family-roboto;
+    font-size: 18px;
+    letter-spacing: 0;
+    font-weight: 300;
+    color: $text-default;
+    line-height: 20px;
+  }
+  @if $name == text-comparable-estimate {
+    font-family: $font-family-roboto;
+    font-size: 18px;
+    letter-spacing: 0;
+    font-weight: 300;
+    color: $text-darkgray;
+    line-height: 22px;
+  }
+  @if $name == text-comparable-sold {
+    font-family: $font-family-roboto;
+    font-size: 18px;
+    letter-spacing: 0;
+    font-weight: 700;
+    color: $text-default;
+    line-height: 18px;
+  }
+  @if $name == text-comparable-sold-desc {
+    font-family: $font-family-roboto;
+    font-size: 11px;
+    letter-spacing: 0;
+    font-weight: 300;
+    color: $text-lightgray;
+    line-height: 11px;
+  }
+  @if $name == text-comparable-date {
+    font-family: $font-family-roboto;
+    font-size: 14px;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: $text-default;
+    line-height: 14px;
+  }
+  @if $name == text-comparable-vendor {
+    font-family: $font-family-roboto;
+    font-size: 13px;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: $text-description;
+    line-height: 15px;
     text-transform: uppercase;
   }
   @if $name == text-table-summary {
@@ -806,6 +872,23 @@
       text-decoration: none;
     }
   }
+  @if $box == btn-third-bgdark {
+    cursor: pointer;
+    display: inline-block;
+    padding: 15px 0 14px 31px !important;
+    text-align: left;
+    background-color: $bg-dark;
+    border:1px solid $border-white;
+    @include text-style(btn-secondary-bgdark);
+    &:after{
+      left: 94.3%;
+      top:22px;
+    }
+    &:hover {
+      border-color: rgba(0,0,0,1);
+      text-decoration: none;
+    }
+  }
   @if $box == select-options {
     cursor: pointer;
     -webkit-box-shadow: $box-shadow-select-options; // iOS <4.3 & Android <4.1
@@ -946,7 +1029,7 @@
   //word-wrap:break-word;
   word-break: break-all;
   max-width:$width;
-  height: $height;
+  max-height: $height;
   overflow:hidden;
   display: -webkit-box;
   -webkit-line-clamp: $line-count;
