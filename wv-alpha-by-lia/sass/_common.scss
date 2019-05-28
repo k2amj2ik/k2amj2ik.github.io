@@ -28,7 +28,7 @@ html {
   height: 100%;
   padding: 0 0 0 0 !important;
   margin: 0 0 0 0 !important;
-  overflow: hidden;
+  //overflow: hidden;
 }
 body {
   height: 100%;
@@ -475,12 +475,12 @@ body>.container {
   margin-left: 4px;
   background: transparent url(../images/icon_arrow_up.png) no-repeat 0 0 /12px 7px;
 }
-.icon-arrow-left {
+.icon-arrow-top-left {
   display: inline-block;
-  width: 17px;
-  height: 16px;
+  width: 16px;
+  height: 20px;
   margin-right: 4px;
-  background: transparent url(../images/icon_arrow_left.png) no-repeat 0 0 /17px 16px;
+  background: transparent url(../images/icon_arrow_left.png) no-repeat 0 0 /16px 20px;
 }
 .icon-arrow-down {
   display: inline-block;
@@ -489,7 +489,37 @@ body>.container {
   margin-left: 4px;
   background: transparent url('../images/icon_arrow_down.png') no-repeat 0 0 /12px 7px;
 }
+.icon_compare_o {
+  position: absolute;
+  top: 50px;
+  left: -webkit-calc(50% - 12px);
+  left:    -moz-calc(50% - 12px);
+  left:         calc(50% - 12px);
+  width:24px;
+  height:24px;
+  background: transparent url('../images/icon_compare_o_x2.png') no-repeat center center / 24px 24px;
+}
 
+.icon_compare_middle {
+  position: absolute;
+  top: 50px;
+  left: -webkit-calc(50% - 12px);
+  left:    -moz-calc(50% - 12px);
+  left:         calc(50% - 12px);
+  width:25px;
+  height:21px;
+  background: transparent url('../images/icon_compare_middle_x2.png') no-repeat center center / 25px 21px;
+}
+.icon_compare_x {
+  position: absolute;
+  top: 50px;
+  left: -webkit-calc(50% - 12px);
+  left:    -moz-calc(50% - 12px);
+  left:         calc(50% - 12px);
+  width:20px;
+  height:20px;
+  background: transparent url('../images/icon_compare_x_x2.png') no-repeat center center / 20px 20px;
+}
 
 
 //for purblishing--------------------------------------------------------------------------------------

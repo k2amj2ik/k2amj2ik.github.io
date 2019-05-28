@@ -2,19 +2,63 @@
 
 //login, main
 .bgdark {
-  background: $bg-dark url('../images/logo_pc_type2.png') no-repeat bottom center/ auto 213px;
+  background-color: $bg-dark;
 }
 .container-main {
   .header-container {
+    width: 100%;
     height: 60px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    .logo {
+      float: left;
+      cursor: pointer;
+      margin: 0 0 0 10px;
+      width: 196px;
+      height: 38px;
+      background: transparent url('../images/logo_pc_type1.png') no-repeat 20px 20px/ 176px 18px;
+    }
+    .sites {
+      display: none;
+    }
+  }
+  .inner-container {
+    padding: 60px 0 200px 0;
+    .form-login {
+      width: 100%;
+      padding: 50px 30px 30px 30px;
+      .form-group {
+        min-height: 56px;
+      }
+      .form-check {
+        margin-top:29px;
+        border: 0;
+        text-align: left;
+      }
+      .form-btns {
+        margin-top:30px;
+      }
+      .form-link {
+        padding-top: 10px;
+        text-align: right;
+      }
+      .form-out {
+        padding-top: 85px;
+      }
+    }
+  }
+  .footer-main {
+    display: block;
     width: 100%;
     position: fixed;
-    top: 0;
-    background-color: $bg-dark;
-    z-index: $z-index-max;
+    bottom: 26px;
+    .copyright {
+      z-index: $z-index-min;
+      text-align: center;
+      @include text-style(text-footer-main-xs);
+    }
   }
-  .inner-container {}
-  .footer-main {}
 }
 
 //artists, lots, lot ...
@@ -188,7 +232,6 @@
                 }
 
                   .subtitle {
-                    //border:1px solid blue;
                     margin: 25px 0 10px 0;
                     @include text-style(text-filter-subtitle);
                 }
@@ -287,7 +330,6 @@
                 }
 
                   .subtitle {
-                    //border:1px solid blue;
                     margin: 25px 0 10px 0;
                     @include text-style(text-filter-subtitle);
                 }

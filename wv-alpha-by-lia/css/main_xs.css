@@ -471,7 +471,7 @@ body > .container .top-navigation .location .normal .nav-link:link {
   color: #77818a;
   text-decoration: none;
 }
-body > .container .top-navigation .location .normal .nav-link:hover {
+body > .container .top-navigation .location .normal .nav-link:hover, body > .container .top-navigation .location .normal .nav-link:active {
   text-decoration: underline;
 }
 body > .container .top-navigation .location .normal .nav-link:visited {
@@ -505,7 +505,7 @@ body > .container .top-navigation .location .here .nav-link:link {
   color: #fff;
   text-decoration: none;
 }
-body > .container .top-navigation .location .here .nav-link:hover {
+body > .container .top-navigation .location .here .nav-link:hover, body > .container .top-navigation .location .here .nav-link:active {
   text-decoration: underline;
 }
 body > .container .top-navigation .location .here .nav-link:visited {
@@ -573,7 +573,7 @@ body > .container .inner-container .footer .sites .site:link {
   color: #acaeb5;
   text-decoration: none;
 }
-body > .container .inner-container .footer .sites .site:hover {
+body > .container .inner-container .footer .sites .site:hover, body > .container .inner-container .footer .sites .site:active {
   text-decoration: underline;
 }
 body > .container .inner-container .footer .sites .site:visited {
@@ -648,7 +648,7 @@ body > .container .inner-container .footer .copyright {
   color: #888888;
   text-decoration: none;
 }
-.paging .prev:hover {
+.paging .prev:hover, .paging .prev:active {
   text-decoration: underline;
 }
 .paging .prev:visited {
@@ -679,7 +679,7 @@ body > .container .inner-container .footer .copyright {
   color: #acaeb5;
   text-decoration: none;
 }
-.paging a.num:hover {
+.paging a.num:hover, .paging a.num:active {
   text-decoration: underline;
 }
 .paging a.num:visited {
@@ -694,7 +694,7 @@ body > .container .inner-container .footer .copyright {
   color: #222222;
   text-decoration: none;
 }
-.paging a.active:hover {
+.paging a.active:hover, .paging a.active:active {
   text-decoration: underline;
 }
 .paging a.active:visited {
@@ -717,7 +717,7 @@ body > .container .inner-container .footer .copyright {
   color: #888888;
   text-decoration: none;
 }
-.paging .next:hover {
+.paging .next:hover, .paging .next:active {
   text-decoration: underline;
 }
 .paging .next:visited {
@@ -752,7 +752,7 @@ body > .container .inner-container .footer .copyright {
   line-height: 100%;
   background-color: #e7e7e7;
 }
-.btn-primary-bgdark:hover {
+.btn-primary-bgdark:hover, .btn-primary-bgdark:active {
   background-color: #7e8a95;
   text-decoration: none;
 }
@@ -767,11 +767,11 @@ body > .container .inner-container .footer .copyright {
   background-color: #232629;
   border: 1px solid #454d54;
   font-family: "Roboto";
-  letter-spacing: 0.9px;
-  font-size: 15px;
-  font-weight: 700;
-  color: #fff;
-  line-height: 100%;
+  letter-spacing: 0;
+  font-size: 16px;
+  font-weight: 400;
+  color: #999999;
+  line-height: 22px;
   position: relative;
 }
 .btn-secondary-bgdark:after {
@@ -793,7 +793,7 @@ body > .container .inner-container .footer .copyright {
   left: 94.3%;
   top: 22px;
 }
-.btn-secondary-bgdark:hover {
+.btn-secondary-bgdark:hover, .btn-secondary-bgdark:active {
   border-color: black;
   text-decoration: none;
 }
@@ -813,7 +813,7 @@ body > .container .inner-container .footer .copyright {
   color: #7e8a95;
   text-decoration: none;
 }
-.btn-link-bgdark:hover {
+.btn-link-bgdark:hover, .btn-link-bgdark:active {
   text-decoration: underline;
 }
 .btn-link-bgdark:visited {
@@ -833,7 +833,7 @@ body > .container .inner-container .footer .copyright {
   color: #222222;
   text-decoration: none;
 }
-.btn-link-tiny:hover {
+.btn-link-tiny:hover, .btn-link-tiny:active {
   text-decoration: underline;
 }
 .btn-link-tiny:visited {
@@ -858,7 +858,7 @@ body > .container .inner-container .footer .copyright {
   line-height: 100%;
   background-color: #fff;
 }
-.btn-primary:hover {
+.btn-primary:hover, .btn-primary:active {
   background-color: #f7fafc;
   text-decoration: none;
 }
@@ -876,7 +876,7 @@ body > .container .inner-container .footer .copyright {
   background-color: #000;
   border: 1px solid #000;
 }
-.btn-action:hover {
+.btn-action:hover, .btn-action:active {
   background-color: #32363a;
   border: 1px solid #000;
   text-decoration: none;
@@ -911,7 +911,7 @@ body > .container .inner-container .footer .copyright {
   font-style: normal;
   line-height: 100%;
 }
-.btn-badge:hover {
+.btn-badge:hover, .btn-badge:active {
   background-color: #000;
   text-decoration: none;
 }
@@ -1056,16 +1056,67 @@ body > .container .inner-container .footer .copyright {
 }
 
 .bgdark {
-  background: #232629 url("../images/logo_pc_type2.png") no-repeat bottom center/auto 213px;
+  background-color: #232629;
 }
 
 .container-main .header-container {
+  width: 100%;
   height: 60px;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+.container-main .header-container .logo {
+  float: left;
+  cursor: pointer;
+  margin: 0 0 0 10px;
+  width: 196px;
+  height: 38px;
+  background: transparent url("../images/logo_pc_type1.png") no-repeat 20px 20px/176px 18px;
+}
+.container-main .header-container .sites {
+  display: none;
+}
+.container-main .inner-container {
+  padding: 60px 0 200px 0;
+}
+.container-main .inner-container .form-login {
+  width: 100%;
+  padding: 50px 30px 30px 30px;
+}
+.container-main .inner-container .form-login .form-group {
+  min-height: 56px;
+}
+.container-main .inner-container .form-login .form-check {
+  margin-top: 29px;
+  border: 0;
+  text-align: left;
+}
+.container-main .inner-container .form-login .form-btns {
+  margin-top: 30px;
+}
+.container-main .inner-container .form-login .form-link {
+  padding-top: 10px;
+  text-align: right;
+}
+.container-main .inner-container .form-login .form-out {
+  padding-top: 85px;
+}
+.container-main .footer-main {
+  display: block;
   width: 100%;
   position: fixed;
-  top: 0;
-  background-color: #232629;
-  z-index: 90;
+  bottom: 26px;
+}
+.container-main .footer-main .copyright {
+  z-index: 10;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 12px;
+  letter-spacing: 0;
+  font-weight: 300;
+  color: #8a8a8a;
+  line-height: 100%;
 }
 
 .container.artists .inner-container > .keyword {
