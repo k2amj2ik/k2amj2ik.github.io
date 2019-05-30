@@ -873,6 +873,9 @@
     padding: 25px 4px 23px 4px !important;
     @include text-style(btn-primary-bgdark);
     background-color: $bg-btn-normal;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
     &:hover, &:active {
       background-color: $text-default-bgdark;
       text-decoration: none;

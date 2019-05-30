@@ -751,6 +751,9 @@ body > .container .inner-container .footer .copyright {
   color: #000;
   line-height: 100%;
   background-color: #e7e7e7;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
 }
 .btn-primary-bgdark:hover, .btn-primary-bgdark:active {
   background-color: #7e8a95;
@@ -1065,6 +1068,7 @@ body > .container .inner-container .footer .copyright {
   position: fixed;
   left: 0;
   top: 0;
+  background-color: #232629;
 }
 .container-main .header-container .logo {
   float: left;
@@ -1107,6 +1111,7 @@ body > .container .inner-container .footer .copyright {
   width: 100%;
   position: fixed;
   bottom: 26px;
+  background-color: #232629;
 }
 .container-main .footer-main .copyright {
   z-index: 10;

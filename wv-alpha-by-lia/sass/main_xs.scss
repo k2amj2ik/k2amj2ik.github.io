@@ -11,6 +11,7 @@
     position: fixed;
     left: 0;
     top: 0;
+    background-color: $bg-dark;
     .logo {
       float: left;
       cursor: pointer;
@@ -53,6 +54,7 @@
     width: 100%;
     position: fixed;
     bottom: 26px;
+    background-color: $bg-dark;
     .copyright {
       z-index: $z-index-min;
       text-align: center;
