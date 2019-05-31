@@ -1,0 +1,124 @@
+// text-style
+@mixin text-style($name) {
+  @if $name == text-default {
+    font-family: $font-family-helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: $text-default;
+    line-height: 16px;
+  }
+}
+
+
+// box-style
+@mixin box-style($box) {
+  @if $box == btn-primary {
+    cursor: pointer;
+    border: 1px solid $border-btn-primary;
+    padding: 23px 126px 21px 126px;
+    margin-right: 14px;
+    font-family: $font-family-roboto;
+    letter-spacing: 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: $text-black;
+    line-height: 100%;
+    background-color: $bg-white;
+    &:hover, &:active {
+      background-color: $bg-fairy;
+      text-decoration: none;
+    }
+  }
+}
+
+//link-color
+@mixin link-color($color) {
+  &:link {
+    color: $color;
+    text-decoration: none;
+  }
+  &:hover, &:active {
+    text-decoration: underline;
+  }
+  &:visited {
+    color: rgba($color, 0.5);
+    text-decoration: none;
+  }
+  &:active {
+    outline: none;
+    text-decoration: underline;
+  }
+}
+
+//placeholder
+@mixin placeholder-color($color) {
+  &.placeholder{color: $color}
+  &:-moz-placeholder{color: $color}
+  &:-webkit-input-placeholder{color: $color}
+  &:-ms-input-placeholder{color: $color}
+}
+
+@mixin placeholder-font-style($font) {
+  &.placeholder{font-style: $font}
+  &:-moz-placeholder{font-style: $font}
+  &:-webkit-input-placeholder{font-style: $font}
+  &:-ms-input-placeholder{font-style: $font}
+}
+
+
+// cut-text
+@mixin cut-text($width,$height,$line-count) {
+  display: inline-block;
+  text-overflow:ellipsis;
+  //word-wrap:break-word;
+  word-break: break-all;
+  max-width:$width;
+  max-height: $height;
+  overflow:hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: $line-count;
+  -webkit-box-orient: vertical;
+}
+
+
+
+// calculator
+@mixin calculator ($property, $expression) {
+  #{$property}: -moz-calc(#{$expression});
+  #{$property}: -webkit-calc(#{$expression});
+  #{$property}: calc(#{$expression});
+}
+
+// highlight
+@mixin highlight ($text) {
+  cursor: pointer;
+  position: relative;
+  &:after {
+    //content: '#{$text}';
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    left: -5px;
+    padding: 0 0 0 5px;
+    line-height: 100%;
+    width: 90px;
+    @include calculator(height,'100% - 8px');
+    background-color: $bg-highlight;
+    z-index : $z-index-minus;
+  }
+  &:hover {
+    text-decoration: none;
+    &:after {
+      animation-name: fill-highlight;
+      animation-duration: 0.2s;
+      @include calculator(width,'100% + 2px');
+
+      @keyframes fill-highlight {
+        0%   {width: 90px;}
+        100% {@include calculator(width,'100% + 2px');}
+      }
+    }
+  }
+}
