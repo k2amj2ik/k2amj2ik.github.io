@@ -28,7 +28,9 @@ input, button, select {
   }
 }
 
-.link-primary {
+//buttons--------------------------------------------------------------------------------------
+
+.link-main {
   font-family: $font-family-helvetica;
   font-size: 14px;
   font-weight: 600;
@@ -37,13 +39,46 @@ input, button, select {
   color: $text-highlight;
 }
 
+.link-primary {
+  padding: 10px 10px 10px 77px;
+  margin: 0 0 0 0;
+  font-family: $font-family-helvetica;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 100%;
+  color: $text-default;
+  text-transform: uppercase;
+  position: relative;
+  &:after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left:  0;
+    top: 20px;
+    width: 61px;
+    height: 1px;
+    background-color: $bg-black;
+  }
+}
+
+//icons--------------------------------------------------------------------------------------
+.icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+.icon-apple {  background: transparent url('../images/icon_apple.png') no-repeat top center / 13px 15px; }
+.icon-android {  background: transparent url('../images/icon_android.png') no-repeat top center / 13px 16px; }
+
+
 //for purblishing--------------------------------------------------------------------------------------
 .hidden {
   display: none !important;
 }
 
 .bg {
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 1020px;
   overflow: hidden;
@@ -54,13 +89,13 @@ input, button, select {
   z-index: $z-index-max;
 }
 .bg-main {background: transparent url('../images/bg_pc_00_main_1920x1020.png') no-repeat top center / 1920px 1020px;}
-.bg-aboutus1 {background: transparent url('../images/bg_pc_01_aboutus01_1920x1020.png') no-repeat top center / 1920px 1020px;}
-.bg-aboutus2 {background: transparent url('../images/bg_pc_01_aboutus02_1920x1020.png') no-repeat top center / 1920px 1020px;}
-.bg-service1 {background: transparent url('../images/bg_pc_02_service01_01_blueindex_1920x1020.png.png') no-repeat top center / 1920px 1020px;}
-.bg-service2 {background: transparent url('../images/bg_pc_02_service01_02_blueindexmonopoly_1920x1020.png') no-repeat top center / 1920px 1020px;}
-.bg-service3 {background: transparent url('../images/bg_pc_02_service01_03_blueindexmonopoly_1920x1020.png') no-repeat top center / 1920px 1020px;}
-.bg-service4 {background: transparent url('../images/bg_pc_02_service01_04_contributor_1920x1020.png') no-repeat top center / 1920px 1020px;}
-.bg-service5 {background: transparent url('../images/bg_pc_02_service01_05_validator_1920x1020.png') no-repeat top center / 1920px 1020px;}
-.bg-service6 {background: transparent url('../images/bg_pc_02_service01_06_liveauctionart_1920x1020.png') no-repeat top center / 1920px 1020px;}
+.bg-aboutus {background: transparent url('../images/bg_pc_01_aboutus01_1920x1020.png') no-repeat top center / 1920px 1020px;}
+.bg-partner {background: transparent url('../images/bg_pc_01_aboutus02_1920x1020.png') no-repeat top center / 1920px 1020px;}
+.bg-blueindex {background: transparent url('../images/bg_pc_02_service01_01_blueindex_1920x1020.png.png') no-repeat top center / 1920px 1020px;}
+.bg-monopoly {background: transparent url('../images/bg_pc_02_service01_02_blueindexmonopoly_1920x1020.png') no-repeat top center / 1920px 1020px;}
+.bg-contributor {background: transparent url('../images/bg_pc_02_service01_03_contributor_1920x1020.png') no-repeat top center / 1920px 1020px;}
+.bg-validator {background: transparent url('../images/bg_pc_02_service01_04_validator_1920x1020.png') no-repeat top center / 1920px 1020px;}
+.bg-datasharing {background: transparent url('../images/bg_pc_02_service01_05_datasharing_1920x1020.png') no-repeat top center / 1920px 1020px;}
+.bg-liveauctionart {background: transparent url('../images/bg_pc_02_service01_06_liveauctionart_1920x1280.png') no-repeat top center / 1920px 1280px;}
 .bg-service7 {background: transparent url('../images/bg_pc_02_service01_07_inartpress_1920x1020.png') no-repeat top center / 1920px 1020px;}
 .bg-contact {background: transparent url('../images/bg_pc_03_contact01_1920x1020.png') no-repeat top center / 1920px 1020px;}

@@ -39,12 +39,12 @@ body>.container {
       height: 50px;
       background: transparent url('../images/logo.png') no-repeat center center / 151px 18px;
     }
-    .sites {
+    .menus {
       display: inline-block;
       float:right;
       margin: 43px 17px 0 0;
       justify-content: center;
-      .site {
+      .menu {
         display: inline-block;
         margin: 0 44px 0 -10px;
         font-family: $font-family-helvetica;
@@ -64,18 +64,16 @@ body>.container {
     padding: 95px 0 0 0;
     .section {
       position: relative;
-      height: 700px;
-      &.pg-main .sub-container { padding: 273px 0 0 343px; }
-      &.pg-aboutus1 .sub-container { padding: 248px 82px 0 0; }
+      height: 1000px;
       .main-container {
         margin: 0 0 0 0;
-        padding: 0 0 0 91px;
+        padding: 0 0 0 89px;
         font-family: $font-family-helvetica;
         font-size: 48px;
         font-weight: 600;
-        letter-spacing: -0.5px;
+        letter-spacing: 0;
         color: $text-default;
-        line-height: 56px;
+        line-height: 46px;
         .highlight {
           @include highlight('Search');
         }
@@ -90,9 +88,19 @@ body>.container {
           background-color: $bg-black;
         }
         &.section-title {
-          padding-top: 39px;
+          padding-top: 43px;
           &:after {
             display: none;
+          }
+          .description {
+            display: block;
+            margin: 18px 0 0 0;
+            font-family: $font-family-helvetica;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0;
+            color: $text-lightgray;
+            line-height: 100%;
           }
         }
       }
@@ -101,46 +109,17 @@ body>.container {
         top: 0;
         left: 515px;
         width: 686px;
-        .paragraph {
-          padding: 0 0 24px 0;
-          .title {
-            margin: 0 0 7px 0;
+        .figure {
+          padding: 0 0 0 0;
+          margin: 0 0 0 0;
+          .caption {
+            padding: 24px 170px 0 0;
             font-family: $font-family-helvetica;
-            font-size: 14px;
-            font-weight: 600;
-            letter-spacing: 0;
-            color: $text-darkgray;
-            line-height: 100%;
-          }
-          .description {
-            margin: 0 0 12px 0;
-            font-family: $font-family-helvetica;
-            font-size: 13px;
+            font-size: 16px;
             font-weight: 400;
             letter-spacing: 0;
             color: $text-darkgray;
-            line-height: 17px;
-          }
-          .link-primary {
-            display: none;
-            margin-bottom: 21px;
-          }
-          &.active, &:hover {
-            cursor: pointer;
-            position: relative;
-            .link-primary {
-              display: inline-block;
-            }
-            &:after {
-              content: '';
-              display: inline-block;
-              position: absolute;
-              left:  -79px;
-              top:  4px;
-              width: 62px;
-              height: 4px;
-              background-color: $bg-highlight;
-            }
+            line-height: 22px;
           }
         }
         .major-description {
@@ -160,6 +139,244 @@ body>.container {
             width: 62px;
             height: 4px;
             background-color: $bg-highlight;
+          }
+        }
+      }
+      &.pg-main {
+        .sub-container {
+          padding: 273px 0 0 343px;
+          .paragraph {
+            padding: 0 0 24px 0;
+            .title {
+              margin: 0 0 7px 0;
+              font-family: $font-family-helvetica;
+              font-size: 14px;
+              font-weight: 600;
+              letter-spacing: 0;
+              color: $text-darkgray;
+              line-height: 100%;
+            }
+            .description {
+              margin: 0 0 12px 0;
+              font-family: $font-family-helvetica;
+              font-size: 13px;
+              font-weight: 400;
+              letter-spacing: 0;
+              color: $text-darkgray;
+              line-height: 17px;
+            }
+            .link-main {
+              display: none;
+              margin-bottom: 21px;
+            }
+            &.active, &:hover {
+              cursor: pointer;
+              position: relative;
+              .link-main {
+                display: inline-block;
+              }
+              &:after {
+                content: '';
+                display: inline-block;
+                position: absolute;
+                left:  -79px;
+                top:  4px;
+                width: 62px;
+                height: 4px;
+                background-color: $bg-highlight;
+              }
+            }
+          }
+        }
+      }
+      &.pg-aboutus {
+        .sub-container {
+          padding: 248px 82px 0 0;
+        }
+      }
+      &.pg-partner {
+        .sub-container {
+          padding: 215px 0 0 0;
+          @include calculator(width,'100% - 514px');
+          @include scrollbars(0.5em, slategray);
+          overflow: auto;
+          .scrollable {
+            display: flex;
+            width: 1300px;
+            flex-wrap:  nowrap;
+            .partner {
+              cursor: pointer;
+              width: 346px;
+              display: inline-block;
+              padding: 0 0 0 0;
+              margin: 0 87px 0 0;
+              .title {
+                margin: 0 0 18px 0;
+                font-family: $font-family-helvetica;
+                font-size: 18px;
+                font-weight: 500;
+                letter-spacing: 0;
+                color: $text-darkgray;
+                line-height: 26px;
+                text-transform: uppercase;
+              }
+              .description {
+                margin: 0 0 52px 0;
+                font-family: $font-family-helvetica;
+                font-size: 14px;
+                font-weight: 400;
+                letter-spacing: -0.3px;
+                color: $text-lightgray;
+                line-height: 22px;
+              }
+              .logo {
+                margin: 0 0 0 0;
+              }
+              &:hover {
+                text-decoration: none;
+              }
+            }
+          }
+        }
+      }
+      &.pg-blueindex {
+        .sub-container {
+          padding: 218px 0 0 0;
+          .specs {
+            margin: 57px 0 0 0;
+            .spec {
+              width: 338px;
+              display: inline-block;
+              padding: 0 80px 0 81px;
+              margin: 0 0 0 0;
+              position: relative;
+              &:after {
+                content: '';
+                display: inline-block;
+                position: absolute;
+                left:  0;
+                top:  6px;
+                width: 46px;
+                height: 46px;
+                background: transparent url('../images/icon_big_rank.png') no-repeat left top / 46px 46px ;
+              }
+              .title {
+                margin: 0 0 3px 0;
+                font-family: $font-family-helvetica;
+                font-size: 14px;
+                font-weight: 600;
+                letter-spacing: 0;
+                color: $text-default;
+                line-height: 24px;
+                text-transform: uppercase;
+              }
+              .description {
+                margin: 0 0 28px 0;
+                font-family: $font-family-helvetica;
+                font-size: 13px;
+                font-weight: 400;
+                letter-spacing: 0;
+                color: $text-lightgray;
+                line-height: 15px;
+              }
+              .logo {
+                margin: 0 0 0 0;
+              }
+              &:hover {
+                text-decoration: none;
+              }
+            }
+            .btn-container {
+              width: 338px;
+              display: inline-block;
+              padding: 0 0 0 0;
+              margin: 0 0 0 0;
+              vertical-align: top;
+            }
+          }
+        }
+      }
+      &.pg-monopoly {
+        .sub-container {
+          padding: 238px 10px 0 0;
+        }
+      }
+      &.pg-contributor,
+      &.pg-validator,
+      &.pg-datasharing {
+        .sub-container {
+          padding: 45px 0 0 0;
+        }
+        .btn-container {
+          margin: 45px 0 0 0;
+        }
+      }
+      &.pg-liveauctionart {
+        .sub-container {
+          padding: 51px 0 0 0;
+          .apps {
+            margin: 0 0 142px 0;
+            .link-primary {
+              display: inline-block;
+              width: 337px;
+            }
+          }
+          .major-description {
+            &:after {
+              display: none;
+            }
+          }
+          .specs {
+            margin: 51px 0 0 0;
+            .spec {
+              width: 338px;
+              display: inline-block;
+              padding: 0 80px 0 81px;
+              margin: 0 0 0 0;
+              position: relative;
+              &:after {
+                content: '';
+                display: inline-block;
+                position: absolute;
+                left:  0;
+                top:  6px;
+                width: 46px;
+                height: 46px;
+                background: transparent url('../images/icon_big_rank.png') no-repeat left top / 46px 46px ;
+              }
+              .title {
+                margin: 4px 0 3px 0;
+                font-family: $font-family-helvetica;
+                font-size: 14px;
+                font-weight: 600;
+                letter-spacing: 0;
+                color: $text-default;
+                line-height: 16px;
+                text-transform: uppercase;
+              }
+              .description {
+                margin: 0 0 28px 0;
+                font-family: $font-family-helvetica;
+                font-size: 13px;
+                font-weight: 400;
+                letter-spacing: 0;
+                color: $text-lightgray;
+                line-height: 15px;
+              }
+              .logo {
+                margin: 0 0 0 0;
+              }
+              &:hover {
+                text-decoration: none;
+              }
+            }
+            .btn-container {
+              width: 338px;
+              display: inline-block;
+              padding: 0 0 0 0;
+              margin: 50px 0 0 0;
+              vertical-align: top;
+            }
           }
         }
       }
