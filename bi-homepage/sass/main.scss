@@ -315,24 +315,24 @@ body>.container {
           margin: 45px 0 0 0;
         }
       }
-      &.pg-liveauctionart,
-      &.pg-inartpress {
+      &.pg-liveauctionart {
         .sub-container {
           padding: 51px 0 0 0;
-       .apps {
-            margin: 0 0 142px 0;
+          .apps {
+            margin: 0 0 132px 0;
             .link-primary {
               display: inline-block;
               width: 337px;
             }
           }
           .major-description {
+            padding-right: 46px;
             &:after {
               display: none;
             }
           }
           .specs {
-            margin: 51px 0 0 0;
+            margin: 48px 0 0 0;
             display: flex;
             flex-wrap: wrap;
             .spec {
@@ -351,8 +351,134 @@ body>.container {
                 height: 46px;
                 background: transparent url('../images/icon_big_rank.png') no-repeat left top / 46px 46px ;
               }
+              &.icon-map {
+                &:after {
+                  left:  0;
+                  top:  6px;
+                  width: 46px;
+                  height: 46px;
+                  background: transparent url('../images/icon_big_map.png') no-repeat center top / 46px 44px ;
+                }
+              }
+              &.icon-search {
+                &:after {
+                  left:  0;
+                  top:  6px;
+                  width: 46px;
+                  height: 46px;
+                  background: transparent url('../images/icon_big_search.png') no-repeat center top / 52px 39px ;
+                }
+              }
+              &.icon-info {
+                &:after {
+                  left:  0;
+                  top:  6px;
+                  width: 46px;
+                  height: 46px;
+                  background: transparent url('../images/icon_big_info.png') no-repeat center top / 40px 40px ;
+                }
+              }
               .title {
                 margin: 4px 0 3px 0;
+                font-family: $font-family-helvetica;
+                font-size: 14px;
+                font-weight: 600;
+                letter-spacing: 0;
+                color: $text-default;
+                line-height: 16px;
+                text-transform: uppercase;
+              }
+              .description {
+                margin: 0 0 28px 0;
+                font-family: $font-family-helvetica;
+                font-size: 13px;
+                font-weight: 400;
+                letter-spacing: 0;
+                color: $text-lightgray;
+                line-height: 15px;
+              }
+              .logo {
+                margin: 0 0 0 0;
+              }
+              &:hover {
+                text-decoration: none;
+              }
+            }
+            .btn-container {
+              width: 338px;
+              display: inline-block;
+              padding: 0 0 0 0;
+              margin: 50px 0 0 0;
+              vertical-align: top;
+            }
+          }
+        }
+      }
+      &.pg-inartpress {
+        .sub-container {
+          padding: 51px 0 0 0;
+       .apps {
+            margin: 0 0 132px 0;
+            .link-primary {
+              display: inline-block;
+              width: 337px;
+            }
+          }
+          .major-description {
+            padding-right: 46px;
+            &:after {
+              display: none;
+            }
+          }
+          .specs {
+            margin: 48px 0 0 0;
+            display: flex;
+            flex-wrap: wrap;
+            .spec {
+              width: 343px;
+              display: inline-block;
+              padding: 0 69px 0 76px;
+              margin: 0 0 0 0;
+              position: relative;
+              &:after {
+                content: '';
+                display: inline-block;
+                position: absolute;
+                left:  0;
+                top:  6px;
+                width: 46px;
+                height: 46px;
+                background: transparent url('../images/icon_big_rank.png') no-repeat left top / 46px 46px ;
+              }
+              &.icon-map {
+                &:after {
+                  left:  4px;
+                  top:  5px;
+                  width: 46px;
+                  height: 46px;
+                  background: transparent url('../images/icon_big_map.png') no-repeat center top / 46px 44px ;
+                }
+              }
+              &.icon-search {
+                &:after {
+                  left:  0;
+                  top:  12px;
+                  width: 52px;
+                  height: 46px;
+                  background: transparent url('../images/icon_big_search.png') no-repeat center top / 52px 39px ;
+                }
+              }
+              &.icon-info {
+                &:after {
+                  left:  1px;
+                  top:  9px;
+                  width: 46px;
+                  height: 46px;
+                  background: transparent url('../images/icon_big_info.png') no-repeat center top / 40px 40px ;
+                }
+              }
+              .title {
+                margin: 4px 0 10px 0;
                 font-family: $font-family-helvetica;
                 font-size: 14px;
                 font-weight: 600;
