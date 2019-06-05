@@ -351,33 +351,6 @@ body>.container {
                 height: 46px;
                 background: transparent url('../images/icon_big_rank.png') no-repeat left top / 46px 46px ;
               }
-              &.icon-map {
-                &:after {
-                  left:  0;
-                  top:  6px;
-                  width: 46px;
-                  height: 46px;
-                  background: transparent url('../images/icon_big_map.png') no-repeat center top / 46px 44px ;
-                }
-              }
-              &.icon-search {
-                &:after {
-                  left:  0;
-                  top:  6px;
-                  width: 46px;
-                  height: 46px;
-                  background: transparent url('../images/icon_big_search.png') no-repeat center top / 52px 39px ;
-                }
-              }
-              &.icon-info {
-                &:after {
-                  left:  0;
-                  top:  6px;
-                  width: 46px;
-                  height: 46px;
-                  background: transparent url('../images/icon_big_info.png') no-repeat center top / 40px 40px ;
-                }
-              }
               .title {
                 margin: 4px 0 3px 0;
                 font-family: $font-family-helvetica;
