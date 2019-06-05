@@ -143,6 +143,10 @@ body>.container {
         }
       }
       &.pg-main {
+        .main-container {
+          line-height: 56px;
+          letter-spacing: -0.4px;
+        }
         .sub-container {
           padding: 273px 0 0 343px;
           .paragraph {

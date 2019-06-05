@@ -347,6 +347,10 @@ body > .container .inner-container .section .sub-container .major-description:af
   height: 4px;
   background-color: #eed28e;
 }
+body > .container .inner-container .section.pg-main .main-container {
+  line-height: 56px;
+  letter-spacing: -0.4px;
+}
 body > .container .inner-container .section.pg-main .sub-container {
   padding: 273px 0 0 343px;
 }
