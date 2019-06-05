@@ -201,7 +201,7 @@ body>.container {
       &.pg-partner {
         .sub-container {
           padding: 215px 0 0 0;
-          @include calculator(width,'100% - 514px');
+          @include calculator(width,'100% - 214px');
           @include scrollbars(0.5em, slategray);
           overflow: auto;
           .scrollable {

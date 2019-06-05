@@ -401,9 +401,9 @@ body > .container .inner-container .section.pg-aboutus .sub-container {
 }
 body > .container .inner-container .section.pg-partner .sub-container {
   padding: 215px 0 0 0;
-  width: -moz-calc(100% - 514px);
-  width: -webkit-calc(100% - 514px);
-  width: calc(100% - 514px);
+  width: -moz-calc(100% - 214px);
+  width: -webkit-calc(100% - 214px);
+  width: calc(100% - 214px);
   overflow: auto;
 }
 body > .container .inner-container .section.pg-partner .sub-container ::-webkit-scrollbar {
