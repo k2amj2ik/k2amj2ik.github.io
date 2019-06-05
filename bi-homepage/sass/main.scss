@@ -378,6 +378,51 @@ body>.container {
                 height: 46px;
                 background: transparent url('../images/icon_big_rank.png') no-repeat left top / 46px 46px ;
               }
+              &.icon-realtime {
+                &:after {
+                  left:  4px;
+                  top:  5px;
+                  width: 58px;
+                  height: 42px;
+                  background: transparent url('../images/live-icon-01.png') no-repeat center top / 58px 42px ;
+                }
+              }
+              &.icon-multiple {
+                &:after {
+                  left:  4px;
+                  top:  5px;
+                  width: 58px;
+                  height: 42px;
+                  background: transparent url('../images/live-icon-02.png') no-repeat center top / 58px 42px ;
+                }
+              }
+              &.icon-rank {
+                &:after {
+                  left:  4px;
+                  top:  5px;
+                  width: 47px;
+                  height: 49px;
+                  background: transparent url('../images/live-icon-03.png') no-repeat center top / 47px 49px ;
+                }
+              }
+              &.icon-sharing {
+                &:after {
+                  left:  4px;
+                  top:  5px;
+                  width: 54px;
+                  height: 44px;
+                  background: transparent url('../images/live-icon-05.png') no-repeat center top / 54px 44px ;
+                }
+              }
+              &.icon-news {
+                &:after {
+                  left:  4px;
+                  top:  5px;
+                  width: 49px;
+                  height: 38px;
+                  background: transparent url('../images/live-icon-06.png') no-repeat center top / 49px 38px ;
+                }
+              }
               .title {
                 margin: 4px 0 3px 0;
                 font-family: $font-family-helvetica;
