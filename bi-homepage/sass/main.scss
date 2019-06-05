@@ -264,6 +264,33 @@ body>.container {
                 height: 46px;
                 background: transparent url('../images/icon_big_rank.png') no-repeat left top / 46px 46px ;
               }
+              &.icon-works {
+                &:after {
+                  left:  4px;
+                  top:  5px;
+                  width: 64px;
+                  height: 58px;
+                  background: transparent url('../images/blueindex-icon-01.png') no-repeat center top / 64px 58px ;
+                }
+              }
+              &.icon-hammer{
+                &:after {
+                  left:  4px;
+                  top:  5px;
+                  width: 57px;
+                  height: 43px;
+                  background: transparent url('../images/blueindex-icon-02.png') no-repeat center top / 57px 43px ;
+                }
+              }
+              &.icon-compare {
+                &:after {
+                  left:  4px;
+                  top:  5px;
+                  width: 57px;
+                  height: 43px;
+                  background: transparent url('../images/blueindex-icon-03.png') no-repeat center top / 57px 43px ;
+                }
+              }
               .title {
                 margin: 0 0 3px 0;
                 font-family: $font-family-helvetica;
