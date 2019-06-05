@@ -161,7 +161,7 @@ input:focus, button:focus, select:focus {
   background: transparent url("../images/bg_pc_02_service01_06_liveauctionart_1920x1280.png") no-repeat top center/1920px 1280px;
 }
 
-.bg-service7 {
+.bg-inartpress {
   background: transparent url("../images/bg_pc_02_service01_07_inartpress_1920x1020.png") no-repeat top center/1920px 1020px;
 }
 
@@ -377,7 +377,7 @@ body > .container .inner-container .section.pg-main .sub-container .paragraph .d
 }
 body > .container .inner-container .section.pg-main .sub-container .paragraph .link-main {
   display: none;
-  margin-bottom: 21px;
+  margin-bottom: 24px;
 }
 body > .container .inner-container .section.pg-main .sub-container .paragraph.active, body > .container .inner-container .section.pg-main .sub-container .paragraph:hover {
   cursor: pointer;
@@ -521,30 +521,32 @@ body > .container .inner-container .section.pg-contributor .sub-container, body 
 body > .container .inner-container .section.pg-contributor .btn-container, body > .container .inner-container .section.pg-validator .btn-container, body > .container .inner-container .section.pg-datasharing .btn-container {
   margin: 45px 0 0 0;
 }
-body > .container .inner-container .section.pg-liveauctionart .sub-container {
+body > .container .inner-container .section.pg-liveauctionart .sub-container, body > .container .inner-container .section.pg-inartpress .sub-container {
   padding: 51px 0 0 0;
 }
-body > .container .inner-container .section.pg-liveauctionart .sub-container .apps {
+body > .container .inner-container .section.pg-liveauctionart .sub-container .apps, body > .container .inner-container .section.pg-inartpress .sub-container .apps {
   margin: 0 0 142px 0;
 }
-body > .container .inner-container .section.pg-liveauctionart .sub-container .apps .link-primary {
+body > .container .inner-container .section.pg-liveauctionart .sub-container .apps .link-primary, body > .container .inner-container .section.pg-inartpress .sub-container .apps .link-primary {
   display: inline-block;
   width: 337px;
 }
-body > .container .inner-container .section.pg-liveauctionart .sub-container .major-description:after {
+body > .container .inner-container .section.pg-liveauctionart .sub-container .major-description:after, body > .container .inner-container .section.pg-inartpress .sub-container .major-description:after {
   display: none;
 }
-body > .container .inner-container .section.pg-liveauctionart .sub-container .specs {
+body > .container .inner-container .section.pg-liveauctionart .sub-container .specs, body > .container .inner-container .section.pg-inartpress .sub-container .specs {
   margin: 51px 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
 }
-body > .container .inner-container .section.pg-liveauctionart .sub-container .specs .spec {
+body > .container .inner-container .section.pg-liveauctionart .sub-container .specs .spec, body > .container .inner-container .section.pg-inartpress .sub-container .specs .spec {
   width: 338px;
   display: inline-block;
   padding: 0 80px 0 81px;
   margin: 0 0 0 0;
   position: relative;
 }
-body > .container .inner-container .section.pg-liveauctionart .sub-container .specs .spec:after {
+body > .container .inner-container .section.pg-liveauctionart .sub-container .specs .spec:after, body > .container .inner-container .section.pg-inartpress .sub-container .specs .spec:after {
   content: '';
   display: inline-block;
   position: absolute;
@@ -554,7 +556,7 @@ body > .container .inner-container .section.pg-liveauctionart .sub-container .sp
   height: 46px;
   background: transparent url("../images/icon_big_rank.png") no-repeat left top/46px 46px;
 }
-body > .container .inner-container .section.pg-liveauctionart .sub-container .specs .spec .title {
+body > .container .inner-container .section.pg-liveauctionart .sub-container .specs .spec .title, body > .container .inner-container .section.pg-inartpress .sub-container .specs .spec .title {
   margin: 4px 0 3px 0;
   font-family: "Helvetica";
   font-size: 14px;
@@ -564,7 +566,7 @@ body > .container .inner-container .section.pg-liveauctionart .sub-container .sp
   line-height: 16px;
   text-transform: uppercase;
 }
-body > .container .inner-container .section.pg-liveauctionart .sub-container .specs .spec .description {
+body > .container .inner-container .section.pg-liveauctionart .sub-container .specs .spec .description, body > .container .inner-container .section.pg-inartpress .sub-container .specs .spec .description {
   margin: 0 0 28px 0;
   font-family: "Helvetica";
   font-size: 13px;
@@ -573,13 +575,13 @@ body > .container .inner-container .section.pg-liveauctionart .sub-container .sp
   color: #888888;
   line-height: 15px;
 }
-body > .container .inner-container .section.pg-liveauctionart .sub-container .specs .spec .logo {
+body > .container .inner-container .section.pg-liveauctionart .sub-container .specs .spec .logo, body > .container .inner-container .section.pg-inartpress .sub-container .specs .spec .logo {
   margin: 0 0 0 0;
 }
-body > .container .inner-container .section.pg-liveauctionart .sub-container .specs .spec:hover {
+body > .container .inner-container .section.pg-liveauctionart .sub-container .specs .spec:hover, body > .container .inner-container .section.pg-inartpress .sub-container .specs .spec:hover {
   text-decoration: none;
 }
-body > .container .inner-container .section.pg-liveauctionart .sub-container .specs .btn-container {
+body > .container .inner-container .section.pg-liveauctionart .sub-container .specs .btn-container, body > .container .inner-container .section.pg-inartpress .sub-container .specs .btn-container {
   width: 338px;
   display: inline-block;
   padding: 0 0 0 0;
