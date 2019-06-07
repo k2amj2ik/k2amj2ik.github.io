@@ -25,7 +25,7 @@
     }
   }
   .inner-container {
-    padding: 60px 0 200px 0;
+    padding: 60px 0 50px 0;
     .form-login {
       width: 100%;
       padding: 50px 30px 30px 30px;
@@ -94,7 +94,7 @@
           background: $bg-dark;
           text-indent: 100px;
           overflow: hidden;
-          @include overlap-image($bg-dark,'../images/icon_search.png',23px,24px);
+          @include overlap-image($bg-dark,'../images/search-icon-big@2x.png',23px,24px);
           &:after {
             left: unset;
             right: 10px;

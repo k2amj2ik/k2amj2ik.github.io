@@ -1082,7 +1082,7 @@ body > .container .inner-container .footer .copyright {
   display: none;
 }
 .container-main .inner-container {
-  padding: 60px 0 200px 0;
+  padding: 60px 0 50px 0;
 }
 .container-main .inner-container .form-login {
   width: 100%;
@@ -1179,7 +1179,7 @@ body > .container .inner-container .footer .copyright {
   left: 0;
   top: 0;
   background-color: #232629;
-  background-image: url("../images/icon_search.png");
+  background-image: url("../images/search-icon-big@2x.png");
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: 23px 24px;

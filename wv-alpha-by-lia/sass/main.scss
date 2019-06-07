@@ -125,7 +125,7 @@
           background: $bg-dark;
           text-indent: 100px;
           overflow: hidden;
-          @include overlap-image($bg-dark,'../images/icon_search.png',23px,24px);
+          @include overlap-image($bg-dark,'../images/search-icon-big@2x.png',23px,24px);
           &:after {
             left:37px;
             top:16px;
