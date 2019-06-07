@@ -40,6 +40,36 @@
   font-weight: 700;
   src: url(../fonts/HelveticaNeue-CondensedBlack-Bold.woff) format("woff");
 }
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  src: url(../fonts/Roboto-Thin.woff2) format("woff2"), url(../fonts/Roboto-Thin.woff) format("woff"), url(../fonts/Roboto-Thin.otf) format("opentype");
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: url(../fonts/Roboto-Light.woff2) format("woff2"), url(../fonts/Roboto-Light.woff) format("woff"), url(../fonts/Roboto-Light.otf) format("opentype");
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/Roboto-Regular.woff2) format("woff2"), url(../fonts/Roboto-Regular.woff) format("woff"), url(../fonts/Roboto-Regular.otf) format("opentype");
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: url(../fonts/Roboto-Medium.woff2) format("woff2"), url(../fonts/Roboto-Medium.woff) format("woff"), url(../fonts/Roboto-Medium.otf) format("opentype");
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  src: url(../fonts/Roboto-Bold.woff2) format("woff2"), url(../fonts/Roboto-Bold.woff) format("woff"), url(../fonts/Roboto-Bold.otf) format("opentype");
+}
 html, body, div, ul, ol, li, table, tr, td, h1, h2, h3, h4, p, span, form, input, button, select, a {
   margin: 0;
   padding: 0;
@@ -64,7 +94,7 @@ input:focus, button:focus, select:focus {
 }
 
 .link-main {
-  font-family: "Helvetica";
+  font-family: "Roboto";
   font-size: 14px;
   font-weight: 600;
   letter-spacing: -0.5px;
@@ -75,7 +105,7 @@ input:focus, button:focus, select:focus {
 .link-primary {
   padding: 10px 10px 10px 77px;
   margin: 0 0 0 0;
-  font-family: "Helvetica";
+  font-family: "Roboto";
   font-size: 15px;
   font-weight: 600;
   letter-spacing: 0;
@@ -217,7 +247,7 @@ body > .container .top-navigation .menus {
 body > .container .top-navigation .menus .menu {
   display: inline-block;
   margin: 0 44px 0 -10px;
-  font-family: "Helvetica";
+  font-family: "Roboto";
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.5px;
@@ -238,7 +268,7 @@ body > .container .inner-container .section {
 body > .container .inner-container .section .main-container {
   margin: 0 0 0 0;
   padding: 0 0 0 89px;
-  font-family: "Helvetica";
+  font-family: "Roboto";
   font-size: 48px;
   font-weight: 600;
   letter-spacing: 0;
@@ -302,7 +332,7 @@ body > .container .inner-container .section .main-container.section-title:after 
 body > .container .inner-container .section .main-container.section-title .description {
   display: block;
   margin: 18px 0 0 0;
-  font-family: "Helvetica";
+  font-family: "Roboto";
   font-size: 11px;
   font-weight: 600;
   letter-spacing: 0;
@@ -321,7 +351,7 @@ body > .container .inner-container .section .sub-container .figure {
 }
 body > .container .inner-container .section .sub-container .figure .caption {
   padding: 24px 170px 0 0;
-  font-family: "Helvetica";
+  font-family: "Roboto";
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 0;
@@ -329,7 +359,7 @@ body > .container .inner-container .section .sub-container .figure .caption {
   line-height: 22px;
 }
 body > .container .inner-container .section .sub-container .major-description {
-  font-family: "Helvetica";
+  font-family: "Roboto";
   font-size: 18px;
   font-weight: 400;
   letter-spacing: 0;
@@ -359,7 +389,7 @@ body > .container .inner-container .section.pg-main .sub-container .paragraph {
 }
 body > .container .inner-container .section.pg-main .sub-container .paragraph .title {
   margin: 0 0 7px 0;
-  font-family: "Helvetica";
+  font-family: "Roboto";
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 0;
@@ -368,7 +398,7 @@ body > .container .inner-container .section.pg-main .sub-container .paragraph .t
 }
 body > .container .inner-container .section.pg-main .sub-container .paragraph .description {
   margin: 0 0 12px 0;
-  font-family: "Helvetica";
+  font-family: "Roboto";
   font-size: 13px;
   font-weight: 400;
   letter-spacing: 0;
@@ -434,7 +464,7 @@ body > .container .inner-container .section.pg-partner .sub-container .scrollabl
 }
 body > .container .inner-container .section.pg-partner .sub-container .scrollable .partner .title {
   margin: 0 0 18px 0;
-  font-family: "Helvetica";
+  font-family: "Roboto";
   font-size: 18px;
   font-weight: 500;
   letter-spacing: 0;
@@ -444,7 +474,7 @@ body > .container .inner-container .section.pg-partner .sub-container .scrollabl
 }
 body > .container .inner-container .section.pg-partner .sub-container .scrollable .partner .description {
   margin: 0 0 52px 0;
-  font-family: "Helvetica";
+  font-family: "Roboto";
   font-size: 14px;
   font-weight: 400;
   letter-spacing: -0.3px;
@@ -503,7 +533,7 @@ body > .container .inner-container .section.pg-blueindex .sub-container .specs .
 }
 body > .container .inner-container .section.pg-blueindex .sub-container .specs .spec .title {
   margin: 0 0 3px 0;
-  font-family: "Helvetica";
+  font-family: "Roboto";
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 0;
@@ -513,7 +543,7 @@ body > .container .inner-container .section.pg-blueindex .sub-container .specs .
 }
 body > .container .inner-container .section.pg-blueindex .sub-container .specs .spec .description {
   margin: 0 0 28px 0;
-  font-family: "Helvetica";
+  font-family: "Roboto";
   font-size: 13px;
   font-weight: 400;
   letter-spacing: 0;
@@ -617,7 +647,7 @@ body > .container .inner-container .section.pg-liveauctionart .sub-container .sp
 }
 body > .container .inner-container .section.pg-liveauctionart .sub-container .specs .spec .title {
   margin: 4px 0 3px 0;
-  font-family: "Helvetica";
+  font-family: "Roboto";
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 0;
@@ -627,7 +657,7 @@ body > .container .inner-container .section.pg-liveauctionart .sub-container .sp
 }
 body > .container .inner-container .section.pg-liveauctionart .sub-container .specs .spec .description {
   margin: 0 0 28px 0;
-  font-family: "Helvetica";
+  font-family: "Roboto";
   font-size: 13px;
   font-weight: 400;
   letter-spacing: 0;
@@ -708,7 +738,7 @@ body > .container .inner-container .section.pg-inartpress .sub-container .specs 
 }
 body > .container .inner-container .section.pg-inartpress .sub-container .specs .spec .title {
   margin: 4px 0 10px 0;
-  font-family: "Helvetica";
+  font-family: "Roboto";
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 0;
@@ -718,7 +748,7 @@ body > .container .inner-container .section.pg-inartpress .sub-container .specs 
 }
 body > .container .inner-container .section.pg-inartpress .sub-container .specs .spec .description {
   margin: 0 0 28px 0;
-  font-family: "Helvetica";
+  font-family: "Roboto";
   font-size: 13px;
   font-weight: 400;
   letter-spacing: 0;
@@ -746,7 +776,7 @@ body > .container .inner-container .footer {
 body > .container .inner-container .footer .copyright {
   float: left;
   margin-top: 2px;
-  font-family: "Helvetica";
+  font-family: "Roboto";
   font-size: 12px;
   font-weight: 400;
   letter-spacing: 0;
@@ -761,7 +791,7 @@ body > .container .inner-container .footer .title {
   float: left;
   width: 50px;
   display: inline-block;
-  font-family: "Helvetica";
+  font-family: "Roboto";
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0;
@@ -773,7 +803,7 @@ body > .container .inner-container .footer .text {
   float: right;
   width: 250px;
   display: inline-block;
-  font-family: "Helvetica";
+  font-family: "Roboto";
   font-size: 12px;
   font-weight: 400;
   letter-spacing: 0;
