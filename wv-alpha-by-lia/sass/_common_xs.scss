@@ -133,7 +133,7 @@ body>.container {
       margin: 23px 0 0 30px;
       width: 196px;
       height: 38px;
-      background: transparent url('../images/logo_pc_top.png') no-repeat 20px 8px/ 176px 20px;
+      background: transparent url('../images/bi-logo@2x.png') no-repeat 20px 8px/ 176px 20px;
     }
     .form-artist-search-top {
       float: right;
@@ -491,14 +491,14 @@ body>.container {
   z-index: $z-index-max;
 }
 .bg-login {background: transparent url('../images/bg_mobile_01.login_360x640.png') no-repeat top center / 360px 640px;}
-.bg-main {background: transparent url('../images/bg_PC_01_main_1920x920.png') no-repeat top center / 1920px 920px;}
-.bg-main-layer {background: transparent url('../images/bg_PC_01_main_layer_1920x920.png') no-repeat top center / 1920px 920px;}
-.bg-artists {background: transparent url('../images/bg_PC_02_artist_list_1920x1087.png') no-repeat top center / 1920px 1087px;}
-.bg-artists-noresult {background: transparent url('../images/bg_PC_02_artist_list_noresult_1920x1920x1087.png') no-repeat top center / 1920px 1087px;}
-.bg-lots {background: transparent url('../images/PC_03_artwork_list_filters_1920x1170.png') no-repeat top center / 1920px 1170px;}
-.bg-lots-filter {background: transparent url('../images/PC_03_artwork_list_01_1920x1164.png') no-repeat top center / 1920px 1164px;}
-.bg-lots-result {background: transparent url('../images/PC_03_artwork_list_1920x3187.png') no-repeat -7px 0px/1920px 3187px}
-.bg-lot {background: transparent url('../images/PC_04_lot_detail_1920x1800.png') no-repeat top center / 1920px 1800px;}
-.bg-compare {background: transparent url('../images/PC_05_compare_1920x1685.png') no-repeat top center / 1920px 1685px;}
+.bg-main {background: transparent url('../images/bg_mobile_01_main_360x640.png') no-repeat top center / 360px 640px;}
+.bg-main-layer {background: transparent url('../images/bg_mobile_01_main_layer_360x640.png') no-repeat top center / 360px 640px;}
+.bg-artists {background: transparent url('../images/bg_mobile_02_artist_list_360x749.png') no-repeat top center / 360px 749px;}
+.bg-artists-noresult {background: transparent url('../images/bg_mobile_02_artist_list_noresult_360x640.png') no-repeat top center / 360px 640px;}
+.bg-lots {background: transparent url('../images/bg_mobile_03_artwork_list_filters_360x1159.png') no-repeat top center / 360px 1159px;}
+.bg-lots-filter {background: transparent url('../images/bg_mobile_03_artwork_list_01_360x1828.png') no-repeat top center / 360px 1828px;}
+.bg-lots-sort {background: transparent url('../images/bg_mobile_03_artwork_list_sort_360x640.png') no-repeat top center / 360px 640px;}
+.bg-lot {background: transparent url('../images/bg_mobile_04_lot_detail_360x1389.png') no-repeat top center / 360px 1389px;}
+.bg-compare {background: transparent url('../images/bg_mobile_05_compare_360x901.png') no-repeat top center / 360px 901px;}
 
 
