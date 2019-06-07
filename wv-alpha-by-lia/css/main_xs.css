@@ -1106,6 +1106,151 @@ body > .container .inner-container .footer .copyright {
 .container-main .inner-container .form-login .form-out {
   padding-top: 85px;
 }
+.container-main .inner-container .form-artist-search {
+  width: 100%;
+  padding: 50px 30px 30px 30px;
+}
+.container-main .inner-container .form-artist-search .form-group {
+  width: 100%;
+  height: 56px;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 1px solid #454d54;
+}
+.container-main .inner-container .form-artist-search .form-group .input-bgdark {
+  /* The animation code */
+  animation-name: bar-search-main;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  float: left;
+  margin: 0 0 0 0;
+  border: 0;
+  border-left: 2px solid #232629;
+  width: -moz-calc(100% - 40px);
+  width: -webkit-calc(100% - 40px);
+  width: calc(100% - 40px);
+  height: 56px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  background-color: transparent;
+  padding: 6px 0 0 10px;
+  text-indent: 1px;
+  font-family: "Roboto";
+  font-size: 20px;
+  letter-spacing: -0.1px;
+  font-weight: 300;
+  color: #fff;
+  line-height: 100%;
+}
+@keyframes bar-search-main {
+  10% {
+    border-left-color: #232629;
+  }
+  30% {
+    border-left-color: #fff;
+  }
+  100% {
+    border-left-color: #232629;
+  }
+}
+.container-main .inner-container .form-artist-search .form-group .input-bgdark:focus {
+  animation: none;
+}
+.container-main .inner-container .form-artist-search .form-group .btn-search {
+  display: inline-block;
+  float: left;
+  cursor: pointer;
+  width: 40px;
+  height: 54px;
+  border: 0;
+  background: #232629;
+  text-indent: 100px;
+  overflow: hidden;
+  position: relative;
+}
+.container-main .inner-container .form-artist-search .form-group .btn-search:after {
+  content: " ";
+  display: inline-block;
+  overflow: hidden;
+  width: 23px;
+  height: 24px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #232629;
+  background-image: url("../images/icon_search.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 23px 24px;
+}
+.container-main .inner-container .form-artist-search .form-group .btn-search:after {
+  left: unset;
+  right: 10px;
+  top: 16px;
+}
+.container-main .inner-container .form-artist-search .description {
+  margin: 128px 0 0 -1px;
+}
+.container-main .inner-container .form-artist-search .description p {
+  text-align: left;
+  margin-bottom: 18px;
+  font-family: "Roboto";
+  font-size: 13px;
+  letter-spacing: -0.1px;
+  font-weight: 300;
+  color: #7e8a95;
+  line-height: 16px;
+}
+.container-main .inner-container .form-artist-search .layer-search {
+  display: none;
+}
+.container-main .inner-container .form-artist-search.active .layer-search {
+  display: block;
+  position: absolute;
+  width: 504px;
+  margin-left: -2px;
+  background-color: #32363a;
+}
+.container-main .inner-container .form-artist-search.active .layer-search .artist {
+  display: block;
+  cursor: pointer;
+  text-align: left;
+  padding: 12px 20px;
+  margin: 15px 0;
+}
+.container-main .inner-container .form-artist-search.active .layer-search .artist:first-child {
+  padding-top: 15px;
+}
+.container-main .inner-container .form-artist-search.active .layer-search .artist:hover {
+  background-color: #2f3236;
+}
+.container-main .inner-container .form-artist-search.active .layer-search .artist .name {
+  font-family: "Roboto";
+  font-size: 14px;
+  letter-spacing: -0.8px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 140%;
+}
+.container-main .inner-container .form-artist-search.active .layer-search .artist .name .matching {
+  font-family: "Roboto";
+  font-size: 14px;
+  letter-spacing: -0.8px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 140%;
+  color: #7e8a95;
+}
+.container-main .inner-container .form-artist-search.active .layer-search .artist .description {
+  margin-left: 2px;
+  font-family: "Roboto";
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  font-weight: 300;
+  color: #fff;
+  line-height: 100%;
+}
 .container-main .footer-main {
   display: block;
   width: 100%;

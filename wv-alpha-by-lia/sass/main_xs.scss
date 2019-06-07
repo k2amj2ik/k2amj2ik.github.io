@@ -48,6 +48,106 @@
         padding-top: 85px;
       }
     }
+    .form-artist-search {
+      width: 100%;
+      padding: 50px 30px 30px 30px;
+      .form-group {
+        width: 100%;
+        height: 56px;
+        margin-left: auto;
+        margin-right: auto;
+        border-bottom: 1px solid $border-search;
+        .input-bgdark  {
+          /* The animation code */
+          @keyframes bar-search-main {
+            10%   {border-left-color: $bg-dark;}
+            30% {border-left-color: $bar-input-cursor;}
+            100%   {border-left-color: $bg-dark;}
+          }
+          animation-name: bar-search-main;
+          animation-duration: 1s;
+          animation-iteration-count: infinite;
+          float: left;
+          margin:0 0 0 0;
+          border: 0;
+          border-left: 2px solid $bg-dark;
+          @include calculator(width,'100% - 40px');
+          height: 56px;
+          -webkit-border-radius: 0;
+          -moz-border-radius: 0;
+          border-radius: 0;
+          background-color: transparent;
+          padding: 6px 0 0 10px;
+          text-indent: 1px;
+          &:focus {
+            animation: none;
+          }
+          @include text-style(text-search-main);
+        }
+        .btn-search {
+          display: inline-block;
+          float: left;
+          cursor: pointer;
+          width: 40px;
+          height: 54px;
+          border: 0;
+          background: $bg-dark;
+          text-indent: 100px;
+          overflow: hidden;
+          @include overlap-image($bg-dark,'../images/icon_search.png',23px,24px);
+          &:after {
+            left: unset;
+            right: 10px;
+            top: 16px;
+          }
+        }
+      }
+      .description {
+        margin: 128px 0 0 -1px;
+        p {
+          text-align: left;
+          margin-bottom: 18px;
+          @include text-style(text-default-bgdark);
+        }
+      }
+      .layer-search {
+        display: none;
+      }
+      &.active {
+        .layer-search {
+          display: block;
+          position: absolute;
+          width: 504px;
+          margin-left: -2px;
+          background-color: $bg-gray;
+          .artist {
+            display: block;
+            cursor: pointer;
+            text-align: left;
+            padding: 12px 20px;
+            margin: 15px 0;
+            &:first-child {
+              padding-top: 15px;
+            }
+            &:hover {
+              background-color: $bg-gray-hover;
+            }
+            .name {
+              @include text-style(text-search-layer-bold);
+              .matching {
+                @include text-style(text-search-layer-bold);
+                color: $text-default-bgdark;
+
+              }
+            }
+            .description {
+              margin-left: 2px;
+              @include text-style(text-search-layer-normal);
+            }
+          }
+        }
+      }
+    }
   }
   .footer-main {
     display: block;

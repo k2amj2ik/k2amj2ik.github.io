@@ -28,7 +28,7 @@
   font-weight: 700;
   src: url(../fonts/Roboto-Bold.woff2) format("woff2"), url(../fonts/Roboto-Bold.woff) format("woff"), url(../fonts/Roboto-Bold.otf) format("opentype");
 }
-html, body, div, ul, ol, li, table, tr, td, h1, h2, h3, h4, p, span, form, input, a {
+html, body, div, ul, ol, li, table, tr, td, h1, h2, h3, h4, p, span, form, input, button, select, a {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
