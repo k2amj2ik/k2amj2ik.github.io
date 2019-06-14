@@ -249,6 +249,14 @@ table th {
   text-transform: uppercase;
 }
 
+.hidden {
+  display: none !important;
+}
+
+.mobile-only {
+  display: none !important;
+}
+
 body > .container {
   position: relative;
   padding: 81px 0 0 0;
@@ -273,6 +281,9 @@ body > .container .top-navigation .logo {
   width: 196px;
   height: 38px;
   background: transparent url("../images/logo_pc_top.png") no-repeat 20px 8px/176px 20px;
+}
+body > .container .top-navigation .btn-mobile-search {
+  display: none;
 }
 body > .container .top-navigation .form-artist-search-top {
   float: right;
@@ -341,28 +352,28 @@ body > .container .top-navigation .form-artist-search-top.active .layer-search .
 body > .container .top-navigation .form-artist-search-top.active .layer-search .artist .name {
   font-family: "Roboto";
   font-size: 14px;
-  letter-spacing: -0.8px;
-  font-weight: 700;
+  letter-spacing: 0.3px;
+  font-weight: 300;
   color: #fff;
   line-height: 140%;
 }
 body > .container .top-navigation .form-artist-search-top.active .layer-search .artist .name .matching {
   font-family: "Roboto";
   font-size: 14px;
-  letter-spacing: -0.8px;
-  font-weight: 700;
+  letter-spacing: 0.3px;
+  font-weight: 300;
   color: #fff;
   line-height: 140%;
-  color: #7e8a95;
+  color: #b1bd53;
 }
 body > .container .top-navigation .form-artist-search-top.active .layer-search .artist .description {
   margin-left: 2px;
   font-family: "Roboto";
   font-size: 14px;
   letter-spacing: 0.3px;
-  font-weight: 300;
+  font-weight: 100;
   color: #fff;
-  line-height: 100%;
+  line-height: 140%;
 }
 body > .container .top-navigation .btn-back {
   float: right;
@@ -1341,28 +1352,28 @@ body > .container .inner-container .footer .copyright {
 .container-main .inner-container .form-artist-search.active .layer-search .artist .name {
   font-family: "Roboto";
   font-size: 14px;
-  letter-spacing: -0.8px;
-  font-weight: 700;
+  letter-spacing: 0.3px;
+  font-weight: 300;
   color: #fff;
   line-height: 140%;
 }
 .container-main .inner-container .form-artist-search.active .layer-search .artist .name .matching {
   font-family: "Roboto";
   font-size: 14px;
-  letter-spacing: -0.8px;
-  font-weight: 700;
+  letter-spacing: 0.3px;
+  font-weight: 300;
   color: #fff;
   line-height: 140%;
-  color: #7e8a95;
+  color: #b1bd53;
 }
 .container-main .inner-container .form-artist-search.active .layer-search .artist .description {
   margin-left: 2px;
   font-family: "Roboto";
   font-size: 14px;
   letter-spacing: 0.3px;
-  font-weight: 300;
+  font-weight: 100;
   color: #fff;
-  line-height: 100%;
+  line-height: 140%;
 }
 .container-main .footer-main {
   display: block;

@@ -841,8 +841,8 @@
   @if $name == text-search-layer-bold {
     font-family: $font-family-roboto;
     font-size: 14px;
-    letter-spacing: -0.8px;
-    font-weight: 700;
+    letter-spacing: 0.3px;
+    font-weight: 300;
     color: $text-white;
     line-height: 140%;
   }
@@ -850,9 +850,9 @@
     font-family: $font-family-roboto;
     font-size: 14px;
     letter-spacing: 0.3px;
-    font-weight: 300;
+    font-weight: 100;
     color: $text-white;
-    line-height: 100%;
+    line-height: 140%;
   }
   @if $name == text-badge {
     font-family: $font-family-roboto;

@@ -1,0 +1,635 @@
+@import 'common';
+
+//default--------------------------------------------------------------------------------------
+html {
+  position: relative;
+  height: 100%;
+  padding: 0 0 0 0 !important;
+  margin: 0 0 0 0 !important;
+  background: $bg-default url('../images/bg_h_line.png') repeat top center;
+  //overflow: hidden;
+}
+body {
+  height: 100%;
+  z-index: $z-index-1;
+  padding: 0 0 0 0 !important;
+  margin: 0 0 0 0 !important;;
+}
+
+//layout--------------------------------------------------------------------------------------
+body>.container {
+  position: relative;
+  padding: 110px 0 0 0;
+  width: 100%;
+  height: 100%;
+  .top-navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110px;
+    padding: 0;
+    z-index: $z-index-max;
+    .logo {
+      display: inline-block;
+      float:left;
+      cursor: pointer;
+      margin: 30px 0 0 34px;
+      width: 200px;
+      height: 50px;
+      background: transparent url('../images/logo.png') no-repeat center center / 151px 18px;
+    }
+    .menus {
+      display: inline-block;
+      float:right;
+      margin: 43px 17px 0 0;
+      justify-content: center;
+      .menu {
+        display: inline-block;
+        margin: 0 44px 0 -10px;
+        font-family: $font-default;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        color: $link-default;
+        text-transform: uppercase;
+        line-height: 16px;
+      }
+    }
+  }
+  .inner-container {
+    width: $width-inner-container;
+    margin: 0 auto;
+    min-height: 100%;
+    padding: 95px 0 0 0;
+    .section {
+      position: relative;
+      height: 1000px;
+      >.main-container {
+        margin: 0 0 0 0;
+        padding: 0 0 0 89px;
+        font-family: $font-default;
+        font-size: 36px;
+        font-weight: 600;
+        letter-spacing: 0;
+        color: $text-default;
+        line-height: 44px;
+        .highlight {
+          @include highlight('Search');
+        }
+        &:after {
+          content: '';
+          display: inline-block;
+          position: absolute;
+          left:  0;
+          top: 10px;
+          width: 5px;
+          height: 140px;
+          background-color: $bg-black;
+        }
+        &.section-title {
+          padding-top: 43px;
+          &:after {
+            display: none;
+          }
+          .description {
+            display: block;
+            margin: 18px 0 0 0;
+            font-family: $font-default;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0;
+            color: $text-lightgray;
+            line-height: 100%;
+          }
+        }
+      }
+      >.sub-container {
+        position: absolute;
+        top: 0;
+        left: 515px;
+        width: 689px;
+        .figure {
+          padding: 0 0 0 0;
+          margin: 0 0 0 0;
+          .caption {
+            padding: 24px 170px 0 0;
+            font-family: $font-default;
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: 0;
+            color: $text-darkgray;
+            line-height: 22px;
+          }
+        }
+        .major-description {
+          font-family: $font-default;
+          font-size: 18px;
+          font-weight: 400;
+          letter-spacing: 0;
+          color: $text-darkgray;
+          line-height: 24px;
+          position: relative;
+          &:after {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            left:  0;
+            top:  -50px;
+            width: 62px;
+            height: 4px;
+            background-color: $bg-highlight;
+          }
+        }
+      }
+      &.pg-main {
+        .main-container {
+          line-height: 56px;
+          letter-spacing: -0.4px;
+        }
+        .sub-container {
+          padding: 273px 0 0 343px;
+          .paragraph {
+            padding: 0 0 24px 0;
+            .title {
+              margin: 0 0 7px 0;
+              font-family: $font-default;
+              font-size: 14px;
+              font-weight: 600;
+              letter-spacing: 0;
+              color: $text-darkgray;
+              line-height: 100%;
+            }
+            .description {
+              margin: 0 0 12px 0;
+              font-family: $font-default;
+              font-size: 13px;
+              font-weight: 400;
+              letter-spacing: 0;
+              color: $text-darkgray;
+              line-height: 17px;
+            }
+            .link-main {
+              display: none;
+              margin-bottom: 24px;
+            }
+            &.active, &:hover {
+              cursor: pointer;
+              position: relative;
+              .link-main {
+                display: inline-block;
+              }
+              &:after {
+                content: '';
+                display: inline-block;
+                position: absolute;
+                left:  -79px;
+                top:  4px;
+                width: 62px;
+                height: 4px;
+                background-color: $bg-highlight;
+              }
+            }
+          }
+        }
+      }
+      &.pg-aboutus {
+        .sub-container {
+          padding: 248px 82px 0 0;
+        }
+      }
+      &.pg-partner {
+        .sub-container {
+          padding: 215px 0 0 0;
+          width: 1300px;
+          overflow: auto;
+          .scrollable {
+            display: flex;
+            width: 1300px;
+            flex-wrap:  nowrap;
+            .partner {
+              cursor: pointer;
+              width: 346px;
+              display: inline-block;
+              padding: 0 0 0 0;
+              margin: 0 87px 0 0;
+              .title {
+                margin: 0 0 18px 0;
+                font-family: $font-default;
+                font-size: 18px;
+                font-weight: 500;
+                letter-spacing: 0;
+                color: $text-darkgray;
+                line-height: 26px;
+                text-transform: uppercase;
+              }
+              .description {
+                margin: 0 0 52px 0;
+                font-family: $font-default;
+                font-size: 14px;
+                font-weight: 400;
+                letter-spacing: -0.3px;
+                color: $text-lightgray;
+                line-height: 22px;
+              }
+              .logo {
+                margin: 0 0 0 0;
+              }
+              &:hover {
+                text-decoration: none;
+              }
+            }
+          }
+        }
+      }
+      &.pg-blueindex {
+        .sub-container {
+          padding: 218px 0 0 0;
+          .specs {
+            margin: 57px 0 0 0;
+            .spec {
+              width: 338px;
+              display: inline-block;
+              padding: 0 80px 0 81px;
+              margin: 0 0 0 0;
+              position: relative;
+              &:after {
+                content: '';
+                display: inline-block;
+                position: absolute;
+                left:  0;
+                top:  6px;
+                width: 46px;
+                height: 46px;
+                background: transparent url('../images/icon_big_rank.png') no-repeat left top / 46px 46px ;
+              }
+              &.icon-works {
+                &:after {
+                  left:  4px;
+                  top:  5px;
+                  width: 64px;
+                  height: 58px;
+                  background: transparent url('../images/blueindex-icon-01.png') no-repeat center top / 64px 58px ;
+                }
+              }
+              &.icon-hammer{
+                &:after {
+                  left:  4px;
+                  top:  5px;
+                  width: 57px;
+                  height: 43px;
+                  background: transparent url('../images/blueindex-icon-02.png') no-repeat center top / 57px 43px ;
+                }
+              }
+              &.icon-compare {
+                &:after {
+                  left:  4px;
+                  top:  5px;
+                  width: 57px;
+                  height: 43px;
+                  background: transparent url('../images/blueindex-icon-03.png') no-repeat center top / 57px 43px ;
+                }
+              }
+              .title {
+                margin: 0 0 3px 0;
+                font-family: $font-default;
+                font-size: 14px;
+                font-weight: 600;
+                letter-spacing: 0;
+                color: $text-default;
+                line-height: 24px;
+                text-transform: uppercase;
+              }
+              .description {
+                margin: 0 0 28px 0;
+                font-family: $font-default;
+                font-size: 13px;
+                font-weight: 400;
+                letter-spacing: 0;
+                color: $text-lightgray;
+                line-height: 15px;
+              }
+              .logo {
+                margin: 0 0 0 0;
+              }
+              &:hover {
+                text-decoration: none;
+              }
+            }
+            .btn-container {
+              width: 338px;
+              display: inline-block;
+              padding: 0 0 0 0;
+              margin: 0 0 0 0;
+              vertical-align: top;
+            }
+          }
+        }
+      }
+      &.pg-monopoly {
+        .sub-container {
+          padding: 238px 10px 0 0;
+          .submenu {
+            border: 1px solid red;
+            position: absolute;
+            left: -350px;
+            top: 300px;
+            font-family: $font-default;
+            font-size: 24px;
+            font-weight: 600;
+            letter-spacing: 0;
+            color: $text-default;
+            line-height: 30px;
+            text-transform: uppercase;
+            .pg-contributor,
+            .pg-validator,
+            .pg-datasharing {
+              position: absolute;
+              left: 0;
+              top: 0;
+              width: 500px;
+            }
+          }
+          .title {
+            float: left;
+            width: 300px;
+            border: 1px solid orange;
+          }
+          .contents {
+            float: right;
+            width: 500px;
+            border: 1px solid blue;
+          }
+        }
+      }
+      &.pg-contributor,
+      &.pg-validator,
+      &.pg-datasharing {
+        .sub-container {
+          padding: 45px 0 0 0;
+        }
+        .btn-container {
+          margin: 45px 0 0 0;
+        }
+      }
+      &.pg-liveauctionart {
+        .sub-container {
+          padding: 51px 0 0 0;
+          .apps {
+            margin: 0 0 132px 0;
+            .link-primary {
+              display: inline-block;
+              width: 337px;
+            }
+          }
+          .major-description {
+            padding-right: 46px;
+            &:after {
+              display: none;
+            }
+          }
+          .specs {
+            margin: 48px 0 0 0;
+            display: flex;
+            flex-wrap: wrap;
+            .spec {
+              width: 338px;
+              display: inline-block;
+              padding: 0 80px 0 81px;
+              margin: 0 0 0 0;
+              position: relative;
+              &:after {
+                content: '';
+                display: inline-block;
+                position: absolute;
+                left:  0;
+                top:  6px;
+                width: 46px;
+                height: 46px;
+                background: transparent url('../images/icon_big_rank.png') no-repeat left top / 46px 46px ;
+              }
+              &.icon-realtime {
+                &:after {
+                  left:  4px;
+                  top:  5px;
+                  width: 58px;
+                  height: 42px;
+                  background: transparent url('../images/live-icon-01.png') no-repeat center top / 58px 42px ;
+                }
+              }
+              &.icon-multiple {
+                &:after {
+                  left:  4px;
+                  top:  5px;
+                  width: 58px;
+                  height: 42px;
+                  background: transparent url('../images/live-icon-02.png') no-repeat center top / 58px 42px ;
+                }
+              }
+              &.icon-rank {
+                &:after {
+                  left:  4px;
+                  top:  5px;
+                  width: 47px;
+                  height: 49px;
+                  background: transparent url('../images/live-icon-03.png') no-repeat center top / 47px 49px ;
+                }
+              }
+              &.icon-sharing {
+                &:after {
+                  left:  4px;
+                  top:  5px;
+                  width: 54px;
+                  height: 44px;
+                  background: transparent url('../images/live-icon-05.png') no-repeat center top / 54px 44px ;
+                }
+              }
+              &.icon-news {
+                &:after {
+                  left:  4px;
+                  top:  5px;
+                  width: 49px;
+                  height: 38px;
+                  background: transparent url('../images/live-icon-06.png') no-repeat center top / 49px 38px ;
+                }
+              }
+              .title {
+                margin: 4px 0 3px 0;
+                font-family: $font-default;
+                font-size: 14px;
+                font-weight: 600;
+                letter-spacing: 0;
+                color: $text-default;
+                line-height: 16px;
+                text-transform: uppercase;
+              }
+              .description {
+                margin: 0 0 28px 0;
+                font-family: $font-default;
+                font-size: 13px;
+                font-weight: 400;
+                letter-spacing: 0;
+                color: $text-lightgray;
+                line-height: 15px;
+              }
+              .logo {
+                margin: 0 0 0 0;
+              }
+              &:hover {
+                text-decoration: none;
+              }
+            }
+            .btn-container {
+              width: 338px;
+              display: inline-block;
+              padding: 0 0 0 0;
+              margin: 50px 0 0 0;
+              vertical-align: top;
+            }
+          }
+        }
+      }
+      &.pg-inartpress {
+        .sub-container {
+          padding: 51px 0 0 0;
+       .apps {
+            margin: 0 0 132px 0;
+            .link-primary {
+              display: inline-block;
+              width: 337px;
+            }
+          }
+          .major-description {
+            padding-right: 46px;
+            &:after {
+              display: none;
+            }
+          }
+          .specs {
+            margin: 48px 0 0 0;
+            display: flex;
+            flex-wrap: wrap;
+            .spec {
+              width: 343px;
+              display: inline-block;
+              padding: 0 69px 0 76px;
+              margin: 0 0 0 0;
+              position: relative;
+              &:after {
+                content: '';
+                display: inline-block;
+                position: absolute;
+                left:  0;
+                top:  6px;
+                width: 46px;
+                height: 46px;
+                background: transparent url('../images/icon_big_rank.png') no-repeat left top / 46px 46px ;
+              }
+              &.icon-map {
+                &:after {
+                  left:  4px;
+                  top:  5px;
+                  width: 46px;
+                  height: 46px;
+                  background: transparent url('../images/icon_big_map.png') no-repeat center top / 46px 44px ;
+                }
+              }
+              &.icon-search {
+                &:after {
+                  left:  0;
+                  top:  12px;
+                  width: 52px;
+                  height: 46px;
+                  background: transparent url('../images/icon_big_search.png') no-repeat center top / 52px 39px ;
+                }
+              }
+              &.icon-info {
+                &:after {
+                  left:  1px;
+                  top:  9px;
+                  width: 46px;
+                  height: 46px;
+                  background: transparent url('../images/icon_big_info.png') no-repeat center top / 40px 40px ;
+                }
+              }
+              .title {
+                margin: 4px 0 10px 0;
+                font-family: $font-default;
+                font-size: 14px;
+                font-weight: 600;
+                letter-spacing: 0;
+                color: $text-default;
+                line-height: 16px;
+                text-transform: uppercase;
+              }
+              .description {
+                margin: 0 0 28px 0;
+                font-family: $font-default;
+                font-size: 13px;
+                font-weight: 400;
+                letter-spacing: 0;
+                color: $text-lightgray;
+                line-height: 15px;
+              }
+              .logo {
+                margin: 0 0 0 0;
+              }
+              &:hover {
+                text-decoration: none;
+              }
+            }
+            .btn-container {
+              width: 338px;
+              display: inline-block;
+              padding: 0 0 0 0;
+              margin: 50px 0 0 0;
+              vertical-align: top;
+            }
+          }
+        }
+      }
+    }
+    .footer {
+      width: 100%;
+      height: 200px;
+      padding: 22px 0 0 0;
+      .copyright {
+        float: left;
+        margin-top: 2px;
+        font-family: $font-default;
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: 0;
+        color: $text-black;
+        line-height: 100%;
+      }
+      .office, .contact {
+        float: right;
+        width: 343px;
+      }
+      .title {
+        float: left;
+        width:50px;
+        display: inline-block;
+        font-family: $font-default;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 0;
+        color: $text-default;
+        line-height: 15px;
+        text-transform: uppercase;
+      }
+      .text {
+        float: right;
+        width: 250px;
+        display: inline-block;
+        font-family: $font-default;
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: 0;
+        color: $text-lightgray;
+        line-height: 16px;
+      }
+    }
+  }
+}

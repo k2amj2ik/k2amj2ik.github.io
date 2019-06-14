@@ -111,6 +111,14 @@ table {
   }
 }
 
+.hidden {
+  display: none !important;
+}
+
+.mobile-only{
+  display: none !important;
+}
+
 //layout--------------------------------------------------------------------------------------
 body>.container {
   position: relative;
@@ -134,6 +142,9 @@ body>.container {
       width: 196px;
       height: 38px;
       background: transparent url('../images/logo_pc_top.png') no-repeat 20px 8px/ 176px 20px;
+    }
+    .btn-mobile-search {
+      display: none;
     }
     .form-artist-search-top {
       float: right;
@@ -196,7 +207,7 @@ body>.container {
               @include text-style(text-search-layer-bold);
               .matching {
                 @include text-style(text-search-layer-bold);
-                color: $text-default-bgdark;
+                color: $text-highlight;
               }
             }
             .description {

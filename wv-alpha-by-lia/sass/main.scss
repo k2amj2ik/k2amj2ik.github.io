@@ -166,8 +166,7 @@
               @include text-style(text-search-layer-bold);
               .matching {
                 @include text-style(text-search-layer-bold);
-                color: $text-default-bgdark;
-
+                color: $text-highlight;
               }
             }
             .description {

@@ -6,7 +6,7 @@ html {
   height: 100%;
   padding: 0 0 0 0 !important;
   margin: 0 0 0 0 !important;
-  background: $bg-default url('../images/bg_h_line.png') repeat top center;
+  //background: $bg-default url('../images/bg_h_line.png') repeat top center;
   //overflow: hidden;
 }
 body {
@@ -27,14 +27,15 @@ body>.container {
     top: 0;
     left: 0;
     width: 100%;
-    height: 110px;
+    height: 70px;
     padding: 0;
+    background-color: $bg-white;
     z-index: $z-index-max;
     .logo {
       display: inline-block;
       float:left;
       cursor: pointer;
-      margin: 30px 0 0 34px;
+      margin: 10px 0 0 34px;
       width: 200px;
       height: 50px;
       background: transparent url('../images/logo.png') no-repeat center center / 151px 18px;
@@ -42,7 +43,8 @@ body>.container {
     .menus {
       display: inline-block;
       float:right;
-      margin: 43px 17px 0 0;
+      margin: 25px 17px 0 0;
+
       justify-content: center;
       .menu {
         display: inline-block;
@@ -65,15 +67,15 @@ body>.container {
     .section {
       position: relative;
       height: 1000px;
-      .main-container {
+      >.main-container {
         margin: 0 0 0 0;
         padding: 0 0 0 89px;
         font-family: $font-default;
-        font-size: 48px;
+        font-size: 36px;
         font-weight: 600;
         letter-spacing: 0;
         color: $text-default;
-        line-height: 46px;
+        line-height: 44px;
         .highlight {
           @include highlight('Search');
         }
@@ -82,15 +84,15 @@ body>.container {
           display: inline-block;
           position: absolute;
           left:  0;
-          top: 10px;
+          top: 14px;
           width: 5px;
           height: 140px;
           background-color: $bg-black;
         }
         &.section-title {
-          padding-top: 43px;
+          padding-top: 12px;
           &:after {
-            display: none;
+            height: 40px;
           }
           .description {
             display: block;
@@ -104,7 +106,7 @@ body>.container {
           }
         }
       }
-      .sub-container {
+      >.sub-container {
         position: absolute;
         top: 0;
         left: 515px;
@@ -113,13 +115,15 @@ body>.container {
           padding: 0 0 0 0;
           margin: 0 0 0 0;
           .caption {
-            padding: 24px 170px 0 0;
+            width: 689px;
+            padding: 24px 0 0 0;
             font-family: $font-default;
             font-size: 16px;
             font-weight: 400;
             letter-spacing: 0;
             color: $text-darkgray;
             line-height: 22px;
+            text-transform: none;
           }
         }
         .major-description {
@@ -148,7 +152,8 @@ body>.container {
           letter-spacing: -0.4px;
         }
         .sub-container {
-          padding: 273px 0 0 343px;
+          padding: 353px 100px 0 0;
+
           .paragraph {
             padding: 0 0 24px 0;
             .title {
@@ -195,22 +200,22 @@ body>.container {
       }
       &.pg-aboutus {
         .sub-container {
-          padding: 248px 82px 0 0;
+          padding: 142px 10px 0 0;
         }
       }
       &.pg-partner {
         .sub-container {
           padding: 215px 0 0 0;
-          @include calculator(width,'100% - 214px');
-          @include scrollbars(0.5em, slategray);
+          width: 100%;
           overflow: auto;
+          left: 90px;
           .scrollable {
             display: flex;
-            width: 1300px;
+            width: 100%;
             flex-wrap:  nowrap;
             .partner {
               cursor: pointer;
-              width: 346px;
+              width: 330px;
               display: inline-block;
               padding: 0 0 0 0;
               margin: 0 87px 0 0;
@@ -245,7 +250,20 @@ body>.container {
       }
       &.pg-blueindex {
         .sub-container {
-          padding: 218px 0 0 0;
+          padding: 51px 0 0 0;
+          .apps {
+            margin: 0 0 50px 0;
+            .link-primary {
+              display: inline-block;
+              width: 337px;
+            }
+          }
+          .major-description {
+            padding-right: 46px;
+            &:after {
+              display: none;
+            }
+          }
           .specs {
             margin: 57px 0 0 0;
             .spec {
@@ -329,7 +347,121 @@ body>.container {
       }
       &.pg-monopoly {
         .sub-container {
-          padding: 238px 10px 0 0;
+          padding: 134px 10px 0 0;
+          .major-description {
+            &:after {
+              display: none;
+            }
+          }
+          .submenu {
+            position: absolute;
+            left: -350px;
+            top: 166px;
+            font-family: $font-default;
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: 0;
+            color: $text-default;
+            line-height: 30px;
+            text-transform: uppercase;
+            .pg-contributor {
+              position: absolute;
+              left: 0;
+              top: 0;
+              width: 500px;
+              .title {
+                margin-top: 26px;
+              }
+              .contents {
+                display: none;
+                margin-top: 0;
+                //background-color: $bg-white;
+                .btn-container {
+                  margin: -140px 0 140px 0;
+                }
+              }
+            }
+            .pg-validator {
+              position: absolute;
+              left: 0;
+              top: 50px;
+              width: 500px;
+              .title {
+                margin-top: 8px;
+              }
+              .contents {
+                display: none;
+                margin-top: -50px;
+                //background-color: $bg-white;
+                .btn-container {
+                  margin: -276px 0 276px 0;
+                }
+              }
+            }
+            .pg-datasharing {
+              position: absolute;
+              left: 0;
+              top: 100px;
+              width: 500px;
+              .title {
+                margin-top: -10px;
+              }
+              .contents {
+                display: none;
+                margin-top: -100px;
+                //background-color: $bg-white;
+                .btn-container {
+                  margin: -276px 0 276px 0;
+                }
+              }
+            }
+            .title {
+              padding-right: 50px;
+              color: $text-lightgray;
+              position: relative;
+              &:hover {
+                text-decoration: none;
+                color: $text-black;
+                &:after {
+                  content: '';
+                  position: absolute;
+                  right: 0;
+                  top: 14px;
+                  width: 30px;
+                  height: 3px;
+                  background-color: $text-default;
+                }
+              }
+            }
+            .active {
+              &.pg-contributor .contents,
+              &.pg-validator .contents,
+              &.pg-datasharing .contents {
+                display: block;
+              }
+              .title {
+                text-decoration: none;
+                color: $text-black;
+                &:after {
+                  content: '';
+                  position: absolute;
+                  right: 0;
+                  top: 14px;
+                  width: 30px;
+                  height: 3px;
+                  background-color: $text-default;
+                }
+              }
+            }
+          }
+          .title {
+            float: left;
+          }
+          .contents {
+            position: absolute;
+            left: 342px;
+            width: 500px;
+          }
         }
       }
       &.pg-contributor,
@@ -346,7 +478,7 @@ body>.container {
         .sub-container {
           padding: 51px 0 0 0;
           .apps {
-            margin: 0 0 132px 0;
+            margin: 0 0 60px 0;
             .link-primary {
               display: inline-block;
               width: 337px;
@@ -461,9 +593,9 @@ body>.container {
       }
       &.pg-inartpress {
         .sub-container {
-          padding: 51px 0 0 0;
-       .apps {
-            margin: 0 0 132px 0;
+          padding: 25px 0 0 0;
+          .apps {
+            margin: 0 0 60px 0;
             .link-primary {
               display: inline-block;
               width: 337px;
@@ -561,7 +693,7 @@ body>.container {
     }
     .footer {
       width: 100%;
-      height: 200px;
+      height: 74px;
       padding: 22px 0 0 0;
       .copyright {
         float: left;

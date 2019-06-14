@@ -249,9 +249,13 @@ table th {
   text-transform: uppercase;
 }
 
+.hidden {
+  display: none !important;
+}
+
 body > .container {
   position: relative;
-  padding: 81px 0 0 0;
+  padding: 60px 0 0 0;
   width: 100%;
   height: 100%;
 }
@@ -260,270 +264,42 @@ body > .container .top-navigation {
   top: 0;
   left: 0;
   width: 100%;
-  height: 81px;
+  height: 60px;
   background-color: #232629;
   padding: 0;
   z-index: 90;
 }
 body > .container .top-navigation .logo {
+  float: left;
+  cursor: pointer;
+  padding: 0 0 0 10px;
+  width: 170px;
+  height: 55px;
+  background: transparent url("../images/logo-s@2x.png") no-repeat 0 21px/153px 17px;
+}
+body > .container .top-navigation .btn-mobile-back {
   display: inline-block;
   float: left;
   cursor: pointer;
-  margin: 23px 0 0 30px;
-  width: 196px;
-  height: 38px;
-  background: transparent url("../images/bi-logo@2x.png") no-repeat 20px 8px/176px 20px;
+  width: 75px;
+  height: 59px;
+  overflow: hidden;
+  background: #232629 url("../images/top-back-icon@2x.png") no-repeat center center/14px 25px;
+}
+body > .container .top-navigation .btn-mobile-search {
+  display: inline-block;
+  float: right;
+  cursor: pointer;
+  width: 83px;
+  height: 55px;
+  overflow: hidden;
+  background: #232629 url("../images/search-icon-big@2x.png") no-repeat center center/23px 24px;
 }
 body > .container .top-navigation .form-artist-search-top {
-  float: right;
-  display: inline-block;
-  border: 1px solid #454d54;
-  border-radius: 1px;
-  margin: 20px 40px 0 0;
-}
-body > .container .top-navigation .form-artist-search-top .form-group {
-  width: 298px;
-  height: 38px;
-  margin-left: auto;
-  margin-right: auto;
-  border: 0;
-}
-body > .container .top-navigation .form-artist-search-top .form-group .input-bgdark {
-  float: left;
-  margin: 0 0 0 0;
-  border: 0;
-  width: 260px;
-  height: 38px;
-  padding: 0 0 2px 10px;
-  font-family: "Roboto";
-  font-size: 16px;
-  letter-spacing: 0;
-  font-weight: 400;
-  color: #fff;
-  line-height: 100%;
-}
-body > .container .top-navigation .form-artist-search-top .form-group .btn-search {
-  display: inline-block;
-  float: left;
-  cursor: pointer;
-  width: 38px;
-  height: 38px;
-  border: 0;
-  text-indent: 100px;
-  overflow: hidden;
-  background: #232629 url("../images/icon_search_small.png") no-repeat center center/17px 17px;
-}
-body > .container .top-navigation .form-artist-search-top .layer-search {
   display: none;
-}
-body > .container .top-navigation .form-artist-search-top.active .layer-search {
-  display: block;
-  position: absolute;
-  width: 298px;
-  background-color: #32363a;
-}
-body > .container .top-navigation .form-artist-search-top.active .layer-search .artist {
-  display: block;
-  cursor: pointer;
-  text-align: left;
-  padding: 10px 20px;
-  margin: 0 0;
-}
-body > .container .top-navigation .form-artist-search-top.active .layer-search .artist:first-child {
-  margin-top: 12px;
-}
-body > .container .top-navigation .form-artist-search-top.active .layer-search .artist:last-child {
-  margin-bottom: 18px;
-}
-body > .container .top-navigation .form-artist-search-top.active .layer-search .artist:hover {
-  background-color: #2f3236;
-}
-body > .container .top-navigation .form-artist-search-top.active .layer-search .artist .name {
-  font-family: "Roboto";
-  font-size: 14px;
-  letter-spacing: -0.8px;
-  font-weight: 700;
-  color: #fff;
-  line-height: 140%;
-}
-body > .container .top-navigation .form-artist-search-top.active .layer-search .artist .name .matching {
-  font-family: "Roboto";
-  font-size: 14px;
-  letter-spacing: -0.8px;
-  font-weight: 700;
-  color: #fff;
-  line-height: 140%;
-  color: #7e8a95;
-}
-body > .container .top-navigation .form-artist-search-top.active .layer-search .artist .description {
-  margin-left: 2px;
-  font-family: "Roboto";
-  font-size: 14px;
-  letter-spacing: 0.3px;
-  font-weight: 300;
-  color: #fff;
-  line-height: 100%;
 }
 body > .container .top-navigation .location {
-  float: right;
-  display: flex;
-  text-transform: uppercase;
-  margin: 34px 3px 0 0;
-}
-body > .container .top-navigation .location li {
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-}
-body > .container .top-navigation .location li .icon-home {
-  padding-left: 20px;
-  position: relative;
-}
-body > .container .top-navigation .location li .icon-home:after {
-  content: " ";
-  display: inline-block;
-  overflow: hidden;
-  width: 15px;
-  height: 14px;
-  position: absolute;
-  left: 0;
-  top: 0;
-  background-color: transparent;
-  background-image: url("../images/icon_home.png");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  background-size: 15px 14px;
-}
-body > .container .top-navigation .location li .icon-home:after {
-  opacity: 0.4;
-}
-body > .container .top-navigation .location li .icon-artist {
-  padding-left: 20px;
-  position: relative;
-}
-body > .container .top-navigation .location li .icon-artist:after {
-  content: " ";
-  display: inline-block;
-  overflow: hidden;
-  width: 10px;
-  height: 13px;
-  position: absolute;
-  left: 0;
-  top: 0;
-  background-color: transparent;
-  background-image: url("../images/icon_artist.png");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  background-size: 10px 13px;
-}
-body > .container .top-navigation .location li .icon-artist:after {
-  top: 1px;
-  left: 3px;
-  opacity: 0.4;
-}
-body > .container .top-navigation .location li .icon-work {
-  padding-left: 20px;
-  position: relative;
-}
-body > .container .top-navigation .location li .icon-work:after {
-  content: " ";
-  display: inline-block;
-  overflow: hidden;
-  width: 14px;
-  height: 13px;
-  position: absolute;
-  left: 0;
-  top: 0;
-  background-color: transparent;
-  background-image: url("../images/icon_work.png");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  background-size: 14px 13px;
-}
-body > .container .top-navigation .location .normal {
-  margin: 0 10px 0 0;
-  padding: 0 20px 0 0;
-  position: relative;
-}
-body > .container .top-navigation .location .normal:after {
-  content: '>';
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 10px;
-  height: 20px;
-  color: #77818a;
-}
-body > .container .top-navigation .location .normal .nav-link {
-  font-family: "Roboto";
-  letter-spacing: -0.3px;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 100%;
-  display: inline-block;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  word-break: break-all;
-  max-width: 160px;
-  overflow: hidden;
-}
-body > .container .top-navigation .location .normal .nav-link:link {
-  color: #77818a;
-  text-decoration: none;
-}
-body > .container .top-navigation .location .normal .nav-link:hover, body > .container .top-navigation .location .normal .nav-link:active {
-  text-decoration: underline;
-}
-body > .container .top-navigation .location .normal .nav-link:visited {
-  color: rgba(119, 129, 138, 0.5);
-  text-decoration: none;
-}
-body > .container .top-navigation .location .normal .nav-link:active {
-  outline: none;
-  text-decoration: underline;
-}
-body > .container .top-navigation .location .here {
-  margin: 0 28px 0 0;
-}
-body > .container .top-navigation .location .here:after {
   display: none;
-}
-body > .container .top-navigation .location .here .nav-link {
-  font-family: "Roboto";
-  letter-spacing: 0;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 100%;
-  display: inline-block;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  word-break: break-all;
-  max-width: 250px;
-  overflow: hidden;
-}
-body > .container .top-navigation .location .here .nav-link:link {
-  color: #fff;
-  text-decoration: none;
-}
-body > .container .top-navigation .location .here .nav-link:hover, body > .container .top-navigation .location .here .nav-link:active {
-  text-decoration: underline;
-}
-body > .container .top-navigation .location .here .nav-link:visited {
-  color: rgba(255, 255, 255, 0.5);
-  text-decoration: none;
-}
-body > .container .top-navigation .location .here .nav-link:active {
-  outline: none;
-  text-decoration: underline;
-}
-body > .container .top-navigation .location .here .nav-link .icon-home:after {
-  opacity: 1;
-}
-body > .container .top-navigation .location .here .nav-link .icon-artist:after {
-  opacity: 1;
-}
-body > .container .top-navigation .location .here .nav-link .icon-work:after {
-  opacity: 1;
 }
 body > .container .inner-container {
   min-height: 100%;
@@ -532,93 +308,7 @@ body > .container .inner-container {
   padding-bottom: 200px;
 }
 body > .container .inner-container .footer {
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 121px;
-  bottom: 0;
-  background-color: #eff3f6;
-}
-body > .container .inner-container .footer.white {
-  background-color: #fff;
-}
-body > .container .inner-container .footer .logo {
-  display: inline-block;
-  float: left;
-  cursor: pointer;
-  margin: 42px 0 0 31px;
-  width: 148px;
-  height: 37px;
-  background: transparent url("../images/logo_pc_footer.png") no-repeat center center/128px 17px;
-}
-body > .container .inner-container .footer .sites {
-  display: inline-block;
-  float: right;
-  margin: 56px 40px 0 0;
-  justify-content: center;
-}
-body > .container .inner-container .footer .sites .site {
-  display: inline-block;
-  margin: 0 9px 0 21px;
-  position: relative;
-  font-family: "Roboto";
-  font-size: 14px;
-  letter-spacing: -0.2px;
-  font-weight: 400;
-  color: #acaeb5;
-  line-height: 100%;
-  position: relative;
-}
-body > .container .inner-container .footer .sites .site:link {
-  color: #acaeb5;
-  text-decoration: none;
-}
-body > .container .inner-container .footer .sites .site:hover, body > .container .inner-container .footer .sites .site:active {
-  text-decoration: underline;
-}
-body > .container .inner-container .footer .sites .site:visited {
-  color: rgba(172, 174, 181, 0.5);
-  text-decoration: none;
-}
-body > .container .inner-container .footer .sites .site:active {
-  outline: none;
-  text-decoration: underline;
-}
-body > .container .inner-container .footer .sites .site:after {
-  content: " ";
-  display: inline-block;
-  overflow: hidden;
-  width: 2px;
-  height: 12px;
-  position: absolute;
-  left: 0;
-  top: 0;
-  background-color: transparent;
-  background-image: url("../images/icon_bar.png");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  background-size: 2px 12px;
-}
-body > .container .inner-container .footer .sites .site:after {
-  top: 2px;
-  left: unset;
-  right: -19px;
-}
-body > .container .inner-container .footer .sites .site:last-child {
-  margin-right: 0;
-}
-body > .container .inner-container .footer .sites .site:last-child:after {
   display: none;
-}
-body > .container .inner-container .footer .copyright {
-  float: left;
-  margin: 58px 0 0 3px;
-  font-family: "Roboto";
-  font-size: 12px;
-  letter-spacing: -0.3px;
-  font-weight: 400;
-  color: #acaeb5;
-  line-height: 100%;
 }
 
 .paging {
@@ -1208,9 +898,12 @@ body > .container .inner-container .footer .copyright {
 .container-main .inner-container .form-artist-search.active .layer-search {
   display: block;
   position: absolute;
-  width: 504px;
+  width: -moz-calc(100% - 58px);
+  width: -webkit-calc(100% - 58px);
+  width: calc(100% - 58px);
   margin-left: -2px;
   background-color: #32363a;
+  opacity: 0.9;
 }
 .container-main .inner-container .form-artist-search.active .layer-search .artist {
   display: block;
@@ -1228,28 +921,28 @@ body > .container .inner-container .footer .copyright {
 .container-main .inner-container .form-artist-search.active .layer-search .artist .name {
   font-family: "Roboto";
   font-size: 14px;
-  letter-spacing: -0.8px;
-  font-weight: 700;
+  letter-spacing: 0.3px;
+  font-weight: 300;
   color: #fff;
   line-height: 140%;
 }
 .container-main .inner-container .form-artist-search.active .layer-search .artist .name .matching {
   font-family: "Roboto";
   font-size: 14px;
-  letter-spacing: -0.8px;
-  font-weight: 700;
+  letter-spacing: 0.3px;
+  font-weight: 300;
   color: #fff;
   line-height: 140%;
-  color: #7e8a95;
+  color: #b1bd53;
 }
 .container-main .inner-container .form-artist-search.active .layer-search .artist .description {
   margin-left: 2px;
   font-family: "Roboto";
   font-size: 14px;
   letter-spacing: 0.3px;
-  font-weight: 300;
+  font-weight: 100;
   color: #fff;
-  line-height: 100%;
+  line-height: 140%;
 }
 .container-main .footer-main {
   display: block;
@@ -1279,24 +972,24 @@ body > .container .inner-container .footer .copyright {
 .container.artists .inner-container > .keyword .title {
   max-width: 1184px;
   margin: 0 auto;
-  padding: 38px 0 0 75px;
+  padding: 17px 0 0 56px;
   font-family: "Roboto";
-  font-size: 17px;
+  font-size: 16px;
   letter-spacing: -0.3px;
-  font-weight: 300;
+  font-weight: 400;
   color: #7e8a95;
   line-height: 100%;
 }
 .container.artists .inner-container > .keyword .word {
   max-width: 1184px;
   margin: 0 auto;
-  padding: 12px 0 0 79px;
+  padding: 36px 0 0 55px;
   font-family: "Roboto";
-  font-size: 56px;
-  letter-spacing: 0.1px;
+  font-size: 40px;
+  letter-spacing: 0;
   font-weight: 700;
   color: #fff;
-  line-height: 100%;
+  line-height: 48px;
 }
 .container.artists .inner-container .submenu {
   background-color: #eff3f6;
@@ -1312,7 +1005,7 @@ body > .container .inner-container .footer .copyright {
   border: 0;
   display: inline-block;
   overflow: hidden;
-  width: 218px;
+  width: 33%;
   height: 64px;
   padding: 19px 56px 0 56px;
   text-align: center;
@@ -1446,9 +1139,9 @@ body > .container .inner-container .footer .copyright {
   margin: 0 auto;
   padding: 17px 0 0 56px;
   font-family: "Roboto";
-  font-size: 17px;
+  font-size: 16px;
   letter-spacing: -0.3px;
-  font-weight: 300;
+  font-weight: 400;
   color: #7e8a95;
   line-height: 100%;
 }
@@ -1457,11 +1150,11 @@ body > .container .inner-container .footer .copyright {
   margin: 0 auto;
   padding: 36px 0 0 55px;
   font-family: "Roboto";
-  font-size: 56px;
-  letter-spacing: 0.1px;
+  font-size: 40px;
+  letter-spacing: 0;
   font-weight: 700;
   color: #fff;
-  line-height: 100%;
+  line-height: 48px;
 }
 .container.lots .inner-container .form-filters .default {
   background-color: #fff;
