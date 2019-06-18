@@ -23,7 +23,6 @@
 // text-style
 @mixin text-style($name) {
   @if $name == text-default {
-    font-family: $font-default;
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 0;
