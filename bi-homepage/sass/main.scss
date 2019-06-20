@@ -39,6 +39,7 @@ body {
     background-color: $bg-default;
   }
   .btn-up, .btn-down {
+    display: inline-block;
     width: 50px;
     height: 60px;
     text-align: center;
@@ -58,13 +59,13 @@ body {
     display: inline-block;
     width: 20px;
     height: 25px;
-    background: transparent url('../images/icon_arrow-up.png') no-repeat center center / 20px 25px ;
+    @include bg-image(transperent,'../images/icon_arrow-up.png',no-repeat,scroll,center,center,20px,25px);
   }
   .down {
     display: inline-block;
     width: 20px;
     height: 25px;
-    background: transparent url('../images/icon_arrow-down.png') no-repeat left top / 20px 25px ;
+    @include bg-image(transperent,'../images/icon_arrow-down.png',no-repeat,scroll,top,left,20px,25px);
   }
 }
 
@@ -75,7 +76,7 @@ body {
 #anchor-laa,
 #anchor-iap {
   position: absolute;
-  top: -206px;
+  top: -205px;
   width: 100px;
   height: 10px;
 }
@@ -102,7 +103,7 @@ body>.container {
       margin: 10px 0 0 34px;
       width: 200px;
       height: 50px;
-      background: transparent url('../images/logo.png') no-repeat center center / 151px 18px;
+      @include bg-image(transperent,'../images/logo.png',no-repeat,scroll,center,center,151px,18px)
     }
     .menus {
       display: inline-block;
@@ -270,10 +271,21 @@ body>.container {
             display: flex;
             width: 100%;
             position: relative;
+            margin-top: 80px;
+            &:after {
+              content: '';
+              display: inline-block;
+              position: absolute;
+              left: 0;
+              top: 11px;
+              width: 62px;
+              height: 4px;
+              background-color: $bg-highlight;
+            }
             .partner {
               position: absolute;
               &:first-child {
-                left: 4;
+                left: 4px;
                 top: 60px;
               }
               &:nth-child(2) {
@@ -349,7 +361,7 @@ body>.container {
                 top:  6px;
                 width: 46px;
                 height: 46px;
-                background: transparent url('../images/icon_big_rank.png') no-repeat left top / 46px 46px ;
+                @include bg-image(transperent,'../images/icon_big_rank.png',no-repeat,scroll,top,left,46px,46px)
               }
               &.icon-works {
                 &:after {
@@ -357,7 +369,7 @@ body>.container {
                   top:  5px;
                   width: 64px;
                   height: 58px;
-                  background: transparent url('../images/blueindex-icon-01.png') no-repeat center top / 64px 58px ;
+                  @include bg-image(transperent,'../images/blueindex-icon-01.png',no-repeat,scroll,top,center,64px,58px);
                 }
               }
               &.icon-hammer{
@@ -366,7 +378,7 @@ body>.container {
                   top:  5px;
                   width: 57px;
                   height: 43px;
-                  background: transparent url('../images/blueindex-icon-02.png') no-repeat center top / 57px 43px ;
+                  @include bg-image(transperent,'../images/blueindex-icon-02.png',no-repeat,scroll,top,center,57px,43px);
                 }
               }
               &.icon-compare {
@@ -375,7 +387,7 @@ body>.container {
                   top:  5px;
                   width: 57px;
                   height: 43px;
-                  background: transparent url('../images/blueindex-icon-03.png') no-repeat center top / 57px 43px ;
+                  @include bg-image(transperent,'../images/blueindex-icon-03.png',no-repeat,scroll,top,center,57px,43px);
                 }
               }
               .title {
@@ -419,7 +431,10 @@ body>.container {
           }
         }
         .sub-container {
-          padding: 134px 10px 0 0;
+          padding: 60px 0 0 0;
+          .apps {
+            margin: -30px 0 70px 0;
+          }
           .major-description {
             &:after {
               display: none;
@@ -438,18 +453,17 @@ body>.container {
             .pg-contributor {
               position: absolute;
               left: 0;
-              top: 0;
+              top: 52px;
               width: 500px;
               .title {
-                margin: 52px 0 0 13px;
-
+                margin: 0 0 0 13px;
               }
               .contents {
                 display: none;
                 margin-top: 0;
-                //background-color: $bg-white;
                 .caption {
                   opacity: 0.7;
+                  padding-top: 0;
                 }
                 .btn-container {
                   margin: -140px 0 140px 0;
@@ -459,34 +473,34 @@ body>.container {
             .pg-validator {
               position: absolute;
               left: 0;
-              top: 50px;
+              top: 83px;
               width: 500px;
               .title {
-                margin: 32px 0 0 13px;
+                margin: 0 0 0 13px;
               }
               .contents {
                 display: none;
-                margin-top: -26px;
-                //background-color: $bg-white;
-                .btn-container {
-                  margin: -276px 0 276px 0;
+                margin-top: -31px;
+                .caption {
+                  opacity: 0.7;
+                  padding-top: 0;
                 }
               }
             }
             .pg-datasharing {
               position: absolute;
               left: 0;
-              top: 100px;
+              top: 114px;
               width: 500px;
               .title {
-                margin: 14px 0 0 13px;
+                margin: 0 0 0 13px;
               }
               .contents {
                 display: none;
-                margin-top: -100px;
-                //background-color: $bg-white;
-                .btn-container {
-                  margin: -276px 0 276px 0;
+                margin-top: -62px;
+                .caption {
+                  opacity: 0.7;
+                  padding-top: 0;
                 }
               }
             }
@@ -558,7 +572,7 @@ body>.container {
         .sub-container {
           padding: 51px 0 0 0;
           .apps {
-            margin: 0 0 60px 0;
+            margin: -30px 0 60px 0;
             .link-primary {
               display: inline-block;
               width: 337px;
@@ -588,7 +602,7 @@ body>.container {
                 top:  6px;
                 width: 46px;
                 height: 46px;
-                background: transparent url('../images/icon_big_rank.png') no-repeat left top / 46px 46px ;
+                @include bg-image(transperent,'../images/icon_big_rank.png',no-repeat,scroll,top,left,46px,46px);
               }
               &.icon-realtime {
                 &:after {
@@ -596,7 +610,7 @@ body>.container {
                   top:  5px;
                   width: 58px;
                   height: 42px;
-                  background: transparent url('../images/live-icon-01.png') no-repeat center top / 58px 42px ;
+                  @include bg-image(transperent,'../images/live-icon-01.png',no-repeat,scroll,top,center,58px,42px);
                 }
               }
               &.icon-multiple {
@@ -605,7 +619,7 @@ body>.container {
                   top:  5px;
                   width: 58px;
                   height: 42px;
-                  background: transparent url('../images/live-icon-02.png') no-repeat center top / 58px 42px ;
+                  @include bg-image(transperent,'../images/live-icon-02.png',no-repeat,scroll,top,center,58px,42px);
                 }
               }
               &.icon-rank {
@@ -614,7 +628,7 @@ body>.container {
                   top:  5px;
                   width: 47px;
                   height: 49px;
-                  background: transparent url('../images/live-icon-03.png') no-repeat center top / 47px 49px ;
+                  @include bg-image(transperent,'../images/live-icon-03.png',no-repeat,scroll,top,center,47px,49px);
                 }
               }
               &.icon-sharing {
@@ -623,7 +637,7 @@ body>.container {
                   top:  5px;
                   width: 54px;
                   height: 44px;
-                  background: transparent url('../images/live-icon-05.png') no-repeat center top / 54px 44px ;
+                  @include bg-image(transperent,'../images/live-icon-05.png',no-repeat,scroll,top,center,54px,44px);
                 }
               }
               &.icon-news {
@@ -632,7 +646,7 @@ body>.container {
                   top:  5px;
                   width: 49px;
                   height: 38px;
-                  background: transparent url('../images/live-icon-06.png') no-repeat center top / 49px 38px ;
+                  @include bg-image(transperent,'../images/live-icon-06.png',no-repeat,scroll,top,center,49px,38px);
                 }
               }
               .title {
@@ -673,7 +687,7 @@ body>.container {
         .sub-container {
           padding: 25px 0 0 0;
           .apps {
-            margin: 0 0 60px 0;
+            margin: -4px 0 60px 0;
             .link-primary {
               display: inline-block;
               width: 337px;
@@ -703,7 +717,7 @@ body>.container {
                 top:  6px;
                 width: 46px;
                 height: 46px;
-                background: transparent url('../images/icon_big_rank.png') no-repeat left top / 46px 46px ;
+                @include bg-image(transperent,'../images/icon_big_rank.png',no-repeat,scroll,top,left,46px,46px);
               }
               &.icon-map {
                 &:after {
@@ -711,7 +725,7 @@ body>.container {
                   top:  5px;
                   width: 46px;
                   height: 46px;
-                  background: transparent url('../images/icon_big_map.png') no-repeat center top / 46px 44px ;
+                  @include bg-image(transperent,'../images/icon_big_map.png',no-repeat,scroll,top,center,46px,44px);
                 }
               }
               &.icon-search {
@@ -720,7 +734,7 @@ body>.container {
                   top:  12px;
                   width: 52px;
                   height: 46px;
-                  background: transparent url('../images/icon_big_search.png') no-repeat center top / 52px 39px ;
+                  @include bg-image(transperent,'../images/icon_big_search.png',no-repeat,scroll,top,center,52px,39px);
                 }
               }
               &.icon-info {
@@ -729,7 +743,7 @@ body>.container {
                   top:  9px;
                   width: 46px;
                   height: 46px;
-                  background: transparent url('../images/icon_big_info.png') no-repeat center top / 40px 40px ;
+                  @include bg-image(transperent,'../images/icon_big_info.png',no-repeat,scroll,top,center,40px,40px);
                 }
               }
               .title {
@@ -785,6 +799,8 @@ body>.container {
             margin: 0 0 30px 0;
           }
           .label {
+            vertical-align: top;
+            display: inline-block;
             padding: 12px 0 0 0;
             width: 170px;
             font-size: 13px;
@@ -807,9 +823,9 @@ body>.container {
             font-size: 16px;
             font-weight: 400;
             letter-spacing: 0;
-            color: $text-darkgray;
+            color: $text-lightgray;
             line-height: 100%;
-            @include placeholder-color($text-lightgray);
+            @include placeholder-color(#fff);
             &.textarea {
               height: 110px !important;;
             }
@@ -857,6 +873,13 @@ body>.container {
         letter-spacing: 0;
         color: $text-lightgray;
         line-height: 16px;
+        a {
+          text-decoration: none;
+          color: $text-lightgray;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
       }
     }
   }

@@ -94,6 +94,23 @@ input:focus, button:focus, select:focus {
   outline: none;
 }
 
+select {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  border: 0;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  background-image: url(../images/input-arrow@2x.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position-y: center;
+  background-position-x: 97%;
+  background-size: 14px 8px;
+}
+
 .link-main {
   font-size: 14px;
   font-weight: 600;
@@ -124,18 +141,36 @@ input:focus, button:focus, select:focus {
   background-color: #000;
 }
 
-.icon {
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-}
-
 .icon-apple {
-  background: transparent url("../images/icon_apple.png") no-repeat top center/13px 15px;
+  display: inline-block;
+  width: 14px;
+  height: 16px;
+  background-color: transparent;
+  background-image: url(../images/store-01@2x.png);
+  background-repeat: scroll;
+  background-attachment: no-repeat;
+  background-position-y: top;
+  background-position-x: center;
+  background-size: 14px 17px;
 }
 
 .icon-android {
-  background: transparent url("../images/icon_android.png") no-repeat top center/13px 16px;
+  display: inline-block;
+  width: 13px;
+  height: 16px;
+  background-color: transparent;
+  background-image: url(../images/store-02@2x.png);
+  background-repeat: scroll;
+  background-attachment: no-repeat;
+  background-position-y: top;
+  background-position-x: center;
+  background-size: 13px 15px;
+}
+
+.icon-blank {
+  display: inline-block;
+  width: 2px;
+  height: 16px;
 }
 
 .hidden {
@@ -155,47 +190,113 @@ input:focus, button:focus, select:focus {
 }
 
 .bg-main {
-  background: transparent url("../images/bg_pc_00_main_1920x1020.png") no-repeat top center/1920px 1020px;
+  background-color: transperent;
+  background-image: url(../images/bg_pc_00_main_1920x1020.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position-y: top;
+  background-position-x: center;
+  background-size: 1920px 1020px;
 }
 
 .bg-aboutus {
-  background: transparent url("../images/bg_pc_01_aboutus01_1920x1020.png") no-repeat top center/1920px 1020px;
+  background-color: transperent;
+  background-image: url(../images/bg_pc_01_aboutus01_1920x1020.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position-y: top;
+  background-position-x: center;
+  background-size: 1920px 1020px;
 }
 
 .bg-partner {
-  background: transparent url("../images/bg_pc_01_aboutus02_1920x1020.png") no-repeat top center/1920px 1020px;
+  background-color: transperent;
+  background-image: url(../images/bg_pc_01_aboutus02_1920x1020.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position-y: top;
+  background-position-x: center;
+  background-size: 1920px 1020px;
 }
 
 .bg-blueindex {
-  background: transparent url("../images/bg_pc_02_service01_01_blueindex_1920x1020.png.png") no-repeat top center/1920px 1020px;
+  background-color: transperent;
+  background-image: url(../images/bg_pc_02_service01_01_blueindex_1920x1020.png.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position-y: top;
+  background-position-x: center;
+  background-size: 1920px 1020px;
 }
 
 .bg-monopoly {
-  background: transparent url("../images/bg_pc_02_service01_02_blueindexmonopoly_1920x1020.png") no-repeat top center/1920px 1020px;
+  background-color: transperent;
+  background-image: url(../images/bg_pc_02_service01_02_blueindexmonopoly_1920x1020.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position-y: top;
+  background-position-x: center;
+  background-size: 1920px 1020px;
 }
 
 .bg-contributor {
-  background: transparent url("../images/bg_pc_02_service01_03_contributor_1920x1020.png") no-repeat top center/1920px 1020px;
+  background-color: transperent;
+  background-image: url(../images/bg_pc_02_service01_03_contributor_1920x1020.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position-y: top;
+  background-position-x: center;
+  background-size: 1920px 1020px;
 }
 
 .bg-validator {
-  background: transparent url("../images/bg_pc_02_service01_04_validator_1920x1020.png") no-repeat top center/1920px 1020px;
+  background-color: transperent;
+  background-image: url(../images/bg_pc_02_service01_04_validator_1920x1020.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position-y: top;
+  background-position-x: center;
+  background-size: 1920px 1020px;
 }
 
 .bg-datasharing {
-  background: transparent url("../images/bg_pc_02_service01_05_datasharing_1920x1020.png") no-repeat top center/1920px 1020px;
+  background-color: transperent;
+  background-image: url(../images/bg_pc_02_service01_05_datasharing_1920x1020.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position-y: top;
+  background-position-x: center;
+  background-size: 1920px 1020px;
 }
 
 .bg-liveauctionart {
-  background: transparent url("../images/bg_pc_02_service01_06_liveauctionart_1920x1280.png") no-repeat top center/1920px 1280px;
+  background-color: transperent;
+  background-image: url(../images/bg_pc_02_service01_06_liveauctionart_1920x1280.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position-y: top;
+  background-position-x: center;
+  background-size: 1920px 1280px;
 }
 
 .bg-inartpress {
-  background: transparent url("../images/bg_pc_02_service01_07_inartpress_1920x1020.png") no-repeat top center/1920px 1020px;
+  background-color: transperent;
+  background-image: url(../images/bg_pc_02_service01_07_inartpress_1920x1020.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position-y: top;
+  background-position-x: center;
+  background-size: 1920px 1020px;
 }
 
 .bg-contact {
-  background: transparent url("../images/bg_pc_03_contact01_1920x1020.png") no-repeat top center/1920px 1020px;
+  background-color: transperent;
+  background-image: url(../images/bg_pc_03_contact01_1920x1020.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position-y: top;
+  background-position-x: center;
+  background-size: 1920px 1020px;
 }
 
 html {
@@ -232,6 +333,7 @@ body {
   background-color: #e5e5e4;
 }
 .mover .btn-up, .mover .btn-down {
+  display: inline-block;
   width: 50px;
   height: 60px;
   text-align: center;
@@ -249,13 +351,25 @@ body {
   display: inline-block;
   width: 20px;
   height: 25px;
-  background: transparent url("../images/icon_arrow-up.png") no-repeat center center/20px 25px;
+  background-color: transperent;
+  background-image: url(../images/icon_arrow-up.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position-y: center;
+  background-position-x: center;
+  background-size: 20px 25px;
 }
 .mover .down {
   display: inline-block;
   width: 20px;
   height: 25px;
-  background: transparent url("../images/icon_arrow-down.png") no-repeat left top/20px 25px;
+  background-color: transperent;
+  background-image: url(../images/icon_arrow-down.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position-y: top;
+  background-position-x: left;
+  background-size: 20px 25px;
 }
 
 #anchor-aboutus,
@@ -265,7 +379,7 @@ body {
 #anchor-laa,
 #anchor-iap {
   position: absolute;
-  top: -206px;
+  top: -205px;
   width: 100px;
   height: 10px;
 }
@@ -292,7 +406,13 @@ body > .container .top-navigation .logo {
   margin: 10px 0 0 34px;
   width: 200px;
   height: 50px;
-  background: transparent url("../images/logo.png") no-repeat center center/151px 18px;
+  background-color: transperent;
+  background-image: url(../images/logo.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position-y: center;
+  background-position-x: center;
+  background-size: 151px 18px;
 }
 body > .container .top-navigation .menus {
   display: inline-block;
@@ -493,6 +613,17 @@ body > .container .inner-container .section.pg-partner .sub-container .scrollabl
   display: flex;
   width: 100%;
   position: relative;
+  margin-top: 80px;
+}
+body > .container .inner-container .section.pg-partner .sub-container .scrollable:after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 11px;
+  width: 62px;
+  height: 4px;
+  background-color: #eed28e;
 }
 body > .container .inner-container .section.pg-partner .sub-container .scrollable .partner {
   position: absolute;
@@ -504,7 +635,7 @@ body > .container .inner-container .section.pg-partner .sub-container .scrollabl
   margin: 0 87px 0 0;
 }
 body > .container .inner-container .section.pg-partner .sub-container .scrollable .partner:first-child {
-  left: 4;
+  left: 4px;
   top: 60px;
 }
 body > .container .inner-container .section.pg-partner .sub-container .scrollable .partner:nth-child(2) {
@@ -572,28 +703,52 @@ body > .container .inner-container .section.pg-blueindex .sub-container .specs .
   top: 6px;
   width: 46px;
   height: 46px;
-  background: transparent url("../images/icon_big_rank.png") no-repeat left top/46px 46px;
+  background-color: transperent;
+  background-image: url(../images/icon_big_rank.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position-y: top;
+  background-position-x: left;
+  background-size: 46px 46px;
 }
 body > .container .inner-container .section.pg-blueindex .sub-container .specs .spec.icon-works:after {
   left: 4px;
   top: 5px;
   width: 64px;
   height: 58px;
-  background: transparent url("../images/blueindex-icon-01.png") no-repeat center top/64px 58px;
+  background-color: transperent;
+  background-image: url(../images/blueindex-icon-01.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position-y: top;
+  background-position-x: center;
+  background-size: 64px 58px;
 }
 body > .container .inner-container .section.pg-blueindex .sub-container .specs .spec.icon-hammer:after {
   left: 4px;
   top: 5px;
   width: 57px;
   height: 43px;
-  background: transparent url("../images/blueindex-icon-02.png") no-repeat center top/57px 43px;
+  background-color: transperent;
+  background-image: url(../images/blueindex-icon-02.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position-y: top;
+  background-position-x: center;
+  background-size: 57px 43px;
 }
 body > .container .inner-container .section.pg-blueindex .sub-container .specs .spec.icon-compare:after {
   left: 4px;
   top: 5px;
   width: 57px;
   height: 43px;
-  background: transparent url("../images/blueindex-icon-03.png") no-repeat center top/57px 43px;
+  background-color: transperent;
+  background-image: url(../images/blueindex-icon-03.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position-y: top;
+  background-position-x: center;
+  background-size: 57px 43px;
 }
 body > .container .inner-container .section.pg-blueindex .sub-container .specs .spec .title {
   margin: 0 0 3px 0;
@@ -629,7 +784,10 @@ body > .container .inner-container .section.pg-monopoly .section-title:after {
   height: 80px;
 }
 body > .container .inner-container .section.pg-monopoly .sub-container {
-  padding: 134px 10px 0 0;
+  padding: 60px 0 0 0;
+}
+body > .container .inner-container .section.pg-monopoly .sub-container .apps {
+  margin: -30px 0 70px 0;
 }
 body > .container .inner-container .section.pg-monopoly .sub-container .major-description:after {
   display: none;
@@ -648,11 +806,11 @@ body > .container .inner-container .section.pg-monopoly .sub-container .submenu 
 body > .container .inner-container .section.pg-monopoly .sub-container .submenu .pg-contributor {
   position: absolute;
   left: 0;
-  top: 0;
+  top: 52px;
   width: 500px;
 }
 body > .container .inner-container .section.pg-monopoly .sub-container .submenu .pg-contributor .title {
-  margin: 52px 0 0 13px;
+  margin: 0 0 0 13px;
 }
 body > .container .inner-container .section.pg-monopoly .sub-container .submenu .pg-contributor .contents {
   display: none;
@@ -660,6 +818,7 @@ body > .container .inner-container .section.pg-monopoly .sub-container .submenu 
 }
 body > .container .inner-container .section.pg-monopoly .sub-container .submenu .pg-contributor .contents .caption {
   opacity: 0.7;
+  padding-top: 0;
 }
 body > .container .inner-container .section.pg-monopoly .sub-container .submenu .pg-contributor .contents .btn-container {
   margin: -140px 0 140px 0;
@@ -667,34 +826,36 @@ body > .container .inner-container .section.pg-monopoly .sub-container .submenu 
 body > .container .inner-container .section.pg-monopoly .sub-container .submenu .pg-validator {
   position: absolute;
   left: 0;
-  top: 50px;
+  top: 83px;
   width: 500px;
 }
 body > .container .inner-container .section.pg-monopoly .sub-container .submenu .pg-validator .title {
-  margin: 32px 0 0 13px;
+  margin: 0 0 0 13px;
 }
 body > .container .inner-container .section.pg-monopoly .sub-container .submenu .pg-validator .contents {
   display: none;
-  margin-top: -26px;
+  margin-top: -31px;
 }
-body > .container .inner-container .section.pg-monopoly .sub-container .submenu .pg-validator .contents .btn-container {
-  margin: -276px 0 276px 0;
+body > .container .inner-container .section.pg-monopoly .sub-container .submenu .pg-validator .contents .caption {
+  opacity: 0.7;
+  padding-top: 0;
 }
 body > .container .inner-container .section.pg-monopoly .sub-container .submenu .pg-datasharing {
   position: absolute;
   left: 0;
-  top: 100px;
+  top: 114px;
   width: 500px;
 }
 body > .container .inner-container .section.pg-monopoly .sub-container .submenu .pg-datasharing .title {
-  margin: 14px 0 0 13px;
+  margin: 0 0 0 13px;
 }
 body > .container .inner-container .section.pg-monopoly .sub-container .submenu .pg-datasharing .contents {
   display: none;
-  margin-top: -100px;
+  margin-top: -62px;
 }
-body > .container .inner-container .section.pg-monopoly .sub-container .submenu .pg-datasharing .contents .btn-container {
-  margin: -276px 0 276px 0;
+body > .container .inner-container .section.pg-monopoly .sub-container .submenu .pg-datasharing .contents .caption {
+  opacity: 0.7;
+  padding-top: 0;
 }
 body > .container .inner-container .section.pg-monopoly .sub-container .submenu .title {
   padding-right: 50px;
@@ -751,7 +912,7 @@ body > .container .inner-container .section.pg-liveauctionart .sub-container {
   padding: 51px 0 0 0;
 }
 body > .container .inner-container .section.pg-liveauctionart .sub-container .apps {
-  margin: 0 0 60px 0;
+  margin: -30px 0 60px 0;
 }
 body > .container .inner-container .section.pg-liveauctionart .sub-container .apps .link-primary {
   display: inline-block;
@@ -783,42 +944,78 @@ body > .container .inner-container .section.pg-liveauctionart .sub-container .sp
   top: 6px;
   width: 46px;
   height: 46px;
-  background: transparent url("../images/icon_big_rank.png") no-repeat left top/46px 46px;
+  background-color: transperent;
+  background-image: url(../images/icon_big_rank.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position-y: top;
+  background-position-x: left;
+  background-size: 46px 46px;
 }
 body > .container .inner-container .section.pg-liveauctionart .sub-container .specs .spec.icon-realtime:after {
   left: 4px;
   top: 5px;
   width: 58px;
   height: 42px;
-  background: transparent url("../images/live-icon-01.png") no-repeat center top/58px 42px;
+  background-color: transperent;
+  background-image: url(../images/live-icon-01.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position-y: top;
+  background-position-x: center;
+  background-size: 58px 42px;
 }
 body > .container .inner-container .section.pg-liveauctionart .sub-container .specs .spec.icon-multiple:after {
   left: 4px;
   top: 5px;
   width: 58px;
   height: 42px;
-  background: transparent url("../images/live-icon-02.png") no-repeat center top/58px 42px;
+  background-color: transperent;
+  background-image: url(../images/live-icon-02.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position-y: top;
+  background-position-x: center;
+  background-size: 58px 42px;
 }
 body > .container .inner-container .section.pg-liveauctionart .sub-container .specs .spec.icon-rank:after {
   left: 4px;
   top: 5px;
   width: 47px;
   height: 49px;
-  background: transparent url("../images/live-icon-03.png") no-repeat center top/47px 49px;
+  background-color: transperent;
+  background-image: url(../images/live-icon-03.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position-y: top;
+  background-position-x: center;
+  background-size: 47px 49px;
 }
 body > .container .inner-container .section.pg-liveauctionart .sub-container .specs .spec.icon-sharing:after {
   left: 4px;
   top: 5px;
   width: 54px;
   height: 44px;
-  background: transparent url("../images/live-icon-05.png") no-repeat center top/54px 44px;
+  background-color: transperent;
+  background-image: url(../images/live-icon-05.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position-y: top;
+  background-position-x: center;
+  background-size: 54px 44px;
 }
 body > .container .inner-container .section.pg-liveauctionart .sub-container .specs .spec.icon-news:after {
   left: 4px;
   top: 5px;
   width: 49px;
   height: 38px;
-  background: transparent url("../images/live-icon-06.png") no-repeat center top/49px 38px;
+  background-color: transperent;
+  background-image: url(../images/live-icon-06.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position-y: top;
+  background-position-x: center;
+  background-size: 49px 38px;
 }
 body > .container .inner-container .section.pg-liveauctionart .sub-container .specs .spec .title {
   margin: 4px 0 3px 0;
@@ -854,7 +1051,7 @@ body > .container .inner-container .section.pg-inartpress .sub-container {
   padding: 25px 0 0 0;
 }
 body > .container .inner-container .section.pg-inartpress .sub-container .apps {
-  margin: 0 0 60px 0;
+  margin: -4px 0 60px 0;
 }
 body > .container .inner-container .section.pg-inartpress .sub-container .apps .link-primary {
   display: inline-block;
@@ -886,28 +1083,52 @@ body > .container .inner-container .section.pg-inartpress .sub-container .specs 
   top: 6px;
   width: 46px;
   height: 46px;
-  background: transparent url("../images/icon_big_rank.png") no-repeat left top/46px 46px;
+  background-color: transperent;
+  background-image: url(../images/icon_big_rank.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position-y: top;
+  background-position-x: left;
+  background-size: 46px 46px;
 }
 body > .container .inner-container .section.pg-inartpress .sub-container .specs .spec.icon-map:after {
   left: 4px;
   top: 5px;
   width: 46px;
   height: 46px;
-  background: transparent url("../images/icon_big_map.png") no-repeat center top/46px 44px;
+  background-color: transperent;
+  background-image: url(../images/icon_big_map.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position-y: top;
+  background-position-x: center;
+  background-size: 46px 44px;
 }
 body > .container .inner-container .section.pg-inartpress .sub-container .specs .spec.icon-search:after {
   left: 0;
   top: 12px;
   width: 52px;
   height: 46px;
-  background: transparent url("../images/icon_big_search.png") no-repeat center top/52px 39px;
+  background-color: transperent;
+  background-image: url(../images/icon_big_search.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position-y: top;
+  background-position-x: center;
+  background-size: 52px 39px;
 }
 body > .container .inner-container .section.pg-inartpress .sub-container .specs .spec.icon-info:after {
   left: 1px;
   top: 9px;
   width: 46px;
   height: 46px;
-  background: transparent url("../images/icon_big_info.png") no-repeat center top/40px 40px;
+  background-color: transperent;
+  background-image: url(../images/icon_big_info.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position-y: top;
+  background-position-x: center;
+  background-size: 40px 40px;
 }
 body > .container .inner-container .section.pg-inartpress .sub-container .specs .spec .title {
   margin: 4px 0 10px 0;
@@ -958,6 +1179,8 @@ body > .container .inner-container .section.pg-contact .sub-container .form-grou
   margin: 0 0 30px 0;
 }
 body > .container .inner-container .section.pg-contact .sub-container .label {
+  vertical-align: top;
+  display: inline-block;
   padding: 12px 0 0 0;
   width: 170px;
   font-size: 13px;
@@ -976,20 +1199,20 @@ body > .container .inner-container .section.pg-contact .sub-container .input-def
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 0;
-  color: #444444;
+  color: #888888;
   line-height: 100%;
 }
 body > .container .inner-container .section.pg-contact .sub-container .input-default.placeholder {
-  color: #888888;
+  color: #fff;
 }
 body > .container .inner-container .section.pg-contact .sub-container .input-default:-moz-placeholder {
-  color: #888888;
+  color: #fff;
 }
 body > .container .inner-container .section.pg-contact .sub-container .input-default:-webkit-input-placeholder {
-  color: #888888;
+  color: #fff;
 }
 body > .container .inner-container .section.pg-contact .sub-container .input-default:-ms-input-placeholder {
-  color: #888888;
+  color: #fff;
 }
 body > .container .inner-container .section.pg-contact .sub-container .input-default.textarea {
   height: 110px !important;
@@ -1035,6 +1258,13 @@ body > .container .inner-container .footer .text {
   letter-spacing: 0;
   color: #888888;
   line-height: 16px;
+}
+body > .container .inner-container .footer .text a {
+  text-decoration: none;
+  color: #888888;
+}
+body > .container .inner-container .footer .text a:hover {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=main.css.map */

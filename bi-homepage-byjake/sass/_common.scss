@@ -3,10 +3,11 @@
 @import "mixin";
 
 //reest--------------------------------------------------------------------------------------
-html, body, div, ul, ol, li, table, tr, td, h1, h2, h3, h4, p, span, form, input, button, select, a {
+html, body, div, ul, ol, li, table, tr, td, h1, h2, h3, h4, p, span, form, input, button, select, a, textarea {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: $font-default;
 }
 
 li {
@@ -31,7 +32,6 @@ input, button, select {
 //buttons--------------------------------------------------------------------------------------
 
 .link-main {
-  font-family: $font-default;
   font-size: 14px;
   font-weight: 600;
   letter-spacing: -0.5px;
@@ -42,7 +42,6 @@ input, button, select {
 .link-primary {
   padding: 10px 10px 10px 77px;
   margin: 0 0 0 0;
-  font-family: $font-default;
   font-size: 15px;
   font-weight: 600;
   letter-spacing: 0;

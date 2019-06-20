@@ -46,7 +46,7 @@ https://spencer4701.com/en/#products
         <a href="main.html" class="logo"></a>
         <div class="menus">
             <a href="aboutus.html" class="menu">about us</a>
-            <a href="services.html" target="_blank" class="menu">services</a>
+            <a href="services.html" class="menu">services</a>
             <a href="contact.html" class="menu">contact</a>
         </div>
     </header>
@@ -95,20 +95,21 @@ https://spencer4701.com/en/#products
                 BLUE INDEX<br>MONOPOLY
             </div>
             <div class="mover">
-                <a href="aboutus.html#anchor-monopoly" class="btn-up"><span class="up"></span></a>
+                <a href="services.html#anchor-blueindex" class="btn-up"><span class="up"></span></a>
                 <a href="services.html#anchor-laa" class="btn-down"><span class="down"></span></a>
             </div>
             <div class="sub-container">
+                <div class="apps">
+                    <a href="http://monopoly.blueindex.com" target="_blank" class="link-primary"><span class="icon-blank"></span> Go to MONOPOLY</a>
+                </div>
                 <div class="major-description">
                     Blue Index Monopoly act as the core of all services providing information ecosystem for data contribution by industry participants using a blockchain technology.
                 </div>
                 <div class="submenu">
+<!--                    클래스에 active를 붙이면 선택된 항목을 표시됩니다.-->
                     <div class="pg-contributor active">
                         <a href="#" class="title">Contributor</a>
                         <div class="contents">
-                            <div class="btn-container">
-                                <a href="http://monopoly.blueindex.com" target="_blank" class="link-primary">Go to MONOPOLY</a>
-                            </div>
                             <figure class="figure">
 <!--                                <img class="img" src="../images/figure_contributor.png" title="contributor">-->
                                 <figcaption class="caption">
@@ -118,12 +119,10 @@ https://spencer4701.com/en/#products
                             </figure>
                         </div>
                     </div>
+<!--                    클래스에 active를 붙이면 선택된 항목을 표시됩니다.-->
                     <div class="pg-validator">
                         <a href="#" class="title">validator</a>
                         <div class="contents">
-                            <div class="btn-container">
-                                <a href="http://monopoly.blueindex.com" target="_blank" class="link-primary">Go to MONOPOLY</a>
-                            </div>
                             <figure class="figure">
 <!--                                <img class="img" src="../images/figure_validator.png" title="validator">-->
                                 <figcaption class="caption">
@@ -132,12 +131,10 @@ https://spencer4701.com/en/#products
                             </figure>
                         </div>
                     </div>
+                    <!--                    클래스에 active를 붙이면 선택된 항목을 표시됩니다.-->
                     <div class="pg-datasharing">
                         <a href="#" class="title">Data Sharing</a>
                         <div class="contents">
-                            <div class="btn-container">
-                                <a href="http://monopoly.blueindex.com" target="_blank" class="link-primary">Go to MONOPOLY</a>
-                            </div>
                             <figure class="figure">
 <!--                                <img class="img" src="../images/figure_datasharing.png" title="data sharing">-->
                                 <figcaption class="caption">
@@ -161,8 +158,8 @@ https://spencer4701.com/en/#products
             </div>
             <div class="sub-container">
                 <div class="apps">
-                    <a href="https://appsto.re/us/N028-.i" class="link-primary"><span class="icon icon-apple"></span> AppStore</a>
-                    <a href="https://play.google.com/store/apps/details?id=com.gnsart.live.auction.app" class="link-primary"><span class="icon icon-android"></span> PlayStore</a>
+                    <a href="https://appsto.re/us/N028-.i" class="link-primary"><span class="icon-apple"></span> AppStore</a>
+                    <a href="https://play.google.com/store/apps/details?id=com.gnsart.live.auction.app" class="link-primary"><span class="icon-android"></span> PlayStore</a>
                 </div>
                 <div class="major-description">
                     Live Auction Art provides immediate updates and results from six global auction houses in one convenient free auction app on any PDA. Users
@@ -235,8 +232,8 @@ https://spencer4701.com/en/#products
             </div>
             <div class="sub-container">
                 <div class="apps">
-                    <a href="https://inartpress.com/" class="link-primary">Exhibits around you</a>
-                    <a href="https://play.google.com/store/apps/details?id=com.wiveel.inartpress" class="link-primary"><span class="icon icon-android"></span> PlayStore</a>
+                    <a href="https://inartpress.com/" class="link-primary"><span class="icon-blank"></span> Exhibits around you</a>
+                    <a href="https://play.google.com/store/apps/details?id=com.wiveel.inartpress" class="link-primary"><span class="icon-android"></span> PlayStore</a>
                 </div>
                 <div class="major-description">
                     In Art Press will show you the galleries and museum exhibits around you. <br>
@@ -280,7 +277,7 @@ https://spencer4701.com/en/#products
             <div class="contact">
                 <p class="title">GET IN TOUCH</p>
                 <p class="text">
-                    E. <a href="mailto:help@blueindex.com">help@blueindex.com</a>
+                    E. <a href="mailto:hello@blueindex.com" class="link-footer">hello@blueindex.com</a>
                 </p>
             </div>
             <div class="office">
@@ -295,5 +292,14 @@ https://spencer4701.com/en/#products
     </div>
 </div>
 <!--<div class="bg bg-inartpress"></div>-->
+<script>
+    function turnOnContribute() {
+        var el_contribute = document.getElementsByClassName(pg-contribute);
+        var el_validate = document.getElementsByClassName(pg-validate);
+        var el_datasharing = document.getElementsByClassName(pg-datasharing);
+        el_contribute.classList.remove("active");
+        element.classList.add("active");
+    }
+</script>
 </body>
 </html>
