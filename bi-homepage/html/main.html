@@ -25,18 +25,27 @@
     <link rel="icon" href="../images/favicon.ico">
     <link rel="stylesheet" media="screen and (min-width: 1280px)" href="../css/main.css">
     <link rel="stylesheet" media="screen and (max-width: 1279.9px)" href="../css/main_xs.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="../js/script.js"></script>
 </head>
 <body>
 <div class="container">
     <header class="top-navigation">
         <a href="main.html" class="logo"></a>
-<!--        active  붙이면 메뉴 열리고, 그 뒤에 hide 붙이면 메뉴 닫힙니다. 둘다 안붙이면 감춰져있어요-->
+        <!--        active  붙이면 메뉴 열리고, 그 뒤에 hide 붙이면 메뉴 닫힙니다. 둘다 안붙이면 감춰져있어요-->
         <div class="menus">
             <a href="aboutus.html" class="menu">about us</a>
+            <a href="aboutus.html#anchor-aboutus" class="menu-sub" onclick="a()">about us</a>
+            <a href="aboutus.html#anchor-partner" class="menu-sub" onclick="a()">partners</a>
             <a href="services.html" class="menu">services</a>
+            <a href="services.html#anchor-blueindex" class="menu-sub">blue index</a>
+            <a href="services.html#anchor-monopoly" class="menu-sub" onclick="a()">monopoly</a>
+            <a href="services.html#anchor-laa" class="menu-sub" onclick="a()">live auction art</a>
+            <a href="services.html#anchor-iap" class="menu-sub" onclick="a()">in art press</a>
             <a href="contact.html" class="menu">contact</a>
+            <a href="javascript:a()" class="btn-close">X</a>
         </div>
-        <div class="hamburger-menu">
+        <div class="hamburger-menu" onclick="b()">
             <span class="icon-hamburger"></span>
         </div>
     </header>

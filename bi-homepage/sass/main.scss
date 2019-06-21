@@ -130,7 +130,7 @@ html {
   padding: 0 0 0 0 !important;
   margin: 0 0 0 0 !important;
   //background: $bg-default url('../images/bg_h_line.png') repeat top center;
-  //overflow: hidden;
+  overflow-x: hidden;
 }
 body {
   height: 100%;
@@ -279,6 +279,12 @@ body>.container {
         color: $link-default;
         text-transform: uppercase;
         line-height: 16px;
+      }
+      .menu-sub {
+        display: none;
+      }
+      .btn-close {
+        display: none;
       }
     }
     .hamburger-menu {
@@ -436,68 +442,62 @@ body>.container {
       }
       &.pg-partner {
         .sub-container {
-          //padding: 334px 0 0 0;
-          //width: 100%;
-          //overflow: auto;
-          //left: 90px;
-          .scrollable {
-            display: flex;
-            width: 100%;
-            position: relative;
-            margin-top: 80px;
-            &:after {
-              content: '';
-              display: inline-block;
-              position: absolute;
-              left: 0;
-              top: 11px;
-              width: 62px;
-              height: 4px;
-              background-color: $bg-highlight;
+          display: flex;
+          width: 100%;
+          position: relative;
+          margin-top: 80px;
+          &:after {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            left: 0;
+            top: 11px;
+            width: 62px;
+            height: 4px;
+            background-color: $bg-highlight;
+          }
+          .partner {
+            position: absolute;
+            &:first-child {
+              left: 4px;
+              top: 60px;
             }
-            .partner {
-              position: absolute;
-              &:first-child {
-                left: 4px;
-                top: 60px;
-              }
-              &:nth-child(2) {
-                left: 358px;
-                top: 60px;
-              }
-              &:last-child {
-                left: 4px;
-                top: 350px;
-              }
-              width: 317px;
-              height: 400px;
-              cursor: pointer;
-              display: inline-block;
-              padding: 0 0 0 0;
-              margin: 0 87px 0 0;
-              .title {
-                margin: 0 0 18px 0;
-                font-size: 18px;
-                font-weight: 500;
-                letter-spacing: 0;
-                color: $text-darkgray;
-                line-height: 26px;
-                text-transform: uppercase;
-              }
-              .description {
-                margin: 0 0 17px 0;
-                font-size: 14px;
-                font-weight: 400;
-                letter-spacing: -0.3px;
-                color: $text-lightgray;
-                line-height: 22px;
-              }
-              .logo {
-                margin: 0 0 0 0;
-              }
-              &:hover {
-                text-decoration: none;
-              }
+            &:nth-child(2) {
+              left: 358px;
+              top: 60px;
+            }
+            &:last-child {
+              left: 4px;
+              top: 350px;
+            }
+            width: 317px;
+            height: 400px;
+            cursor: pointer;
+            display: inline-block;
+            padding: 0 0 0 0;
+            margin: 0 87px 0 0;
+            .title {
+              margin: 0 0 18px 0;
+              font-size: 18px;
+              font-weight: 500;
+              letter-spacing: 0;
+              color: $text-darkgray;
+              line-height: 26px;
+              text-transform: uppercase;
+            }
+            .description {
+              margin: 0 0 17px 0;
+              font-size: 14px;
+              font-weight: 400;
+              letter-spacing: -0.3px;
+              color: $text-lightgray;
+              line-height: 22px;
+            }
+            .logo {
+              margin: 0 0 0 0;
+            }
+            &:hover {
+              text-decoration: none;
             }
           }
         }

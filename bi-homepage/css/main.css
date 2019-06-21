@@ -304,6 +304,7 @@ html {
   height: 100%;
   padding: 0 0 0 0 !important;
   margin: 0 0 0 0 !important;
+  overflow-x: hidden;
 }
 
 body {
@@ -464,6 +465,12 @@ body > .container .top-navigation .menus .menu {
   color: #161514;
   text-transform: uppercase;
   line-height: 16px;
+}
+body > .container .top-navigation .menus .menu-sub {
+  display: none;
+}
+body > .container .top-navigation .menus .btn-close {
+  display: none;
 }
 body > .container .top-navigation .hamburger-menu {
   position: fixed;
@@ -664,13 +671,13 @@ body > .container .inner-container .section.pg-main .sub-container .paragraph.ac
 body > .container .inner-container .section.pg-aboutus .sub-container {
   padding: 142px 10px 0 0;
 }
-body > .container .inner-container .section.pg-partner .sub-container .scrollable {
+body > .container .inner-container .section.pg-partner .sub-container {
   display: flex;
   width: 100%;
   position: relative;
   margin-top: 80px;
 }
-body > .container .inner-container .section.pg-partner .sub-container .scrollable:after {
+body > .container .inner-container .section.pg-partner .sub-container:after {
   content: '';
   display: inline-block;
   position: absolute;
@@ -680,7 +687,7 @@ body > .container .inner-container .section.pg-partner .sub-container .scrollabl
   height: 4px;
   background-color: #eed28e;
 }
-body > .container .inner-container .section.pg-partner .sub-container .scrollable .partner {
+body > .container .inner-container .section.pg-partner .sub-container .partner {
   position: absolute;
   width: 317px;
   height: 400px;
@@ -689,19 +696,19 @@ body > .container .inner-container .section.pg-partner .sub-container .scrollabl
   padding: 0 0 0 0;
   margin: 0 87px 0 0;
 }
-body > .container .inner-container .section.pg-partner .sub-container .scrollable .partner:first-child {
+body > .container .inner-container .section.pg-partner .sub-container .partner:first-child {
   left: 4px;
   top: 60px;
 }
-body > .container .inner-container .section.pg-partner .sub-container .scrollable .partner:nth-child(2) {
+body > .container .inner-container .section.pg-partner .sub-container .partner:nth-child(2) {
   left: 358px;
   top: 60px;
 }
-body > .container .inner-container .section.pg-partner .sub-container .scrollable .partner:last-child {
+body > .container .inner-container .section.pg-partner .sub-container .partner:last-child {
   left: 4px;
   top: 350px;
 }
-body > .container .inner-container .section.pg-partner .sub-container .scrollable .partner .title {
+body > .container .inner-container .section.pg-partner .sub-container .partner .title {
   margin: 0 0 18px 0;
   font-size: 18px;
   font-weight: 500;
@@ -710,7 +717,7 @@ body > .container .inner-container .section.pg-partner .sub-container .scrollabl
   line-height: 26px;
   text-transform: uppercase;
 }
-body > .container .inner-container .section.pg-partner .sub-container .scrollable .partner .description {
+body > .container .inner-container .section.pg-partner .sub-container .partner .description {
   margin: 0 0 17px 0;
   font-size: 14px;
   font-weight: 400;
@@ -718,10 +725,10 @@ body > .container .inner-container .section.pg-partner .sub-container .scrollabl
   color: #888888;
   line-height: 22px;
 }
-body > .container .inner-container .section.pg-partner .sub-container .scrollable .partner .logo {
+body > .container .inner-container .section.pg-partner .sub-container .partner .logo {
   margin: 0 0 0 0;
 }
-body > .container .inner-container .section.pg-partner .sub-container .scrollable .partner:hover {
+body > .container .inner-container .section.pg-partner .sub-container .partner:hover {
   text-decoration: none;
 }
 body > .container .inner-container .section.pg-blueindex .sub-container {
