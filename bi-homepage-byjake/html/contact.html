@@ -17,7 +17,7 @@ https://spencer4701.com/en/#products
 <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Search Art Auction Database Contributed by, Participants in the Blue Index Monopoly as a Core of Our Services.">
     <meta name="keywords" content="Fine Art, Auction, Artist, Blue Index,, Art, Wiveel, Monopoly, In Art Press, Live Auction Art">
     <meta name="author" content="Blue Index">
@@ -37,38 +37,58 @@ https://spencer4701.com/en/#products
     <title>BLUE INDEX</title>
     <link rel="image_src" href="http://www.blueindex.com/images/summary.png">
     <link rel="icon" href="../images/favicon.ico">
-    <link rel="stylesheet" media="screen and (min-width: 1280px)" href="../css/main.css">
-    <link rel="stylesheet" media="screen and (max-width: 1279.9px)" href="../css/main_xs.css">
+    <link rel="stylesheet" media="screen and (min-width: 1020px)" href="../css/main.css">
+    <link rel="stylesheet" media="screen and (max-width: 1019.9px)" href="../css/main_xs.css">
 </head>
 <body>
 <div class="container">
     <header class="top-navigation">
         <a href="main.html" class="logo"></a>
-<!--        active  붙이면 메뉴 열리고, 그 뒤에 hide 붙이면 메뉴 닫힙니다. 둘다 안붙이면 감춰져있어요-->
         <div class="menus">
             <a href="aboutus.html" class="menu">about us</a>
-            <a href="services.html" class="menu">services</a>
+            <a href="services.html" target="_blank" class="menu">services</a>
             <a href="contact.html" class="menu">contact</a>
-        </div>
-        <div class="hamburger-menu">
-            <span class="icon-hamburger"></span>
         </div>
     </header>
     <div class="inner-container">
-        <div class="section pg-main">
-            <div class="main-container">
-                BRING<br>
-                TRANSPARENCY AND EFFICIENCY<br>
-                TO ART MARKET
+        <div class="section pg-contact">
+            <div class="main-container section-title">
+                CONTACT
             </div>
             <div class="mover">
-                <a href="javascript://" class="btn-up disable"><span class="up"></span></a>
-                <a href="aboutus.html#anchor-aboutus" class="btn-down"><span class="down"></span></a>
+                <a href="services.html#anchor-iap" class="btn-up"><span class="up"></span></a>
+                <a href="javascript://" class="btn-down disable"><span class="down"></span></a>
             </div>
             <div class="sub-container">
-                <div class="major-description">
-                    Blue Index aims to lead the development of the art industry and culture by providing software tools, such as analytic platform, data services, and news to category related dealers, auctioneers, collectors, and financial companies to analyze and to monitor the market and its trends.
-                </div>
+                <form class="form-contact">
+                    <div class="form-group">
+                        <p class="label">SUBJECT</p>
+                        <select class="input-default">
+                            <option value="General">General</option>
+                            <option value="blueindex">Blue Index</option>
+                            <option value="monopoly">Monopoly</option>
+                            <option value="laa">Live Auction Art</option>
+                            <option value="In Art Press">In Art Press</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <p class="label">NAME</p>
+                        <input type="text" class="input-default" placeholder="What is your name?" />
+                    </div>
+                    <div class="form-group">
+                        <p class="label">E-MAIL</p>
+                        <input type="email"  class="input-default" placeholder="Please fill in your email address" />
+                    </div>
+                    <div class="form-group">
+                        <p class="label">COMMENT</p>
+                        <textarea cols="30" rows="10" class="input-default textarea" placeholder="What do you want to say?"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <div class="btn-container">
+                            <a href="javascript:window.alert('Mail has sent.')" target="_blank" class="link-primary">SEND</a>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
         <footer class="footer">
@@ -90,6 +110,6 @@ https://spencer4701.com/en/#products
         </footer>
     </div>
 </div>
-<!--<div class="bg bg-main"></div>-->
+<!--<div class="bg bg-contact"></div>-->
 </body>
 </html>
