@@ -1275,12 +1275,13 @@ body > .container .inner-container .section.pg-contact .sub-container .input-def
 body > .container .inner-container .section.pg-contact .sub-container .btn-container {
   margin: 0 0 0 169px;
 }
-body > .container .inner-container .footer {
-  width: 100%;
+body > .container .footer {
+  width: 1200px;
+  margin: 0 auto;
   height: 74px;
   padding: 22px 0 0 0;
 }
-body > .container .inner-container .footer .copyright {
+body > .container .footer .copyright {
   float: left;
   margin-top: 2px;
   font-size: 12px;
@@ -1289,11 +1290,11 @@ body > .container .inner-container .footer .copyright {
   color: #000;
   line-height: 100%;
 }
-body > .container .inner-container .footer .office, body > .container .inner-container .footer .contact {
+body > .container .footer .office, body > .container .footer .contact {
   float: right;
   width: 343px;
 }
-body > .container .inner-container .footer .title {
+body > .container .footer .title {
   float: left;
   width: 50px;
   display: inline-block;
@@ -1304,7 +1305,7 @@ body > .container .inner-container .footer .title {
   line-height: 15px;
   text-transform: uppercase;
 }
-body > .container .inner-container .footer .text {
+body > .container .footer .text {
   float: right;
   width: 250px;
   display: inline-block;
@@ -1314,11 +1315,11 @@ body > .container .inner-container .footer .text {
   color: #888888;
   line-height: 16px;
 }
-body > .container .inner-container .footer .text a {
+body > .container .footer .text a {
   text-decoration: none;
   color: #888888;
 }
-body > .container .inner-container .footer .text a:hover {
+body > .container .footer .text a:hover {
   text-decoration: underline;
 }
 

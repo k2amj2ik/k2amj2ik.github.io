@@ -410,7 +410,7 @@ body > .container .top-navigation .menus .menu {
 }
 body > .container .top-navigation .hamburger-menu {
   float: right;
-  margin-right: 10px;
+  margin-right: 3px;
 }
 body > .container .top-navigation .hamburger-menu .icon-hamburger {
   cursor: pointer;
@@ -429,7 +429,7 @@ body > .container .inner-container {
   width: 100%;
   margin: 0 auto;
   min-height: 100%;
-  padding: 40px 20px 80px 20px;
+  padding: 40px 20px 40px 20px;
 }
 body > .container .inner-container .section {
   position: relative;
@@ -1160,50 +1160,26 @@ body > .container .inner-container .section.pg-contact .sub-container .input-def
 body > .container .inner-container .section.pg-contact .sub-container .btn-container {
   margin: 0 0 0 169px;
 }
-body > .container .inner-container .footer {
+body > .container .footer {
   width: 100%;
-  height: 74px;
-  padding: 22px 0 0 0;
-}
-body > .container .inner-container .footer .copyright {
-  float: left;
-  margin-top: 2px;
-  font-size: 12px;
-  font-weight: 400;
-  letter-spacing: 0;
-  color: #000;
-  line-height: 100%;
-}
-body > .container .inner-container .footer .office, body > .container .inner-container .footer .contact {
-  float: right;
-  width: 343px;
-}
-body > .container .inner-container .footer .title {
-  float: left;
-  width: 50px;
-  display: inline-block;
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 0;
-  color: #1c1d1e;
-  line-height: 15px;
-  text-transform: uppercase;
-}
-body > .container .inner-container .footer .text {
-  float: right;
-  width: 250px;
-  display: inline-block;
+  height: 60px;
+  padding: 20px 0 0 0;
+  text-align: center;
   font-size: 12px;
   font-weight: 400;
   letter-spacing: 0;
   color: #888888;
-  line-height: 16px;
+  line-height: 140%;
+  background-color: #f5f5f5;
 }
-body > .container .inner-container .footer .text a {
-  text-decoration: none;
+body > .container .footer .office {
+  display: none;
+}
+body > .container .footer .contact .title {
+  display: none;
+}
+body > .container .footer .contact .text a {
   color: #888888;
-}
-body > .container .inner-container .footer .text a:hover {
   text-decoration: underline;
 }
 
