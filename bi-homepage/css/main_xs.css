@@ -981,7 +981,7 @@ body > .container .footer {
   letter-spacing: 0;
   color: #888888;
   line-height: 140%;
-  background-color: #f5f5f5;
+  border-top: 1px solid #f5f5f5;
 }
 body > .container .footer .office {
   display: none;

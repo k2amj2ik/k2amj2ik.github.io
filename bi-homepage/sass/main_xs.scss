@@ -776,7 +776,7 @@ body>.container {
     letter-spacing: 0;
     color: $text-lightgray;
     line-height: 140%;
-    background-color: $bg-fairy;
+    border-top: 1px solid $bg-fairy;
     .office {
       display: none;
     }
