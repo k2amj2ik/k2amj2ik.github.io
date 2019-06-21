@@ -795,7 +795,7 @@ body > .container .inner-container .section.pg-monopoly .sub-container .major-de
 body > .container .inner-container .section.pg-monopoly .sub-container .submenu {
   position: absolute;
   left: -350px;
-  top: 166px;
+  top: 175px;
   font-size: 17px;
   font-weight: 600;
   letter-spacing: 0;
@@ -872,7 +872,7 @@ body > .container .inner-container .section.pg-monopoly .sub-container .submenu 
   right: 0;
   top: 14px;
   width: 30px;
-  height: 3px;
+  height: 2px;
   background-color: #1c1d1e;
 }
 body > .container .inner-container .section.pg-monopoly .sub-container .submenu .active.pg-contributor .contents, body > .container .inner-container .section.pg-monopoly .sub-container .submenu .active.pg-validator .contents, body > .container .inner-container .section.pg-monopoly .sub-container .submenu .active.pg-datasharing .contents {
