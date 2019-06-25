@@ -93,7 +93,7 @@
   display: inline-block;
   text-overflow:ellipsis;
   //word-wrap:break-word;
-  word-break: break-all;
+  /* word-break: break-all; */
   max-width:$width;
   max-height: $height;
   overflow:hidden;

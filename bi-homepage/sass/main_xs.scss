@@ -352,7 +352,7 @@ body>.container {
           letter-spacing: 0;
           color: $text-darkgray;
           line-height: 22px;
-          word-break: break-all;
+          /* word-break: break-all; */
           position: relative;
           &:after {
             content: '';
@@ -450,7 +450,7 @@ body>.container {
               letter-spacing: -0.3px;
               color: $text-lightgray;
               line-height: 20px;
-              word-break: break-all;
+              /* word-break: break-all; */
             }
             .logo {
               margin: 0 0 0 0;
@@ -537,7 +537,7 @@ body>.container {
                 letter-spacing: 0;
                 color: $text-lightgray;
                 line-height: 19px;
-                word-break: break-all;
+                /* word-break: break-all; */
               }
               .logo {
                 margin: 0 0 0 0;
@@ -604,7 +604,7 @@ body>.container {
                   letter-spacing: 0;
                   color: #888888;
                   line-height: 19px;
-                  word-break: break-all;
+                  /* word-break: break-all; */
                 }
               }
             }
@@ -715,7 +715,7 @@ body>.container {
                 letter-spacing: 0;
                 color: $text-lightgray;
                 line-height: 19px;
-                word-break: break-all;
+                /* word-break: break-all; */
               }
               .logo {
                 margin: 0 0 0 0;
