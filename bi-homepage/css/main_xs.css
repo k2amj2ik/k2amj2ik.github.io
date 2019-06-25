@@ -168,6 +168,19 @@ select {
   background-size: 13px 15px;
 }
 
+.icon-iap {
+  display: inline-block;
+  width: 14px;
+  height: 20px;
+  background-color: transparent;
+  background-image: url(../images/icon_iap@2x.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position-y: top;
+  background-position-x: center;
+  background-size: 14px 20px;
+}
+
 .icon-blank {
   display: inline-block;
   width: 2px;
@@ -809,7 +822,7 @@ body > .container .inner-container .section.pg-liveauctionart .sub-container .ap
 }
 body > .container .inner-container .section.pg-liveauctionart .sub-container .apps .link-primary, body > .container .inner-container .section.pg-inartpress .sub-container .apps .link-primary {
   display: inline-block;
-  margin: 5px 50px 0 4px;
+  margin: 5px 40px 0 4px;
 }
 body > .container .inner-container .section.pg-liveauctionart .sub-container .major-description:after, body > .container .inner-container .section.pg-inartpress .sub-container .major-description:after {
   display: none;

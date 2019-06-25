@@ -80,13 +80,19 @@ select {
   display: inline-block;
   width: 14px;
   height: 16px;
-  @include bg-image(transparent,'../images/store-01@2x.png',no-repeat,scroll,top,center,14px,17px)
+  @include bg-image(transparent,'../images/store-01@2x.png',no-repeat,scroll,top,center,14px,17px);
 }
 .icon-android {
   display: inline-block;
   width: 13px;
   height: 16px;
-  @include bg-image(transparent,'../images/store-02@2x.png',no-repeat,scroll,top,center,13px,15px)
+  @include bg-image(transparent,'../images/store-02@2x.png',no-repeat,scroll,top,center,13px,15px);
+}
+.icon-iap {
+  display: inline-block;
+  width: 14px;
+  height: 20px;
+  @include bg-image(transparent,'../images/icon_iap@2x.png',no-repeat,scroll,top,center,14px,20px);
 }
 .icon-blank {
   display: inline-block;
@@ -628,7 +634,7 @@ body>.container {
             margin: 0 0 30px 0;
             .link-primary {
               display: inline-block;
-              margin: 5px 50px 0 4px;
+              margin: 5px 40px 0 4px;
             }
           }
           .major-description {
