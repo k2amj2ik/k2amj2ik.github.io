@@ -611,13 +611,15 @@ body>.container {
           }
         }
       }
-      &.pg-liveauctionart,
-      &.pg-inartpress {
+      &.pg-liveauctionart {
         .section-title {
           &:after {
             height: 80px;
           }
         }
+      }
+      &.pg-liveauctionart,
+      &.pg-inartpress {
         .sub-container {
           padding-top: 0;
           .apps {

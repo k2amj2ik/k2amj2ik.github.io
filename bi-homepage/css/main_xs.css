@@ -793,7 +793,7 @@ body > .container .inner-container .section.pg-monopoly .sub-container .submenu 
   line-height: 19px;
   word-break: break-all;
 }
-body > .container .inner-container .section.pg-liveauctionart .section-title:after, body > .container .inner-container .section.pg-inartpress .section-title:after {
+body > .container .inner-container .section.pg-liveauctionart .section-title:after {
   height: 80px;
 }
 body > .container .inner-container .section.pg-liveauctionart .sub-container, body > .container .inner-container .section.pg-inartpress .sub-container {
