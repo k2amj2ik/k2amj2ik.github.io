@@ -533,7 +533,7 @@ body > .container .inner-container .section > .sub-container .major-description 
   letter-spacing: 0;
   color: #444444;
   line-height: 22px;
-  word-break: break-all;
+  /* word-break: break-all; */
   position: relative;
 }
 body > .container .inner-container .section > .sub-container .major-description:after {
@@ -625,7 +625,7 @@ body > .container .inner-container .section.pg-partner .sub-container .partner .
   letter-spacing: -0.3px;
   color: #888888;
   line-height: 20px;
-  word-break: break-all;
+  /* word-break: break-all; */
 }
 body > .container .inner-container .section.pg-partner .sub-container .partner .logo {
   margin: 0 0 0 0;
@@ -726,7 +726,7 @@ body > .container .inner-container .section.pg-blueindex .sub-container .specs .
   letter-spacing: 0;
   color: #888888;
   line-height: 19px;
-  word-break: break-all;
+  /* word-break: break-all; */
 }
 body > .container .inner-container .section.pg-blueindex .sub-container .specs .spec .logo {
   margin: 0 0 0 0;
@@ -756,6 +756,7 @@ body > .container .inner-container .section.pg-monopoly .sub-container .apps .li
 body > .container .inner-container .section.pg-monopoly .sub-container .major-description:after {
   display: none;
 }
+body > .container .inner-container .section.pg-monopoly .sub-container .submenu .pg-mp-summery,
 body > .container .inner-container .section.pg-monopoly .sub-container .submenu .pg-contributor,
 body > .container .inner-container .section.pg-monopoly .sub-container .submenu .pg-validator,
 body > .container .inner-container .section.pg-monopoly .sub-container .submenu .pg-datasharing {
@@ -764,6 +765,7 @@ body > .container .inner-container .section.pg-monopoly .sub-container .submenu 
   vertical-align: top;
   padding: 0 20px 0 0;
 }
+body > .container .inner-container .section.pg-monopoly .sub-container .submenu .pg-mp-summery .title,
 body > .container .inner-container .section.pg-monopoly .sub-container .submenu .pg-contributor .title,
 body > .container .inner-container .section.pg-monopoly .sub-container .submenu .pg-validator .title,
 body > .container .inner-container .section.pg-monopoly .sub-container .submenu .pg-datasharing .title {
@@ -776,12 +778,14 @@ body > .container .inner-container .section.pg-monopoly .sub-container .submenu 
   line-height: 24px;
   text-transform: uppercase;
 }
+body > .container .inner-container .section.pg-monopoly .sub-container .submenu .pg-mp-summery .figure,
 body > .container .inner-container .section.pg-monopoly .sub-container .submenu .pg-contributor .figure,
 body > .container .inner-container .section.pg-monopoly .sub-container .submenu .pg-validator .figure,
 body > .container .inner-container .section.pg-monopoly .sub-container .submenu .pg-datasharing .figure {
   padding: 0 0 0 0;
   margin: 0 0 0 0;
 }
+body > .container .inner-container .section.pg-monopoly .sub-container .submenu .pg-mp-summery .figure .caption,
 body > .container .inner-container .section.pg-monopoly .sub-container .submenu .pg-contributor .figure .caption,
 body > .container .inner-container .section.pg-monopoly .sub-container .submenu .pg-validator .figure .caption,
 body > .container .inner-container .section.pg-monopoly .sub-container .submenu .pg-datasharing .figure .caption {
@@ -791,7 +795,7 @@ body > .container .inner-container .section.pg-monopoly .sub-container .submenu 
   letter-spacing: 0;
   color: #888888;
   line-height: 19px;
-  word-break: break-all;
+  /* word-break: break-all; */
 }
 body > .container .inner-container .section.pg-liveauctionart .section-title:after {
   height: 80px;
@@ -918,7 +922,7 @@ body > .container .inner-container .section.pg-liveauctionart .sub-container .sp
   letter-spacing: 0;
   color: #888888;
   line-height: 19px;
-  word-break: break-all;
+  /* word-break: break-all; */
 }
 body > .container .inner-container .section.pg-liveauctionart .sub-container .specs .spec .logo, body > .container .inner-container .section.pg-inartpress .sub-container .specs .spec .logo {
   margin: 0 0 0 0;
