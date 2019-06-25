@@ -76,18 +76,6 @@ html, body, div, ul, ol, li, table, tr, td, h1, h2, h3, h4, p, span, form, input
   box-sizing: border-box;
   font-family: "Helvetica";
 }
-html.placeholder, body.placeholder, div.placeholder, ul.placeholder, ol.placeholder, li.placeholder, table.placeholder, tr.placeholder, td.placeholder, h1.placeholder, h2.placeholder, h3.placeholder, h4.placeholder, p.placeholder, span.placeholder, form.placeholder, input.placeholder, button.placeholder, select.placeholder, a.placeholder, textarea.placeholder {
-  color: #888888;
-}
-html:-moz-placeholder, body:-moz-placeholder, div:-moz-placeholder, ul:-moz-placeholder, ol:-moz-placeholder, li:-moz-placeholder, table:-moz-placeholder, tr:-moz-placeholder, td:-moz-placeholder, h1:-moz-placeholder, h2:-moz-placeholder, h3:-moz-placeholder, h4:-moz-placeholder, p:-moz-placeholder, span:-moz-placeholder, form:-moz-placeholder, input:-moz-placeholder, button:-moz-placeholder, select:-moz-placeholder, a:-moz-placeholder, textarea:-moz-placeholder {
-  color: #888888;
-}
-html:-webkit-input-placeholder, body:-webkit-input-placeholder, div:-webkit-input-placeholder, ul:-webkit-input-placeholder, ol:-webkit-input-placeholder, li:-webkit-input-placeholder, table:-webkit-input-placeholder, tr:-webkit-input-placeholder, td:-webkit-input-placeholder, h1:-webkit-input-placeholder, h2:-webkit-input-placeholder, h3:-webkit-input-placeholder, h4:-webkit-input-placeholder, p:-webkit-input-placeholder, span:-webkit-input-placeholder, form:-webkit-input-placeholder, input:-webkit-input-placeholder, button:-webkit-input-placeholder, select:-webkit-input-placeholder, a:-webkit-input-placeholder, textarea:-webkit-input-placeholder {
-  color: #888888;
-}
-html:-ms-input-placeholder, body:-ms-input-placeholder, div:-ms-input-placeholder, ul:-ms-input-placeholder, ol:-ms-input-placeholder, li:-ms-input-placeholder, table:-ms-input-placeholder, tr:-ms-input-placeholder, td:-ms-input-placeholder, h1:-ms-input-placeholder, h2:-ms-input-placeholder, h3:-ms-input-placeholder, h4:-ms-input-placeholder, p:-ms-input-placeholder, span:-ms-input-placeholder, form:-ms-input-placeholder, input:-ms-input-placeholder, button:-ms-input-placeholder, select:-ms-input-placeholder, a:-ms-input-placeholder, textarea:-ms-input-placeholder {
-  color: #888888;
-}
 
 li {
   list-style: none;
@@ -102,7 +90,7 @@ a:hover {
   text-decoration: underline;
 }
 
-input:focus, button:focus, select:focus {
+input:focus, button:focus, select:focus, textarea:focus {
   outline: none;
 }
 
@@ -1298,20 +1286,20 @@ body > .container .inner-container .section.pg-contact .sub-container .input-def
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 0;
-  color: #888888;
+  color: #666666;
   line-height: 100%;
 }
-body > .container .inner-container .section.pg-contact .sub-container .input-default.placeholder {
-  color: #fff;
+body > .container .inner-container .section.pg-contact .sub-container .input-default::placeholder {
+  color: #888888 !important;
 }
 body > .container .inner-container .section.pg-contact .sub-container .input-default:-moz-placeholder {
-  color: #fff;
+  color: #888888 !important;
 }
-body > .container .inner-container .section.pg-contact .sub-container .input-default:-webkit-input-placeholder {
-  color: #fff;
+body > .container .inner-container .section.pg-contact .sub-container .input-default::-webkit-input-placeholder {
+  color: #888888 !important;
 }
 body > .container .inner-container .section.pg-contact .sub-container .input-default:-ms-input-placeholder {
-  color: #fff;
+  color: #888888 !important;
 }
 body > .container .inner-container .section.pg-contact .sub-container .input-default.textarea {
   height: 110px !important;

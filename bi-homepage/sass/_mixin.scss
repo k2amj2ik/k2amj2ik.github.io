@@ -74,17 +74,17 @@
 
 //placeholder
 @mixin placeholder-color($color) {
-  &.placeholder{color: $color}
-  &:-moz-placeholder{color: $color}
-  &:-webkit-input-placeholder{color: $color}
-  &:-ms-input-placeholder{color: $color}
+  &::placeholder{color: $color !important}
+  &:-moz-placeholder{color: $color !important}
+  &::-webkit-input-placeholder{color: $color !important}
+  &:-ms-input-placeholder{color: $color !important}
 }
 
 @mixin placeholder-font-style($font) {
-  &.placeholder{font-style: $font}
-  &:-moz-placeholder{font-style: $font}
-  &:-webkit-input-placeholder{font-style: $font}
-  &:-ms-input-placeholder{font-style: $font}
+  &::placeholder{font-style: $font !important}
+  &:-moz-placeholder{font-style: $font !important}
+  &::-webkit-input-placeholder{font-style: $font !important}
+  &:-ms-input-placeholder{font-style: $font !important}
 }
 
 

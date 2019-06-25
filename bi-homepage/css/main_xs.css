@@ -90,7 +90,7 @@ a:hover {
   text-decoration: underline;
 }
 
-input:focus, button:focus, select:focus {
+input:focus, button:focus, select:focus, textarea:focus {
   outline: none;
 }
 
@@ -968,20 +968,20 @@ body > .container .inner-container .section.pg-contact .sub-container .form-cont
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 0;
-  color: #888888;
+  color: #666666;
   line-height: 100%;
 }
-body > .container .inner-container .section.pg-contact .sub-container .form-contact .input-default.placeholder {
-  color: #fff;
+body > .container .inner-container .section.pg-contact .sub-container .form-contact .input-default::placeholder {
+  color: #888888 !important;
 }
 body > .container .inner-container .section.pg-contact .sub-container .form-contact .input-default:-moz-placeholder {
-  color: #fff;
+  color: #888888 !important;
 }
-body > .container .inner-container .section.pg-contact .sub-container .form-contact .input-default:-webkit-input-placeholder {
-  color: #fff;
+body > .container .inner-container .section.pg-contact .sub-container .form-contact .input-default::-webkit-input-placeholder {
+  color: #888888 !important;
 }
 body > .container .inner-container .section.pg-contact .sub-container .form-contact .input-default:-ms-input-placeholder {
-  color: #fff;
+  color: #888888 !important;
 }
 body > .container .inner-container .section.pg-contact .sub-container .form-contact .input-default.textarea {
   height: 110px !important;

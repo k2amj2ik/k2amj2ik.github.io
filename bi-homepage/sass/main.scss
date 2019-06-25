@@ -8,7 +8,6 @@ html, body, div, ul, ol, li, table, tr, td, h1, h2, h3, h4, p, span, form, input
   padding: 0;
   box-sizing: border-box;
   font-family: $font-default;
-  @include placeholder-color($text-lightgray);
 }
 
 li {
@@ -24,7 +23,7 @@ a {
   }
 }
 
-input, button, select {
+input, button, select, textarea {
   &:focus {
     outline: none;
   }
@@ -1015,17 +1014,13 @@ body>.container {
             height: 46px;
             padding: 10px 20px 10px 20px;
             background-color: $bg-fairy;
-            //border: 1px solid $border-default;
             border: 0;
-            //border: 1px solid $border-fairy;
-            //border-right: 1px solid $border-default;
-            //border-bottom: 1px solid $border-default;
             font-size: 16px;
             font-weight: 400;
             letter-spacing: 0;
-            color: $text-lightgray;
+            color: $text-gray;
             line-height: 100%;
-            @include placeholder-color(#fff);
+            @include placeholder-color($text-lightgray);
             &.textarea {
               height: 110px !important;;
             }
