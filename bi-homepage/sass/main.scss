@@ -195,12 +195,14 @@ body {
   }
 }
 
+#anchor-main,
 #anchor-aboutus,
 #anchor-partner,
 #anchor-blueindex,
 #anchor-monopoly,
 #anchor-laa,
-#anchor-iap {
+#anchor-iap,
+#anchor-contact {
   position: absolute;
   top: -205px;
   width: 100px;
@@ -269,22 +271,24 @@ body>.container {
         }
         // end animation---------------------------------------------------------------------
       }
-      .menu {
-        display: inline-block;
-        margin: 0 24px 0 0;
-        padding: 10px 10px 10px 10px;
-        font-size: 14px;
-        font-weight: 500;
-        letter-spacing: 0.5px;
-        color: $link-default;
-        text-transform: uppercase;
-        line-height: 16px;
-      }
-      .menu-sub {
-        display: none;
-      }
-      .btn-close {
-        display: none;
+      .menu-container {
+        .menu {
+          display: inline-block;
+          margin: 0 24px 0 0;
+          padding: 10px 10px 10px 10px;
+          font-size: 14px;
+          font-weight: 500;
+          letter-spacing: 0.5px;
+          color: $link-default;
+          text-transform: uppercase;
+          line-height: 16px;
+        }
+        .menu-sub {
+          display: none;
+        }
+        .btn-close {
+          display: none;
+        }
       }
     }
     .hamburger-menu {

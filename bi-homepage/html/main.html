@@ -34,16 +34,18 @@
         <a href="main.html" class="logo"></a>
         <!--        active  붙이면 메뉴 열리고, 그 뒤에 hide 붙이면 메뉴 닫힙니다. 둘다 안붙이면 감춰져있어요-->
         <div class="menus">
-            <a href="aboutus.html" class="menu">about us</a>
-            <a href="aboutus.html#anchor-aboutus" class="menu-sub" onclick="a()">about us</a>
-            <a href="aboutus.html#anchor-partner" class="menu-sub" onclick="a()">partners</a>
-            <a href="services.html" class="menu">services</a>
-            <a href="services.html#anchor-blueindex" class="menu-sub">blue index</a>
-            <a href="services.html#anchor-monopoly" class="menu-sub" onclick="a()">monopoly</a>
-            <a href="services.html#anchor-laa" class="menu-sub" onclick="a()">live auction art</a>
-            <a href="services.html#anchor-iap" class="menu-sub" onclick="a()">in art press</a>
-            <a href="contact.html" class="menu">contact</a>
-            <a href="javascript:a()" class="btn-close">X</a>
+            <div class="menu-container">
+                <a href="main.html#anchor-main" class="menu" onclick="a()">about us</a>
+                <a href="main.html#anchor-aboutus" class="menu-sub" onclick="a()">about us</a>
+                <a href="main.html#anchor-partner" class="menu-sub" onclick="a()">partners</a>
+                <a href="main.html#anchor-blueindex" class="menu" onclick="a()">services</a>
+                <a href="main.html#anchor-blueindex" class="menu-sub" onclick="a()">blue index</a>
+                <a href="main.html#anchor-monopoly" class="menu-sub" onclick="a()">monopoly</a>
+                <a href="main.html#anchor-laa" class="menu-sub" onclick="a()">live auction art</a>
+                <a href="main.html#anchor-iap" class="menu-sub" onclick="a()">in art press</a>
+                <a href="main.html#anchor-contact" class="menu" onclick="a()">contact</a>
+                <a href="javascript:a()" class="btn-close">X</a>
+            </div>
         </div>
         <div class="hamburger-menu" onclick="b()">
             <span class="icon-hamburger"></span>
@@ -51,6 +53,7 @@
     </header>
     <div class="inner-container">
         <div class="section pg-main">
+            <p id="anchor-main"></p>
             <div class="main-container">
                 BRING<br>
                 TRANSPARENCY AND EFFICIENCY<br>
@@ -58,12 +61,319 @@
             </div>
             <div class="mover">
                 <a href="javascript://" class="btn-up disable"><span class="up"></span></a>
-                <a href="aboutus.html#anchor-aboutus" class="btn-down"><span class="down"></span></a>
+                <a href="main.html#anchor-aboutus" class="btn-down"><span class="down"></span></a>
             </div>
             <div class="sub-container">
                 <div class="major-description">
                     Blue Index aims to lead the development of the art industry and culture by providing software tools, such as analytic platform, data services, and news to category related dealers, auctioneers, collectors, and financial companies to analyze and to monitor the market and its trends.
                 </div>
+            </div>
+        </div>
+        <div class="section pg-aboutus">
+            <p id="anchor-aboutus"></p>
+            <div class="main-container section-title">
+                ABOUT US
+            </div>
+            <div class="mover">
+                <a href="main.html" class="btn-up"><span class="up"></span></a>
+                <a href="main.html#anchor-partner" class="btn-down"><span class="down"></span></a>
+            </div>
+            <div class="sub-container">
+                <div class="major-description">
+                    Our mission is to set the standard of the art market to analyze and to trade. <br><br>
+
+                    We believe that an investment aspect of the art market can be provided to a wider audience by data aggregation, transparency, and analytics, similar to services by EDGAR and Yahoo!Finance, before providing any fraction ownership or investment related opportunities or services.<br><br>
+
+                    Usage of blockchain can validate and actively support market-to-market valuation under Blue Index’s platform ecosystem.<br><br>
+
+                    We do not expect owners of works to register information on ownership, provenance, exhibition, price of artworks on our registry, but we do expect market experts and specialists to participate and to cross check the accuracy of the information on the platform through our incentivized economy (detail information is undisclosed).<br><br>
+
+                    Over the years, we developed internal software solutions to support data transparency and analytics.
+                </div>
+            </div>
+        </div>
+        <div class="section pg-partner">
+            <p id="anchor-partner"></p>
+            <div class="main-container section-title">
+                PARTNERS
+            </div>
+            <div class="mover">
+                <a href="main.html#anchor-aboutus" class="btn-up"><span class="up"></span></a>
+                <a href="main.html#anchor-blueindex" class="btn-down"><span class="down"></span></a>
+            </div>
+            <div class="sub-container">
+                <a href="https://www.hanwhasystems.com/" target="_blank" class="partner">
+                    <p class="title">HANWHA SYSTEMS</p>
+                    <p class="description">Hanwha Systems is a subsidiary of one of Korea’s largest conglomerate, Hanwha Group. As one of the leading corporations in Korea to focus on implementation of blockchain technology, Hanwha System acts as a strategic investor and collaborator to Blue Index.</p>
+                    <img src="../images/partner_logo_02.png" title="한화시스템">
+                </a>
+                <a href="https://www.auctionblue.com/" target="_blank" class="partner">
+                    <p class="title">SEOUL AUCTION BLUE</p>
+                    <p class="description">Seoul Auction Blue is a subsidiary of the largest auction House in Korea, Seoul Auction, focusing on IT and finance of auction services. Seoul Auction Blue works closely with major global auction houses, such as Christie’s, Sotheby’s, and Phillips.</p>
+                    <img src="../images/partner_logo_03.png" title="서울옥션블루">
+                </a>
+                <a href="http://www.gokams.or.kr/" target="_blank" class="partner">
+                    <p class="title">Korea Art Management Service</p>
+                    <p class="description">Korea Art Management Service, an affiliate of Korea’s Ministry of Culture, Sports, and Tourism, offers diverse research, consulting and educational programs for those in the field to boost the industrial competitiveness of the Korean arts.</p>
+                    <img src="../images/partner_logo_01.png" title="예술경영지원센터" class="logo">
+                </a>
+            </div>
+        </div>
+        <div class="section pg-blueindex">
+            <p id="anchor-blueindex"></p>
+            <div class="main-container section-title">
+                BLUE INDEX
+            </div>
+            <div class="mover">
+                <a href="main.html#anchor-partner" class="btn-up"><span class="up"></span></a>
+                <a href="main.html#anchor-monopoly" class="btn-down"><span class="down"></span></a>
+            </div>
+            <div class="sub-container">
+                <div class="apps">
+                    <a href="https://www.blueindex.com" target="_blank" class="link-primary"><span class="icon-blank"></span> Search by Artist</a>
+                </div>
+                <div class="major-description">
+                    Blue Index is online platform for art. Search artist, works, auction result and comparable. All data from 'Blue index' comes from ‘MONOPOLY'. The data provided by the contributor and validated by expert groups.
+                </div>
+                <div class="specs">
+                    <div class="spec icon-works">
+                        <p class="title">Artists & Works</p>
+                        <p class="description">
+                            You can search the artist to find all of the artist's information, works, auction results, and similar works.
+                        </p>
+                    </div>
+                    <div class="spec icon-hammer">
+                        <p class="title">Auction Results</p>
+                        <p class="description">
+                            You can search the artist to find all of the artist's information, works, auction results, and similar works.
+                        </p>
+                    </div>
+                    <div class="spec icon-compare">
+                        <p class="title">Auto Comparable</p>
+                        <p class="description">
+                            You can search the artist to find all of the artist's information, works, auction results, and similar works.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section pg-monopoly">
+            <p id="anchor-monopoly"></p>
+            <div class="main-container section-title">
+                BLUE INDEX<br>MONOPOLY
+            </div>
+            <div class="mover">
+                <a href="main.html#anchor-blueindex" class="btn-up"><span class="up"></span></a>
+                <a href="main.html#anchor-laa" class="btn-down"><span class="down"></span></a>
+            </div>
+            <div class="sub-container">
+                <div class="major-description">
+                    Blue Index Monopoly act as the core of all services providing information ecosystem for data contribution by industry participants using a blockchain technology.
+                </div>
+                <div class="submenu">
+                    <!--                    클래스에 active를 붙이면 선택된 항목을 표시됩니다.-->
+                    <div class="pg-contributor active">
+                        <a href="Javascript://" class="title">Contributor</a>
+                        <div class="contents">
+                            <figure class="figure">
+                                <!--                                <img class="img" src="../images/figure_contributor.png" title="contributor">-->
+                                <figcaption class="caption">
+                                    Its sharing database platform allows a Contributor to take ownership stakes in an auction data to receive rewards from its usage by other users.<br><br>
+                                    All data can be contested allowing any other Contributor to repossess its ownership stake leading to a continual correction in the accuracy of its data.
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <!--                    클래스에 active를 붙이면 선택된 항목을 표시됩니다.-->
+                    <div class="pg-validator">
+                        <a href="Javascript://" class="title">validator</a>
+                        <div class="contents">
+                            <figure class="figure">
+                                <!--                                <img class="img" src="../images/figure_validator.png" title="validator">-->
+                                <figcaption class="caption">
+                                    The information has to be confirmed by Validators for its accuracy who also receives rewards from usage.
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <!--                    클래스에 active를 붙이면 선택된 항목을 표시됩니다.-->
+                    <div class="pg-datasharing">
+                        <a href="Javascript://" class="title">Data Sharing</a>
+                        <div class="contents">
+                            <figure class="figure">
+                                <!--                                <img class="img" src="../images/figure_datasharing.png" title="data sharing">-->
+                                <figcaption class="caption">
+                                    Monopoly offers proven, transparent data in Blue Index and Live Auction Art. As a result, all of our services are securing transparency and reliability of data through Blockchain technology.
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="section pg-liveauctionart">
+            <p id="anchor-laa"></p>
+            <div class="main-container section-title">
+                LIVE<br>AUCTION ART
+            </div>
+            <div class="mover">
+                <a href="main.html#anchor-monopoly" class="btn-up"><span class="up"></span></a>
+                <a href="main.html#anchor-iap" class="btn-down"><span class="down"></span></a>
+            </div>
+            <div class="sub-container">
+                <div class="apps">
+                    <a href="https://appsto.re/us/N028-.i" class="link-primary"><span class="icon-apple"></span> AppStore</a>
+                    <a href="https://play.google.com/store/apps/details?id=com.gnsart.live.auction.app" class="link-primary"><span class="icon-android"></span> PlayStore</a>
+                </div>
+                <div class="major-description">
+                    Live Auction Art provides immediate updates and results from six global auction houses in one convenient free auction app on any PDA. Users
+                    benefit from the ability to view multiple auctions quickly and efficiently.
+                </div>
+
+                <div class="specs">
+                    <div class="spec icon-realtime">
+                        <p class="title">Real-time Auction<br> Results</p>
+                        <p class="description">
+                            Live auction art covers six major global auction house showrooms through one convenient app.
+                        </p>
+                    </div>
+                    <div class="spec icon-multiple">
+                        <p class="title">Live Multiple<br>
+                            Results
+                        </p>
+                        <p class="description">
+                            Live auction art organizes and updates latest results from multiple auction houses in one place.
+
+                        </p>
+                    </div>
+                    <div class="spec icon-rank">
+                        <p class="title">Live Ranking<br>
+                            Overview
+                        </p>
+                        <p class="description">
+                            Live auction art users recieve the real-time auction results, with the best and the worst performing lots, as compared to the market expenctancy prior to the sales.
+
+                        </p>
+                    </div>
+                    <div class="spec icon-compare">
+                        <p class="title">Automated<br>
+                            Lot Matching
+                        </p>
+                        <p class="description">
+                            Live auction art's matching tool bare enables our users to compare works and prices of competing auction houses.
+
+                        </p>
+                    </div>
+                    <div class="spec icon-sharing">
+                        <p class="title">Sharing<br>
+                            Live Auction Art
+                        </p>
+                        <p class="description">
+                            Via the mobile browser users can share LAA results without the app.
+                        </p>
+                    </div>
+                    <div class="spec icon-news">
+                        <p class="title">News</p>
+                        <p class="description">
+                            Compiling news from major publications in one app. <br><br>
+                            The New York Times / WSJ / Telegraph / Bloomberg /
+                            Art Market Monitor ...
+
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="section pg-inartpress">
+            <p id="anchor-iap"></p>
+            <div class="main-container section-title">
+                IN ART PRESS
+            </div>
+            <div class="mover">
+                <a href="main.html#anchor-laa" class="btn-up"><span class="up"></span></a>
+                <a href="main.html#anchor-contact" class="btn-down"><span class="down"></span></a>
+            </div>
+            <div class="sub-container">
+                <div class="apps">
+                    <a href="https://inartpress.com/" class="link-primary"><span class="icon-blank"></span> Exhibits around you</a>
+                    <a href="https://play.google.com/store/apps/details?id=com.wiveel.inartpress" class="link-primary"><span class="icon-android"></span> PlayStore</a>
+                </div>
+                <div class="major-description">
+                    In Art Press will show you the galleries and museum exhibits around you. <br>
+                    Look for the exhibits that the media is paying attention to. In Art Press will show you how close you are to the gallery.<br>
+                    <br>
+                    Just access. It's free!
+                </div>
+
+                <div class="specs">
+                    <div class="spec icon-map">
+                        <p class="title">Gallery Guide based on<br>
+                            press coverage
+                        </p>
+                        <p class="description">
+                            The New York Times / WSJ / Telegraph / The Guardian / LA Times and more.
+                        </p>
+                    </div>
+                    <div class="spec icon-search">
+                        <p class="title">Searching galleries<br>
+                            by location
+                        </p>
+                        <p class="description">
+                            New York, London, Los Angeles, Hong Kong, Seoul
+                        </p>
+                    </div>
+                    <div class="spec icon-info">
+                        <p class="title">Related Auction Info</p>
+                        <p class="description">
+                            Check Artist’s auction information provide by Live Auction Art.
+                            Anticipate the winning bid!
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="section pg-contact">
+            <p id="anchor-contact"></p>
+            <div class="main-container section-title">
+                CONTACT
+            </div>
+            <div class="mover">
+                <a href="main.html#anchor-iap" class="btn-up"><span class="up"></span></a>
+                <a href="javascript://" class="btn-down disable"><span class="down"></span></a>
+            </div>
+            <div class="sub-container">
+                <form class="form-contact">
+                    <div class="form-group">
+                        <p class="label">SUBJECT</p>
+                        <select class="input-default">
+                            <option value="General">General</option>
+                            <option value="blueindex">Blue Index</option>
+                            <option value="monopoly">Monopoly</option>
+                            <option value="laa">Live Auction Art</option>
+                            <option value="In Art Press">In Art Press</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <p class="label">NAME</p>
+                        <input type="text" class="input-default" placeholder="What is your name?" />
+                    </div>
+                    <div class="form-group">
+                        <p class="label">E-MAIL</p>
+                        <input type="email"  class="input-default" placeholder="Please fill in your email address" />
+                    </div>
+                    <div class="form-group">
+                        <p class="label">COMMENT OR QUESTIONS</p>
+                        <textarea cols="30" rows="10" class="input-default textarea" placeholder="What do you want to say?"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <div class="btn-container">
+                            <a href="javascript:window.alert('Mail has sent.')" target="_blank" class="link-primary">SEND</a>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>

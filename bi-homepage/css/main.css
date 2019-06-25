@@ -377,12 +377,14 @@ body {
   background-size: 20px 25px;
 }
 
+#anchor-main,
 #anchor-aboutus,
 #anchor-partner,
 #anchor-blueindex,
 #anchor-monopoly,
 #anchor-laa,
-#anchor-iap {
+#anchor-iap,
+#anchor-contact {
   position: absolute;
   top: -205px;
   width: 100px;
@@ -455,7 +457,7 @@ body > .container .top-navigation .menus.hide {
     right: -400px;
   }
 }
-body > .container .top-navigation .menus .menu {
+body > .container .top-navigation .menus .menu-container .menu {
   display: inline-block;
   margin: 0 24px 0 0;
   padding: 10px 10px 10px 10px;
@@ -466,10 +468,10 @@ body > .container .top-navigation .menus .menu {
   text-transform: uppercase;
   line-height: 16px;
 }
-body > .container .top-navigation .menus .menu-sub {
+body > .container .top-navigation .menus .menu-container .menu-sub {
   display: none;
 }
-body > .container .top-navigation .menus .btn-close {
+body > .container .top-navigation .menus .menu-container .btn-close {
   display: none;
 }
 body > .container .top-navigation .hamburger-menu {
