@@ -35,19 +35,20 @@
         <!--        active  붙이면 메뉴 열리고, 그 뒤에 hide 붙이면 메뉴 닫힙니다. 둘다 안붙이면 감춰져있어요-->
         <div class="menus">
             <div class="menu-container">
-                <a href="main.html#anchor-main" class="menu" onclick="a()">about us</a>
-                <a href="main.html#anchor-aboutus" class="menu-sub" onclick="a()">about us</a>
-                <a href="main.html#anchor-partner" class="menu-sub" onclick="a()">partners</a>
-                <a href="main.html#anchor-blueindex" class="menu" onclick="a()">services</a>
-                <a href="main.html#anchor-blueindex" class="menu-sub" onclick="a()">blue index</a>
-                <a href="main.html#anchor-monopoly" class="menu-sub" onclick="a()">monopoly</a>
-                <a href="main.html#anchor-laa" class="menu-sub" onclick="a()">live auction art</a>
-                <a href="main.html#anchor-iap" class="menu-sub" onclick="a()">in art press</a>
-                <a href="main.html#anchor-contact" class="menu" onclick="a()">contact</a>
-                <a href="javascript:a()" class="btn-close">X</a>
+                <a href="main.html#anchor-main" class="menu" onclick="menusHide()">about us</a>
+                <a href="main.html#anchor-aboutus" class="menu-sub" onclick="menusHide()">about us</a>
+                <a href="main.html#anchor-partner" class="menu-sub" onclick="menusHide()">partners</a>
+                <a href="main.html#anchor-blueindex" class="menu" onclick="menusHide()">services</a>
+                <a href="main.html#anchor-blueindex" class="menu-sub" onclick="menusHide()">blue index</a>
+                <a href="main.html#anchor-monopoly" class="menu-sub" onclick="menusHide()">monopoly</a>
+                <a href="main.html#anchor-laa" class="menu-sub" onclick="menusHide()">live auction art</a>
+                <a href="main.html#anchor-iap" class="menu-sub" onclick="menusHide()">in art press</a>
+                <a href="main.html#anchor-contact" class="menu" onclick="menusHide()">contact</a>
+                <a href="javascript:menusHide()" class="btn-close">X</a>
             </div>
+            <div class="bg-layer"></div>
         </div>
-        <div class="hamburger-menu" onclick="b()">
+        <div class="hamburger-menu" onclick="menusActivate()">
             <span class="icon-hamburger"></span>
         </div>
     </header>

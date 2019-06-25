@@ -183,7 +183,7 @@ body>.container {
       @include bg-image(transperent,'../images/logo@2x.png',no-repeat,scroll,center,center,151px,18px);
     }
     .menus {
-      .menu-container{
+      .menu-container {
         position: fixed;
         top: 0;
         right: -300px;
@@ -191,22 +191,27 @@ body>.container {
         height: 100%;
         background-color: $bg-black;
         padding: 30px 10px 0 10px;
-        &.active {
-          z-index: $z-index-max;
-          &:after {
-            content: '';
-            display: block;
-            position: fixed;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0,0,0,0.8);
-            z-index: $z-index-5;
-          }
+        z-index: $z-index-max;
+      }
+      .bg-layer {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $bg-black;
+        z-index: $z-index-5;
+        display: none;
+      }
+      &.active {
+        .bg-layer {
+          display: block;
+          opacity: 0.8;
+        }
+        .menu-container {
           // start animation---------------------------------------------------------------------
           animation-name: slide-open;
-          animation-duration: 0.7s;
+          animation-duration: 0.5s;
           animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
           right: 0;
           @keyframes slide-open {
@@ -219,10 +224,12 @@ body>.container {
           }
           // end animation---------------------------------------------------------------------
         }
-        &.hide {
+      }
+      &.hide {
+        .menu-container {
           // start animation---------------------------------------------------------------------
           animation-name: slide-hide;
-          animation-duration: 0.7s;
+          animation-duration: 0.5s;
           animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
           right: -300px;
           @keyframes slide-hide {
@@ -235,49 +242,48 @@ body>.container {
           }
           // end animation---------------------------------------------------------------------
         }
-        .menu {
-          display: block;
-          margin: 40px 0 0 30px;
-          padding: 0 0 0 0;
-          font-size: 17px;
-          font-weight: 600;
-          letter-spacing: 0;
-          color: $text-white;
-          line-height: 30px;
-          text-transform: uppercase;
-        }
-        .menu-sub {
-          display: block;
-          margin: 10px 0 0 50px;
-          padding: 0 0 0 0;
-          font-size: 17px;
-          font-weight: 600;
-          letter-spacing: 0;
-          color: $text-lightgray;
-          line-height: 30px;
-          text-transform: uppercase;
-          position: relative;
-          &:after {
-            content: '';
-            display: inline-block;
-            position: absolute;
-            left:  -18px;
-            top: 9px;
-            width: 2px;
-            height: 15px;
-            background-color: $text-lightgray;
-          }
-        }
-        .btn-close {
+      }
+      .menu {
+        display: block;
+        margin: 40px 0 0 30px;
+        padding: 0 0 0 0;
+        font-size: 17px;
+        font-weight: 600;
+        letter-spacing: 0;
+        color: $text-white;
+        line-height: 30px;
+        text-transform: uppercase;
+      }
+      .menu-sub {
+        display: block;
+        margin: 10px 0 0 50px;
+        padding: 0 0 0 0;
+        font-size: 17px;
+        font-weight: 600;
+        letter-spacing: 0;
+        color: $text-lightgray;
+        line-height: 30px;
+        text-transform: uppercase;
+        position: relative;
+        &:after {
+          content: '';
+          display: inline-block;
           position: absolute;
-          right: 30px;
-          top: 20px;
-          color: $text-white;
-          font-size: 30px;
-          font-weight: 200;
-          line-height: 100%;
-
+          left:  -18px;
+          top: 9px;
+          width: 2px;
+          height: 15px;
+          background-color: $text-lightgray;
         }
+      }
+      .btn-close {
+        position: absolute;
+        right: 30px;
+        top: 20px;
+        color: $text-white;
+        font-size: 30px;
+        font-weight: 200;
+        line-height: 100%;
       }
     }
     .hamburger-menu {

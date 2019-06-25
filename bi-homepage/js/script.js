@@ -1,9 +1,8 @@
-function b() {
+function menusActivate() {
     $(".menus").removeClass("hide");
     $(".menus").addClass("active");
 }
-function a(){
-    console.log("asdfasdfasdf");
+function menusHide(){
     $(".menus").removeClass("active");
     $(".menus").addClass("hide");
 }

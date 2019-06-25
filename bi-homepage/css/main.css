@@ -457,7 +457,10 @@ body > .container .top-navigation .menus.hide {
     right: -400px;
   }
 }
-body > .container .top-navigation .menus .menu-container .menu {
+body > .container .top-navigation .menus .bg-layer {
+  display: none;
+}
+body > .container .top-navigation .menus .menu {
   display: inline-block;
   margin: 0 24px 0 0;
   padding: 10px 10px 10px 10px;
@@ -468,10 +471,10 @@ body > .container .top-navigation .menus .menu-container .menu {
   text-transform: uppercase;
   line-height: 16px;
 }
-body > .container .top-navigation .menus .menu-container .menu-sub {
+body > .container .top-navigation .menus .menu-sub {
   display: none;
 }
-body > .container .top-navigation .menus .menu-container .btn-close {
+body > .container .top-navigation .menus .btn-close {
   display: none;
 }
 body > .container .top-navigation .hamburger-menu {
