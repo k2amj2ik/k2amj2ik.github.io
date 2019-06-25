@@ -335,7 +335,7 @@ body {
 
 body > .container {
   position: fixed;
-  padding: 70px 0 0 0;
+  padding: 50px 0 0 0;
   width: 100%;
   height: 100%;
   overflow-y: scroll;
@@ -346,7 +346,7 @@ body > .container .top-navigation {
   top: 0;
   left: 0;
   width: 100%;
-  height: 70px;
+  height: 50px;
   padding: 0;
   background-color: #fff;
   z-index: 90;
@@ -355,7 +355,7 @@ body > .container .top-navigation .logo {
   display: inline-block;
   float: left;
   cursor: pointer;
-  margin: 10px 0 0 0;
+  margin: 3px 0 0 0;
   width: 198px;
   height: 50px;
   background-color: transperent;
@@ -472,7 +472,7 @@ body > .container .top-navigation .hamburger-menu .icon-hamburger {
   cursor: pointer;
   display: inline-block;
   width: 60px;
-  height: 66px;
+  height: 50px;
   background-color: transparent;
   background-image: url(../images/icon_hamberger@2x.png);
   background-repeat: no-repeat;
