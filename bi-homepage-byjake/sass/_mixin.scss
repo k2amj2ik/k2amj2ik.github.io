@@ -127,6 +127,8 @@
     @include calculator(height,'100% - 8px');
     background-color: $bg-highlight;
     z-index : $z-index-minus;
+
+
     // start animation---------------------------------------------------------------------
     animation-name: out-highlight;
     animation-duration: 0.7s;
@@ -163,4 +165,15 @@
       // end animation---------------------------------------------------------------------
     }
   }
+}
+
+// background image---------------------------------------------------------------------
+@mixin bg-image($color,$url,$repeat,$attachment,$position-y,$position-x,$width,$height) {
+  background-color: $color;
+  background-image: url(#{$url});
+  background-repeat: $repeat;
+  background-attachment: $attachment;
+  background-position-y: $position-y;
+  background-position-x: $position-x;
+  background-size: $width $height;
 }

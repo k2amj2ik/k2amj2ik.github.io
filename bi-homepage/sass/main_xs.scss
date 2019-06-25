@@ -183,6 +183,8 @@ body>.container {
       @include bg-image(transperent,'../images/logo@2x.png',no-repeat,scroll,center,center,151px,18px);
     }
     .menus {
+      margin: 0;
+      padding: 0;
       .menu-container {
         position: fixed;
         top: 0;
@@ -245,7 +247,7 @@ body>.container {
       }
       .menu {
         display: block;
-        margin: 40px 0 0 30px;
+        margin: 20px 0 0 30px;
         padding: 0 0 0 0;
         font-size: 17px;
         font-weight: 600;

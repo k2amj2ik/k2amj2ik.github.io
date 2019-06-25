@@ -35,9 +35,8 @@
         <!--        active  붙이면 메뉴 열리고, 그 뒤에 hide 붙이면 메뉴 닫힙니다. 둘다 안붙이면 감춰져있어요-->
         <div class="menus">
             <div class="menu-container">
-                <a href="main.html#anchor-main" class="menu" onclick="menusHide()">about us</a>
-                <a href="main.html#anchor-aboutus" class="menu-sub" onclick="menusHide()">about us</a>
-                <a href="main.html#anchor-partner" class="menu-sub" onclick="menusHide()">partners</a>
+                <a href="main.html#anchor-main" class="menu" onclick="menusHide()">home</a>
+                <a href="main.html#anchor-aboutus" class="menu" onclick="menusHide()">about us</a>
                 <a href="main.html#anchor-blueindex" class="menu" onclick="menusHide()">services</a>
                 <a href="main.html#anchor-blueindex" class="menu-sub" onclick="menusHide()">blue index</a>
                 <a href="main.html#anchor-monopoly" class="menu-sub" onclick="menusHide()">monopoly</a>
@@ -56,9 +55,9 @@
         <div class="section pg-main">
             <p id="anchor-main"></p>
             <div class="main-container">
-                BRING<br>
-                TRANSPARENCY AND EFFICIENCY<br>
-                TO ART MARKET
+                SETTING A STANDARD <br>
+                TO ANALYZE AND TO TRADE<br>
+                FOR THE ART MARKET
             </div>
             <div class="mover">
                 <a href="javascript://" class="btn-up disable"><span class="up"></span></a>
@@ -66,7 +65,7 @@
             </div>
             <div class="sub-container">
                 <div class="major-description">
-                    Blue Index aims to lead the development of the art industry and culture by providing software tools, such as analytic platform, data services, and news to category related dealers, auctioneers, collectors, and financial companies to analyze and to monitor the market and its trends.
+                    Blue Index aims to lead the development of the art industry by providing software tools, such as analytic platform, data services, and news to category related dealers, auctioneers, collectors, and financial companies to analyze its trends and to trade using blockchain technology.
                 </div>
             </div>
         </div>
@@ -134,7 +133,10 @@
                     <a href="https://www.blueindex.com" target="_blank" class="link-primary"><span class="icon-blank"></span> Search by Artist</a>
                 </div>
                 <div class="major-description">
-                    Blue Index is online platform for art. Search artist, works, auction result and comparable. All data from 'Blue index' comes from ‘MONOPOLY'. The data provided by the contributor and validated by expert groups.
+                    Search artist name to see auction results. All data are owned by participants in Blue Index Monopoly.
+                    <br><br>
+
+                    100% income from the paid features are distributed to reward stakeholders on the Blue Index Monopoly.
                 </div>
                 <div class="specs">
                     <div class="spec icon-works">
@@ -168,43 +170,66 @@
                 <a href="main.html#anchor-laa" class="btn-down"><span class="down"></span></a>
             </div>
             <div class="sub-container">
+                <div class="apps">
+                    <a href="https://monopoly.blueindex.com" target="_blank" class="link-primary"><span class="icon-blank"></span> go to monopoly</a>
+                </div>
                 <div class="major-description">
-                    Blue Index Monopoly act as the core of all services providing information ecosystem for data contribution by industry participants using a blockchain technology.
+                    As a core of all our services, Blue Index Monopoly is a blockchain-based sharing platform for industry participants to actively share auction information.
                 </div>
                 <div class="submenu">
                     <!--                    클래스에 active를 붙이면 선택된 항목을 표시됩니다.-->
-                    <div class="pg-contributor active">
-                        <a href="Javascript://" class="title">Contributor</a>
+                    <div class="pg-mp-summery active">
+                        <span class="title sp-monopoly">monopoly</span>
                         <div class="contents">
                             <figure class="figure">
                                 <!--                                <img class="img" src="../images/figure_contributor.png" title="contributor">-->
                                 <figcaption class="caption">
-                                    Its sharing database platform allows a Contributor to take ownership stakes in an auction data to receive rewards from its usage by other users.<br><br>
-                                    All data can be contested allowing any other Contributor to repossess its ownership stake leading to a continual correction in the accuracy of its data.
+                                    Monopoly concept comes from the board game Monopoly. First person to land on a property has the first right to purchase it, then to develop houses and hotels. Possibly even trade it.
+                                    <br><br>
+                                    In the Blue Index Monopoly, whoever submits a basic artwork auction information first becomes the landlord. Unlike the board game, others can add supplementary information on the artwork, such as provenance, similar to developing a house on its property. When the information is viewed on the Blue Index platform, everyone who contributed to the artwork receives rewards. You can trade it too.
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <!--                    클래스에 active를 붙이면 선택된 항목을 표시됩니다.-->
+                    <!--                    클래스에 active를 붙이면 선택된 항목을 표시됩니다.-->
+                    <div class="pg-contributor">
+                        <span class="title sp-contributor">Contributor</span>
+                        <div class="contents">
+                            <figure class="figure">
+                                <!--                                <img class="img" src="../images/figure_contributor.png" title="contributor">-->
+                                <figcaption class="caption">
+                                    Contributors are responsible for submitting auction information on specific artworks to receive reward stakes. Every time the data is used on Blue Index platform, the contributor automatically receives rewards.
+                                    <br><br>
+
+                                    To ensure up-to-date information, the rewards stakes can be taken by another Contributor who submits an updated information.
                                 </figcaption>
                             </figure>
                         </div>
                     </div>
                     <!--                    클래스에 active를 붙이면 선택된 항목을 표시됩니다.-->
                     <div class="pg-validator">
-                        <a href="Javascript://" class="title">validator</a>
+                        <span class="title sp-validator">validator</span>
                         <div class="contents">
                             <figure class="figure">
                                 <!--                                <img class="img" src="../images/figure_validator.png" title="validator">-->
                                 <figcaption class="caption">
-                                    The information has to be confirmed by Validators for its accuracy who also receives rewards from usage.
+                                    Validators are industry professionals responsible confirming the accuracy of the data submitted by Contributors.
+                                    <br><br>
+
+                                    Validators also receive part of reward stakes.
                                 </figcaption>
                             </figure>
                         </div>
                     </div>
                     <!--                    클래스에 active를 붙이면 선택된 항목을 표시됩니다.-->
                     <div class="pg-datasharing">
-                        <a href="Javascript://" class="title">Data Sharing</a>
+                        <span class="title sp-datasharing">Data Sharing</span>
                         <div class="contents">
                             <figure class="figure">
                                 <!--                                <img class="img" src="../images/figure_datasharing.png" title="data sharing">-->
                                 <figcaption class="caption">
-                                    Monopoly offers proven, transparent data in Blue Index and Live Auction Art. As a result, all of our services are securing transparency and reliability of data through Blockchain technology.
+                                    Approved contributions are shared on the Blue Index platform for end-users to search and to analyze.
                                 </figcaption>
                             </figure>
                         </div>
@@ -228,8 +253,7 @@
                     <a href="https://play.google.com/store/apps/details?id=com.gnsart.live.auction.app" class="link-primary"><span class="icon-android"></span> PlayStore</a>
                 </div>
                 <div class="major-description">
-                    Live Auction Art provides immediate updates and results from six global auction houses in one convenient free auction app on any PDA. Users
-                    benefit from the ability to view multiple auctions quickly and efficiently.
+                    Live Auction Art provides real-time updates and results.
                 </div>
 
                 <div class="specs">
@@ -302,10 +326,8 @@
                     <a href="https://play.google.com/store/apps/details?id=com.wiveel.inartpress" class="link-primary"><span class="icon-android"></span> PlayStore</a>
                 </div>
                 <div class="major-description">
-                    In Art Press will show you the galleries and museum exhibits around you. <br>
-                    Look for the exhibits that the media is paying attention to. In Art Press will show you how close you are to the gallery.<br>
-                    <br>
-                    Just access. It's free!
+                    'In Art Press' will show you the galleries and museum exhibits around you. <br>
+                    Look for the exhibits that the media is paying attention to.
                 </div>
 
                 <div class="specs">
@@ -366,7 +388,7 @@
                         <input type="email"  class="input-default" placeholder="Please fill in your email address" />
                     </div>
                     <div class="form-group">
-                        <p class="label">COMMENT OR QUESTIONS</p>
+                        <p class="label">COMMENT</p>
                         <textarea cols="30" rows="10" class="input-default textarea" placeholder="What do you want to say?"></textarea>
                     </div>
                     <div class="form-group">

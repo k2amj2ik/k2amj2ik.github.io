@@ -8,6 +8,7 @@ html, body, div, ul, ol, li, table, tr, td, h1, h2, h3, h4, p, span, form, input
   padding: 0;
   box-sizing: border-box;
   font-family: $font-default;
+  @include placeholder-color($text-lightgray);
 }
 
 li {
@@ -153,7 +154,7 @@ body {
   left: 76px;
   display: flex;
   flex-direction: column;
-  z-index: $z-index-max;
+  z-index: $z-index-4;
   &:after {
     content: '';
     display: inline-block;
@@ -223,7 +224,7 @@ body>.container {
     height: 70px;
     padding: 0;
     background-color: $bg-white;
-    z-index: $z-index-max;
+    z-index: $z-index-5;
     .logo {
       display: inline-block;
       float:left;
@@ -237,8 +238,9 @@ body>.container {
       position: fixed;
       top: 17px;
       right: 0;
-      width: 400px;
+      width: 490px;
       height: 40px;
+      z-index: $z-index-max;
       &.active {
         // start animation---------------------------------------------------------------------
         animation-name: slide-open;
@@ -247,7 +249,7 @@ body>.container {
         right: 0;
         @keyframes slide-open {
           0%   {
-            right: -400px;
+            right: -490px;
           }
           100% {
             right: 0;
@@ -260,7 +262,7 @@ body>.container {
         animation-name: slide-hide;
         animation-duration: 0.7s;
         animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
-        right: -400px;
+        right: -490px;
         @keyframes slide-hide {
           0%   {
             right: 0;
@@ -298,6 +300,7 @@ body>.container {
       top: 15px;
       width: 60px;
       height: 40px;
+      z-index: $z-index-max;
       .icon-hamburger {
         cursor: pointer;
         display: inline-block;
@@ -509,7 +512,7 @@ body>.container {
       }
       &.pg-blueindex {
         .sub-container {
-          padding: 23px 0 0 0;
+          padding: 21px 0 0 0;
           .apps {
             margin: 0 0 50px 0;
             .link-primary {
@@ -628,7 +631,7 @@ body>.container {
             color: $text-default;
             line-height: 30px;
             text-transform: uppercase;
-            .pg-contributor {
+            .pg-mp-summery{
               position: absolute;
               left: 0;
               top: 52px;
@@ -648,7 +651,7 @@ body>.container {
                 }
               }
             }
-            .pg-validator {
+            .pg-contributor {
               position: absolute;
               left: 0;
               top: 83px;
@@ -665,7 +668,7 @@ body>.container {
                 }
               }
             }
-            .pg-datasharing {
+            .pg-validator {
               position: absolute;
               left: 0;
               top: 114px;
@@ -682,7 +685,25 @@ body>.container {
                 }
               }
             }
+            .pg-datasharing {
+              position: absolute;
+              left: 0;
+              top: 145px;
+              width: 500px;
+              .title {
+                margin: 0 0 0 13px;
+              }
+              .contents {
+                display: none;
+                margin-top: -62px;
+                .caption {
+                  opacity: 0.7;
+                  padding-top: 0;
+                }
+              }
+            }
             .title {
+              cursor: pointer;
               padding-right: 50px;
               color: $text-lightgray;
               position: relative;
@@ -701,6 +722,7 @@ body>.container {
               }
             }
             .active {
+              &.pg-mp-summery .contents,
               &.pg-contributor .contents,
               &.pg-validator .contents,
               &.pg-datasharing .contents {

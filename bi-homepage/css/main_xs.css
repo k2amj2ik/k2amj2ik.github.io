@@ -363,6 +363,10 @@ body > .container .top-navigation .logo {
   background-position-x: center;
   background-size: 151px 18px;
 }
+body > .container .top-navigation .menus {
+  margin: 0;
+  padding: 0;
+}
 body > .container .top-navigation .menus .menu-container {
   position: fixed;
   top: 0;
@@ -385,7 +389,7 @@ body > .container .top-navigation .menus .bg-layer {
 }
 body > .container .top-navigation .menus.active .bg-layer {
   display: block;
-  opacity: 0.8;
+  opacity: 0.6;
 }
 body > .container .top-navigation .menus.active .menu-container {
   animation-name: slide-open;
@@ -417,7 +421,7 @@ body > .container .top-navigation .menus.hide .menu-container {
 }
 body > .container .top-navigation .menus .menu {
   display: block;
-  margin: 40px 0 0 30px;
+  margin: 20px 0 0 30px;
   padding: 0 0 0 0;
   font-size: 17px;
   font-weight: 600;

@@ -76,6 +76,18 @@ html, body, div, ul, ol, li, table, tr, td, h1, h2, h3, h4, p, span, form, input
   box-sizing: border-box;
   font-family: "Helvetica";
 }
+html.placeholder, body.placeholder, div.placeholder, ul.placeholder, ol.placeholder, li.placeholder, table.placeholder, tr.placeholder, td.placeholder, h1.placeholder, h2.placeholder, h3.placeholder, h4.placeholder, p.placeholder, span.placeholder, form.placeholder, input.placeholder, button.placeholder, select.placeholder, a.placeholder, textarea.placeholder {
+  color: #888888;
+}
+html:-moz-placeholder, body:-moz-placeholder, div:-moz-placeholder, ul:-moz-placeholder, ol:-moz-placeholder, li:-moz-placeholder, table:-moz-placeholder, tr:-moz-placeholder, td:-moz-placeholder, h1:-moz-placeholder, h2:-moz-placeholder, h3:-moz-placeholder, h4:-moz-placeholder, p:-moz-placeholder, span:-moz-placeholder, form:-moz-placeholder, input:-moz-placeholder, button:-moz-placeholder, select:-moz-placeholder, a:-moz-placeholder, textarea:-moz-placeholder {
+  color: #888888;
+}
+html:-webkit-input-placeholder, body:-webkit-input-placeholder, div:-webkit-input-placeholder, ul:-webkit-input-placeholder, ol:-webkit-input-placeholder, li:-webkit-input-placeholder, table:-webkit-input-placeholder, tr:-webkit-input-placeholder, td:-webkit-input-placeholder, h1:-webkit-input-placeholder, h2:-webkit-input-placeholder, h3:-webkit-input-placeholder, h4:-webkit-input-placeholder, p:-webkit-input-placeholder, span:-webkit-input-placeholder, form:-webkit-input-placeholder, input:-webkit-input-placeholder, button:-webkit-input-placeholder, select:-webkit-input-placeholder, a:-webkit-input-placeholder, textarea:-webkit-input-placeholder {
+  color: #888888;
+}
+html:-ms-input-placeholder, body:-ms-input-placeholder, div:-ms-input-placeholder, ul:-ms-input-placeholder, ol:-ms-input-placeholder, li:-ms-input-placeholder, table:-ms-input-placeholder, tr:-ms-input-placeholder, td:-ms-input-placeholder, h1:-ms-input-placeholder, h2:-ms-input-placeholder, h3:-ms-input-placeholder, h4:-ms-input-placeholder, p:-ms-input-placeholder, span:-ms-input-placeholder, form:-ms-input-placeholder, input:-ms-input-placeholder, button:-ms-input-placeholder, select:-ms-input-placeholder, a:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  color: #888888;
+}
 
 li {
   list-style: none;
@@ -325,7 +337,7 @@ body {
   left: 76px;
   display: flex;
   flex-direction: column;
-  z-index: 90;
+  z-index: 50;
 }
 .mover:after {
   content: '';
@@ -405,7 +417,7 @@ body > .container .top-navigation {
   height: 70px;
   padding: 0;
   background-color: #fff;
-  z-index: 90;
+  z-index: 60;
 }
 body > .container .top-navigation .logo {
   display: inline-block;
@@ -426,8 +438,9 @@ body > .container .top-navigation .menus {
   position: fixed;
   top: 17px;
   right: 0;
-  width: 400px;
+  width: 490px;
   height: 40px;
+  z-index: 90;
 }
 body > .container .top-navigation .menus.active {
   animation-name: slide-open;
@@ -437,7 +450,7 @@ body > .container .top-navigation .menus.active {
 }
 @keyframes slide-open {
   0% {
-    right: -400px;
+    right: -490px;
   }
   100% {
     right: 0;
@@ -447,7 +460,7 @@ body > .container .top-navigation .menus.hide {
   animation-name: slide-hide;
   animation-duration: 0.7s;
   animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
-  right: -400px;
+  right: -490px;
 }
 @keyframes slide-hide {
   0% {
@@ -483,6 +496,7 @@ body > .container .top-navigation .hamburger-menu {
   top: 15px;
   width: 60px;
   height: 40px;
+  z-index: 90;
 }
 body > .container .top-navigation .hamburger-menu .icon-hamburger {
   cursor: pointer;
@@ -737,7 +751,7 @@ body > .container .inner-container .section.pg-partner .sub-container .partner:h
   text-decoration: none;
 }
 body > .container .inner-container .section.pg-blueindex .sub-container {
-  padding: 23px 0 0 0;
+  padding: 21px 0 0 0;
 }
 body > .container .inner-container .section.pg-blueindex .sub-container .apps {
   margin: 0 0 50px 0;
@@ -870,10 +884,30 @@ body > .container .inner-container .section.pg-monopoly .sub-container .submenu 
   line-height: 30px;
   text-transform: uppercase;
 }
-body > .container .inner-container .section.pg-monopoly .sub-container .submenu .pg-contributor {
+body > .container .inner-container .section.pg-monopoly .sub-container .submenu .pg-mp-summery {
   position: absolute;
   left: 0;
   top: 52px;
+  width: 500px;
+}
+body > .container .inner-container .section.pg-monopoly .sub-container .submenu .pg-mp-summery .title {
+  margin: 0 0 0 13px;
+}
+body > .container .inner-container .section.pg-monopoly .sub-container .submenu .pg-mp-summery .contents {
+  display: none;
+  margin-top: 0;
+}
+body > .container .inner-container .section.pg-monopoly .sub-container .submenu .pg-mp-summery .contents .caption {
+  opacity: 0.7;
+  padding-top: 0;
+}
+body > .container .inner-container .section.pg-monopoly .sub-container .submenu .pg-mp-summery .contents .btn-container {
+  margin: -140px 0 140px 0;
+}
+body > .container .inner-container .section.pg-monopoly .sub-container .submenu .pg-contributor {
+  position: absolute;
+  left: 0;
+  top: 83px;
   width: 500px;
 }
 body > .container .inner-container .section.pg-monopoly .sub-container .submenu .pg-contributor .title {
@@ -881,19 +915,16 @@ body > .container .inner-container .section.pg-monopoly .sub-container .submenu 
 }
 body > .container .inner-container .section.pg-monopoly .sub-container .submenu .pg-contributor .contents {
   display: none;
-  margin-top: 0;
+  margin-top: -31px;
 }
 body > .container .inner-container .section.pg-monopoly .sub-container .submenu .pg-contributor .contents .caption {
   opacity: 0.7;
   padding-top: 0;
 }
-body > .container .inner-container .section.pg-monopoly .sub-container .submenu .pg-contributor .contents .btn-container {
-  margin: -140px 0 140px 0;
-}
 body > .container .inner-container .section.pg-monopoly .sub-container .submenu .pg-validator {
   position: absolute;
   left: 0;
-  top: 83px;
+  top: 114px;
   width: 500px;
 }
 body > .container .inner-container .section.pg-monopoly .sub-container .submenu .pg-validator .title {
@@ -901,7 +932,7 @@ body > .container .inner-container .section.pg-monopoly .sub-container .submenu 
 }
 body > .container .inner-container .section.pg-monopoly .sub-container .submenu .pg-validator .contents {
   display: none;
-  margin-top: -31px;
+  margin-top: -62px;
 }
 body > .container .inner-container .section.pg-monopoly .sub-container .submenu .pg-validator .contents .caption {
   opacity: 0.7;
@@ -910,7 +941,7 @@ body > .container .inner-container .section.pg-monopoly .sub-container .submenu 
 body > .container .inner-container .section.pg-monopoly .sub-container .submenu .pg-datasharing {
   position: absolute;
   left: 0;
-  top: 114px;
+  top: 145px;
   width: 500px;
 }
 body > .container .inner-container .section.pg-monopoly .sub-container .submenu .pg-datasharing .title {
@@ -925,6 +956,7 @@ body > .container .inner-container .section.pg-monopoly .sub-container .submenu 
   padding-top: 0;
 }
 body > .container .inner-container .section.pg-monopoly .sub-container .submenu .title {
+  cursor: pointer;
   padding-right: 50px;
   color: #888888;
   position: relative;
@@ -942,7 +974,7 @@ body > .container .inner-container .section.pg-monopoly .sub-container .submenu 
   height: 2px;
   background-color: #1c1d1e;
 }
-body > .container .inner-container .section.pg-monopoly .sub-container .submenu .active.pg-contributor .contents, body > .container .inner-container .section.pg-monopoly .sub-container .submenu .active.pg-validator .contents, body > .container .inner-container .section.pg-monopoly .sub-container .submenu .active.pg-datasharing .contents {
+body > .container .inner-container .section.pg-monopoly .sub-container .submenu .active.pg-mp-summery .contents, body > .container .inner-container .section.pg-monopoly .sub-container .submenu .active.pg-contributor .contents, body > .container .inner-container .section.pg-monopoly .sub-container .submenu .active.pg-validator .contents, body > .container .inner-container .section.pg-monopoly .sub-container .submenu .active.pg-datasharing .contents {
   display: block;
 }
 body > .container .inner-container .section.pg-monopoly .sub-container .submenu .active .title {

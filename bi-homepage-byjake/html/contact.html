@@ -1,23 +1,9 @@
-<!--
-모션참고
-https://www.weareyou.com/en
-https://ryokawada.work/2016/
-http://www.oxymoronagency.com/#works
-https://spencer4701.com/en/#products
--->
-
 <!doctype html>
 <html lang="en">
-
-
-
-
-
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Search Art Auction Database Contributed by, Participants in the Blue Index Monopoly as a Core of Our Services.">
     <meta name="keywords" content="Fine Art, Auction, Artist, Blue Index,, Art, Wiveel, Monopoly, In Art Press, Live Auction Art">
     <meta name="author" content="Blue Index">
@@ -37,17 +23,31 @@ https://spencer4701.com/en/#products
     <title>BLUE INDEX</title>
     <link rel="image_src" href="http://www.blueindex.com/images/summary.png">
     <link rel="icon" href="../images/favicon.ico">
-    <link rel="stylesheet" media="screen and (min-width: 1020px)" href="../css/main.css">
-    <link rel="stylesheet" media="screen and (max-width: 1019.9px)" href="../css/main_xs.css">
+    <link rel="stylesheet" media="screen and (min-width: 1280px)" href="../css/main.css">
+    <link rel="stylesheet" media="screen and (max-width: 1279.9px)" href="../css/main_xs.css">
+    <script src="../js/min/jquery.min.js"></script>
+    <script src="../js/script.js"></script>
 </head>
 <body>
 <div class="container">
     <header class="top-navigation">
         <a href="main.html" class="logo"></a>
+        <!--        active  붙이면 메뉴 열리고, 그 뒤에 hide 붙이면 메뉴 닫힙니다. 둘다 안붙이면 감춰져있어요-->
         <div class="menus">
+            <a href="main.html" class="menu first">home</a>
             <a href="aboutus.html" class="menu">about us</a>
-            <a href="services.html" target="_blank" class="menu">services</a>
+            <!--            <a href="aboutus.html#anchor-aboutus" class="menu-sub" onclick="a()">about us</a>-->
+            <!--            <a href="aboutus.html#anchor-partner" class="menu-sub" onclick="a()">partners</a>-->
+            <a href="services.html" class="menu">services</a>
+            <a href="services.html#anchor-blueindex" class="menu-sub">blue index</a>
+            <a href="services.html#anchor-monopoly" class="menu-sub" onclick="a()">monopoly</a>
+            <a href="services.html#anchor-laa" class="menu-sub" onclick="a()">live auction art</a>
+            <a href="services.html#anchor-iap" class="menu-sub" onclick="a()">in art press</a>
             <a href="contact.html" class="menu">contact</a>
+            <a href="javascript:a()" class="btn-close">X</a>
+        </div>
+        <div class="hamburger-menu" onclick="b()">
+            <span class="icon-hamburger"></span>
         </div>
     </header>
     <div class="inner-container">

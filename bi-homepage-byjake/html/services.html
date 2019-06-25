@@ -1,23 +1,9 @@
-<!--
-모션참고
-https://www.weareyou.com/en
-https://ryokawada.work/2016/
-http://www.oxymoronagency.com/#works
-https://spencer4701.com/en/#products
--->
-
 <!doctype html>
 <html lang="en">
-
-
-
-
-
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Search Art Auction Database Contributed by, Participants in the Blue Index Monopoly as a Core of Our Services.">
     <meta name="keywords" content="Fine Art, Auction, Artist, Blue Index,, Art, Wiveel, Monopoly, In Art Press, Live Auction Art">
     <meta name="author" content="Blue Index">
@@ -37,17 +23,31 @@ https://spencer4701.com/en/#products
     <title>BLUE INDEX</title>
     <link rel="image_src" href="http://www.blueindex.com/images/summary.png">
     <link rel="icon" href="../images/favicon.ico">
-    <link rel="stylesheet" media="screen and (min-width: 1020px)" href="../css/main.css">
-    <link rel="stylesheet" media="screen and (max-width: 1019.9px)" href="../css/main_xs.css">
+    <link rel="stylesheet" media="screen and (min-width: 1280px)" href="../css/main.css">
+    <link rel="stylesheet" media="screen and (max-width: 1279.9px)" href="../css/main_xs.css">
+    <script src="../js/min/jquery.min.js"></script>
+    <script src="../js/script.js"></script>
 </head>
 <body>
 <div class="container">
     <header class="top-navigation">
         <a href="main.html" class="logo"></a>
+        <!--        active  붙이면 메뉴 열리고, 그 뒤에 hide 붙이면 메뉴 닫힙니다. 둘다 안붙이면 감춰져있어요-->
         <div class="menus">
+            <a href="main.html" class="menu first">home</a>
             <a href="aboutus.html" class="menu">about us</a>
-            <a href="services.html" target="_blank" class="menu">services</a>
+            <!--            <a href="aboutus.html#anchor-aboutus" class="menu-sub" onclick="a()">about us</a>-->
+            <!--            <a href="aboutus.html#anchor-partner" class="menu-sub" onclick="a()">partners</a>-->
+            <a href="services.html" class="menu">services</a>
+            <a href="services.html#anchor-blueindex" class="menu-sub">blue index</a>
+            <a href="services.html#anchor-monopoly" class="menu-sub" onclick="a()">monopoly</a>
+            <a href="services.html#anchor-laa" class="menu-sub" onclick="a()">live auction art</a>
+            <a href="services.html#anchor-iap" class="menu-sub" onclick="a()">in art press</a>
             <a href="contact.html" class="menu">contact</a>
+            <a href="javascript:a()" class="btn-close">X</a>
+        </div>
+        <div class="hamburger-menu" onclick="b()">
+            <span class="icon-hamburger"></span>
         </div>
     </header>
     <div class="inner-container">
@@ -62,10 +62,11 @@ https://spencer4701.com/en/#products
             </div>
             <div class="sub-container">
                 <div class="apps">
-                    <a href="https://www.blueindex.com" target="_blank" class="link-primary">Search by Artist</a>
+                    <a href="https://www.blueindex.com" target="_blank" class="link-primary"><span class="icon-blank"></span> Search by Artist</a>
                 </div>
                 <div class="major-description">
-                    Blue Index is online platform for art. Search artist, works, auction result and comparable. All data from 'Blue index' comes from ‘MONOPOLY'. The data provided by the contributor and validated by expert groups.
+                    Search artist name to see auction results. All data are owned by participants in Blue Index Monopoly.<BR><BR>
+                    100% income from the paid features are distributed to reward stakeholders on the Blue Index Monopoly.
                 </div>
                 <div class="specs">
                     <div class="spec icon-works">
@@ -95,53 +96,65 @@ https://spencer4701.com/en/#products
                 BLUE INDEX<br>MONOPOLY
             </div>
             <div class="mover">
-                <a href="aboutus.html#anchor-monopoly" class="btn-up"><span class="up"></span></a>
+                <a href="services.html#anchor-blueindex" class="btn-up"><span class="up"></span></a>
                 <a href="services.html#anchor-laa" class="btn-down"><span class="down"></span></a>
             </div>
             <div class="sub-container">
+                <div class="apps">
+                    <a href="#" class="link-primary"><span class="icon-blank"></span> Go to Monopoly</a>
+                </div>
                 <div class="major-description">
-                    Blue Index Monopoly act as the core of all services providing information ecosystem for data contribution by industry participants using a blockchain technology.
+                    As a core of all our services, Blue Index Monopoly is a blockchain-based sharing platform for industry participants to actively share auction information.
                 </div>
                 <div class="submenu">
-                    <div class="pg-contributor active">
-                        <a href="#" class="title">Contributor</a>
+<!--                    클래스에 active를 붙이면 선택된 항목을 표시됩니다.-->
+                    <div class="pg-monopoly active">
+                        <span class="title sp-monopoly">Monopoly</span>
                         <div class="contents">
-                            <div class="btn-container">
-                                <a href="http://monopoly.blueindex.com" target="_blank" class="link-primary"><span class="icon-blank"></span> Go to MONOPOLY</a>
-                            </div>
                             <figure class="figure">
 <!--                                <img class="img" src="../images/figure_contributor.png" title="contributor">-->
                                 <figcaption class="caption">
-                                    Its sharing database platform allows a Contributor to take ownership stakes in an auction data to receive rewards from its usage by other users.<br><br>
-                                    All data can be contested allowing any other Contributor to repossess its ownership stake leading to a continual correction in the accuracy of its data.
+                                    Monopoly concept comes from the board game Monopoly. First person to land on a property has the first right to purchase it, then to develop houses and hotels. Possibly even trade it.<br><br>
+                                    In the Blue Index Monopoly, whoever submits a basic artwork auction information first becomes the landlord. Unlike the board game, others can add supplementary information on the artwork, such as provenance, similar to developing a house on its property. When the information is viewed on the Blue Index platform, everyone who contributed to the artwork receives rewards. You can trade it too.
                                 </figcaption>
                             </figure>
                         </div>
                     </div>
-                    <div class="pg-validator">
-                        <a href="#" class="title">validator</a>
+<!--                    클래스에 active를 붙이면 선택된 항목을 표시됩니다.-->
+                    <div class="pg-contributor">
+                        <span class="title sp-contributor">Contributor</span>
                         <div class="contents">
-                            <div class="btn-container">
-                                <a href="http://monopoly.blueindex.com" target="_blank" class="link-primary"><span class="icon-blank"></span> Go to MONOPOLY</a>
-                            </div>
+                            <figure class="figure">
+<!--                                <img class="img" src="../images/figure_contributor.png" title="contributor">-->
+                                <figcaption class="caption">
+                                    Contributors are responsible for submitting auction information on specific artworks to receive reward stakes. Every time the data is used on Blue Index platform, the contributor automatically receives rewards.<BR><BR>
+                                    To ensure up-to-date information, the rewards stakes can be taken by another Contributor who submits an updated information.
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+<!--                    클래스에 active를 붙이면 선택된 항목을 표시됩니다.-->
+                    <div class="pg-validator">
+                        <span class="title sp-validator">validator</span>
+                        <div class="contents">
                             <figure class="figure">
 <!--                                <img class="img" src="../images/figure_validator.png" title="validator">-->
                                 <figcaption class="caption">
-                                    The information has to be confirmed by Validators for its accuracy who also receives rewards from usage.
+                                    Validators are industry professionals responsible confirming the accuracy of the data submitted by Contributors.<BR><BR>
+                                    Validators also receive part of reward stakes.
+
                                 </figcaption>
                             </figure>
                         </div>
                     </div>
+                    <!--                    클래스에 active를 붙이면 선택된 항목을 표시됩니다.-->
                     <div class="pg-datasharing">
-                        <a href="#" class="title">Data Sharing</a>
+                        <span class="title sp-datasharing">Data Sharing</span>
                         <div class="contents">
-                            <div class="btn-container">
-                                <a href="http://monopoly.blueindex.com" target="_blank" class="link-primary"><span class="icon-blank"></span> Go to MONOPOLY</a>
-                            </div>
                             <figure class="figure">
 <!--                                <img class="img" src="../images/figure_datasharing.png" title="data sharing">-->
                                 <figcaption class="caption">
-                                    Monopoly offers proven, transparent data in Blue Index and Live Auction Art. As a result, all of our services are securing transparency and reliability of data through Blockchain technology.
+                                    Approved contributions are shared on the Blue Index platform for end-users to search and to analyze.
                                 </figcaption>
                             </figure>
                         </div>
@@ -161,12 +174,11 @@ https://spencer4701.com/en/#products
             </div>
             <div class="sub-container">
                 <div class="apps">
-                    <a href="https://appsto.re/us/N028-.i" class="link-primary"><span class="icon icon-apple"></span> AppStore</a>
-                    <a href="https://play.google.com/store/apps/details?id=com.gnsart.live.auction.app" class="link-primary"><span class="icon icon-android"></span> PlayStore</a>
+                    <a href="https://appsto.re/us/N028-.i" class="link-primary"><span class="icon-apple"></span> AppStore</a>
+                    <a href="https://play.google.com/store/apps/details?id=com.gnsart.live.auction.app" class="link-primary"><span class="icon-android"></span> PlayStore</a>
                 </div>
                 <div class="major-description">
-                    Live Auction Art provides immediate updates and results from six global auction houses in one convenient free auction app on any PDA. Users
-                    benefit from the ability to view multiple auctions quickly and efficiently.
+                    Live Auction Art provides real-time updates and results.
                 </div>
 
                 <div class="specs">
@@ -239,10 +251,8 @@ https://spencer4701.com/en/#products
                     <a href="https://play.google.com/store/apps/details?id=com.wiveel.inartpress" class="link-primary"><span class="icon-android"></span> PlayStore</a>
                 </div>
                 <div class="major-description">
-                    In Art Press will show you the galleries and museum exhibits around you. <br>
-                    Look for the exhibits that the media is paying attention to. In Art Press will show you how close you are to the gallery.<br>
-                    <br>
-                    Just access. It's free!
+                    'In Art Press' will show you the galleries and museum exhibits around you. <br>
+                    Look for the exhibits that the media is paying attention to.
                 </div>
 
                 <div class="specs">
@@ -280,7 +290,7 @@ https://spencer4701.com/en/#products
             <div class="contact">
                 <p class="title">GET IN TOUCH</p>
                 <p class="text">
-                    E. <a href="mailto:hello@blueindex.com">hello@blueindex.com</a>
+                    E. <a href="mailto:hello@blueindex.com" class="link-footer">hello@blueindex.com</a>
                 </p>
             </div>
             <div class="office">
