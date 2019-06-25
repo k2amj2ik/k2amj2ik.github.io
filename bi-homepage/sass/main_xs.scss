@@ -778,6 +778,7 @@ body>.container {
               @include placeholder-color($text-lightgray);
               &.textarea {
                 height: 110px !important;;
+                resize: none;
               }
             }
             .btn-container {

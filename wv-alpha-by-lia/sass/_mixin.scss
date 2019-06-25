@@ -1084,33 +1084,20 @@
   }
 }
 
-// icons
-@mixin icons($url,$img-width,$img-height) {
-  position: relative;
-  display: inline-block;
-  width: 18px;
-  height: 18px;
-  &:after {
-    content: '';
-    display: inline-block;
-    position: absolute;
-    right: 0;
-    top: 4px;
-    width: 18px;
-    height: 18px;
-    background-color: transparent;
-    background-image: url($url);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: $img-width $img-height;
-    opacity: 0.5;
-  }
-}
-
-
 // calculator
 @mixin calculator ($property, $expression) {
   #{$property}: -moz-calc(#{$expression});
   #{$property}: -webkit-calc(#{$expression});
   #{$property}: calc(#{$expression});
+}
+
+// background image---------------------------------------------------------------------
+@mixin bg-image($color,$url,$repeat,$attachment,$position-y,$position-x,$width,$height) {
+  background-color: $color;
+  background-image: url(#{$url});
+  background-repeat: $repeat;
+  background-attachment: $attachment;
+  background-position-y: $position-y;
+  background-position-x: $position-x;
+  background-size: $width $height;
 }

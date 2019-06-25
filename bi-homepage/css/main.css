@@ -1303,6 +1303,7 @@ body > .container .inner-container .section.pg-contact .sub-container .input-def
 }
 body > .container .inner-container .section.pg-contact .sub-container .input-default.textarea {
   height: 110px !important;
+  resize: none;
 }
 body > .container .inner-container .section.pg-contact .sub-container .btn-container {
   margin: 0 0 0 169px;

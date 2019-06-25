@@ -170,24 +170,19 @@
   &.artists {
     .inner-container {
       &>.keyword {
-        width: 100%;
-        height: 209px;
+        min-height: 155px;
         background-color: $bg-dark;
         .title {
-          max-width: $width-inner-container;
-          margin: 0 auto;
-          padding: 17px 0 0 56px;
+          padding: 40px 0 0 29px;
           font-family: $font-family-roboto;
           font-size: 16px;
-          letter-spacing: -0.3px;
+          letter-spacing: 0;
           font-weight: 400;
           color: $text-default-bgdark;
           line-height: 100%;
         }
         .word {
-          max-width: $width-inner-container;
-          margin: 0 auto;
-          padding: 36px 0 0 55px;
+          padding: 12px 0 24px 30px;
           font-family: $font-family-roboto;
           font-size: 40px;
           letter-spacing: 0;
@@ -200,8 +195,6 @@
         background-color: $bg-light;
         height: 64px;
         .area {
-          max-width: $width-inner-container;
-          margin: 0 auto;
           height: 100%;
           .btn {
             float: left;
@@ -210,21 +203,31 @@
             overflow: hidden;
             width: 33%;
             height: 64px;
-            padding: 19px 56px 0 56px;
-            text-align: center;
-            @include text-style(text-submenu);
+            padding-top: 100px;
+            position: relative;
+            .icon {
+              display: inline-block;
+              position: absolute;
+              left: 0;
+              top: 0;
+              width: 100%;
+              height: 64px;
+              border: 1px solid red;
+            .icon-artist2 {
+              @include bg-image(transparent,'../images/list-artist-icon@2x.png',no-repeat,scroll,10px,center,14px,19px);
+            }
             &.active {
-              @include text-style(text-submenu-active);
               background-color: $bg-white;
               .icon {
                 &:after {
                   opacity: 1;
+                }
               }
             }
-          }
             &:hover {
               background-color: $bg-lightgray;
               text-decoration: none;
+            }
           }
         }
       }

@@ -987,6 +987,7 @@ body > .container .inner-container .section.pg-contact .sub-container .form-cont
 }
 body > .container .inner-container .section.pg-contact .sub-container .form-contact .input-default.textarea {
   height: 110px !important;
+  resize: none;
 }
 body > .container .inner-container .section.pg-contact .sub-container .form-contact .btn-container {
   float: right;
