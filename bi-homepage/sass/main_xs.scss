@@ -187,9 +187,30 @@ body>.container {
       float:left;
       cursor: pointer;
       margin: 3px 0 0 0;
-      width: 198px;
+      width: 249px;
       height: 50px;
-      @include bg-image(transperent,'../images/logo@2x.png',no-repeat,scroll,center,center,151px,18px);
+      @include bg-image(transperent,'../images/logo@2x.png',no-repeat,scroll,center,24px,151px,18px);
+      &.subtitle {
+        background-image : none;
+        &.aboutus {&:after {content: 'ABOUT US';}}
+        &.blueindex {&:after {content: 'BLUE INDEX';}}
+        &.monopoly {&:after {content: 'MONOPOLY';}}
+        &.laa {&:after {content: 'LIVE AUCTION ART';}}
+        &.iap {&:after {content: 'IN ART PRESS';}}
+        &.contact {&:after {content: 'CONTACT';}}
+        &:after {
+          display:  inline-block;
+          margin: 0 0 0 0;
+          padding: 10px 0 10px 19px;
+          font-size: 24px;
+          font-weight: 600;
+          letter-spacing: 0;
+          color: $text-black;
+          line-height: 100%;
+          text-transform: uppercase;
+          border-left: 5px solid $bg-black;
+        }
+      }
     }
     .menus {
       margin: 0;

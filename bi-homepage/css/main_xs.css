@@ -369,15 +369,48 @@ body > .container .top-navigation .logo {
   float: left;
   cursor: pointer;
   margin: 3px 0 0 0;
-  width: 198px;
+  width: 249px;
   height: 50px;
   background-color: transperent;
   background-image: url(../images/logo@2x.png);
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position-y: center;
-  background-position-x: center;
+  background-position-x: 24px;
   background-size: 151px 18px;
+}
+body > .container .top-navigation .logo.subtitle {
+  background-image: none;
+}
+body > .container .top-navigation .logo.subtitle.aboutus:after {
+  content: 'ABOUT US';
+}
+body > .container .top-navigation .logo.subtitle.blueindex:after {
+  content: 'BLUE INDEX';
+}
+body > .container .top-navigation .logo.subtitle.monopoly:after {
+  content: 'MONOPOLY';
+}
+body > .container .top-navigation .logo.subtitle.laa:after {
+  content: 'LIVE AUCTION ART';
+}
+body > .container .top-navigation .logo.subtitle.iap:after {
+  content: 'IN ART PRESS';
+}
+body > .container .top-navigation .logo.subtitle.contact:after {
+  content: 'CONTACT';
+}
+body > .container .top-navigation .logo.subtitle:after {
+  display: inline-block;
+  margin: 0 0 0 0;
+  padding: 10px 0 10px 19px;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 0;
+  color: #000;
+  line-height: 100%;
+  text-transform: uppercase;
+  border-left: 5px solid #000;
 }
 body > .container .top-navigation .menus {
   margin: 0;

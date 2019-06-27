@@ -499,6 +499,15 @@ body > .container .top-navigation .hamburger-menu .icon-hamburger {
   background-position-x: 10px;
   background-size: 24px 16px;
 }
+body > .container .top-navigation.scrolled {
+  background-color: transparent;
+}
+body > .container .top-navigation.scrolled .logo {
+  display: none;
+}
+body > .container .top-navigation.scrolled .menus {
+  display: none;
+}
 body > .container .inner-container {
   width: 1200px;
   margin: 0 auto;

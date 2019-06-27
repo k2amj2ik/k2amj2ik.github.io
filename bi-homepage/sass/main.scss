@@ -308,6 +308,15 @@ body>.container {
         @include bg-image($bg-white,'../images/icon_hamberger@2x.png',no-repeat,scroll,center,10px,24px,16px)
       }
     }
+    &.scrolled {
+      background-color: transparent;
+      .logo {
+        display: none;
+      }
+      .menus {
+        display: none;
+      }
+    }
   }
   .inner-container {
     width: $width-inner-container;
@@ -1081,3 +1090,7 @@ body>.container {
     }
   }
 }
+
+
+
+
