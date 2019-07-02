@@ -220,7 +220,7 @@ body>.container {
     }
     .btn-back {
       float: right;
-      margin: 16px 40px 0 0;
+      margin: 13px 0 0 7px;
       width: 261px;
       @include box-style(btn-third-bgdark);
 
@@ -468,21 +468,25 @@ body>.container {
 //icons--------------------------------------------------------------------------------------
 .icon {
   &.icon-artist2 {
-
-    width: 10px;
-    height: 13px;
-    @include icons('../images/icon_artist2.png',10px,13px);
+    display: inline-block;
+    width: 16px;
+    height: 25px;
+    opacity: 0.5;
+    @include bg-image(transparent,'../images/icon_artist2.png',no-repeat,scroll,12px,left,10px,13px);
   }
   &.icon-lots {
-    @include icons('../images/icon_lots.png',12px,7px);
+    display: inline-block;
+    width: 16px;
+    height: 25px;
+    opacity: 0.5;
+    @include bg-image(transparent,'../images/icon_lots.png',no-repeat,scroll,17px,left,12px,7px);
   }
   &.icon-paddle {
-    @include icons('../images/icon_paddle.png',11px,18px);
-  }
-  &.active {
-    &:after {
-      opacity: 1;
-    }
+    display: inline-block;
+    width: 16px;
+    height: 25px;
+    opacity: 0.5;
+    @include bg-image(transparent,'../images/icon_paddle.png',no-repeat,scroll,8px,left,11px,18px);
   }
 }
 .icon-reset {

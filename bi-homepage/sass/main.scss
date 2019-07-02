@@ -150,7 +150,7 @@ body {
   width: 30px;
   position: absolute;
   top: 200px;
-  left: 76px;
+  @include calculator('left','50% - 517px');
   display: flex;
   flex-direction: column;
   z-index: $z-index-4;
@@ -165,6 +165,7 @@ body {
     background-color: $bg-default;
   }
   .btn-up, .btn-down {
+    cursor: pointer;
     display: inline-block;
     width: 50px;
     height: 60px;
@@ -319,21 +320,40 @@ body>.container {
     }
   }
   .inner-container {
-    width: $width-inner-container;
-    margin: 0 auto;
-    min-height: 100%;
-    padding: 95px 0 0 0;
+    width: 100%;
+    //min-height: 100%;
+    padding: 0 0 0 0;
+    position: relative;
+    background-color: $bg-black;
     .section {
-      position: relative;
-      height: 1000px;
+      padding-top: 95px;
+      width: 100%;
+      //height: 1000px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      visibility: visible;
+      overflow: hidden;
+      -webkit-backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -webkit-transform: translate3d(0, 0, 0);
+      -moz-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+      -webkit-transform-style: preserve-3d;
+      -moz-transform-style: preserve-3d;
+      transform-style: preserve-3d;
+      background: $bg-white;
       >.main-container {
-        margin: 0 0 0 0;
+        width: $width-inner-container;
+        margin: 0 auto;
         padding: 0 0 0 89px;
         font-size: 36px;
         font-weight: 600;
         letter-spacing: 0;
         color: $text-default;
         line-height: 44px;
+        position: relative;
         .highlight {
           @include highlight('Search');
         }
@@ -366,7 +386,8 @@ body>.container {
       >.sub-container {
         position: absolute;
         top: 0;
-        left: 515px;
+        @include calculator('left','50% - 89px');
+        //left: 515px;
         width: 689px;
         .figure {
           padding: 0 0 0 0;

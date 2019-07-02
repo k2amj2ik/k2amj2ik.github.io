@@ -14,9 +14,11 @@
 <body>
 <div class="container lots">
     <header class="top-navigation">
+        <a href="main.html" class="btn-mobile-back mobile-only" title="Go to back"></a>
         <a href="main.html" class="logo"></a>
+        <a href="main.html" class="btn-mobile-search mobile-only" title="Go to search"></a>
         <!-- active 붙이면 검색어 자동완성 레이어 표시됩니다. -->
-        <form class="form-artist-search-top active" action="lots.html">
+        <form class="form-artist-search-top" action="lots.html">
             <div class="form-group">
                 <input type="text" class="input-bgdark" placeholder="Search" value="">
                 <button type="submit" class="btn-search">Search</button>
@@ -42,7 +44,7 @@
         </form>
         <ul class="location">
             <li class="normal"><a class="nav-link" href="main.html"><span class="icon-home"></span> HOME</a></li>
-            <li class="here"><a class="nav-link" href="lots.html"><span class="icon-artist"></span> JAN VAN DE CAPELLE</a></li>
+            <li class="here"><a class="nav-link" href="artists.html"><span class="icon-artist"></span> Search artist</a></li>
         </ul>
     </header>
     <div class="inner-container">
@@ -51,7 +53,7 @@
             <p class="title">Spain, France, 1881-1973</p>
         </div>
         <!-- form-filters 에 open을 attach 하면 열린화면으로 전환 됨. -->
-        <form class="form-filters" action="lots.html">
+        <form class="form-filters hidden" action="lots.html">
             <div class="default">
                 <div class="filters">
                     <div class="filter category">
@@ -264,7 +266,7 @@
                 <li><a href="#" class="btn-reset"></a></li>
             </ul>
         </form>
-        <div class="result-area">
+        <div class="result-area hidden">
             <p class="result-count">Showing 21 Results</p>
             <div class="search-words">
                 <span class="word">Category : All</span>
@@ -432,7 +434,7 @@
         </footer>
     </div>
 </div>
-<!--<div class="bg bg-lots"></div>-->
+<div class="bg bg-lots"></div>
 <!--<div class="bg bg-lots-filter"></div>-->
 <!--<div class="bg bg-lots-result"></div>-->
 </body>

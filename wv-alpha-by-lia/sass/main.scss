@@ -1,5 +1,6 @@
 @import 'common';
 
+
 //login, main
 .bgdark {
   background: $bg-dark url('../images/logo_pc_type2.png') no-repeat bottom center/ auto 213px;
@@ -226,21 +227,23 @@
             overflow: hidden;
             width: 218px;
             height: 64px;
-            padding: 19px 56px 0 56px;
+            padding: 14px 0 0 0;
             text-align: center;
             @include text-style(text-submenu);
             &.active {
               @include text-style(text-submenu-active);
               background-color: $bg-white;
               .icon {
-                &:after {
-                  opacity: 1;
-                }
+                opacity: 1;
               }
             }
             &:hover {
               background-color: $bg-lightgray;
               text-decoration: none;
+              color: $text-black;
+              .icon {
+                opacity: 1;
+              }
             }
           }
         }

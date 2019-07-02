@@ -322,7 +322,9 @@ body {
   width: 30px;
   position: absolute;
   top: 200px;
-  left: 76px;
+  left: -moz-calc(50% - 517px);
+  left: -webkit-calc(50% - 517px);
+  left: calc(50% - 517px);
   display: flex;
   flex-direction: column;
   z-index: 50;
@@ -338,6 +340,7 @@ body {
   background-color: #e5e5e4;
 }
 .mover .btn-up, .mover .btn-down {
+  cursor: pointer;
   display: inline-block;
   width: 50px;
   height: 60px;
@@ -509,23 +512,40 @@ body > .container .top-navigation.scrolled .menus {
   display: none;
 }
 body > .container .inner-container {
-  width: 1200px;
-  margin: 0 auto;
-  min-height: 100%;
-  padding: 95px 0 0 0;
+  width: 100%;
+  padding: 0 0 0 0;
+  position: relative;
+  background-color: #000;
 }
 body > .container .inner-container .section {
-  position: relative;
-  height: 1000px;
+  padding-top: 95px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: visible;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  background: #fff;
 }
 body > .container .inner-container .section > .main-container {
-  margin: 0 0 0 0;
+  width: 1200px;
+  margin: 0 auto;
   padding: 0 0 0 89px;
   font-size: 36px;
   font-weight: 600;
   letter-spacing: 0;
   color: #1c1d1e;
   line-height: 44px;
+  position: relative;
 }
 body > .container .inner-container .section > .main-container .highlight {
   position: relative;
@@ -602,7 +622,9 @@ body > .container .inner-container .section > .main-container.section-title .des
 body > .container .inner-container .section > .sub-container {
   position: absolute;
   top: 0;
-  left: 515px;
+  left: -moz-calc(50% - 89px);
+  left: -webkit-calc(50% - 89px);
+  left: calc(50% - 89px);
   width: 689px;
 }
 body > .container .inner-container .section > .sub-container .figure {
