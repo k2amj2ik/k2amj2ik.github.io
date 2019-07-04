@@ -53,7 +53,7 @@
             <p class="title">Spain, France, 1881-1973</p>
         </div>
         <!-- form-filters 에 open을 attach 하면 열린화면으로 전환 됨. -->
-        <form class="form-filters hidden" action="lots.html">
+        <form class="form-filters" action="lots.html">
             <div class="default">
                 <div class="filters">
                     <div class="filter category">
@@ -266,8 +266,12 @@
                 <li><a href="#" class="btn-reset"></a></li>
             </ul>
         </form>
-        <div class="result-area hidden">
+        <div class="result-area">
             <p class="result-count">Showing 21 Results</p>
+            <div class="result-btns">
+                <button type="button" class="btn-sort"></button>
+                <button type="button" class="btn-filters"></button>
+            </div>
             <div class="search-words">
                 <span class="word">Category : All</span>
                 <span class="word">Year : 1960-1980</span>
@@ -315,6 +319,7 @@
                         <p class="estimate custom-currency">₩ 800,000,000,000,000 - ₩ 900,000,000,000,000</p>
                         <p class="sold">HK$ 1,670,000,000,000 <span class="premium">Premium</span></p>
                         <p class="sold custom-currency">₩ 8,000,000,000,000</p>
+                        <p class="guarantee"><span class="in-house"></span></p>
                     </td>
                 </tr>
                 <tr onclick="location.href='lot.html'">
@@ -371,6 +376,7 @@
                     <td class="price">
                         <p class="estimate">HK$ 800,000,000,000 - HK$ 900,000,000,000</p>
                         <p class="sold">HK$ 1,670,000,000,000 <span class="premium">Premium</span></p>
+                        <p class="guarantee"><span class="third-party"></span></p>
                     </td>
                 </tr>
                 <tr onclick="location.href='lot.html'">
@@ -390,6 +396,7 @@
                     <td class="price">
                         <p class="estimate">HK$ 800,000,000,000 - HK$ 900,000,000,000</p>
                         <p class="estimate custom-currency">₩ 800,000,000,000,000 - ₩ 900,000,000,000,000</p>
+                        <p class="guarantee"><span class="in-house"></span></p>
                     </td>
                 </tr>
                 <tr onclick="location.href='lot.html'">
@@ -434,7 +441,7 @@
         </footer>
     </div>
 </div>
-<div class="bg bg-lots"></div>
+<!--<div class="bg bg-lots"></div>-->
 <!--<div class="bg bg-lots-filter"></div>-->
 <!--<div class="bg bg-lots-result"></div>-->
 </body>

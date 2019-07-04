@@ -311,18 +311,18 @@
       background-color: $bg-light;
       .keyword {
         width: 100%;
-        height: 209px;
+        min-height: 209px;
         background-color: $bg-dark;
         .title {
           max-width: $width-inner-container;
           margin: 0 auto;
-          padding: 17px 0 0 56px;
+          padding: 0 0 40px 56px;
           @include text-style(text-keyword-title);
         }
         .word {
           max-width: $width-inner-container;
           margin: 0 auto;
-          padding: 36px 0 0 55px;
+          padding: 36px 0 19px 55px;
           @include text-style(text-keyword-big);
         }
       }
@@ -619,6 +619,9 @@
           margin: 31px 0 0 0;
           @include text-style(text-artist-result-count);
         }
+        .result-btns {
+          display: none;
+        }
         .sort {
           position: relative;
           cursor: pointer;
@@ -745,7 +748,15 @@
                     margin-bottom: 15px;
                   }
                   .upcoming {
-                    @include box-style(badge);
+                    font-family: $font-family-roboto;
+                    font-size: 10px;
+                    letter-spacing: 0;
+                    font-weight: 400;
+                    color: $text-highlight;
+                    font-style: normal;
+                    line-height: 100%;
+                    text-transform: lowercase;
+                    //@include box-style(badge);
                   }
                   .vendor {
                     @include text-style(text-table-vendor);
@@ -781,6 +792,18 @@
                     &.custom-currency {
                       @include text-style(text-table-estimate);
                       font-size: 14px;
+                    }
+                  }
+                  .guarantee {
+                    margin: 20px 0 10px 0;
+                    .third-party, .in-house {
+                      display: inline-block;
+                      width: 64px;
+                      height: 46px;
+                      @include bg-image(transparent,'../images/3-rd-party@2x.png',no-repeat,scroll,center,center,64px,46px);
+                    }
+                    .in-house {
+                      @include bg-image(transparent,'../images/in-house@2x.png',no-repeat,scroll,center,center,64px,46px);
                     }
                   }
                 }

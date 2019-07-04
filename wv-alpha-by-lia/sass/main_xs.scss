@@ -314,7 +314,7 @@
         min-height: 155px;
         background-color: $bg-dark;
         .title {
-          padding: 40px 0 0 29px;
+          padding: 0 0 40px 29px;
           font-family: $font-family-roboto;
           font-size: 16px;
           letter-spacing: 0;
@@ -323,7 +323,7 @@
           line-height: 100%;
         }
         .word {
-          padding: 12px 0 24px 30px;
+          padding: 32px 0 19px 30px;
           font-family: $font-family-roboto;
           font-size: 40px;
           letter-spacing: 0;
@@ -334,6 +334,7 @@
       }
 
       .form-filters {
+        display: none;
         .default {
           background-color: $bg-white;
           padding-top: 20px;
@@ -443,7 +444,6 @@
             }
           }
         }
-
         .more {
           display: none;
           background-color: $bg-white;
@@ -569,7 +569,6 @@
             }
           }
         }
-
         .btns {
           background-color: $bg-light;
           border-top: 1px solid $line-gray;
@@ -579,7 +578,6 @@
           align-items: center;
           justify-content: center;
         }
-
         &.open {
           .default {
             .btn-down-toggle {
@@ -592,40 +590,10 @@
           }
         }
       }
-
       .result-area {
-        width: $width-inner-container;
-        margin: 0 auto;
-        margin-top: 92px;
-
         .search-words {
-          padding-right: 200px;
-          margin: 18px 0 0 0;
-
-          .word {
-            cursor: pointer;
-            display: inline-block;
-            padding: 9px 10px 6px 9px;
-            margin: 0 4px 6px 0;
-            background-color: $bg-darkgray;
-            @include text-style(text-badge);
-
-            &:after {
-              content: 'X';
-              color: $text-darkgray;
-              padding-left: 10px;
-            }
-
-            &:hover {
-              background-color: $bg-gray;
-
-              &:after {
-                color: $text-white;
-              }
-            }
-          }
+          display: none;
         }
-
         .text-header {
           display: inline-block;
           padding-right: 25px;
@@ -661,117 +629,70 @@
             @include text-style(text-title-desc);
           }
         }
-
         .result-count {
-          margin: 31px 0 0 0;
-          @include text-style(text-artist-result-count);
+          display: inline-block;
+          height: 63px;
+          margin: 0 0 0 0;
+          padding: 22px 0 0 29px;
+          font-family: $font-family-roboto;
+          font-size: 14px;
+          letter-spacing: 0;
+          font-weight: 400;
+          color: $text-description;
+          line-height: 140%;
         }
-
-        .sort {
-          position: relative;
-          cursor: pointer;
+        .result-btns {
           display: inline-block;
           float: right;
-          margin: -25px 0 0 0;
-          padding: 4px 0 4px 10px;
-
-          &:hover {
-            text-decoration: underline;
-          }
-
-          .sorted {
+          margin: 10px 10px 0 0;
+          .btn-sort {
+            display: inline-block;
             margin: 0 0 0 0;
-            @include text-style(text-selected);
-            position: relative;
-
-            &:after {
-              content: '';
-              position: absolute;
-              right: -18px;
-              top: 8px;
-              margin: 0;
-              width: 7px;
-              height: 6px;
-              //background: transparent url("../images/icon_dropdown.png") no-repeat center center;
-            }
+            width: 42px;
+            height: 40px;
+            border: 0;
+            @include bg-image(transparent, '../images/list-sort-icon@2x.png', no-repeat, scroll, center, center, 20px, 16px);
           }
-
-          .options {
-            display: none;
-            position: absolute;
-            right: 0;
-            top: 30px;
-            background-color: $bg-default;
-            z-index: $z-index-5;
-            @include box-style(select-options);
-
-            &.active {
-              display: block;
-            }
-
-            .option {
-              cursor: pointer;
-              @include text-style(text-select-target);
-              border: 1px solid $border-normal;
-              border-bottom: 0;
-              padding: 6px 0 8px 26px;
-              width: 204px;
-
-              &:last-child {
-                border-bottom: 1px solid $border-normal;
-              }
-
-              &:hover {
-                background-color: $bg-fairy;
-              }
-            }
+          .btn-filters {
+            display: inline-block;
+            margin: 0 0 0 0;
+            width: 42px;
+            height: 40px;
+            border: 0;
+            @include bg-image(transparent, '../images/list-filter-icon@2x.png', no-repeat, scroll, center, center, 17px, 17px);
           }
         }
-
+        .sort {
+          display: none;
+        }
         .results {
           width: 100%;
           background-color: $bg-white;
-          margin: 11px 0 0 0;
-
+          margin: 0 0 0 0;
           thead {
-            tr {
-              .col {
-                border: 0;
-                border-bottom: 1px solid $border-table;
-                text-align: center;
-                height: 47px;
-                padding: 0 0 0 0;
-                @include text-style(text-table-th);
-
-                &.details {
-                  width: 604px;
-                }
-
-                &.info {
-                  width: 208px;
-                }
-              }
-            }
+            display: none;
           }
 
           tbody {
             tr {
               td {
-                height: 200px;
+                border: 1px solid red;
+                display: inline-block;
+                width: 100%;
                 border-bottom: 1px solid $border-table;
                 cursor: pointer;
                 position: relative;
 
                 &.lot-detail {
                   vertical-align: top;
-                  padding: 40px 50px 0 180px;
+                  padding: 27px 10px 0 150px;
                   position: relative;
 
                   .img {
-                    width: 110px;
-                    height: 110px;
+                    width: 100px;
+                    height: 100px;
                     position: absolute;
-                    left: 50px;
+                    left: 30px;
                     top: 30px;
 
                     img {

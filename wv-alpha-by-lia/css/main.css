@@ -1536,13 +1536,13 @@ body > .container .inner-container .footer .copyright {
 }
 .container.lots .inner-container .keyword {
   width: 100%;
-  height: 209px;
+  min-height: 209px;
   background-color: #232629;
 }
 .container.lots .inner-container .keyword .title {
   max-width: 1184px;
   margin: 0 auto;
-  padding: 17px 0 0 56px;
+  padding: 0 0 40px 56px;
   font-family: "Roboto";
   font-size: 17px;
   letter-spacing: -0.3px;
@@ -1553,7 +1553,7 @@ body > .container .inner-container .footer .copyright {
 .container.lots .inner-container .keyword .word {
   max-width: 1184px;
   margin: 0 auto;
-  padding: 36px 0 0 55px;
+  padding: 36px 0 19px 55px;
   font-family: "Roboto";
   font-size: 56px;
   letter-spacing: 0.1px;
@@ -1907,6 +1907,9 @@ body > .container .inner-container .footer .copyright {
   color: #888888;
   line-height: 140%;
 }
+.container.lots .inner-container .result-area .result-btns {
+  display: none;
+}
 .container.lots .inner-container .result-area .sort {
   position: relative;
   cursor: pointer;
@@ -2096,19 +2099,14 @@ body > .container .inner-container .footer .copyright {
   margin-bottom: 15px;
 }
 .container.lots .inner-container .result-area .results tbody tr td.sale-info .upcoming {
-  background-color: #a7afb7;
-  padding: 3px 8px 2px 8px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-  text-transform: uppercase;
   font-family: "Roboto";
   font-size: 10px;
   letter-spacing: 0;
-  font-weight: 700;
-  color: #fff;
+  font-weight: 400;
+  color: #b1bd53;
   font-style: normal;
   line-height: 100%;
+  text-transform: lowercase;
 }
 .container.lots .inner-container .result-area .results tbody tr td.sale-info .vendor {
   font-family: "Roboto";
@@ -2198,6 +2196,30 @@ body > .container .inner-container .footer .copyright {
   color: #666666;
   line-height: 23px;
   font-size: 14px;
+}
+.container.lots .inner-container .result-area .results tbody tr td.price .guarantee {
+  margin: 20px 0 10px 0;
+}
+.container.lots .inner-container .result-area .results tbody tr td.price .guarantee .third-party, .container.lots .inner-container .result-area .results tbody tr td.price .guarantee .in-house {
+  display: inline-block;
+  width: 64px;
+  height: 46px;
+  background-color: transparent;
+  background-image: url(../images/3-rd-party@2x.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position-y: center;
+  background-position-x: center;
+  background-size: 64px 46px;
+}
+.container.lots .inner-container .result-area .results tbody tr td.price .guarantee .in-house {
+  background-color: transparent;
+  background-image: url(../images/in-house@2x.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position-y: center;
+  background-position-x: center;
+  background-size: 64px 46px;
 }
 .container.lots .inner-container .result-area .results tbody tr:hover {
   background-color: #f7fafc;

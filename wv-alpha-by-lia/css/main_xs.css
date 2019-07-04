@@ -1070,7 +1070,7 @@ body > .container .inner-container .footer {
   background-color: #232629;
 }
 .container.lots .inner-container .keyword .title {
-  padding: 40px 0 0 29px;
+  padding: 0 0 40px 29px;
   font-family: "Roboto";
   font-size: 16px;
   letter-spacing: 0;
@@ -1079,13 +1079,16 @@ body > .container .inner-container .footer {
   line-height: 100%;
 }
 .container.lots .inner-container .keyword .word {
-  padding: 12px 0 24px 30px;
+  padding: 32px 0 19px 30px;
   font-family: "Roboto";
   font-size: 40px;
   letter-spacing: 0;
   font-weight: 700;
   color: #fff;
   line-height: 48px;
+}
+.container.lots .inner-container .form-filters {
+  display: none;
 }
 .container.lots .inner-container .form-filters .default {
   background-color: #fff;
@@ -1347,38 +1350,8 @@ body > .container .inner-container .footer {
 .container.lots .inner-container .form-filters.open .more {
   display: block;
 }
-.container.lots .inner-container .result-area {
-  width: 1184px;
-  margin: 0 auto;
-  margin-top: 92px;
-}
 .container.lots .inner-container .result-area .search-words {
-  padding-right: 200px;
-  margin: 18px 0 0 0;
-}
-.container.lots .inner-container .result-area .search-words .word {
-  cursor: pointer;
-  display: inline-block;
-  padding: 9px 10px 6px 9px;
-  margin: 0 4px 6px 0;
-  background-color: #a7afb7;
-  font-family: "Roboto";
-  font-size: 14px;
-  letter-spacing: 0.2px;
-  font-weight: 300;
-  color: #fff;
-  line-height: 100%;
-}
-.container.lots .inner-container .result-area .search-words .word:after {
-  content: 'X';
-  color: #666666;
-  padding-left: 10px;
-}
-.container.lots .inner-container .result-area .search-words .word:hover {
-  background-color: #32363a;
-}
-.container.lots .inner-container .result-area .search-words .word:hover:after {
-  color: #fff;
+  display: none;
 }
 .container.lots .inner-container .result-area .text-header {
   display: inline-block;
@@ -1424,7 +1397,10 @@ body > .container .inner-container .footer {
   text-transform: none;
 }
 .container.lots .inner-container .result-area .result-count {
-  margin: 31px 0 0 0;
+  display: inline-block;
+  height: 63px;
+  margin: 0 0 0 0;
+  padding: 22px 0 0 29px;
   font-family: "Roboto";
   font-size: 14px;
   letter-spacing: 0;
@@ -1432,116 +1408,68 @@ body > .container .inner-container .footer {
   color: #888888;
   line-height: 140%;
 }
-.container.lots .inner-container .result-area .sort {
-  position: relative;
-  cursor: pointer;
+.container.lots .inner-container .result-area .result-btns {
   display: inline-block;
   float: right;
-  margin: -25px 0 0 0;
-  padding: 4px 0 4px 10px;
+  margin: 10px 10px 0 0;
 }
-.container.lots .inner-container .result-area .sort:hover {
-  text-decoration: underline;
-}
-.container.lots .inner-container .result-area .sort .sorted {
+.container.lots .inner-container .result-area .result-btns .btn-sort {
+  display: inline-block;
   margin: 0 0 0 0;
-  font-family: "Roboto";
-  font-size: 14px;
-  letter-spacing: 0;
-  font-weight: 500;
-  color: #666666;
-  font-style: normal;
-  line-height: 140%;
-  position: relative;
-}
-.container.lots .inner-container .result-area .sort .sorted:after {
-  content: '';
-  position: absolute;
-  right: -18px;
-  top: 8px;
-  margin: 0;
-  width: 7px;
-  height: 6px;
-}
-.container.lots .inner-container .result-area .sort .options {
-  display: none;
-  position: absolute;
-  right: 0;
-  top: 30px;
-  background-color: #fff;
-  z-index: 60;
-  cursor: pointer;
-  -webkit-box-shadow: 4px 4px 4px rgba(247, 250, 252, 0.7);
-  box-shadow: 4px 4px 4px rgba(247, 250, 252, 0.7);
+  width: 42px;
+  height: 40px;
   border: 0;
-  color: 4px 4px 4px rgba(247, 250, 252, 0.7);
-  background-color: 4px 4px 4px rgba(247, 250, 252, 0.7);
+  background-color: transparent;
+  background-image: url(../images/list-sort-icon@2x.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position-y: center;
+  background-position-x: center;
+  background-size: 20px 16px;
 }
-.container.lots .inner-container .result-area .sort .options.active {
-  display: block;
+.container.lots .inner-container .result-area .result-btns .btn-filters {
+  display: inline-block;
+  margin: 0 0 0 0;
+  width: 42px;
+  height: 40px;
+  border: 0;
+  background-color: transparent;
+  background-image: url(../images/list-filter-icon@2x.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position-y: center;
+  background-position-x: center;
+  background-size: 17px 17px;
 }
-.container.lots .inner-container .result-area .sort .options .option {
-  cursor: pointer;
-  font-family: "Roboto";
-  font-size: 14px;
-  letter-spacing: 0;
-  font-weight: 300;
-  color: #222222;
-  font-style: normal;
-  line-height: 140%;
-  border: 1px solid #dcdcdc;
-  border-bottom: 0;
-  padding: 6px 0 8px 26px;
-  width: 204px;
-}
-.container.lots .inner-container .result-area .sort .options .option:last-child {
-  border-bottom: 1px solid #dcdcdc;
-}
-.container.lots .inner-container .result-area .sort .options .option:hover {
-  background-color: #f7fafc;
+.container.lots .inner-container .result-area .sort {
+  display: none;
 }
 .container.lots .inner-container .result-area .results {
   width: 100%;
   background-color: #fff;
-  margin: 11px 0 0 0;
+  margin: 0 0 0 0;
 }
-.container.lots .inner-container .result-area .results thead tr .col {
-  border: 0;
-  border-bottom: 1px solid #eef4f6;
-  text-align: center;
-  height: 47px;
-  padding: 0 0 0 0;
-  font-family: "Roboto";
-  font-size: 12px;
-  letter-spacing: 0;
-  font-weight: 700;
-  color: #888888;
-  font-style: normal;
-  line-height: 140%;
-  text-transform: uppercase;
-}
-.container.lots .inner-container .result-area .results thead tr .col.details {
-  width: 604px;
-}
-.container.lots .inner-container .result-area .results thead tr .col.info {
-  width: 208px;
+.container.lots .inner-container .result-area .results thead {
+  display: none;
 }
 .container.lots .inner-container .result-area .results tbody tr td {
-  height: 200px;
+  border: 1px solid red;
+  display: inline-block;
+  width: 100%;
   border-bottom: 1px solid #eef4f6;
   cursor: pointer;
   position: relative;
 }
 .container.lots .inner-container .result-area .results tbody tr td.lot-detail {
   vertical-align: top;
-  padding: 40px 50px 0 180px;
+  padding: 27px 10px 0 150px;
   position: relative;
 }
 .container.lots .inner-container .result-area .results tbody tr td.lot-detail .img {
-  width: 110px;
-  height: 110px;
+  width: 100px;
+  height: 100px;
   position: absolute;
-  left: 50px;
+  left: 30px;
   top: 30px;
 }
 .container.lots .inner-container .result-area .results tbody tr td.lot-detail .img img {
