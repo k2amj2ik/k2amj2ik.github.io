@@ -21,9 +21,7 @@
     margin: 23px 0 0 30px;
     width: 196px;
     height: 38px;
-    background: transparent url('../images/logo_pc_type1.png') no-repeat 20px 20px / 176px 18px;
-    -webkit-background-size: 176px 18px;
-    background-size: 176px 18px;
+    @include bg-image(transparent,'../images/logo_pc_type1.png',no-repeat,scroll,20px,20px,176px,18px);
   }
   .sites {
     display: inline-block;
@@ -749,14 +747,17 @@
                   }
                   .upcoming {
                     font-family: $font-family-roboto;
-                    font-size: 10px;
+                    font-size: 12px;
                     letter-spacing: 0;
-                    font-weight: 400;
-                    color: $text-highlight;
+                    font-weight: 300;
+                    color: $text-darkgray;
                     font-style: normal;
                     line-height: 100%;
                     text-transform: lowercase;
                     //@include box-style(badge);
+                    &:before {
+                      content: '- ';
+                    }
                   }
                   .vendor {
                     @include text-style(text-table-vendor);

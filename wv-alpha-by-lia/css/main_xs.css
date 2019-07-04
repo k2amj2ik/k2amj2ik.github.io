@@ -664,12 +664,12 @@ body > .container .inner-container .footer {
 }
 
 .bg {
-  position: fixed;
+  position: absolute;
   width: 100%;
   height: 3000px;
   overflow: hidden;
   left: 0;
-  top: 0;
+  top: -203px;
   display: block;
   opacity: 0.8;
   z-index: 90;
@@ -1065,11 +1065,11 @@ body > .container .inner-container .footer {
 .container.lots .inner-container {
   background-color: #eff3f6;
 }
-.container.lots .inner-container .keyword {
+.container.lots .inner-container .keyword.big {
   min-height: 155px;
   background-color: #232629;
 }
-.container.lots .inner-container .keyword .title {
+.container.lots .inner-container .keyword.big .title {
   padding: 0 0 40px 29px;
   font-family: "Roboto";
   font-size: 16px;
@@ -1078,7 +1078,7 @@ body > .container .inner-container .footer {
   color: #7e8a95;
   line-height: 100%;
 }
-.container.lots .inner-container .keyword .word {
+.container.lots .inner-container .keyword.big .word {
   padding: 32px 0 19px 30px;
   font-family: "Roboto";
   font-size: 40px;
@@ -1086,6 +1086,53 @@ body > .container .inner-container .footer {
   font-weight: 700;
   color: #fff;
   line-height: 48px;
+}
+.container.lots .inner-container .keyword.small {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  padding: 0 80px 0 74px;
+  z-index: 90;
+}
+.container.lots .inner-container .keyword.small .word {
+  padding: 12px 0 0 0;
+  font-family: "Roboto";
+  font-size: 20px;
+  letter-spacing: 0;
+  font-weight: 700;
+  color: #fff;
+  line-height: 100%;
+  background-color: #232629;
+  display: inline-block;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  max-width: 100%;
+  max-height: 32px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.container.lots .inner-container .keyword.small .title {
+  padding: 4px 0 0 0;
+  font-family: "Roboto";
+  font-size: 12px;
+  letter-spacing: 0;
+  font-weight: 400;
+  color: #7e8a95;
+  line-height: 100%;
+  background-color: #232629;
+  display: inline-block;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  max-width: 100%;
+  max-height: 16px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
 }
 .container.lots .inner-container .form-filters {
   display: none;
@@ -1453,16 +1500,14 @@ body > .container .inner-container .footer {
   display: none;
 }
 .container.lots .inner-container .result-area .results tbody tr td {
-  border: 1px solid red;
   display: inline-block;
   width: 100%;
-  border-bottom: 1px solid #eef4f6;
   cursor: pointer;
   position: relative;
 }
 .container.lots .inner-container .result-area .results tbody tr td.lot-detail {
   vertical-align: top;
-  padding: 27px 10px 0 150px;
+  padding: 27px 20px 0 150px;
   position: relative;
 }
 .container.lots .inner-container .result-area .results tbody tr td.lot-detail .img {
@@ -1535,6 +1580,7 @@ body > .container .inner-container .footer {
   -webkit-box-orient: vertical;
 }
 .container.lots .inner-container .result-area .results tbody tr td.sale-info {
+  border: 1px solid red;
   vertical-align: top;
   padding-top: 44px;
 }
@@ -1597,6 +1643,7 @@ body > .container .inner-container .footer {
   line-height: 19px;
 }
 .container.lots .inner-container .result-area .results tbody tr td.price {
+  border-bottom: 1px solid #eef4f6;
   vertical-align: top;
   padding-top: 41px;
 }

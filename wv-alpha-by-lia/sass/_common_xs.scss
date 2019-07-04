@@ -322,12 +322,12 @@ body>.container {
 
 //for purblishing--------------------------------------------------------------------------------------
 .bg {
-  position: fixed;
+  position: absolute;
   width: 100%;
   height: 3000px;
   overflow: hidden;
   left: 0;
-  top: 0;
+  top: -203px;
   display: block;
   opacity: 0.8;
   z-index: $z-index-max;
