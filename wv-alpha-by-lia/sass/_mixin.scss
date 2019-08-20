@@ -1,7 +1,7 @@
 // text-style
 @mixin text-style($name) {
   @if $name == text-default {
-    font-family: $font-family-roboto;
+
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 0;
@@ -9,7 +9,7 @@
     line-height: 16px;
   }
   @if $name == text-header {
-    font-family: $font-family-roboto;
+
     font-size: 62px;
     font-weight: 400;
     letter-spacing: -1.5px;
@@ -17,7 +17,7 @@
     line-height: 110%;
   }
   @if $name == text-header-sx {
-    font-family: $font-family-roboto;
+
     font-size: 34px;
     font-weight: 400;
     letter-spacing: -1.5px;
@@ -25,7 +25,7 @@
     line-height: 110%;
   }
   @if $name == text-subtitle {
-    font-family: $font-family-roboto;
+
     font-size: 26px;
     letter-spacing: 0;
     font-weight: 400;
@@ -33,7 +33,7 @@
     line-height: 21px;
   }
   @if $name == text-subtitle-sx {
-    font-family: $font-family-roboto;
+
     font-size: 18px;
     letter-spacing: 0;
     font-weight: 400;
@@ -41,7 +41,7 @@
     line-height: 21px;
   }
   @if $name == text-subtitle-strong {
-    font-family: $font-family-roboto;
+
     font-size: 26px;
     letter-spacing: 0;
     font-weight: 600;
@@ -49,7 +49,7 @@
     line-height: 21px;
   }
   @if $name == text-subtitle-strong-sx {
-    font-family: $font-family-roboto;
+
     font-size: 18px;
     letter-spacing: 0;
     font-weight: 600;
@@ -58,7 +58,7 @@
   }
 
   @if $name == text-input-bgdark {
-    font-family: $font-family-roboto;
+
     font-size: 18px;
     letter-spacing: 0;
     font-weight: 300;
@@ -66,7 +66,7 @@
     line-height: 100%;
   }
   @if $name == text-input {
-    font-family: $font-family-roboto;
+
     font-size: 15px;
     letter-spacing: 0;
     font-weight: 400;
@@ -74,7 +74,7 @@
     line-height: 100%;
   }
   @if $name == text-little-small {
-    font-family: $font-family-roboto;
+
     font-size: 12px;
     letter-spacing: 0;
     font-weight: 500;
@@ -82,7 +82,7 @@
     line-height: 100%;
   }
   @if $name == text-small {
-    font-family: $font-family-roboto;
+
     font-size: 10px;
     letter-spacing: 0;
     font-weight: 400;
@@ -90,7 +90,7 @@
     line-height: 100%;
   }
   @if $name == text-input-sx {
-    font-family: $font-family-roboto;
+
     font-size: 32px;
     letter-spacing: -1px;
     font-weight: 400;
@@ -98,7 +98,7 @@
     line-height: 100%;
   }
   @if $name == text-checkbox {
-    font-family: $font-family-roboto;
+
     font-size: 14px;
     letter-spacing: 0;
     font-weight: 400;
@@ -106,7 +106,7 @@
     line-height: 100%;
   }
   @if $name == text-default-bgdark {
-    font-family: $font-family-roboto;
+
     font-size: 13px;
     letter-spacing: -0.1px;
     font-weight: 300;
@@ -114,7 +114,7 @@
     line-height: 16px;
   }
   @if $name == text-keyword-title {
-    font-family: $font-family-roboto;
+
     font-size: 17px;
     letter-spacing: -0.3px;
     font-weight: 300;
@@ -122,7 +122,7 @@
     line-height: 100%;
   }
   @if $name == text-keyword-big {
-    font-family: $font-family-roboto;
+
     font-size: 56px;
     letter-spacing: 0.1px;
     font-weight: 700;
@@ -130,7 +130,7 @@
     line-height: 100%;
   }
   @if $name == text-search-main {
-    font-family: $font-family-roboto;
+
     font-size: 20px;
     letter-spacing: -0.1px;
     font-weight: 300;
@@ -138,7 +138,7 @@
     line-height: 100%;
   }
   @if $name == text-search-main-sx {
-    font-family: $font-family-roboto;
+
     font-size: 32px;
     letter-spacing: -1px;
     font-weight: 400;
@@ -146,7 +146,7 @@
     line-height: 100%;
   }
   @if $name == link-searchable {
-    font-family: $font-family-roboto;
+
     font-size: 18px;
     letter-spacing: 0;
     font-weight: 400;
@@ -154,7 +154,7 @@
     line-height: 21px;
   }
   @if $name == link-searchable-sx {
-    font-family: $font-family-roboto;
+
     font-size: 18px;
     letter-spacing: 0;
     font-weight: 400;
@@ -162,14 +162,14 @@
     line-height: 24px;
   }
   @if $name == link-primary-bgdark {
-    font-family: $font-family-roboto;
+
     font-size: 14px;
     letter-spacing: -0.1px;
     font-weight: 400;
     line-height: 100%;
   }
   @if $name == btn-primary-bgdark {
-    font-family: $font-family-roboto;
+
     letter-spacing: 0;
     font-size: 16px;
     font-weight: 700;
@@ -177,7 +177,7 @@
     line-height: 100%;
   }
   @if $name == btn-secondary-bgdark {
-    font-family: $font-family-roboto;
+
     letter-spacing: 0;
     font-size: 16px;
     font-weight: 400;
@@ -185,7 +185,7 @@
     line-height: 22px;
   }
   @if $name == btn-secondary-bgdark-ori {
-    font-family: $font-family-roboto;
+
     letter-spacing: 0.9px;
     font-size: 15px;
     font-weight: 700;
@@ -193,21 +193,21 @@
     line-height: 100%;
   }
   @if $name == text-top-navi {
-    font-family: $font-family-roboto;
+
     letter-spacing: -0.3px;
     font-size: 16px;
     font-weight: 400;
     line-height: 100%;
   }
   @if $name == text-top-navi-here {
-    font-family: $font-family-roboto;
+
     letter-spacing: 0;
     font-size: 16px;
     font-weight: 700;
     line-height: 100%;
   }
   @if $name == text-search-top {
-    font-family: $font-family-roboto;
+
     font-size: 16px;
     letter-spacing: 0;
     font-weight: 400;
@@ -215,7 +215,7 @@
     line-height: 100%;
   }
   @if $name == text-search-left {
-    font-family: $font-family-roboto; //font-family: $font-family-opensans;
+
     font-size: 14px;
     letter-spacing: 0;
     font-weight: 400;
@@ -223,7 +223,7 @@
     line-height: 16px;
   }
   @if $name == text-footer-main {
-    font-family: $font-family-roboto;
+
     font-size: 12px;
     letter-spacing: -0.3px;
     font-weight: 400;
@@ -231,7 +231,7 @@
     line-height: 100%;
   }
   @if $name == text-footer-main-xs {
-    font-family: $font-family-roboto;
+
     font-size: 12px;
     letter-spacing: 0;
     font-weight: 300;
@@ -239,7 +239,7 @@
     line-height: 100%;
   }
   @if $name == text-footer {
-    font-family: $font-family-roboto;
+
     font-size: 12px;
     letter-spacing: -0.3px;
     font-weight: 400;
@@ -247,7 +247,7 @@
     line-height: 100%;
   }
   @if $name == link-footer {
-    font-family: $font-family-roboto;
+
     font-size: 14px;
     letter-spacing: -0.2px;
     font-weight: 400;
@@ -255,7 +255,7 @@
     line-height: 100%;
   }
   @if $name == text-artists-header {
-    font-family: $font-family-roboto;
+
     font-size: 28px;
     letter-spacing: -0.5px;
     font-weight: 600;
@@ -263,7 +263,7 @@
     line-height: 110%;
   }
   @if $name == text-artists-header-sx {
-    font-family: $font-family-roboto;
+
     font-size: 20px;
     letter-spacing: 0;
     font-weight: 600;
@@ -271,7 +271,7 @@
     line-height: 110%;
   }
   @if $name == text-artists-header-keyword {
-    font-family: $font-family-roboto;
+
     font-size: 28px;
     letter-spacing: 0;
     font-weight: 600;
@@ -280,7 +280,7 @@
     line-height: 18px;
   }
   @if $name == text-artist-result-count {
-    font-family: $font-family-roboto;
+
     font-size: 14px;
     letter-spacing: 0;
     font-weight: 400;
@@ -288,7 +288,7 @@
     line-height: 140%;
   }
   @if $name == text-submenu {
-    font-family: $font-family-roboto;
+
     font-size: 12px;
     letter-spacing: 1px;
     font-weight: 700;
@@ -296,7 +296,7 @@
     line-height: 18px;
   }
   @if $name == text-submenu-active {
-    font-family: $font-family-roboto;
+
     font-size: 12px;
     letter-spacing: 1px;
     font-weight: 700;
@@ -304,7 +304,7 @@
     line-height: 100%;
   }
   @if $name == text-artist-result-name {
-    font-family: $font-family-roboto;
+
     font-size: 16px;
     letter-spacing: 0;
     font-weight: 400;
@@ -312,7 +312,7 @@
     line-height: 140%;
   }
   @if $name == text-artist-result-name-matching {
-    font-family: $font-family-roboto;
+
     font-size: 16px;
     letter-spacing: 0;
     font-weight: 700;
@@ -320,7 +320,7 @@
     line-height: 140%;
   }
   @if $name == text-artist-result-description {
-    font-family: $font-family-roboto;
+
     font-size: 12px;
     letter-spacing: 0;
     font-weight: 400;
@@ -328,7 +328,7 @@
     line-height: 140%;
   }
   @if $name == text-filter-title {
-    font-family: $font-family-roboto;
+
     font-size: 16px;
     letter-spacing: 0;
     font-weight: 700;
@@ -337,7 +337,7 @@
     text-transform: uppercase;
   }
   @if $name == text-filter-title-description {
-    font-family: $font-family-roboto;
+
     font-size: 14px;
     letter-spacing: 0;
     font-weight: 400;
@@ -346,7 +346,7 @@
     text-transform: none;
   }
   @if $name == text-filter-subtitle {
-    font-family: $font-family-roboto;
+
     font-size: 11px;
     letter-spacing: 0;
     font-weight: 400;
@@ -355,7 +355,7 @@
     text-transform: uppercase;
   }
   @if $name == text-filter {
-    font-family: $font-family-roboto; //font-family: $font-family-opensans;
+
     font-size: 14px;
     letter-spacing: 0;
     font-weight: 400;
@@ -364,7 +364,7 @@
     text-transform: capitalize;
   }
   @if $name == text-filter-active {
-    font-family: $font-family-roboto; //font-family: $font-family-opensans;
+
     font-size: 14px;
     letter-spacing: 0;
     font-weight: 400;
@@ -373,7 +373,7 @@
     text-transform: capitalize;
   }
 @if $name == text-btn-desc {
-    font-family: $font-family-roboto; //font-family: $font-family-opensans;
+
     font-size: 12px;
     letter-spacing: -1px;
     font-weight: 400;
@@ -382,7 +382,7 @@
     line-height: 38px;
   }
 @if $name == text-filter-desc {
-    font-family: $font-family-roboto; //font-family: $font-family-opensans;
+
     font-size: 14px;
     letter-spacing: 0;
     font-weight: 400;
@@ -392,7 +392,7 @@
     text-transform: none;
   }
 @if $name == text-title-desc {
-    font-family: $font-family-roboto; //font-family: $font-family-opensans;
+
     font-size: 18px;
     letter-spacing: 0;
     font-weight: 400;
@@ -402,7 +402,7 @@
     text-transform: none;
   }
 @if $name == text-selected {
-    font-family: $font-family-roboto;
+
     font-size: 14px;
     letter-spacing: 0;
     font-weight: 500;
@@ -411,7 +411,7 @@
     line-height: 140%;
   }
   @if $name == text-select-target {
-    font-family: $font-family-roboto;
+
     font-size: 14px;
     letter-spacing: 0;
     font-weight: 300;
@@ -420,7 +420,7 @@
     line-height: 140%;
   }
 @if $name == text-table-th {
-    font-family: $font-family-roboto;
+
     font-size: 12px;
     letter-spacing: 0;
     font-weight: 700;
@@ -430,7 +430,7 @@
     text-transform: uppercase;
   }
   @if $name == text-table-artist {
-    font-family: $font-family-roboto;
+
     font-size: 14px;
     letter-spacing: 0;
     font-weight: 500;
@@ -438,7 +438,7 @@
     line-height: 140%;
   }
   @if $name == text-table-artist-origin {
-    font-family: $font-family-roboto;
+
     font-size: 14px;
     letter-spacing: 0;
     font-weight: 400;
@@ -446,7 +446,7 @@
     line-height: 18px;
   }
   @if $name == text-table-worktitle {
-    font-family: $font-family-roboto;
+
     font-size: 20px;
     letter-spacing: 0.1px;
     font-weight: 700;
@@ -455,7 +455,7 @@
     text-transform: uppercase;
   }
   @if $name == text-comparable-worktitle {
-    font-family: $font-family-roboto;
+
     font-size: 16px;
     letter-spacing: 0;
     font-weight: 700;
@@ -464,7 +464,7 @@
     text-transform: uppercase;
   }
   @if $name == text-comparable-medium {
-    font-family: $font-family-roboto;
+
     font-size: 18px;
     letter-spacing: 0;
     font-weight: 300;
@@ -472,7 +472,7 @@
     line-height: 20px;
   }
   @if $name == text-comparable-estimate {
-    font-family: $font-family-roboto;
+
     font-size: 18px;
     letter-spacing: 0;
     font-weight: 300;
@@ -480,7 +480,7 @@
     line-height: 22px;
   }
   @if $name == text-comparable-sold {
-    font-family: $font-family-roboto;
+
     font-size: 18px;
     letter-spacing: 0;
     font-weight: 700;
@@ -488,7 +488,7 @@
     line-height: 18px;
   }
   @if $name == text-comparable-sold-desc {
-    font-family: $font-family-roboto;
+
     font-size: 11px;
     letter-spacing: 0;
     font-weight: 300;
@@ -496,7 +496,7 @@
     line-height: 11px;
   }
   @if $name == text-comparable-date {
-    font-family: $font-family-roboto;
+
     font-size: 14px;
     letter-spacing: 0;
     font-weight: 400;
@@ -504,7 +504,7 @@
     line-height: 14px;
   }
   @if $name == text-comparable-vendor {
-    font-family: $font-family-roboto;
+
     font-size: 13px;
     letter-spacing: 0;
     font-weight: 400;
@@ -513,7 +513,7 @@
     text-transform: uppercase;
   }
   @if $name == text-comparable-text {
-    font-family: $font-family-roboto;
+
     font-size: 14px;
     letter-spacing: 0;
     font-weight: 300;
@@ -521,7 +521,7 @@
     line-height: 18px;
   }
   @if $name == text-comparable-gap {
-    font-family: $font-family-roboto;
+
     font-size: 16px;
     letter-spacing: 0;
     font-weight: 700;
@@ -529,7 +529,7 @@
     line-height: 18px;
   }
   @if $name == text-table-summary {
-    font-family: $font-family-roboto;
+
     font-size: 14px;
     letter-spacing: -0.4px;
     font-weight: 300;
@@ -537,7 +537,7 @@
     line-height: 19px;
   }
   @if $name == text-table-date {
-    font-family: $font-family-roboto;
+
     font-size: 16px;
     letter-spacing: 0;
     font-weight: 300;
@@ -545,7 +545,7 @@
     line-height: 18px;
   }
 @if $name == text-table-upcoming {
-    font-family: $font-family-roboto;
+
     font-size: 10px;
     letter-spacing: 0;
     font-weight: 700;
@@ -554,7 +554,7 @@
     line-height: 100%;
   }
 @if $name == text-table-vendor {
-    font-family: $font-family-roboto;
+
     font-size: 13px;
     letter-spacing: 0;
     font-weight: 700;
@@ -563,7 +563,7 @@
     text-transform: uppercase;
   }
 @if $name == text-table-estimate {
-    font-family: $font-family-roboto;
+
     font-size: 18px;
     letter-spacing: -0.3px;
     font-weight: 300;
@@ -571,7 +571,7 @@
     line-height: 23px;
   }
 @if $name == text-table-sold {
-    font-family: $font-family-roboto;
+
     font-size: 18px;
     letter-spacing: -0.3px;
     font-weight: 700;
@@ -580,7 +580,7 @@
     line-height: 22px;
   }
 @if $name == text-table-sold-desc {
-    font-family: $font-family-roboto;
+
     font-size: 11px;
     letter-spacing: -0.6px;
     font-weight: 500;
@@ -588,7 +588,7 @@
     line-height: 13px;
   }
 @if $name == text-paging {
-    font-family: $font-family-roboto; //font-family: $font-family-opensans;
+
     font-size: 15px;
     letter-spacing: 0;
     font-weight: 400;
@@ -597,7 +597,7 @@
     line-height: 15px;
   }
 @if $name == lot-artist-name {
-    font-family: $font-family-roboto;
+
     font-size: 20px;
     letter-spacing: 0;
     font-weight: 400;
@@ -605,7 +605,7 @@
     line-height: 24px;
   }
 @if $name == lot-artist-desc {
-    font-family: $font-family-roboto;
+
     font-size: 12px;
     letter-spacing: 0;
     font-weight: 400;
@@ -613,7 +613,7 @@
     line-height: 16px;
   }
 @if $name == lot-worktitle {
-    font-family: $font-family-roboto;
+
     font-size: 16px;
     letter-spacing: 0;
     font-weight: 700;
@@ -622,7 +622,7 @@
     line-height: 20px;
   }
 @if $name == lot-work-desc {
-    font-family: $font-family-roboto;
+
     font-size: 16px;
     letter-spacing: 0;
     font-weight: 300;
@@ -630,7 +630,7 @@
     line-height: 24px;
   }
   @if $name == lot-comparables-title {
-    font-family: $font-family-roboto;
+
     font-size: 24px;
     letter-spacing: 0;
     font-weight: 500;
@@ -638,7 +638,7 @@
     line-height: 28px;
   }
   @if $name == lot-comparables-text {
-    font-family: $font-family-roboto;
+
     font-size: 34px;
     letter-spacing: 0;
     font-weight: 300;
@@ -646,7 +646,7 @@
     line-height: 34px;
   }
   @if $name == lot-sold-price {
-    font-family: $font-family-roboto;
+
     font-size: 28px;
     letter-spacing: -0.9px;
     font-weight: 700;
@@ -655,7 +655,7 @@
     line-height: 32px;
   }
   @if $name == lot-sold-price-custom-currency {
-    font-family: $font-family-roboto;
+
     font-size: 16px;
     letter-spacing: -0.6px;
     font-weight: 700;
@@ -664,7 +664,7 @@
     line-height: 20px;
   }
   @if $name == lot-premium {
-    font-family: $font-family-roboto; //font-family: $font-family-opensans;
+
     font-size: 10px;
     letter-spacing: 0;
     font-weight: 400;
@@ -673,7 +673,7 @@
     line-height: 21px;
   }
   @if $name == lot-estimate {
-    font-family: $font-family-roboto;
+
     font-size: 16px;
     letter-spacing: 0;
     font-weight: 400;
@@ -682,7 +682,7 @@
     line-height: 20px;
   }
   @if $name == lot-sale-name {
-    font-family: $font-family-roboto;
+
     font-size: 14px;
     letter-spacing: 0;
     font-weight: 400;
@@ -690,7 +690,7 @@
     line-height: 20px;
   }
   @if $name == lot-sale-lot-number {
-    font-family: $font-family-roboto;
+
     font-size: 14px;
     letter-spacing: 0;
     font-weight: 400;
@@ -698,7 +698,7 @@
     line-height: 18px;
   }
   @if $name == lot-sale-date {
-    font-family: $font-family-roboto; //font-family: $font-family-opensans;
+
     font-size: 14px;
     letter-spacing: 0;
     font-weight: 300;
@@ -707,7 +707,7 @@
     line-height: 18px;
   }
   @if $name == lot-sale-vendor {
-    font-family: $font-family-roboto;
+
     font-size: 14px;
     letter-spacing: 0;
     font-weight: 700;
@@ -716,7 +716,7 @@
     line-height: 17px;
   }
   @if $name == lot-etc-title {
-    font-family: $font-family-roboto;
+
     font-size: 24px;
     letter-spacing: 0;
     font-weight: 500;
@@ -724,7 +724,7 @@
     line-height: 24px;
   }
   @if $name == lot-etc-context {
-    font-family: $font-family-roboto;
+
     font-size: 16px;
     letter-spacing: 0;
     font-weight: 300;
@@ -732,7 +732,7 @@
     line-height: 22px;
   }
   @if $name == lot-related-title {
-    font-family: $font-family-roboto; //font-family: $font-family-opensans;
+
     font-size: 18px;
     letter-spacing: 0;
     font-weight: 600;
@@ -741,7 +741,7 @@
     line-height: 21px;
   }
   @if $name == lot-related-keyword {
-    font-family: $font-family-roboto; //font-family: $font-family-opensans;
+
     font-size: 14px;
     letter-spacing: 0;
     font-weight: 300;
@@ -750,7 +750,7 @@
     line-height: 14px;
   }
   @if $name == lot-related-artist-name {
-    font-family: $font-family-roboto; //font-family: $font-family-opensans;
+
     font-size: 13px;
     letter-spacing: 0;
     font-weight: 400;
@@ -760,7 +760,7 @@
     text-transform: uppercase;
   }
   @if $name == lot-related-worktitle {
-    font-family: $font-family-roboto;
+
     font-size: 18px;
     letter-spacing: 0;
     font-weight: 400;
@@ -769,7 +769,7 @@
     line-height: 19px;
   }
   @if $name == lot-related-work-desc {
-    font-family: $font-family-roboto; //font-family: $font-family-opensans;
+
     font-size: 15px;
     letter-spacing: 0;
     font-weight: 400;
@@ -778,7 +778,7 @@
     line-height: 19px;
   }
   @if $name == lot-related-estimate {
-    font-family: $font-family-roboto;
+
     font-size: 17px;
     letter-spacing: 0;
     font-weight: 400;
@@ -787,7 +787,7 @@
     line-height: 19px;
   }
   @if $name == lot-related-sold-price {
-    font-family: $font-family-roboto;
+
     font-size: 17px;
     letter-spacing: 0;
     font-weight: 600;
@@ -796,7 +796,7 @@
     line-height: 19px;
   }
   @if $name == lot-related-sale-info {
-    font-family: $font-family-roboto; //font-family: $font-family-opensans;
+
     font-size: 15px;
     letter-spacing: 0;
     font-weight: 400;
@@ -805,7 +805,7 @@
     line-height: 19px;
   }
   @if $name == lot-related-performance-standard {
-    font-family: $font-family-roboto; //font-family: $font-family-opensans;
+
     font-size: 12px;
     letter-spacing: 0;
     font-weight: 400;
@@ -814,7 +814,7 @@
     line-height: 14px;
   }
   @if $name == lot-related-performance {
-    font-family: $font-family-roboto; //font-family: $font-family-opensans;
+
     font-size: 12px;
     letter-spacing: 0;
     font-weight: 400;
@@ -823,7 +823,7 @@
     line-height: 17px;
   }
   @if $name == text-filter-area-title {
-    font-family: $font-family-roboto;
+
     font-size: 18px;
     letter-spacing: 0;
     font-weight: 600;
@@ -831,7 +831,7 @@
     line-height: 21px;
   }
   @if $name == text-default-bgdark-icon {
-    font-family: $font-family-roboto;
+
     font-size: 14px;
     letter-spacing: 0;
     font-weight: 100;
@@ -839,7 +839,7 @@
     line-height: 100%;
   }
   @if $name == text-search-layer-bold {
-    font-family: $font-family-roboto;
+
     font-size: 14px;
     letter-spacing: 0.3px;
     font-weight: 300;
@@ -847,7 +847,7 @@
     line-height: 140%;
   }
   @if $name == text-search-layer-normal {
-    font-family: $font-family-roboto;
+
     font-size: 14px;
     letter-spacing: 0.3px;
     font-weight: 100;
@@ -855,7 +855,7 @@
     line-height: 140%;
   }
   @if $name == text-badge {
-    font-family: $font-family-roboto;
+
     font-size: 14px;
     letter-spacing: 0.2px;
     font-weight: 300;
@@ -944,7 +944,7 @@
     border: 1px solid $border-btn-primary;
     padding: 23px 126px 21px 126px;
     margin-right: 14px;
-    font-family: $font-family-roboto;
+
     letter-spacing: 0;
     font-size: 16px;
     font-weight: 500;
@@ -960,7 +960,7 @@
     cursor: pointer;
     padding: 17px 78px 16px 76px;
     margin-right: 14px;
-    font-family: $font-family-roboto;
+
     letter-spacing: 0;
     font-size: 15px;
     font-weight: 700;

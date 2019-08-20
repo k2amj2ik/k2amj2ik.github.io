@@ -52,225 +52,232 @@
             <p class="word">Jan van de Cappelle Jan van de Cappelle Jan van de Cappelle Jan van de CappelleJan van de CappelleJan van de Cappelle</p>
             <p class="title">Spain, France, 1881-1973Spain, France, 1881-1973Spain, France, 1881-1973Spain, France, 1881-1973Spain, France, 1881-1973</p>
         </div>
-        <!-- form-filters 에 open을 attach 하면 열린화면으로 전환 됨. -->
-        <form class="form-filters" action="lots.html">
-            <div class="default">
-                <div class="filters">
-                    <div class="filter category">
-                        <div class="header">
-                            <p class="title">CATEGORY</p>
-                            <a class="btn-link-tiny">Any</a>
-                        </div>
-                        <div class="contents">
-                            <div class="group half">
-                                <p class="subtitle">FINE ART</p>
-                                <ul class="words">
-                                    <li class="word">
-                                        <input type="checkbox" class="input-checkbox">
-                                        <label class="form-check-label">Paintings</label>
-                                    </li>
-                                    <li class="word">
-                                        <input type="checkbox" class="input-checkbox">
-                                        <label class="form-check-label">Photograph</label>
-                                    </li>
-                                    <li class="word">
-                                        <input type="checkbox" class="input-checkbox">
-                                        <label class="form-check-label">Print & Multiples</label>
-                                    </li>
-                                    <li class="word">
-                                        <input type="checkbox" class="input-checkbox">
-                                        <label class="form-check-label">Sculptures</label>
-                                    </li>
-                                    <li class="word">
-                                        <input type="checkbox" class="input-checkbox">
-                                        <label class="form-check-label">Works on Paper</label>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="group half">
-                                <p class="subtitle">ETC.</p>
-                                <ul class="words">
-                                    <li class="word">
-                                        <input type="checkbox" class="input-checkbox">
-                                        <label class="form-check-label">Asian Art</label>
-                                    </li>
-                                    <li class="word">
-                                        <input type="checkbox" class="input-checkbox">
-                                        <label class="form-check-label">Design</label>
-                                    </li>
-                                    <li class="word">
-                                        <input type="checkbox" class="input-checkbox">
-                                        <label class="form-check-label">Decorative Art</label>
-                                    </li>
-                                    <li class="word">
-                                        <input type="checkbox" class="input-checkbox">
-                                        <label class="form-check-label">Ancient</label>
-                                    </li>
-                                    <li class="word">
-                                        <input type="checkbox" class="input-checkbox">
-                                        <label class="form-check-label">Others</label>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="group">
-                                <p class="subtitle">MEDIUM</p>
-                                <div class="inputs">
-                                    <input type="text" class="input" placeholder="e.g. oil on canvas">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="filter year">
-                        <div class="header">
-                            <p class="title">YEAR</p>
-                        </div>
-                        <div class="contents">
-                            <div class="group">
-                                <p class="subtitle">RANGE</p>
-                                <div class="inputs">
-                                    <input type="text" class="input input-small" placeholder="e.g. 1981">
-                                    <span class="to">to</span>
-                                    <input type="text" class="input input-small" placeholder="e.g. 2000">
-                                </div>
-                            </div>
-                            <div class="group">
-                                <p class="subtitle">PERIOD</p>
-                                <div class="inputs">
-                                    <input type="text" class="input" placeholder="e.g. xing, ming dynasty">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="filter size">
-                        <div class="header">
-                            <p class="title">SIZE</p>
-                            <!--<a class="btn-link-tiny">cm v</a>-->
-                            <a class="btn-link-tiny">inches v</a>
-                        </div>
-                        <div class="contents">
-                            <div class="group">
-                                <p class="subtitle">HEIGHT</p>
-                                <div class="inputs">
-                                    <input type="text" class="input input-small" placeholder="e.g. 20">
-                                    <span class="to">to</span>
-                                    <input type="text" class="input input-small" placeholder="e.g. 30">
-                                </div>
-                            </div>
-                            <div class="group">
-                                <p class="subtitle">WIDTH</p>
-                                <div class="inputs">
-                                    <input type="text" class="input input-small" placeholder="e.g. 20">
-                                    <span class="to">to</span>
-                                    <input type="text" class="input input-small" placeholder="e.g. 30">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="filter price">
-                        <div class="header">
-                            <p class="title">PRICE <span class="unit">in USD</span></p>
-                        </div>
-                        <div class="contents">
-                            <div class="group">
-                                <p class="subtitle">SOLD</p>
-                                <div class="inputs">
-                                    <input type="text" class="input input-small" placeholder="e.g. 10,000">
-                                    <span class="to">to</span>
-                                    <input type="text" class="input input-small" placeholder="e.g. 30,000">
-                                </div>
-                            </div>
-                            <div class="group">
-                                <p class="subtitle">ESTIMATE</p>
-                                <div class="inputs">
-                                    <input type="text" class="input input-small" placeholder="e.g. 10,000">
-                                    <span class="to">to</span>
-                                    <input type="text" class="input input-small" placeholder="e.g. 30,000">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="lots_filter_open.html" class="btn-down-toggle">More Filters <span class="icon-arrow-down"></span></a>
+        <!-- form-filters 에 active attach 하면 열린화면으로 전환 됨. -->
+        <form class="form-filters active" action="lots.html">
+            <div class="form-filters-container">
+                <div class="filters-header">
+                    <p class="title">Filters</p>
+                    <button type="button" class="btn-close" onclick="switchItem('.form-filters','active','hide')"></button>
                 </div>
-            </div>
-            <div class="more">
-                <div class="filters">
-                    <div class="filter title">
-                        <div class="header">
-                            <p class="title">TITLE</p>
-                        </div>
-                        <div class="contents">
-                            <div class="group">
-                                <div class="inputs">
-                                    <input type="text" class="input" placeholder="e.g. flowers">
+                <div class="default">
+                    <div class="filters">
+                        <div class="filter category">
+                            <div class="header">
+                                <p class="title">CATEGORY</p>
+                                <a class="btn-link-tiny">Any</a>
+                            </div>
+                            <div class="contents">
+                                <div class="group half">
+                                    <p class="subtitle">FINE ART</p>
+                                    <ul class="words">
+                                        <li class="word">
+                                            <input type="checkbox" class="input-checkbox">
+                                            <label class="form-check-label">Paintings</label>
+                                        </li>
+                                        <li class="word">
+                                            <input type="checkbox" class="input-checkbox">
+                                            <label class="form-check-label">Photograph</label>
+                                        </li>
+                                        <li class="word">
+                                            <input type="checkbox" class="input-checkbox">
+                                            <label class="form-check-label">Print & Multiples</label>
+                                        </li>
+                                        <li class="word">
+                                            <input type="checkbox" class="input-checkbox">
+                                            <label class="form-check-label">Sculptures</label>
+                                        </li>
+                                        <li class="word">
+                                            <input type="checkbox" class="input-checkbox">
+                                            <label class="form-check-label">Works on Paper</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="group half">
+                                    <p class="subtitle">ETC.</p>
+                                    <ul class="words">
+                                        <li class="word">
+                                            <input type="checkbox" class="input-checkbox">
+                                            <label class="form-check-label">Asian Art</label>
+                                        </li>
+                                        <li class="word">
+                                            <input type="checkbox" class="input-checkbox">
+                                            <label class="form-check-label">Design</label>
+                                        </li>
+                                        <li class="word">
+                                            <input type="checkbox" class="input-checkbox">
+                                            <label class="form-check-label">Decorative Art</label>
+                                        </li>
+                                        <li class="word">
+                                            <input type="checkbox" class="input-checkbox">
+                                            <label class="form-check-label">Ancient</label>
+                                        </li>
+                                        <li class="word">
+                                            <input type="checkbox" class="input-checkbox">
+                                            <label class="form-check-label">Others</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="group">
+                                    <p class="subtitle">MEDIUM</p>
+                                    <div class="inputs">
+                                        <input type="text" class="input" placeholder="e.g. oil on canvas">
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="filter auction-house">
-                        <div class="header">
-                            <p class="title">AUCTION HOUSE</p>
-                        </div>
-                        <div class="contents">
-                            <div class="group">
-                                <div class="inputs">
-                                    <input type="text" class="input" placeholder="e.g. Christie's New York">
+                        <div class="filter year">
+                            <div class="header">
+                                <p class="title">YEAR</p>
+                            </div>
+                            <div class="contents">
+                                <div class="group">
+                                    <p class="subtitle">RANGE</p>
+                                    <div class="inputs">
+                                        <input type="text" class="input input-small" placeholder="e.g. 1981">
+                                        <span class="to">to</span>
+                                        <input type="text" class="input input-small" placeholder="e.g. 2000">
+                                    </div>
+                                </div>
+                                <div class="group">
+                                    <p class="subtitle">PERIOD</p>
+                                    <div class="inputs">
+                                        <input type="text" class="input" placeholder="e.g. xing, ming dynasty">
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="filter sale-title">
-                        <div class="header">
-                            <p class="title">SALE TITLE</p>
-                        </div>
-                        <div class="contents">
-                            <div class="group">
-                                <div class="inputs">
-                                    <input type="text" class="input" placeholder="e.g. Contemporary Art Evening Sale">
+                        <div class="filter size">
+                            <div class="header">
+                                <p class="title">SIZE</p>
+                                <!--<a class="btn-link-tiny">cm v</a>-->
+                                <a class="btn-link-tiny">inches v</a>
+                            </div>
+                            <div class="contents">
+                                <div class="group">
+                                    <p class="subtitle">HEIGHT</p>
+                                    <div class="inputs">
+                                        <input type="text" class="input input-small" placeholder="e.g. 20">
+                                        <span class="to">to</span>
+                                        <input type="text" class="input input-small" placeholder="e.g. 30">
+                                    </div>
+                                </div>
+                                <div class="group">
+                                    <p class="subtitle">WIDTH</p>
+                                    <div class="inputs">
+                                        <input type="text" class="input input-small" placeholder="e.g. 20">
+                                        <span class="to">to</span>
+                                        <input type="text" class="input input-small" placeholder="e.g. 30">
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="filter sale-date">
-                        <div class="header">
-                            <p class="title">SALE DATE</p>
-                        </div>
-                        <div class="contents">
-                            <div class="group">
-                                <div class="inputs">
-                                    <input type="text" class="input input-small" placeholder="DDMMYYYY">
-                                    <span class="to">to</span>
-                                    <input type="text" class="input input-small" placeholder="DDMMYYYY">
+                        <div class="filter price">
+                            <div class="header">
+                                <p class="title">PRICE <span class="unit">in USD</span></p>
+                            </div>
+                            <div class="contents">
+                                <div class="group">
+                                    <p class="subtitle">SOLD</p>
+                                    <div class="inputs">
+                                        <input type="text" class="input input-small" placeholder="e.g. 10,000">
+                                        <span class="to">to</span>
+                                        <input type="text" class="input input-small" placeholder="e.g. 30,000">
+                                    </div>
+                                </div>
+                                <div class="group">
+                                    <p class="subtitle">ESTIMATE</p>
+                                    <div class="inputs">
+                                        <input type="text" class="input input-small" placeholder="e.g. 10,000">
+                                        <span class="to">to</span>
+                                        <input type="text" class="input input-small" placeholder="e.g. 30,000">
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <button type="button" class="btn-down-toggle" onclick="switchItem('.form-filters','hide','active')">More Filters <span class="icon-arrow-down"></span></button>
                     </div>
-                    <div class="filter lot-number">
-                        <div class="header">
-                            <p class="title">LOT NUMBER</p>
-                        </div>
-                        <div class="contents">
-                            <div class="group">
-                                <div class="inputs">
-                                    <input type="number" class="input input-small" placeholder="e.g. 101">
-                                    <span class="to">to</span>
-                                    <input type="number" class="input input-small" placeholder="e.g. 200">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="lots.html" class="btn-down-toggle">Less Filters <span class="icon-arrow-up"></span></a>
                 </div>
+                <div class="more">
+                    <div class="filters">
+                        <div class="filter title">
+                            <div class="header">
+                                <p class="title">TITLE</p>
+                            </div>
+                            <div class="contents">
+                                <div class="group">
+                                    <div class="inputs">
+                                        <input type="text" class="input" placeholder="e.g. flowers">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter auction-house">
+                            <div class="header">
+                                <p class="title">AUCTION HOUSE</p>
+                            </div>
+                            <div class="contents">
+                                <div class="group">
+                                    <div class="inputs">
+                                        <input type="text" class="input" placeholder="e.g. Christie's New York">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter sale-title">
+                            <div class="header">
+                                <p class="title">SALE TITLE</p>
+                            </div>
+                            <div class="contents">
+                                <div class="group">
+                                    <div class="inputs">
+                                        <input type="text" class="input" placeholder="e.g. Contemporary Art Evening Sale">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter sale-date">
+                            <div class="header">
+                                <p class="title">SALE DATE</p>
+                            </div>
+                            <div class="contents">
+                                <div class="group">
+                                    <div class="inputs">
+                                        <input type="text" class="input input-small" placeholder="DDMMYYYY">
+                                        <span class="to">to</span>
+                                        <input type="text" class="input input-small" placeholder="DDMMYYYY">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter lot-number">
+                            <div class="header">
+                                <p class="title">LOT NUMBER</p>
+                            </div>
+                            <div class="contents">
+                                <div class="group">
+                                    <div class="inputs">
+                                        <input type="number" class="input input-small" placeholder="e.g. 101">
+                                        <span class="to">to</span>
+                                        <input type="number" class="input input-small" placeholder="e.g. 200">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="btn-down-toggle" onclick="switchItem('.form-filters','active','hide')">Less Filters <span class="icon-arrow-up"></span></button>
+                    </div>
+                </div>
+                <ul class="btns">
+                    <li><button type="submit" class="btn-action">Search</button></li>
+                    <li><a href="#" class="btn-reset"></a></li>
+                </ul>
             </div>
-            <ul class="btns">
-                <li><button type="submit" class="btn-action">Search</button></li>
-                <li><a href="#" class="btn-reset"></a></li>
-            </ul>
+            <div class="bg-layer" onclick="switchItem('.form-filters','active','hide')"></div>
         </form>
         <div class="result-area">
             <p class="result-count">Showing 21 Results</p>
             <div class="result-btns">
                 <button type="button" class="btn-sort"></button>
-                <button type="button" class="btn-filters"></button>
+                <button type="button" class="btn-filters" onclick="switchItem('.form-filters','hide','active')"></button>
             </div>
             <div class="search-words">
                 <span class="word">Category : All</span>
@@ -315,10 +322,9 @@
                         <p class="lot">Lot. 20</p>
                     </td>
                     <td class="price">
-                        <p class="estimate">HK$ 800,000,000,000 - HK$ 900,000,000,000</p>
-                        <p class="estimate custom-currency">₩ 800,000,000,000,000 - ₩ 900,000,000,000,000</p>
-                        <p class="sold">HK$ 1,670,000,000,000 <span class="premium">Premium</span></p>
-                        <p class="sold custom-currency">₩ 8,000,000,000,000</p>
+                        <p class="estimate">$800,000,000,000 - $900,000,000,000</p>
+                        <p class="sold">$1,670,000,000,000</p>
+                        <p class="premium">Premium</p>
                         <p class="guarantee"><span class="in-house"></span></p>
                     </td>
                 </tr>
@@ -338,12 +344,13 @@
                         <p class="lot">Lot. 20</p>
                     </td>
                     <td class="price">
-                        <p class="sold">$1,670,000 <span class="premium">Premium</span></p>
+                        <p class="sold">$1,670,000</p>
+                        <p class="premium">Premium</p>
                     </td>
                 </tr>
                 <tr onclick="location.href='lot.html'">
                     <td class="lot-detail">
-                        <div class="img"><img src="../images/img_no.png"></div>
+                        <div class="img"><img src="../images/img_no@2x.png"></div>
                         <div class="work-info">
                             <p class="worktitle">Garçon à la pipe</p>
                             <p class="summary">Woodcut on handmade Suzuki paper, 31 3/4 × 41 1/2 × 1/5 in, 80.6 × 105.4 × 0.5 cm Woodcut on handmade Suzuki paper, 31 3/4 × 41 1/2 × 1/5 in, 80.6 × 105.4 × 0.5 cm Woodcut on handmade Suzuki paper, 31 3/4 × 41 1/2 × 1/5 in, 80.6 × 105.4 × 0.5 cm</p>
@@ -374,8 +381,11 @@
                         <p class="lot">Lot. 20</p>
                     </td>
                     <td class="price">
-                        <p class="estimate">HK$ 800,000,000,000 - HK$ 900,000,000,000</p>
-                        <p class="sold">HK$ 1,670,000,000,000 <span class="premium">Premium</span></p>
+                        <p class="estimate">HK$800,000,000,000 - HK$900,000,000,000</p>
+                        <p class="estimate custom-currency">₩800,000,000,000,000 - ₩900,000,000,000,000</p>
+                        <p class="sold">HK$1,670,000,000,000</p>
+                        <p class="premium">Premium</p>
+                        <p class="sold custom-currency">₩8,000,000,000,000</p>
                         <p class="guarantee"><span class="third-party"></span></p>
                     </td>
                 </tr>
@@ -394,8 +404,8 @@
                         <p class="lot">Lot. 20</p>
                     </td>
                     <td class="price">
-                        <p class="estimate">HK$ 800,000,000,000 - HK$ 900,000,000,000</p>
-                        <p class="estimate custom-currency">₩ 800,000,000,000,000 - ₩ 900,000,000,000,000</p>
+                        <p class="estimate">HK$800,000,000,000 - HK$900,000,000,000</p>
+                        <p class="estimate custom-currency">₩800,000,000,000,000 - ₩900,000,000,000,000</p>
                         <p class="guarantee"><span class="in-house"></span></p>
                     </td>
                 </tr>
@@ -441,8 +451,10 @@
         </footer>
     </div>
 </div>
-<div class="bg bg-lots"></div>
+<!--<div class="bg bg-lots"></div>-->
 <!--<div class="bg bg-lots-filter"></div>-->
 <!--<div class="bg bg-lots-result"></div>-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="../js/script.js"></script>
 </body>
 </html>

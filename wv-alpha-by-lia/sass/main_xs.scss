@@ -174,7 +174,7 @@
         background-color: $bg-dark;
         .title {
           padding: 40px 0 0 29px;
-          font-family: $font-family-roboto;
+
           font-size: 16px;
           letter-spacing: 0;
           font-weight: 400;
@@ -183,7 +183,7 @@
         }
         .word {
           padding: 12px 0 24px 30px;
-          font-family: $font-family-roboto;
+
           font-size: 40px;
           letter-spacing: 0;
           font-weight: 700;
@@ -232,7 +232,7 @@
       }
       .result-count {
         padding: 27px 0 19px 31px;
-        font-family: $font-family-roboto;
+
         font-size: 14px;
         letter-spacing: 0;
         font-weight: 400;
@@ -249,7 +249,7 @@
         .no-result {
           .title {
             margin: 0 0 12px 0;
-            font-family: $font-family-roboto;
+
             font-size: 16px;
             letter-spacing: 0.9px;
             font-weight: 700;
@@ -268,7 +268,7 @@
           border-bottom: 1px solid $border-table;
           display: block;
           padding: 17px 0 14px 2px;
-          font-family: $font-family-roboto;
+
           font-size: 18px;
           letter-spacing: 0;
           font-weight: 400;
@@ -316,7 +316,7 @@
           background-color: $bg-dark;
           .title {
             padding: 0 0 40px 29px;
-            font-family: $font-family-roboto;
+
             font-size: 16px;
             letter-spacing: 0;
             font-weight: 400;
@@ -325,7 +325,7 @@
           }
           .word {
             padding: 32px 0 19px 30px;
-            font-family: $font-family-roboto;
+
             font-size: 40px;
             letter-spacing: 0;
             font-weight: 700;
@@ -340,10 +340,10 @@
           width: 100%;
           height: 60px;
           padding: 0 80px 0 74px;
-          z-index: $z-index-max;
+          z-index: $z-index-5;
           .word {
             padding: 12px 0 0 0;
-            font-family: $font-family-roboto;
+
             font-size: 20px;
             letter-spacing: 0;
             font-weight: 700;
@@ -354,7 +354,7 @@
           }
           .title {
             padding: 4px 0 0 0;
-            font-family: $font-family-roboto;
+
             font-size: 12px;
             letter-spacing: 0;
             font-weight: 400;
@@ -367,174 +367,93 @@
       }
 
       .form-filters {
-        display: none;
-        .default {
-          background-color: $bg-white;
-          padding-top: 20px;
-          height: 328px;
-
-          .filters {
-            width: $width-inner-container;
-            margin: 0 auto;
-            position: relative;
-
-            .filter {
-              float: left;
-              border-top: 1px solid $border-filter;
-
-              .header {
-                margin: 19px 0 0 0;
-
-                .title {
-                  float: left;
-                  @include text-style(text-filter-title);
-
-                  .unit {
-                    @include text-style(text-filter-title-description);
-                  }
-                }
-
-                .btn-link-tiny {
-                  float: right;
-                }
-              }
-
-              .contents {
-                border-top: 1px solid transparent; //Don't remove!
-                clear: both;
-                margin-top: 20px;
-                width: 100%;
-
-                .group {
-                  &.half {
-                    width: 200px;
-                    float: left;
-                  }
-
-                  .subtitle {
-                    margin: 25px 0 10px 0;
-                    @include text-style(text-filter-subtitle);
-                  }
-
-                  .inputs {
-                    height: 25px;
-                    margin-top: 10px;
-
-                    .input-small {
-                      width: 97px;
-                      float: left;
-                    }
-
-                    .to {
-                      float: left;
-                      display: inline-block;
-                      padding: 10px 7px 8px 8px;
-                      @include text-style(text-small);
-                    }
-                  }
-
-                  .words {
-                    margin: 0 0 20px 0;
-
-                    .word {
-                      margin: 9px 0 9px 0;
-
-                      .form-check-label {
-                        margin-left: 11px;
-                      }
-                    }
-                  }
-                }
-              }
-
-              &.category {
-                width: 402px;
-              }
-
-              &.year {
-                margin-left: 41px;
-                width: 221px;
-              }
-
-              &.size {
-                margin-left: 41px;
-                width: 221px;
-              }
-
-              &.price {
-                margin-left: 36px;
-                width: 221px;
-              }
-            }
-
-            .btn-down-toggle {
-              position: absolute;
-              padding: 4px 4px 4px 10px;
-              text-align: right;
-              top: 283px;
-              right: 0;
-              @include text-style(text-little-small);
-            }
-          }
-        }
-        .more {
+        margin: 0;
+        padding: 0;
+        .btn-down-toggle {
           display: none;
+        }
+        .form-filters-container {
+          height: 100%;
+          overflow-y: scroll;
+          position: fixed;
+          top: 0;
+          right: -$width-form-filters;
+          width: $width-form-filters;
           background-color: $bg-white;
-          height: 235px;
-
+          padding: $height-filters-header 0 0 0;
+          z-index: $z-index-5;
+          .filters-header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 26px 0 0 34px;
+            height: $height-filters-header;
+            font-size: 20px;
+            color: $text-white;
+            background-color: $bg-dark;
+            z-index: $z-index-max;
+            .btn-close {
+              position: absolute;
+              right: 9px;
+              top: 7px;
+              width: 60px;
+              height: 60px;
+              @include bg-image(transparent,'../images/filter-close@2x.png',no-repeat,scroll,center,center,15px,15px);
+            }
+          }
           .filters {
-            width: $width-inner-container;
-            margin: 0 auto;
-            position: relative;
-
             .filter {
-              float: left;
-              border-top: 1px solid $border-filter;
-              width: 100%;
-
+              padding: 27px 29px 0 34px;
+              border-bottom: 1px solid $border-filter;
+              &.category {
+                .header {
+                  border-bottom: 1px solid $bg-light;
+                }
+              }
               .header {
-                margin: 19px 0 0 0;
-
+                margin: 0 0 0 0;
+                height: 35px;
                 .title {
                   float: left;
-                  @include text-style(text-filter-title);
-
+                  font-size: 14px;
+                  letter-spacing: 0;
+                  font-weight: 700;
+                  color: $text-default;
+                  line-height: 100%;
+                  text-transform: uppercase;
                   .unit {
-                    @include text-style(text-filter-title-description);
+                    font-size: 14px;
+                    letter-spacing: 0;
+                    font-weight: 400;
+                    color: $text-description;
+                    line-height: 100%;
+                    text-transform: none;
                   }
                 }
-
                 .btn-link-tiny {
                   float: right;
                 }
               }
-
               .contents {
-                border: 1px solid transparent;
-                clear: both;
-                margin-top: 20px;
-                width: 100%;
-
                 .group {
-                  &.half {
-                    width: 200px;
-                    float: left;
-                  }
-
+                  padding: 20px 0 0 0;
+                  border-bottom: 1px solid $bg-light;
                   .subtitle {
-                    margin: 25px 0 10px 0;
-                    @include text-style(text-filter-subtitle);
+                    margin: 0 0 10px 0;
+                    font-size: 11px;
+                    letter-spacing: 0;
+                    font-weight: 400;
+                    color: $text-darkgray;
+                    line-height: 100%;
+                    text-transform: uppercase;
                   }
-
                   .inputs {
                     height: 25px;
                     margin-top: 10px;
-
                     .input-small {
-                      width: 97px;
+                      //width: 97px;
                       float: left;
                     }
-
                     .to {
                       float: left;
                       display: inline-block;
@@ -542,12 +461,10 @@
                       @include text-style(text-small);
                     }
                   }
-
                   .words {
-                    margin: 0 0 20px 0;
-
+                    margin: 12px 0 30px 0;
                     .word {
-                      margin: 9px 0 9px 0;
+                      margin: 0 0 17px 0;
 
                       .form-check-label {
                         margin-left: 11px;
@@ -556,70 +473,57 @@
                   }
                 }
               }
-
-              &.title {
-                clear: both;
-                width: 402px;
-                height: 177px;
-                margin-top: 18px;
-                padding-top: 8px;
-              }
-
-              &.auction-house {
-                width: 478px;
-                margin-top: 18px;
-                margin-left: 44px;
-              }
-
-              &.sale-title {
-                width: 478px;
-                margin-top: 14px;
-                margin-left: 44px;
-                border-top: 0;
-              }
-
-              &.sale-date {
-                width: 221px;
-                margin-top: -77px;
-                margin-left: 39px;
-              }
-
-              &.lot-number {
-                width: 221px;
-                margin-top: 15px;
-                margin-left: 39px;
-                border-top: 0;
-              }
-            }
-
-            .btn-down-toggle {
-              position: absolute;
-              padding: 4px 4px 4px 10px;
-              text-align: right;
-              top: 210px;
-              right: 0;
-              @include text-style(text-little-small);
             }
           }
         }
-        .btns {
-          background-color: $bg-light;
-          border-top: 1px solid $line-gray;
+        .bg-layer {
+          position: fixed;
+          left: 0;
+          top: 0;
           width: 100%;
-          padding: 30px 0 0 30px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
+          height: 100%;
+          background-color: $bg-black;
+          z-index: $z-index-4;
+          display: none;
         }
-        &.open {
-          .default {
-            .btn-down-toggle {
-              display: none;
-            }
-          }
-
-          .more {
+        &.active {
+          .bg-layer {
             display: block;
+            opacity: 0.6;
+          }
+          .form-filters-container {
+            // start animation---------------------------------------------------------------------
+            animation-name: slide-open;
+            animation-duration: 0.5s;
+            animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+            right: 0;
+            @keyframes slide-open {
+              0%   {
+                right: -$width-form-filters;
+              }
+              100% {
+                right: 0;
+              }
+            }
+            // end animation---------------------------------------------------------------------
+          }
+        }
+        &.hide {
+          .form-filters-container {
+            // start animation---------------------------------------------------------------------
+            animation-name: slide-hide;
+            animation-duration: 0.5s;
+            animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+            right: -$width-form-filters;
+            @keyframes slide-hide {
+              0%   {
+                right: 0;
+              }
+              100% {
+                right: -$width-form-filters;
+              }
+            }
+            // end animation---------------------------------------------------------------------
           }
         }
       }
@@ -667,7 +571,7 @@
           height: 63px;
           margin: 0 0 0 0;
           padding: 22px 0 0 29px;
-          font-family: $font-family-roboto;
+
           font-size: 14px;
           letter-spacing: 0;
           font-weight: 400;
@@ -705,16 +609,17 @@
           thead {
             display: none;
           }
-
           tbody {
             tr {
+              display: flex;
+              flex-direction: column;
               td {
                 display: inline-block;
                 width: 100%;
                 cursor: pointer;
                 position: relative;
-
                 &.lot-detail {
+                  order: 0;
                   vertical-align: top;
                   padding: 27px 20px 0 150px;
                   position: relative;
@@ -730,16 +635,16 @@
                       max-width: 100%;
                       max-height: 100%;
                       position: absolute;
-                      top: 50%;
+                      top: 0;
                       left: 50%;
-                      transform: translate(-50%, -50%);
+                      transform: translate(-50%, 0);
                     }
                   }
 
                   .work-info {
 
                     .artist {
-                      margin-bottom: 6px;
+                      margin-bottom: 7px;
                       @include text-style(text-table-artist);
                       @include cut-multi-text(100%, 18px, 1);
                     }
@@ -751,74 +656,145 @@
                     }
 
                     .summary {
-                      @include text-style(text-table-summary);
-                      @include cut-multi-text(100%, 54px, 3);
+
+                      font-size: 14px;
+                      letter-spacing: -0.4px;
+                      font-weight: 300;
+                      color: $text-default;
+                      line-height: 20px;
+                      @include cut-multi-text(100%, 60px, 3);
+
                     }
                   }
                 }
-
                 &.sale-info {
-                  border: 1px solid red;
-                  vertical-align: top;
-                  padding-top: 44px;
-
+                  order: 2;
+                  padding: 26px 20px 36px 150px;
+                  border-bottom: 11px solid $bg-light;
                   .date {
                     @include text-style(text-table-date);
-                    margin-bottom: 15px;
+                    margin-bottom: 11px;
                   }
 
                   .upcoming {
-                    @include box-style(badge);
+
+                    font-size: 12px;
+                    letter-spacing: 0;
+                    font-weight: 300;
+                    color: $text-darkgray;
+                    font-style: normal;
+                    line-height: 100%;
+                    text-transform: lowercase;
+                    //@include box-style(badge);
+                    &:before {
+                      content: '- ';
+                    }
                   }
 
                   .vendor {
-                    @include text-style(text-table-vendor);
+
+                    font-size: 13px;
+                    letter-spacing: 0;
+                    font-weight: 700;
+                    color: $text-default;
+                    line-height: 140%;
+                    text-transform: uppercase;
                   }
 
                   .sale {
-                    @include text-style(text-table-summary);
+
+                    font-size: 14px;
+                    letter-spacing: -0.4px;
+                    font-weight: 300;
+                    color: $text-default;
+                    line-height: 19px;
                     @include cut-multi-text(100%, 18px, 1);
                   }
 
                   .lot {
-                    @include text-style(text-table-summary);
+
+                    font-size: 14px;
+                    letter-spacing: -0.4px;
+                    font-weight: 300;
+                    color: $text-default;
+                    line-height: 19px;
                   }
                 }
-
                 &.price {
-                  border-bottom: 1px solid $border-table;
-                  vertical-align: top;
-                  padding-top: 41px;
-
+                  order: 1;
+                  padding: 24px 20px 0 150px;
+                  display: flex;
+                  flex-direction: column;
                   .estimate {
-                    margin-bottom: 16px;
-                    @include text-style(text-table-estimate);
-                    @include cut-multi-text(100%, 23px, 1);
+                    order: 0;
+                    margin-bottom: 6px;
+
+                    font-size: 18px;
+                    letter-spacing: -0.54px;
+                    font-weight: 400;
+                    color: $text-brightgray;
+                    line-height: 22px;
+                    //@include cut-multi-text(100%, 22px, 1);
 
                     &.custom-currency {
-                      margin-top: -18px;
+                      margin-top: -5px;
                       margin-bottom: 16px;
                       font-size: 14px;
+                      letter-spacing: -0.42px;
+                      line-height: 16px;
+                      //@include cut-multi-text(100%, 20px, 1);
                     }
                   }
-
                   .sold {
-                    @include text-style(text-table-sold);
+                    order: 0;
+                    display: inline-block;
 
-                    .premium {
-                      display: inline-block;
-                      margin: 4px 0 0 0;
-                      @include text-style(text-table-sold-desc);
-                    }
-
+                    font-size: 18px;
+                    letter-spacing: -0.54px;
+                    font-weight: 700;
+                    color: $text-default;
+                    font-style: normal;
+                    line-height: 22px;
+                    word-break: break-all;
+                    //@include cut-multi-text(100%, 22px, 1);
                     &.custom-currency {
-                      @include text-style(text-table-estimate);
+                      display: block;
+
                       font-size: 14px;
+                      letter-spacing: -0.42px;
+                      font-weight: 300;
+                      color: $text-darkgray;
+                      line-height: 18px;
+                      //@include cut-multi-text(100%, 18px, 1);
+                    }
+                  }
+                  .premium {
+                    order: 1;
+                    display: inline-block;
+                    margin: 0 0 0 0;
+
+                    font-size: 10px;
+                    letter-spacing: 0;
+                    font-weight: 500;
+                    color: $text-description;
+                    line-height: 10px;
+                  }
+                  .guarantee {
+                    position: absolute;
+                    left: 49px;
+                    top: 25px;
+                    .third-party, .in-house {
+                      display: inline-block;
+                      width: 64px;
+                      height: 46px;
+                      @include bg-image(transparent,'../images/3-rd-party@2x.png',no-repeat,scroll,center,center,64px,46px);
+                    }
+                    .in-house {
+                      @include bg-image(transparent,'../images/in-house@2x.png',no-repeat,scroll,center,center,64px,46px);
                     }
                   }
                 }
               }
-
               &:hover {
                 background-color: $bg-fairy;
               }

@@ -32,6 +32,7 @@ html, body, div, ul, ol, li, table, tr, td, h1, h2, h3, h4, p, span, form, input
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto";
 }
 
 li {
@@ -68,10 +69,16 @@ input:focus, button:focus, select:focus {
   outline: none;
 }
 
+button {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 .input-bgdark {
   cursor: pointer;
   float: left;
-  z-index: 90;
+  z-index: 60;
   margin: 0 0 0 0;
   border: 0;
   width: 100%;
@@ -84,7 +91,6 @@ input:focus, button:focus, select:focus {
   cursor: pointer;
   border: 0;
   border-bottom: 1px solid #454d54;
-  font-family: "Roboto";
   font-size: 18px;
   letter-spacing: 0;
   font-weight: 300;
@@ -119,7 +125,6 @@ input:focus, button:focus, select:focus {
   border: 0;
   padding: 0 5px 0 7px;
   background-color: #eff3f6;
-  font-family: "Roboto";
   font-size: 15px;
   letter-spacing: 0;
   font-weight: 400;
@@ -219,7 +224,6 @@ input:focus, button:focus, select:focus {
 
 .form-check-label {
   margin-left: 8px;
-  font-family: "Roboto";
   font-size: 14px;
   letter-spacing: 0;
   font-weight: 400;
@@ -233,7 +237,6 @@ table {
   border-spacing: 0;
 }
 table th {
-  font-family: "Roboto";
   font-size: 12px;
   letter-spacing: 0;
   font-weight: 700;
@@ -261,7 +264,7 @@ body > .container .top-navigation {
   height: 60px;
   background-color: #232629;
   padding: 0;
-  z-index: 90;
+  z-index: 60;
 }
 body > .container .top-navigation .logo {
   float: left;
@@ -284,7 +287,7 @@ body > .container .top-navigation .btn-mobile-search {
   display: inline-block;
   float: right;
   cursor: pointer;
-  width: 83px;
+  width: 75px;
   height: 55px;
   overflow: hidden;
   background: #232629 url("../images/search-icon-big@2x.png") no-repeat center center/23px 24px;
@@ -309,7 +312,6 @@ body > .container .inner-container .footer {
   display: flex;
   justify-content: center;
   margin: 40px 0 40px 0;
-  font-family: "Roboto";
   font-size: 15px;
   letter-spacing: 0;
   font-weight: 400;
@@ -428,7 +430,6 @@ body > .container .inner-container .footer {
   cursor: pointer;
   border: 0;
   padding: 25px 4px 23px 4px !important;
-  font-family: "Roboto";
   letter-spacing: 0;
   font-size: 16px;
   font-weight: 700;
@@ -453,7 +454,6 @@ body > .container .inner-container .footer {
   text-align: left;
   background-color: #232629;
   border: 1px solid #454d54;
-  font-family: "Roboto";
   letter-spacing: 0;
   font-size: 16px;
   font-weight: 400;
@@ -490,7 +490,6 @@ body > .container .inner-container .footer {
   display: inline-block;
   border: 0;
   padding: 9px 0 0 0;
-  font-family: "Roboto";
   font-size: 14px;
   letter-spacing: -0.1px;
   font-weight: 400;
@@ -515,20 +514,7 @@ body > .container .inner-container .footer {
 .btn-link-tiny {
   padding: 5px 5px 5px 10px;
   margin: -5px -5px -5px -10px;
-}
-.btn-link-tiny:link {
-  color: #222222;
-  text-decoration: none;
-}
-.btn-link-tiny:hover, .btn-link-tiny:active {
-  text-decoration: underline;
-}
-.btn-link-tiny:visited {
-  color: rgba(34, 34, 34, 0.5);
-  text-decoration: none;
-}
-.btn-link-tiny:active {
-  outline: none;
+  font-size: 14px;
   text-decoration: underline;
 }
 
@@ -537,7 +523,6 @@ body > .container .inner-container .footer {
   border: 1px solid #c1ccd6;
   padding: 23px 126px 21px 126px;
   margin-right: 14px;
-  font-family: "Roboto";
   letter-spacing: 0;
   font-size: 16px;
   font-weight: 500;
@@ -554,7 +539,6 @@ body > .container .inner-container .footer {
   cursor: pointer;
   padding: 17px 78px 16px 76px;
   margin-right: 14px;
-  font-family: "Roboto";
   letter-spacing: 0;
   font-size: 15px;
   font-weight: 700;
@@ -590,7 +574,6 @@ body > .container .inner-container .footer {
   -moz-border-radius: 10px;
   border-radius: 10px;
   text-transform: uppercase;
-  font-family: "Roboto";
   font-size: 10px;
   letter-spacing: 0;
   font-weight: 700;
@@ -669,10 +652,10 @@ body > .container .inner-container .footer {
   height: 3000px;
   overflow: hidden;
   left: 0;
-  top: -203px;
+  top: 0;
   display: block;
   opacity: 0.8;
-  z-index: 90;
+  z-index: 60;
 }
 
 .bg-login {
@@ -793,7 +776,6 @@ body > .container .inner-container .footer {
   background-color: transparent;
   padding: 6px 0 0 10px;
   text-indent: 1px;
-  font-family: "Roboto";
   font-size: 20px;
   letter-spacing: -0.1px;
   font-weight: 300;
@@ -852,7 +834,6 @@ body > .container .inner-container .footer {
 .container-main .inner-container .form-artist-search .description p {
   text-align: left;
   margin-bottom: 18px;
-  font-family: "Roboto";
   font-size: 13px;
   letter-spacing: -0.1px;
   font-weight: 300;
@@ -886,7 +867,6 @@ body > .container .inner-container .footer {
   background-color: #2f3236;
 }
 .container-main .inner-container .form-artist-search.active .layer-search .artist .name {
-  font-family: "Roboto";
   font-size: 14px;
   letter-spacing: 0.3px;
   font-weight: 300;
@@ -894,7 +874,6 @@ body > .container .inner-container .footer {
   line-height: 140%;
 }
 .container-main .inner-container .form-artist-search.active .layer-search .artist .name .matching {
-  font-family: "Roboto";
   font-size: 14px;
   letter-spacing: 0.3px;
   font-weight: 300;
@@ -904,7 +883,6 @@ body > .container .inner-container .footer {
 }
 .container-main .inner-container .form-artist-search.active .layer-search .artist .description {
   margin-left: 2px;
-  font-family: "Roboto";
   font-size: 14px;
   letter-spacing: 0.3px;
   font-weight: 100;
@@ -923,7 +901,6 @@ body > .container .inner-container .footer {
 .container-main .footer-main .copyright {
   z-index: 10;
   text-align: center;
-  font-family: "Roboto";
   font-size: 12px;
   letter-spacing: 0;
   font-weight: 300;
@@ -937,7 +914,6 @@ body > .container .inner-container .footer {
 }
 .container.artists .inner-container > .keyword .title {
   padding: 40px 0 0 29px;
-  font-family: "Roboto";
   font-size: 16px;
   letter-spacing: 0;
   font-weight: 400;
@@ -946,7 +922,6 @@ body > .container .inner-container .footer {
 }
 .container.artists .inner-container > .keyword .word {
   padding: 12px 0 24px 30px;
-  font-family: "Roboto";
   font-size: 40px;
   letter-spacing: 0;
   font-weight: 700;
@@ -988,7 +963,6 @@ body > .container .inner-container .footer {
 }
 .container.artists .inner-container .result-count {
   padding: 27px 0 19px 31px;
-  font-family: "Roboto";
   font-size: 14px;
   letter-spacing: 0;
   font-weight: 400;
@@ -1004,7 +978,6 @@ body > .container .inner-container .footer {
 }
 .container.artists .inner-container .results .no-result .title {
   margin: 0 0 12px 0;
-  font-family: "Roboto";
   font-size: 16px;
   letter-spacing: 0.9px;
   font-weight: 700;
@@ -1022,7 +995,6 @@ body > .container .inner-container .footer {
   border-bottom: 1px solid #eef4f6;
   display: block;
   padding: 17px 0 14px 2px;
-  font-family: "Roboto";
   font-size: 18px;
   letter-spacing: 0;
   font-weight: 400;
@@ -1071,7 +1043,6 @@ body > .container .inner-container .footer {
 }
 .container.lots .inner-container .keyword.big .title {
   padding: 0 0 40px 29px;
-  font-family: "Roboto";
   font-size: 16px;
   letter-spacing: 0;
   font-weight: 400;
@@ -1080,7 +1051,6 @@ body > .container .inner-container .footer {
 }
 .container.lots .inner-container .keyword.big .word {
   padding: 32px 0 19px 30px;
-  font-family: "Roboto";
   font-size: 40px;
   letter-spacing: 0;
   font-weight: 700;
@@ -1094,11 +1064,10 @@ body > .container .inner-container .footer {
   width: 100%;
   height: 60px;
   padding: 0 80px 0 74px;
-  z-index: 90;
+  z-index: 60;
 }
 .container.lots .inner-container .keyword.small .word {
   padding: 12px 0 0 0;
-  font-family: "Roboto";
   font-size: 20px;
   letter-spacing: 0;
   font-weight: 700;
@@ -1117,7 +1086,6 @@ body > .container .inner-container .footer {
 }
 .container.lots .inner-container .keyword.small .title {
   padding: 4px 0 0 0;
-  font-family: "Roboto";
   font-size: 12px;
   letter-spacing: 0;
   font-weight: 400;
@@ -1135,37 +1103,69 @@ body > .container .inner-container .footer {
   -webkit-box-orient: vertical;
 }
 .container.lots .inner-container .form-filters {
+  margin: 0;
+  padding: 0;
+}
+.container.lots .inner-container .form-filters .btn-down-toggle {
   display: none;
 }
-.container.lots .inner-container .form-filters .default {
+.container.lots .inner-container .form-filters .form-filters-container {
+  height: 100%;
+  overflow-y: scroll;
+  position: fixed;
+  top: 0;
+  right: -290px;
+  width: 290px;
   background-color: #fff;
-  padding-top: 20px;
-  height: 328px;
+  padding: 76px 0 0 0;
+  z-index: 60;
 }
-.container.lots .inner-container .form-filters .default .filters {
-  width: 1184px;
-  margin: 0 auto;
-  position: relative;
+.container.lots .inner-container .form-filters .form-filters-container .filters-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 26px 0 0 34px;
+  height: 76px;
+  font-size: 20px;
+  color: #fff;
+  background-color: #232629;
+  z-index: 90;
 }
-.container.lots .inner-container .form-filters .default .filters .filter {
+.container.lots .inner-container .form-filters .form-filters-container .filters-header .btn-close {
+  position: absolute;
+  right: 9px;
+  top: 7px;
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  background-image: url(../images/filter-close@2x.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position-y: center;
+  background-position-x: center;
+  background-size: 15px 15px;
+}
+.container.lots .inner-container .form-filters .form-filters-container .filters .filter {
+  padding: 27px 29px 0 34px;
+  border-bottom: 1px solid #77818a;
+}
+.container.lots .inner-container .form-filters .form-filters-container .filters .filter.category .header {
+  border-bottom: 1px solid #eff3f6;
+}
+.container.lots .inner-container .form-filters .form-filters-container .filters .filter .header {
+  margin: 0 0 0 0;
+  height: 35px;
+}
+.container.lots .inner-container .form-filters .form-filters-container .filters .filter .header .title {
   float: left;
-  border-top: 1px solid #77818a;
-}
-.container.lots .inner-container .form-filters .default .filters .filter .header {
-  margin: 19px 0 0 0;
-}
-.container.lots .inner-container .form-filters .default .filters .filter .header .title {
-  float: left;
-  font-family: "Roboto";
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: 0;
   font-weight: 700;
   color: #222222;
   line-height: 100%;
   text-transform: uppercase;
 }
-.container.lots .inner-container .form-filters .default .filters .filter .header .title .unit {
-  font-family: "Roboto";
+.container.lots .inner-container .form-filters .form-filters-container .filters .filter .header .title .unit {
   font-size: 14px;
   letter-spacing: 0;
   font-weight: 400;
@@ -1173,22 +1173,15 @@ body > .container .inner-container .footer {
   line-height: 100%;
   text-transform: none;
 }
-.container.lots .inner-container .form-filters .default .filters .filter .header .btn-link-tiny {
+.container.lots .inner-container .form-filters .form-filters-container .filters .filter .header .btn-link-tiny {
   float: right;
 }
-.container.lots .inner-container .form-filters .default .filters .filter .contents {
-  border-top: 1px solid transparent;
-  clear: both;
-  margin-top: 20px;
-  width: 100%;
+.container.lots .inner-container .form-filters .form-filters-container .filters .filter .contents .group {
+  padding: 20px 0 0 0;
+  border-bottom: 1px solid #eff3f6;
 }
-.container.lots .inner-container .form-filters .default .filters .filter .contents .group.half {
-  width: 200px;
-  float: left;
-}
-.container.lots .inner-container .form-filters .default .filters .filter .contents .group .subtitle {
-  margin: 25px 0 10px 0;
-  font-family: "Roboto";
+.container.lots .inner-container .form-filters .form-filters-container .filters .filter .contents .group .subtitle {
+  margin: 0 0 10px 0;
   font-size: 11px;
   letter-spacing: 0;
   font-weight: 400;
@@ -1196,206 +1189,73 @@ body > .container .inner-container .footer {
   line-height: 100%;
   text-transform: uppercase;
 }
-.container.lots .inner-container .form-filters .default .filters .filter .contents .group .inputs {
+.container.lots .inner-container .form-filters .form-filters-container .filters .filter .contents .group .inputs {
   height: 25px;
   margin-top: 10px;
 }
-.container.lots .inner-container .form-filters .default .filters .filter .contents .group .inputs .input-small {
-  width: 97px;
+.container.lots .inner-container .form-filters .form-filters-container .filters .filter .contents .group .inputs .input-small {
   float: left;
 }
-.container.lots .inner-container .form-filters .default .filters .filter .contents .group .inputs .to {
+.container.lots .inner-container .form-filters .form-filters-container .filters .filter .contents .group .inputs .to {
   float: left;
   display: inline-block;
   padding: 10px 7px 8px 8px;
-  font-family: "Roboto";
   font-size: 10px;
   letter-spacing: 0;
   font-weight: 400;
   color: #8a8a8a;
   line-height: 100%;
 }
-.container.lots .inner-container .form-filters .default .filters .filter .contents .group .words {
-  margin: 0 0 20px 0;
+.container.lots .inner-container .form-filters .form-filters-container .filters .filter .contents .group .words {
+  margin: 12px 0 30px 0;
 }
-.container.lots .inner-container .form-filters .default .filters .filter .contents .group .words .word {
-  margin: 9px 0 9px 0;
+.container.lots .inner-container .form-filters .form-filters-container .filters .filter .contents .group .words .word {
+  margin: 0 0 17px 0;
 }
-.container.lots .inner-container .form-filters .default .filters .filter .contents .group .words .word .form-check-label {
+.container.lots .inner-container .form-filters .form-filters-container .filters .filter .contents .group .words .word .form-check-label {
   margin-left: 11px;
 }
-.container.lots .inner-container .form-filters .default .filters .filter.category {
-  width: 402px;
-}
-.container.lots .inner-container .form-filters .default .filters .filter.year {
-  margin-left: 41px;
-  width: 221px;
-}
-.container.lots .inner-container .form-filters .default .filters .filter.size {
-  margin-left: 41px;
-  width: 221px;
-}
-.container.lots .inner-container .form-filters .default .filters .filter.price {
-  margin-left: 36px;
-  width: 221px;
-}
-.container.lots .inner-container .form-filters .default .filters .btn-down-toggle {
-  position: absolute;
-  padding: 4px 4px 4px 10px;
-  text-align: right;
-  top: 283px;
-  right: 0;
-  font-family: "Roboto";
-  font-size: 12px;
-  letter-spacing: 0;
-  font-weight: 500;
-  color: #666666;
-  line-height: 100%;
-}
-.container.lots .inner-container .form-filters .more {
-  display: none;
-  background-color: #fff;
-  height: 235px;
-}
-.container.lots .inner-container .form-filters .more .filters {
-  width: 1184px;
-  margin: 0 auto;
-  position: relative;
-}
-.container.lots .inner-container .form-filters .more .filters .filter {
-  float: left;
-  border-top: 1px solid #77818a;
+.container.lots .inner-container .form-filters .bg-layer {
+  position: fixed;
+  left: 0;
+  top: 0;
   width: 100%;
-}
-.container.lots .inner-container .form-filters .more .filters .filter .header {
-  margin: 19px 0 0 0;
-}
-.container.lots .inner-container .form-filters .more .filters .filter .header .title {
-  float: left;
-  font-family: "Roboto";
-  font-size: 16px;
-  letter-spacing: 0;
-  font-weight: 700;
-  color: #222222;
-  line-height: 100%;
-  text-transform: uppercase;
-}
-.container.lots .inner-container .form-filters .more .filters .filter .header .title .unit {
-  font-family: "Roboto";
-  font-size: 14px;
-  letter-spacing: 0;
-  font-weight: 400;
-  color: #888888;
-  line-height: 100%;
-  text-transform: none;
-}
-.container.lots .inner-container .form-filters .more .filters .filter .header .btn-link-tiny {
-  float: right;
-}
-.container.lots .inner-container .form-filters .more .filters .filter .contents {
-  border: 1px solid transparent;
-  clear: both;
-  margin-top: 20px;
-  width: 100%;
-}
-.container.lots .inner-container .form-filters .more .filters .filter .contents .group.half {
-  width: 200px;
-  float: left;
-}
-.container.lots .inner-container .form-filters .more .filters .filter .contents .group .subtitle {
-  margin: 25px 0 10px 0;
-  font-family: "Roboto";
-  font-size: 11px;
-  letter-spacing: 0;
-  font-weight: 400;
-  color: #666666;
-  line-height: 100%;
-  text-transform: uppercase;
-}
-.container.lots .inner-container .form-filters .more .filters .filter .contents .group .inputs {
-  height: 25px;
-  margin-top: 10px;
-}
-.container.lots .inner-container .form-filters .more .filters .filter .contents .group .inputs .input-small {
-  width: 97px;
-  float: left;
-}
-.container.lots .inner-container .form-filters .more .filters .filter .contents .group .inputs .to {
-  float: left;
-  display: inline-block;
-  padding: 10px 7px 8px 8px;
-  font-family: "Roboto";
-  font-size: 10px;
-  letter-spacing: 0;
-  font-weight: 400;
-  color: #8a8a8a;
-  line-height: 100%;
-}
-.container.lots .inner-container .form-filters .more .filters .filter .contents .group .words {
-  margin: 0 0 20px 0;
-}
-.container.lots .inner-container .form-filters .more .filters .filter .contents .group .words .word {
-  margin: 9px 0 9px 0;
-}
-.container.lots .inner-container .form-filters .more .filters .filter .contents .group .words .word .form-check-label {
-  margin-left: 11px;
-}
-.container.lots .inner-container .form-filters .more .filters .filter.title {
-  clear: both;
-  width: 402px;
-  height: 177px;
-  margin-top: 18px;
-  padding-top: 8px;
-}
-.container.lots .inner-container .form-filters .more .filters .filter.auction-house {
-  width: 478px;
-  margin-top: 18px;
-  margin-left: 44px;
-}
-.container.lots .inner-container .form-filters .more .filters .filter.sale-title {
-  width: 478px;
-  margin-top: 14px;
-  margin-left: 44px;
-  border-top: 0;
-}
-.container.lots .inner-container .form-filters .more .filters .filter.sale-date {
-  width: 221px;
-  margin-top: -77px;
-  margin-left: 39px;
-}
-.container.lots .inner-container .form-filters .more .filters .filter.lot-number {
-  width: 221px;
-  margin-top: 15px;
-  margin-left: 39px;
-  border-top: 0;
-}
-.container.lots .inner-container .form-filters .more .filters .btn-down-toggle {
-  position: absolute;
-  padding: 4px 4px 4px 10px;
-  text-align: right;
-  top: 210px;
-  right: 0;
-  font-family: "Roboto";
-  font-size: 12px;
-  letter-spacing: 0;
-  font-weight: 500;
-  color: #666666;
-  line-height: 100%;
-}
-.container.lots .inner-container .form-filters .btns {
-  background-color: #eff3f6;
-  border-top: 1px solid #d6e1e7;
-  width: 100%;
-  padding: 30px 0 0 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.container.lots .inner-container .form-filters.open .default .btn-down-toggle {
+  height: 100%;
+  background-color: #000;
+  z-index: 50;
   display: none;
 }
-.container.lots .inner-container .form-filters.open .more {
+.container.lots .inner-container .form-filters.active .bg-layer {
   display: block;
+  opacity: 0.6;
+}
+.container.lots .inner-container .form-filters.active .form-filters-container {
+  animation-name: slide-open;
+  animation-duration: 0.5s;
+  animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+  right: 0;
+}
+@keyframes slide-open {
+  0% {
+    right: -290px;
+  }
+  100% {
+    right: 0;
+  }
+}
+.container.lots .inner-container .form-filters.hide .form-filters-container {
+  animation-name: slide-hide;
+  animation-duration: 0.5s;
+  animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+  right: -290px;
+}
+@keyframes slide-hide {
+  0% {
+    right: 0;
+  }
+  100% {
+    right: -290px;
+  }
 }
 .container.lots .inner-container .result-area .search-words {
   display: none;
@@ -1404,7 +1264,6 @@ body > .container .inner-container .footer {
   display: inline-block;
   padding-right: 25px;
   margin: 1px 0 0 26px;
-  font-family: "Roboto";
   font-size: 28px;
   letter-spacing: -0.5px;
   font-weight: 600;
@@ -1434,7 +1293,6 @@ body > .container .inner-container .footer {
 }
 .container.lots .inner-container .result-area .text-header .description {
   margin: -2px 0 0 1px;
-  font-family: "Roboto";
   font-size: 18px;
   letter-spacing: 0;
   font-weight: 400;
@@ -1448,7 +1306,6 @@ body > .container .inner-container .footer {
   height: 63px;
   margin: 0 0 0 0;
   padding: 22px 0 0 29px;
-  font-family: "Roboto";
   font-size: 14px;
   letter-spacing: 0;
   font-weight: 400;
@@ -1499,6 +1356,10 @@ body > .container .inner-container .footer {
 .container.lots .inner-container .result-area .results thead {
   display: none;
 }
+.container.lots .inner-container .result-area .results tbody tr {
+  display: flex;
+  flex-direction: column;
+}
 .container.lots .inner-container .result-area .results tbody tr td {
   display: inline-block;
   width: 100%;
@@ -1506,6 +1367,7 @@ body > .container .inner-container .footer {
   position: relative;
 }
 .container.lots .inner-container .result-area .results tbody tr td.lot-detail {
+  order: 0;
   vertical-align: top;
   padding: 27px 20px 0 150px;
   position: relative;
@@ -1521,13 +1383,12 @@ body > .container .inner-container .footer {
   max-width: 100%;
   max-height: 100%;
   position: absolute;
-  top: 50%;
+  top: 0;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0);
 }
 .container.lots .inner-container .result-area .results tbody tr td.lot-detail .work-info .artist {
-  margin-bottom: 6px;
-  font-family: "Roboto";
+  margin-bottom: 7px;
   font-size: 14px;
   letter-spacing: 0;
   font-weight: 500;
@@ -1545,7 +1406,6 @@ body > .container .inner-container .footer {
 }
 .container.lots .inner-container .result-area .results tbody tr td.lot-detail .work-info .worktitle {
   margin-bottom: 10px;
-  font-family: "Roboto";
   font-size: 20px;
   letter-spacing: 0.1px;
   font-weight: 700;
@@ -1563,53 +1423,47 @@ body > .container .inner-container .footer {
   -webkit-box-orient: vertical;
 }
 .container.lots .inner-container .result-area .results tbody tr td.lot-detail .work-info .summary {
-  font-family: "Roboto";
   font-size: 14px;
   letter-spacing: -0.4px;
   font-weight: 300;
   color: #222222;
-  line-height: 19px;
+  line-height: 20px;
   display: inline-block;
   text-overflow: ellipsis;
   word-break: break-all;
   max-width: 100%;
-  max-height: 54px;
+  max-height: 60px;
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
 }
 .container.lots .inner-container .result-area .results tbody tr td.sale-info {
-  border: 1px solid red;
-  vertical-align: top;
-  padding-top: 44px;
+  order: 2;
+  padding: 26px 20px 36px 150px;
+  border-bottom: 11px solid #eff3f6;
 }
 .container.lots .inner-container .result-area .results tbody tr td.sale-info .date {
-  font-family: "Roboto";
   font-size: 16px;
   letter-spacing: 0;
   font-weight: 300;
   color: #666666;
   line-height: 18px;
-  margin-bottom: 15px;
+  margin-bottom: 11px;
 }
 .container.lots .inner-container .result-area .results tbody tr td.sale-info .upcoming {
-  background-color: #a7afb7;
-  padding: 3px 8px 2px 8px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-  text-transform: uppercase;
-  font-family: "Roboto";
-  font-size: 10px;
+  font-size: 12px;
   letter-spacing: 0;
-  font-weight: 700;
-  color: #fff;
+  font-weight: 300;
+  color: #666666;
   font-style: normal;
   line-height: 100%;
+  text-transform: lowercase;
+}
+.container.lots .inner-container .result-area .results tbody tr td.sale-info .upcoming:before {
+  content: '- ';
 }
 .container.lots .inner-container .result-area .results tbody tr td.sale-info .vendor {
-  font-family: "Roboto";
   font-size: 13px;
   letter-spacing: 0;
   font-weight: 700;
@@ -1618,7 +1472,6 @@ body > .container .inner-container .footer {
   text-transform: uppercase;
 }
 .container.lots .inner-container .result-area .results tbody tr td.sale-info .sale {
-  font-family: "Roboto";
   font-size: 14px;
   letter-spacing: -0.4px;
   font-weight: 300;
@@ -1635,7 +1488,6 @@ body > .container .inner-container .footer {
   -webkit-box-orient: vertical;
 }
 .container.lots .inner-container .result-area .results tbody tr td.sale-info .lot {
-  font-family: "Roboto";
   font-size: 14px;
   letter-spacing: -0.4px;
   font-weight: 300;
@@ -1643,60 +1495,81 @@ body > .container .inner-container .footer {
   line-height: 19px;
 }
 .container.lots .inner-container .result-area .results tbody tr td.price {
-  border-bottom: 1px solid #eef4f6;
-  vertical-align: top;
-  padding-top: 41px;
+  order: 1;
+  padding: 24px 20px 0 150px;
+  display: flex;
+  flex-direction: column;
 }
 .container.lots .inner-container .result-area .results tbody tr td.price .estimate {
-  margin-bottom: 16px;
-  font-family: "Roboto";
+  order: 0;
+  margin-bottom: 6px;
   font-size: 18px;
-  letter-spacing: -0.3px;
-  font-weight: 300;
-  color: #666666;
-  line-height: 23px;
-  display: inline-block;
-  text-overflow: ellipsis;
-  word-break: break-all;
-  max-width: 100%;
-  max-height: 23px;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
+  letter-spacing: -0.54px;
+  font-weight: 400;
+  color: #c2c2c2;
+  line-height: 22px;
 }
 .container.lots .inner-container .result-area .results tbody tr td.price .estimate.custom-currency {
-  margin-top: -18px;
+  margin-top: -5px;
   margin-bottom: 16px;
   font-size: 14px;
+  letter-spacing: -0.42px;
+  line-height: 16px;
 }
 .container.lots .inner-container .result-area .results tbody tr td.price .sold {
-  font-family: "Roboto";
+  order: 0;
+  display: inline-block;
   font-size: 18px;
-  letter-spacing: -0.3px;
+  letter-spacing: -0.54px;
   font-weight: 700;
   color: #222222;
   font-style: normal;
   line-height: 22px;
-}
-.container.lots .inner-container .result-area .results tbody tr td.price .sold .premium {
-  display: inline-block;
-  margin: 4px 0 0 0;
-  font-family: "Roboto";
-  font-size: 11px;
-  letter-spacing: -0.6px;
-  font-weight: 500;
-  color: #888888;
-  line-height: 13px;
+  word-break: break-all;
 }
 .container.lots .inner-container .result-area .results tbody tr td.price .sold.custom-currency {
-  font-family: "Roboto";
-  font-size: 18px;
-  letter-spacing: -0.3px;
+  display: block;
+  font-size: 14px;
+  letter-spacing: -0.42px;
   font-weight: 300;
   color: #666666;
-  line-height: 23px;
-  font-size: 14px;
+  line-height: 18px;
+}
+.container.lots .inner-container .result-area .results tbody tr td.price .premium {
+  order: 1;
+  display: inline-block;
+  margin: 0 0 0 0;
+  font-size: 10px;
+  letter-spacing: 0;
+  font-weight: 500;
+  color: #888888;
+  line-height: 10px;
+}
+.container.lots .inner-container .result-area .results tbody tr td.price .guarantee {
+  position: absolute;
+  left: 49px;
+  top: 25px;
+}
+.container.lots .inner-container .result-area .results tbody tr td.price .guarantee .third-party, .container.lots .inner-container .result-area .results tbody tr td.price .guarantee .in-house {
+  display: inline-block;
+  width: 64px;
+  height: 46px;
+  background-color: transparent;
+  background-image: url(../images/3-rd-party@2x.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position-y: center;
+  background-position-x: center;
+  background-size: 64px 46px;
+}
+.container.lots .inner-container .result-area .results tbody tr td.price .guarantee .in-house {
+  background-color: transparent;
+  background-image: url(../images/in-house@2x.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position-y: center;
+  background-position-x: center;
+  background-size: 64px 46px;
 }
 .container.lots .inner-container .result-area .results tbody tr:hover {
   background-color: #f7fafc;
@@ -1798,7 +1671,6 @@ body > .container .inner-container .footer {
 }
 .container.lot .inner-container .lot-summary .data .artist-name {
   margin: 0 0 3px 0;
-  font-family: "Roboto";
   font-size: 20px;
   letter-spacing: 0;
   font-weight: 400;
@@ -1807,7 +1679,6 @@ body > .container .inner-container .footer {
 }
 .container.lot .inner-container .lot-summary .data .artist-desc {
   margin: 0 0 16px 0;
-  font-family: "Roboto";
   font-size: 12px;
   letter-spacing: 0;
   font-weight: 400;
@@ -1816,7 +1687,6 @@ body > .container .inner-container .footer {
 }
 .container.lot .inner-container .lot-summary .data .worktitle {
   margin: 0 0 4px 0;
-  font-family: "Roboto";
   font-size: 16px;
   letter-spacing: 0;
   font-weight: 700;
@@ -1826,7 +1696,6 @@ body > .container .inner-container .footer {
 }
 .container.lot .inner-container .lot-summary .data .work-desc {
   margin: 0 0 12px 1px;
-  font-family: "Roboto";
   font-size: 16px;
   letter-spacing: 0;
   font-weight: 300;
@@ -1845,7 +1714,6 @@ body > .container .inner-container .footer {
 }
 .container.lot .inner-container .lot-comparables .data .title {
   display: inline-block;
-  font-family: "Roboto";
   font-size: 24px;
   letter-spacing: 0;
   font-weight: 500;
@@ -1877,7 +1745,6 @@ body > .container .inner-container .footer {
   height: 56px;
   padding-top: 11px;
   text-align: center;
-  font-family: "Roboto";
   font-size: 34px;
   letter-spacing: 0;
   font-weight: 300;
@@ -1896,7 +1763,6 @@ body > .container .inner-container .footer {
 }
 .container.lot .inner-container .lot-sale-info .data .estimate {
   margin: 10px 0 11px 0;
-  font-family: "Roboto";
   font-size: 16px;
   letter-spacing: 0;
   font-weight: 400;
@@ -1910,7 +1776,6 @@ body > .container .inner-container .footer {
 .container.lot .inner-container .lot-sale-info .data .sold-price {
   display: inline-block;
   margin: 0 0 5px 0;
-  font-family: "Roboto";
   font-size: 28px;
   letter-spacing: -0.9px;
   font-weight: 700;
@@ -1920,7 +1785,6 @@ body > .container .inner-container .footer {
 }
 .container.lot .inner-container .lot-sale-info .data .sold-price.custom-currency {
   display: block;
-  font-family: "Roboto";
   font-size: 16px;
   letter-spacing: -0.6px;
   font-weight: 700;
@@ -1931,7 +1795,6 @@ body > .container .inner-container .footer {
 .container.lot .inner-container .lot-sale-info .data .premium {
   display: inline-block;
   margin: 0 0 0 5px;
-  font-family: "Roboto";
   font-size: 10px;
   letter-spacing: 0;
   font-weight: 400;
@@ -1941,7 +1804,6 @@ body > .container .inner-container .footer {
 }
 .container.lot .inner-container .lot-sale-info .data .sale-date {
   padding: 30px 0 2px 1px;
-  font-family: "Roboto";
   font-size: 14px;
   letter-spacing: 0;
   font-weight: 300;
@@ -1954,7 +1816,6 @@ body > .container .inner-container .footer {
 }
 .container.lot .inner-container .lot-sale-info .data .sale-name {
   margin: 0 0 0 0;
-  font-family: "Roboto";
   font-size: 14px;
   letter-spacing: 0;
   font-weight: 400;
@@ -1963,7 +1824,6 @@ body > .container .inner-container .footer {
 }
 .container.lot .inner-container .lot-sale-info .data .sale-lot-number {
   padding: 0 0 77px 0;
-  font-family: "Roboto";
   font-size: 14px;
   letter-spacing: 0;
   font-weight: 400;
@@ -1981,7 +1841,6 @@ body > .container .inner-container .footer {
 }
 .container.lot .inner-container .lot-detail .data .etc .title {
   margin: 0 0 21px 0;
-  font-family: "Roboto";
   font-size: 24px;
   letter-spacing: 0;
   font-weight: 500;
@@ -1990,7 +1849,6 @@ body > .container .inner-container .footer {
 }
 .container.lot .inner-container .lot-detail .data .etc .context {
   padding: 0 0 0 2px;
-  font-family: "Roboto";
   font-size: 16px;
   letter-spacing: 0;
   font-weight: 300;

@@ -7,6 +7,7 @@ html, body, div, ul, ol, li, table, tr, td, h1, h2, h3, h4, p, span, form, input
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: $font-family-roboto;
 }
 
 li {
@@ -43,11 +44,16 @@ input, button, select {
     outline: none;
   }
 }
+button {
+  border: 0;
+  background-color: transparent;;
+  cursor: pointer;
+}
 
 .input-bgdark {
   cursor: pointer;
   float: left;
-  z-index: $z-index-max;
+  z-index: $z-index-5;
   margin:0 0 0 0;
   border: 0;
   width: 100%;
@@ -128,7 +134,7 @@ body>.container {
     height: 60px;
     background-color: $bg-dark;
     padding: 0;
-    z-index: $z-index-max;
+    z-index: $z-index-5;
     .logo {
       float: left;
       cursor: pointer;
@@ -150,7 +156,7 @@ body>.container {
       display: inline-block;
       float: right;
       cursor: pointer;
-      width: 83px;
+      width: 75px;
       height: 55px;
       overflow: hidden;
       background: $bg-dark url('../images/search-icon-big@2x.png') no-repeat center center / 23px 24px;
@@ -252,7 +258,8 @@ body>.container {
 .btn-link-tiny {
   padding: 5px 5px 5px 10px;
   margin: -5px -5px -5px -10px;
-  @include link-color($text-default);
+  font-size: 14px;
+  text-decoration: underline;
 }
 .btn-primary {
   @include box-style(btn-primary);
@@ -327,10 +334,10 @@ body>.container {
   height: 3000px;
   overflow: hidden;
   left: 0;
-  top: -203px;
+  top: 0;
   display: block;
   opacity: 0.8;
-  z-index: $z-index-max;
+  z-index: $z-index-5;
 }
 .bg-login {background: transparent url('../images/bg_mobile_00_login_360x640.png') no-repeat top center / 360px 640px;}
 .bg-main {background: transparent url('../images/bg_mobile_01_main_360x640.png') no-repeat top center / 360px 640px;}
