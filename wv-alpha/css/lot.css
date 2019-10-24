@@ -674,13 +674,13 @@ table tbody tr:hover {
   font-style: normal;
   line-height: 21px;
 }
-.lot .compare .lots {
+.lot .compare .cal-lot {
   margin: 16px 0 10px 0;
 }
-.lot .compare .lots li {
+.lot .compare .cal-lot li {
   display: inline-block;
 }
-.lot .compare .lots li a img {
+.lot .compare .cal-lot li a img {
   height: 50px;
 }
 .lot .compare .btn .btn-compare {

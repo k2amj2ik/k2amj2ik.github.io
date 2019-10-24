@@ -186,6 +186,10 @@ pre {
   word-wrap: break-word;
 }
 
+a[href], button {
+  touch-action: manipulation;
+}
+
 /*
 	color sets
 	#e74b3c	rgb:228,75,59		red			christies		c1	C
@@ -326,6 +330,22 @@ pre {
 .img_align img {
   display: block;
   display: none;
+}
+
+.bg {
+  position: absolute;
+  width: 100%;
+  height: 3000px;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+  display: block;
+  opacity: 0.8;
+  z-index: 60;
+}
+
+.bg-calculator {
+  background: transparent url("../img/bg_cal_start.jpg") no-repeat 0 -60px/320px 568px;
 }
 
 /*# sourceMappingURL=main.css.map */

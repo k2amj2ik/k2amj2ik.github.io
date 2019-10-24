@@ -5,32 +5,132 @@
 <meta name="format-detection" content="telephone=no">
 <meta name="format-detection" content="date=no">
 <meta name="format-detection" content="address=no">
-<!-- Enable all requests, inline styles, and eval() -->
 <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
-<!--  main CSS  -->
-<link rel="stylesheet" href="css/main-ori.css">
-<title>Live Auction Art</title>
-
-<style>a[href], button { touch-action: manipulation; }</style>
+<link rel="stylesheet" href="css/main.css">
+<title>Live Auction Art Premium Calculator</title>
 </head>	
 <body>
-<!-- Preload -->
-<div class="calculator" id="wrapper">
-     <ul class="lots">
-             <li>
-                <div class="lotsIn">
-                    <div class="thumb">
-                        <img src="http://i0.kym-cdn.com/photos/images/facebook/000/002/110/longcat.jpg">
-                    </div>
-                    <div class="cont">
-                        <p class="lot_no">Christie's London, Lot. 196</p>
-                        <p class="artist">Andy Warhol</p>
-                        <p class="title">Spur</p>
-                        <p class="est2"><em>€</em> 8,000 - 12,000</p>
-                    </div>
-                </div>
-            </li>
-    </ul>
- 
+<div class="calculator">
+    <div class="lot">
+        <div class="img"><img src="http://i0.kym-cdn.com/photos/images/facebook/000/002/110/longcat.jpg"></div>
+        <div class="work-info">
+            <p class="sale-info">Christie's London, Lot.18 </p>
+            <p class="artist">Andy Warhol Andy Warhol Andy Warhol Andy Warhol Andy Warhol Andy Warhol Andy Warhol </p>
+            <p class="worktitle">Spur Spur Spur Spur Spur Spur Spur Spur Spur Spur Spur Spur Spur Spur Spur Spur Spur Spur Spur Spur Spur Spur Spur Spur </p>
+            <p class="estimate">$ 50,000,000,000,000 - $ 90,000,000,000,000</p>
+        </div>
+    </div>
+    <div class="cal-calculator">
+        <p class="cal-title">Calculate Final Price After Commission</p>
+        <div class="cal-currency">
+            <select>
+                <option>€</option>
+            </select>
+        </div>
+        <div class="cal-input">
+            <input type="number" placeholder="Enter Bid Amount">
+        </div>
+        <div class="cal-btn-calculate">Calculate Now</div>
+    </div>
+    <div class="cal-result">
+        <div class="cal-bid-price">
+            <p class="title">If Your Bid Is</p>
+            <p class="bid-price">
+                <span class="currency">€</span>
+                <span class="price">5,000,000</span>
+            </p>
+            <p class="bid-price-exchanged">
+                <span class="currency">€</span>
+                <span class="price">5,580,000</span>
+            </p>
+        </div>
+        <div class="cal-result-price">
+            <p class="title">Your Final Price After Commission Is</p>
+            <p class="bid-price">
+                <span class="currency">€</span>
+                <span class="price">6,750,000</span>
+            </p>
+            <p class="bid-price-exchanged">
+                <span class="currency">€</span>
+                <span class="price">5,719,500</span>
+            </p>
+            <p class="info">Sales Tax Excluded</p>
+            <p class="info">Artist's Resale Right Included</p>
+        </div>
+        <div class="cal-buttons">
+            <button class="btn-detail">Show Detail</button>
+        </div>
+    </div>
+     <div class="cal-premium-info">
+         <div class="title">Buyer's Premium</div>
+         <div class="description">
+             <p class="text">25% (Up to $300,000)</p>
+             <p class="text">20% ($300,001 to $4,000,000)</p>
+             <p class="text">13.5% ($4,000,001 and above)</p>
+             <p class="text warning">Sales Tex Excluded</p>
+         </div>
+     </div>
+    <div class="cal-premium-info">
+        <div class="title">Artist's Resale Right Fee</div>
+        <div class="description">
+            <p class="text">4% (Up to €50,000)</p>
+            <p class="text">3% (€50,000.01 to €200,000)</p>
+            <p class="text">1% (€200,000.01 to €350,000)</p>
+            <p class="text">0.5% (€350,000.01 to €500,000)</p>
+            <p class="text">0.25% (€500,000.01 and above)</p>
+            <p class="text warning">Maximum Limit €12,500</p>
+        </div>
+    </div>
 </div>
+<div class="modal">
+    <li class="modal-contents">
+        <div class="title-area">
+            <p class="title">Calculation Detail</p>
+            <button class="btn-close">Close</button>
+        </div>
+        <ul class="contents-area">
+            <li class="bid-amount">
+                <p class="subtitle">Bid Amount</p>
+                <p class="price">\5,000,000 </p>
+                <p class="price-exchanged">($5,580,000) </p>
+            </li>
+            <li class="buyers-premium">
+                <p class="subtitle">Buyer’s Premium</p>
+                <p class="detail">
+   $75,000 ($300,000 x 25%)
++ $740,000 ($3,700,000 x 20%)
++ $213,000 ($1,580,000 x 13.5%)
+= $1,028,000
+                </p>
+                <p class="price">\921,000</p>
+                <p class="price-exchanged">($1,028,000)</p>
+                <button class="btn-link">Show Detail</button>
+            </li>
+            <li class="artist-resale-right">
+                <p class="subtitle">Artist's Resale Right</p>
+                <p class="detail">
+   €5,000,000 ($5,580,000) 기준.
+   €2,000 (€50,000 x 4%)
++ €4,500 (€150,000 x 3%)
++ €1,500 (€150,000 x 1%)
++ €7,500 (€150,000 x 0.5%)
++ €11,000 (€4,400,000 x 0.25%)
+= €26,500
+※ Maximum Limit €12,500
+                </p>
+                <p class="price">\12,500</p>
+                <p class="price-exchanged">($13,900)</p>
+                <button class="btn-link">Show Detail</button>
+            </li>
+            <li class="total-price">
+                <p class="subtitle">Total Price</p>
+                <p class="price">\5,930,000</p>
+                <p class="price-exchanged">$6,620,000</p>
+                <p class="info">Sales Tax Excluded</p>
+                <p class="info">Artist's Resale Right Included</p>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--<div class="bg bg-calculator"></div>-->
 </body></html>

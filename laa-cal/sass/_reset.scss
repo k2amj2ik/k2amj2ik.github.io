@@ -25,7 +25,7 @@ strong {font-weight:600;}
 h1,h2,h3,h4,h5,h6 {font-weight:400;}
 header,footer,nav,article,aside,section {display:block;}
 pre {word-wrap: break-word}
-
+a[href], button { touch-action: manipulation; }
 /*
 	color sets
 	#e74b3c	rgb:228,75,59		red			christies		c1	C

@@ -498,12 +498,12 @@ table tbody tr:hover {
   background: transparent url("../images/bg_lot_1110x1733.png") no-repeat top center/1110px 1733px;
 }
 
-.lots {
+.cal-lot {
   margin-top: 0;
   padding: 0 10px 51px 10px;
   position: relative;
 }
-.lots .filters {
+.cal-lot .filters {
   position: absolute;
   top: 0;
   right: 0;
@@ -512,7 +512,7 @@ table tbody tr:hover {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 50;
 }
-.lots .filters .filters-area {
+.cal-lot .filters .filters-area {
   position: absolute;
   top: 0;
   /* The animation code */
@@ -537,10 +537,10 @@ table tbody tr:hover {
     overflow-x: hidden;
   }
 }
-.lots .filters .filters-area .title {
+.cal-lot .filters .filters-area .title {
   position: relative;
 }
-.lots .filters .filters-area .title .text {
+.cal-lot .filters .filters-area .title .text {
   margin: 8px 0 16px 0;
   font-family: "Lato";
   font-size: 18px;
@@ -549,7 +549,7 @@ table tbody tr:hover {
   color: #a8835a;
   line-height: 21px;
 }
-.lots .filters .filters-area .title .btn {
+.cal-lot .filters .filters-area .title .btn {
   position: absolute;
   top: -10px;
   left: 200px;
@@ -561,14 +561,14 @@ table tbody tr:hover {
   -webkit-background-size: 16px;
   background-size: 16px;
 }
-.lots .filters .filters-area .title .btn:hover {
+.cal-lot .filters .filters-area .title .btn:hover {
   background: #c69c6d url("../images/icon_filter_on.png") no-repeat center center;
 }
-.lots .filters .filters-area .filter-area {
+.cal-lot .filters .filters-area .filter-area {
   width: 235px;
   background-color: #fff;
 }
-.lots .filters .filters-area .filter-area .filter-title {
+.cal-lot .filters .filters-area .filter-area .filter-title {
   padding: 0 0 0 15px;
   font-family: "Lato";
   font-size: 14px;
@@ -579,7 +579,7 @@ table tbody tr:hover {
   text-transform: uppercase;
   position: relative;
 }
-.lots .filters .filters-area .filter-area .filter-title::before {
+.cal-lot .filters .filters-area .filter-area .filter-title::before {
   content: '';
   position: absolute;
   left: 0;
@@ -589,7 +589,7 @@ table tbody tr:hover {
   height: 2px;
   background-color: #d0d0d0;
 }
-.lots .filters .filters-area .filter-area .filter-title .description {
+.cal-lot .filters .filters-area .filter-area .filter-title .description {
   font-family: "Lato";
   font-size: 14px;
   letter-spacing: 0;
@@ -599,12 +599,12 @@ table tbody tr:hover {
   line-height: 17px;
   text-transform: none;
 }
-.lots .filters .filters-area .filter-area .filter {
+.cal-lot .filters .filters-area .filter-area .filter {
   padding: 15px 0 13px 16px;
   margin: 0 0 20px 0;
   border-bottom: 1px solid #dddddd;
 }
-.lots .filters .filters-area .filter-area .filter li {
+.cal-lot .filters .filters-area .filter-area .filter li {
   cursor: pointer;
   padding: 0 0 8px 21px;
   font-family: "Lato";
@@ -616,7 +616,7 @@ table tbody tr:hover {
   text-transform: capitalize;
   position: relative;
 }
-.lots .filters .filters-area .filter-area .filter li::before {
+.cal-lot .filters .filters-area .filter-area .filter li::before {
   content: '';
   position: absolute;
   left: 0;
@@ -626,10 +626,10 @@ table tbody tr:hover {
   height: 14px;
   background: transparent url("../images/icon_unchecked.png") no-repeat center center;
 }
-.lots .filters .filters-area .filter-area .filter li:hover {
+.cal-lot .filters .filters-area .filter-area .filter li:hover {
   text-decoration: underline;
 }
-.lots .filters .filters-area .filter-area .filter .active {
+.cal-lot .filters .filters-area .filter-area .filter .active {
   font-family: "Lato";
   font-size: 14px;
   letter-spacing: 0;
@@ -638,14 +638,14 @@ table tbody tr:hover {
   line-height: 16px;
   text-transform: capitalize;
 }
-.lots .filters .filters-area .filter-area .filter .active::before {
+.cal-lot .filters .filters-area .filter-area .filter .active::before {
   background: transparent url("../images/icon_checked.png") no-repeat center center;
 }
-.lots .filters .filters-area .filter-area .range .range-input {
+.cal-lot .filters .filters-area .filter-area .range .range-input {
   margin: 9px 0 0 -21px;
   position: relative;
 }
-.lots .filters .filters-area .filter-area .range .range-input::after {
+.cal-lot .filters .filters-area .filter-area .range .range-input::after {
   content: '';
   position: absolute;
   left: 103px;
@@ -655,31 +655,31 @@ table tbody tr:hover {
   height: 1px;
   background-color: #dddddd;
 }
-.lots .filters .filters-area .filter-area .range .range-input input {
+.cal-lot .filters .filters-area .filter-area .range .range-input input {
   width: 93px;
   height: 27px;
   padding: 0 0 0 11px;
 }
-.lots .filters .filters-area .filter-area .range .range-input input.placeholder {
+.cal-lot .filters .filters-area .filter-area .range .range-input input.placeholder {
   color: #9a9a9a;
 }
-.lots .filters .filters-area .filter-area .range .range-input input:-moz-placeholder {
+.cal-lot .filters .filters-area .filter-area .range .range-input input:-moz-placeholder {
   color: #9a9a9a;
 }
-.lots .filters .filters-area .filter-area .range .range-input input::-webkit-input-placeholder {
+.cal-lot .filters .filters-area .filter-area .range .range-input input::-webkit-input-placeholder {
   color: #9a9a9a;
 }
-.lots .filters .filters-area .filter-area .range .range-input input:-ms-input-placeholder {
+.cal-lot .filters .filters-area .filter-area .range .range-input input:-ms-input-placeholder {
   color: #9a9a9a;
 }
-.lots .filters .filters-area .filter-area .range .range-input .from {
+.cal-lot .filters .filters-area .filter-area .range .range-input .from {
   margin: 0 28px 0 0;
 }
-.lots .filters .filters-area .filter-area .search {
+.cal-lot .filters .filters-area .filter-area .search {
   position: relative;
   padding-bottom: 49px;
 }
-.lots .filters .filters-area .filter-area .search .input {
+.cal-lot .filters .filters-area .filter-area .search .input {
   float: left;
   width: 184px;
   height: 27px;
@@ -691,31 +691,31 @@ table tbody tr:hover {
   color: #272727;
   line-height: 16px;
 }
-.lots .filters .filters-area .filter-area .search .input.placeholder {
+.cal-lot .filters .filters-area .filter-area .search .input.placeholder {
   color: #9a9a9a;
 }
-.lots .filters .filters-area .filter-area .search .input:-moz-placeholder {
+.cal-lot .filters .filters-area .filter-area .search .input:-moz-placeholder {
   color: #9a9a9a;
 }
-.lots .filters .filters-area .filter-area .search .input::-webkit-input-placeholder {
+.cal-lot .filters .filters-area .filter-area .search .input::-webkit-input-placeholder {
   color: #9a9a9a;
 }
-.lots .filters .filters-area .filter-area .search .input:-ms-input-placeholder {
+.cal-lot .filters .filters-area .filter-area .search .input:-ms-input-placeholder {
   color: #9a9a9a;
 }
-.lots .filters .filters-area .filter-area .search .input.placeholder {
+.cal-lot .filters .filters-area .filter-area .search .input.placeholder {
   font-style: italic;
 }
-.lots .filters .filters-area .filter-area .search .input:-moz-placeholder {
+.cal-lot .filters .filters-area .filter-area .search .input:-moz-placeholder {
   font-style: italic;
 }
-.lots .filters .filters-area .filter-area .search .input::-webkit-input-placeholder {
+.cal-lot .filters .filters-area .filter-area .search .input::-webkit-input-placeholder {
   font-style: italic;
 }
-.lots .filters .filters-area .filter-area .search .input:-ms-input-placeholder {
+.cal-lot .filters .filters-area .filter-area .search .input:-ms-input-placeholder {
   font-style: italic;
 }
-.lots .filters .filters-area .filter-area .search .btn-search {
+.cal-lot .filters .filters-area .filter-area .search .btn-search {
   float: left;
   display: inline-block;
   cursor: pointer;
@@ -729,11 +729,11 @@ table tbody tr:hover {
   text-indent: 5rem;
   background: #fff url("../images/icon_search_tiny.png") no-repeat center center;
 }
-.lots .filters .filters-area .filter-area .btn {
+.cal-lot .filters .filters-area .filter-area .btn {
   position: relative;
   padding-bottom: 64px;
 }
-.lots .filters .filters-area .filter-area .btn li {
+.cal-lot .filters .filters-area .filter-area .btn li {
   width: 42px;
   height: 42px;
   border: 1px solid #dcdcdc;
@@ -742,16 +742,16 @@ table tbody tr:hover {
   float: left;
   padding: 12px 0 0 0;
 }
-.lots .filters .filters-area .filter-area .btn li:last-child {
+.cal-lot .filters .filters-area .filter-area .btn li:last-child {
   border-right: 1px solid #dcdcdc;
 }
-.lots .filters .filters-area .filter-area .btn li::before {
+.cal-lot .filters .filters-area .filter-area .btn li::before {
   display: none;
 }
-.lots .filters .filters-area .filter-area .btn .active {
+.cal-lot .filters .filters-area .filter-area .btn .active {
   background-color: #e7e7e7;
 }
-.lots .filters .filters-area .filter-area .size-range {
+.cal-lot .filters .filters-area .filter-area .size-range {
   margin: -127px 0 103px 63px;
   width: 177px;
   height: 24px;
@@ -763,10 +763,10 @@ table tbody tr:hover {
   font-style: italic;
   line-height: 38px;
 }
-.lots .filters .filters-area .filter-area .size-range .num {
+.cal-lot .filters .filters-area .filter-area .size-range .num {
   color: #a8835a;
 }
-.lots .filters .filters-area .filter-btn .btn {
+.cal-lot .filters .filters-area .filter-btn .btn {
   width: 100%;
   height: 40px;
   margin-bottom: 40px;
@@ -781,7 +781,7 @@ table tbody tr:hover {
   color: #272727;
   background-color: #e7e7e7;
 }
-.lots .filters .filters-area .filter-btn .btn:hover {
+.cal-lot .filters .filters-area .filter-btn .btn:hover {
   /* The animation code */
   animation-name: btn-animation;
   animation-duration: 0.2s;
@@ -798,27 +798,27 @@ table tbody tr:hover {
     background-color: #c69c6d;
   }
 }
-.lots .filters .filters-area .reset-search {
+.cal-lot .filters .filters-area .reset-search {
   text-align: right;
   position: relative;
   margin: -10px 2px 100px 0;
 }
-.lots .filters .filters-area .reset-search a:link {
+.cal-lot .filters .filters-area .reset-search a:link {
   color: #707070;
   text-decoration: none;
 }
-.lots .filters .filters-area .reset-search a:hover {
+.cal-lot .filters .filters-area .reset-search a:hover {
   text-decoration: underline;
 }
-.lots .filters .filters-area .reset-search a:visited {
+.cal-lot .filters .filters-area .reset-search a:visited {
   color: rgba(112, 112, 112, 0.5);
   text-decoration: none;
 }
-.lots .filters .filters-area .reset-search a:active {
+.cal-lot .filters .filters-area .reset-search a:active {
   outline: none;
   text-decoration: underline;
 }
-.lots .filters .filters-area .reset-search::before {
+.cal-lot .filters .filters-area .reset-search::before {
   content: '';
   position: absolute;
   right: 90px;
@@ -828,15 +828,15 @@ table tbody tr:hover {
   height: 14px;
   background: transparent url("../images/icon_reset.png") no-repeat center center;
 }
-.lots .hide {
+.cal-lot .hide {
   display: none !important;
 }
-.lots .result-area {
+.cal-lot .result-area {
   position: relative;
   width: 100%;
   z-index: 20;
 }
-.lots .result-area .text-header {
+.cal-lot .result-area .text-header {
   display: inline-block;
   padding-right: 25px;
   margin: 20px 0 0 0;
@@ -849,7 +849,7 @@ table tbody tr:hover {
   position: relative;
   text-transform: uppercase;
 }
-.lots .result-area .text-header .description {
+.cal-lot .result-area .text-header .description {
   margin: -2px 0 0 1px;
   font-family: "Lato";
   font-size: 18px;
@@ -860,7 +860,7 @@ table tbody tr:hover {
   line-height: 22px;
   text-transform: none;
 }
-.lots .result-area .btn-filter {
+.cal-lot .result-area .btn-filter {
   display: inline-block;
   position: absolute;
   top: 20px;
@@ -872,7 +872,7 @@ table tbody tr:hover {
   background-color: #e7e7e7;
   box-shadow: none;
 }
-.lots .result-area .btn-filter:hover {
+.cal-lot .result-area .btn-filter:hover {
   /* The animation code */
   animation-name: btn-animation;
   animation-duration: 0.2s;
@@ -889,7 +889,7 @@ table tbody tr:hover {
     background-color: #c69c6d;
   }
 }
-.lots .result-area .result-count {
+.cal-lot .result-area .result-count {
   margin: 17px 0 0 0;
   font-family: "Lato";
   font-size: 16px;
@@ -898,17 +898,17 @@ table tbody tr:hover {
   color: #707070;
   line-height: 18px;
 }
-.lots .result-area .sort {
+.cal-lot .result-area .sort {
   border: 1px solid #dcdcdc;
   cursor: pointer;
   margin: 10px 0 0 0;
   padding: 10px 10px 0 10px;
   position: relative;
 }
-.lots .result-area .sort:hover {
+.cal-lot .result-area .sort:hover {
   text-decoration: underline;
 }
-.lots .result-area .sort .sorted {
+.cal-lot .result-area .sort .sorted {
   margin: -9px 18px 0 0;
   font-family: "Lato";
   font-size: 16px;
@@ -919,7 +919,7 @@ table tbody tr:hover {
   line-height: 22px;
   position: relative;
 }
-.lots .result-area .sort .sorted::after {
+.cal-lot .result-area .sort .sorted::after {
   content: '';
   position: absolute;
   right: -18px;
@@ -929,7 +929,7 @@ table tbody tr:hover {
   height: 6px;
   background: transparent url("../images/icon_dropdown.png") no-repeat center center;
 }
-.lots .result-area .sort .options {
+.cal-lot .result-area .sort .options {
   display: none;
   position: absolute;
   width: 100%;
@@ -944,7 +944,7 @@ table tbody tr:hover {
   color: 4px 4px 4px rgba(247, 247, 247, 0.7);
   background-color: 4px 4px 4px rgba(247, 247, 247, 0.7);
 }
-.lots .result-area .sort .options .option {
+.cal-lot .result-area .sort .options .option {
   cursor: pointer;
   font-family: "Lato";
   font-size: 16px;
@@ -957,48 +957,48 @@ table tbody tr:hover {
   border-bottom: 0;
   padding: 6px 17px 8px 14px;
 }
-.lots .result-area .sort .options .option:last-child {
+.cal-lot .result-area .sort .options .option:last-child {
   border-bottom: 1px solid #dcdcdc;
 }
-.lots .result-area .sort .options .option:hover {
+.cal-lot .result-area .sort .options .option:hover {
   background-color: #f7f7f7;
 }
-.lots .result-area .results {
+.cal-lot .result-area .results {
   margin: 11px 0 0 0;
 }
-.lots .result-area .results thead {
+.cal-lot .result-area .results thead {
   border-top: 2px solid #e5e5e5;
   border-bottom: 2px solid #e5e5e5;
 }
-.lots .result-area .results thead th {
+.cal-lot .result-area .results thead th {
   display: none;
 }
-.lots .result-area .results tbody tr {
+.cal-lot .result-area .results tbody tr {
   height: 174px;
   border-bottom: 1px solid #e5e5e5;
   cursor: pointer;
   position: relative;
 }
-.lots .result-area .results tbody tr td {
+.cal-lot .result-area .results tbody tr td {
   display: block;
   width: 100%;
   float: left;
 }
-.lots .result-area .results tbody tr .lot-detail {
+.cal-lot .result-area .results tbody tr .lot-detail {
   vertical-align: top;
   padding: 12px 0 0 9px;
   position: relative;
 }
-.lots .result-area .results tbody tr .lot-detail:hover .worktitle {
+.cal-lot .result-area .results tbody tr .lot-detail:hover .worktitle {
   text-decoration: underline;
 }
-.lots .result-area .results tbody tr .lot-detail .img {
+.cal-lot .result-area .results tbody tr .lot-detail .img {
   float: left;
   width: 100px;
   height: 93px;
   position: relative;
 }
-.lots .result-area .results tbody tr .lot-detail .img img {
+.cal-lot .result-area .results tbody tr .lot-detail .img img {
   max-width: 100px;
   max-height: 93px;
   position: absolute;
@@ -1006,7 +1006,7 @@ table tbody tr:hover {
   left: 50%;
   transform: translate(-50%, 0);
 }
-.lots .result-area .results tbody tr .lot-detail .worktitle {
+.cal-lot .result-area .results tbody tr .lot-detail .worktitle {
   position: absolute;
   top: 10px;
   left: 0;
@@ -1027,7 +1027,7 @@ table tbody tr:hover {
   max-width: 100%;
   overflow: hidden;
 }
-.lots .result-area .results tbody tr .lot-detail .summary {
+.cal-lot .result-area .results tbody tr .lot-detail .summary {
   position: absolute;
   top: 40px;
   left: 0;
@@ -1050,10 +1050,10 @@ table tbody tr:hover {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
 }
-.lots .result-area .results tbody tr .sale-date {
+.cal-lot .result-area .results tbody tr .sale-date {
   position: relative;
 }
-.lots .result-area .results tbody tr .sale-date .date {
+.cal-lot .result-area .results tbody tr .sale-date .date {
   position: absolute;
   top: 36px;
   left: 0;
@@ -1077,7 +1077,7 @@ table tbody tr:hover {
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
 }
-.lots .result-area .results tbody tr .sale-date .upcoming {
+.cal-lot .result-area .results tbody tr .sale-date .upcoming {
   display: inline-block;
   margin: 0 0 0 6px;
   font-family: "Lato";
@@ -1089,7 +1089,7 @@ table tbody tr:hover {
   line-height: 17px;
   position: relative;
 }
-.lots .result-area .results tbody tr .sale-date .upcoming::after {
+.cal-lot .result-area .results tbody tr .sale-date .upcoming::after {
   content: '';
   position: absolute;
   right: -18px;
@@ -1099,10 +1099,10 @@ table tbody tr:hover {
   height: 8px;
   background: transparent url("../images/icon_arrow.png") no-repeat center center;
 }
-.lots .result-area .results tbody tr .sale-info {
+.cal-lot .result-area .results tbody tr .sale-info {
   position: relative;
 }
-.lots .result-area .results tbody tr .sale-info .vendor {
+.cal-lot .result-area .results tbody tr .sale-info .vendor {
   position: absolute;
   top: 20px;
   left: 0;
@@ -1123,10 +1123,10 @@ table tbody tr:hover {
   max-width: 100%;
   overflow: hidden;
 }
-.lots .result-area .results tbody tr .sale-info .sale {
+.cal-lot .result-area .results tbody tr .sale-info .sale {
   display: none;
 }
-.lots .result-area .results tbody tr .sale-info .lot {
+.cal-lot .result-area .results tbody tr .sale-info .lot {
   display: none;
   position: absolute;
   border: 1px solid blue;
@@ -1143,10 +1143,10 @@ table tbody tr:hover {
   font-style: normal;
   line-height: 15px;
 }
-.lots .result-area .results tbody tr .price {
+.cal-lot .result-area .results tbody tr .price {
   position: relative;
 }
-.lots .result-area .results tbody tr .price .estimate {
+.cal-lot .result-area .results tbody tr .price .estimate {
   position: absolute;
   top: -16px;
   left: 0;
@@ -1169,7 +1169,7 @@ table tbody tr:hover {
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
 }
-.lots .result-area .results tbody tr .price .sold {
+.cal-lot .result-area .results tbody tr .price .sold {
   position: absolute;
   top: -16px;
   left: 0;
@@ -1191,7 +1191,7 @@ table tbody tr:hover {
   max-width: 100%;
   overflow: hidden;
 }
-.lots .result-area .results tbody tr .price .sold .premium {
+.cal-lot .result-area .results tbody tr .price .sold .premium {
   font-family: "Lato";
   font-size: 13px;
   letter-spacing: 0;
