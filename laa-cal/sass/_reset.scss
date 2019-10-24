@@ -1,0 +1,81 @@
+/* reset default browser setting */
+* {margin:0; padding:0; color:inherit; line-height:1em; font-size:inherit; font-family:inherit;}
+html {width:100%; height:100%; position:relative;}
+body {position:relative; width:100%; height:100%; overflow-x:hidden; overflow-y:auto; background:#fff none; font-family:gt; color:#444; font-size:14px;}
+table {border-collapse: collapse; border-spacing:0;}
+del,ins {text-decoration:none;}
+li {list-style-type:none;}
+dd,dt {display:block;}
+a:link, a:visited, a:active, a:hover, a:focus {text-decoration:none; outline:0;}
+th {text-align:center; font-weight:bold;}
+td {text-align:left;}
+q:before,q:after {content:'';}
+abbr,acronym {border:0;font-variant:normal;}
+em {font-style:inherit; font-weight:inherit;}
+sup {vertical-align:baseline;}
+sub {vertical-align:baseline;}
+table caption, legend {text-indent:-9999px; font-size: 0; line-height: 0; width:0; height:0; overflow:hidden;}
+table caption, legend {text-indent:-9999px; font-size: 0; line-height: 0; width:0; height:0; overflow:hidden;}
+input, select, textarea {font-family:inherit; font-size:inherit; line-height:1.4em;}
+button {border:0; padding:0; background:transparent; cursor:pointer; position:relative; font-family:inherit; font-size:inherit;}
+button:hover, button:focus, button:active {outline:none;}
+input:hover, input:focus, input:active {outline:none;}
+a, button {cursor:pointer;}
+strong {font-weight:600;}
+h1,h2,h3,h4,h5,h6 {font-weight:400;}
+header,footer,nav,article,aside,section {display:block;}
+pre {word-wrap: break-word}
+
+/*
+	color sets
+	#e74b3c	rgb:228,75,59		red			christies		c1	C
+	#146ad1	rgb:20,106,209		blue		sothebys		c2	S
+	#603ab4 rgb:96,58,180		purple		bonhams			c3	B
+	#000000	rgb:0,0,0			black		phillips		c4	P
+	#f6bb43	rgb:246,187,67		yellow		polyauction		c5	P
+	#ee7838	rgb:238,120,56		orange		chinagadian		c6	C
+	#00b9bf	rgb:0,204,196		green		Seoul			c7	S
+	#000000	rgb:0,0,0			black		K-auction		c8	K
+
+	font weights
+	200		extralight	-
+	300		light		lighter
+	400		book 		normal
+	700		medium		bold
+*/
+.c1 {color:#e74b3c;}
+.c2 {color:#146ad1;}
+.c3 {color:#603ab4;}
+.c4 {color:#000000;}
+.c5 {color:#f6bb43;}
+.c6 {color:#ee7838;}
+.c7 {color:#00b9bf;}
+.c8 {color:#000000;}
+
+.c1.b, .c1 .b {background-color:#e74b3c; color:#fff;}
+.c2.b, .c2 .b {background-color:#146ad1; color:#fff;}
+.c3.b, .c3 .b {background-color:#603ab4; color:#fff;}
+.c4.b, .c4 .b {background-color:#000000; color:#fff;}
+.c5.b, .c5 .b {background-color:#f6bb43; color:#fff;}
+.c6.b, .c6 .b {background-color:#ee7838; color:#fff;}
+.c7.b, .c7 .b {background-color:#00b9bf; color:#fff;}
+.c8.b, .c8 .b {background-color:#000000; color:#fff;}
+
+.c_white {color:#fff;}
+.c_black {color:#222;}
+
+@media screen and (max-width:320px) {
+
+}
+@media screen and (min-width:400px) {
+
+}
+
+.invisible {position:absolute; top:0; left:0; width:0; height:0; overflow:hidden; line-height:100px; font-size:0; text-indent:100px;}
+.clear {clear:both;}
+.aL {text-align:left;}
+.aR {text-align:right;}
+.aC {text-align:center;}
+.scrollX {overflow-x:scroll; overflow-y:hidden; -webkit-overflow-scrolling:touch;}
+.scrollY {overflow-x:hidden; overflow-y:scroll; -webkit-overflow-scrolling:touch;}
+.img_align img {display:block; display:none;}

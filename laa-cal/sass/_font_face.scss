@@ -1,0 +1,50 @@
+@charset "utf-8";
+@font-face {
+  font-family:'gt';
+  font-weight:200;
+  src:url('fonts/Gotham-XLight.otf') format('opentype'), local(times new romans);
+}
+@font-face {
+  font-family:'gt';
+  font-weight:300;
+  src:url('fonts/Gotham-Light.otf') format('opentype'), local(times new romans);
+}
+@font-face {
+  font-family:'gt';
+  font-weight:400;
+  src:url('fonts/Gotham-Book.otf') format('opentype'), local(times new romans);
+}
+@font-face {
+  font-family:'gt';
+  font-weight:600;
+  src:url('fonts/Gotham-Medium.otf') format('opentype'), local(times new romans);
+}
+@font-face {
+  font-family:'gt';
+  font-weight:700;
+  src:url('fonts/Gotham-Bold.otf') format('opentype'), local(times new romans);
+}
+
+@font-face {
+  font-family:'gt';
+  font-weight:800;
+  src:url('fonts/Gotham-Black.otf') format('opentype'), local(times new romans);
+}
+
+@font-face {
+  font-family:'tl';
+  font-weight:400;
+  src:url('fonts/timeless-woff-webfont.woff') format('woff'), local(times new romans);
+}
+
+@font-face {
+  font-family:'ns';
+  font-weight:400;
+  src:url('fonts/NotoSansCJKkr-Medium.otf') format('opentype'), local(times new romans);
+}
+
+@font-face {
+  font-family:'ns';
+  font-weight:300;
+  src:url('fonts/NotoSansCJKkr-DemiLight.otf') format('opentype'), local(times new romans);
+}
