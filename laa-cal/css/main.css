@@ -232,18 +232,24 @@ body {
   position: fixed;
   width: 100%;
   height: 100%;
-  overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
 }
 
+.calculator {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
 .calculator .lot {
   padding: 14px 17px 13px 83px;
+  position: relative;
 }
 .calculator .lot .img {
-  width: 86px;
+  width: 56px;
   height: 70px;
   position: absolute;
-  left: 0;
+  left: 15px;
   top: 17px;
 }
 .calculator .lot .img img {
@@ -580,7 +586,7 @@ body {
   padding: 29px 33px 33px 31px;
 }
 .modal .modal-contents .title-area {
-  padding: 0 0 33px 0;
+  padding: 0 0 24px 0;
   color: #0b0a0b;
   text-align: center;
   font-size: 18.5px;
@@ -696,10 +702,10 @@ body {
 .modal .contents-area li.active .detail {
   display: block !important;
 }
-.modal .contents-area li.active.hide {
+.modal .contents-area li.active .hide {
   display: block !important;
 }
-.modal .contents-area li.active.show {
+.modal .contents-area li.active .show {
   display: none !important;
 }
 .modal.active {
