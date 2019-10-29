@@ -301,6 +301,9 @@ body {
 .calculator .cal-calculator {
   padding: 9px 15px 16px 14px;
   background-color: #ebebeb;
+  height: -moz-calc(100% - 190px);
+  height: -webkit-calc(100% - 190px);
+  height: calc(100% - 190px);
 }
 .calculator .cal-calculator .cal-title {
   padding: 2px 0 0 0;
