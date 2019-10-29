@@ -270,61 +270,6 @@ body {
       }
     }
   }
-  //.lot-premium {
-  //  position: absolute;
-  //  left: 0;
-  //  bottom: 0;
-  //  width: 100%;
-  //  background-color: $bg-white;
-  //  @include box-shadow(0 -6px 4px rgba($bg-lightgrey, 0.5));
-  //  .cal-premium-info {
-  //    border-bottom: 1px solid $border-fairy;
-  //    .title {
-  //      padding: 14px 0 0 14px;
-  //      height: 43px;
-  //      color: $text-grey2;
-  //      font-size: 11px;
-  //      line-height: 15px;
-  //      font-weight: 600;
-  //      letter-spacing: 0;
-  //      position: relative;
-  //      &:after {
-  //        content: '';
-  //        display: inline-block;
-  //        position: absolute;
-  //        right: 16px;
-  //        top: 17px;
-  //        width: 10px;
-  //        height: 6px;
-  //        @include bg-image(transparent,'../img/icon_arrow_down.png',no-repeat,scroll,center,right,10px,6px);
-  //      }
-  //    }
-  //    .description {
-  //      display: none;
-  //      padding: 15px 0 14px 14px;
-  //      background-color: $bg-fairy;
-  //      .text {
-  //        padding: 0 0 3px 0;
-  //        color: $text-grey;
-  //        font-size: 11px;
-  //        font-family: $font-family-sub;
-  //        line-height: 15px;
-  //        font-weight: 400;
-  //        letter-spacing: 0;
-  //      }
-  //    }
-  //    &.active {
-  //      .title {
-  //        &:after {
-  //          @include bg-image(transparent,'../img/icon_arrow_up.png',no-repeat,scroll,center,right,10px,6px);
-  //        }
-  //      }
-  //      .description {
-  //        display: block;
-  //      }
-  //    }
-  //  }
-  //}
   .lot-premium {
     .cal-premium-info {
       border-bottom: 1px solid $border-fairy;
