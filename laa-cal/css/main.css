@@ -326,8 +326,24 @@ body {
   display: inline-block;
   position: absolute;
   left: 0;
-  top: -3px;
+  top: 0;
   height: 100%;
+}
+.calculator .cal-calculator .cal-box .cal-currency:after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  right: 4px;
+  top: 17px;
+  width: 8px;
+  height: 12px;
+  background-color: transparent;
+  background-image: url(../img/icon_arrow_down2.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position-y: center;
+  background-position-x: right;
+  background-size: 8px 12px;
 }
 .calculator .cal-calculator .cal-box .cal-currency select {
   padding: 0 0 0 0;

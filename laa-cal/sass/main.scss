@@ -105,8 +105,18 @@ body {
         display: inline-block;
         position: absolute;
         left: 0;
-        top: -3px;
+        top: 0;
         height: 100%;
+        &:after {
+          content: '';
+          display: inline-block;
+          position: absolute;
+          right: 4px;
+          top: 17px;
+          width: 8px;
+          height: 12px;
+          @include bg-image(transparent,'../img/icon_arrow_down2.png',no-repeat,scroll,center,right,8px,12px);
+        }
         select {
           padding: 0 0 0 0;
           border: 0;
