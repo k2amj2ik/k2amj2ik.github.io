@@ -510,7 +510,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position-y: 18px;
-  background-position-x: 20px;
+  background-position-x: 24px;
   background-size: 12.5px 12.5px;
 }
 .calculator .cal-calculator .cal-result .cal-buttons .btn-detail:after {
@@ -519,7 +519,7 @@ body {
   content: '';
   right: 17px;
   bottom: 15px;
-  width: 64px;
+  width: 57px;
   height: 1px;
   background-color: #bbbbbb;
 }
