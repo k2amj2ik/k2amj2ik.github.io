@@ -1,6 +1,11 @@
 @charset "utf-8";
 @font-face {
   font-family:'gt';
+  font-weight:400;
+  src:url('fonts/Gotham-Book.woff') format('woff'), local(times new romans);
+}
+@font-face {
+  font-family:'gt';
   font-weight:600;
   src:url('fonts/Gotham-Medium.woff') format('woff'), local(times new romans);
 }

@@ -1,5 +1,10 @@
 @font-face {
   font-family: 'gt';
+  font-weight: 400;
+  src: url("fonts/Gotham-Book.woff") format("woff"), local(times new romans);
+}
+@font-face {
+  font-family: 'gt';
   font-weight: 600;
   src: url("fonts/Gotham-Medium.woff") format("woff"), local(times new romans);
 }
@@ -348,7 +353,7 @@ body {
 .calculator .cal-calculator .cal-box .cal-currency select {
   padding: 0 0 0 0;
   border: 0;
-  background-color: blue;
+  background-color: transparent;
   width: 62px;
   height: 100%;
   color: #707478;
@@ -366,7 +371,7 @@ body {
   vertical-align: top;
   padding: 0 0 0 5px;
   border: 0;
-  background-color: red;
+  background-color: transparent;
   width: 100%;
   height: 100%;
   color: #0b0a0b;
