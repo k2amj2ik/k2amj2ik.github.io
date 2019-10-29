@@ -356,6 +356,7 @@ body {
       border-bottom: 3px double $border-lightgrey;
       }
       .btn-close {
+        z-index:  $z-index-max;
         position: fixed;
         bottom: 24px;
         left: 16px;
@@ -398,8 +399,10 @@ body {
         font-weight: 400;
       }
       .btn-link {
+        margin-bottom: -14px;
         padding: 0 0 0 10px;
-        float: right;
+        width: 100%;
+        text-align: right;
         text-decoration: underline;
         color: $text-grey;
         font-size: 8px;

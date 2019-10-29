@@ -623,6 +623,7 @@ body {
   border-bottom: 3px double #bbbbbb;
 }
 .modal .modal-contents .btn-close {
+  z-index: 90;
   position: fixed;
   bottom: 24px;
   left: 16px;
@@ -667,8 +668,10 @@ body {
   font-weight: 400;
 }
 .modal .contents-area .btn-link {
+  margin-bottom: -14px;
   padding: 0 0 0 10px;
-  float: right;
+  width: 100%;
+  text-align: right;
   text-decoration: underline;
   color: #707478;
   font-size: 8px;
