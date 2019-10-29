@@ -347,7 +347,7 @@ body {
   height: 100%;
 }
 .calculator .cal-calculator .cal-box .cal-input input {
-  padding: 0 0 8px 5px;
+  padding: 0 0 6px 5px;
   border: 0;
   background-color: transparent;
   width: 100%;
