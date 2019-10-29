@@ -611,14 +611,23 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
-  padding: 26px 15px 25px 16px;
+  padding: 20px 15px 25px 16px;
   background-color: rgba(0, 0, 0, 0.7);
 }
 .modal .modal-contents {
-  height: 100%;
+  width: -moz-calc(100% - 30px);
+  width: -webkit-calc(100% - 30px);
+  width: calc(100% - 30px);
+  max-height: -moz-calc(100% - 50px);
+  max-height: -webkit-calc(100% - 50px);
+  max-height: calc(100% - 50px);
   overflow-y: scroll;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-color: #ffffff;
-  padding: 29px 33px 33px 31px;
+  padding: 29px 33px 0 31px;
 }
 .modal .modal-contents .title-area {
   padding: 0 0 25px 0;
@@ -630,28 +639,13 @@ body {
   letter-spacing: 0;
   border-bottom: 3px double #bbbbbb;
 }
-.modal .modal-contents .btn-close {
-  z-index: 90;
-  position: fixed;
-  bottom: 24px;
-  left: 16px;
-  width: -moz-calc(100% - 31px);
-  width: -webkit-calc(100% - 31px);
-  width: calc(100% - 31px);
-  height: 40px;
-  background-color: #c6a971;
-  color: #ffffff;
-  text-align: center;
-  font-size: 15px;
-  line-height: 15px;
-  font-weight: 600;
-  letter-spacing: 0;
-  text-transform: uppercase;
-}
-.modal .contents-area {
+.modal .modal-contents .contents-area {
+  max-height: -moz-calc(100% - 200px);
+  max-height: -webkit-calc(100% - 200px);
+  max-height: calc(100% - 200px);
   padding: 13px 0 0 2px;
 }
-.modal .contents-area .subtitle {
+.modal .modal-contents .contents-area .subtitle {
   padding: 0 0 5px 0;
   color: #707478;
   font-size: 12px;
@@ -660,7 +654,7 @@ body {
   font-weight: 400;
   letter-spacing: 0;
 }
-.modal .contents-area .price, .modal .contents-area .price-exchanged {
+.modal .modal-contents .contents-area .price, .modal .modal-contents .contents-area .price-exchanged {
   display: inline-block;
   color: #0b0a0b;
   font-size: 11.5px;
@@ -669,13 +663,13 @@ body {
   font-weight: 600;
   letter-spacing: 0;
 }
-.modal .contents-area .price {
+.modal .modal-contents .contents-area .price {
   padding: 1.5px 0 0 0;
 }
-.modal .contents-area .price-exchanged {
+.modal .modal-contents .contents-area .price-exchanged {
   font-weight: 400;
 }
-.modal .contents-area .btn-link {
+.modal .modal-contents .contents-area .btn-link {
   margin-bottom: -14px;
   padding: 0 0 0 10px;
   width: 100%;
@@ -688,13 +682,13 @@ body {
   font-weight: 400;
   letter-spacing: 0;
 }
-.modal .contents-area .btn-link.hide {
+.modal .modal-contents .contents-area .btn-link.hide {
   display: none;
 }
-.modal .contents-area .btn-link.show {
+.modal .modal-contents .contents-area .btn-link.show {
   display: block;
 }
-.modal .contents-area .detail {
+.modal .modal-contents .contents-area .detail {
   display: none;
   padding: 0 0 3px 10px;
   text-indent: 10px;
@@ -705,18 +699,18 @@ body {
   font-weight: 400;
   letter-spacing: 0;
 }
-.modal .contents-area li {
+.modal .modal-contents .contents-area li {
   padding: 0 0 11px 0;
 }
-.modal .contents-area li.artist-resale-right {
+.modal .modal-contents .contents-area li.artist-resale-right {
   padding: 0 0 16px 0;
 }
-.modal .contents-area li.total-price {
+.modal .modal-contents .contents-area li.total-price {
   border-top: 1px dotted #bbbbbb;
   border-bottom: 3px double #bbbbbb;
   padding: 12px 0 18px 0;
 }
-.modal .contents-area li.total-price .subtitle {
+.modal .modal-contents .contents-area li.total-price .subtitle {
   padding: 0 0 5px 0;
   color: #c6a971;
   font-size: 12px;
@@ -725,14 +719,14 @@ body {
   font-weight: 400;
   letter-spacing: 0;
 }
-.modal .contents-area li.total-price .price, .modal .contents-area li.total-price .price-exchanged {
+.modal .modal-contents .contents-area li.total-price .price, .modal .modal-contents .contents-area li.total-price .price-exchanged {
   font-size: 15px;
   line-height: 15px;
 }
-.modal .contents-area li.others {
-  padding: 10px 0 50px 5px;
+.modal .modal-contents .contents-area li.others {
+  padding: 10px 0 25px 5px;
 }
-.modal .contents-area li.others .info {
+.modal .modal-contents .contents-area li.others .info {
   padding: 0 0 0 0;
   color: #9e9e9e;
   font-size: 11.5px;
@@ -741,14 +735,36 @@ body {
   font-weight: 400;
   letter-spacing: 0;
 }
-.modal .contents-area li.active .detail {
+.modal .modal-contents .contents-area li.active .detail {
   display: block !important;
 }
-.modal .contents-area li.active .hide {
+.modal .modal-contents .contents-area li.active .hide {
   display: block !important;
 }
-.modal .contents-area li.active .show {
+.modal .modal-contents .contents-area li.active .show {
   display: none !important;
+}
+.modal .modal-contents .btn-area {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  z-index: 90;
+}
+.modal .modal-contents .btn-area .btn-close {
+  margin-left: -31px;
+  width: -moz-calc(100% + 64px);
+  width: -webkit-calc(100% + 64px);
+  width: calc(100% + 64px);
+  height: 40px;
+  background-color: #c6a971;
+  color: #ffffff;
+  text-align: center;
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: uppercase;
 }
 .modal.active {
   display: block;

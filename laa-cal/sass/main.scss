@@ -339,13 +339,18 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
-  padding: 26px 15px 25px 16px;
+  padding: 20px 15px 25px 16px;
   background-color: rgba(0,0,0,0.7);
   .modal-contents {
-    height: 100%;
+    @include calculator(width, '100% - 30px');
+    @include calculator(max-height, '100% - 50px');
     overflow-y: scroll;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-color: $bg-white;
-    padding: 29px 33px 33px 31px;
+    padding: 29px 33px 0 31px;
     .title-area {
       padding: 0 0 25px 0;
       color: $text-black;
@@ -355,26 +360,11 @@ body {
       font-weight: 600;
       letter-spacing: 0;
       border-bottom: 3px double $border-lightgrey;
-      }
-      .btn-close {
-        z-index:  $z-index-max;
-        position: fixed;
-        bottom: 24px;
-        left: 16px;
-        @include calculator(width,'100% - 31px');
-        height: 40px;
-        background-color: $bg-gold;
-        color: $text-white;
-        text-align: center;
-        font-size: 15px;
-        line-height: 15px;
-        font-weight: 600;
-        letter-spacing: 0;
-        text-transform: uppercase;
-      }
     }
     .contents-area {
+      @include calculator(max-height, '100% - 200px');
       padding: 13px 0 0 2px;
+
       .subtitle {
         padding: 0 0 5px 0;
         color: $text-grey;
@@ -384,6 +374,7 @@ body {
         font-weight: 400;
         letter-spacing: 0;
       }
+
       .price, .price-exchanged {
         display: inline-block;
         color: $text-black;
@@ -393,12 +384,15 @@ body {
         font-weight: 600;
         letter-spacing: 0;
       }
+
       .price {
         padding: 1.5px 0 0 0;
       }
+
       .price-exchanged {
         font-weight: 400;
       }
+
       .btn-link {
         margin-bottom: -14px;
         padding: 0 0 0 10px;
@@ -411,13 +405,16 @@ body {
         font-family: $font-family-sub;
         font-weight: 400;
         letter-spacing: 0;
+
         &.hide {
           display: none;
         }
+
         &.show {
           display: block;
         }
       }
+
       .detail {
         display: none;
         padding: 0 0 3px 10px;
@@ -429,15 +426,19 @@ body {
         font-weight: 400;
         letter-spacing: 0;
       }
+
       li {
         padding: 0 0 11px 0;
+
         &.artist-resale-right {
           padding: 0 0 16px 0;
         }
+
         &.total-price {
           border-top: 1px dotted $border-lightgrey;
           border-bottom: 3px double $border-lightgrey;
           padding: 12px 0 18px 0;
+
           .subtitle {
             padding: 0 0 5px 0;
             color: $text-gold;
@@ -447,13 +448,16 @@ body {
             font-weight: 400;
             letter-spacing: 0;
           }
+
           .price, .price-exchanged {
             font-size: 15px;
             line-height: 15px;
           }
         }
+
         &.others {
-          padding: 10px 0 50px 5px;
+          padding: 10px 0 25px 5px;
+
           .info {
             padding: 0 0 0 0;
             color: $text-grey2;
@@ -464,18 +468,42 @@ body {
             letter-spacing: 0;
           }
         }
+
         &.active {
           .detail {
             display: block !important;
           }
+
           .hide {
             display: block !important;
           }
+
           .show {
             display: none !important;
           }
         }
       }
+    }
+    .btn-area {
+      position: -webkit-sticky;
+      position: sticky;
+      bottom: 0;
+      left: 0;
+      z-index: $z-index-max;
+      .btn-close {
+        margin-left: -31px;
+        @include calculator(width, '100% + 64px');
+        height: 40px;
+        background-color: $bg-gold;
+        color: $text-white;
+        text-align: center;
+        font-size: 15px;
+        line-height: 15px;
+        font-weight: 600;
+        letter-spacing: 0;
+        text-transform: uppercase;
+      }
+    }
   }
   &.active {
     display: block;
