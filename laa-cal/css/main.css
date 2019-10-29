@@ -578,7 +578,6 @@ body {
   overflow-y: scroll;
   background-color: #ffffff;
   padding: 29px 33px 33px 31px;
-  position: relative;
 }
 .modal .modal-contents .title-area {
   padding: 0 0 33px 0;
@@ -591,10 +590,12 @@ body {
   border-bottom: 3px double #bbbbbb;
 }
 .modal .modal-contents .btn-close {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
+  position: fixed;
+  bottom: 24px;
+  left: 16px;
+  width: -moz-calc(100% - 31px);
+  width: -webkit-calc(100% - 31px);
+  width: calc(100% - 31px);
   height: 40px;
   background-color: #c6a971;
   color: #ffffff;
@@ -626,6 +627,9 @@ body {
   font-weight: 600;
   letter-spacing: 0;
 }
+.modal .contents-area .price-exchanged {
+  font-weight: 400;
+}
 .modal .contents-area .btn-link {
   float: right;
   text-decoration: underline;
@@ -644,7 +648,7 @@ body {
 }
 .modal .contents-area .detail {
   display: none;
-  padding: 0 0 5px 10px;
+  padding: 0 0 4px 10px;
   white-space: pre;
   color: #707478;
   font-size: 10px;
@@ -656,14 +660,47 @@ body {
 .modal .contents-area li {
   padding: 0 0 11px 0;
 }
-.modal .contents-area li:active .detail {
-  display: block;
+.modal .contents-area li.artist-resale-right {
+  padding: 0 0 16px 0;
 }
-.modal .contents-area li:active.hide {
-  display: block;
+.modal .contents-area li.total-price {
+  border-top: 1px dotted #bbbbbb;
+  border-bottom: 3px double #bbbbbb;
+  padding: 12px 0 18px 2px;
 }
-.modal .contents-area li:active.show {
-  display: none;
+.modal .contents-area li.total-price .subtitle {
+  padding: 0 0 5px 0;
+  color: #c6a971;
+  font-size: 12px;
+  line-height: 14px;
+  font-family: "ns";
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.modal .contents-area li.total-price .price, .modal .contents-area li.total-price .price-exchanged {
+  font-size: 15px;
+  line-height: 15px;
+}
+.modal .contents-area li.others {
+  padding: 10px 0 50px 5px;
+}
+.modal .contents-area li.others .info {
+  padding: 0 0 0 0;
+  color: #707478;
+  font-size: 12px;
+  line-height: 15px;
+  font-family: "ns";
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.modal .contents-area li.active .detail {
+  display: block !important;
+}
+.modal .contents-area li.active.hide {
+  display: block !important;
+}
+.modal .contents-area li.active.show {
+  display: none !important;
 }
 .modal.active {
   display: block;
