@@ -1,15 +1,5 @@
 @font-face {
   font-family: 'gt';
-  font-weight: 200;
-  src: url("fonts/Gotham-XLight.otf") format("opentype"), local(times new romans);
-}
-@font-face {
-  font-family: 'gt';
-  font-weight: 300;
-  src: url("fonts/Gotham-Light.otf") format("opentype"), local(times new romans);
-}
-@font-face {
-  font-family: 'gt';
   font-weight: 400;
   src: url("fonts/Gotham-Book.otf") format("opentype"), local(times new romans);
 }
@@ -17,16 +7,6 @@
   font-family: 'gt';
   font-weight: 600;
   src: url("fonts/Gotham-Medium.otf") format("opentype"), local(times new romans);
-}
-@font-face {
-  font-family: 'gt';
-  font-weight: 700;
-  src: url("fonts/Gotham-Bold.otf") format("opentype"), local(times new romans);
-}
-@font-face {
-  font-family: 'gt';
-  font-weight: 800;
-  src: url("fonts/Gotham-Black.otf") format("opentype"), local(times new romans);
 }
 @font-face {
   font-family: 'tl';
@@ -240,10 +220,12 @@ body {
   height: 100%;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
+  background-color: #ebebeb;
 }
 .calculator .lot {
   padding: 14px 17px 13px 83px;
   position: relative;
+  background-color: #ffffff;
 }
 .calculator .lot .img {
   width: 56px;
@@ -256,9 +238,9 @@ body {
   max-width: 100%;
   max-height: 100%;
   position: absolute;
-  top: 0;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%, 0);
+  transform: translate(-50%, -50%);
 }
 .calculator .lot .work-info .sale-info {
   color: #b4b8bb;
@@ -276,6 +258,15 @@ body {
   letter-spacing: 0;
   text-transform: uppercase;
   margin-bottom: 1px;
+  display: inline-block;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  max-width: 100%;
+  max-height: 15px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
 }
 .calculator .lot .work-info .worktitle {
   color: #0b0a0b;
@@ -286,6 +277,15 @@ body {
   font-family: "tl";
   font-style: italic;
   margin-bottom: 2px;
+  display: inline-block;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  max-width: 100%;
+  max-height: 17px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
 }
 .calculator .lot .work-info .estimate {
   color: #b4b8bb;
@@ -297,7 +297,6 @@ body {
 }
 .calculator .cal-calculator {
   padding: 9px 15px 16px 14px;
-  background-color: #ebebeb;
 }
 .calculator .cal-calculator .cal-title {
   padding: 2px 0 0 0;
@@ -404,8 +403,12 @@ body {
   background-size: 18px 18px;
 }
 .calculator .cal-calculator .cal-result {
+  display: none;
   padding: 21px 0 0 17px;
   background-color: #ffffff;
+}
+.calculator .cal-calculator .cal-result.active {
+  display: block;
 }
 .calculator .cal-calculator .cal-result .cal-bid-price {
   padding: 0 0 9px 0;
@@ -513,10 +516,17 @@ body {
   background-position-x: 20px;
   background-size: 12.5px 12.5px;
 }
-.calculator .cal-premium-info {
+.calculator .lot-premium {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #ffffff;
+}
+.calculator .lot-premium .cal-premium-info {
   border-bottom: 1px solid #e9eaec;
 }
-.calculator .cal-premium-info .title {
+.calculator .lot-premium .cal-premium-info .title {
   padding: 14px 0 0 14px;
   height: 43px;
   color: #707478;
@@ -526,7 +536,7 @@ body {
   letter-spacing: 0;
   position: relative;
 }
-.calculator .cal-premium-info .title:after {
+.calculator .lot-premium .cal-premium-info .title:after {
   content: '';
   display: inline-block;
   position: absolute;
@@ -542,12 +552,12 @@ body {
   background-position-x: right;
   background-size: 10px 6px;
 }
-.calculator .cal-premium-info .description {
+.calculator .lot-premium .cal-premium-info .description {
   display: none;
   padding: 15px 0 14px 14px;
   background-color: #f7f7f7;
 }
-.calculator .cal-premium-info .description .text {
+.calculator .lot-premium .cal-premium-info .description .text {
   padding: 0 0 3px 0;
   color: #707478;
   font-size: 11px;
@@ -556,7 +566,7 @@ body {
   font-weight: 400;
   letter-spacing: 0;
 }
-.calculator .cal-premium-info.active .title:after {
+.calculator .lot-premium .cal-premium-info.active .title:after {
   background-color: transparent;
   background-image: url(../img/icon_arrow_up.png);
   background-repeat: no-repeat;
@@ -565,7 +575,7 @@ body {
   background-position-x: right;
   background-size: 10px 6px;
 }
-.calculator .cal-premium-info.active .description {
+.calculator .lot-premium .cal-premium-info.active .description {
   display: block;
 }
 
@@ -586,7 +596,7 @@ body {
   padding: 29px 33px 33px 31px;
 }
 .modal .modal-contents .title-area {
-  padding: 0 0 24px 0;
+  padding: 0 0 33px 0;
   color: #0b0a0b;
   text-align: center;
   font-size: 18.5px;

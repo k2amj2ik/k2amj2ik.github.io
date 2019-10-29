@@ -15,9 +15,11 @@ body {
   height: 100%;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
+  background-color: $bg-lightgrey;
   .lot {
     padding: 14px 17px 13px 83px;
     position: relative;
+    background-color: $bg-white;
     .img {
       width: 56px;
       height: 70px;
@@ -28,9 +30,9 @@ body {
         max-width: 100%;
         max-height: 100%;
         position: absolute;
-        top: 0;
+        top: 50%;
         left: 50%;
-        transform: translate(-50%, 0);
+        transform: translate(-50%, -50%);
       }
     }
     .work-info {
@@ -50,6 +52,7 @@ body {
         letter-spacing: 0;
         text-transform: uppercase;
         margin-bottom: 1px;
+        @include cut-multi-text(100%,15px,1);
       }
       .worktitle {
         color: $text-black;
@@ -60,6 +63,7 @@ body {
         font-family: $font-family-worktitle;
         font-style: italic;
         margin-bottom: 2px;
+        @include cut-multi-text(100%,17px,1);
       }
       .estimate {
         color: $text-lightgray;
@@ -73,7 +77,6 @@ body {
   }
   .cal-calculator {
     padding: 9px 15px 16px 14px;
-    background-color: $bg-lightgrey;
     .cal-title {
       padding: 2px 0 0 0;
       color: $text-darkgrey;
@@ -151,6 +154,10 @@ body {
       }
     }
     .cal-result {
+      display: none;
+      &.active {
+        display: block;
+      }
       padding: 21px 0 0 17px;
       background-color: $bg-white;
       .cal-bid-price {
@@ -255,50 +262,57 @@ body {
       }
     }
   }
-  .cal-premium-info {
-    border-bottom: 1px solid $border-fairy;
-    .title {
-      padding: 14px 0 0 14px;
-      height: 43px;
-      color: $text-grey;
-      font-size: 11px;
-      line-height: 15px;
-      font-weight: 600;
-      letter-spacing: 0;
-      position: relative;
-      &:after {
-        content: '';
-        display: inline-block;
-        position: absolute;
-        right: 16px;
-        top: 17px;
-        width: 10px;
-        height: 6px;
-        @include bg-image(transparent,'../img/icon_arrow_down.png',no-repeat,scroll,center,right,10px,6px);
-      }
-    }
-    .description {
-      display: none;
-      padding: 15px 0 14px 14px;
-      background-color: $bg-fairy;
-      .text {
-        padding: 0 0 3px 0;
+  .lot-premium {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: $bg-white;
+    .cal-premium-info {
+      border-bottom: 1px solid $border-fairy;
+      .title {
+        padding: 14px 0 0 14px;
+        height: 43px;
         color: $text-grey;
         font-size: 11px;
-        font-family: $font-family-sub;
         line-height: 15px;
-        font-weight: 400;
+        font-weight: 600;
         letter-spacing: 0;
-      }
-    }
-    &.active {
-      .title {
+        position: relative;
         &:after {
-          @include bg-image(transparent,'../img/icon_arrow_up.png',no-repeat,scroll,center,right,10px,6px);
+          content: '';
+          display: inline-block;
+          position: absolute;
+          right: 16px;
+          top: 17px;
+          width: 10px;
+          height: 6px;
+          @include bg-image(transparent,'../img/icon_arrow_down.png',no-repeat,scroll,center,right,10px,6px);
         }
       }
       .description {
-        display: block;
+        display: none;
+        padding: 15px 0 14px 14px;
+        background-color: $bg-fairy;
+        .text {
+          padding: 0 0 3px 0;
+          color: $text-grey;
+          font-size: 11px;
+          font-family: $font-family-sub;
+          line-height: 15px;
+          font-weight: 400;
+          letter-spacing: 0;
+        }
+      }
+      &.active {
+        .title {
+          &:after {
+            @include bg-image(transparent,'../img/icon_arrow_up.png',no-repeat,scroll,center,right,10px,6px);
+          }
+        }
+        .description {
+          display: block;
+        }
       }
     }
   }
@@ -318,7 +332,7 @@ body {
     background-color: $bg-white;
     padding: 29px 33px 33px 31px;
     .title-area {
-      padding: 0 0 24px 0;
+      padding: 0 0 33px 0;
       color: $text-black;
       text-align: center;
       font-size: 18.5px;

@@ -15,8 +15,8 @@
         <div class="img"><img src="http://cdnimage.ebn.co.kr/news/201812/news_1544594535_965073_main1.jpg"></div>
         <div class="work-info">
             <p class="sale-info">Christie's London, Lot.18 </p>
-            <p class="artist">Andy Warhol Andy Warhol </p>
-            <p class="worktitle">Spur Spur Spur Spur </p>
+            <p class="artist">Andy Warhol Andy Warhol Andy Warhol Andy Warhol Andy Warhol Andy Warhol Andy Warhol Andy Warhol Andy Warhol Andy Warhol </p>
+            <p class="worktitle">Spur Spur Spur Spur Spur Spur Spur Spur Spur Spur Spur Spur Spur Spur Spur Spur Spur Spur Spur Spur Spur Spur Spur Spur Spur Spur Spur Spur </p>
             <p class="estimate">$ 5,000,000 - $ 7,500,000</p>
         </div>
     </div>
@@ -33,9 +33,10 @@
                 <input type="number" placeholder="Enter Bid Amount">
             </div>
             <div class="cal-btn-calculate">
-                <button class="btn-calc"></button>
+                <button class="btn-calc" onclick="location.href='calculator_2.result.html'"></button>
             </div>
         </div>
+        <!--  active 붙이면 열림.   -->
         <div class="cal-result">
             <div class="cal-bid-price">
                 <p class="title">If Your Bid Is</p>
@@ -66,26 +67,28 @@
             </div>
         </div>
     </div>
-    <!--  active 붙이면 열림.   -->
-    <div class="cal-premium-info active">
-         <div class="title">Buyer's Premium</div>
-         <div class="description">
-             <p class="text">25% (Up to $300,000)</p>
-             <p class="text">20% ($300,001 to $4,000,000)</p>
-             <p class="text">13.5% ($4,000,001 and above)</p>
-             <p class="text warning">Sales Tex Excluded</p>
-         </div>
-     </div>
-    <!--  active 붙이면 열림.   -->
-    <div class="cal-premium-info active">
-        <div class="title">Artist's Resale Right Fee</div>
-        <div class="description">
-            <p class="text">4% (Up to €50,000)</p>
-            <p class="text">3% (€50,000.01 to €200,000)</p>
-            <p class="text">1% (€200,000.01 to €350,000)</p>
-            <p class="text">0.5% (€350,000.01 to €500,000)</p>
-            <p class="text">0.25% (€500,000.01 and above)</p>
-            <p class="text warning">Maximum Limit €12,500</p>
+    <div class="lot-premium">
+        <!--  active 붙이면 열림.   -->
+        <div class="cal-premium-info">
+            <div class="title" onclick="location.href='calculator_1premium_open.html'">Buyer's Premium</div>
+            <div class="description">
+                <p class="text">25.0% (Up to $300,000)</p>
+                <p class="text">20.0% ($300,001 to $4,000,000)</p>
+                <p class="text">13.5% ($4,000,001 and above)</p>
+                <p class="text warning">Sales Tex Excluded</p>
+            </div>
+        </div>
+        <!--  active 붙이면 열림.   -->
+        <div class="cal-premium-info">
+            <div class="title" onclick="location.href='calculator_1premium_open.html'">Artist's Resale Right Fee</div>
+            <div class="description">
+                <p class="text">4% (Up to €50,000)</p>
+                <p class="text">3% (€50,000.01 to €200,000)</p>
+                <p class="text">1% (€200,000.01 to €350,000)</p>
+                <p class="text">0.5% (€350,000.01 to €500,000)</p>
+                <p class="text">0.25% (€500,000.01 and above)</p>
+                <p class="text warning">Maximum Limit €12,500</p>
+            </div>
         </div>
     </div>
 </div>
@@ -94,7 +97,7 @@
     <div class="modal-contents">
         <div class="title-area">
             <p class="title">Calculation Detail</p>
-            <button class="btn-close">Done</button>
+            <button class="btn-close" onclick="location.href='calculator_2.result.html'">Done</button>
         </div>
         <ul class="contents-area">
             <li class="bid-amount">
