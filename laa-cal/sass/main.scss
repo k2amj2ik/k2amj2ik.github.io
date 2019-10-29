@@ -255,14 +255,14 @@ body {
           border: 0;
           width: 120px;
           height: 45px;
-          @include bg-image(transparent,'../img/icon_detail.png',no-repeat,scroll,18px,12px,12.5px,12.5px);
+          @include bg-image(transparent,'../img/icon_detail.png',no-repeat,scroll,18px,20px,12.5px,12.5px);
           &:after {
             display: block;
             position: absolute;
             content: '';
             right: 17px;
             bottom: 15px;
-            width: 73px;
+            width: 64px;
             height: 1px;
             background-color: $border-lightgrey;
           }
@@ -335,7 +335,7 @@ body {
     background-color: $bg-white;
     padding: 29px 33px 33px 31px;
     .title-area {
-      padding: 0 0 33px 0;
+      padding: 0 0 25px 0;
       color: $text-black;
       text-align: center;
       font-size: 18.6px;
@@ -387,7 +387,7 @@ body {
         font-weight: 400;
       }
       .btn-link {
-        padding: 1px 0 1px 10px;
+        padding: 0 0 0 10px;
         float: right;
         text-decoration: underline;
         color: $text-grey;
