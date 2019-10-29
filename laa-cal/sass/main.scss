@@ -1,59 +1,415 @@
 @import 'font_face';
-@import 'reset';
 @import "variables";
 @import "mixin";
+@import 'reset';
+
+body {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
 
 .calculator {
   .lot {
-    //padding: 27px 20px 0 150px;
-    //position: relative;
-    //.img {
-    //  width: 100px;
-    //  height: 100px;
-    //  position: absolute;
-    //  left: 30px;
-    //  top: 30px;
-    //
-    //  img {
-    //    max-width: 100%;
-    //    max-height: 100%;
-    //    position: absolute;
-    //    top: 0;
-    //    left: 50%;
-    //    transform: translate(-50%, 0);
-    //  }
-    //}
-    //.work-info {
-    //
-    //  .artist {
-    //    margin-bottom: 7px;
-    //    @include text-style(text-table-artist);
-    //    @include cut-multi-text(100%, 18px, 1);
-    //  }
-    //
-    //  .worktitle {
-    //    margin-bottom: 10px;
-    //    @include text-style(text-table-worktitle);
-    //    @include cut-multi-text(100%, 24px, 1);
-    //  }
-    //
-    //  .summary {
-    //
-    //    font-size: 14px;
-    //    letter-spacing: -0.4px;
-    //    font-weight: 300;
-    //    color: $text-default;
-    //    line-height: 20px;
-    //    @include cut-multi-text(100%, 60px, 3);
-    //
-    //  }
-    //}
+    padding: 14px 17px 13px 83px;
+    .img {
+      width: 86px;
+      height: 70px;
+      position: absolute;
+      left: 0;
+      top: 17px;
+      img {
+        max-width: 100%;
+        max-height: 100%;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+      }
+    }
+    .work-info {
+      .sale-info {
+        color: $text-lightgray;
+        font-size: 10px;
+        line-height: 12px;
+        font-weight: 600;
+        letter-spacing: 0;
+        margin-bottom: 10px;
+      }
+      .artist {
+        color: $text-black;
+        font-size: 13px;
+        line-height: 15px;
+        font-weight: 700;
+        letter-spacing: 0;
+        text-transform: uppercase;
+        margin-bottom: 1px;
+      }
+      .worktitle {
+        color: $text-black;
+        font-size: 15px;
+        line-height: 17px;
+        font-weight: 400;
+        letter-spacing: 0;
+        font-family: $font-family-worktitle;
+        font-style: italic;
+        margin-bottom: 2px;
+      }
+      .estimate {
+        color: $text-lightgray;
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 400;
+        letter-spacing: 0;
+        margin-bottom: 3px;
+      }
+    }
+  }
+  .cal-calculator {
+    padding: 9px 15px 16px 14px;
+    background-color: $bg-lightgrey;
+    .cal-title {
+      padding: 2px 0 0 0;
+      color: $text-darkgrey;
+      font-size: 12.5px;
+      line-height: 15px;
+      font-weight: 600;
+      letter-spacing: 0;
+      margin-bottom: 13px;
+    }
+    .cal-box {
+      background-color: transparent;
+      position: relative;
+      height: 44px;
+      margin: 11px 0 14px 0;
+      &:after {
+        display: block;
+        position: absolute;
+        content: '';
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 1px;
+        background-color: $border-lightgrey;
+      }
+      .cal-currency {
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        top: -3px;
+        height: 100%;
+        select {
+          padding: 0 0 0 0;
+          border: 0;
+          background-color: transparent;
+          width: 62px;
+          height: 100%;
+          color: $text-grey;
+          font-size: 20px;
+          line-height: 20px;
+          font-weight: 600;
+          letter-spacing: -1px;
+        }
+      }
+      .cal-input {
+        display: inline-block;
+        padding: 0 32px 0 63px;
+        height: 100%;
+        input {
+          padding: 0 0 8px 5px;
+          border: 0;
+          background-color: transparent;
+          width: 100%;
+          height: 100%;
+          color: $text-black;
+          font-size: 20px;
+          line-height: 20px;
+          font-weight: 600;
+          letter-spacing: 0;
+          @include placeholder-color($text-grey);
+          @include placeholder-font-size(17.5px);
+        }
+      }
+      .cal-btn-calculate {
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        top: 4px;
+        .btn-calc {
+          border: 0;
+          width: 30px;
+          height: 30px;
+          border-radius: 2px;
+          @include bg-image($bg-grey,'../img/icon_calc.png',no-repeat,scroll,center,center,18px,18px);
+        }
+      }
+    }
+    .cal-result {
+      padding: 21px 0 0 17px;
+      background-color: $bg-white;
+      .cal-bid-price {
+        padding: 0 0 9px 0;
+        .title {
+          color: $text-black;
+          font-size: 11px;
+          line-height: 15px;
+          font-weight: 600;
+          letter-spacing: 0;
+          font-family: $font-family-sub;
+          margin-bottom: 7px;
+        }
+        .bid-price {
+          color: $text-black;
+          font-size: 20px;
+          line-height: 20px;
+          font-weight: 600;
+          letter-spacing: 0;
+          margin-bottom: 6px;
+        }
+        .bid-price-exchanged {
+          color: $text-lightgray;
+          font-size: 15px;
+          line-height: 15px;
+          font-weight: 600;
+          letter-spacing: 0;
+          margin-bottom: 9px;
+        }
+      }
+      .cal-result-price {
+        padding: 0 0 9px 0;
+        .title {
+          color: $text-black;
+          font-size: 11px;
+          line-height: 15px;
+          font-weight: 600;
+          letter-spacing: 0;
+          font-family: $font-family-sub;
+          margin-bottom: 7px;
+        }
+        .bid-price {
+          color: $text-black;
+          font-size: 20px;
+          line-height: 20px;
+          font-weight: 600;
+          letter-spacing: 0;
+          margin-bottom: 6px;
+        }
+        .bid-price-exchanged {
+          color: $text-lightgray;
+          font-size: 15px;
+          line-height: 15px;
+          font-weight: 600;
+          letter-spacing: 0;
+          margin-bottom: 10px;
+        }
+        .info {
+          padding: 0 0 0 9px;
+          color: $text-lightgray;
+          font-size: 10px;
+          line-height: 14px;
+          font-weight: 400;
+          letter-spacing: 0;
+          margin-bottom: 1px;
+          position: relative;
+          &:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 6px;
+            display: inline-block;
+            width: 2px;
+            height: 2px;
+            border-radius: 2px;
+            background-color: $text-lightgray;
+          }
+        }
+      }
+      .cal-buttons {
+        height: 23px;
+        position: relative;
+        .btn-detail {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          padding: 0 0 0 38px;
+          text-align: left;
+          text-decoration: underline;
+          color: $text-lightgray;
+          font-family: $font-family-default;
+          font-size: 8px;
+          line-height: 10px;
+          font-weight: 600;
+          letter-spacing: 0;
+          text-transform: uppercase;
+          border: 0;
+          width: 120px;
+          height: 45px;
+          @include bg-image(transparent,'../img/icon_detail.png',no-repeat,scroll,18px,20px,12.5px,12.5px);
+        }
+      }
+    }
+  }
+  .cal-premium-info {
+    border-bottom: 1px solid $border-fairy;
+    .title {
+      padding: 14px 0 0 14px;
+      height: 43px;
+      color: $text-grey;
+      font-size: 11px;
+      line-height: 15px;
+      font-weight: 600;
+      letter-spacing: 0;
+      position: relative;
+      &:after {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        right: 16px;
+        top: 17px;
+        width: 10px;
+        height: 6px;
+        @include bg-image(transparent,'../img/icon_arrow_down.png',no-repeat,scroll,center,right,10px,6px);
+      }
+    }
+    .description {
+      display: none;
+      padding: 15px 0 14px 14px;
+      background-color: $bg-fairy;
+      .text {
+        padding: 0 0 3px 0;
+        color: $text-grey;
+        font-size: 11px;
+        font-family: $font-family-sub;
+        line-height: 15px;
+        font-weight: 400;
+        letter-spacing: 0;
+      }
+    }
+    &.active {
+      .title {
+        &:after {
+          @include bg-image(transparent,'../img/icon_arrow_up.png',no-repeat,scroll,center,right,10px,6px);
+        }
+      }
+      .description {
+        display: block;
+      }
+    }
+  }
+}
+.modal {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 26px 15px 25px 16px;
+  background-color: rgba(0,0,0,0.7);
+  .modal-contents {
+    height: 100%;
+    overflow-y: scroll;
+    background-color: $bg-white;
+    padding: 29px 33px 33px 31px;
+    position: relative;
+    .title-area {
+      padding: 0 0 33px 0;
+      color: $text-black;
+      text-align: center;
+      font-size: 18.5px;
+      line-height: 19px;
+      font-weight: 600;
+      letter-spacing: 0;
+      border-bottom: 3px double $border-lightgrey;
+      }
+      .btn-close {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 40px;
+        background-color: $bg-gold;
+        color: $text-white;
+        text-align: center;
+        font-size: 15px;
+        line-height: 15px;
+        font-weight: 600;
+        letter-spacing: 0;
+        text-transform: uppercase;
+      }
+    }
+    .contents-area {
+      padding: 13px 0 0 2px;
+      .subtitle {
+        padding: 0 0 5px 0;
+        color: $text-grey;
+        font-size: 12px;
+        line-height: 14px;
+        font-family: $font-family-sub;
+        font-weight: 400;
+        letter-spacing: 0;
+      }
+      .price, .price-exchanged {
+        display: inline-block;
+        color: $text-black;
+        font-size: 11.5px;
+        line-height: 14px;
+        font-family: $font-family-sub;
+        font-weight: 600;
+        letter-spacing: 0;
+      }
+      .btn-link {
+        float: right;
+        text-decoration: underline;
+        color: $text-grey;
+        font-size: 8px;
+        line-height: 15px;
+        font-family: $font-family-sub;
+        font-weight: 400;
+        letter-spacing: 0;
+        &.hide {
+          display: none;
+        }
+        &.show {
+          display: block;
+        }
+      }
+      .detail {
+        display: none;
+        padding: 0 0 5px 10px;
+        white-space : pre;
+        color: $text-grey;
+        font-size: 10px;
+        line-height: 15px;
+        font-family: $font-family-sub;
+        font-weight: 400;
+        letter-spacing: 0;
+      }
+      li {
+        padding: 0 0 11px 0;
+        &:active {
+          .detail {
+            display: block;
+          }
+          &.hide {
+            display: block;
+          }
+          &.show {
+            display: none;
+          }
+        }
+      }
+  }
+  &.active {
+    display: block;
   }
 }
 
 
 
-//for purblishing--------------------------------------------------------------------------------------
+//for publishing--------------------------------------------------------------------------------------
 .bg {
   position: absolute;
   width: 100%;
@@ -66,3 +422,5 @@
   z-index: $z-index-5;
 }
 .bg-calculator {background: transparent url('../img/bg_cal_start.jpg') no-repeat 0 -60px / 320px 568px;}
+.bg-calculator-result {background: transparent url('../img/bg_cal_result_open.jpg') no-repeat 0 -60px / 320px 838px;}
+.bg-calculator-detail {background: transparent url('../img/bg_cal_detail_opened.jpg') no-repeat 0 -60px / 320px 710.5px;}

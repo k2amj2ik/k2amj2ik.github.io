@@ -15,53 +15,59 @@
         <div class="img"><img src="http://i0.kym-cdn.com/photos/images/facebook/000/002/110/longcat.jpg"></div>
         <div class="work-info">
             <p class="sale-info">Christie's London, Lot.18 </p>
-            <p class="artist">Andy Warhol Andy Warhol Andy Warhol Andy Warhol Andy Warhol Andy Warhol Andy Warhol </p>
-            <p class="worktitle">Spur Spur Spur Spur Spur Spur Spur Spur Spur Spur Spur Spur Spur Spur Spur Spur Spur Spur Spur Spur Spur Spur Spur Spur </p>
-            <p class="estimate">$ 50,000,000,000,000 - $ 90,000,000,000,000</p>
+            <p class="artist">Andy Warhol Andy Warhol </p>
+            <p class="worktitle">Spur Spur Spur Spur </p>
+            <p class="estimate">$ 5,000,000 - $ 7,500,000</p>
         </div>
     </div>
     <div class="cal-calculator">
         <p class="cal-title">Calculate Final Price After Commission</p>
-        <div class="cal-currency">
-            <select>
-                <option>€</option>
-            </select>
+        <div class="cal-box">
+            <div class="cal-currency">
+                <select>
+                    <option>€</option>
+                    <option>HK$</option>
+                </select>
+            </div>
+            <div class="cal-input">
+                <input type="number" placeholder="Enter Bid Amount">
+            </div>
+            <div class="cal-btn-calculate">
+                <button class="btn-calc"></button>
+            </div>
         </div>
-        <div class="cal-input">
-            <input type="number" placeholder="Enter Bid Amount">
+        <div class="cal-result">
+            <div class="cal-bid-price">
+                <p class="title">If Your Bid Is</p>
+                <p class="bid-price">
+                    <span class="currency">€</span>
+                    <span class="price">5,000,000</span>
+                </p>
+                <p class="bid-price-exchanged">
+                    <span class="currency">€</span>
+                    <span class="price">5,580,000</span>
+                </p>
+            </div>
+            <div class="cal-result-price">
+                <p class="title">Your Final Price After Commission Is</p>
+                <p class="bid-price">
+                    <span class="currency">€</span>
+                    <span class="price">6,750,000</span>
+                </p>
+                <p class="bid-price-exchanged">
+                    <span class="currency">€</span>
+                    <span class="price">5,719,500</span>
+                </p>
+                <p class="info">Sales Tax Excluded</p>
+                <p class="info">Artist's Resale Right Included</p>
+            </div>
+            <div class="cal-buttons">
+                <button class="btn-detail">Show Detail</button>
+            </div>
         </div>
-        <div class="cal-btn-calculate">Calculate Now</div>
     </div>
-    <div class="cal-result">
-        <div class="cal-bid-price">
-            <p class="title">If Your Bid Is</p>
-            <p class="bid-price">
-                <span class="currency">€</span>
-                <span class="price">5,000,000</span>
-            </p>
-            <p class="bid-price-exchanged">
-                <span class="currency">€</span>
-                <span class="price">5,580,000</span>
-            </p>
-        </div>
-        <div class="cal-result-price">
-            <p class="title">Your Final Price After Commission Is</p>
-            <p class="bid-price">
-                <span class="currency">€</span>
-                <span class="price">6,750,000</span>
-            </p>
-            <p class="bid-price-exchanged">
-                <span class="currency">€</span>
-                <span class="price">5,719,500</span>
-            </p>
-            <p class="info">Sales Tax Excluded</p>
-            <p class="info">Artist's Resale Right Included</p>
-        </div>
-        <div class="cal-buttons">
-            <button class="btn-detail">Show Detail</button>
-        </div>
-    </div>
-     <div class="cal-premium-info">
+    <!--  active 붙이면 열림.   -->
+    <div class="cal-premium-info">
          <div class="title">Buyer's Premium</div>
          <div class="description">
              <p class="text">25% (Up to $300,000)</p>
@@ -70,6 +76,7 @@
              <p class="text warning">Sales Tex Excluded</p>
          </div>
      </div>
+    <!--  active 붙이면 열림.   -->
     <div class="cal-premium-info">
         <div class="title">Artist's Resale Right Fee</div>
         <div class="description">
@@ -82,31 +89,32 @@
         </div>
     </div>
 </div>
-<div class="modal">
+<!--  active 붙이면 열림.   -->
+<div class="modal active">
     <div class="modal-contents">
         <div class="title-area">
             <p class="title">Calculation Detail</p>
-            <button class="btn-close">Close</button>
+            <button class="btn-close">Done</button>
         </div>
         <ul class="contents-area">
             <li class="bid-amount">
                 <p class="subtitle">Bid Amount</p>
-                <p class="price">\5,000,000 </p>
+                <p class="price">₩5,000,000 </p>
                 <p class="price-exchanged">($5,580,000) </p>
             </li>
-            <li class="buyers-premium">
+            <!--  active 붙이면 열림.   -->
+            <li class="buyers-premium active">
                 <p class="subtitle">Buyer’s Premium</p>
-                <p class="detail">
-   $75,000 ($300,000 x 25%)
+                <p class="detail">   $75,000 ($300,000 x 25%)
 + $740,000 ($3,700,000 x 20%)
 + $213,000 ($1,580,000 x 13.5%)
-= $1,028,000
-                </p>
-                <p class="price">\921,000</p>
+= $1,028,000</p>
+                <p class="price">₩921,000</p>
                 <p class="price-exchanged">($1,028,000)</p>
-                <button class="btn-link">Show Detail</button>
+                <button class="btn-link show">Show Detail</button>
+                <button class="btn-link hide">hide Detail</button>
             </li>
-            <li class="artist-resale-right">
+            <li class="artist-resale-right active">
                 <p class="subtitle">Artist's Resale Right</p>
                 <p class="detail">
    €5,000,000 ($5,580,000) 기준.
@@ -118,13 +126,13 @@
 = €26,500
 ※ Maximum Limit €12,500
                 </p>
-                <p class="price">\12,500</p>
+                <p class="price">₩12,500</p>
                 <p class="price-exchanged">($13,900)</p>
                 <button class="btn-link">Show Detail</button>
             </li>
             <li class="total-price">
                 <p class="subtitle">Total Price</p>
-                <p class="price">\5,930,000</p>
+                <p class="price">₩5,930,000</p>
                 <p class="price-exchanged">$6,620,000</p>
                 <p class="info">Sales Tax Excluded</p>
                 <p class="info">Artist's Resale Right Included</p>
@@ -133,4 +141,6 @@
     </div>
 </div>
 <!--<div class="bg bg-calculator"></div>-->
+<!--<div class="bg bg-calculator-result"></div>-->
+<!--<div class="bg bg-calculator-detail"></div>-->
 </body></html>
