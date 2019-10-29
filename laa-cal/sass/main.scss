@@ -58,7 +58,7 @@ body {
         color: $text-black;
         font-size: 15px;
         line-height: 17px;
-        font-weight: 400;
+        font-weight: 600;
         letter-spacing: 0;
         font-family: $font-family-worktitle;
         font-style: italic;
@@ -135,7 +135,7 @@ body {
           line-height: 20px;
           font-weight: 600;
           letter-spacing: 0;
-          @include placeholder-color($text-grey);
+          @include placeholder-color($text-lightgray3);
           @include placeholder-font-size(17.5px);
         }
       }
@@ -163,7 +163,7 @@ body {
       .cal-bid-price {
         padding: 0 0 9px 0;
         .title {
-          color: $text-black;
+          color: $text-black2;
           font-size: 11px;
           line-height: 15px;
           font-weight: 600;
@@ -220,7 +220,7 @@ body {
           color: $text-lightgray;
           font-size: 10px;
           line-height: 14px;
-          font-weight: 400;
+          font-weight: 600;
           letter-spacing: 0;
           margin-bottom: 1px;
           position: relative;
@@ -230,9 +230,9 @@ body {
             left: 0;
             top: 6px;
             display: inline-block;
-            width: 2px;
-            height: 2px;
-            border-radius: 2px;
+            width: 3px;
+            height: 3px;
+            border-radius: 3px;
             background-color: $text-lightgray;
           }
         }
@@ -244,12 +244,10 @@ body {
           position: absolute;
           right: 0;
           bottom: 0;
-          padding: 0 0 0 38px;
-          text-align: left;
-          text-decoration: underline;
+          padding: 0 17px 0 0;
+          text-align: right;
           color: $text-lightgray;
-          font-family: $font-family-default;
-          font-size: 8px;
+          font-size: 8px !important;
           line-height: 10px;
           font-weight: 600;
           letter-spacing: 0;
@@ -257,7 +255,17 @@ body {
           border: 0;
           width: 120px;
           height: 45px;
-          @include bg-image(transparent,'../img/icon_detail.png',no-repeat,scroll,18px,20px,12.5px,12.5px);
+          @include bg-image(transparent,'../img/icon_detail.png',no-repeat,scroll,18px,12px,12.5px,12.5px);
+          &:after {
+            display: block;
+            position: absolute;
+            content: '';
+            right: 17px;
+            bottom: 15px;
+            width: 73px;
+            height: 1px;
+            background-color: $border-lightgrey;
+          }
         }
       }
     }
@@ -268,12 +276,13 @@ body {
     bottom: 0;
     width: 100%;
     background-color: $bg-white;
+    @include box-shadow(0 -6px 4px rgba($bg-lightgrey, 0.5));
     .cal-premium-info {
       border-bottom: 1px solid $border-fairy;
       .title {
         padding: 14px 0 0 14px;
         height: 43px;
-        color: $text-grey;
+        color: $text-grey2;
         font-size: 11px;
         line-height: 15px;
         font-weight: 600;
@@ -335,7 +344,7 @@ body {
       padding: 0 0 33px 0;
       color: $text-black;
       text-align: center;
-      font-size: 18.5px;
+      font-size: 18.6px;
       line-height: 19px;
       font-weight: 600;
       letter-spacing: 0;
@@ -377,10 +386,14 @@ body {
         font-weight: 600;
         letter-spacing: 0;
       }
+      .price {
+        padding: 1.5px 0 0 0;
+      }
       .price-exchanged {
         font-weight: 400;
       }
       .btn-link {
+        padding: 1px 0 1px 10px;
         float: right;
         text-decoration: underline;
         color: $text-grey;
@@ -398,9 +411,9 @@ body {
       }
       .detail {
         display: none;
-        padding: 0 0 4px 10px;
-        white-space : pre;
-        color: $text-grey;
+        padding: 0 0 3px 10px;
+        text-indent: 10px;
+        color: $text-lightgray2;
         font-size: 10px;
         line-height: 15px;
         font-family: $font-family-sub;
@@ -415,7 +428,7 @@ body {
         &.total-price {
           border-top: 1px dotted $border-lightgrey;
           border-bottom: 3px double $border-lightgrey;
-          padding: 12px 0 18px 2px;
+          padding: 12px 0 18px 0;
           .subtitle {
             padding: 0 0 5px 0;
             color: $text-gold;
@@ -434,9 +447,9 @@ body {
           padding: 10px 0 50px 5px;
           .info {
             padding: 0 0 0 0;
-            color: $text-grey;
-            font-size: 12px;
-            line-height: 15px;
+            color: $text-grey2;
+            font-size: 11.5px;
+            line-height: 16.5px;
             font-family: $font-family-sub;
             font-weight: 400;
             letter-spacing: 0;
