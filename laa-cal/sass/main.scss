@@ -113,9 +113,9 @@ body {
           position: absolute;
           right: 4px;
           top: 17px;
-          width: 8px;
+          width: 12px;
           height: 12px;
-          @include bg-image(transparent,'../img/icon_arrow_down2.png',no-repeat,scroll,center,right,8px,12px);
+          @include bg-image(transparent,'../img/icon_arrow_down2.png',no-repeat,scroll,center,right,12px,12px);
         }
         select {
           padding: 0 0 0 0;
@@ -135,7 +135,8 @@ body {
         padding: 0 32px 0 63px;
         height: 100%;
         input {
-          padding: 0 0 6px 5px;
+          vertical-align: top;
+          padding: 0 0 0 5px;
           border: 0;
           background-color: red;
           width: 100%;
