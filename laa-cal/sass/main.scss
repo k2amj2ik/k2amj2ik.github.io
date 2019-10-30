@@ -4,6 +4,7 @@
 @import 'reset';
 
 body {
+  z-index: $z-index-1;
   position: fixed;
   width: 100%;
   height: 100%;
@@ -11,6 +12,7 @@ body {
 }
 
 .calculator {
+  z-index: $z-index-2;
   width: 100%;
   height: 100%;
   overflow-y: scroll;
@@ -77,7 +79,7 @@ body {
   .cal-calculator {
     padding: 9px 15px 16px 14px;
     background-color: $bg-lightgrey;
-    @include calculator(height,'100% - 190px');
+    @include calculator(height,'100% - 191px');
     .cal-title {
       padding: 2px 0 0 0;
       color: $text-darkgrey;
@@ -164,6 +166,20 @@ body {
           @include bg-image($bg-grey,'../img/icon_calc.png',no-repeat,scroll,center,center,18px,18px);
         }
       }
+      .cal-warning {
+         display: none;
+         padding: 12px 10px 4px 10px;
+         text-align: center;
+         color: $text-orange;
+         font-family: $font-family-sub;
+         font-size: 12px;
+         line-height: 14px;
+         font-weight: 400;
+         letter-spacing: 0;
+         &.active {
+           display: block;
+         }
+       }
     }
     .cal-result {
       visibility: hidden;
@@ -333,6 +349,7 @@ body {
   }
 }
 .modal {
+  z-index: $z-index-3;
   display: none;
   position: absolute;
   left: 0;
@@ -368,18 +385,19 @@ body {
       .subtitle {
         padding: 0 0 5px 0;
         color: $text-grey;
-        font-size: 12px;
-        line-height: 14px;
+        font-size: 14px;
+        line-height: 17px;
         font-family: $font-family-sub;
         font-weight: 400;
         letter-spacing: 0;
       }
 
       .price, .price-exchanged {
+        padding: 0 0 20px 0;
         display: inline-block;
         color: $text-black;
-        font-size: 11.5px;
-        line-height: 14px;
+        font-size: 14px;
+        line-height: 17px;
         font-family: $font-family-sub;
         font-weight: 600;
         letter-spacing: 0;
@@ -394,13 +412,11 @@ body {
       }
 
       .btn-link {
-        margin-bottom: -14px;
+        display: inline-block;
         padding: 0 0 0 10px;
-        width: 100%;
-        text-align: right;
         text-decoration: underline;
-        color: $text-grey;
-        font-size: 8px;
+        color: $text-lightgray3;
+        font-size: 10px;
         line-height: 15px;
         font-family: $font-family-sub;
         font-weight: 400;
@@ -411,47 +427,69 @@ body {
         }
 
         &.show {
-          display: block;
+          display: inline-block;
         }
       }
-
       .detail {
+        border-left: 1px solid $border-fairy;
         display: none;
-        padding: 0 0 3px 10px;
-        text-indent: 10px;
-        color: $text-lightgray2;
-        font-size: 10px;
-        line-height: 15px;
-        font-family: $font-family-sub;
-        font-weight: 400;
-        letter-spacing: 0;
+        margin: 4px 0 0 0;
+        padding: 0 0 3px 0;
+        .process-area {
+          .process {
+            padding: 0 0 0 10px;
+            display: block;
+            color: $text-lightgray2;
+            font-size: 12px;
+            line-height: 16px;
+            font-family: $font-family-sub;
+            font-weight: 400;
+            letter-spacing: 0;
+          }
+          .result {
+            padding: 0 0 10px 10px;
+            display: block;
+            color: $text-black;
+            font-size: 14px;
+            line-height: 17px;
+            font-family: $font-family-sub;
+            font-weight: 600;
+            letter-spacing: 0;
+          }
+          .total-result {
+            padding: 0 0 10px 10px;
+            display: block;
+            color: $text-black;
+            font-size: 14px;
+            line-height: 17px;
+            font-family: $font-family-sub;
+            font-weight: 600;
+            letter-spacing: 0;
+          }
+        }
       }
 
       li {
-        padding: 0 0 11px 0;
-
-        &.artist-resale-right {
-          padding: 0 0 16px 0;
-        }
+        padding: 0 0 0 5px;
 
         &.total-price {
           border-top: 1px dotted $border-lightgrey;
           border-bottom: 3px double $border-lightgrey;
-          padding: 12px 0 18px 0;
+          padding: 20px 0 18px 0;
 
           .subtitle {
             padding: 0 0 5px 0;
             color: $text-gold;
-            font-size: 12px;
-            line-height: 14px;
+            font-size: 14px;
+            line-height: 17px;
             font-family: $font-family-sub;
             font-weight: 400;
             letter-spacing: 0;
           }
 
           .price, .price-exchanged {
-            font-size: 15px;
-            line-height: 15px;
+            font-size: 17px;
+            line-height: 17px;
           }
         }
 
@@ -461,21 +499,20 @@ body {
           .info {
             padding: 0 0 0 0;
             color: $text-grey2;
-            font-size: 11.5px;
-            line-height: 16.5px;
+            font-size: 14px;
+            line-height: 17px;
             font-family: $font-family-sub;
             font-weight: 400;
             letter-spacing: 0;
           }
         }
-
         &.active {
           .detail {
             display: block !important;
           }
 
           .hide {
-            display: block !important;
+            display: inline-block !important;
           }
 
           .show {
@@ -493,12 +530,12 @@ body {
       .btn-close {
         margin-left: -31px;
         @include calculator(width, '100% + 64px');
-        height: 40px;
+        height: 50px;
         background-color: $bg-gold;
         color: $text-white;
         text-align: center;
-        font-size: 15px;
-        line-height: 15px;
+        font-size: 17px;
+        line-height: 17px;
         font-weight: 600;
         letter-spacing: 0;
         text-transform: uppercase;
@@ -527,3 +564,4 @@ body {
 .bg-calculator {background: transparent url('../img/bg_cal_start.jpg') no-repeat 0 -60px / 320px 568px;}
 .bg-calculator-result {background: transparent url('../img/bg_cal_result_open.jpg') no-repeat 0 -60px / 320px 838px;}
 .bg-calculator-detail {background: transparent url('../img/bg_cal_detail_opened.jpg') no-repeat 0 -60px / 320px 710.5px;}
+.bg-calculator-detail-new {background: transparent url('../img/bg_cal_detail_opened_new.jpg') no-repeat 0 0 / 375px 667px;}
