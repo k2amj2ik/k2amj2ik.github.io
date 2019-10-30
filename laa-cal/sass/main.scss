@@ -381,7 +381,15 @@ body {
     .contents-area {
       @include calculator(max-height, '100% - 200px');
       padding: 13px 0 0 2px;
-
+      .buyers-premium {
+        padding: 14px 0 0 0;
+      }
+      .artist-resale-right {
+        padding: 14px 0 15px 0;
+        .total-result {
+          padding-bottom: 4px !important;
+        }
+      }
       .subtitle {
         padding: 0 0 5px 0;
         color: $text-grey;
@@ -393,11 +401,11 @@ body {
       }
 
       .price, .price-exchanged {
-        padding: 0 0 20px 0;
+        padding: 0 0 4px 0;
         display: inline-block;
         color: $text-black;
         font-size: 14px;
-        line-height: 17px;
+        line-height: 14px;
         font-family: $font-family-sub;
         font-weight: 600;
         letter-spacing: 0;
@@ -450,18 +458,18 @@ body {
             padding: 0 0 10px 10px;
             display: block;
             color: $text-black;
-            font-size: 14px;
-            line-height: 17px;
+            font-size: 12px;
+            line-height: 14px;
             font-family: $font-family-sub;
             font-weight: 600;
             letter-spacing: 0;
           }
           .total-result {
-            padding: 0 0 10px 10px;
+            padding: 0 0 0 10px;
             display: block;
             color: $text-black;
-            font-size: 14px;
-            line-height: 17px;
+            font-size: 12px;
+            line-height: 14px;
             font-family: $font-family-sub;
             font-weight: 600;
             letter-spacing: 0;
@@ -470,7 +478,7 @@ body {
       }
 
       li {
-        padding: 0 0 0 5px;
+        padding: 0 0 0 0px;
 
         &.total-price {
           border-top: 1px dotted $border-lightgrey;
@@ -494,7 +502,7 @@ body {
         }
 
         &.others {
-          padding: 10px 0 25px 5px;
+          padding: 10px 0 25px 0;
 
           .info {
             padding: 0 0 0 0;
