@@ -382,10 +382,10 @@ body {
       @include calculator(max-height, '100% - 200px');
       padding: 13px 0 0 2px;
       .buyers-premium {
-        padding: 14px 0 0 0;
+        padding-top: 17px;
       }
       .artist-resale-right {
-        padding: 14px 0 12px 0;
+        padding: 17px 0 12px 0;
         .total-result {
           padding-bottom: 4px !important;
         }
@@ -402,7 +402,7 @@ body {
 
       .price, .price-exchanged {
         padding: 0 0 4px 0;
-        display: inline-block;
+        display: inline;
         color: $text-black;
         font-size: 14px;
         line-height: 14px;

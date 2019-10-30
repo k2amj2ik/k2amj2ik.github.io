@@ -663,10 +663,10 @@ body {
   padding: 13px 0 0 2px;
 }
 .modal .modal-contents .contents-area .buyers-premium {
-  padding: 14px 0 0 0;
+  padding-top: 17px;
 }
 .modal .modal-contents .contents-area .artist-resale-right {
-  padding: 14px 0 12px 0;
+  padding: 17px 0 12px 0;
 }
 .modal .modal-contents .contents-area .artist-resale-right .total-result {
   padding-bottom: 4px !important;
@@ -682,7 +682,7 @@ body {
 }
 .modal .modal-contents .contents-area .price, .modal .modal-contents .contents-area .price-exchanged {
   padding: 0 0 4px 0;
-  display: inline-block;
+  display: inline;
   color: #0b0a0b;
   font-size: 14px;
   line-height: 14px;
