@@ -19,10 +19,10 @@ body {
   -webkit-overflow-scrolling: touch;
   background-color: $bg-white;
   .lot {
-    padding: 14px 17px 13px 83px;
+    padding: 14px 17px 13px 92px;
     position: relative;
     .img {
-      width: 56px;
+      width: 65px;
       height: 70px;
       position: absolute;
       left: 15px;
@@ -110,60 +110,51 @@ body {
         left: 0;
         top: 0;
         height: 100%;
-        &:after {
-          content: '';
-          display: inline-block;
-          position: absolute;
-          right: 4px;
-          top: 17px;
-          width: 12px;
-          height: 12px;
-          @include bg-image(transparent,'../img/icon_arrow_down2.png',no-repeat,scroll,center,right,12px,12px);
-        }
-        select {
-          padding: 0 0 0 0;
+        .currency {
+          display: block;
+          padding: 12px 0 0 21px;
           border: 0;
           background-color: transparent;
-          width: 62px;
+          width: 71px;
           height: 100%;
           color: $text-grey;
-          font-size: 20px;
-          line-height: 20px;
+          font-size: 23px;
+          line-height: 23px;
           font-weight: 600;
           letter-spacing: -1px;
         }
       }
       .cal-input {
         display: inline-block;
-        padding: 0 32px 0 63px;
+        padding: 0 32px 0 72px;
         height: 100%;
         input {
           vertical-align: top;
-          padding: 0 0 0 5px;
+          padding: 2px 0 0 5px;
           border: 0;
           background-color: transparent;
           width: 100%;
           height: 100%;
           color: $text-black;
-          font-size: 20px;
-          line-height: 20px;
+          font-size: 23px;
+          line-height: 23px;
           font-weight: 600;
           letter-spacing: 0;
           @include placeholder-color($text-lightgray3);
-          @include placeholder-font-size(17.5px);
+          @include placeholder-font-size(20px);
         }
       }
       .cal-btn-calculate {
         display: inline-block;
         position: absolute;
         right: 0;
-        top: 4px;
+        top: 9px;
         .btn-calc {
           border: 0;
           width: 30px;
-          height: 30px;
+          height: 25px;
           border-radius: 2px;
-          @include bg-image($bg-grey,'../img/icon_calc.png',no-repeat,scroll,center,center,18px,18px);
+          @include bg-image(transparent,'../img/icon_calc.png',no-repeat,scroll,center,center,30px,25px);
         }
       }
       .cal-warning {
@@ -188,8 +179,57 @@ body {
       }
       padding: 21px 0 0 17px;
       background-color: $bg-white;
+      position: relative;
+      .set-currency {
+        //background-color: red;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        .title {
+          width: 100%;
+          color: $text-lightgray;
+          text-align: right;
+          font-size: 11px;
+          line-height: 11px;
+          font-weight: 600;
+          letter-spacing: 0;
+        }
+        .select-currency {
+          float: right;
+          //background-color: yellow;
+          padding: 0 0 0 0;
+          width: 50px;
+          height: 26px;
+          //@include bg-image($bg-white,'../img/icon_setting.png',no-repeat,scroll,18px,13px,16px,16px);
+          select {
+            width: 100%;
+            height: 100%;
+            border: 0;
+            border-bottom: 1px solid $border-lightgrey;
+            background-color: transparent;
+            color: $text-lightgray;
+            text-align: right;
+            font-size: 12.5px;
+            line-height: 12.5px;
+            font-weight: 600;
+            letter-spacing: 0;
+            text-transform: uppercase;
+          }
+          &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            right: 4px;
+            top: 20px;
+            width: 10px;
+            height: 6px;
+            @include bg-image($bg-white,'../img/icon_arrow_down.png',no-repeat,scroll,center,right,10px,6px);
+          }
+        }
+      }
       .cal-bid-price {
         padding: 0 0 9px 0;
+        overflow: hidden;
         .title {
           color: $text-black2;
           font-size: 11px;
@@ -256,7 +296,7 @@ body {
             content: '';
             position: absolute;
             left: 0;
-            top: 6px;
+            top: 7px;
             display: inline-block;
             width: 3px;
             height: 3px;
@@ -266,14 +306,13 @@ body {
         }
       }
       .cal-buttons {
-        height: 23px;
+        height: 32px;
         position: relative;
         .btn-detail {
           position: absolute;
-          right: 0;
-          bottom: 0;
+          left: 0;
+          bottom: 4px;
           padding: 0 17px 0 0;
-          text-align: right;
           color: $text-lightgray;
           font-size: 8px !important;
           line-height: 10px;
@@ -282,14 +321,14 @@ body {
           text-transform: uppercase;
           border: 0;
           width: 120px;
-          height: 45px;
-          @include bg-image(transparent,'../img/icon_detail.png',no-repeat,scroll,18px,24px,12.5px,12.5px);
+          height: 41px;
+          @include bg-image(transparent,'../img/icon_detail.png',no-repeat,scroll,18px,0,12.5px,12.5px);
           &:after {
             display: block;
             position: absolute;
             content: '';
-            right: 17px;
-            bottom: 15px;
+            left: 17px;
+            bottom: 11px;
             width: 62px;
             height: 1px;
             background-color: $border-lightgrey;
@@ -391,6 +430,7 @@ body {
         }
       }
       .subtitle {
+        display: inline-block;
         padding: 0 0 5px 0;
         color: $text-grey;
         font-size: 14px;
@@ -507,8 +547,8 @@ body {
           .info {
             padding: 0 0 0 0;
             color: $text-grey2;
-            font-size: 14px;
-            line-height: 19px;
+            font-size: 13px;
+            line-height: 17px;
             font-family: $font-family-sub;
             font-weight: 400;
             letter-spacing: 0;
@@ -570,6 +610,7 @@ body {
   z-index: $z-index-5;
 }
 .bg-calculator {background: transparent url('../img/bg_cal_start.jpg') no-repeat 0 -60px / 320px 568px;}
-.bg-calculator-result {background: transparent url('../img/bg_cal_result_open.jpg') no-repeat 0 -60px / 320px 838px;}
+.bg-calculator-result {background: transparent url('../img/bg_cal_result.jpg') no-repeat 0 -112px / 375px 667px;}
+//.bg-calculator-result {background: transparent url('../img/bg_cal_result_open.jpg') no-repeat 0 -60px / 320px 838px;}
 .bg-calculator-detail {background: transparent url('../img/bg_cal_detail_opened.jpg') no-repeat 0 -60px / 320px 710.5px;}
 .bg-calculator-detail-new {background: transparent url('../img/bg_cal_detail_opened_new.jpg') no-repeat 0 0 / 375px 667px;}

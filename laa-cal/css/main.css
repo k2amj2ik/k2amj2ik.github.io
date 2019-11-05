@@ -229,11 +229,11 @@ body {
   background-color: #ffffff;
 }
 .calculator .lot {
-  padding: 14px 17px 13px 83px;
+  padding: 14px 17px 13px 92px;
   position: relative;
 }
 .calculator .lot .img {
-  width: 56px;
+  width: 65px;
   height: 70px;
   position: absolute;
   left: 15px;
@@ -339,49 +339,34 @@ body {
   top: 0;
   height: 100%;
 }
-.calculator .cal-calculator .cal-box .cal-currency:after {
-  content: '';
-  display: inline-block;
-  position: absolute;
-  right: 4px;
-  top: 17px;
-  width: 12px;
-  height: 12px;
-  background-color: transparent;
-  background-image: url(../img/icon_arrow_down2.png);
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position-y: center;
-  background-position-x: right;
-  background-size: 12px 12px;
-}
-.calculator .cal-calculator .cal-box .cal-currency select {
-  padding: 0 0 0 0;
+.calculator .cal-calculator .cal-box .cal-currency .currency {
+  display: block;
+  padding: 12px 0 0 21px;
   border: 0;
   background-color: transparent;
-  width: 62px;
+  width: 71px;
   height: 100%;
   color: #707478;
-  font-size: 20px;
-  line-height: 20px;
+  font-size: 23px;
+  line-height: 23px;
   font-weight: 600;
   letter-spacing: -1px;
 }
 .calculator .cal-calculator .cal-box .cal-input {
   display: inline-block;
-  padding: 0 32px 0 63px;
+  padding: 0 32px 0 72px;
   height: 100%;
 }
 .calculator .cal-calculator .cal-box .cal-input input {
   vertical-align: top;
-  padding: 0 0 0 5px;
+  padding: 2px 0 0 5px;
   border: 0;
   background-color: transparent;
   width: 100%;
   height: 100%;
   color: #0b0a0b;
-  font-size: 20px;
-  line-height: 20px;
+  font-size: 23px;
+  line-height: 23px;
   font-weight: 600;
   letter-spacing: 0;
 }
@@ -398,35 +383,35 @@ body {
   color: #a6a6a6;
 }
 .calculator .cal-calculator .cal-box .cal-input input::placeholder {
-  font-size: 17.5px;
+  font-size: 20px;
 }
 .calculator .cal-calculator .cal-box .cal-input input::-moz-placeholder {
-  font-size: 17.5px;
+  font-size: 20px;
 }
 .calculator .cal-calculator .cal-box .cal-input input::-webkit-input-placeholder {
-  font-size: 17.5px;
+  font-size: 20px;
 }
 .calculator .cal-calculator .cal-box .cal-input input::-ms-input-placeholder {
-  font-size: 17.5px;
+  font-size: 20px;
 }
 .calculator .cal-calculator .cal-box .cal-btn-calculate {
   display: inline-block;
   position: absolute;
   right: 0;
-  top: 4px;
+  top: 9px;
 }
 .calculator .cal-calculator .cal-box .cal-btn-calculate .btn-calc {
   border: 0;
   width: 30px;
-  height: 30px;
+  height: 25px;
   border-radius: 2px;
-  background-color: #b6b6b6;
+  background-color: transparent;
   background-image: url(../img/icon_calc.png);
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position-y: center;
   background-position-x: center;
-  background-size: 18px 18px;
+  background-size: 30px 25px;
 }
 .calculator .cal-calculator .cal-box .cal-warning {
   display: none;
@@ -446,12 +431,64 @@ body {
   visibility: hidden;
   padding: 21px 0 0 17px;
   background-color: #ffffff;
+  position: relative;
 }
 .calculator .cal-calculator .cal-result.active {
   visibility: visible;
 }
+.calculator .cal-calculator .cal-result .set-currency {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.calculator .cal-calculator .cal-result .set-currency .title {
+  width: 100%;
+  color: #b4b8bb;
+  text-align: right;
+  font-size: 11px;
+  line-height: 11px;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+.calculator .cal-calculator .cal-result .set-currency .select-currency {
+  float: right;
+  padding: 0 0 0 0;
+  width: 50px;
+  height: 26px;
+}
+.calculator .cal-calculator .cal-result .set-currency .select-currency select {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-bottom: 1px solid #bbbbbb;
+  background-color: transparent;
+  color: #b4b8bb;
+  text-align: right;
+  font-size: 12.5px;
+  line-height: 12.5px;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+.calculator .cal-calculator .cal-result .set-currency .select-currency:after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 4px;
+  top: 20px;
+  width: 10px;
+  height: 6px;
+  background-color: #ffffff;
+  background-image: url(../img/icon_arrow_down.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position-y: center;
+  background-position-x: right;
+  background-size: 10px 6px;
+}
 .calculator .cal-calculator .cal-result .cal-bid-price {
   padding: 0 0 9px 0;
+  overflow: hidden;
 }
 .calculator .cal-calculator .cal-result .cal-bid-price .title {
   color: #1e1e1e;
@@ -520,7 +557,7 @@ body {
   content: '';
   position: absolute;
   left: 0;
-  top: 6px;
+  top: 7px;
   display: inline-block;
   width: 3px;
   height: 3px;
@@ -528,15 +565,14 @@ body {
   background-color: #b4b8bb;
 }
 .calculator .cal-calculator .cal-result .cal-buttons {
-  height: 23px;
+  height: 32px;
   position: relative;
 }
 .calculator .cal-calculator .cal-result .cal-buttons .btn-detail {
   position: absolute;
-  right: 0;
-  bottom: 0;
+  left: 0;
+  bottom: 4px;
   padding: 0 17px 0 0;
-  text-align: right;
   color: #b4b8bb;
   font-size: 8px !important;
   line-height: 10px;
@@ -545,21 +581,21 @@ body {
   text-transform: uppercase;
   border: 0;
   width: 120px;
-  height: 45px;
+  height: 41px;
   background-color: transparent;
   background-image: url(../img/icon_detail.png);
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position-y: 18px;
-  background-position-x: 24px;
+  background-position-x: 0;
   background-size: 12.5px 12.5px;
 }
 .calculator .cal-calculator .cal-result .cal-buttons .btn-detail:after {
   display: block;
   position: absolute;
   content: '';
-  right: 17px;
-  bottom: 15px;
+  left: 17px;
+  bottom: 11px;
   width: 62px;
   height: 1px;
   background-color: #bbbbbb;
@@ -672,6 +708,7 @@ body {
   padding-bottom: 4px !important;
 }
 .modal .modal-contents .contents-area .subtitle {
+  display: inline-block;
   padding: 0 0 5px 0;
   color: #707478;
   font-size: 14px;
@@ -776,8 +813,8 @@ body {
 .modal .modal-contents .contents-area li.others .info {
   padding: 0 0 0 0;
   color: #9e9e9e;
-  font-size: 14px;
-  line-height: 19px;
+  font-size: 13px;
+  line-height: 17px;
   font-family: "ns";
   font-weight: 400;
   letter-spacing: 0;
@@ -834,7 +871,7 @@ body {
 }
 
 .bg-calculator-result {
-  background: transparent url("../img/bg_cal_result_open.jpg") no-repeat 0 -60px/320px 838px;
+  background: transparent url("../img/bg_cal_result.jpg") no-repeat 0 -112px/375px 667px;
 }
 
 .bg-calculator-detail {

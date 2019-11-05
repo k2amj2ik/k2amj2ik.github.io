@@ -7,7 +7,7 @@
     <meta name="format-detection" content="address=no">
     <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
     <link rel="stylesheet" href="css/main.css">
-<link rel="stylesheet" href="css/calc.css">
+<!--<link rel="stylesheet" href="css/calc.css">-->
     <title>Live Auction Art Premium Calculator</title>
 </head>
 <body>
@@ -25,20 +25,21 @@
         <p class="cal-title">Calculate Final Price After Commission</p>
         <div class="cal-box">
             <div class="cal-currency">
-                <select>
-                    <option>€</option>
-                    <option>HK$</option>
-                </select>
+                <span class="currency">$</span>
             </div>
             <div class="cal-input">
                 <input type="number" placeholder="Enter Bid Amount">
             </div>
             <div class="cal-btn-calculate">
-                <button class="btn-calc" onclick="location.href='calculator_2.result.html'"></button>
+                <button class="btn-calc" onclick="location.href='calculator_2.result_open.html'"></button>
+            </div>
+            <!--  active 붙이면 열림.   -->
+            <div class="cal-warning active">
+                Bid amount field is required
             </div>
         </div>
         <!--  active 붙이면 열림.   -->
-        <div class="cal-result active">
+        <div class="cal-result">
             <div class="cal-bid-price">
                 <p class="title">If Your Bid Is</p>
                 <p class="bid-price">
@@ -64,7 +65,7 @@
                 <p class="info">Artist's Resale Right Included</p>
             </div>
             <div class="cal-buttons">
-                <button class="btn-detail" onclick="location.href='calculator_3.modal.html'">Show Detail</button>
+                <button class="btn-detail">Show Detail</button>
             </div>
         </div>
     </div>
