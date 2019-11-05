@@ -470,13 +470,26 @@ body {
 }
 .calculator .cal-calculator .cal-result .set-currency {
     position: absolute;
-    right: 2px;
-    top: 4px;
-    padding: 0 10px 0 33px;
-    width: 95px;
-    height: 50px;
+    right: 9px;
+    top: 16px;
 }
-.calculator .cal-calculator .cal-result .set-currency select {
+.calculator .cal-calculator .cal-result .set-currency .title {
+    display: inline-block;
+    color: #b4b8bb;
+    text-align: right;
+    font-size: 12.5px;
+    line-height: 12.5px;
+    font-weight: 600;
+    letter-spacing: 0;
+}
+.calculator .cal-calculator .cal-result .set-currency .select-currency {
+    display: inline-block;
+    padding: 0 0 0 0;
+    width: 50px;
+    height: 24px;
+    position: relative;
+}
+.calculator .cal-calculator .cal-result .set-currency .select-currency select {
     width: 100%;
     height: 100%;
     border: 0;
@@ -489,12 +502,12 @@ body {
     letter-spacing: 0;
     text-transform: uppercase;
 }
-.calculator .cal-calculator .cal-result .set-currency:after {
+.calculator .cal-calculator .cal-result .set-currency .select-currency:after {
     content: '';
     display: block;
     position: absolute;
-    right: 15px;
-    top: 22px;
+    right: 4px;
+    top: 8px;
     width: 10px;
     height: 6px;
     background-color: #ffffff;
@@ -505,52 +518,6 @@ body {
     background-position-x: right;
     background-size: 10px 6px;
 }
-/*.calculator .cal-calculator .cal-result .set-currency {*/
-/*    position: absolute;*/
-/*    right: 17px;*/
-/*    top: 21px;*/
-/*    padding: 0 10px 0 33px;*/
-/*    width: 95px;*/
-/*    height: 20px;*/
-/*    border: 1px solid #e9eaec;*/
-/*    border-radius: 10px;*/
-/*    background-color: #ffffff;*/
-/*    background-image: url(../img/icon_setting.png);*/
-/*    background-repeat: no-repeat;*/
-/*    background-attachment: scroll;*/
-/*    background-position-y: 1px;*/
-/*    background-position-x: 13px;*/
-/*    background-size: 16px 16px;*/
-/*}*/
-/*.calculator .cal-calculator .cal-result .set-currency select {*/
-/*    width: 100%;*/
-/*    height: 100%;*/
-/*    border: 0;*/
-/*    background-color: transparent;*/
-/*    color: #b4b8bb;*/
-/*    text-align: right;*/
-/*    font-size: 12.5px;*/
-/*    line-height: 12.5px;*/
-/*    font-weight: 600;*/
-/*    letter-spacing: 0;*/
-/*    text-transform: uppercase;*/
-/*}*/
-/*.calculator .cal-calculator .cal-result .set-currency:after {*/
-/*    content: '';*/
-/*    display: block;*/
-/*    position: absolute;*/
-/*    right: 15px;*/
-/*    top: 6px;*/
-/*    width: 10px;*/
-/*    height: 6px;*/
-/*    background-color: #ffffff;*/
-/*    background-image: url(../img/icon_arrow_down.png);*/
-/*    background-repeat: no-repeat;*/
-/*    background-attachment: scroll;*/
-/*    background-position-y: center;*/
-/*    background-position-x: right;*/
-/*    background-size: 10px 6px;*/
-/*}*/
 
 .calculator .cal-calculator .cal-result .cal-bid-price {
     padding: 0 0 9px 0;
@@ -656,49 +623,41 @@ body {
 }
 
 .calculator .cal-calculator .cal-result .cal-buttons {
-    height: 23px;
+    height: 32px;
     position: relative;
 }
 
 .calculator .cal-calculator .cal-result .cal-buttons .btn-detail {
-    /*position: absolute;*/
-    /*right: 0;*/
-    /*bottom: 0;*/
-    display: inline-block;
-    padding: 0 17px 26px 0;
-    /*padding: 0 17px 0 0;*/
-    text-align: right;
+    position: absolute;
+    left: 0;
+    bottom: 4px;
+    padding: 5px 17px 0 17px;
+    text-align: left;
     color: #b4b8bb;
     font-size: 11px !important;
-    /*font-size: 8px !important;*/
-    line-height: 10px;
+    line-height: 11px;
     font-weight: 600;
     letter-spacing: 0;
     text-transform: uppercase;
     border: 0;
     width: 120px;
-    height: 45px;
+    height: 41px;
     background-color: transparent;
-    background-image: url(/asset/images/calc/icon_detail.png);
+    background-image: url(../img/icon_detail.png);
     background-repeat: no-repeat;
     background-attachment: scroll;
-    background-position-y: 4px;
-    /*background-position-y: 18px;*/
-    background-position-x: 3px;
-    /*background-position-x: 24px;*/
+    background-position-y: 18px;
+    background-position-x: 0;
     background-size: 12.5px 12.5px;
-    float: right;
 }
 
 .calculator .cal-calculator .cal-result .cal-buttons .btn-detail:after {
     display: block;
     position: absolute;
     content: '';
-    right: 17px;
-    bottom: 28px;
-    /*bottom: 15px;*/
+    left: 17px;
+    bottom: 10px;
     width: 82px;
-    /*width: 62px;*/
     height: 1px;
     background-color: #bbbbbb;
 }
