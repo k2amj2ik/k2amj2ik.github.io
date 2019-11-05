@@ -183,14 +183,15 @@ body {
       .set-currency {
         position: absolute;
         right: 9px;
-        top: 16px;
+        top: 17px;
         .title {
           display: inline-block;
           color: $text-lightgray;
           text-align: right;
-          font-size: 11px;
-          line-height: 11px;
+          font-size: 13px;
+          line-height: 13px;
           font-weight: 600;
+          font-family: $font-family-sub;
           letter-spacing: 0;
         }
         .select-currency {
