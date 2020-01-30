@@ -237,13 +237,14 @@ body {
 }
 
 .calculator .lot {
-    padding: 20px 17px 20px 83px;
+    /*padding: 20px 17px 20px 83px;*/
+    padding: 14px 17px 13px 92px;
     /*padding: 14px 17px 13px 83px;*/
     position: relative;
 }
 
 .calculator .lot .img {
-    width: 56px;
+    width: 65px;
     height: 70px;
     position: absolute;
     left: 15px;
@@ -361,29 +362,37 @@ body {
     top: 0;
     height: 100%;
 }
+
 .calculator .cal-calculator .cal-box .cal-currency .currency {
     display: block;
-    padding: 12px 0 0 21px;
+    /*padding: 12px 0 0 19px;*/
     border: 0;
     background-color: transparent;
-    width: 62px;
+    width: 71px;
+    /*width: 62px;*/
     height: 100%;
     color: #707478;
-    font-size: 23px;
-    line-height: 23px;
+    /*font-size: 20px;*/
+    /*line-height: 20px;*/
     font-weight: 600;
     letter-spacing: -1px;
+    padding: 12px 0 0 21px;
+    font-size: 23px;
+    line-height: 23px;
 }
 
 .calculator .cal-calculator .cal-box .cal-input {
     display: inline-block;
-    padding: 0 32px 0 63px;
+    /*padding: 0 32px 0 63px;*/
+    padding: 0 32px 0 72px;
     height: 100%;
 }
 
 .calculator .cal-calculator .cal-box .cal-input input {
     vertical-align: top;
-    padding: 0 0 0 5px;
+    /*padding: 0 0 0 5px;*/
+    padding: 2px 0 0 5px;
+
     border: 0;
     background-color: transparent;
     width: 100%;
@@ -468,6 +477,7 @@ body {
 .calculator .cal-calculator .cal-result.active {
     visibility: visible;
 }
+
 .calculator .cal-calculator .cal-result .set-currency {
     position: absolute;
     right: 9px;
@@ -512,7 +522,7 @@ body {
     width: 10px;
     height: 6px;
     background-color: #ffffff;
-    background-image: url(../img/icon_arrow_down.png);
+    background-image: url(/asset/images/calc/icon_arrow_down.png);
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position-y: center;
@@ -644,7 +654,7 @@ body {
     width: 120px;
     height: 41px;
     background-color: transparent;
-    background-image: url(../img/icon_detail.png);
+    background-image: url(/asset/images/calc/icon_detail.png);
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position-y: 18px;
@@ -997,7 +1007,7 @@ body {
     padding: 0 0 17px 0;
 }
 
- .cal-result .cal-result-price .title {
+.cal-result .cal-result-price .title {
     margin-top: 10px;
 }
 
