@@ -39,42 +39,42 @@ crossorigin="anonymous">
     function drawChart() {
 
     var data = google.visualization.arrayToDataTable([
-      ['Country', 'Lot View'],
-      ['United States',     42.8],
-      ['United Kingdom',      29.3],
-      ['Hong Kong',  11.4],
-      ['Japan', 5.1],
-      ['Taiwan',    4.2],
-      ['China',    4.2],
-      ['Other',    3.0]
+        ['Country', 'Lot View'],
+        ['US',     175],
+        ['UK',      111],
+        ['HK',  69],
+        ['JP', 15],
+        ['TW', 7],
+        ['Other', 5]
     ]);
 
     var options = {
+        // pieHole: 0.6,
+        // pieSliceText: 'none',
         backgroundColor: '#1e1e1e',
-        pieSliceBorderColor: '#f8fcfe',
+        pieSliceBorderColor: '#ffffff',
+        pieSliceTextStyle: {
+            color: '#010101'
+        },
         slices: {
             0: { color: '#a3d676' },
             1: { color: '#40b7fc' },
             2: { color: '#f66b6f' },
             3: { color: '#00b8ac' },
             4: { color: '#ffa200' },
-            5: { color: '#c763ce' },
-            6: { color: '#c763ce' }
+            5: { color: '#aeaeae' }
         },
         chartArea: {
             left:0,
             top:22,
             width:'100%',
-            height:'80%',
-            textStyle: {
-                color: 'red',
-                fontSize: 6
-            }
+            height:'70%'
         },
         legend : {
+            position: 'bottom',
             textStyle: {
                 color: '#ebebeb',
-                fontSize: 6
+                fontSize: 10
             }
         }
     };
@@ -345,7 +345,7 @@ crossorigin="anonymous">
             <p class="title">lot view by country</p>
         </div> -->
 
-        <div id="viewchart"></div>
+        <div id="viewchart" style="height: 280px"></div>
         
         <table class="table-area">
             <th>country</th>
