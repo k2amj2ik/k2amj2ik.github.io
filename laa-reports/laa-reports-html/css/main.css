@@ -1,0 +1,1024 @@
+@charset "utf-8";
+@font-face {
+    font-family:'gt';
+    font-weight:200;
+    src:url('fonts/Gotham-XLight.otf') format('opentype'), local(times new romans);
+}
+@font-face {
+    font-family:'gt';
+    font-weight:300;
+    src:url('fonts/Gotham-Light.otf') format('opentype'), local(times new romans);
+}
+@font-face {
+    font-family:'gt';
+    font-weight:400;
+    src:url('fonts/Gotham-Book.otf') format('opentype'), local(times new romans);
+}
+@font-face {
+    font-family:'gt';
+    font-weight:600;
+    src:url('fonts/Gotham-Medium.otf') format('opentype'), local(times new romans);
+}
+@font-face {
+    font-family:'gt';
+    font-weight:700;
+    src:url('fonts/Gotham-Bold.otf') format('opentype'), local(times new romans);
+}
+
+@font-face {
+    font-family:'gt';
+    font-weight:800;
+    src:url('fonts/Gotham-Black.otf') format('opentype'), local(times new romans);
+}
+
+@font-face {
+    font-family:'tl';
+    font-weight:400;
+    src:url('fonts/timeless-woff-webfont.woff') format('woff'), local(times new romans);
+}
+
+@font-face {
+    font-family:'ns';
+    font-weight:400;
+    src:url('fonts/NotoSansCJKkr-Medium.otf') format('opentype'), local(times new romans);
+}
+
+@font-face {
+    font-family:'ns';
+    font-weight:300;
+    src:url('fonts/NotoSansCJKkr-DemiLight.otf') format('opentype'), local(times new romans);
+}
+
+/* reset default browser setting */
+* {margin:0; padding:0; color:inherit; line-height:1em; font-size:inherit; font-family:inherit;}
+html {width:100%; height:100%; position:relative; overflow-x: hidden;}
+body {position:relative; width:100%; height:100%; font-family:gt; font-size:14px;}
+table {border-collapse: collapse; border-spacing:0;}
+del,ins {text-decoration:none;}
+li {list-style-type:none;}
+dd,dt {display:block;}
+a:link, a:visited, a:active, a:hover, a:focus {text-decoration:none; outline:0;}
+th {text-align:center; font-weight:bold;}
+td {text-align:left;}
+q:before,q:after {content:'';}
+abbr,acronym {border:0;font-variant:normal;}
+em {font-style:inherit; font-weight:inherit;}
+sup {vertical-align:baseline;}
+sub {vertical-align:baseline;}
+table caption, legend {text-indent:-9999px; font-size: 0; line-height: 0; width:0; height:0; overflow:hidden;}
+table caption, legend {text-indent:-9999px; font-size: 0; line-height: 0; width:0; height:0; overflow:hidden;}
+input, select, textarea {font-family:inherit; font-size:inherit; line-height:1.4em;}
+button {border:0; padding:0; background:transparent; cursor:pointer; position:relative; font-family:inherit; font-size:inherit;}
+button:hover, button:focus, button:active {outline:none;}
+input:hover, input:focus, input:active {outline:none;}
+a, button {cursor:pointer;}
+strong {font-weight:600;}
+h1,h2,h3,h4,h5,h6 {font-weight:400;}
+header,footer,nav,article,aside,section {display:block;}
+pre {word-wrap: break-word}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*                                   DANA 2020.2.    */
+
+/* body */
+body {
+  color:#9a9a9a;
+  background-color: #1d1d1d;  
+  overflow-x:hidden; 
+  overflow-y:auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.scrollOff{
+    
+}
+
+/* 하이퍼링크 텍스트 밑줄 없애고 색상 바꾸기 */
+a{
+    color:#9a9a9a;
+    text-decoration:none;
+}
+
+/* 목록 기호 없애기*/
+ul,ol,li{
+    list-style: none;
+}
+
+/* 체크 박스 숨기기 */
+#toggle{
+	display: none;    
+}
+
+/* 푸터 영역 */
+footer{
+	clear: both; /* 플로트 속성 썼으면 아래에 꼭 클리어 넣어주기 */
+    position: relative;
+    bottom: 0px;
+	width: 100%;
+	text-align: center;
+	padding-top: 10px;
+    padding-bottom: 10px;
+	border-top: 1px solid #ccc;
+    z-index: 120;
+}
+
+footer > address{
+	font-style: normal;
+}
+
+
+/* 헤더 영역 */
+header{
+    width: 100%;
+	height: 72px;
+    position: fixed;
+    background-color: #1d1d1d;
+    z-index: 120;
+}
+
+.header_inner{
+    width: 100%;
+}
+
+.back_btn{
+    display: block;
+    width: 100%;
+    /*top: 5px;
+    padding: 30px 20px 30px 16px;*/
+}
+
+.back_btn img{
+    position: absolute;
+    top: 35px;
+    left: 15px;
+    width: 10px;
+    height: 15px;
+}
+
+.saleinfo{
+    position: absolute;
+    top: 10px;
+    left: 42px;
+    width: 100%;
+}
+
+.saleinfo > p{
+    font-size: 10px;
+}
+
+.saleinfo > .auctionhouse{
+    padding-top: 2px;
+    letter-spacing: 0.3;
+}
+
+.saleinfo > .auctionhouse > .housename{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.saleinfo > .auctionhouse > .houselocation{
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.saleinfo > .salename{
+    text-transform: capitalize;
+    font-weight: 600;
+    color: #eaeced;
+    font-size: 15px;
+    margin: 6px 0;
+}
+
+.saleinfo > .saledate{
+    font-size: 12px;
+    letter-spacing: 0.2;
+}
+
+.saleinfo > .saledate > .date{
+    text-transform: capitalize;
+}
+
+
+/* 컨텐츠 영역 - 투명한 배경 이미지 */
+.bgimg{
+    position: relative;
+    background-image: url(../img/lotList_past.jpg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: 100%;
+    opacity: 0.3;
+    z-index: 130;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+.hidden{
+    display: none !important;
+}
+
+
+/* 컨텐츠 영역 - 메뉴탭 */
+.tab{
+    clear: both;
+    width: 100%;
+    height: 54px;
+    position: fixed;
+    top: 70px;
+    background-color: #2c2c2c; 
+    text-align: center;
+    overflow: hidden;
+    z-index: 120;
+    border-bottom: 1px solid #1d1d1d;
+}
+
+.tab > a{
+    display: inline;
+    float: left;
+    width: 50%;
+    position: relative;
+    z-index: 110;
+}
+
+.tab span{
+    line-height: 58px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+    color: #eaeced;    
+}
+
+.tab > .active > span{
+    border-bottom: 3px solid #ffa700;
+}    
+
+/* 컨텐츠 영역 - 정렬 드롭박스 */
+.sortbar{
+    clear: both;
+    width: 100%;
+    height: 31.5px;
+    position: absolute;
+    top: 125px;
+}
+
+.sortbar > .sort{
+    position: absolute;
+    right: 5%;
+    top: 7px;
+    border: none;
+    background-color: #1d1d1d;
+    color: #9a9a9a;
+    z-index: 110;
+    font-size: 12px;
+}
+
+    @media screen and (min-width: 768px) { /*    pc에서    */
+        .sortbar > .sort_arrow > img{
+            display: none;
+        }
+    }
+    
+    
+    
+    @media screen and (max-width: 767px) { /*    모바일에서    */
+        
+        body{
+            overflow-x:hidden; 
+            overflow-y:auto;
+        }
+        
+        .sortbar > .sort{
+            right: 7%;
+        }
+        
+        .sortbar > .sort{
+            -webkit-appearance: none;  /* 네이티브 외형 감추기 */
+            -moz-appearance: none;
+            appearance: none;
+            border: 0;
+            background-color: transparent;
+            text-align: right;
+            font-size: 12px;
+            font-family: inherit;
+            letter-spacing: 0;
+            /* right: 3%; */
+        }
+        
+        .sortbar > .sort_arrow{
+            position: relative;
+            top: 5px;
+            width: 100%;
+            height: 20px;
+        }
+        
+        .sortbar > .sort_arrow > img{
+            display: block;
+            width: 10px;
+            height: 7px;
+            position: relative;
+            left: 95%;
+            top: 8px;
+        }
+        
+    }
+
+
+
+/* 컨텐츠 영역 - 랏 정보 */  
+
+.lots {
+    box-sizing: border-box; 
+    margin-bottom:100px;
+}
+
+.lots li {
+    box-sizing: border-box;
+    position:relative;
+    display:block;
+    border: 0; 
+    padding: 24px 15px 0 15px;
+    margin: 0 0 18px 0;
+    background-color: #2a2a2a; 
+    top: 147px;
+}
+
+
+.lots .lotsIn { 
+    position:relative; 
+    min-height:90px;
+    /*padding-bottom: 22px;*/
+}
+
+.lots .thumb {
+    display:block;
+    float:left;
+    width: 75px;
+    height: 80px; 
+    background-color: #2a2a2a;
+    text-align: center;
+    position: relative;
+    top: 10px;
+}
+
+.lots .thumb img {
+    max-width: 100%;
+    max-height: 100%;
+    /*position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -25%);*/
+}
+
+
+.lots .hammerprice{
+    position: relative;
+    margin: 0 0 22px 0;
+    min-height: 32px;
+    padding-left: 87px;
+}
+
+.lots .hammerprice > p{
+    display: block;
+}
+
+.lots .hammerprice .hammer{
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: 600;
+    color: #bdc0c2;
+    letter-spacing: 0.4;
+    margin-top: 5px;
+    word-break: break-all;
+}
+
+.lots .hammerprice .hammer-text{
+    box-sizing: border-box;
+    font-size: 10px;
+    font-weight:400;
+    color: #9a9a9a;
+    font-style:italic;
+    letter-spacing: 0.4;
+    padding-top: 2px;
+}
+
+.lots .hammerprice .lowest_txt{
+    display: inline-block;
+    position: absolute;
+    top: 15px;
+    left: 20;
+    font-size: 0.5em;
+    height: 10px;
+    font-weight: 600;
+}
+
+.lots .hammerprice .lowest_txt > span{
+    line-height: 10px;
+}
+
+.lots .hammerprice .lowest_perc{
+    display: inline-block;
+    position: absolute;
+    top: 18px;
+    left: 42;
+    background-color: #454545;
+    border-radius: 10%;
+    font-weight: 600;
+    font-size: 0.7em;
+    height: 8px;
+    padding: 3px 4px;
+}
+
+
+
+
+.lots .cont {
+    padding: 0px 0 0 86px; 
+    position:relative;
+}
+
+.lots .cont p {
+    display:block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: visible;
+    /* word-break: break-all; */ 
+    margin: 3px 0px;
+}
+
+.lots .cont .lot_no { 
+    font-family: "gt"; 
+    font-size: 10px;
+    font-weight: 600;
+    color: #bdc0c2;
+    margin: 0 0 0 0; 
+    padding-top: 5px;
+    letter-spacing: 0.1;
+}
+
+.lots .cont .artist {
+    position:absolute; 
+    top:20px; 
+    font-size: 13px;
+    color: #eaeced;
+    font-weight: 700;
+    line-height: 14px;
+    text-transform: uppercase;
+    white-space: normal;
+    -webkit-line-clamp: 1;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    max-width: 100%;
+    max-height: 15px;
+    overflow: hidden;
+    letter-spacing: 0.1;
+}
+
+.lots .cont .title {
+    font-size: 17px;
+    color: #eaeced;
+    font-family:'tl';
+    font-weight: 400;
+    margin-top: 26px;
+    line-height: 18px; 
+    font-style:italic;
+    -webkit-line-clamp: 1;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    max-width: 100%;
+    overflow: hidden;
+    margin-bottom: 0;
+    letter-spacing: -0.6px;
+}
+
+.lots .cont .est{
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight:400;
+    color:#9a9a9a;
+    margin: 17px 0 17px 0;
+    height: auto;
+    letter-spacing: 0.1; 
+    word-break: break-all;
+}
+
+
+
+.lots .lotsIn .cont em { font-family: inherit;/*gulim;*/}
+
+.lot-list .lots { padding:0; margin-bottom:0;  border-bottom: 1px solid #42454e;box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);}
+
+#wrapper.lot-list { padding-top:10px; position: relative;z-index: 1;}
+
+
+                       /* passed and withdrawn */
+/* .lots .cont .passed,
+.lots .cont .withdrawn {position: relative;display: inline-block;box-sizing: border-box;font-size: 22px;font-weight: 400;margin: 4px 0 -11px 0;color: #e3745b;padding: 10px 16px 8px 0;}
+.lots .cont .withdrawn { color:#b4b8bb;}
+
+
+.lot-list .lots .cont .passed, .lot-list .lots .cont .withdrawn {margin: 4px 0 -5px;}*/
+
+
+
+
+/* 컨텐츠 영역 - 통계 정보 */  
+
+.lots .statinfo { 
+    position: relative;
+    border-top: 1px solid #9a9a9a; 
+    height: 74px;
+    /*              .stat  가운데 정렬 */
+    width: 100%; 
+    text-align: center; 
+    overflow: hidden;
+}
+
+.statinfo > .stat{
+    width: 33.3%;
+    height: 100%;
+    font-size: 11px;
+/*              .stat  가운데 정렬 */
+    display: inline;
+    float: left;
+    padding-top: 17px;
+}
+
+
+
+.statinfo > .stat .stat_num{
+    font-size: 20px;
+    color: #ffa700;
+    display: block;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+}
+
+.statinfo > .stat p{
+    text-transform: uppercase;
+    margin-top: 9px;
+    letter-spacing: 0px;
+} 
+
+
+
+/* -----------------------------------------------auction list-------------------------*/
+
+.a_bgimg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../img/auctionList2.jpg);
+    background-size: 100%;
+    opacity: 0.3;
+    z-index: 1;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+.a_title{
+    position: absolute;
+    top: 38px;
+    left: 15px;
+    width: 100%;
+}
+
+.a_title > h2{
+    padding: 8px 0 0 0;
+    font-size: 30px;
+}
+
+.a_title > .notice{
+    font-size: 11px;
+    padding: 15px 0 0 0;
+    letter-spacing: 0.2;
+}
+
+.a_title > .notice2{
+    font-size: 11px;
+    padding: 10px 0 0 0;
+    letter-spacing: 0.2;
+}
+
+.auctionlist{
+    position: relative;
+    top: 160px;
+    width: 100%;
+    
+    /*background-color: aquamarine;*/
+}
+
+.listsection{
+    width: 100%;
+    
+}
+
+
+
+.card{
+    width: 100%;
+    background-color: #2a2a2a;/*pink;*/
+    margin-bottom: 16px;
+    position: relative;
+    padding-left: 15px;
+}
+
+.card > .auctionhouse{
+    font-weight: 600;
+    padding-top: 32px;
+    letter-spacing: -0.4;
+}
+
+.card > .auctionhouse > .housename{
+    text-transform: uppercase;
+    
+}
+
+.card > .auctionhouse > .houselocation{
+    text-transform: capitalize;
+    
+}
+
+.card > .salename{
+    font-weight: 600;
+    margin-top: 10px;
+    text-transform: capitalize;
+    font-size: 20px;
+    letter-spacing: -0.5;
+    width: 90%; 
+    /*background-color: red;*/
+}
+
+.card > .saledate{
+    margin-top: 10px;
+    letter-spacing: -0.3;
+}
+
+.card > .saledate > .far{
+    font-size: 12px;
+}
+
+.card > .saledate > .date{
+    text-transform: capitalize;
+}
+
+.card > .count{
+    margin-top: 14px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    letter-spacing: -0.5;
+}
+
+.upcoming{
+    color: #b43e12;
+}
+
+.listsection .card:after{
+    content: '';
+    position: absolute;
+    right: 30px;
+    top: 40px;
+    width: 6px;
+    height: 10px;
+    background-image: url(../img/icon_arrow_right.png);
+    background-size: 6px auto;
+}
+
+
+
+
+/* -----------------------------------------------summary-------------------------*/
+
+
+.s_bgimg{
+    position: relative;
+    background-image: url(../img/summary.jpg);
+    background-size: 100%;
+    opacity: 0.3;
+    z-index: -1;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+.summary{
+    position: absolute;
+    top: 125px;
+    width: 100%;
+    height: 100%;
+    /*background-color: aquamarine;*/
+    margin-top: 23px;
+}
+
+.s_list{
+    width: 100%;
+    position: relative;
+   /*background-color: pink;*/
+    padding-left: 42px;
+    margin-bottom: 27px;
+}
+
+
+.s_list > .s_ul{
+    margin-right: 82px;
+    /*background-color: indianred;*/
+}
+
+.s_list > .s_ul > li:first-child{
+    font-size: 16px;
+    text-transform: uppercase;
+    border-top: none;
+    padding-top: 0;
+    padding-bottom: 8px;
+    font-weight: 700;
+}
+
+.s_list > .s_ul > li{
+    border-top: 1px solid #ccc;
+    padding: 13px 0;
+    position: relative;
+}
+
+.s_list > .s_ul > li > span{
+    font-weight: 600;
+    color: #ffa700;
+    position: absolute;
+    right: 1px;
+}
+
+
+
+/* -----------------------------------------------login-------------------------*/
+
+
+.l_bgimg{
+    position: relative;
+    background-image: url(../img/login.jpg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: 100%;
+    opacity: 0.3;
+    z-index: 130;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+.loginpage{
+    position: relative;
+    padding: 130px 18px 20px 18px;
+}
+
+.login_sub{
+    text-transform: capitalize;
+    font-size: 14px;
+    letter-spacing: -0.1;
+}
+
+.login_sub > span{
+    font-weight: 600;
+}
+
+.login_main{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 35px;
+    color: #eaeced;
+    margin-top: 8px;
+    line-height: 38px;
+}
+
+.id, .pw{
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+.id{
+    margin-top: 130px;
+}
+
+.pw{
+    margin-top: 25px;
+}
+
+.textbox{
+    width:100%;
+    background-color: #1d1d1d;
+    border: none;
+    border-bottom: 2px solid #9a9a9a;
+    height: 40px;
+}
+
+.help{
+    text-decoration: underline;
+    text-align: right;
+    margin-top: 10px;
+}
+
+.help > a > span{
+    font-weight: 400;
+    color: #d1d2d3;
+}
+
+.login_btn{
+    width:100%;
+    background-color: #f5ce82;
+    color: #1d1d1d;
+    border: none;
+    margin-top: 32px;
+    height: 50px;
+    font-weight: 600;
+    font-size: 14px;
+    -webkit-appearance: none; 
+    -webkit-border-radius: 0; /* iOS에서 input 태그의 기본 둥근 테두리 제거 */
+}
+
+.copy{
+    text-align: center;
+    margin: 15px 0;
+    font-size: 12px;
+}
+
+
+
+
+/* -----------------------------------------------lot view-------------------------*/
+
+.m_bgimg{
+    position: relative;
+    background-image: url(../img/views.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: 100%;
+    opacity: 0.3;
+    z-index: 999;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+/* 모달 백그라운드 */
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 150;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* overflow: auto;   Enable scroll if needed */
+    background-color: rgba(0,0,0,0.8);
+}
+
+.modal.active {
+    display: block;
+}
+
+/* 모달창 내부 */
+.modal-content {
+    background-color: #1d1d1d;
+    margin: 48px auto 0px auto;
+    padding: 0 20px 20px 20px;
+    border: none;
+    width: 82%; 
+    max-height: -moz-calc(100% - 120px);
+    max-height: -webkit-calc(100% - 120px);
+    max-height: calc(100% - 120px);
+    overflow-y: scroll;
+}
+
+.modal-content > .title-area{
+    width: 82%;
+    height: 40px;
+    position: fixed;
+    display: block;
+    z-index: 200;
+    background-color: #1d1d1d;
+}
+
+.modal-content > .title-area > .title{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 0.1;
+    color: #eaeced;
+    margin-top: 20px;
+    position: absolute;
+}
+
+/* 닫기 버튼 */
+.close {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 38px;
+    font-weight: lighter;
+}
+
+@media screen and (max-width: 767px) { /*    모바일에서    */
+    .close {
+        right: 2%;
+    }
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 차트 */
+#viewChart{
+    width: 100%;
+    height: 235px;
+    z-index: 9999;
+    background-color: aliceblue;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+/* 테이블 */
+.table-area{
+    background-color: #2a2a2a;
+    width: 100%
+}
+
+.table-area th, td{
+    border: 1px solid #1d1d1d;
+}
+
+.table-area > th, tr{
+    height: 29.5px;
+}
+
+.table-area th{
+    text-transform: uppercase;
+    font-size: 12px;
+    padding-top: 2px;
+    letter-spacing: -0.3;
+}
+
+.table-area th:first-child{
+    text-align: left;
+    padding-left: 13px;
+}
+
+.table-area th:last-child{
+    padding-right: 9px;
+}
+
+.table-area td{
+    text-transform: capitalize;
+    padding-left: 13px;
+    line-height: 20px;
+    font-size: 13px;
+    padding-top: 2px;
+    letter-spacing: -0.3;
+}
+
+.table-area tr > td:last-child{
+    text-align: right;
+    padding-right: 11px;
+    color: #eaeced;
+    width: 80px;
+}
+
+.table-area tr:last-child td{
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #eaeced;
+}
+
+.table-area tr:last-child td:last-child{
+    color: #ffa700;
+}
+
+
+
+
