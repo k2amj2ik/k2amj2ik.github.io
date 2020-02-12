@@ -1,0 +1,443 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+<meta name="format-detection" content="telephone=no">
+<meta name="format-detection" content="date=no">
+<meta name="format-detection" content="address=no">
+<!--  main CSS  -->
+<link rel="stylesheet" href="css/main.css">
+
+<!--낮은(구형) 브라우저에서 html5 태그 요소가 잘 인식되도록 하기 위함-->
+	<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<!--[endif]-->
+
+<!-- 벤더 프리픽스 접두사 안 붙여도 되는 소스 -->
+	<script src="./js/prefixfree.min.js"></script>
+
+<!-- 아이콘 폰트를 사용하기 위한 웹폰트 주소 -->
+<link rel="stylesheet" 
+href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
+integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+crossorigin="anonymous">
+
+
+<title>AUCTION REPORT - Live Auction Art</title>
+
+<style>
+    a[href], button{ touch-action: manipulation; }
+</style>
+
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+    google.charts.load('current', {'packages':['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+
+    var data = google.visualization.arrayToDataTable([
+        ['Country', 'Lot View'],
+        ['US',     175],
+        ['UK',      111],
+        ['HK',  69],
+        ['JP', 15],
+        ['TW', 7],
+        ['Other', 5]
+    ]);
+
+    var options = {
+        // pieHole: 0.6,
+        // pieSliceText: 'none',
+        backgroundColor: '#1e1e1e',
+        pieSliceBorderColor: '#ffffff',
+        pieSliceTextStyle: {
+            color: '#010101'
+        },
+        slices: {
+            0: { color: '#a3d676' },
+            1: { color: '#40b7fc' },
+            2: { color: '#f66b6f' },
+            3: { color: '#00b8ac' },
+            4: { color: '#ffa200' },
+            5: { color: '#aeaeae' }
+        },
+        chartArea: {
+            left:0,
+            top:22,
+            width:'100%',
+            height:'70%'
+        },
+        legend : {
+            position: 'bottom',
+            textStyle: {
+                color: '#ebebeb',
+                fontSize: 10
+            }
+        }
+    };
+
+    var chart = new google.visualization.PieChart(document.getElementById('viewchart'));
+
+    chart.draw(data, options);
+    }
+</script>
+
+
+</head>
+<body>
+
+
+
+
+   <!-------------------------- 헤더 영역 -------------------------->
+<header>
+
+    <div class="header_inner">
+
+
+        <a href="http://dahyene.dothome.co.kr/bird/file/auctionList.html" title="Back" class="back_btn">
+            <img src="./img/icon_arrow_left.png" alt="Back">
+
+
+        <div class="saleinfo">
+
+            <p class="auctionhouse">
+                <span class="housename">christie's</span>&nbsp;
+                <span class="houselocation">london</span>
+            </p>
+
+            <p class="salename">modern british art evening sale</p>
+
+            <p class="saledate">
+                <i class="far fa-calendar-alt"></i>
+                <span class="date">fri, 17 jan 2019</span>&nbsp;&nbsp;&nbsp;
+                <i class="far fa-clock"></i>
+                <span class="time">10:00</span>&nbsp;&nbsp;&#124;&nbsp;
+                <span class="past">63 days past</span>
+            </p>
+
+        </div>
+
+        </a>
+    </div>
+
+</header>
+
+       <!-------------------------- 컨텐츠 영역 -------------------------->
+<section>
+
+    <!-- 배경 이미지 -->
+    <div class="m_bgimg hidden"></div>
+
+    <div class="tab">
+
+        <a href="http://dahyene.dothome.co.kr/bird/file/summary_past.html" class=""><span>summary</span></a>
+        <a href="#" class="active"><span>lot detail</span></a>
+
+    </div>
+
+    <div class="sortbar">
+
+        <select name="sort" class="sort">
+            <option>Sorted by View Rank</option>
+	        <option>Sorted by Lot Number</option>
+        </select>
+
+        <div class="sort_arrow">
+            <img src="./img/icon_arrow_down.png" alt="">
+        </div>
+
+    </div>
+
+</section>
+
+<section>
+
+    <div class="lot-list" id="wrapper">
+
+        <ul class="lots">
+
+            <li>
+                <div class="lotsIn">
+
+                    <div class="thumb">
+                        <img src="http://i0.kym-cdn.com/photos/images/facebook/000/002/110/longcat.jpg">
+                    </div>
+
+                    <div class="cont">
+                        <p class="lot_no">Lot. 13</p>
+                        <p class="artist">WAYNE THIEBAUD</p>
+                        <p class="title">Jelly Roll</p>
+                        <p class="est"><em>HK$</em> 2,400,000 - 4,000,000</p>
+
+
+                    </div>
+
+                    <div class="hammerprice">
+                        <p class="hammer-text"> hammer</p>
+                        <p class="hammer"><em>HK$</em> 1,800,000</p>
+
+                        <div class="lowest_txt">
+                            <span>Low</span><br>
+                            <span>Est.</span>
+                        </div>
+                        <div class="lowest_perc">
+                            <span class="est_perc">-12&#37;</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="statinfo">
+                	<div class="stat">
+                        <a href="#">
+                            <span class="stat_num">382</span>
+                            <p>views</p>
+                        </a>
+                    </div>
+
+                	<div class="stat">
+                        <a href="#">
+                            <span class="stat_num">26</span>
+                            <p>watching</p>
+                        </a>
+                    </div>
+
+                    <div class="stat">
+                        <a href="#">
+                            <span class="stat_num">19</span>
+                            <p>calculation</p>
+                        </a>
+                    </div>
+
+                </div>
+            </li>
+
+            <li>
+                <div class="lotsIn">
+                    <div class="thumb">
+                        <img src="https://i.pinimg.com/originals/6d/b9/59/6db959d11cbec71bc61fa9f1b5eb2171.jpg">
+                    </div>
+
+                    <div class="cont">
+                        <p class="lot_no">Lot. 14</p>
+                        <p class="artist">ZAO WOU-KI (ZHAO WUJI) ZAO WOU-KI ZAO WOU-KI ZAO WOU-KI ZAO WOU-KI ZAO WOU-KI ZAO WOU-KI ZAO WOU-KI ZAO WOU-KI ZAO WOU-KI ZAO WOU-KI ZAO WOU-KI ZAO WOU-KI ZAO WOU-KI ZAO WOU-KI ZAO WOU-KI</p>
+                        <p class="title">Cite se Reveille (Rising City) Cite se Reveille Cite se Reveille Cite se Reveille Cite se Reveille Cite se Reveille Cite se Reveille Cite se Reveille Cite se Reveille Cite se Reveille </p>
+                        <p class="est"><em>HK$</em> 30,000,000,000,000,000,000,000000000000 - 40,000,000,000,000,000,000,000</p>
+
+
+                    </div>
+
+                    <div class="hammerprice">
+                        <p class="hammer-text"> hammer</p>
+                        <p class="hammer"><em>HK$</em> 46,000,000,000,000,000,000,000,000</p>
+
+                        <div class="lowest_txt">
+                            <span>Low</span><br>
+                            <span>Est.</span>
+                        </div>
+                        <div class="lowest_perc">
+                            <span class="est_perc">-12&#37;</span>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="statinfo">
+                    <div class="stat">
+                        <a href="#">
+                            <span class="stat_num">382</span>
+                            <p>views</p>
+                        </a>
+                    </div>
+
+                	<div class="stat">
+                        <a href="#">
+                            <span class="stat_num">26</span>
+                            <p>watching</p>
+                        </a>
+                    </div>
+
+                    <div class="stat">
+                        <a href="#">
+                            <span class="stat_num">19</span>
+                            <p>calculation</p>
+                        </a>
+                    </div>
+
+                </div>
+            </li>
+
+            <li>
+                <div class="lotsIn">
+                    <div class="thumb">
+                        <img src="https://imgnews.pstatic.net/image/477/2020/02/09/0000231576_001_20200209190914348.jpg">
+                    </div>
+
+                    <div class="cont">
+                        <p class="lot_no">Lot. 14</p>
+                        <p class="artist">ZAO WOU-KI (ZHAO WUJI)</p>
+                        <p class="title">Cite se Reveille (Rising City)</p>
+                        <p class="est"><em>HK$</em> 30,000,000 - 40,000,000</p>
+
+
+
+                    </div>
+
+                    <div class="hammerprice">
+                        <p class="hammer-text"> hammer</p>
+                        <p class="hammer"><em>HK$</em> 46,000,000</p>
+
+                        <div class="lowest_txt">
+                            <span>Low</span><br>
+                            <span>Est.</span>
+                        </div>
+                        <div class="lowest_perc">
+                            <span class="est_perc">-12&#37;</span>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="statinfo">
+                   <div class="stat">
+                        <a href="#">
+                            <span class="stat_num">382</span>
+                            <p>views</p>
+                        </a>
+                    </div>
+
+                	<div class="stat">
+                        <a href="#">
+                            <span class="stat_num">26</span>
+                            <p>watching</p>
+                        </a>
+                    </div>
+
+                    <div class="stat">
+                        <a href="#">
+                            <span class="stat_num">19</span>
+                            <p>calculation</p>
+                        </a>
+                    </div>
+
+                </div>
+            </li>
+        </ul>
+
+    </div>
+
+
+  <!-- active 붙이면 열림 -->
+    <div class="modal active">
+
+
+      <div class="modal-content">
+        <div class="title-area">
+            <p class="title">lot view by country</p>
+            <span class="close">&times;</span>
+        </div>
+        <!--<span class="close">&times;</span>
+
+        <div class="title-area">
+            <p class="title">lot view by country</p>
+        </div> -->
+
+        <div id="viewchart" style="height: 280px"></div>
+        
+        <table class="table-area">
+            <th>country</th>
+            <th>lot view</th>
+            <tr>
+	            <td>united states</td>
+	            <td>175</td>
+	        </tr>
+	        <tr>
+	            <td>united kingdom</td>
+	            <td>111</td>
+	        </tr>
+	        <tr>
+	            <td>hong kong</td>
+	            <td>69</td>
+	        </tr>
+	        <tr>
+	            <td>japan</td>
+	            <td>15</td>
+	        </tr>
+	        <tr>
+                <td>taiwan</td>
+                <td>7</td>
+	        </tr>
+	        <tr>
+	            <td>china</td>
+	            <td>3</td>
+	        </tr>
+	        <tr>
+	            <td>others</td>
+	            <td>2</td>
+	        </tr>
+	        <tr>
+	            <td>others</td>
+	            <td>2</td>
+	        </tr>
+	        <tr>
+	            <td>others</td>
+	            <td>2</td>
+	        </tr>
+	        <tr>
+	            <td>others</td>
+	            <td>2</td>
+	        </tr>
+	        <tr>
+	            <td>others</td>
+	            <td>2</td>
+	        </tr>
+	        <tr>
+	            <td>others</td>
+	            <td>2</td>
+	        </tr>
+	        <tr>
+	            <td>others</td>
+	            <td>2</td>
+	        </tr>
+	        <tr>
+	            <td>others</td>
+	            <td>2</td>
+	        </tr>
+	        <tr>
+	            <td>others</td>
+	            <td>2</td>
+	        </tr>
+	        <tr>
+	            <td>others</td>
+	            <td>2</td>
+	        </tr>
+	        <tr>
+	            <td>total</td>
+	            <td>382</td>
+	        </tr>
+        </table>
+        
+        
+      </div>
+ 
+    </div>
+
+  
+  
+  
+  
+</section>
+    
+    <!-------------------------- 푸터 영역 ------------------------
+    <footer>
+        <address>
+			Copyright&copy;2020 BLUE INDEX allrights Reserved.
+		</address>
+    </footer>                                                    -->
+
+
+</body>
+</html>
