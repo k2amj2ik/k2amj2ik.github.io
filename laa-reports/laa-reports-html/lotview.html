@@ -50,6 +50,8 @@ crossorigin="anonymous">
     ]);
 
     var options = {
+        backgroundColor: '#1e1e1e',
+        pieSliceBorderColor: '#f8fcfe',
         slices: {
             0: { color: '#a3d676' },
             1: { color: '#40b7fc' },
@@ -61,14 +63,18 @@ crossorigin="anonymous">
         },
         chartArea: {
             left:0,
-            top:0,
-            width:'320',
-            height:'320'
+            top:22,
+            width:'100%',
+            height:'80%',
+            textStyle: {
+                color: 'red',
+                fontSize: 6
+            }
         },
         legend : {
             textStyle: {
                 color: '#ebebeb',
-                fontSize: 7
+                fontSize: 6
             }
         }
     };
@@ -124,7 +130,7 @@ crossorigin="anonymous">
 <section>
 
     <!-- 배경 이미지 -->
-    <div class="m_bgimg"></div>
+    <div class="m_bgimg hidden"></div>
 
     <div class="tab">
 
