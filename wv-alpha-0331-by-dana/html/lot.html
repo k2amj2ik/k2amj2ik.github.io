@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="We'll do the Research, You Decide. Reveal the Market Price. BLUE INDEX.">
+    <meta name="keywords" content="Fine Art, Auction, Artist, Live Auction, Art, BLUE INDEX, Real, Report">
+    <meta name="author" content="BLUE INDEX">
+    <link rel="icon" href="../images/favicon_01.ico">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="http://blueindex.com">
+    <meta name="twitter:title" content="BLUE INDEX">
+    <meta name="twitter:description" content="We'll do the Research, You Decide. Reveal the Market Price. BLUE INDEX.">
+    <meta name="twitter:image" content="http://www.liveauctionart.com/images/report_summary.png">
+    <meta name="twitter:site" content="@blueindex">
+    <meta name="twitter:creator" content="@blueindex">
+    <meta property="og:title" content="BLUE INDEX">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="http://www.liveauctionart.com/images/report_summary.png">
+    <meta property="og:site_name" content="BLUE INDEX">
+    <meta property="og:url" content="http://blueindex.com">
+    <meta property="og:description" content="We'll do the Research, You Decide. Reveal the Market Price. BLUE INDEX.">
+    <title>BLUE INDEX</title>
+    <link rel="stylesheet" media="screen and (min-width: 1280px)" href="../css/main.css">
+    <link rel="stylesheet" media="screen and (max-width: 1279.99px)" href="../css/main_xs.css">
+    
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+            var desc_hei = $('.work-desc').height();
+            var winsize = $(window).width();
+            
+            if(desc_hei < 96){
+                $('.btn-badge').css('display','none');
+            }else{
+                $('.work-desc').addClass('act02');
+            }
+            
+            $('.btn-badge').click(function(){
+                $('.work-desc').toggleClass('act02');
+                
+                if($(this).text()=='more'){
+                    $(this).text('less');
+                }else{
+                    $(this).text('more');
+                }
+            });
+                
+            $('dt').click(function(){
+                $(this).next().slideToggle();
+                $(this).find('i.fas').toggleClass('act01');
+            });
+            
+        });
+    </script>
+</head>
+<body>
+
+
+<div class="container lot">
+    <header class="top-navigation">
+        <a href="main.html" class="btn-mobile-back mobile-only" title="Go to back"></a>
+        <a href="main.html" class="logo"></a>
+        <a href="main.html" class="btn-mobile-search mobile-only" title="Go to search"></a>
+        <form class="form-artist-search-top" action="lots.html">
+            <div class="form-group">
+                <input type="text" class="input-bgdark" placeholder="Search" value="">
+                <button type="submit" class="btn-search">Search</button>
+            </div>
+            <div class="layer-search">
+                <a href="artists.html" class="artist">
+                    <span class="name">Andy  <span class="matching">Warhol</span></span>
+                    <span class="description">(American, 1928-1987)</span>
+                </a>
+                <a href="artists.html" class="artist">
+                    <span class="name">Andy Andy Andy Andy Andy Andy Andy Andy Andy Andy Andy Andy Andy Andy Andy Andy  Hope</span>
+                    <span class="description">(German, B.1963)</span>
+                </a>
+                <a href="artists.html" class="artist">
+                    <span class="name">Andy Warhol</span>
+                    <span class="description">(American, 1928-1987)</span>
+                </a>
+                <a href="artists.html" class="artist">
+                    <span class="name">Andy Hope</span>
+                    <span class="description">(German, B.1963)</span>
+                </a>
+            </div>
+        </form>
+        <ul class="location">
+            <li class="normal"><a class="nav-link" href="main.html"><span class="icon-home"></span> HOME</a></li>
+            <li class="normal"><a class="nav-link" href="lots.html"><span class="icon-artist"></span> Pablo Picasso</a></li>
+            <li class="here"><a class="nav-link" href="lot.html"><span class="icon-work"></span> mousquetaire et nu assisee</a></li>
+        </ul>
+    </header>
+    <div class="inner-container">
+        <div class="lot-summary">
+            <div class="data">
+                <p class="lot-img"><img src="../images/img_long2.png" alt=""></p>
+<!--                <p class="guarantee"><img src="../images/badge_guarantee_inhouse.png" alt=""></p>-->
+                <p class="guarantee"><img src="../images/3-rd-party@3x.png" alt=""></p>
+                <p class="artist-name">Pablo Picasso</p>
+                <p class="artist-desc">Spain, France, 1881-1973</p>
+                <p class="worktitle">Mousquetaire et nu assisee</p>
+                <p class="work-desc">
+                    signed Jules Breton (lower left), oil on canvas, 32 1/8 by 46 1/2 in., 81.6 by 118.1 cmsigned Jules Breton (lower left), oil on canvas, 32 1/8 by 46 1/2 in., 81.6 by 118.1 cmsigned Jules Breton (lower left), oil on canvas, 32 1/8 by 46 1/2 in., 81.6 by 118.1 cmsigned Jules Breton (lower left), oil on canvas, 32 1/8 by 46 1/2 in., 81.6 by 118.1 cmsigned Jules Breton (lower left), oil on canvas, 32 1/8 by 46 1/2 in., 81.6 by 118.1 cm
+                </p>
+                <a href="#" class="btn-badge">more</a>
+            </div>
+        </div>
+        <div class="lot-comparables">
+            <div class="data">
+                <a href="lot_compare.html" class="comparables">9 Comparables</a>
+                <div class="images">
+                    <a href="lot.html" class="img"><img src="../images/img_wide.png"></a>
+                    <a href="lot.html" class="img"><img src="../images/img_long.png"></a>
+                    <a href="lot.html" class="img"><img src="../images/img_long2.png"></a>
+                    <a href="lot.html" class="img"><img src="../images/img_no@2x.png"></a>
+                    <a href="lot.html" class="img"><img src="../images/img_long2.png"></a>
+                    <a href="lot.html" class="img"><img src="../images/img_wide.png"></a>
+                    <a href="lot.html" class="img"><img src="../images/img_long.png"></a>
+                    <a href="lot.html" class="img"><img src="../images/img_long2.png"></a>
+                    <a href="lot.html" class="img"><img src="../images/img_no@2x.png"></a>
+                    <a href="lot_compare.html" class="more">+3</a>
+                </div>
+            </div>
+        </div>
+        <div class="lot-sale-info">
+            <div class="data">
+                <p class="estimate">$ 12,000,000,000 - $ 18,000,000,000</p>
+                <p class="estimate custom-currency">HK$ 12,000,000,000 - HK$ 18,000,000,000</p>
+                <p class="sold-price">$ 1,670,000,000</p>
+                <p class="premium">Premium</p>
+                <p class="sold-price custom-currency">HK$ 1,670,000,000,000</p>
+                <p class="sale-date">03 Mar 2018</p>
+                <p class="sale-vendor">PHILLIPS, LONDON</p>
+                <p class="sale-name">20Century & Contemporary Art</p>
+                <a name="lot-info-more"></a>
+                <p class="sale-lot-number">Lot. 20</p>
+            </div>
+        </div>
+        <div class="lot-detail">
+            <div class="data">
+                <dl class="etc">
+                    <dt class="title">Provenance<i class="fas fa-angle-down"></i></dt>
+                    <dd class="context">
+                        Galerie Louise Leiris, Paris (no. 01267). <br>
+                        Saidenberg Gallery, New York.<br>
+                        Private collection, New York.<br>
+                        Acquired from the above; sale, Christie's, London, 18 June 2007, lot 56.<br>
+                        Private collection, Europe, by whom acquired at the above sale.<br>
+                        Private collection, Europe.
+                    </dd>
+                </dl>
+                <dl class="etc">
+                    <dt class="title">Literature<i class="fas fa-angle-down"></i></dt>
+                    <dd class="context">
+                        C. Zervos, Pablo Picasso, vol. 25, Oeuvres de 1965 à 1967, Paris, 1972, no. 334, n.p. (illustrated pl. 145). <br>
+                        Exh. cat., Picasso: Une nouvelle datation, Paris, 1990, p. 78 (illustrated).
+                    </dd>
+                </dl>
+                <dl class="etc">
+                    <dt class="title">Lot essay<i class="fas fa-angle-down"></i></dt>
+                    <dd class="context">
+                        ”When things were going well”, murmured Jacqueline nostalgically, “he would come down
+                        from the studio saying, “They’re coming! They’re still coming”’ (Jacqueline Picasso, quoted
+                        in A. Malraux, Picasso’s Mask, New York, 1976, p. 78)<br>
+                        <br>
+                        ‘They came to Pablo when he’d gone back to studying Rembrandt’<br>
+                        (Jacqueline Picasso, quoted in G. Schiff, Picasso: The Last Years, 1963-1973, exh. cat.,
+                        New York, 1984, p. 31)<br><br>
+
+                        ‘Picasso affirms the erotic dimension of life, in love as in art, and in which he paints with
+                        an unprecedented wildness… Picasso remains, to the very end, the painter of man, of flesh,
+                        of physical love: hence his attachment to the figure and to the material density of the
+                        canvases; hence, also, his obsession with death as the sole obstacle to life’ (Picasso, quoted
+                        in M-L. Bernadac ‘Picasso 1953-1972: Painting as Model’ in Late Picasso: Paintings,
+                        sculpture, drawings, prints 1953-1972, exh. cat., London, 1988, p. 90)<br><br>
+
+                        ‘Whenever I see you, my first impulse is to...offer you a cigarette, even though I know that
+                        neither of us smokes any longer. Age has forced us to give it up, but the desire remains.
+                        It’s the same with making love. We don’t do it anymore but the desire is still with us!’(Pablo
+                        Picasso,quoted in J. Richardson, 'L'Epoque Jacqueline,' in Late Picasso: Paintings, sculpture,
+                        drawings, prints 1953-1972, exh. cat., London, 1988, p. 29)
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <footer class="footer white">
+            <div class="sites">
+                <a href="http://liveauctionart.com" target="_blank" class="site">Live Auction Art</a>
+                <a href="http://inartpress.com" target="_blank" class="site">In Art Press</a>
+                <a href="http://www.blueindex.com" target="_blank" class="site">About Us</a>
+            </div>
+            <a href="main.html" class="logo"></a>
+            <p class="copyright">Copyright &copy 2019 BLUE INDEX</p>
+        </footer>
+    </div>
+</div>
+<!--<div class="bg bg-lot"></div>-->
+</body>
+</html>
