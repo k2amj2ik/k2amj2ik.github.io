@@ -1,0 +1,25 @@
+{
+  "name": "k2amj2ik.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/k2amj2ik/k2amj2ik.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/k2amj2ik/k2amj2ik.github.io/issues"
+  },
+  "homepage": "https://github.com/k2amj2ik/k2amj2ik.github.io#readme",
+  "dependencies": {
+    "bootstrap-icons": "^1.5.0",
+    "node": "^16.4.0",
+    "npm": "^7.19.1",
+    "sass": "^1.35.2"
+  }
+}

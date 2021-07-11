@@ -1,0 +1,264 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+@font-face {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 100;
+  src: url(../fonts/HelveticaNeue-UltraLight.woff) format("woff");
+}
+@font-face {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 200;
+  src: url(../fonts/HelveticaNeue-Thin.woff) format("woff");
+}
+@font-face {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 300;
+  src: url(../fonts/HelveticaNeue-Light.woff) format("woff");
+}
+@font-face {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/HelveticaNeue.woff) format("woff");
+}
+@font-face {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 500;
+  src: url(../fonts/HelveticaNeue-Medium.woff) format("woff");
+}
+@font-face {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 600;
+  src: url(../fonts/HelveticaNeue-Bold.woff) format("woff");
+}
+@font-face {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/HelveticaNeue-CondensedBlack-Bold.woff) format("woff");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  src: url(../fonts/Roboto-Thin.woff2) format("woff2"), url(../fonts/Roboto-Thin.woff) format("woff"), url(../fonts/Roboto-Thin.otf) format("opentype");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  src: url(../fonts/Roboto-Light.woff2) format("woff2"), url(../fonts/Roboto-Light.woff) format("woff"), url(../fonts/Roboto-Light.otf) format("opentype");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/Roboto-Regular.woff2) format("woff2"), url(../fonts/Roboto-Regular.woff) format("woff"), url(../fonts/Roboto-Regular.otf) format("opentype");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: url(../fonts/Roboto-Medium.woff2) format("woff2"), url(../fonts/Roboto-Medium.woff) format("woff"), url(../fonts/Roboto-Medium.otf) format("opentype");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  src: url(../fonts/Roboto-Bold.woff2) format("woff2"), url(../fonts/Roboto-Bold.woff) format("woff"), url(../fonts/Roboto-Bold.otf) format("opentype");
+}
+.loop {
+  margin-left: 12.5px;
+}
+.loop .loop-btn {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  margin-left: -25px;
+  width: 180px;
+  border: 1px solid red;
+  height: 270px;
+}
+.loop .loop-btn.on {
+  border: 1px solid blue;
+}
+.loop .loop-btn.off {
+  background-color: transparent;
+  background-image: url(../images/btn_off.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position-y: bottom;
+  background-position-x: center;
+  background-size: contain;
+}
+.loop .loop-btn:hover {
+  animation-name: btn-animation;
+  animation-duration: 0.1s;
+  animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+  margin-bottom: -10px;
+}
+@keyframes btn-animation {
+  0% {
+    margin-bottom: 0;
+  }
+  100% {
+    margin-bottom: -10px;
+  }
+}
+
+.loops .card {
+  cursor: pointer;
+}
+.loops .list-loop-btn {
+  position: relative;
+  margin: auto;
+  width: 100px;
+  height: 140px;
+}
+.loops .list-loop-btn .loop-on {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.loops .list-loop-btn .loop-on .toy {
+  position: absolute;
+  bottom: 25px;
+  height: 100px;
+}
+
+.loop-on {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.loop-on .toy {
+  position: absolute;
+  left: -20%;
+  bottom: 50px;
+  width: 140%;
+  height: 180px;
+  background-size: contain !important;
+}
+.loop-on .idx-1 {
+  background-color: transparent;
+  background-image: url(../images/nft_0000001.gif);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position-y: bottom;
+  background-position-x: center;
+  background-size: contain;
+}
+.loop-on .idx-2 {
+  background-color: transparent;
+  background-image: url(../images/nft_0000002.gif);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position-y: bottom;
+  background-position-x: center;
+  background-size: contain;
+}
+.loop-on .idx-3 {
+  background-color: transparent;
+  background-image: url(../images/nft_0000003.gif);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position-y: bottom;
+  background-position-x: center;
+  background-size: contain;
+}
+.loop-on .idx-4 {
+  background-color: transparent;
+  background-image: url(../images/nft_0000004.gif);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position-y: bottom;
+  background-position-x: center;
+  background-size: contain;
+}
+.loop-on .idx-5 {
+  background-color: transparent;
+  background-image: url(../images/nft_0000005.gif);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position-y: bottom;
+  background-position-x: center;
+  background-size: contain;
+}
+.loop-on .idx-6 {
+  background-color: transparent;
+  background-image: url(../images/nft_0000006.gif);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position-y: bottom;
+  background-position-x: center;
+  background-size: contain;
+}
+.loop-on .idx-7 {
+  background-color: transparent;
+  background-image: url(../images/nft_0000007.gif);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position-y: bottom;
+  background-position-x: center;
+  background-size: contain;
+}
+
+.type-2 {
+  background-color: transparent;
+  background-image: url(../images/btn_on_2.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position-y: bottom;
+  background-position-x: center;
+  background-size: contain;
+}
+
+.type-3 {
+  background-color: transparent;
+  background-image: url(../images/btn_on_3.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position-y: bottom;
+  background-position-x: center;
+  background-size: contain;
+}
+
+.btn-box {
+  position: relative;
+  left: 20%;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.btn-box .btn-box-top {
+  position: absolute;
+  width: 70%;
+  height: 40%;
+  bottom: 20px;
+  left: 0;
+  background-color: #0d638f;
+  transform: skewX(335deg);
+}
+.btn-box .btn-box-front {
+  position: absolute;
+  width: 117px;
+  height: 20px;
+  bottom: 0;
+  left: -24px;
+  background-color: blue;
+}
+.btn-box .btn-box-right {
+  position: absolute;
+  width: 58px;
+  height: 20px;
+  bottom: 53.5px;
+  left: 92px;
+  background-color: orange;
+  transform: skewY(298deg);
+}
+
+/*# sourceMappingURL=loop.css.map */

@@ -1,0 +1,124 @@
+@import '../sass/font_face';
+@import "../sass/variables";
+@import "../sass/mixin";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+
+.loop {
+  margin-left: -$width-loop-interval-btn/2;
+  .loop-btn {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: $width-loop-interval-btn;
+    width: $width-loop-btn-width;
+    border:1px solid red;
+    height: 270px;
+    &.on {
+      border:1px solid blue;
+    }
+    &.off {
+      @include bg-image(transparent,'../images/btn_off.png',no-repeat,scroll,bottom,center,contain);
+    }
+    &:hover {
+      // start animation---------------------------------------------------------------------
+      animation-name: btn-animation;
+      animation-duration: 0.1s;
+      animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+      margin-bottom: -10px;
+
+      @keyframes btn-animation {
+        0%   {
+          margin-bottom: 0;
+        }
+        100% {
+          margin-bottom: -10px;
+        }
+      }
+      // end animation---------------------------------------------------------------------
+    }
+  }
+}
+
+.loops {
+  .card {
+    cursor: pointer;
+  }
+  .list-loop-btn {
+    //border: 1px solid yellow;
+    position: relative;
+    margin: auto;
+    width: 100px;
+    height: 140px;
+    .loop-on {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      //border: 1px solid blue;
+      .toy {
+        position: absolute;
+        bottom: 25px;
+        height: 100px;
+        //border: 1px solid red;
+      }
+    }
+  }
+}
+//common
+
+.loop-on {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  .toy {
+    position: absolute;
+    left: -20%;
+    bottom: 50px;
+    //border:1px solid yellow;
+    width: 140%;
+    height: $width-loop-btn-width;
+    background-size: contain !important;
+  }
+  .idx-1 { @include bg-image(transparent,'../images/nft_0000001.gif',no-repeat,scroll,bottom,center,contain); }
+  .idx-2 { @include bg-image(transparent,'../images/nft_0000002.gif',no-repeat,scroll,bottom,center,contain); }
+  .idx-3 { @include bg-image(transparent,'../images/nft_0000003.gif',no-repeat,scroll,bottom,center,contain); }
+  .idx-4 { @include bg-image(transparent,'../images/nft_0000004.gif',no-repeat,scroll,bottom,center,contain); }
+  .idx-5 { @include bg-image(transparent,'../images/nft_0000005.gif',no-repeat,scroll,bottom,center,contain); }
+  .idx-6 { @include bg-image(transparent,'../images/nft_0000006.gif',no-repeat,scroll,bottom,center,contain); }
+  .idx-7 { @include bg-image(transparent,'../images/nft_0000007.gif',no-repeat,scroll,bottom,center,contain); }
+}
+//.type-1 { @include bg-image(transparent,'../images/btn_on_1.png',no-repeat,scroll,bottom,center,contain); }
+.type-2 { @include bg-image(transparent,'../images/btn_on_2.png',no-repeat,scroll,bottom,center,contain); }
+.type-3 { @include bg-image(transparent,'../images/btn_on_3.png',no-repeat,scroll,bottom,center,contain); }
+
+.btn-box {
+  position: relative;
+  left: 20%;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  .btn-box-top {
+    position: absolute;
+    width: 70%;
+    height: 40%;
+    bottom: 20px;
+    left: 0;
+    background-color: #0d638f;
+    transform: skewX(335deg); }
+  .btn-box-front {
+    position: absolute;
+    width: 117px;
+    height: 20px;
+    bottom: 0;
+    left: -24px;
+    background-color: blue;
+  }
+  .btn-box-right {
+    position: absolute;
+    width: 58px;
+    height: 20px;
+    bottom: 53.5px;
+    left: 92px;
+    background-color: orange;
+    transform: skewY(298deg);
+  }
+}
