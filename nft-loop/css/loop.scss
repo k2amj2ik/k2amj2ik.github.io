@@ -4,20 +4,14 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
 
 .loop-player {
+  //border: 1px solid red;
+  overflow: hidden;
   .loop-btn {
     position: relative;
     cursor: pointer;
     display: inline-block;
-    width: $width-loop-btn-width;
-    border:1px solid red;
+    width: 150px;
     height: 270px;
-    &.on {
-      border:1px solid blue;
-    }
-    &.off {
-      border: 1px solid blue;
-      @include bg-image(transparent,'../images/btn_off.png',no-repeat,scroll,bottom,center,contain);
-    }
     &:hover {
       // start animation---------------------------------------------------------------------
       animation-name: btn-animation;
@@ -60,6 +54,13 @@
 }
 //common
 
+.loop-off {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 26px;
+  @include btn-box-color(type-0);
+}
 .loop-on {
   position: absolute;
   width: 100%;
@@ -80,23 +81,21 @@
   .idx-6 { @include bg-image(transparent,'../images/nft_0000006.gif',no-repeat,scroll,bottom,center,contain); }
   .idx-7 { @include bg-image(transparent,'../images/nft_0000007.gif',no-repeat,scroll,bottom,center,contain); }
 }
-//.type-1 { @include bg-image(transparent,'../images/btn_on_1.png',no-repeat,scroll,bottom,center,contain); }
-.type-2 { @include bg-image(transparent,'../images/btn_on_2.png',no-repeat,scroll,bottom,center,contain); }
-.type-3 { @include bg-image(transparent,'../images/btn_on_3.png',no-repeat,scroll,bottom,center,contain); }
-
 .btn-box {
   position: relative;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
+  &.type-1 { @include btn-box-color(type-1); }
+  &.type-2 { @include btn-box-color(type-2); }
+  &.type-3 { @include btn-box-color(type-3); }
   .btn-box-top {
     position: absolute;
     width: 125px;
     height: 107px;
     bottom: 20px;
     left: 0;
-    background-color: #0d638f;
     transform: skewX(335deg); }
   .btn-box-front {
     position: absolute;
@@ -104,7 +103,6 @@
     height: 20px;
     bottom: 0;
     left: -25px;
-    background-color: blue;
   }
   .btn-box-right {
     position: absolute;
@@ -112,7 +110,6 @@
     height: 20px;
     bottom: 53.5px;
     left: 92px;
-    background-color: orange;
     transform: skewY(298deg);
   }
 }

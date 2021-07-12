@@ -155,3 +155,27 @@
   background-position-x: $position-x;
   background-size: $widthHeight;
 }
+
+// css shape box---------------------------------------------------------------------
+@mixin btn-box-color($type) {
+  @if $type == type-0 {
+    .btn-box-top { background-color: #0d638f; }
+    .btn-box-front { background-color: blue; }
+    .btn-box-right { background-color: orange; }
+  }
+  @if $type == type-1 {
+    .btn-box-top { background-color: #0d638f; }
+    .btn-box-front { background-color: blue; }
+    .btn-box-right { background-color: orange; }
+  }
+  @if $type == type-2 {
+    .btn-box-top { background-color: #0d638f; }
+    .btn-box-front { background-color: blue; }
+    .btn-box-right { background-color: orange; }
+  }
+  @if $type == type-3 {
+    .btn-box-top { background-color: #0d638f; }
+    .btn-box-front { background-color: blue; }
+    .btn-box-right { background-color: orange; }
+  }
+}

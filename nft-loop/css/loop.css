@@ -71,26 +71,15 @@
   font-weight: 600;
   src: url(../fonts/Roboto-Bold.woff2) format("woff2"), url(../fonts/Roboto-Bold.woff) format("woff"), url(../fonts/Roboto-Bold.otf) format("opentype");
 }
+.loop-player {
+  overflow: hidden;
+}
 .loop-player .loop-btn {
   position: relative;
   cursor: pointer;
   display: inline-block;
-  width: 180px;
-  border: 1px solid red;
+  width: 150px;
   height: 270px;
-}
-.loop-player .loop-btn.on {
-  border: 1px solid blue;
-}
-.loop-player .loop-btn.off {
-  border: 1px solid blue;
-  background-color: transparent;
-  background-image: url(../images/btn_off.png);
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position-y: bottom;
-  background-position-x: center;
-  background-size: contain;
 }
 .loop-player .loop-btn:hover {
   animation-name: btn-animation;
@@ -122,6 +111,22 @@
   bottom: 30px;
   max-width: 100px;
   max-height: 100px;
+}
+
+.loop-off {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 26px;
+}
+.loop-off .btn-box-top {
+  background-color: #0d638f;
+}
+.loop-off .btn-box-front {
+  background-color: blue;
+}
+.loop-off .btn-box-right {
+  background-color: orange;
 }
 
 .loop-on {
@@ -201,26 +206,6 @@
   background-size: contain;
 }
 
-.type-2 {
-  background-color: transparent;
-  background-image: url(../images/btn_on_2.png);
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position-y: bottom;
-  background-position-x: center;
-  background-size: contain;
-}
-
-.type-3 {
-  background-color: transparent;
-  background-image: url(../images/btn_on_3.png);
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position-y: bottom;
-  background-position-x: center;
-  background-size: contain;
-}
-
 .btn-box {
   position: relative;
   left: 0;
@@ -228,13 +213,39 @@
   width: 100%;
   height: 100%;
 }
+.btn-box.type-1 .btn-box-top {
+  background-color: #0d638f;
+}
+.btn-box.type-1 .btn-box-front {
+  background-color: blue;
+}
+.btn-box.type-1 .btn-box-right {
+  background-color: orange;
+}
+.btn-box.type-2 .btn-box-top {
+  background-color: #0d638f;
+}
+.btn-box.type-2 .btn-box-front {
+  background-color: blue;
+}
+.btn-box.type-2 .btn-box-right {
+  background-color: orange;
+}
+.btn-box.type-3 .btn-box-top {
+  background-color: #0d638f;
+}
+.btn-box.type-3 .btn-box-front {
+  background-color: blue;
+}
+.btn-box.type-3 .btn-box-right {
+  background-color: orange;
+}
 .btn-box .btn-box-top {
   position: absolute;
   width: 125px;
   height: 107px;
   bottom: 20px;
   left: 0;
-  background-color: #0d638f;
   transform: skewX(335deg);
 }
 .btn-box .btn-box-front {
@@ -243,7 +254,6 @@
   height: 20px;
   bottom: 0;
   left: -25px;
-  background-color: blue;
 }
 .btn-box .btn-box-right {
   position: absolute;
@@ -251,7 +261,6 @@
   height: 20px;
   bottom: 53.5px;
   left: 92px;
-  background-color: orange;
   transform: skewY(298deg);
 }
 
