@@ -72,16 +72,18 @@
   src: url(../fonts/Roboto-Bold.woff2) format("woff2"), url(../fonts/Roboto-Bold.woff) format("woff"), url(../fonts/Roboto-Bold.otf) format("opentype");
 }
 .loop-player {
+  border: 1px solid red;
   width: 100%;
-  min-width: 1100px;
-  margin: auto;
-  overflow: hidden;
+  min-width: 1200px;
+  height: 350px;
+  overflow-x: scroll;
+  text-align: center;
 }
 .loop-player .loop-btn {
   position: relative;
   cursor: pointer;
   display: inline-block;
-  width: 135px;
+  width: 150px;
   height: 270px;
 }
 .loop-player .loop-btn:hover {
