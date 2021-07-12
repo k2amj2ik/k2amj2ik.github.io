@@ -71,22 +71,25 @@
   font-weight: 600;
   src: url(../fonts/Roboto-Bold.woff2) format("woff2"), url(../fonts/Roboto-Bold.woff) format("woff"), url(../fonts/Roboto-Bold.otf) format("opentype");
 }
-.loop-player {
-  border: 1px solid red;
+.loop-container {
   width: 100%;
-  min-width: 1200px;
-  height: 350px;
-  overflow-x: scroll;
+  height: 400px;
+  overflow: hidden;
+  overflow-x: auto;
+}
+.loop-container .loop-player {
+  width: 1100px;
+  margin: 80px auto 0 auto;
   text-align: center;
 }
-.loop-player .loop-btn {
+.loop-container .loop-player .loop-btn {
   position: relative;
   cursor: pointer;
   display: inline-block;
   width: 150px;
   height: 270px;
 }
-.loop-player .loop-btn:hover {
+.loop-container .loop-player .loop-btn:hover {
   animation-name: btn-animation;
   animation-duration: 0.1s;
   animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
@@ -125,13 +128,13 @@
   left: 26px;
 }
 .loop-off .btn-box-top {
-  background-color: #0d638f;
+  background-color: #D9D9D9;
 }
 .loop-off .btn-box-front {
-  background-color: blue;
+  background-color: #aaaaaa;
 }
 .loop-off .btn-box-right {
-  background-color: orange;
+  background-color: #666666;
 }
 
 .loop-on {
@@ -219,31 +222,31 @@
   height: 100%;
 }
 .btn-box.type-1 .btn-box-top {
-  background-color: #0d638f;
+  background-color: #F9C87E;
 }
 .btn-box.type-1 .btn-box-front {
-  background-color: blue;
+  background-color: #F49200;
 }
 .btn-box.type-1 .btn-box-right {
-  background-color: orange;
+  background-color: #666666;
 }
 .btn-box.type-2 .btn-box-top {
-  background-color: #0d638f;
+  background-color: #7ECFF2;
 }
 .btn-box.type-2 .btn-box-front {
-  background-color: blue;
+  background-color: #029FE3;
 }
 .btn-box.type-2 .btn-box-right {
-  background-color: orange;
+  background-color: #666666;
 }
 .btn-box.type-3 .btn-box-top {
-  background-color: #0d638f;
+  background-color: #E27FB5;
 }
 .btn-box.type-3 .btn-box-front {
-  background-color: blue;
+  background-color: #C3006A;
 }
 .btn-box.type-3 .btn-box-right {
-  background-color: orange;
+  background-color: #666666;
 }
 .btn-box .btn-box-top {
   position: absolute;

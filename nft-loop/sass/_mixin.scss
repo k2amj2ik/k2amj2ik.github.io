@@ -159,23 +159,23 @@
 // css shape box---------------------------------------------------------------------
 @mixin btn-box-color($type) {
   @if $type == type-0 {
-    .btn-box-top { background-color: #0d638f; }
-    .btn-box-front { background-color: blue; }
-    .btn-box-right { background-color: orange; }
+    .btn-box-top { background-color: $bg-loop-btn-type0-top; }
+    .btn-box-front { background-color: $bg-loop-btn-type0-front; }
+    .btn-box-right { background-color: $bg-loop-btn-type0-right; }
   }
   @if $type == type-1 {
-    .btn-box-top { background-color: #0d638f; }
-    .btn-box-front { background-color: blue; }
-    .btn-box-right { background-color: orange; }
+    .btn-box-top { background-color: $bg-loop-btn-type1-top; }
+    .btn-box-front { background-color: $bg-loop-btn-type1-front; }
+    .btn-box-right { background-color: $bg-loop-btn-type1-right; }
   }
   @if $type == type-2 {
-    .btn-box-top { background-color: #0d638f; }
-    .btn-box-front { background-color: blue; }
-    .btn-box-right { background-color: orange; }
+    .btn-box-top { background-color: $bg-loop-btn-type2-top; }
+    .btn-box-front { background-color: $bg-loop-btn-type2-front; }
+    .btn-box-right { background-color: $bg-loop-btn-type2-right; }
   }
   @if $type == type-3 {
-    .btn-box-top { background-color: #0d638f; }
-    .btn-box-front { background-color: blue; }
-    .btn-box-right { background-color: orange; }
+    .btn-box-top { background-color: $bg-loop-btn-type3-top; }
+    .btn-box-front { background-color: $bg-loop-btn-type3-front; }
+    .btn-box-right { background-color: $bg-loop-btn-type3-right; }
   }
 }
