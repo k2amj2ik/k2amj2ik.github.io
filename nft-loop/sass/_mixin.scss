@@ -159,9 +159,19 @@
 // css shape box---------------------------------------------------------------------
 @mixin btn-box-color($type) {
   @if $type == type-0 {
-    .btn-box-top { background-color: $bg-loop-btn-type0-top; }
-    .btn-box-front { background-color: $bg-loop-btn-type0-front; }
-    .btn-box-right { background-color: $bg-loop-btn-type0-right; }
+    .btn-box-top {
+      //background-color: $bg-loop-btn-type0-top;
+      background-color: transparent;
+      border: 1px solid $bg-loop-btn-type0-border;
+    }
+    .btn-box-front {
+      background-color: $bg-loop-btn-type0-front;
+      border: 1px solid $bg-loop-btn-type0-border;
+    }
+    .btn-box-right {
+      background-color: $bg-loop-btn-type0-right;
+      border: 1px solid $bg-loop-btn-type0-border;
+    }
   }
   @if $type == type-1 {
     .btn-box-top { background-color: $bg-loop-btn-type1-top; }

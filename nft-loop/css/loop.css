@@ -78,6 +78,7 @@
   overflow-x: auto;
 }
 .loop-container .loop-player {
+  position: relative;
   width: 1100px;
   margin: 80px auto 0 auto;
   text-align: center;
@@ -88,20 +89,6 @@
   display: inline-block;
   width: 150px;
   height: 270px;
-}
-.loop-container .loop-player .loop-btn:hover {
-  animation-name: btn-animation;
-  animation-duration: 0.1s;
-  animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
-  margin-bottom: -10px;
-}
-@keyframes btn-animation {
-  0% {
-    margin-bottom: 0;
-  }
-  100% {
-    margin-bottom: -10px;
-  }
 }
 
 .loops .card {
@@ -128,13 +115,46 @@
   left: 26px;
 }
 .loop-off .btn-box-top {
-  background-color: #D9D9D9;
+  background-color: transparent;
+  border: 1px solid #999999;
 }
 .loop-off .btn-box-front {
-  background-color: #aaaaaa;
+  background-color: #eeeeee;
+  border: 1px solid #999999;
 }
 .loop-off .btn-box-right {
-  background-color: #666666;
+  background-color: #D9D9D9;
+  border: 1px solid #999999;
+}
+.loop-off .btn-box {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.loop-off .btn-box .btn-box-top {
+  position: absolute;
+  width: 119px;
+  height: 107px;
+  bottom: 20px;
+  left: 3px;
+  transform: skewX(332deg);
+}
+.loop-off .btn-box .btn-box-front {
+  position: absolute;
+  width: 118px;
+  height: 21px;
+  bottom: 0;
+  left: -25px;
+}
+.loop-off .btn-box .btn-box-right {
+  position: absolute;
+  width: 58px;
+  height: 19px;
+  bottom: 54px;
+  left: 92px;
+  transform: skewY(298deg);
 }
 
 .loop-on {
@@ -143,6 +163,63 @@
   height: 100%;
   left: 26px;
 }
+.loop-on .btn-box {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.loop-on .btn-box.type-1 .btn-box-top {
+  background-color: #F9C87E;
+}
+.loop-on .btn-box.type-1 .btn-box-front {
+  background-color: #F49200;
+}
+.loop-on .btn-box.type-1 .btn-box-right {
+  background-color: #666666;
+}
+.loop-on .btn-box.type-2 .btn-box-top {
+  background-color: #7ECFF2;
+}
+.loop-on .btn-box.type-2 .btn-box-front {
+  background-color: #029FE3;
+}
+.loop-on .btn-box.type-2 .btn-box-right {
+  background-color: #666666;
+}
+.loop-on .btn-box.type-3 .btn-box-top {
+  background-color: #E27FB5;
+}
+.loop-on .btn-box.type-3 .btn-box-front {
+  background-color: #C3006A;
+}
+.loop-on .btn-box.type-3 .btn-box-right {
+  background-color: #666666;
+}
+.loop-on .btn-box .btn-box-top {
+  position: absolute;
+  width: 119px;
+  height: 107px;
+  bottom: 20px;
+  left: 3px;
+  transform: skewX(332deg);
+}
+.loop-on .btn-box .btn-box-front {
+  position: absolute;
+  width: 118px;
+  height: 20px;
+  bottom: 0;
+  left: -25px;
+}
+.loop-on .btn-box .btn-box-right {
+  position: absolute;
+  width: 58px;
+  height: 19px;
+  bottom: 54px;
+  left: 92px;
+  transform: skewY(298deg);
+}
 .loop-on .toy {
   position: absolute;
   left: -46px;
@@ -150,7 +227,7 @@
   width: 214px;
   height: 207px;
 }
-.loop-on .idx-1 {
+.loop-on .toy.idx-1 {
   background-color: transparent;
   background-image: url(../images/nft_0000001.gif);
   background-repeat: no-repeat;
@@ -159,7 +236,7 @@
   background-position-x: center;
   background-size: contain;
 }
-.loop-on .idx-2 {
+.loop-on .toy.idx-2 {
   background-color: transparent;
   background-image: url(../images/nft_0000002.gif);
   background-repeat: no-repeat;
@@ -168,7 +245,7 @@
   background-position-x: center;
   background-size: contain;
 }
-.loop-on .idx-3 {
+.loop-on .toy.idx-3 {
   background-color: transparent;
   background-image: url(../images/nft_0000003.gif);
   background-repeat: no-repeat;
@@ -177,7 +254,7 @@
   background-position-x: center;
   background-size: contain;
 }
-.loop-on .idx-4 {
+.loop-on .toy.idx-4 {
   background-color: transparent;
   background-image: url(../images/nft_0000004.gif);
   background-repeat: no-repeat;
@@ -186,7 +263,7 @@
   background-position-x: center;
   background-size: contain;
 }
-.loop-on .idx-5 {
+.loop-on .toy.idx-5 {
   background-color: transparent;
   background-image: url(../images/nft_0000005.gif);
   background-repeat: no-repeat;
@@ -195,7 +272,7 @@
   background-position-x: center;
   background-size: contain;
 }
-.loop-on .idx-6 {
+.loop-on .toy.idx-6 {
   background-color: transparent;
   background-image: url(../images/nft_0000006.gif);
   background-repeat: no-repeat;
@@ -204,7 +281,7 @@
   background-position-x: center;
   background-size: contain;
 }
-.loop-on .idx-7 {
+.loop-on .toy.idx-7 {
   background-color: transparent;
   background-image: url(../images/nft_0000007.gif);
   background-repeat: no-repeat;
@@ -213,83 +290,24 @@
   background-position-x: center;
   background-size: contain;
 }
-
-.btn-box {
-  position: relative;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-.btn-box.type-1 .btn-box-top {
-  background-color: #F9C87E;
-}
-.btn-box.type-1 .btn-box-front {
-  background-color: #F49200;
-}
-.btn-box.type-1 .btn-box-right {
-  background-color: #666666;
-}
-.btn-box.type-2 .btn-box-top {
-  background-color: #7ECFF2;
-}
-.btn-box.type-2 .btn-box-front {
-  background-color: #029FE3;
-}
-.btn-box.type-2 .btn-box-right {
-  background-color: #666666;
-}
-.btn-box.type-3 .btn-box-top {
-  background-color: #E27FB5;
-}
-.btn-box.type-3 .btn-box-front {
-  background-color: #C3006A;
-}
-.btn-box.type-3 .btn-box-right {
-  background-color: #666666;
-}
-.btn-box .btn-box-top {
-  position: absolute;
-  width: 125px;
-  height: 107px;
-  bottom: 20px;
-  left: 0;
-  transform: skewX(335deg);
-}
-.btn-box .btn-box-front {
-  position: absolute;
-  width: 118px;
-  height: 20px;
-  bottom: 0;
-  left: -25px;
-}
-.btn-box .btn-box-right {
-  position: absolute;
-  width: 58px;
-  height: 20px;
-  bottom: 53.5px;
-  left: 92px;
-  transform: skewY(298deg);
-}
-
-.btn-box-small .btn-box-top {
+.loop-on .btn-box-small .btn-box-top {
   width: 63px;
   height: 36px;
-  bottom: 20px;
-  left: 1px;
+  bottom: 19px;
+  left: 2px;
 }
-.btn-box-small .btn-box-front {
+.loop-on .btn-box-small .btn-box-front {
   width: 63px;
   height: 20px;
   bottom: 0;
   left: -7px;
 }
-.btn-box-small .btn-box-right {
+.loop-on .btn-box-small .btn-box-right {
   width: 18px;
   height: 21px;
-  bottom: 17px;
-  left: 55px;
-  transform: skewY(295.5deg);
+  bottom: 16px;
+  left: 56px;
+  transform: skewY(298deg);
 }
 
 /*# sourceMappingURL=loop.css.map */
