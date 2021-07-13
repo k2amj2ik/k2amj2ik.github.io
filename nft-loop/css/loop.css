@@ -71,16 +71,21 @@
   font-weight: 600;
   src: url(../fonts/Roboto-Bold.woff2) format("woff2"), url(../fonts/Roboto-Bold.woff) format("woff"), url(../fonts/Roboto-Bold.otf) format("opentype");
 }
+body {
+  background-color: #000;
+}
+
 .loop-container {
   width: 100%;
-  height: 400px;
+  height: 410px;
   overflow: hidden;
   overflow-x: auto;
+  background-color: #fff;
 }
 .loop-container .loop-player {
   position: relative;
   width: 1100px;
-  margin: 80px auto 0 auto;
+  margin: 0 auto;
   text-align: center;
 }
 .loop-container .loop-player .loop-btn {
@@ -88,7 +93,97 @@
   cursor: pointer;
   display: inline-block;
   width: 150px;
-  height: 270px;
+  height: 350px;
+}
+.loop-container .loop-player .loop-btn .btn-group {
+  display: none;
+  position: absolute;
+  left: 40px;
+  bottom: 100px;
+  border-radius: 6px;
+  background-color: #000;
+}
+.loop-container .loop-player .loop-btn.pause:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 61px;
+  left: 90px;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  background-image: url(../images/icon_mute.gif);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position-y: top;
+  background-position-x: center;
+  background-size: contain;
+}
+.loop-container .loop-player .loop-btn.pause .loop-on .toy.idx-1 {
+  background-color: transparent;
+  background-image: url(../images/nft_0000001_pause.gif);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position-y: bottom;
+  background-position-x: center;
+  background-size: contain;
+}
+.loop-container .loop-player .loop-btn.pause .loop-on .toy.idx-2 {
+  background-color: transparent;
+  background-image: url(../images/nft_0000002_pause.gif);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position-y: bottom;
+  background-position-x: center;
+  background-size: contain;
+}
+.loop-container .loop-player .loop-btn.pause .loop-on .toy.idx-3 {
+  background-color: transparent;
+  background-image: url(../images/nft_0000003_pause.gif);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position-y: bottom;
+  background-position-x: center;
+  background-size: contain;
+}
+.loop-container .loop-player .loop-btn.pause .loop-on .toy.idx-4 {
+  background-color: transparent;
+  background-image: url(../images/nft_0000004_pause.gif);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position-y: bottom;
+  background-position-x: center;
+  background-size: contain;
+}
+.loop-container .loop-player .loop-btn.pause .loop-on .toy.idx-5 {
+  background-color: transparent;
+  background-image: url(../images/nft_0000005_pause.gif);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position-y: bottom;
+  background-position-x: center;
+  background-size: contain;
+}
+.loop-container .loop-player .loop-btn.pause .loop-on .toy.idx-6 {
+  background-color: transparent;
+  background-image: url(../images/nft_0000006_pause.gif);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position-y: bottom;
+  background-position-x: center;
+  background-size: contain;
+}
+.loop-container .loop-player .loop-btn.pause .loop-on .toy.idx-7 {
+  background-color: transparent;
+  background-image: url(../images/nft_0000007_pause.gif);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position-y: bottom;
+  background-position-x: center;
+  background-size: contain;
+}
+.loop-container .loop-player .loop-btn:hover .btn-group {
+  display: flex;
 }
 
 .loops .card {
@@ -308,6 +403,10 @@
   bottom: 16px;
   left: 56px;
   transform: skewY(298deg);
+}
+
+.logo-icon {
+  margin-right: 10px;
 }
 
 /*# sourceMappingURL=loop.css.map */
