@@ -36,7 +36,7 @@ body {
           display: block;
           position: absolute;
           top:61px;
-          left:90px;
+          left:87px;
           width: 20px;
           height: 20px;
           @include bg-image(transparent,'../images/icon_mute.gif',no-repeat,scroll,top,center,contain);
@@ -50,6 +50,22 @@ body {
             &.idx-5 { @include bg-image(transparent,'../images/nft_0000005_pause.gif',no-repeat,scroll,bottom,center,contain); }
             &.idx-6 { @include bg-image(transparent,'../images/nft_0000006_pause.gif',no-repeat,scroll,bottom,center,contain); }
             &.idx-7 { @include bg-image(transparent,'../images/nft_0000007_pause.gif',no-repeat,scroll,bottom,center,contain); }
+          }
+        }
+        &.wating-start {
+          &:after {
+            @include bg-image(transparent,'../images/icon_mute_wating_start.gif',no-repeat,scroll,top,center,contain);
+          }
+          .loop-on {
+            .toy {
+              &.idx-1 { @include bg-image(transparent,'../images/nft_0000001_pause_wating_start.gif',no-repeat,scroll,bottom,center,contain); }
+              &.idx-2 { @include bg-image(transparent,'../images/nft_0000002_pause_wating_start.gif',no-repeat,scroll,bottom,center,contain); }
+              &.idx-3 { @include bg-image(transparent,'../images/nft_0000003_pause_wating_start.gif',no-repeat,scroll,bottom,center,contain); }
+              &.idx-4 { @include bg-image(transparent,'../images/nft_0000004_pause_wating_start.gif',no-repeat,scroll,bottom,center,contain); }
+              &.idx-5 { @include bg-image(transparent,'../images/nft_0000005_pause_wating_start.gif',no-repeat,scroll,bottom,center,contain); }
+              &.idx-6 { @include bg-image(transparent,'../images/nft_0000006_pause_wating_start.gif',no-repeat,scroll,bottom,center,contain); }
+              &.idx-7 { @include bg-image(transparent,'../images/nft_0000007_pause_wating_start.gif',no-repeat,scroll,bottom,center,contain); }
+            }
           }
         }
       }
@@ -197,10 +213,47 @@ body {
   }
 }
 
-
-
-// icon
 .logo-icon {
-  //display: inline-block;
-  margin-right: 10px;
+  width: 30px;
+}
+
+.play-timer {
+  position: relative;
+  display: inline-block;
+  background-color: rgba(255,255,255,0.1);
+  width: 200px;
+  height: 30px;
+  overflow: hidden;
+  .time {
+    display: block;
+    margin-top: 3px;
+    width: 100%;
+    text-align: center;
+    color: $text-white;
+  }
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top:0;
+    width: 10px;
+    height: 100%;
+    background-color: #5cb85c;
+    // start animation---------------------------------------------------------------------
+    animation-name: playing-time;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    left: 100%;
+    @keyframes playing-time {
+      0%   {
+        left: 0;
+      }
+      100% {
+        left: 100%;
+      }
+    }
+    // end animation---------------------------------------------------------------------
+
+  }
 }
