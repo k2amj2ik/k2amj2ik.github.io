@@ -160,8 +160,7 @@
 @mixin btn-box-color($type) {
   @if $type == type-0 {
     .btn-box-top {
-      //background-color: $bg-loop-btn-type0-top;
-      background-color: transparent;
+      background-color: $bg-loop-btn-type0-top;
       border: 1px solid $bg-loop-btn-type0-border;
     }
     .btn-box-front {
@@ -188,4 +187,20 @@
     .btn-box-front { background-color: $bg-loop-btn-type3-front; }
     .btn-box-right { background-color: $bg-loop-btn-type3-right; }
   }
+  @if $type == type-1-off {
+    .btn-box-top { background-color: $bg-loop-btn-type0-top; }
+    .btn-box-front { background-color: $bg-loop-btn-type1-front; }
+    .btn-box-right { background-color: $bg-loop-btn-type0-right; }
+  }
+  @if $type == type-2-off {
+    .btn-box-top { background-color: $bg-loop-btn-type0-top; }
+    .btn-box-front { background-color: $bg-loop-btn-type2-front; }
+    .btn-box-right { background-color: $bg-loop-btn-type0-right; }
+  }
+  @if $type == type-3-off {
+    .btn-box-top { background-color: $bg-loop-btn-type0-top; }
+    .btn-box-front { background-color: $bg-loop-btn-type3-front; }
+    .btn-box-right { background-color: $bg-loop-btn-type0-right; }
+  }
+
 }
