@@ -136,6 +136,7 @@
       left: 3px;
       transform: skewX(332deg); }
     .btn-box-front {
+      display: none;
       position: absolute;
       width: 118px;
       height: 21px;
@@ -143,6 +144,7 @@
       left: -25px;
     }
     .btn-box-right {
+      display: none;
       position: absolute;
       width: 58px;
       height: 19px;

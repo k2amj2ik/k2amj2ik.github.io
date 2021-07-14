@@ -217,8 +217,9 @@
   left: 26px;
 }
 .loop-off .btn-box-top {
-  background-color: #f5f5f5;
-  border: 1px solid #999999;
+  background-color: #333333;
+  border: 5px inset #555555;
+  bottom: 0 !important;
 }
 .loop-off .btn-box-front {
   background-color: #eeeeee;
@@ -244,6 +245,7 @@
   transform: skewX(332deg);
 }
 .loop-off .btn-box .btn-box-front {
+  display: none;
   position: absolute;
   width: 118px;
   height: 21px;
@@ -251,6 +253,7 @@
   left: -25px;
 }
 .loop-off .btn-box .btn-box-right {
+  display: none;
   position: absolute;
   width: 58px;
   height: 19px;

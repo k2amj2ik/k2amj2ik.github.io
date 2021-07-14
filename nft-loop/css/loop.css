@@ -282,8 +282,9 @@ body {
   left: 26px;
 }
 .loop-off .btn-box-top {
-  background-color: #f5f5f5;
-  border: 1px solid #999999;
+  background-color: #333333;
+  border: 5px inset #555555;
+  bottom: 0 !important;
 }
 .loop-off .btn-box-front {
   background-color: #eeeeee;

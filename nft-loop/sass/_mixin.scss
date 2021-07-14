@@ -160,8 +160,11 @@
 @mixin btn-box-color($type) {
   @if $type == type-0 {
     .btn-box-top {
-      background-color: $bg-loop-btn-type0-top;
-      border: 1px solid $bg-loop-btn-type0-border;
+      //background-color: $bg-loop-btn-type0-top;
+      //border: 1px solid $bg-loop-btn-type0-border;
+      background-color: #333333;
+      border: 5px inset #555555;
+      bottom: 0 !important;
     }
     .btn-box-front {
       background-color: $bg-loop-btn-type0-front;
