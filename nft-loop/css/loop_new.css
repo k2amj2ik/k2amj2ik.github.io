@@ -135,12 +135,12 @@
   text-align: center;
 }
 .loops .list-loop-btn {
-  margin: 10px 10px 0 0;
+  margin: 6px 10px 0 0;
   display: inline-block;
   position: relative;
   cursor: pointer;
   width: 100px;
-  height: 200px;
+  height: 180px;
 }
 .loops .list-loop-btn:hover {
   border: 5px solid #eeeeee;
@@ -208,7 +208,7 @@
   left: -3px;
   bottom: 30px;
   max-width: 100px;
-  max-height: 200px;
+  max-height: 180px;
 }
 .loops .list-loop-btn .toy img {
   max-width: 100%;
