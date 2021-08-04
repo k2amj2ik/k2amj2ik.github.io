@@ -1,0 +1,176 @@
+:root {
+  --primary: #5628EE;
+  --success: #3FDC75;
+  --light: #CDD9ED;
+}
+
+.progress {
+  --background: #fff;
+  border-radius: 50%;
+  background: var(--light);
+  position: relative;
+}
+.progress:before {
+  --s: 1;
+  content: "";
+  width: 28px;
+  height: 28px;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  position: absolute;
+  background: var(--background);
+  border-radius: inherit;
+  transform: translate(-50%, -50%) scale(var(--s));
+  transition: transform 0.32s ease;
+}
+.progress svg {
+  display: block;
+  fill: none;
+}
+.progress svg.pie {
+  --s: 1;
+  width: 32px;
+  height: 32px;
+  transform: rotate(-90deg) scale(var(--s));
+  transition: transform 0.5s ease;
+}
+.progress svg.pie circle {
+  stroke-width: 16;
+  stroke: var(--primary);
+}
+.progress svg.tick {
+  --path: 17.805;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: var(--primary);
+  transition: stroke 0.3s ease 0.8s;
+}
+.progress svg.tick polyline {
+  stroke-dasharray: 18 18 18;
+  stroke-dashoffset: 18;
+  transition: stroke-dashoffset 0.4s ease 0.7s;
+}
+.progress.complete {
+  background: none;
+}
+.progress.complete:before {
+  --s: 0;
+}
+.progress.complete svg.pie {
+  --s: .08;
+  -webkit-animation: tick 0.3s linear forwards 0.4s;
+          animation: tick 0.3s linear forwards 0.4s;
+}
+.progress.complete svg.tick {
+  stroke: var(--success);
+}
+.progress.complete svg.tick polyline {
+  stroke-dashoffset: 36;
+}
+
+@-webkit-keyframes tick {
+  100% {
+    transform: rotate(-90deg) translate(0, -6px) scale(var(--s));
+  }
+}
+
+@keyframes tick {
+  100% {
+    transform: rotate(-90deg) translate(0, -6px) scale(var(--s));
+  }
+}
+.rangeSlider {
+  --active: var(--primary);
+  --border: var(--light);
+  --handle: var(--primary);
+  --background: #fff;
+  position: absolute;
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  cursor: pointer;
+  left: 50%;
+  bottom: 80px;
+  transform: translateX(-50%);
+}
+.rangeSlider.rangeSlider__horizontal {
+  height: 10px;
+  width: 160px;
+}
+.rangeSlider .rangeSlider__fill {
+  border-radius: 7px;
+  background: var(--active);
+  position: absolute;
+}
+.rangeSlider .rangeSlider__fill:before {
+  content: "";
+  left: -2px;
+  top: -2px;
+  bottom: -2px;
+  right: -2px;
+  border: 2px solid var(--background);
+  border-radius: 6px;
+  position: absolute;
+}
+.rangeSlider .rangeSlider__fill__horizontal {
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.rangeSlider .rangeSlider__handle {
+  border: 2px solid var(--background);
+  cursor: grab;
+  cursor: -webkit-grab;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  background: var(--handle);
+  border-radius: 50%;
+}
+.rangeSlider .rangeSlider__handle__horizontal {
+  top: -7px;
+}
+
+.progress.complete + input + .rangeSlider {
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: inherit;
+}
+*:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+body .dribbble {
+  position: fixed;
+  display: block;
+  right: 20px;
+  bottom: 20px;
+}
+body .dribbble img {
+  display: block;
+  height: 28px;
+}

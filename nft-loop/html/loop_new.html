@@ -19,9 +19,20 @@
     <meta property="og:site_name" content="BLUE INDEX">
     <meta property="og:url" content="https://k2amj2ik.github.io/nft-loop/html/loop.html">
     <meta property="og:description" content="루프 토이를 모으세요. 스타와 함께하는 나의 작곡 도전기!">
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
+
     <link rel="stylesheet" href="../css/loop_new.css">
+    <link rel="stylesheet" href="../css/timer.css">
     <style>
+        /* *
+        {
+            margin:0;
+            padding:0;
+            font-family:'Roboto',sans-serif;
+        } */
+
         .bd-placeholder-img {
             font-size: 1.125rem;
             text-anchor: middle;
@@ -35,11 +46,21 @@
                 font-size: 3.5rem;
             }
         }
+
+        /* #pgbarContainer {
+            margin: 10px;
+            width: 200px;
+            height: 100px;
+            z-index: 3000;
+            top:-10px;
+        }    */
     </style>
     <link rel="icon" type="image/png" href="../images/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900" rel="stylesheet" type="text/css">
     <title>Loop Toy</title>
 </head>
 <body>
+
 <header>
     <div class="collapse bg-dark" id="navbarHeader">
         <div class="container">
@@ -64,7 +85,34 @@
                 <span class="logo-icon"><i class="bi bi-music-note-beamed"></i></span>
                 <strong>Loop Toy</strong>
             </a>
-            <div class="play-timer"><span class="time">03:23</span></div>
+
+            <!-- timer -->
+            <!-- <div id="wrapper">
+                <div class="loader">
+
+                </div>
+                <div class="loading-bar">
+                  <div class="progress-bar"></div>
+                </div>
+                <div class="status">
+                  <div class="state"></div>
+                  <div class="percentage"></div>
+                </div>
+            </div> -->
+
+            <div>
+                <button onclick="playAudioListsWithToy();">Play</button>
+                <button onclick="stopAudioListsWithToy();">Stop</button>
+            </div>
+
+            <!-- <div>
+                <div id="pgbarContainer"></div>
+            </div> -->
+
+            <div>
+                <div id="timerContainer"></div>
+            </div>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -76,7 +124,7 @@
 <main>
     <div class="loop-container">
         <div class="loop-player">
-            <div class="loop-btn">
+            <div class="loop-btn" btn-id="LT01">
                 <div class="loop-off">
                     <div class="btn-box">
                         <div class="btn-box-top"></div>
@@ -85,24 +133,24 @@
                     </div>
                 </div>
             </div>
-            <div class="loop-btn pause">
+            <div class="loop-btn pause" btn-id="LT02">
                 <div class="loop-on">
                     <div class="btn-box type-1">
                         <div class="btn-box-top"></div>
                         <div class="btn-box-front"></div>
                         <div class="btn-box-right"></div>
                     </div>
-                    <div class="toy">
+                    <div class="toy" data="LTSR-01">
                         <img src="../images/nft_0000001_pause.gif">
                     </div>
                 </div>
                 <div class="btn-group">
 <!--                    <button type="button" class="btn btn-lg btn-outline-secondary"><i class="bi bi-pause-circle-fill"></i></button>-->
                     <button type="button" class="btn btn-lg btn-outline-secondary"><i class="bi bi-play-circle-fill"></i></button>
-                    <button type="button" class="btn btn-lg btn-outline-secondary"><i class="bi bi-x-circle-fill"></i></button>
+                    <button type="button" class="btn btn-lg btn-outline-secondary" onclick="deleteTarget('LT02');"><i class="bi bi-x-circle-fill"></i></button>
                 </div>
             </div>
-            <div class="loop-btn">
+            <div class="loop-btn" btn-id="LT03">
                 <div class="loop-off">
                     <div class="btn-box">
                         <div class="btn-box-top"></div>
@@ -111,25 +159,24 @@
                     </div>
                 </div>
             </div>
-            <div class="loop-btn">
+            <div class="loop-btn" btn-id="LT04">
                 <div class="loop-on">
                     <div class="btn-box type-2">
                         <div class="btn-box-top"></div>
                         <div class="btn-box-front"></div>
                         <div class="btn-box-right"></div>
                     </div>
-                    <div class="toy">
+                    <div class="toy" data="LTSR-02">
                         <img src="../images/nft_0000002.gif">
                     </div>
 
                 </div>
                 <div class="btn-group">
                     <button type="button" class="btn btn-lg btn-outline-secondary"><i class="bi bi-pause-circle-fill"></i></button>
-<!--                    <button type="button" class="btn btn-lg btn-outline-secondary"><i class="bi bi-play-circle-fill"></i></button>-->
-                    <button type="button" class="btn btn-lg btn-outline-secondary"><i class="bi bi-x-circle-fill"></i></button>
+                    <button type="button" class="btn btn-lg btn-outline-secondary" onclick="deleteTarget('LT04');"><i class="bi bi-x-circle-fill"></i></button>
                 </div>
             </div>
-            <div class="loop-btn">
+            <div class="loop-btn" btn-id="LT05">
                 <div class="loop-off">
                     <div class="btn-box">
                         <div class="btn-box-top"></div>
@@ -138,41 +185,39 @@
                     </div>
                 </div>
             </div>
-            <div class="loop-btn">
+            <div class="loop-btn" btn-id="LT06">
                 <div class="loop-on">
                     <div class="btn-box type-3">
                         <div class="btn-box-top"></div>
                         <div class="btn-box-front"></div>
                         <div class="btn-box-right"></div>
                     </div>
-                    <div class="toy">
+                    <div class="toy" data="LTSR-03">
                         <img src="../images/nft_0000003.gif">
                     </div>
 
                 </div>
                 <div class="btn-group">
                     <button type="button" class="btn btn-lg btn-outline-secondary"><i class="bi bi-pause-circle-fill"></i></button>
-<!--                    <button type="button" class="btn btn-lg btn-outline-secondary"><i class="bi bi-play-circle-fill"></i></button>-->
-                    <button type="button" class="btn btn-lg btn-outline-secondary"><i class="bi bi-x-circle-fill"></i></button>
+                    <button type="button" class="btn btn-lg btn-outline-secondary" onclick="deleteTarget('LT06');"><i class="bi bi-x-circle-fill"></i></button>
                 </div>
             </div>
-            <div class="loop-btn pause wating-start">
+            <div class="loop-btn pause wating-start" btn-id="LT07">
                 <div class="loop-on">
                     <div class="btn-box type-2">
                         <div class="btn-box-top"></div>
                         <div class="btn-box-front"></div>
                         <div class="btn-box-right"></div>
                     </div>
-                    <div class="toy">
+                    <div class="toy" data="LTSR-04">
                         <img src="../images/nft_0000004_pause.gif">
-<!--                        <img src="../images/nft_0000004_pause_wating_start.gif">-->
+                       <!-- <img src="../images/nft_0000004_pause_wating_start.gif"> -->
                     </div>
 
                 </div>
                 <div class="btn-group">
                     <button type="button" class="btn btn-lg btn-outline-secondary"><i class="bi bi-pause-circle-fill"></i></button>
-<!--                    <button type="button" class="btn btn-lg btn-outline-secondary"><i class="bi bi-play-circle-fill"></i></button>-->
-                    <button type="button" class="btn btn-lg btn-outline-secondary"><i class="bi bi-x-circle-fill"></i></button>
+                    <button type="button" class="btn btn-lg btn-outline-secondary" onclick="deleteTarget('LT07');"><i class="bi bi-x-circle-fill"></i></button>
                 </div>
             </div>
         </div>
@@ -184,8 +229,8 @@
                 <div class="btn-box-front"></div>
                 <div class="btn-box-right"></div>
             </div>
-            <div class="toy">
-                <img src="../images/nft_0000001_pause.gif">
+            <div class="toy" data="LTSR-01">
+                <img class="drag-image" src="../images/nft_0000001_pause.gif">
             </div>
         </div>
         <div class="list-loop-btn">
@@ -194,8 +239,98 @@
                 <div class="btn-box-front"></div>
                 <div class="btn-box-right"></div>
             </div>
+            <div class="toy" data="LTSR-02">
+                <img class="drag-image" src="../images/nft_0000002_pause.gif">
+            </div>
+        </div>
+        <div class="list-loop-btn">
+            <div class="btn-box-small type-1">
+                <div class="btn-box-top"></div>
+                <div class="btn-box-front"></div>
+                <div class="btn-box-right"></div>
+            </div>
+            <div class="toy" data="LTSR-03">
+                <img class="drag-image" src="../images/nft_0000003_pause.gif">
+            </div>
+        </div>
+        <div class="list-loop-btn">
+            <div class="btn-box-small type-2">
+                <div class="btn-box-top"></div>
+                <div class="btn-box-front"></div>
+                <div class="btn-box-right"></div>
+            </div>
+            <div class="toy" data="LTSR-04">
+                <img class="drag-image" src="../images/nft_0000004_pause.gif">
+            </div>
+        </div>
+        <div class="list-loop-btn">
+            <div class="btn-box-small type-2">
+                <div class="btn-box-top"></div>
+                <div class="btn-box-front"></div>
+                <div class="btn-box-right"></div>
+            </div>
+            <div class="toy" data="LTSR-05">
+                <img class="drag-image" src="../images/nft_0000005_pause.gif">
+            </div>
+        </div>
+        <div class="list-loop-btn">
+            <div class="btn-box-small type-2">
+                <div class="btn-box-top"></div>
+                <div class="btn-box-front"></div>
+                <div class="btn-box-right"></div>
+            </div>
+            <div class="toy" data="LTSR-06">
+                <img class="drag-image" src="../images/nft_0000006_pause.gif">
+            </div>
+        </div>
+        <div class="list-loop-btn">
+            <div class="btn-box-small type-3">
+                <div class="btn-box-top"></div>
+                <div class="btn-box-front"></div>
+                <div class="btn-box-right"></div>
+            </div>
+            <div class="toy" data="LTSR-07">
+                <img class="drag-image" src="../images/nft_0000007_pause.gif">
+            </div>
+        </div>
+        <div class="list-loop-btn">
+            <div class="btn-box-small type-3">
+                <div class="btn-box-top"></div>
+                <div class="btn-box-front"></div>
+                <div class="btn-box-right"></div>
+            </div>
+            <div class="toy" data="LTSR-08">
+                <img class="drag-image" src="../images/nft_0000001_pause.gif">
+            </div>
+        </div>
+        <div class="list-loop-btn">
+            <div class="btn-box-small type-3">
+                <div class="btn-box-top"></div>
+                <div class="btn-box-front"></div>
+                <div class="btn-box-right"></div>
+            </div>
+            <div class="toy" data="LTSR-09">
+                <img class="drag-image" src="../images/nft_0000002_pause.gif">
+            </div>
+        </div>
+        <div class="list-loop-btn">
+            <div class="btn-box-small type-1">
+                <div class="btn-box-top"></div>
+                <div class="btn-box-front"></div>
+                <div class="btn-box-right"></div>
+            </div>
+            <div class="toy" data="LTSR-10">
+                <img class="drag-image" src="../images/nft_0000003_pause.gif">
+            </div>
+        </div>
+        <!-- <div class="list-loop-btn">
+            <div class="btn-box-small type-2">
+                <div class="btn-box-top"></div>
+                <div class="btn-box-front"></div>
+                <div class="btn-box-right"></div>
+            </div>
             <div class="toy">
-                <img src="../images/nft_0000002_pause.gif">
+                <img class="drag-image" src="../images/nft_0000003_pause.gif">
             </div>
         </div>
         <div class="list-loop-btn">
@@ -205,17 +340,17 @@
                 <div class="btn-box-right"></div>
             </div>
             <div class="toy">
-                <img src="../images/nft_0000003_pause.gif">
+                <img class="drag-image" src="../images/nft_0000004_pause.gif">
             </div>
-        </div>
-        <div class="list-loop-btn">
-            <div class="btn-box-small type-2">
+        </div> -->
+        <!-- <div class="list-loop-btn">
+            <div class="btn-box-small type-3">
                 <div class="btn-box-top"></div>
                 <div class="btn-box-front"></div>
                 <div class="btn-box-right"></div>
             </div>
             <div class="toy">
-                <img src="../images/nft_0000004_pause.gif">
+                <img class="drag-image" src="../images/nft_0000005_pause.gif">
             </div>
         </div>
         <div class="list-loop-btn">
@@ -225,17 +360,7 @@
                 <div class="btn-box-right"></div>
             </div>
             <div class="toy">
-                <img src="../images/nft_0000005_pause.gif">
-            </div>
-        </div>
-        <div class="list-loop-btn">
-            <div class="btn-box-small type-3">
-                <div class="btn-box-top"></div>
-                <div class="btn-box-front"></div>
-                <div class="btn-box-right"></div>
-            </div>
-            <div class="toy">
-                <img src="../images/nft_0000006_pause.gif">
+                <img class="drag-image" src="../images/nft_0000006_pause.gif">
             </div>
         </div>
         <div class="list-loop-btn">
@@ -245,7 +370,7 @@
                 <div class="btn-box-right"></div>
             </div>
             <div class="toy">
-                <img src="../images/nft_0000007_pause.gif">
+                <img class="drag-image" src="../images/nft_0000007_pause.gif">
             </div>
         </div>
         <div class="list-loop-btn">
@@ -255,89 +380,9 @@
                 <div class="btn-box-right"></div>
             </div>
             <div class="toy">
-                <img src="../images/nft_0000001_pause.gif">
+                <img class="drag-image" src="../images/nft_0000001_pause.gif">
             </div>
-        </div>
-        <div class="list-loop-btn">
-            <div class="btn-box-small type-1">
-                <div class="btn-box-top"></div>
-                <div class="btn-box-front"></div>
-                <div class="btn-box-right"></div>
-            </div>
-            <div class="toy">
-                <img src="../images/nft_0000002_pause.gif">
-            </div>
-        </div>
-        <div class="list-loop-btn">
-            <div class="btn-box-small type-1">
-                <div class="btn-box-top"></div>
-                <div class="btn-box-front"></div>
-                <div class="btn-box-right"></div>
-            </div>
-            <div class="toy">
-                <img src="../images/nft_0000003_pause.gif">
-            </div>
-        </div>
-        <div class="list-loop-btn">
-            <div class="btn-box-small type-2">
-                <div class="btn-box-top"></div>
-                <div class="btn-box-front"></div>
-                <div class="btn-box-right"></div>
-            </div>
-            <div class="toy">
-                <img src="../images/nft_0000003_pause.gif">
-            </div>
-        </div>
-        <div class="list-loop-btn">
-            <div class="btn-box-small type-2">
-                <div class="btn-box-top"></div>
-                <div class="btn-box-front"></div>
-                <div class="btn-box-right"></div>
-            </div>
-            <div class="toy">
-                <img src="../images/nft_0000004_pause.gif">
-            </div>
-        </div>
-        <div class="list-loop-btn">
-            <div class="btn-box-small type-3">
-                <div class="btn-box-top"></div>
-                <div class="btn-box-front"></div>
-                <div class="btn-box-right"></div>
-            </div>
-            <div class="toy">
-                <img src="../images/nft_0000005_pause.gif">
-            </div>
-        </div>
-        <div class="list-loop-btn">
-            <div class="btn-box-small type-3">
-                <div class="btn-box-top"></div>
-                <div class="btn-box-front"></div>
-                <div class="btn-box-right"></div>
-            </div>
-            <div class="toy">
-                <img src="../images/nft_0000006_pause.gif">
-            </div>
-        </div>
-        <div class="list-loop-btn">
-            <div class="btn-box-small type-1">
-                <div class="btn-box-top"></div>
-                <div class="btn-box-front"></div>
-                <div class="btn-box-right"></div>
-            </div>
-            <div class="toy">
-                <img src="../images/nft_0000007_pause.gif">
-            </div>
-        </div>
-        <div class="list-loop-btn">
-            <div class="btn-box-small type-1">
-                <div class="btn-box-top"></div>
-                <div class="btn-box-front"></div>
-                <div class="btn-box-right"></div>
-            </div>
-            <div class="toy">
-                <img src="../images/nft_0000001_pause.gif">
-            </div>
-        </div>
+        </div> -->
     </div>
 
 </main>
@@ -353,6 +398,9 @@
 <!--</footer>-->
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="../js/progressbar.js"></script>
+<script src="../js/main.js"></script>
 </body>
-</html>`
+</html>

@@ -1,0 +1,391 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+@font-face {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 100;
+  src: url(../fonts/HelveticaNeue-UltraLight.woff) format("woff");
+}
+@font-face {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 200;
+  src: url(../fonts/HelveticaNeue-Thin.woff) format("woff");
+}
+@font-face {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 300;
+  src: url(../fonts/HelveticaNeue-Light.woff) format("woff");
+}
+@font-face {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/HelveticaNeue.woff) format("woff");
+}
+@font-face {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 500;
+  src: url(../fonts/HelveticaNeue-Medium.woff) format("woff");
+}
+@font-face {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 600;
+  src: url(../fonts/HelveticaNeue-Bold.woff) format("woff");
+}
+@font-face {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/HelveticaNeue-CondensedBlack-Bold.woff) format("woff");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  src: url(../fonts/Roboto-Thin.woff2) format("woff2"), url(../fonts/Roboto-Thin.woff) format("woff"), url(../fonts/Roboto-Thin.otf) format("opentype");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  src: url(../fonts/Roboto-Light.woff2) format("woff2"), url(../fonts/Roboto-Light.woff) format("woff"), url(../fonts/Roboto-Light.otf) format("opentype");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/Roboto-Regular.woff2) format("woff2"), url(../fonts/Roboto-Regular.woff) format("woff"), url(../fonts/Roboto-Regular.otf) format("opentype");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: url(../fonts/Roboto-Medium.woff2) format("woff2"), url(../fonts/Roboto-Medium.woff) format("woff"), url(../fonts/Roboto-Medium.otf) format("opentype");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  src: url(../fonts/Roboto-Bold.woff2) format("woff2"), url(../fonts/Roboto-Bold.woff) format("woff"), url(../fonts/Roboto-Bold.otf) format("opentype");
+}
+.loop-container {
+  width: 100%;
+  height: 410px;
+  overflow: hidden;
+  overflow-x: auto;
+  background-color: #333333;
+}
+.loop-container .loop-player {
+  position: relative;
+  width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+.loop-container .loop-player .loop-btn {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  width: 150px;
+  height: 350px;
+}
+.loop-container .loop-player .loop-btn .btn-group {
+  display: none;
+  position: absolute;
+  left: 40px;
+  bottom: 100px;
+  border-radius: 6px;
+  background-color: #000;
+}
+.loop-container .loop-player .loop-btn.pause:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 61px;
+  left: 87px;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  background-image: url(../images/icon_mute.gif);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position-y: top;
+  background-position-x: center;
+  background-size: contain;
+}
+.loop-container .loop-player .loop-btn.pause.wating-start:after {
+  background-color: transparent;
+  background-image: url(../images/icon_mute.gif);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position-y: top;
+  background-position-x: center;
+  background-size: contain;
+}
+.loop-container .loop-player .loop-btn:hover .btn-group {
+  display: flex;
+}
+
+.loops {
+  background-color: #fff;
+  margin: 0 auto;
+  max-width: 1200px;
+  text-align: center;
+}
+.loops .list-loop-btn {
+  margin: 6px 10px 0 0;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  width: 100px;
+  height: 180px;
+}
+.loops .list-loop-btn:hover {
+  border: 5px solid #eeeeee;
+  border-radius: 12px;
+}
+.loops .list-loop-btn .btn-box-small {
+  position: relative;
+  left: 13px;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.loops .list-loop-btn .btn-box-small.type-1 .btn-box-top {
+  background-color: #f5f5f5;
+}
+.loops .list-loop-btn .btn-box-small.type-1 .btn-box-front {
+  background-color: #F49200;
+}
+.loops .list-loop-btn .btn-box-small.type-1 .btn-box-right {
+  background-color: #D9D9D9;
+}
+.loops .list-loop-btn .btn-box-small.type-2 .btn-box-top {
+  background-color: #f5f5f5;
+}
+.loops .list-loop-btn .btn-box-small.type-2 .btn-box-front {
+  background-color: #029FE3;
+}
+.loops .list-loop-btn .btn-box-small.type-2 .btn-box-right {
+  background-color: #D9D9D9;
+}
+.loops .list-loop-btn .btn-box-small.type-3 .btn-box-top {
+  background-color: #f5f5f5;
+}
+.loops .list-loop-btn .btn-box-small.type-3 .btn-box-front {
+  background-color: #C3006A;
+}
+.loops .list-loop-btn .btn-box-small.type-3 .btn-box-right {
+  background-color: #D9D9D9;
+}
+.loops .list-loop-btn .btn-box-small .btn-box-top {
+  position: absolute;
+  width: 63px;
+  height: 36px;
+  bottom: 19px;
+  left: 2px;
+  transform: skewX(332deg);
+}
+.loops .list-loop-btn .btn-box-small .btn-box-front {
+  position: absolute;
+  width: 63px;
+  height: 4px;
+  bottom: 16px;
+  left: -7px;
+}
+.loops .list-loop-btn .btn-box-small .btn-box-right {
+  position: absolute;
+  width: 18px;
+  height: 4px;
+  bottom: 33px;
+  left: 56px;
+  transform: skewY(298deg);
+}
+.loops .list-loop-btn .toy {
+  position: absolute;
+  left: -3px;
+  bottom: 30px;
+  max-width: 100px;
+  max-height: 180px;
+}
+.loops .list-loop-btn .toy img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.loop-off {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 26px;
+}
+.loop-off .btn-box-top {
+  background-color: #333333;
+  border: 5px inset #555555;
+  bottom: 0 !important;
+}
+.loop-off .btn-box-front {
+  background-color: #eeeeee;
+  border: 1px solid #999999;
+}
+.loop-off .btn-box-right {
+  background-color: #D9D9D9;
+  border: 1px solid #999999;
+}
+.loop-off .btn-box {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.loop-off .btn-box .btn-box-top {
+  position: absolute;
+  width: 119px;
+  height: 107px;
+  bottom: 20px;
+  left: 3px;
+  transform: skewX(332deg);
+}
+.loop-off .btn-box .btn-box-front {
+  display: none;
+  position: absolute;
+  width: 118px;
+  height: 21px;
+  bottom: 0;
+  left: -25px;
+}
+.loop-off .btn-box .btn-box-right {
+  display: none;
+  position: absolute;
+  width: 58px;
+  height: 19px;
+  bottom: 54px;
+  left: 92px;
+  transform: skewY(298deg);
+}
+
+.loop-on {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 26px;
+}
+.loop-on .btn-box {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.loop-on .btn-box.type-1 .btn-box-top {
+  background-color: #F9C87E;
+}
+.loop-on .btn-box.type-1 .btn-box-front {
+  background-color: #F49200;
+}
+.loop-on .btn-box.type-1 .btn-box-right {
+  background-color: #a5643f;
+}
+.loop-on .btn-box.type-2 .btn-box-top {
+  background-color: #7ECFF2;
+}
+.loop-on .btn-box.type-2 .btn-box-front {
+  background-color: #029FE3;
+}
+.loop-on .btn-box.type-2 .btn-box-right {
+  background-color: #3b527f;
+}
+.loop-on .btn-box.type-3 .btn-box-top {
+  background-color: #E27FB5;
+}
+.loop-on .btn-box.type-3 .btn-box-front {
+  background-color: #C3006A;
+}
+.loop-on .btn-box.type-3 .btn-box-right {
+  background-color: #782b50;
+}
+.loop-on .btn-box .btn-box-top {
+  position: absolute;
+  width: 119px;
+  height: 107px;
+  bottom: 20px;
+  left: 3px;
+  transform: skewX(332deg);
+}
+.loop-on .btn-box .btn-box-front {
+  position: absolute;
+  width: 118px;
+  height: 20px;
+  bottom: 0;
+  left: -25px;
+}
+.loop-on .btn-box .btn-box-right {
+  position: absolute;
+  width: 58px;
+  height: 19px;
+  bottom: 54px;
+  left: 92px;
+  transform: skewY(298deg);
+}
+.loop-on .toy {
+  position: absolute;
+  left: -43px;
+  bottom: 47px;
+  width: 200px;
+  height: 300px;
+}
+.loop-on .toy img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.logo-icon {
+  width: 30px;
+}
+
+.play-timer {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 120px;
+  height: 30px;
+  overflow: hidden;
+}
+.play-timer .time {
+  display: block;
+  margin-top: 3px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+.play-timer:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 10px;
+  height: 100%;
+  background-color: #5cb85c;
+  animation-name: playing-time;
+  animation-iteration-count: infinite;
+  animation-duration: 8s;
+  animation-timing-function: linear;
+  left: 100%;
+}
+@keyframes playing-time {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+/*# sourceMappingURL=loop_new.css.map */

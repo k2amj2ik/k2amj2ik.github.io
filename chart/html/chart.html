@@ -1,0 +1,109 @@
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/highcharts-more.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+<script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+<figure class="highcharts-figure">
+    <div id="container"></div>
+    <p class="highcharts-description">
+        Chart demonstrating using an arearange series in combination with a line
+        series. In this case, the arearange series is used to visualize the
+        temperature range per day, while the line series shows the average
+        temperature.
+    </p>
+</figure>
+<script>
+    var ranges = [
+            [1462971600,187.7130543,262.798276],
+            [1462971600,279.1840381,465.3067302],
+            [1488466800,372.2453842,558.3680762],
+            [1488466800,228.1620407,304.2160542],
+            [1488913200,229.052968,343.5789954],
+            [1488913200,229.052968,343.5789954],
+            [1488913200,229.052968,343.5789954],
+            [1505804400,467.5731594,467.5731594],
+            [1507057200,292.1863933,409.0615098],
+            [1510844400,283.0615942,471.7693237],
+            [1522314000,552.9636533,697.2152842],
+            [1526565600,222.2222222,333.3333333],
+            [1568293200,66.64098204,99.96280157],
+            [1570039200,174.1755556,243.8458333],
+            [1573830000,53.69358147,80.5403722],
+            [1620914400,329.0958327,423.1232135],
+            [1620999000,254.4957379,353.4663026],
+            [1624345200,2379.827907,3569.741386],
+            [1627542000,570.4902534,733.4883041]
+        ],
+        averages = [
+            [1462971600,165.1874878],
+            [1462971600,297.7963073],
+            [1488466800,558.3680762],
+            [1488466800,361.2565644],
+            [1488913200,400.8429224],
+            [1488913200,320.6739726],
+            [1488913200,412.2949772],
+            [1505804400,553.2945014],
+            [1507057200,373.999068],
+            [1510844400,396.2862319],
+            [1522314000,552.9636533],
+            [1526565600,236.1111111],
+            [1568293200,133.2846211],
+            [1570039200,139.3405556],
+            [1573830000,112.7565211],
+            [1620914400,329.0958327],
+            [1620999000,424.1595632],
+            [1624345200,555.2927672],
+            [1627542000,554.1910331]
+        ];
+
+
+    Highcharts.chart('container', {
+
+        title: {
+            text: 'July temperatures'
+        },
+
+        xAxis: {
+            type: 'datetime',
+            accessibility: {
+                rangeDescription: 'Range: Jul 1st 2009 to Jul 31st 2009.'
+            }
+        },
+
+        yAxis: {
+            title: {
+                text: null
+            }
+        },
+
+        tooltip: {
+            crosshairs: true,
+            shared: true,
+            valueSuffix: '°C'
+        },
+
+        series: [{
+            name: 'Temperature',
+            data: averages,
+            zIndex: 1,
+            marker: {
+                fillColor: 'white',
+                lineWidth: 2,
+                lineColor: Highcharts.getOptions().colors[0]
+            }
+        }, {
+            name: 'Range',
+            data: ranges,
+            type: 'arearange',
+            lineWidth: 0,
+            linkedTo: ':previous',
+            color: Highcharts.getOptions().colors[0],
+            fillOpacity: 0.3,
+            zIndex: 0,
+            marker: {
+                enabled: false
+            }
+        }]
+    });
+</script>

@@ -1,0 +1,22 @@
+/* Error: Only 7 arguments allowed, but 8 were passed.
+ *     ,--> main_xs.scss
+ * 40  |   @include bg-image(transparent,'../images/input-arrow@2x.png',no-repeat,scroll,center,97%,14px,8px);
+ *     |   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ invocation
+ *     '
+ *     ,--> _mixin.scss
+ * 149 | @mixin bg-image($color,$url,$repeat,$attachment,$position-y,$position-x,$widthHeight) {
+ *     |        ============================================================================== declaration
+ *     '
+ *   main_xs.scss 40:3  bg-image()
+ *   main_xs.scss 40:3  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Only 7 arguments allowed, but 8 were passed.\a     \250c \2500 \2500 > main_xs.scss\a 40  \2502    @include bg-image(transparent,'../images/input-arrow@2x.png',no-repeat,scroll,center,97%,14px,8px);\d\a     \2502    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ invocation\a     \2575 \a     \250c \2500 \2500 > _mixin.scss\a 149 \2502  @mixin bg-image($color,$url,$repeat,$attachment,$position-y,$position-x,$widthHeight) {\d\a     \2502         \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501  declaration\a     \2575 \a   main_xs.scss 40:3  bg-image()\a   main_xs.scss 40:3  root stylesheet";
+}
