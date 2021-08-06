@@ -1,3 +1,22 @@
+// overlap image
+@mixin overlap-image($bgcolor,$url,$width,$height) {
+  position: relative;
+  &:after {
+    content: " ";
+    display: inline-block;
+    overflow: hidden;
+    width: $width;
+    height: $height;
+    position: absolute;
+    left:-1px;
+    top:-1px;
+    background-color: $bgcolor;
+    background-image: url($url);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: $width $height;
+  }
+}
 #container {
   height: 400px;
 }
@@ -42,3 +61,11 @@
     }
   }
 }
+.outer-frame {
+  width: 414px;
+  height: 896px;
+  @include overlap-image(transparant,'../images/bg_01.png',414px,896px);
+}
+
+
+

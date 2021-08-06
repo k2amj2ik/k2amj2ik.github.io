@@ -40,4 +40,25 @@
   background: #f1f7ff;
 }
 
+.outer-frame {
+  width: 414px;
+  height: 896px;
+  position: relative;
+}
+.outer-frame:after {
+  content: " ";
+  display: inline-block;
+  overflow: hidden;
+  width: 414px;
+  height: 896px;
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  background-color: transparant;
+  background-image: url("../images/bg_01.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 414px 896px;
+}
+
 /*# sourceMappingURL=style.css.map */
