@@ -1,8 +1,9 @@
 // overlap image
 @mixin overlap-image($bgcolor,$url,$width,$height) {
   position: relative;
-  &:after {
+  &:before {
     content: " ";
+    //opacity: 0.4;
     display: inline-block;
     overflow: hidden;
     width: $width;
@@ -64,7 +65,16 @@
 .outer-frame {
   width: 414px;
   height: 896px;
-  @include overlap-image(transparant,'../images/bg_01.png',414px,896px);
+  &.bg-01 { @include overlap-image(transparant,'../images/bg_01.png',414px,896px); }
+  &.bg-02 { @include overlap-image(transparant,'../images/bg_02.png',414px,896px); }
+  .btn-to-detail {
+    position: absolute;
+    left:0;
+    top:577px;
+    //border:1px solid red;
+    height: 68px;
+    width: 100%;
+  }
 }
 
 
