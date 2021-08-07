@@ -3,9 +3,6 @@
 <head>
     <script src="https://code.highcharts.com/highcharts.js"></script>
     <script src="https://code.highcharts.com/highcharts-more.js"></script>
-    <script src="https://code.highcharts.com/modules/exporting.js"></script>
-    <script src="https://code.highcharts.com/modules/export-data.js"></script>
-    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
     <meta charSet="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="카테고리 VS 유사작품">
@@ -26,7 +23,373 @@
 </head>
 <body>
 <div class="outer-frame bg-02">
-    <a href="chart_detail.html" class="btn-to-detail"></a>
+    <div class="figure-container">
+        <figure class="highcharts-figure">
+            <div id="container"></div>
+            <!--    <p class="highcharts-description">-->
+            <!--        Chart demonstrating using an arearange series in combination with a line-->
+            <!--        series. In this case, the arearange series is used to visualize the-->
+            <!--        temperature range per day, while the line series shows the average-->
+            <!--        temperature.-->
+            <!--    </p>-->
+        </figure>
+    </div>
+    <div class="figure-container-2">
+        <figure class="highcharts-figure-2">
+            <div id="container-2"></div>
+            <!--    <p class="highcharts-description">-->
+            <!--        Chart demonstrating using an arearange series in combination with a line-->
+            <!--        series. In this case, the arearange series is used to visualize the-->
+            <!--        temperature range per day, while the line series shows the average-->
+            <!--        temperature.-->
+            <!--    </p>-->
+        </figure>
+    </div>
 </div>
+<script>
+    var ranges = [
+            [1447198200000,224,302],
+            [1455192000000,195,278],
+            [1460635200000,35,46],
+            [1463007600000,231,351],
+            [1467190800000,80,113],
+            // [1475150400000,20,30],
+            [1475490600000,182,267],
+            [1479427200000,395,568],
+            [1481205600000,157,209],
+            [1488466800000,287,415],
+            [1491984000000,351,498],
+            [1495148400000,389,562],
+            [1496768400000,284,383],
+            [1505804400000,406,492],
+            [1507312800000,253,361],
+            [1510875000000,324,490],
+            [1520362800000,322,473],
+            [1526652000000,175,249],
+            [1528304400000,154,232],
+            [1537884000000,131,188],
+            [1538740800000,285,416],
+            [1542319200000,252,342],
+            [1544103000000,288,453],
+            [1551898800000,307,448],
+            [1557961200000,236,336],
+            [1561572000000,209,302],
+            [1568293200000,61,91],
+            [1570039200000,216,320],
+            [1573776000000,258,364],
+            [1581447600000,91,131],
+            [1583506800000,212,283],
+            [1587474000000,161,214],
+            [1593532800000,283,425],
+            [1601982000000,222,307],
+            [1605722400000,126,211],
+            [1606993200000,432,661],
+            // [1611126000000,3,4],
+            // [1615964400000,3,4],
+            [1618830000000,59,74],
+            [1620856800000,305,418],
+            [1623034800000,135,182],
+            [1627542000000,570,733]
+        ],
+        similar = [
+            [1568214000000,133],
+            [1570028400000,139],
+            [1573830000000,113],
+            [1620831600000,329],
+            [1620918000000,424],
+            [1624287600000,555],
+            [1627484400000,554]
+        ],
+        averages = [
+            [1447198200000,267],
+            [1455192000000,236],
+            [1460635200000,41],
+            [1463007600000,271],
+            [1467190800000,80],
+            // [1475150400000,22],
+            [1475490600000,290],
+            [1479427200000,421],
+            [1481205600000,193],
+            [1488466800000,529],
+            [1491984000000,351],
+            [1495148400000,420],
+            [1496768400000,297],
+            [1505804400000,502],
+            [1507312800000,324],
+            [1510875000000,374],
+            [1520362800000,347],
+            [1526652000000,257],
+            [1528304400000,147],
+            [1537884000000,159],
+            [1538740800000,296],
+            [1542319200000,359],
+            [1544103000000,261],
+            [1551898800000,372],
+            [1557961200000,246],
+            [1561572000000,262],
+            [1568293200000,135],
+            [1570039200000,276],
+            [1573776000000,301],
+            [1581447600000,97],
+            [1583506800000,526],
+            [1587474000000,134],
+            [1593532800000,411],
+            [1601982000000,330],
+            [1605722400000,240],
+            [1606993200000,513],
+            // [1611126000000,3],
+            // [1615964400000,2],
+            [1618830000000,74],
+            [1620856800000,341],
+            [1623034800000,205],
+            [1627542000000,554]
+        ];
+
+
+    Highcharts.chart('container', {
+        credits: {
+            enabled: false
+        },
+        title: {
+            // text: '동일카테고리 VS 유사작품'
+            text: null
+        },
+        subtitle: {
+            // text: 'Gerhard Richter',
+            text: null
+        },
+        xAxis: {
+            visible: false,
+            type: 'datetime',
+            title: {
+                text: null
+            },
+            plotBands: [{
+                color: 'rgba(33, 150, 83, .1)', // Color value
+                from: 1593532800000, // Start of the plot band
+                to: 1627484400000 // End of the plot band
+            }],
+        },
+
+        yAxis: {
+            visible: false,
+            title: {
+                text: null
+            }
+        },
+
+        tooltip: {
+            crosshairs: true,
+            shared: true,
+            valuePrefix: '$',
+            // valueSuffix: '/cm^2'
+        },
+        legend: {
+            enabled: false,
+            layout: 'vertical',
+            align: 'left',
+            verticalAlign: 'top',
+            x: 100,
+            y: 70,
+            floating: true,
+            backgroundColor: Highcharts.defaultOptions.chart.backgroundColor,
+            borderWidth: 1
+        },
+        colors: ['#cccccc', '#333333', '#666666', '#999999', '#dddddd'],
+        plotOptions: {
+            scatter: {
+                marker: {
+                    radius: 5,
+                    states: {
+                        hover: {
+                            enabled: true,
+                            lineColor: 'rgb(100,100,100)'
+                        }
+                    }
+                },
+                states: {
+                    hover: {
+                        marker: {
+                            enabled: false
+                        }
+                    }
+                },
+                tooltip: {
+                    crosshairs: true,
+                    shared: true,
+                    headerFormat: '<b>{series.name}</b><br>',
+                    pointFormat: '{point.y}'
+                }
+            }
+        },
+        series: [{
+            name: '카테고리 평균 낙찰가(/cm^2)',
+            data: averages,
+            type: 'spline',
+            zIndex: 1,
+            marker: {
+                enabled: false,
+                fillColor: 'white',
+                lineWidth: 2,
+                lineColor: Highcharts.getOptions().colors[0]
+            }
+        }, {
+            name: '카테고리 평균 추정가(/cm^2)',
+            data: ranges,
+            type: 'arearange',
+            lineWidth: 0,
+            linkedTo: ':previous',
+            color: '#aaaaaa',
+            fillOpacity: 0.3,
+            zIndex: 0,
+            marker: {
+                enabled: false
+            }
+        }, {
+            name: '유사작품 평균 낙찰가(/cm^2)',
+            data: similar,
+            zIndex: 2,
+            type: 'scatter',
+            color: 'rgba(33, 150, 83, .7)',
+            marker: {
+                symbol: 'circle',
+            }
+        }
+        ]
+    });
+</script>
+<script>
+    var averages = [
+        [1447198200000,267],
+        [1455192000000,236],
+        [1460635200000,41],
+        [1463007600000,271],
+        [1467190800000,80],
+        // [1475150400000,22],
+        [1475490600000,290],
+        [1479427200000,421],
+        [1481205600000,193],
+        [1488466800000,529],
+        [1491984000000,351],
+        [1495148400000,420],
+        [1496768400000,297],
+        [1505804400000,502],
+        [1507312800000,324],
+        [1510875000000,374],
+        [1520362800000,347],
+        [1526652000000,257],
+        [1528304400000,147],
+        [1537884000000,159],
+        [1538740800000,296],
+        [1542319200000,359],
+        [1544103000000,261],
+        [1551898800000,372],
+        [1557961200000,246],
+        [1561572000000,262],
+        [1568293200000,135],
+        [1570039200000,276],
+        [1573776000000,301],
+        [1581447600000,97],
+        [1583506800000,526],
+        [1587474000000,134],
+        [1593532800000,411],
+        [1601982000000,330],
+        [1605722400000,240],
+        [1606993200000,513],
+        // [1611126000000,3],
+        // [1615964400000,2],
+        [1618830000000,74],
+        [1620856800000,341],
+        [1623034800000,205],
+        [1627542000000,554]
+    ];
+
+
+
+    Highcharts.chart('container-2', {
+        credits: {
+            enabled: false
+        },
+        title: {
+            // text: '동일카테고리 VS 유사작품'
+            text: null
+        },
+        subtitle: {
+            // text: 'Gerhard Richter',
+            text: null
+        },
+        xAxis: {
+            visible: false,
+            type: 'datetime',
+            title: {
+                text: null
+            },
+            plotBands: [{
+                color: 'rgba(33, 150, 83, .1)', // Color value
+                from: 1593532800000, // Start of the plot band
+                to: 1627484400000 // End of the plot band
+            }],
+        },
+
+        yAxis: {
+            visible: false,
+            title: {
+                text: null
+            }
+        },
+
+        tooltip: {
+            crosshairs: true,
+            shared: true,
+            valuePrefix: '$',
+            // valueSuffix: '/cm^2'
+        },
+        legend: {
+            enabled: false,
+            layout: 'vertical',
+            align: 'left',
+            verticalAlign: 'top',
+            x: 100,
+            y: 70,
+            floating: true,
+            backgroundColor: Highcharts.defaultOptions.chart.backgroundColor,
+            borderWidth: 1
+        },
+        colors: ['#903bc7', '#333333', '#666666', '#999999', '#dddddd'],
+        plotOptions: {
+            area: {
+                fillColor: {
+                    linearGradient: {
+                        x1: 0,
+                        y1: 0,
+                        x2: 0,
+                        y2: 1
+                    },
+                    stops: [
+                        [0, '#903bc7'],
+                        [1, 'rgba(144,59,199,.1)']
+                    ]
+                },
+                marker: {
+                    radius: 2
+                },
+                lineWidth: 1,
+                states: {
+                    hover: {
+                        lineWidth: 1
+                    }
+                },
+                threshold: null
+            }
+        },
+        series: [{
+            name: '작가 평균 낙찰가(/cm^2)',
+            data: averages,
+            type: 'area',
+            zIndex: 1,
+        }
+        ]
+    });
+</script>
 </body>
 </html>
