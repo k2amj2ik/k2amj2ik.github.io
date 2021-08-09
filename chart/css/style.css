@@ -117,14 +117,14 @@ body {
   background-size: 414px 223px;
 }
 .outer-frame .moving .similar-lots.opened {
-  height: 1182px;
+  height: 898px;
 }
 .outer-frame .moving .similar-lots.opened:before {
   content: " ";
   display: inline-block;
   overflow: hidden;
   width: 414px;
-  height: 1182px;
+  height: 898px;
   position: absolute;
   left: -1px;
   top: -1px;
@@ -132,7 +132,7 @@ body {
   background-image: url("../images/bg_02_open.png");
   background-repeat: no-repeat;
   background-position: 0 0;
-  background-size: 414px 1182px;
+  background-size: 414px 898px;
 }
 .outer-frame .moving .similar-lots .btn-open {
   position: absolute;
@@ -141,25 +141,6 @@ body {
   margin: 0 0 10px 0;
   width: 100%;
   height: 45px;
-}
-.outer-frame .moving .similar-lots .collapse {
-  height: 1682px;
-  width: 100%;
-}
-.outer-frame .moving .similar-lots .collapse:before {
-  content: " ";
-  display: inline-block;
-  overflow: hidden;
-  width: 414px;
-  height: 1682px;
-  position: absolute;
-  left: -1px;
-  top: -1px;
-  background-color: transparant;
-  background-image: url("../images/bg_02_open.png");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  background-size: 414px 1682px;
 }
 .outer-frame .moving .similar-lots .figure-container .highcharts-figure #container {
   width: 400px;
