@@ -93,8 +93,8 @@ body {
       padding: 12px 0 59px;
       @include overlap-image(transparant,'../images/bg_02_close.png',414px,223px);
       &.opened {
-        height: 898px;
-        @include overlap-image(transparant,'../images/bg_02_open.png',414px,898px);
+        height: 2770px;
+        @include overlap-image(transparant,'../images/bg_02_open.png',414px,2770px);
       }
       .btn-open {
         position: absolute;
@@ -115,16 +115,16 @@ body {
     }
     .figure-container-2 {
       position: relative;
-      height: 290px;
+      height: 360px;
       width: 100%;
       padding-top: 65px;
-      @include overlap-image(transparant,'../images/bg_02_bottom.png',414px,290px);
+      @include overlap-image(transparant,'../images/bg_02_bottom.png',414px,360px);
       .highcharts-figure-2 {
-        height: 63px;
+        height: 76px;
         width: 100%;
         #container-2 {
           width: 410px;
-          height: 63px;
+          height: 76px;
         }
       }
     }

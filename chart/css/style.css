@@ -117,14 +117,14 @@ body {
   background-size: 414px 223px;
 }
 .outer-frame .moving .similar-lots.opened {
-  height: 898px;
+  height: 2770px;
 }
 .outer-frame .moving .similar-lots.opened:before {
   content: " ";
   display: inline-block;
   overflow: hidden;
   width: 414px;
-  height: 898px;
+  height: 2770px;
   position: absolute;
   left: -1px;
   top: -1px;
@@ -132,7 +132,7 @@ body {
   background-image: url("../images/bg_02_open.png");
   background-repeat: no-repeat;
   background-position: 0 0;
-  background-size: 414px 898px;
+  background-size: 414px 2770px;
 }
 .outer-frame .moving .similar-lots .btn-open {
   position: absolute;
@@ -148,7 +148,7 @@ body {
 }
 .outer-frame .moving .figure-container-2 {
   position: relative;
-  height: 290px;
+  height: 360px;
   width: 100%;
   padding-top: 65px;
 }
@@ -157,7 +157,7 @@ body {
   display: inline-block;
   overflow: hidden;
   width: 414px;
-  height: 290px;
+  height: 360px;
   position: absolute;
   left: -1px;
   top: -1px;
@@ -165,15 +165,15 @@ body {
   background-image: url("../images/bg_02_bottom.png");
   background-repeat: no-repeat;
   background-position: 0 0;
-  background-size: 414px 290px;
+  background-size: 414px 360px;
 }
 .outer-frame .moving .figure-container-2 .highcharts-figure-2 {
-  height: 63px;
+  height: 76px;
   width: 100%;
 }
 .outer-frame .moving .figure-container-2 .highcharts-figure-2 #container-2 {
   width: 410px;
-  height: 63px;
+  height: 76px;
 }
 
 /*# sourceMappingURL=style.css.map */
