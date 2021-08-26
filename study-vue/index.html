@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>Vue.js App</title>
+  <link href="main.css" rel="stylesheet">
+</head>
+<body>
+  <div id="app">
+    <p>데이터 바인딩 예시 : <input type="text" v-model="message.value" placeholder="텍스트를 입력하세요."> <br>{{ message.value }} (길이:{{ message.value.length }})</p>
+    <p>for문 예시 : 
+        <span v-for="item in fruits">{{ item.name }}({{ item.color }})</span>
+    </p>
+    <p>배열 예시 : {{ num }}번째 : <span>{{ fruits[num].name }}</span></p>
+    <p>토글 예시 : 
+      <button v-on:click="show=!show">show 토글 (show : {{ show }})</button>
+      <transition>
+        <span v-if="show">show면 보인다!</span>
+      </transition>
+    </p>
+    <p> SVG 바인딩 예시(직경): 
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <circle cx="10" cy="10" v-bind:r="radius" fill="lightpink" />
+      </svg>
+      <input type="range" min="0" max="10" v-model="radius">
+    </p>
+    <p>for문 & IF문 예시 : red만 표시
+      <span v-for="item in fruits" v-if="item.color === 'red'">{{ item.name }}({{ item.color }})</span>
+    </p>
+    <p>IF문 예시:
+      <span v-if="fruits.color === 'red'" key="content-visible">if red 면 표시</span>
+      <span v-else-if="fruits.color === 'yellow'" key="content-visible">if yellow 면 표시</span>
+      <span v-else key="content-visible">else 그 외 이면 표시</span>
+    </p>
+    <p>LIST에 요소 추가(push, unshift) : 과일 추가하기
+      <input type="text" v-model="fruits.name" placeholder="과일명을 입력하세요.">
+      <button v-on:click="show=!show">과일 추가하기</button>
+    </p>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.5/lodash.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios@0.17.1/dist/axios.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
