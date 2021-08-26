@@ -1,76 +1,88 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
 @font-face {
-  font-family: "Helvetica";
+  font-family: 'Helvetica';
   font-style: normal;
   font-weight: 100;
   src: url(../fonts/HelveticaNeue-UltraLight.woff) format("woff");
 }
+
 @font-face {
-  font-family: "Helvetica";
+  font-family: 'Helvetica';
   font-style: normal;
   font-weight: 200;
   src: url(../fonts/HelveticaNeue-Thin.woff) format("woff");
 }
+
 @font-face {
-  font-family: "Helvetica";
+  font-family: 'Helvetica';
   font-style: normal;
   font-weight: 300;
   src: url(../fonts/HelveticaNeue-Light.woff) format("woff");
 }
+
 @font-face {
-  font-family: "Helvetica";
+  font-family: 'Helvetica';
   font-style: normal;
   font-weight: 400;
   src: url(../fonts/HelveticaNeue.woff) format("woff");
 }
+
 @font-face {
-  font-family: "Helvetica";
+  font-family: 'Helvetica';
   font-style: normal;
   font-weight: 500;
   src: url(../fonts/HelveticaNeue-Medium.woff) format("woff");
 }
+
 @font-face {
-  font-family: "Helvetica";
+  font-family: 'Helvetica';
   font-style: normal;
   font-weight: 600;
   src: url(../fonts/HelveticaNeue-Bold.woff) format("woff");
 }
+
 @font-face {
-  font-family: "Helvetica";
+  font-family: 'Helvetica';
   font-style: normal;
   font-weight: 700;
   src: url(../fonts/HelveticaNeue-CondensedBlack-Bold.woff) format("woff");
 }
+
 @font-face {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 100;
   src: url(../fonts/Roboto-Thin.woff2) format("woff2"), url(../fonts/Roboto-Thin.woff) format("woff"), url(../fonts/Roboto-Thin.otf) format("opentype");
 }
+
 @font-face {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 300;
   src: url(../fonts/Roboto-Light.woff2) format("woff2"), url(../fonts/Roboto-Light.woff) format("woff"), url(../fonts/Roboto-Light.otf) format("opentype");
 }
+
 @font-face {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   src: url(../fonts/Roboto-Regular.woff2) format("woff2"), url(../fonts/Roboto-Regular.woff) format("woff"), url(../fonts/Roboto-Regular.otf) format("opentype");
 }
+
 @font-face {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
   src: url(../fonts/Roboto-Medium.woff2) format("woff2"), url(../fonts/Roboto-Medium.woff) format("woff"), url(../fonts/Roboto-Medium.otf) format("opentype");
 }
+
 @font-face {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 600;
   src: url(../fonts/Roboto-Bold.woff2) format("woff2"), url(../fonts/Roboto-Bold.woff) format("woff"), url(../fonts/Roboto-Bold.otf) format("opentype");
 }
+
 body {
   background-color: #000;
 }
@@ -82,12 +94,14 @@ body {
   overflow-x: auto;
   background-color: #fff;
 }
+
 .loop-container .loop-player {
   position: relative;
   width: 1100px;
   margin: 0 auto;
   text-align: center;
 }
+
 .loop-container .loop-player .loop-btn {
   position: relative;
   cursor: pointer;
@@ -95,6 +109,7 @@ body {
   width: 150px;
   height: 350px;
 }
+
 .loop-container .loop-player .loop-btn .btn-group {
   display: none;
   position: absolute;
@@ -103,8 +118,9 @@ body {
   border-radius: 6px;
   background-color: #000;
 }
+
 .loop-container .loop-player .loop-btn.pause:after {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   top: 61px;
@@ -119,6 +135,7 @@ body {
   background-position-x: center;
   background-size: contain;
 }
+
 .loop-container .loop-player .loop-btn.pause .loop-on .toy.idx-1 {
   background-color: transparent;
   background-image: url(../images/nft_0000001_pause.gif);
@@ -128,6 +145,7 @@ body {
   background-position-x: center;
   background-size: contain;
 }
+
 .loop-container .loop-player .loop-btn.pause .loop-on .toy.idx-2 {
   background-color: transparent;
   background-image: url(../images/nft_0000002_pause.gif);
@@ -137,6 +155,7 @@ body {
   background-position-x: center;
   background-size: contain;
 }
+
 .loop-container .loop-player .loop-btn.pause .loop-on .toy.idx-3 {
   background-color: transparent;
   background-image: url(../images/nft_0000003_pause.gif);
@@ -146,6 +165,7 @@ body {
   background-position-x: center;
   background-size: contain;
 }
+
 .loop-container .loop-player .loop-btn.pause .loop-on .toy.idx-4 {
   background-color: transparent;
   background-image: url(../images/nft_0000004_pause.gif);
@@ -155,6 +175,7 @@ body {
   background-position-x: center;
   background-size: contain;
 }
+
 .loop-container .loop-player .loop-btn.pause .loop-on .toy.idx-5 {
   background-color: transparent;
   background-image: url(../images/nft_0000005_pause.gif);
@@ -164,6 +185,7 @@ body {
   background-position-x: center;
   background-size: contain;
 }
+
 .loop-container .loop-player .loop-btn.pause .loop-on .toy.idx-6 {
   background-color: transparent;
   background-image: url(../images/nft_0000006_pause.gif);
@@ -173,6 +195,7 @@ body {
   background-position-x: center;
   background-size: contain;
 }
+
 .loop-container .loop-player .loop-btn.pause .loop-on .toy.idx-7 {
   background-color: transparent;
   background-image: url(../images/nft_0000007_pause.gif);
@@ -182,6 +205,7 @@ body {
   background-position-x: center;
   background-size: contain;
 }
+
 .loop-container .loop-player .loop-btn.pause.wating-start:after {
   background-color: transparent;
   background-image: url(../images/icon_mute_wating_start.gif);
@@ -191,6 +215,7 @@ body {
   background-position-x: center;
   background-size: contain;
 }
+
 .loop-container .loop-player .loop-btn.pause.wating-start .loop-on .toy.idx-1 {
   background-color: transparent;
   background-image: url(../images/nft_0000001_pause_wating_start.gif);
@@ -200,6 +225,7 @@ body {
   background-position-x: center;
   background-size: contain;
 }
+
 .loop-container .loop-player .loop-btn.pause.wating-start .loop-on .toy.idx-2 {
   background-color: transparent;
   background-image: url(../images/nft_0000002_pause_wating_start.gif);
@@ -209,6 +235,7 @@ body {
   background-position-x: center;
   background-size: contain;
 }
+
 .loop-container .loop-player .loop-btn.pause.wating-start .loop-on .toy.idx-3 {
   background-color: transparent;
   background-image: url(../images/nft_0000003_pause_wating_start.gif);
@@ -218,6 +245,7 @@ body {
   background-position-x: center;
   background-size: contain;
 }
+
 .loop-container .loop-player .loop-btn.pause.wating-start .loop-on .toy.idx-4 {
   background-color: transparent;
   background-image: url(../images/nft_0000004_pause_wating_start.gif);
@@ -227,6 +255,7 @@ body {
   background-position-x: center;
   background-size: contain;
 }
+
 .loop-container .loop-player .loop-btn.pause.wating-start .loop-on .toy.idx-5 {
   background-color: transparent;
   background-image: url(../images/nft_0000005_pause_wating_start.gif);
@@ -236,6 +265,7 @@ body {
   background-position-x: center;
   background-size: contain;
 }
+
 .loop-container .loop-player .loop-btn.pause.wating-start .loop-on .toy.idx-6 {
   background-color: transparent;
   background-image: url(../images/nft_0000006_pause_wating_start.gif);
@@ -245,6 +275,7 @@ body {
   background-position-x: center;
   background-size: contain;
 }
+
 .loop-container .loop-player .loop-btn.pause.wating-start .loop-on .toy.idx-7 {
   background-color: transparent;
   background-image: url(../images/nft_0000007_pause_wating_start.gif);
@@ -254,19 +285,24 @@ body {
   background-position-x: center;
   background-size: contain;
 }
+
 .loop-container .loop-player .loop-btn:hover .btn-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .loops .card {
   cursor: pointer;
 }
+
 .loops .list-loop-btn {
   position: relative;
   margin: auto;
   width: 100px;
   height: 140px;
 }
+
 .loops .list-loop-btn .loop-on .toy {
   position: absolute;
   left: -20px;
@@ -281,18 +317,22 @@ body {
   height: 100%;
   left: 26px;
 }
+
 .loop-off .btn-box-top {
   background-color: #f5f5f5;
   border: 1px solid #999999;
 }
+
 .loop-off .btn-box-front {
   background-color: #eeeeee;
   border: 1px solid #999999;
 }
+
 .loop-off .btn-box-right {
   background-color: #D9D9D9;
   border: 1px solid #999999;
 }
+
 .loop-off .btn-box {
   position: relative;
   left: 0;
@@ -300,14 +340,17 @@ body {
   width: 100%;
   height: 100%;
 }
+
 .loop-off .btn-box .btn-box-top {
   position: absolute;
   width: 119px;
   height: 107px;
   bottom: 20px;
   left: 3px;
-  transform: skewX(332deg);
+  -webkit-transform: skewX(332deg);
+          transform: skewX(332deg);
 }
+
 .loop-off .btn-box .btn-box-front {
   position: absolute;
   width: 118px;
@@ -315,13 +358,15 @@ body {
   bottom: 0;
   left: -25px;
 }
+
 .loop-off .btn-box .btn-box-right {
   position: absolute;
   width: 58px;
   height: 19px;
   bottom: 54px;
   left: 92px;
-  transform: skewY(298deg);
+  -webkit-transform: skewY(298deg);
+          transform: skewY(298deg);
 }
 
 .loop-on {
@@ -330,6 +375,7 @@ body {
   height: 100%;
   left: 26px;
 }
+
 .loop-on .btn-box {
   position: relative;
   left: 0;
@@ -337,41 +383,53 @@ body {
   width: 100%;
   height: 100%;
 }
+
 .loop-on .btn-box.type-1 .btn-box-top {
   background-color: #F9C87E;
 }
+
 .loop-on .btn-box.type-1 .btn-box-front {
   background-color: #F49200;
 }
+
 .loop-on .btn-box.type-1 .btn-box-right {
   background-color: #a5643f;
 }
+
 .loop-on .btn-box.type-2 .btn-box-top {
   background-color: #7ECFF2;
 }
+
 .loop-on .btn-box.type-2 .btn-box-front {
   background-color: #029FE3;
 }
+
 .loop-on .btn-box.type-2 .btn-box-right {
   background-color: #3b527f;
 }
+
 .loop-on .btn-box.type-3 .btn-box-top {
   background-color: #E27FB5;
 }
+
 .loop-on .btn-box.type-3 .btn-box-front {
   background-color: #C3006A;
 }
+
 .loop-on .btn-box.type-3 .btn-box-right {
   background-color: #782b50;
 }
+
 .loop-on .btn-box .btn-box-top {
   position: absolute;
   width: 119px;
   height: 107px;
   bottom: 20px;
   left: 3px;
-  transform: skewX(332deg);
+  -webkit-transform: skewX(332deg);
+          transform: skewX(332deg);
 }
+
 .loop-on .btn-box .btn-box-front {
   position: absolute;
   width: 118px;
@@ -379,14 +437,17 @@ body {
   bottom: 0;
   left: -25px;
 }
+
 .loop-on .btn-box .btn-box-right {
   position: absolute;
   width: 58px;
   height: 19px;
   bottom: 54px;
   left: 92px;
-  transform: skewY(298deg);
+  -webkit-transform: skewY(298deg);
+          transform: skewY(298deg);
 }
+
 .loop-on .toy {
   position: absolute;
   left: -46px;
@@ -394,6 +455,7 @@ body {
   width: 214px;
   height: 207px;
 }
+
 .loop-on .toy.idx-1 {
   background-color: transparent;
   background-image: url(../images/nft_0000001.gif);
@@ -403,6 +465,7 @@ body {
   background-position-x: center;
   background-size: contain;
 }
+
 .loop-on .toy.idx-2 {
   background-color: transparent;
   background-image: url(../images/nft_0000002.gif);
@@ -412,6 +475,7 @@ body {
   background-position-x: center;
   background-size: contain;
 }
+
 .loop-on .toy.idx-3 {
   background-color: transparent;
   background-image: url(../images/nft_0000003.gif);
@@ -421,6 +485,7 @@ body {
   background-position-x: center;
   background-size: contain;
 }
+
 .loop-on .toy.idx-4 {
   background-color: transparent;
   background-image: url(../images/nft_0000004.gif);
@@ -430,6 +495,7 @@ body {
   background-position-x: center;
   background-size: contain;
 }
+
 .loop-on .toy.idx-5 {
   background-color: transparent;
   background-image: url(../images/nft_0000005.gif);
@@ -439,6 +505,7 @@ body {
   background-position-x: center;
   background-size: contain;
 }
+
 .loop-on .toy.idx-6 {
   background-color: transparent;
   background-image: url(../images/nft_0000006.gif);
@@ -448,6 +515,7 @@ body {
   background-position-x: center;
   background-size: contain;
 }
+
 .loop-on .toy.idx-7 {
   background-color: transparent;
   background-image: url(../images/nft_0000007.gif);
@@ -457,24 +525,28 @@ body {
   background-position-x: center;
   background-size: contain;
 }
+
 .loop-on .btn-box-small .btn-box-top {
   width: 63px;
   height: 36px;
   bottom: 19px;
   left: 2px;
 }
+
 .loop-on .btn-box-small .btn-box-front {
   width: 63px;
   height: 20px;
   bottom: 0;
   left: -7px;
 }
+
 .loop-on .btn-box-small .btn-box-right {
   width: 18px;
   height: 21px;
   bottom: 16px;
   left: 56px;
-  transform: skewY(298deg);
+  -webkit-transform: skewY(298deg);
+          transform: skewY(298deg);
 }
 
 .logo-icon {
@@ -489,6 +561,7 @@ body {
   height: 30px;
   overflow: hidden;
 }
+
 .play-timer .time {
   display: block;
   margin-top: 3px;
@@ -496,21 +569,27 @@ body {
   text-align: center;
   color: #fff;
 }
+
 .play-timer:after {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   top: 0;
   width: 10px;
   height: 100%;
   background-color: #5cb85c;
-  animation-name: playing-time;
-  animation-iteration-count: infinite;
-  animation-duration: 8s;
-  animation-timing-function: linear;
+  -webkit-animation-name: playing-time;
+          animation-name: playing-time;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
   left: 100%;
 }
-@keyframes playing-time {
+
+@-webkit-keyframes playing-time {
   0% {
     left: 0;
   }
@@ -519,4 +598,12 @@ body {
   }
 }
 
+@keyframes playing-time {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 100%;
+  }
+}
 /*# sourceMappingURL=loop.css.map */

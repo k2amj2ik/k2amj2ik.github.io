@@ -1,0 +1,44 @@
+body, input, button {
+  font-size: x-large;
+}
+
+svg {
+  max-width: 20px;
+  max-height: 20px;
+}
+
+p, ol, ul {
+  background-color: #efefef;
+  padding: 8px 16px;
+  border: 1px dotted #ccc;
+  margin: 20px;
+}
+
+span {
+  display: inline-block;
+  background-color: #f7ffee;
+  padding: 8px 16px;
+  border: 1px dotted #ccc;
+  margin: 10px;
+}
+
+button {
+  cursor: pointer;
+  color: #fff;
+  background-color: #555;
+  padding: 4px 14px 8px 14px;
+  border: 0;
+  border-radius: 8px;
+  -webkit-box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.253);
+          box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.253);
+}
+
+.v-enter-active, .v-leave-active {
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+.v-enter, .v-leave-to {
+  opacity: 0;
+}
+/*# sourceMappingURL=main.css.map */
