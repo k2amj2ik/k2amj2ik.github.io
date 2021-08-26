@@ -7,39 +7,61 @@
 </head>
 <body>
   <div id="app">
-    <p>데이터 바인딩 예시 : <input type="text" v-model="message.value" placeholder="텍스트를 입력하세요."> <br>{{ message.value }} (길이:{{ message.value.length }})</p>
-    <p>for문 예시 : 
-        <span v-for="item in fruits">{{ item.name }}({{ item.color }})</span>
-    </p>
-    <p>배열 예시 : {{ num }}번째 : <span>{{ fruits[num].name }}</span></p>
-    <p>토글 예시 : 
-      <button v-on:click="show=!show">show 토글 (show : {{ show }})</button>
-      <transition>
-        <span v-if="show">show면 보인다!</span>
-      </transition>
-    </p>
-    <p> SVG 바인딩 예시(직경): 
-      <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-        <circle cx="10" cy="10" v-bind:r="radius" fill="lightpink" />
-      </svg>
-      <input type="range" min="0" max="10" v-model="radius">
-    </p>
-    <p>for문 & IF문 예시 : red만 표시
-      <span v-for="item in fruits" v-if="item.color === 'red'">{{ item.name }}({{ item.color }})</span>
-    </p>
-    <p>IF문 예시:
-      <span v-if="fruits.color === 'red'" key="content-visible">if red 면 표시</span>
-      <span v-else-if="fruits.color === 'yellow'" key="content-visible">if yellow 면 표시</span>
-      <span v-else key="content-visible">else 그 외 이면 표시</span>
-    </p>
-    <p>LIST에 요소 추가(push, unshift) : 과일 추가하기
-      <input type="text" v-model="fruits.name" placeholder="과일명을 입력하세요.">
-      <button v-on:click="show=!show">과일 추가하기</button>
-    </p>
+    <div class="content">
+      <header class="basic" v-bind:class="{ compact: scrollY > 50 }">
+        50px 이상 스크롤했으면, .compact 클래스 추가하기
+      </header>
+      <p>템플릿 제어 디렉티브<br>
+        <span>v-pre</span> pre태그와 동일. 정적 컨텐츠로 인식. <br>
+        <span>v-once</span> 한번만 데이터 바인딩, 그 후 정적 컨텐츠로 인식. <br>
+        <span>v-text</span> 태그 안에 {{}} 이것만 있으면, 태그에 v-text=""로 입력 가능  <br>
+        <span>v-html</span> html 태그를 그대로 랜더링 해야 할 때. <br>
+        <span>v-cloak</span> 인스턴스 준비가 끝나면 제거하기. 이 속성이 있는 동안 투명도를 0으로 하고 animate 하면 자연스럽게 로딩됨.  <br>
+      </p>
+      <p>이벤트 핸들러 : <a href="https://kr.vuejs.org/v2/guide/events.html#Key-Codes">공식문서 참고</a></p>
+      <p>폼 입력 바인딩 : <a href="https://kr.vuejs.org/v2/guide/forms.html#%EB%AC%B8%EC%9E%90%EC%97%B4">공식문서 참고</a></p>
+      <p>이미지 로드 후에 나타나게 하기:  
+        <span>
+          <a href="big_img.jpg" target="_blank"><img src="big_img.jpg" class="thumbnail" v-on:load="show=true" v-bind:class="{hide:!show}"></a>
+        </span>
+      </p>
+      <p>데이터 바인딩 예시 : <input type="text" v-model="message.value" placeholder="텍스트를 입력하세요."> <br>{{ message.value }} (길이:{{ message.value.length }})</p>
+      <p>for문 예시 : 
+          <span v-for="item in fruits">{{ item.name }}({{ item.color }})</span>
+      </p>
+      <p>배열 예시 : {{ num }}번째 : <span>{{ fruits[num].name }}</span></p>
+      <p>토글 예시 : 
+        <button v-on:click="show=!show">show 토글 (show : {{ show }})</button>
+        <transition>
+          <span v-if="show">show면 보인다!</span>
+        </transition>
+      </p>
+      <p> SVG 바인딩 예시(직경): 
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+          <circle cx="10" cy="10" v-bind:r="radius" fill="lightpink" />
+        </svg>
+        <input type="range" min="0" max="10" v-model="radius">
+      </p>
+      <p>for문 & IF문 예시 : red만 표시
+        <span v-for="item in fruits" v-if="item.color === 'red'">{{ item.name }}({{ item.color }})</span>
+      </p>
+      <p>IF문 예시:
+        <span v-if="fruits.color === 'red'" key="content-visible">if red 면 표시</span>
+        <span v-else-if="fruits.color === 'yellow'" key="content-visible">if yellow 면 표시</span>
+        <span v-else key="content-visible">else 그 외 이면 표시</span>
+      </p>
+      <p>특정 요소에 DOM 이름표 달기. ref : 
+        <span ref="specialSpan">얘 이름은 special-span임</span>
+      </p>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+    <p><button v-on:click="scrollTop">부드럽게 페이지 상단으로 이동하기</button></p>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+  <!-- 외부 json 파일 가져와서 내부에 특정 시점에 import 할 수 있게 해줌. -->
   <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.5/lodash.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/axios@0.17.1/dist/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/smooth-scroll@12.1.5"></script>
   <script src="main.js"></script>
 </body>
 </html>

@@ -1,5 +1,41 @@
+@-webkit-keyframes cloak-in {
+  0% {
+    opacity: 0;
+  }
+}
+
+@keyframes cloak-in {
+  0% {
+    opacity: 0;
+  }
+}
+
+#app {
+  padding-top: 70px;
+  -webkit-animation: cloak-in 1s;
+          animation: cloak-in 1s;
+}
+
+#app[v-cloak] {
+  opacity: 0;
+}
+
 body, input, button {
-  font-size: x-large;
+  font-size: large;
+}
+
+input, textarea {
+  padding: 10px 6px 8px 10px;
+}
+
+img {
+  opacity: 1;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+img .hide {
+  opacity: 0;
 }
 
 svg {
@@ -11,7 +47,7 @@ p, ol, ul {
   background-color: #efefef;
   padding: 8px 16px;
   border: 1px dotted #ccc;
-  margin: 20px;
+  margin: 10px;
 }
 
 span {
@@ -25,8 +61,8 @@ span {
 button {
   cursor: pointer;
   color: #fff;
-  background-color: #555;
-  padding: 4px 14px 8px 14px;
+  background-color: #555555;
+  padding: 8px 14px 8px 14px;
   border: 0;
   border-radius: 8px;
   -webkit-box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.253);
@@ -40,5 +76,31 @@ button {
 
 .v-enter, .v-leave-to {
   opacity: 0;
+}
+
+.thumbnail {
+  max-height: 30px;
+  max-width: 30px;
+}
+
+.basic {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 50px;
+  background-color: #333;
+  width: 100%;
+  color: #fff;
+  padding: 10px;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+  font-size: xx-large;
+}
+
+.compact {
+  height: 20px;
+  font-size: small;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
 }
 /*# sourceMappingURL=main.css.map */
