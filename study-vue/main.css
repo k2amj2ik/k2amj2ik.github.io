@@ -11,7 +11,7 @@
 }
 
 #app {
-  padding-top: 70px;
+  padding-top: 120px;
   -webkit-animation: cloak-in 1s;
           animation: cloak-in 1s;
 }
@@ -87,7 +87,7 @@ button {
   position: fixed;
   top: 0;
   left: 0;
-  height: 50px;
+  height: 100px;
   background-color: #333;
   width: 100%;
   color: #fff;
@@ -98,8 +98,8 @@ button {
 }
 
 .compact {
-  height: 20px;
-  font-size: small;
+  height: 50px;
+  font-size: medium;
   -webkit-transition: 1s ease-in-out;
   transition: 1s ease-in-out;
 }

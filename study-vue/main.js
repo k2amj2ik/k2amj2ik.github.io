@@ -28,7 +28,19 @@ var app = new Vue({
         count: 0,
         radius: 10,
         scrollY: 0,
-        timer: null
+        timer: null,
+        width: 800
+    },
+    computed: {
+        halfWidth: {
+            get: function() {
+                return this.width / 2
+            },
+            // halfWidth를 2배수한 숫자를 width에 할당하기
+            set: function(val) {
+                this.width = val * 2
+            }
+        }
     },
     created: function() {
         // 핸들러 등록하기

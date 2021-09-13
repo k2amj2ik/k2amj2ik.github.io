@@ -2,7 +2,7 @@
     0% { opacity: 0; }
 }
 #app {
-    padding-top: 70px;
+    padding-top: 120px;
     animation: cloak-in 1s;
 }
 #app[v-cloak] {
@@ -62,7 +62,7 @@ button {
     position: fixed;
     top:0;
     left:0;
-    height: 50px;
+    height: 100px;
     background-color:#333;
     width: 100%;
     color: #fff;
@@ -71,7 +71,7 @@ button {
     font-size: xx-large;
 }
 .compact {
-    height: 20px;
-    font-size: small;
+    height: 50px;
+    font-size: medium;
     transition: 1s ease-in-out;
 }

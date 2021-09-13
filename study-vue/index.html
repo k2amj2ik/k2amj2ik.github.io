@@ -8,9 +8,14 @@
 <body>
   <div id="app">
     <div class="content">
-      <header class="basic" v-bind:class="{ compact: scrollY > 50 }">
-        50px 이상 스크롤했으면, .compact 클래스 추가하기
+      <header class="basic" v-bind:class="{ compact: scrollY > 100 }">
+        100px 이상 스크롤했으면, .compact 클래스 추가하기
       </header>
+      <h1>예제</h1>
+      <p>양방향 계산기 : 
+        <input v-model.number="width"> ↔ <input v-model.number="halfWidth">
+      </p>
+      <h1>문법</h1>
       <p>템플릿 제어 디렉티브<br>
         <span>v-pre</span> pre태그와 동일. 정적 컨텐츠로 인식. <br>
         <span>v-once</span> 한번만 데이터 바인딩, 그 후 정적 컨텐츠로 인식. <br>
