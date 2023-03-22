@@ -1,0 +1,565 @@
+<!doctype html>
+<html lang="ko"><head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800">
+<link rel="stylesheet" type="text/css" href="../asset/css/css.css">
+<link rel="stylesheet" type="text/css" href="../asset/css/select.css">
+<link rel="shortcut icon" href="../asset/images/pavicon.png">
+<style type="text/css">
+</style>
+<title>Wiveel - Live Market Price</title>
+</head>
+<body style="overflow: hidden;" class="canStartEstimate">
+<a href="javascript:void(0)" class="skip_navigation">Go to Content</a>
+<div id="wrapper" class="w1230 fixWrap" style="height:100% !important; top: 0"> <!-- height and top value : handled by script -->
+	<header>
+	<div class="width">
+		<a href="javascript:void(0)" class="logo">Wiveel</a>
+		<div class="search top_search">
+			<form method="post" action="#" onsubmit="return false">
+				<input type="search" placeholder="Search Artist or Artwork">
+				<button type="submit">submit</button>
+			</form>
+		</div>
+		<div class="top_right">
+			<div class="my_infor">
+				<button type="button" class="open_myInfor tn">David Nahmad</button>
+			</div>
+			<button type="button" class="logout top_btn tn">Log Out</button>
+		</div>
+	</div>
+	</header>
+	<!-- // end of artwork step 01 -->
+	<!-- // end of artwork step 02 -->
+	<div class="artwork_03" id="add_myself_div" style="height: 100%;">
+		<div class="myself_top">
+			<div class="top">
+				<div class="width">
+					<div class="cont_left summary" id="addmyself_lot_info_tmpl" style="">
+						<div class="art_info">
+							<span class="thumb img_align" data-retry="1"><img src="http://52.192.241.211:8080/Alpha/FineArt_max100/FFF1/2811.jpg" alt="" onerror="getNoImage(this)" style="display: block; height: 56px; width: auto; margin-left: 5px; opacity: 1;" data-retry="-1"></span>
+							<p class="author">
+								Pablo PICASSO
+							</p>
+							<p class="title ti">
+								Nude, Green Leaves and Bust
+							</p>
+							<p class="category">
+								Paintings, 1932, 130 × 162 cm
+							</p>
+						</div>
+						<div class="process estimated_result_prices_values">
+							<p class="">
+								<span class="date">2010-05-04<span class="where">Christies, New York</span></span>
+								<span class="price">$ 106,482,500</span>
+							</p>
+							<p class="today">
+								<span class="date">Today</span>
+								<span class="price">$ <span class="estimate_result_price">116,500,000</span>
+								<span class="estimate_result_percent ico_ud up">+9%</span>
+								</span>
+							</p>
+							<p class="range">
+								 Est. $<span class="estimate_result_price_low">114,000,000</span> ~ $<span class="estimate_result_price_high">119,000,000</span>
+							</p>
+						</div>
+					</div>
+					<div class="cont_right your">
+						<h4 class="tit">Selected Comparable Auction Results - <span class="similar_selected_number">7</span> works</h4>
+						<div class="selected_lot_thumbs">
+							<div class="your_choice">
+								<span class="thumb img_align"><img src="http://52.192.241.211:8080/Alpha/FineArt_max100/FFF1/2326.jpg" alt="Nu au fauteuil noir" onerror="getNoImage(this)" data-retry="-1" style="display: block; height: 52px; width: auto; margin-left: 5px; opacity: 1;"></span><span class="thumb img_align"><img src="http://52.192.241.211:8080/Alpha/FineArt_max100/FFF1/1785.jpg" alt="Femme assise pres d'une fenetre" onerror="getNoImage(this)" data-retry="-1" style="display: block; height: 52px; width: auto; margin-left: 5px; opacity: 1;"></span><span class="thumb img_align"><img src="http://52.192.241.211:8080/Alpha/FineArt_max100/FFF1/3024.jpg" alt="Femme assise près d'une fenêtre" onerror="getNoImage(this)" data-retry="-1" style="display: block; height: 52px; width: auto; margin-left: 5px; opacity: 1;"></span><span class="thumb img_align"><img src="http://52.192.241.211:8080/Alpha/FineArt_max100/FFF1/1766.jpg" alt="Le rêve" onerror="getNoImage(this)" data-retry="-1" style="display: block; height: 52px; width: auto; margin-left: 7px; opacity: 1;"></span><span class="thumb img_align"><img src="http://52.192.241.211:8080/Alpha/FineArt_max100/FFF1/1678.jpg" alt="Le miroir" onerror="getNoImage(this)" data-retry="-1" style="display: block; height: 52px; width: auto; margin-left: 7px; opacity: 1;"></span><span class="thumb img_align"><img src="http://52.192.241.211:8080/Alpha/FineArt_max100/FFF1/3044.jpg" alt="Nature morte aux tulipes" onerror="getNoImage(this)" data-retry="-1" style="display: block; height: 52px; width: auto; margin-left: 6px; opacity: 1;"></span><span class="thumb img_align"><img src="http://52.192.241.211:8080/Alpha/FineArt_max100/FFF1/1493.jpg" alt="LE MIROIR" onerror="getNoImage(this)" data-retry="-1" style="display: block; height: 52px; width: auto; margin-left: 7px; opacity: 1;"></span>
+							</div>
+						</div>
+					</div>
+					<div class="apply">
+						<button type="button" class="btn_01 type_02 round" id="apply_add_myself">Apply</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="scrollY">
+			<div class="add_myself_list">
+				<form id="other_similar_form">
+					<div class="other_myself_filter">
+						<div class="width top">
+							<h3 class="tit_filter">Other Simiar Lots</h3>
+							<button type="button" class="btn_open_filter" id="other_filter_opener">See All Filters</button>
+						</div>
+						<div class="other_filter_div" id="other_filter_div">
+						</div>
+					</div>
+					<input type="hidden" name="lotSaleID" value="2811" id="form_input_lot_id">
+					<input type="hidden" name="artistID" value="1" id="form_input_artist_id">
+					<input type="hidden" name="rowCnt" value="5">
+					<input type="hidden" name="count" value="5">
+					<input type="hidden" name="startNo" value="0" id="form_input_start_no">
+					<input type="hidden" name="user_id" value="test">
+				</form>
+				<div class="width other_similar_div">
+					<table>
+					<caption>other similar lots list</caption>
+					<thead>
+					<tr class="" id="addmyself_lot_thead_tmpl" style="">
+						<th>
+							<div class="invisible">
+								Similar works
+							</div>
+						</th>
+						<th>
+							oil on canvas
+						</th>
+						<th>
+							130 ~162 ㎠
+						</th>
+						<th>
+							1932
+						</th>
+						<th style="width:20%">
+							similarity
+						</th>
+						<th>
+							choice
+						</th>
+					</tr>
+					<!-- column number can be changed by filters -->
+					</thead>
+					<tbody id="other_similar_list" data-form="#other_similar_form" class="" style="height: auto;">
+					<tr class="list_item" data-idx="2698" data-usersimilaryn="N">
+						<td>
+							<div class="art_info">
+								<div class="thumb img_align">
+									<img src="http://52.192.241.211:8080/Alpha/FineArt_max100/FFF1/2698.jpg" alt="artwork thumbnail" onerror="getNoImage(this)" data-retry="-1" style="display: block; margin: 0px 0px 0px 10px; opacity: 1;">
+								</div>
+								<div class="cont">
+									<p class="title ti ellipsis">
+										Le repos
+									</p>
+									<p class="price">
+										$ 34,736,000
+									</p>
+									<p class="price2 ">
+										<span class="n"></span><span class="v">($ 15,000,000 ~ $ 20,000,000)</span>
+									</p>
+									<p class="auction_info">
+										<span class="vender">Christies</span>
+										<span class="location">New York</span>, <span class="when">May 2006</span>
+									</p>
+								</div>
+							</div>
+						</td>
+						<td>
+							<span class="ico match"><span class="desc">oil on canvas</span></span>
+						</td>
+						<td>
+							<span class="ico match"><span class="match_desc">0%</span><span class="desc">130×162cm</span></span>
+						</td>
+						<td>
+							<span class="ico match"><span class="match_desc">0yr</span><span class="desc">1932</span></span>
+						</td>
+						<td>
+							<span class="similarity" style="opacity:0.98;">98%</span>
+						</td>
+						<td>
+							<span class="slide_on_off off" data-on="Y" data-off="N" data-idx="2698">
+							<input type="hidden" class="input" value="N">
+							<button type="button" class="btn">currently off. click to turn on</button>
+							</span>
+						</td>
+					</tr>
+					<tr class="list_item" data-idx="2326" data-usersimilaryn="N" data-data-usersimilaryn="Y">
+						<td>
+							<div class="art_info">
+								<div class="thumb img_align">
+									<img src="http://52.192.241.211:8080/Alpha/FineArt_max100/FFF1/2326.jpg" alt="artwork thumbnail" onerror="getNoImage(this)" data-retry="-1" style="display: block; margin: 0px 0px 0px 10px; opacity: 1;">
+								</div>
+								<div class="cont">
+									<p class="title ti ellipsis">
+										Nu au fauteuil noir
+									</p>
+									<p class="price">
+										$ 45,102,500
+									</p>
+									<p class="price2 ">
+										<span class="n"></span><span class="v">($ 35,000,000 ~ $ 35,000,000)</span>
+									</p>
+									<p class="auction_info">
+										<span class="vender">Christies</span>
+										<span class="location">New York</span>, <span class="when">Nov 1999</span>
+									</p>
+								</div>
+							</div>
+						</td>
+						<td>
+							<span class="ico match"><span class="desc">Oil on Canvas</span></span>
+						</td>
+						<td>
+							<span class="ico match"><span class="match_desc">0%</span><span class="desc">130×162cm</span></span>
+						</td>
+						<td>
+							<span class="ico match"><span class="match_desc">0yr</span><span class="desc">1932</span></span>
+						</td>
+						<td>
+							<span class="similarity" style="opacity:0.98;">98%</span>
+						</td>
+						<td>
+							<span class="slide_on_off on" data-on="Y" data-off="N" data-idx="2326">
+							<input type="hidden" class="input" value="Y">
+							<button type="button" class="btn">currently on. click to turn off!</button>
+							</span>
+						</td>
+					</tr>
+					<tr class="list_item" data-idx="2529" data-usersimilaryn="N">
+						<td>
+							<div class="art_info">
+								<div class="thumb img_align" data-retry="1">
+									<img src="http://52.192.241.211:8080/Alpha/FineArt_max100/FFF1/2529.jpg" alt="artwork thumbnail" onerror="getNoImage(this)" data-retry="-1" style="display: block; margin: 10px 0px 0px; opacity: 1;">
+								</div>
+								<div class="cont">
+									<p class="title ti ellipsis">
+										Femme couchée à la mèche blonde
+									</p>
+									<p class="price">
+										$ 9,338,013
+									</p>
+									<p class="price2 ">
+										<span class="n"></span><span class="v">($ 3,660,817 ~ $ 5,491,226)</span>
+									</p>
+									<p class="auction_info">
+										<span class="vender">Sothebys</span>
+										<span class="location">London</span>, <span class="when">Jun 2004</span>
+									</p>
+								</div>
+							</div>
+						</td>
+						<td>
+							<span class="ico match"><span class="desc">Oil on Canvas</span></span>
+						</td>
+						<td>
+							<span class="ico match"><span class="match_desc">0%</span><span class="desc">162×130cm</span></span>
+						</td>
+						<td>
+							<span class="ico match"><span class="match_desc">0yr</span><span class="desc">1932</span></span>
+						</td>
+						<td>
+							<span class="similarity" style="opacity:0.98;">98%</span>
+						</td>
+						<td>
+							<span class="slide_on_off off" data-on="Y" data-off="N" data-idx="2529">
+							<input type="hidden" class="input" value="N">
+							<button type="button" class="btn">currently off. click to turn on</button>
+							</span>
+						</td>
+					</tr>
+					<tr class="list_item" data-idx="2157" data-usersimilaryn="N">
+						<td>
+							<div class="art_info">
+								<div class="thumb img_align" data-retry="1">
+									<img src="http://52.192.241.211:8080/Alpha/FineArt_max100/FFF1/2157.jpg" alt="artwork thumbnail" onerror="getNoImage(this)" data-retry="-1" style="display: block; margin: 10px 0px 0px; opacity: 1;">
+								</div>
+								<div class="cont">
+									<p class="title ti ellipsis">
+										FEMME COUCHEE A LA MECHE BLONDE
+									</p>
+									<p class="price">
+										$ 4,622,500
+									</p>
+									<p class="price2 ">
+										<span class="n"></span><span class="v">($ 5,000,000 ~ $ 7,000,000)</span>
+									</p>
+									<p class="auction_info">
+										<span class="vender">Christies</span>
+										<span class="location">New York</span>, <span class="when">May 1994</span>
+									</p>
+								</div>
+							</div>
+						</td>
+						<td>
+							<span class="ico match"><span class="desc">Oil on Canvas</span></span>
+						</td>
+						<td>
+							<span class="ico match"><span class="match_desc">-1%</span><span class="desc">160×129.2cm</span></span>
+						</td>
+						<td>
+							<span class="ico match"><span class="match_desc">0yr</span><span class="desc">1932</span></span>
+						</td>
+						<td>
+							<span class="similarity" style="opacity:0.98;">98%</span>
+						</td>
+						<td>
+							<span class="slide_on_off off" data-on="Y" data-off="N" data-idx="2157">
+							<input type="hidden" class="input" value="N">
+							<button type="button" class="btn">currently off. click to turn on</button>
+							</span>
+						</td>
+					</tr>
+					<tr class="list_item" data-idx="1916" data-usersimilaryn="N">
+						<td>
+							<div class="art_info">
+								<div class="thumb img_align" data-retry="1">
+									<img src="http://52.192.241.211:8080/Alpha/FineArt_max100/FFF1/1916.jpg" alt="artwork thumbnail" onerror="getNoImage(this)" data-retry="-1" style="display: block; margin: 0px 0px 0px 10px; opacity: 1;">
+								</div>
+								<div class="cont">
+									<p class="title ti ellipsis">
+										Femme assise (Woman in a red hat)
+									</p>
+									<p class="price">
+										$ 4,400,000
+									</p>
+									<p class="price2 ">
+										<span class="n"></span><span class="v">($ 4,000,000 ~ $ 5,000,000)</span>
+									</p>
+									<p class="auction_info">
+										<span class="vender">Sothebys</span>
+										<span class="location">New York</span>, <span class="when">Nov 1988</span>
+									</p>
+								</div>
+							</div>
+						</td>
+						<td>
+							<span class="ico match"><span class="desc">Oil on Canvas</span></span>
+						</td>
+						<td>
+							<span class="ico match"><span class="match_desc">0%</span><span class="desc">129.5×162.6cm</span></span>
+						</td>
+						<td>
+							<span class="ico part"><span class="match_desc">+2yr</span><span class="desc">1934</span></span>
+						</td>
+						<td>
+							<span class="similarity" style="opacity:0.92;">92%</span>
+						</td>
+						<td>
+							<span class="slide_on_off off" data-on="Y" data-off="N" data-idx="1916">
+							<input type="hidden" class="input" value="N">
+							<button type="button" class="btn">currently off. click to turn on</button>
+							</span>
+						</td>
+					</tr>
+					<tr class="list_item" data-idx="2698" data-usersimilaryn="N">
+						<td>
+							<div class="art_info">
+								<div class="thumb img_align">
+									<img src="http://52.192.241.211:8080/Alpha/FineArt_max100/FFF1/2698.jpg" alt="artwork thumbnail" onerror="getNoImage(this)" data-retry="-1" style="display: block; margin: 0px 0px 0px 10px; opacity: 1;">
+								</div>
+								<div class="cont">
+									<p class="title ti ellipsis">
+										Le repos
+									</p>
+									<p class="price">
+										$ 34,736,000
+									</p>
+									<p class="price2 ">
+										<span class="n"></span><span class="v">($ 15,000,000 ~ $ 20,000,000)</span>
+									</p>
+									<p class="auction_info">
+										<span class="vender">Christies</span>
+										<span class="location">New York</span>, <span class="when">May 2006</span>
+									</p>
+								</div>
+							</div>
+						</td>
+						<td>
+							<span class="ico match"><span class="desc">oil on canvas</span></span>
+						</td>
+						<td>
+							<span class="ico match"><span class="match_desc">0%</span><span class="desc">130×162cm</span></span>
+						</td>
+						<td>
+							<span class="ico match"><span class="match_desc">0yr</span><span class="desc">1932</span></span>
+						</td>
+						<td>
+							<span class="similarity" style="opacity:0.98;">98%</span>
+						</td>
+						<td>
+							<span class="slide_on_off off" data-on="Y" data-off="N" data-idx="2698">
+							<input type="hidden" class="input" value="N">
+							<button type="button" class="btn">currently off. click to turn on</button>
+							</span>
+						</td>
+					</tr>
+					<tr class="list_item" data-idx="2326" data-usersimilaryn="N" data-data-usersimilaryn="Y">
+						<td>
+							<div class="art_info">
+								<div class="thumb img_align">
+									<img src="http://52.192.241.211:8080/Alpha/FineArt_max100/FFF1/2326.jpg" alt="artwork thumbnail" onerror="getNoImage(this)" data-retry="-1" style="display: block; margin: 0px 0px 0px 10px; opacity: 1;">
+								</div>
+								<div class="cont">
+									<p class="title ti ellipsis">
+										Nu au fauteuil noir
+									</p>
+									<p class="price">
+										$ 45,102,500
+									</p>
+									<p class="price2 ">
+										<span class="n"></span><span class="v">($ 35,000,000 ~ $ 35,000,000)</span>
+									</p>
+									<p class="auction_info">
+										<span class="vender">Christies</span>
+										<span class="location">New York</span>, <span class="when">Nov 1999</span>
+									</p>
+								</div>
+							</div>
+						</td>
+						<td>
+							<span class="ico match"><span class="desc">Oil on Canvas</span></span>
+						</td>
+						<td>
+							<span class="ico match"><span class="match_desc">0%</span><span class="desc">130×162cm</span></span>
+						</td>
+						<td>
+							<span class="ico match"><span class="match_desc">0yr</span><span class="desc">1932</span></span>
+						</td>
+						<td>
+							<span class="similarity" style="opacity:0.98;">98%</span>
+						</td>
+						<td>
+							<span class="slide_on_off on" data-on="Y" data-off="N" data-idx="2326">
+							<input type="hidden" class="input" value="Y">
+							<button type="button" class="btn">currently on. click to turn off!</button>
+							</span>
+						</td>
+					</tr>
+					<tr class="list_item" data-idx="2529" data-usersimilaryn="N">
+						<td>
+							<div class="art_info">
+								<div class="thumb img_align">
+									<img src="http://52.192.241.211:8080/Alpha/FineArt_max100/FFF1/2529.jpg" alt="artwork thumbnail" onerror="getNoImage(this)" data-retry="-1" style="display: block; margin: 10px 0px 0px; opacity: 1;">
+								</div>
+								<div class="cont">
+									<p class="title ti ellipsis">
+										Femme couchée à la mèche blonde
+									</p>
+									<p class="price">
+										$ 9,338,013
+									</p>
+									<p class="price2 ">
+										<span class="n"></span><span class="v">($ 3,660,817 ~ $ 5,491,226)</span>
+									</p>
+									<p class="auction_info">
+										<span class="vender">Sothebys</span>
+										<span class="location">London</span>, <span class="when">Jun 2004</span>
+									</p>
+								</div>
+							</div>
+						</td>
+						<td>
+							<span class="ico match"><span class="desc">Oil on Canvas</span></span>
+						</td>
+						<td>
+							<span class="ico match"><span class="match_desc">0%</span><span class="desc">162×130cm</span></span>
+						</td>
+						<td>
+							<span class="ico match"><span class="match_desc">0yr</span><span class="desc">1932</span></span>
+						</td>
+						<td>
+							<span class="similarity" style="opacity:0.98;">98%</span>
+						</td>
+						<td>
+							<span class="slide_on_off off" data-on="Y" data-off="N" data-idx="2529">
+							<input type="hidden" class="input" value="N">
+							<button type="button" class="btn">currently off. click to turn on</button>
+							</span>
+						</td>
+					</tr>
+					<tr class="list_item" data-idx="2157" data-usersimilaryn="N">
+						<td>
+							<div class="art_info">
+								<div class="thumb img_align">
+									<img src="http://52.192.241.211:8080/Alpha/FineArt_max100/FFF1/2157.jpg" alt="artwork thumbnail" onerror="getNoImage(this)" data-retry="-1" style="display: block; margin: 10px 0px 0px; opacity: 1;">
+								</div>
+								<div class="cont">
+									<p class="title ti ellipsis">
+										FEMME COUCHEE A LA MECHE BLONDE
+									</p>
+									<p class="price">
+										$ 4,622,500
+									</p>
+									<p class="price2 ">
+										<span class="n"></span><span class="v">($ 5,000,000 ~ $ 7,000,000)</span>
+									</p>
+									<p class="auction_info">
+										<span class="vender">Christies</span>
+										<span class="location">New York</span>, <span class="when">May 1994</span>
+									</p>
+								</div>
+							</div>
+						</td>
+						<td>
+							<span class="ico match"><span class="desc">Oil on Canvas</span></span>
+						</td>
+						<td>
+							<span class="ico match"><span class="match_desc">-1%</span><span class="desc">160×129.2cm</span></span>
+						</td>
+						<td>
+							<span class="ico match"><span class="match_desc">0yr</span><span class="desc">1932</span></span>
+						</td>
+						<td>
+							<span class="similarity" style="opacity:0.98;">98%</span>
+						</td>
+						<td>
+							<span class="slide_on_off off" data-on="Y" data-off="N" data-idx="2157">
+							<input type="hidden" class="input" value="N">
+							<button type="button" class="btn">currently off. click to turn on</button>
+							</span>
+						</td>
+					</tr>
+					<tr class="list_item" data-idx="1916" data-usersimilaryn="N">
+						<td>
+							<div class="art_info">
+								<div class="thumb img_align">
+									<img src="http://52.192.241.211:8080/Alpha/FineArt_max100/FFF1/1916.jpg" alt="artwork thumbnail" onerror="getNoImage(this)" data-retry="-1" style="display: block; margin: 0px 0px 0px 10px; opacity: 1;">
+								</div>
+								<div class="cont">
+									<p class="title ti ellipsis">
+										Femme assise (Woman in a red hat)
+									</p>
+									<p class="price">
+										$ 4,400,000
+									</p>
+									<p class="price2 ">
+										<span class="n"></span><span class="v">($ 4,000,000 ~ $ 5,000,000)</span>
+									</p>
+									<p class="auction_info">
+										<span class="vender">Sothebys</span>
+										<span class="location">New York</span>, <span class="when">Nov 1988</span>
+									</p>
+								</div>
+							</div>
+						</td>
+						<td>
+							<span class="ico match"><span class="desc">Oil on Canvas</span></span>
+						</td>
+						<td>
+							<span class="ico match"><span class="match_desc">0%</span><span class="desc">129.5×162.6cm</span></span>
+						</td>
+						<td>
+							<span class="ico part"><span class="match_desc">+2yr</span><span class="desc">1934</span></span>
+						</td>
+						<td>
+							<span class="similarity" style="opacity:0.92;">92%</span>
+						</td>
+						<td>
+							<span class="slide_on_off off" data-on="Y" data-off="N" data-idx="1916">
+							<input type="hidden" class="input" value="N">
+							<button type="button" class="btn">currently off. click to turn on</button>
+							</span>
+						</td>
+					</tr>
+					</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- // end of artwork step 03 -->
+</div>
+<a href="javascript:void(0)" class="go_top">go top of document</a>
+<footer>
+<p class="copyright">
+	© G&amp;S Art
+</p>
+</footer>
+
+
+</body></html>

@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="ko"><head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800">
+<link rel="stylesheet" type="text/css" href="../asset/css/css.css">
+<link rel="stylesheet" type="text/css" href="../asset/css/select.css">
+<link rel="shortcut icon" href="../asset/images/pavicon.png">
+<style type="text/css">
+</style>
+<title>Wiveel - Live Market Price</title>
+</head>
+<body style="overflow: hidden;" class="canStartEstimate">
+<a href="javascript:void(0)" class="skip_navigation">Go to Content</a>
+<div id="wrapper" class="w1230 fixWrap" style="height:100% !important; top: 0"> <!-- height and top value : handled by script -->
+	<header>
+	<div class="width">
+		<a href="javascript:void(0)" class="logo">Wiveel</a>
+		<div class="search top_search">
+			<form method="post" action="#" onsubmit="return false">
+				<input type="search" placeholder="Search Artist or Artwork">
+				<button type="submit">submit</button>
+			</form>
+		</div>
+		<div class="top_right">
+			<div class="my_infor">
+				<button type="button" class="open_myInfor tn">David Nahmad</button>
+			</div>
+			<button type="button" class="logout top_btn tn">Log Out</button>
+		</div>
+	</div>
+	</header>
+	<!-- // end of artwork step 01 -->
+	<div class="artwork_02" id="artwork_step_02" style="height: 1322px; padding-top: 275px;">
+		<div class="result_estimate" style="display: block; top: 0px;">
+			<div class="width" id="estimated_lot_info_tmpl">
+				<div class="cont_left summary">
+					<div class="art_info">
+						<span class="thumb img_align"><img src="http://52.192.241.211:8080/Alpha/FineArt_max100/FFF1/2811.jpg" alt="" onerror="getNoImage(this)" style="display: block; height: 56px; width: auto; margin-left: 5px; opacity: 1;" data-retry="-1"></span>
+						<p class="author">
+							Pablo PICASSO
+						</p>
+						<p class="title ti">
+							Nude, Green Leaves and Bust
+						</p>
+						<p class="category">
+							Paintings, 1932, 130 × 162 cm
+						</p>
+					</div>
+					<div class="process">
+						<p class="">
+							<span class="date">2010-05-04<span class="where">Christies, New York</span></span>
+							<span class="price">$ 106,482,500</span>
+						</p>
+						<p class="price today estimated_result_prices_values">
+							<span class="date">Today</span>
+							<span class="price">$ <span class="estimate_result_price">116,500,000</span></span>
+						</p>
+					</div>
+				</div>
+				<div class="cont_right result">
+					<div class="top">
+						<h3 class="tit">Live Market WV Estimate <a href="javascript:void(0)" class="ico_question">about WV Estimate</a></h3>
+						<button type="button" class="config"><span class="invisible">set options</span></button>
+					</div>
+					<div class="prices estimated_result_prices_values">
+						<p class="price">
+							<strong>
+							$ <span class="estimate_result_price">116,500,000</span>
+							<span class="range">Est. $ <span class="estimate_result_price_low">114,000,000</span> ~ $ <span class="estimate_result_price_high">119,000,000</span></span>
+							</strong>
+							<span class="estimate_result_percent ico_ud up">+9%</span>
+						</p>
+					</div>
+				</div>
+				<span class="invisible">
+				<input type="hidden" id="f_artist_id" value="1">
+				<input type="hidden" id="f_artist_name" value="Pablo PICASSO">
+				<input type="hidden" id="f_category_cd" value="FFF1">
+				<input type="hidden" id="f_category_name" value="Paintings">
+				<input type="hidden" id="f_yearexecuted" value="1932">
+				<input type="hidden" id="f_yearexec_from" value="">
+				<input type="hidden" id="f_yearexec_to" value="">
+				<input type="hidden" id="f_sizearea" value="000000021060">
+				<input type="hidden" id="f_size_w" value="130 ">
+				<input type="hidden" id="f_size_h" value="162 ">
+				<input type="hidden" id="f_size_d" value="0">
+				<input type="hidden" id="f_size_type" value="2">
+				<input type="hidden" id="f_medium" value="oil on canvas">
+				<input type="hidden" id="f_usd_price" value="106,482,500">
+				</span>
+				<div class="apply">
+					<button type="button" class="btn_01 type_02 round" id="apply_price_estimate">Apply</button>
+				</div>
+			</div>
+		</div>
+		<div class="scrollY">
+			<div class="set_similar_work">
+				<div class="width">
+					<div class="selected_infor">
+						 Selected Comparable Auction Results (<span class="similar_selected_number">7</span>)
+					</div>
+					<div class="similar_list ajax_calling suffleLoaded" id="similar_lot_list" data-len="4" style="height: 390px; width: 1228px; margin: 0px auto; padding-top: 390px;">
+						<div class="item_similar item list_item" data-idx="2326" data-usersimilaryn="N" style="position: absolute; top: 20px; left: 0px; transition-property: left, top; transition-timing-function: ease; transition-duration: 0.2s; opacity: 1;">
+							<div class="art_info">
+								<div class="thumb img_align">
+									<img src="http://52.192.241.211:8080/Alpha/FineArt_max100/FFF1/2326.jpg" alt="artwork thumbnail" onerror="getNoImage(this)" data-retry="-1" style="display: block; height: 80px; width: auto; margin-left: 8px; opacity: 1;">
+								</div>
+								<div class="cont">
+									<p class="title ti">
+										Nu au fauteuil noir
+									</p>
+									<div class="category">
+										<p>
+											Oil on Canvas
+										</p>
+										<p>
+											1932
+										</p>
+										<p>
+											130 × 162 cm
+										</p>
+									</div>
+									<p class="price">
+										$ 45,102,500
+									</p>
+									<p class="price2">
+										($ 35,000,000 ~ $ 35,000,000)
+									</p>
+									<p class="auction_info">
+										<span class="vender">Christies</span>, <span class="location">New York</span>, <span class="when">Nov 1999</span>
+									</p>
+								</div>
+							</div>
+							<p class="similarity">
+								<span style="opacity:0.98">98%</span>
+							</p>
+							<button type="button" class="btn_remove">remove from determinants</button>
+							<a href="javascript:void(0)" class="remove_a"><span class="x"></span>Delete</a>
+						</div>
+						<div class="item_similar item list_item" data-idx="1785" data-usersimilaryn="N" style="position: absolute; top: 20px; left: 312px; transition-property: left, top; transition-timing-function: ease; transition-duration: 0.2s; opacity: 1;">
+							<div class="art_info">
+								<div class="thumb img_align">
+									<img src="http://52.192.241.211:8080/Alpha/FineArt_max100/FFF1/1785.jpg" alt="artwork thumbnail" onerror="getNoImage(this)" data-retry="-1" style="display: block; height: 80px; width: auto; margin-left: 9px; opacity: 1;">
+								</div>
+								<div class="cont">
+									<p class="title ti">
+										Femme assise pres d'une fenetre
+									</p>
+									<div class="category">
+										<p>
+											Oil on Canvas
+										</p>
+										<p>
+											1932
+										</p>
+										<p>
+											114 × 146 cm
+										</p>
+									</div>
+									<p class="price">
+										$ 6,800,000
+									</p>
+									<p class="price2">
+										($ 10,000,000 ~ $ 10,000,000)
+									</p>
+									<p class="auction_info">
+										<span class="vender">Christies</span>, <span class="location">New York</span>, <span class="when">May 1997</span>
+									</p>
+								</div>
+							</div>
+							<p class="similarity">
+								<span style="opacity:0.92">92%</span>
+							</p>
+							<button type="button" class="btn_remove">remove from determinants</button>
+							<a href="javascript:void(0)" class="remove_a"><span class="x"></span>Delete</a>
+						</div>
+						<div class="item_similar item list_item" data-idx="3024" data-usersimilaryn="N" style="position: absolute; top: 20px; left: 624px; transition-property: left, top; transition-timing-function: ease; transition-duration: 0.2s; opacity: 1;">
+							<div class="art_info">
+								<div class="thumb img_align">
+									<img src="http://52.192.241.211:8080/Alpha/FineArt_max100/FFF1/3024.jpg" alt="artwork thumbnail" onerror="getNoImage(this)" data-retry="-1" style="display: block; height: 80px; width: auto; margin-left: 8px; opacity: 1;">
+								</div>
+								<div class="cont">
+									<p class="title ti">
+										Femme assise près d'une fenêtre
+									</p>
+									<div class="category">
+										<p>
+											oil on canvas
+										</p>
+										<p>
+											1932
+										</p>
+										<p>
+											114 × 146 cm
+										</p>
+									</div>
+									<p class="price">
+										$ 44,773,403
+									</p>
+									<p class="price2">
+										($ 39,135,879 ~ $ 54,790,231)
+									</p>
+									<p class="auction_info">
+										<span class="vender">Sothebys</span>, <span class="location">London</span>, <span class="when">Feb 2013</span>
+									</p>
+								</div>
+							</div>
+							<p class="similarity">
+								<span style="opacity:0.92">92%</span>
+							</p>
+							<button type="button" class="btn_remove">remove from determinants</button>
+							<a href="javascript:void(0)" class="remove_a"><span class="x"></span>Delete</a>
+						</div>
+						<div class="item_similar item list_item" data-idx="1766" data-usersimilaryn="N" style="position: absolute; top: 20px; left: 936px; transition-property: left, top; transition-timing-function: ease; transition-duration: 0.2s; opacity: 1;">
+							<div class="art_info">
+								<div class="thumb img_align">
+									<img src="http://52.192.241.211:8080/Alpha/FineArt_max100/FFF1/1766.jpg" alt="artwork thumbnail" onerror="getNoImage(this)" data-retry="-1" style="display: block; height: 80px; width: auto; margin-left: 11px; opacity: 1;">
+								</div>
+								<div class="cont">
+									<p class="title ti">
+										Le rêve
+									</p>
+									<div class="category">
+										<p>
+											Oil on Canvas
+										</p>
+										<p>
+											1932
+										</p>
+										<p>
+											97.2 × 129.8 cm
+										</p>
+									</div>
+									<p class="price">
+										$ 48,402,500
+									</p>
+									<p class="price2">
+										($ 30,000,000 ~ $ 30,000,000)
+									</p>
+									<p class="auction_info">
+										<span class="vender">Christies</span>, <span class="location">New York</span>, <span class="when">Nov 1997</span>
+									</p>
+								</div>
+							</div>
+							<p class="similarity">
+								<span style="opacity:0.86">86%</span>
+							</p>
+							<button type="button" class="btn_remove">remove from determinants</button>
+							<a href="javascript:void(0)" class="remove_a"><span class="x"></span>Delete</a>
+						</div>
+						<div class="item_similar item list_item" data-idx="1678" data-usersimilaryn="N" style="position: absolute; top: 215px; left: 0px; transition-property: left, top; transition-timing-function: ease; transition-duration: 0.2s; opacity: 1;">
+							<div class="art_info">
+								<div class="thumb img_align">
+									<img src="http://52.192.241.211:8080/Alpha/FineArt_max100/FFF1/1678.jpg" alt="artwork thumbnail" onerror="getNoImage(this)" data-retry="-1" style="display: block; height: 80px; width: auto; margin-left: 11px; opacity: 1;">
+								</div>
+								<div class="cont">
+									<p class="title ti">
+										Le miroir
+									</p>
+									<div class="category">
+										<p>
+											Oil on Canvas
+										</p>
+										<p>
+											1932
+										</p>
+										<p>
+											96.8 × 130.2 cm
+										</p>
+									</div>
+									<p class="price">
+										$ 20,022,500
+									</p>
+									<p class="price2">
+										($ 19,021,375 ~ $ 21,023,625)
+									</p>
+									<p class="auction_info">
+										<span class="vender">Christies</span>, <span class="location">New York</span>, <span class="when">Nov 1995</span>
+									</p>
+								</div>
+							</div>
+							<p class="similarity">
+								<span style="opacity:0.86">86%</span>
+							</p>
+							<button type="button" class="btn_remove">remove from determinants</button>
+							<a href="javascript:void(0)" class="remove_a"><span class="x"></span>Delete</a>
+						</div>
+						<div class="item_similar item list_item" data-idx="3044" data-usersimilaryn="N" style="position: absolute; top: 215px; left: 312px; transition-property: left, top; transition-timing-function: ease; transition-duration: 0.2s; opacity: 1;">
+							<div class="art_info">
+								<div class="thumb img_align">
+									<img src="http://52.192.241.211:8080/Alpha/FineArt_max100/FFF1/3044.jpg" alt="artwork thumbnail" onerror="getNoImage(this)" data-retry="-1" style="display: block; height: 80px; width: auto; margin-left: 10px; opacity: 1;">
+								</div>
+								<div class="cont">
+									<p class="title ti">
+										Nature morte aux tulipes
+									</p>
+									<div class="category">
+										<p>
+											oil on canvas
+										</p>
+										<p>
+											1932
+										</p>
+										<p>
+											97 × 130 cm
+										</p>
+									</div>
+									<p class="price">
+										$ 41,522,500
+									</p>
+									<p class="price2">
+										($ 35,000,000 ~ $ 50,000,000)
+									</p>
+									<p class="auction_info">
+										<span class="vender">Sothebys</span>, <span class="location">New York</span>, <span class="when">Nov 2012</span>
+									</p>
+								</div>
+							</div>
+							<p class="similarity">
+								<span style="opacity:0.86">86%</span>
+							</p>
+							<button type="button" class="btn_remove">remove from determinants</button>
+							<a href="javascript:void(0)" class="remove_a"><span class="x"></span>Delete</a>
+						</div>
+						<div class="item_similar item list_item" data-idx="1493" data-usersimilaryn="N" style="position: absolute; top: 215px; left: 624px; transition-property: left, top; transition-timing-function: ease; transition-duration: 0.2s; opacity: 1;">
+							<div class="art_info">
+								<div class="thumb img_align">
+									<img src="http://52.192.241.211:8080/Alpha/FineArt_max100/FFF1/1493.jpg" alt="artwork thumbnail" onerror="getNoImage(this)" data-retry="-1" style="display: block; height: 80px; width: auto; margin-left: 10px; opacity: 1;">
+								</div>
+								<div class="cont">
+									<p class="title ti">
+										LE MIROIR
+									</p>
+									<div class="category">
+										<p>
+											Oil on Canvas
+										</p>
+										<p>
+											1932
+										</p>
+										<p>
+											97 × 130.7 cm
+										</p>
+									</div>
+									<p class="price">
+										$ 26,400,000
+									</p>
+									<p class="price2">
+										($ 20,000,000 ~ $ 30,000,000)
+									</p>
+									<p class="auction_info">
+										<span class="vender">Sothebys</span>, <span class="location">New York</span>, <span class="when">Nov 1989</span>
+									</p>
+								</div>
+							</div>
+							<p class="similarity">
+								<span style="opacity:0.86">86%</span>
+							</p>
+							<button type="button" class="btn_remove">remove from determinants</button>
+							<a href="javascript:void(0)" class="remove_a"><span class="x"></span>Delete</a>
+						</div>
+					</div>
+					<!-- similar lot list - preset : all list download... -->
+					<a href="javascript:void(0)" class="add_myself" id="match_more_btn" style="position: absolute; top: 315px; left: 936px;">+ Match More</a>
+					<div class="questions" style="top: 410px;">
+						<a href="javascript:void(0)" class="btn_question" onclick="document.getElementById('question_tooltip_01').style.display='block';document.getElementById('question_tooltip_01').style.opacity='1'"><span class="invisible">about view more similar works</span></a>
+						<div class="question_tooltip" id="question_tooltip_01">
+							 Customize comparable<br>
+							 auction results to receive a more<br>
+							 accurate Wiveel estimates.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- // end of artwork step 02 -->
+	<!-- // end of artwork step 03 -->
+</div>
+<a href="javascript:void(0)" class="go_top">go top of document</a>
+<footer>
+<p class="copyright">
+	© G&amp;S Art
+</p>
+</footer>
+
+</body></html>

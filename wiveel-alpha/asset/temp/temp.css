@@ -1,0 +1,65 @@
+.temp_circle {
+	position:fixed; left:-150px; top:-150px;
+	width:150px; height:150px; box-sizing:border-box;
+	margin:-75px 0 0 -75px;
+	border-radius:75px; overflow:hidden;
+	transition: left 1s, top 1s, opacity 0.5s;
+	z-index:1000000;
+}
+.temp_circle .circle1 {
+	position:absolute; left:50%; top:50%;
+	width:50px; height:50px; box-sizing:border-box;
+	margin:-25px 0 0 -25px;
+	border-radius:25px; overflow:hidden;
+	background:red;
+	animation-name: circle1;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	
+}
+.temp_circle .circle2 {
+	position:absolute; left:50%; top:50%;
+	width:50px; height:50px; box-sizing:border-box;
+	margin:-25px 0 0 -25px;
+	border:15px solid red;
+	border-radius:25px; overflow:hidden;
+	animation-name: circle2;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+.temp_circle .circle3 {
+	position:absolute; left:50%; top:50%;
+	width:100px; height:100px; box-sizing:border-box;
+	margin:-50px 0 0 -50px;
+	border:15px solid red;
+	border-radius:50px; overflow:hidden;
+	animation-name: circle3;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes circle1 {
+	0% {opacity:0.1;}
+	40% {opacity:0.75;}
+	50% {opacity:1;}
+	51% {opacity:0.1;}
+	90% {opacity:0.75;}
+	100% {opacity:1;}
+}
+@keyframes circle2 {
+    0% {opacity:0.3;width:50px;height:50px;margin:-25px 0 0 -25px;border-radius:25px;}
+    40% {opacity:0.5;width:100px;height:100px;margin:-50px 0 0 -50px;border-radius:50px;}
+    50% {opacity:0;width:150px;height:150px;margin:-75px 0 0 -75px;border-radius:75px;}
+    51% {opacity:0.3;width:50px;height:50px;margin:-25px 0 0 -25px;border-radius:25px;}
+	90% {opacity:0.5;width:100px;height:100px;margin:-50px 0 0 -50px;border-radius:50px;}
+	100% {opacity:0;width:150px;height:150px;margin:-75px 0 0 -75px;border-radius:75px;}
+}
+@keyframes circle3 {
+	0% {opacity:0.5;width:70px;height:70px;margin:-35px 0 0 -35px;border-radius:35px;}
+	40% {opacity:0;width:150px;height:150px;margin:-75px 0 0 -75px;border-radius:75px;}
+	41% {opacity:0;width:70px;height:70px;margin:-35px 0 0 -35px;border-radius:35px;}
+	50% {opacity:0;width:70px;height:70px;margin:-35px 0 0 -35px;border-radius:35px;}
+	51% {opacity:0.5;width:70px;height:70px;margin:-35px 0 0 -35px;border-radius:35px;}
+	90% {opacity:0;width:150px;height:150px;margin:-75px 0 0 -75px;border-radius:75px;}
+	100% {opacity:0;width:70px;height:70px;margin:-35px 0 0 -35px;border-radius:35px;}
+}

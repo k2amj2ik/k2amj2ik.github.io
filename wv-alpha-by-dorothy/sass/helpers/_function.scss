@@ -1,4 +1,0 @@
-/* 20180321 sass의 기능을 정의합니다. */
-@function trans_vw($current_width,$parents_width){
-    @return ($current_width/$parents_width)*100;
-}

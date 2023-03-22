@@ -1,0 +1,695 @@
+<!doctype html>
+<html lang="ko"><head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800">
+<link rel="stylesheet" type="text/css" href="../asset/css/css.css">
+<link rel="stylesheet" type="text/css" href="../asset/css/select.css">
+<link rel="stylesheet" type="text/css" href="../asset/css/scroll.css">
+<link rel="shortcut icon" href="../asset/images/pavicon.png">
+<style type="text/css">
+</style>
+<title>Wiveel - Live Market Price</title>
+</head>
+<body class="">
+<div id="wrapper" class="w1230">
+	<a href="javascript:void(0)" class="skip_navigation">Go to Content</a>
+	<header>
+	<div class="width">
+		<a href="javascript:void(0)" class="logo">Wiveel</a>
+		<div class="search top_search">
+			<form method="post" action="#" onsubmit="return false">
+				<input type="search" placeholder="Search Artist or Artwork">
+				<button type="submit">submit</button>
+			</form>
+		</div>
+		<div class="top_right">
+			<div class="my_infor">
+				<button type="button" class="open_myInfor tn">David Nahmad</button>
+			</div>
+			<button type="button" class="logout top_btn tn">Log Out</button>
+		</div>
+	</div>
+	</header>
+	<div class="width portfolio_top">
+		<div class="profile_img" data-retry="1">
+			<span><img src="../asset/temp/profile_02.png" alt="author profile image" data-retry="-1" style="display: block; width: 80px; height: auto; margin-top: 0px; opacity: 1;"></span>
+		</div>
+		<h1 class="author_infor"><span class="name ti">David Nahmad</span><span class="text">Portfolio</span></h1>
+	</div>
+	<div class="statistics width">
+		<div class="top">
+			<div class="prices">
+				<dl class="total">
+					<dt>Total Price <a href="javascript:void(0)" class="ico_question">about total price</a></dt>
+					<dd>$ <span id="total_price_number">488,648,360</span></dd>
+				</dl>
+				<dl class="change">
+					<dt>Actual Change</dt>
+					<dd>$ <span id="change_price_number">413,000</span><span class="ico_ud up"><span class="invisible">up</span></span></dd>
+				</dl>
+				<dl class="change">
+					<dt>Percentage Change</dt>
+					<dd><span id="change_percent_number">25.5</span>% <span class="ico_ud up"><span class="invisible">up</span></span></dd>
+				</dl>
+			</div>
+			<div class="movers">
+				<h3 class="title">Highlights</h3>
+				<div class="itm plus">
+					<div class="box">
+						<p class="tit ti">
+							Moonwalk
+						</p>
+						<span class="ico_ud s up"></span>
+						<span class="price">$143,000</span>
+						<span class="move">(30%)</span>
+					</div>
+					<p class="time">
+						11h
+					</p>
+				</div>
+				<div class="itm minus">
+					<div class="box">
+						<p class="tit ti">
+							Moonwalk
+						</p>
+						<span class="ico_ud s down"></span>
+						<span class="price">$143,000</span>
+						<span class="move">(30%)</span>
+					</div>
+					<p class="time">
+						11h
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="charts">
+			<img src="../asset/temp/charts.png" style="display:block; margin:0 auto" alt="temporary chart area">
+		</div>
+	</div>
+	<div class="authors">
+		<div class="width">
+			<div class="author_list" id="author_list" style="height: auto;">
+				<ul class="tab_list">
+					<li data-idx="1" class="on">
+					<div class="bg_chart" style="background-image:url('/web/asset/temp/bg_chart_01.png')">
+					</div>
+					<div class="img">
+						<div class="profile_img" data-retry="1">
+							<span><img src="../asset/artistImage/1.png" alt="author profile image" onerror="onerrorImg(this)" data-retry="-1" style="display: block; width: 82px; height: auto; margin-top: -9px; opacity: 1;"></span>
+						</div>
+					</div>
+					<p class="name">
+						Pablo PICASSO
+					</p>
+					<p class="price">
+						$189,398,000
+					</p>
+					<p class="moved up">
+						$413,000(25%)<span class="ico_ud up"></span>
+					</p>
+					<p class="works">
+						<em>25</em> Works
+					</p>
+					<a href="javascript:void(0)" class="btn"><span class="invisible">View Informations of Artist</span></a>
+					</li>
+					<li data-idx="5">
+					<div class="bg_chart" style="background-image:url('/web/asset/temp/bg_chart_01.png')">
+					</div>
+					<div class="img">
+						<div class="profile_img" data-retry="1">
+							<span><img src="../asset/artistImage/5.png" alt="author profile image" onerror="onerrorImg(this)" data-retry="-1" style="display: block; width: 82px; height: auto; margin-top: -11px; opacity: 1;"></span>
+						</div>
+					</div>
+					<p class="name">
+						Jeff Koons
+					</p>
+					<p class="price">
+						$150,103,719
+					</p>
+					<p class="moved up">
+						$27,318,876(18.2%)<span class="ico_ud up"></span>
+					</p>
+					<p class="works">
+						<em>5</em> Works
+					</p>
+					<a href="javascript:void(0)" class="btn"><span class="invisible">View Informations of Artist</span></a>
+					</li>
+					<li data-idx="6">
+					<div class="bg_chart" style="background-image:url('/web/asset/temp/bg_chart_01.png')">
+					</div>
+					<div class="img">
+						<div class="profile_img">
+							<span></span>
+						</div>
+					</div>
+					<p class="name">
+						Christopher Wool
+					</p>
+					<p class="price">
+						$87,630,825
+					</p>
+					<p class="moved up">
+						$11,830,161(13.5%)<span class="ico_ud up"></span>
+					</p>
+					<p class="works">
+						<em>6</em> Works
+					</p>
+					<a href="javascript:void(0)" class="btn"><span class="invisible">View Informations of Artist</span></a>
+					</li>
+					<li data-idx="2">
+					<div class="bg_chart" style="background-image:url('/web/asset/temp/bg_chart_01.png')">
+					</div>
+					<div class="img">
+						<div class="profile_img" data-retry="1">
+							<span><img src="../asset/artistImage/2.png" alt="author profile image" onerror="onerrorImg(this)" data-retry="-1" style="display: block; height: 82px; width: auto; margin-left: -10px; opacity: 1;"></span>
+						</div>
+					</div>
+					<p class="name">
+						Andy Warhol
+					</p>
+					<p class="price">
+						$569,698,842
+					</p>
+					<p class="moved up">
+						$158,376,278(27.8%)<span class="ico_ud up"></span>
+					</p>
+					<p class="works">
+						<em>32</em> Works
+					</p>
+					<a href="javascript:void(0)" class="btn"><span class="invisible">View Informations of Artist</span></a>
+					</li>
+				</ul>
+				<div class="informations_by_author" id="informations_by_author_0">
+					<div class="artworks_list scrolls mCustomScrollbar _mCS_1 mCS-autoHide mCS_disabled" style="overflow: visible;">
+						<div id="mCSB_1" class="mCustomScrollBox mCS-minimal mCSB_vertical mCSB_outside" tabindex="0">
+							<div id="mCSB_1_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0px; left:0;" dir="ltr">
+								<div class="inner" data-form="#artist_infor_form" data-param="rowCnt=8&amp;artistID=undefined" style="height: auto;">
+									<div class="item list_item" data-idx="3092">
+										<a href="javascript:void(0)">
+										<div class="art_info">
+											<div class="thumb img_align" data-retry="2">
+												<img src="http://52.192.241.211:8080/Alpha/FineArt_max100/FFF1/3092.jpg" alt="artwork thumbnail" onerror="getNoImage(this)" class="mCS_img_loaded" data-retry="-1" style="display: block; width: 95px; height: auto; margin-top: 9px; opacity: 1;">
+											</div>
+											<span class="rank">1</span>
+											<div class="cont">
+												<p class="title ti">
+													Les femmes d'Alger (Version 'O')
+												</p>
+												<p class="category">
+													oil on canvas, 1955, 146.4 ×114 cm
+												</p>
+												<p class="price">
+													$ 179,365,000
+												</p>
+												<p class="range no_price">
+													<span class="n">Estimate Upon Request.</span><span class="v">$ 0 ~ $ 0</span>
+												</p>
+											</div>
+										</div>
+										</a>
+										<button type="button" class="btn_mover up" data-qclose="true" data-snap=".item" data-div="#moved_list_wrapper">
+										<span class="ico_ud s up">up</span>
+										<span class="cont">
+										<span class="price">+$55,000</span><br>
+										<span class="within">Within 2 mon</span>
+										</span>
+										</button>
+									</div>
+									<div class="item list_item" data-idx="2811">
+										<a href="javascript:void(0)">
+										<div class="art_info">
+											<div class="thumb img_align">
+												<img src="http://52.192.241.211:8080/Alpha/FineArt_max100/FFF1/2811.jpg" alt="artwork thumbnail" onerror="getNoImage(this)" class="mCS_img_loaded" data-retry="-1" style="display: block; height: 95px; width: auto; margin-left: 9px; opacity: 1;">
+											</div>
+											<span class="rank">2</span>
+											<div class="cont">
+												<p class="title ti">
+													Nude, Green Leaves and Bust
+												</p>
+												<p class="category">
+													oil on canvas, 1932, 130 ×162 cm
+												</p>
+												<p class="price">
+													$ 106,482,500
+												</p>
+												<p class="range no_price">
+													<span class="n">Estimate Upon Request.</span><span class="v">$ 0 ~ $ 0</span>
+												</p>
+											</div>
+										</div>
+										</a>
+										<button type="button" class="btn_mover down" data-qclose="true" data-snap=".item" data-div="#moved_list_wrapper">
+										<span class="ico_ud s down">down</span>
+										<span class="cont">
+										<span class="price">-$84,000</span><br>
+										<span class="within">Within 2 mon</span>
+										</span>
+										</button>
+									</div>
+									<div class="item list_item snapped" data-idx="2517">
+										<a href="javascript:void(0)">
+										<div class="art_info">
+											<div class="thumb img_align" data-retry="2">
+												<img src="http://52.192.241.211:8080/Alpha/FineArt_max100/FFF1/2517.jpg" alt="artwork thumbnail" onerror="getNoImage(this)" class="mCS_img_loaded" data-retry="-1" style="display: block; height: 95px; width: auto; margin-left: 10px; opacity: 1;">
+											</div>
+											<span class="rank">3</span>
+											<div class="cont">
+												<p class="title ti">
+													Garçon à la pipe
+												</p>
+												<p class="category">
+													Oil on Canvas, 1905, 81.3 ×99.7 cm
+												</p>
+												<p class="price">
+													$ 104,168,000
+												</p>
+												<p class="range no_price">
+													<span class="n">Estimate Upon Request.</span><span class="v">$ 0 ~ $ 0</span>
+												</p>
+											</div>
+										</div>
+										</a>
+										<button type="button" class="btn_mover down lay_opener_opened" data-qclose="true" data-snap=".item" data-div="#moved_list_wrapper">
+										<span class="ico_ud s down">down</span>
+										<span class="cont">
+										<span class="price">-$84,000</span><br>
+										<span class="within">Within 2 mon</span>
+										</span>
+										</button>
+									</div>
+									<div class="item list_item" data-idx="2703">
+										<a href="javascript:void(0)">
+										<div class="art_info">
+											<div class="thumb img_align" data-retry="2">
+												<img src="http://52.192.241.211:8080/Alpha/FineArt_max100/FFF1/2703.jpg" alt="artwork thumbnail" onerror="getNoImage(this)" class="mCS_img_loaded" data-retry="-1" style="display: block; width: 95px; height: auto; margin-top: 0px; opacity: 1;">
+											</div>
+											<div class="cont">
+												<p class="title ti">
+													Dora Maar au chat
+												</p>
+												<p class="category">
+													oil on canvas, 1941, 97 ×129.5 cm
+												</p>
+												<p class="price">
+													$ 95,216,000
+												</p>
+												<p class="range ">
+													<span class="n">Estimate Upon Request.</span><span class="v">$ 90,455,200 ~ $ 99,976,800</span>
+												</p>
+											</div>
+										</div>
+										</a>
+										<button type="button" class="btn_mover down" data-qclose="true" data-snap=".item" data-div="#moved_list_wrapper">
+										<span class="ico_ud s down">down</span>
+										<span class="cont">
+										<span class="price">-$84,000</span><br>
+										<span class="within">Within 2 mon</span>
+										</span>
+										</button>
+									</div>
+									<div class="item list_item" data-idx="3093">
+										<a href="javascript:void(0)">
+										<div class="art_info">
+											<div class="thumb img_align" data-retry="2">
+												<img src="http://52.192.241.211:8080/Alpha/FineArt_max100/FFF1/3093.jpg" alt="artwork thumbnail" onerror="getNoImage(this)" class="mCS_img_loaded" data-retry="-1" style="display: block; height: 95px; width: auto; margin-left: 7px; opacity: 1;">
+											</div>
+											<div class="cont">
+												<p class="title ti">
+													Buste de femme (Femme à la résille)
+												</p>
+												<p class="category">
+													oil on canvas, 1938, 54 ×65.1 cm
+												</p>
+												<p class="price">
+													$ 67,365,000
+												</p>
+												<p class="range no_price">
+													<span class="n">Estimate Upon Request.</span><span class="v">$ 0 ~ $ 0</span>
+												</p>
+											</div>
+										</div>
+										</a>
+										<button type="button" class="btn_mover down" data-qclose="true" data-snap=".item" data-div="#moved_list_wrapper">
+										<span class="ico_ud s down">down</span>
+										<span class="cont">
+										<span class="price">-$84,000</span><br>
+										<span class="within">Within 2 mon</span>
+										</span>
+										</button>
+									</div>
+									<div class="item list_item" data-idx="2307">
+										<a href="javascript:void(0)">
+										<div class="art_info">
+											<div class="thumb img_align" data-retry="2">
+												<img src="http://52.192.241.211:8080/Alpha/FineArt_max100/FFF1/2307.jpg" alt="artwork thumbnail" onerror="getNoImage(this)" class="mCS_img_loaded" data-retry="-1" style="display: block; height: 95px; width: auto; margin-left: 13px; opacity: 1;">
+											</div>
+											<div class="cont">
+												<p class="title ti">
+													Femme aux bras croisés
+												</p>
+												<p class="category">
+													Oil on Canvas, 1901, 58.4 ×81.3 cm
+												</p>
+												<p class="price">
+													$ 55,006,000
+												</p>
+												<p class="range no_price">
+													<span class="n">Estimate Upon Request.</span><span class="v">$ 0 ~ $ 0</span>
+												</p>
+											</div>
+										</div>
+										</a>
+										<button type="button" class="btn_mover down" data-qclose="true" data-snap=".item" data-div="#moved_list_wrapper">
+										<span class="ico_ud s down">down</span>
+										<span class="cont">
+										<span class="price">-$84,000</span><br>
+										<span class="within">Within 2 mon</span>
+										</span>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="mCSB_1_scrollbar_vertical" class="mCSB_scrollTools mCSB_1_scrollbar mCS-minimal mCSB_scrollTools_vertical" style="display: none;">
+							<div class="mCSB_draggerContainer">
+								<div id="mCSB_1_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 50px; display: block; height: 88px; max-height: 431px;" oncontextmenu="return false;">
+									<div class="mCSB_dragger_bar" style="line-height: 50px;">
+									</div>
+								</div>
+								<div class="mCSB_draggerRail">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="clear">
+						<button type="button" class="boxBtn small">Read More Works</button>
+					</div>
+					<div class="news_list" data-form="#artist_infor_form" style="height: auto;">
+						<div class="item list_item">
+							<a href="javascript:void(0)" style="display:block">
+							<p class="top">
+								<strong class="cap">Exhibition of Picasso</strong>
+								<span class="date">2015.04.16</span>
+								<span class="media">New York Times</span>
+							</p>
+							<p class="title">
+								Exhibition of Picasso’s late paintings and prints at the Gagosian Gallery.
+							</p>
+							<div class="cont ellipsis">
+								In the main, Picasso only got better. That’s the take-away from the staggering exhibition of Picasso’s late paintings and prints at the Gagosian Gallery. One of the best shows to be seen in New York since the turn of the century, it proves that...
+							</div>
+							</a>
+						</div>
+						<div class="item list_item">
+							<a href="javascript:void(0)" style="display:block">
+							<p class="top">
+								<strong class="cap">'La Coiffeuse' Returned to Paris Museum'</strong>
+								<span class="date">2015.09.24</span>
+								<span class="media">New York Times</span>
+							</p>
+							<p class="title">
+								Stolen Picasso Masterpiece 'La Coiffeuse' Returned to Paris Museum
+							</p>
+							<div class="cont ellipsis">
+								PARIS — A masterpiece of Cubism art by artist Pablo Picasso that was stolen more than a decade ago was returned to the Pompidou Centre on Thursday after custom officials intercepted it in 2014 at a U.S. airport. "La Coiffeuse" was reported stolen in 2001 when...
+							</div>
+							</a>
+						</div>
+						<div class="item list_item">
+							<a href="javascript:void(0)" style="display:block">
+							<p class="top">
+								<strong class="cap">Picasso and Giacometti Artworks</strong>
+								<span class="date">2015.05.11</span>
+								<span class="media">New York Times</span>
+							</p>
+							<p class="title">
+								Picasso and Giacometti Artworks Top $120 Million Each at Christie’s Sale
+							</p>
+							<div class="cont ellipsis">
+								Picasso’s “Les Femmes d’Alger (Version ‘O’)” sold for a record $179.4 million with fees at a Christie’s auction on Monday.Credit 2015 Estate of Pablo Picasso/Artists Rights Society (ARS), New York, via Christie's
+							</div>
+							</a>
+						</div>
+						<div class="item list_item">
+							<a href="javascript:void(0)" style="display:block">
+							<p class="top">
+								<strong class="cap">Picasso Museum in Paris</strong>
+								<span class="date">2014.10.24</span>
+								<span class="media">New York Times</span>
+							</p>
+							<p class="title">
+								Picasso Museum in Paris to Open Doors After 5-Year Renovation
+							</p>
+							<div class="cont ellipsis">
+								PARIS — After five years locked in storage or roaming on traveling exhibitions, a trove of Pablo Picasso’s works have been put back on display in their remodeled home, a 17th-century mansion in the Marais district. On Saturday, the heavy doors of the mansion will...
+							</div>
+							</a>
+						</div>
+					</div>
+					<button type="button" class="close">╳<span class="invisible">close</span></button>
+				</div>
+			</div>
+			<div class="informations_by_author" id="informations_by_author">
+				<div class="artworks_list">
+					<div class="inner" data-form="#artist_infor_form">
+					</div>
+				</div>
+				<div class="clear">
+					<button type="button" class="boxBtn small">Read More Works</button>
+				</div>
+				<div class="news_list" data-form="#artist_infor_form">
+				</div>
+				<button type="button" class="close">╳<span class="invisible">close</span></button>
+			</div>
+		</div>
+	</div>
+</div>
+<form id="artist_infor_form">
+	<input type="hidden" id="input_artist_id" name="artistID" value="">
+	<input type="hidden" id="input_lot_sale_id" name="lotSaleID" value="2517">
+	<input type="hidden" id="input_moved_yn" name="movedYN" value="1">
+	<input type="hidden" name="rowCnt" value="6">
+</form>
+<a href="javascript:void(0)" class="go_top">go top of document</a>
+<footer>
+<p class="copyright">
+	© G&amp;S Art
+</p>
+</footer>
+<div class="layer_mask" id="temp_layer">
+	<div class="flexible_layer_wrap prevent_quick_close" style="width: 560px; left: 201px; top: 1638px; opacity: 1;">	<!-- layer popup -->
+		<div class="market_movers_lay" data-close="moverLayClose">
+			<p class="title">
+				Market Movers
+			</p>
+			<div class="mover_list scrolls">	<!-- use mCustomScrollBar plugin for smooth scrollbar.. -->
+				<ul class="movers_ul ajax_calling" data-form="#artist_infor_form" style="height: 0px;">
+					<li class="list_item">
+					<div class="wrap">
+						<div class="when">
+							<span class="ago">2 mon ago</span>
+							<span class="date">2015-08-21</span>
+						</div>
+						<div class="thumb img_align">
+							<img src="http://52.192.241.211:8080/Alpha/FineArt_max100/FFF1/3092.jpg" alt="artwork thumbnail" onerror="getNoImage(this)" class="mCS_img_loaded" data-retry="-1" style="display: block; width: 55px; height: auto; margin-top: 5px; opacity: 1;">
+						</div>
+						<p class="ellipsis mover ti">
+							Les femmes d'Alger (Version 'O')
+						</p>
+						<div class="change">
+							<span class="ico_ud up">up</span>
+							<div class="cont">
+								<p class="price">
+									+$55,000
+								</p>
+								<p class="percent">
+									+4%
+								</p>
+							</div>
+						</div>
+					</div>
+					</li>
+					<li class="list_item">
+					<div class="wrap">
+						<div class="when">
+							<span class="ago">2 mon ago</span>
+							<span class="date">2015-08-21</span>
+						</div>
+						<div class="thumb img_align">
+							<img src="http://52.192.241.211:8080/Alpha/FineArt_max100/FFF1/2811.jpg" alt="artwork thumbnail" onerror="getNoImage(this)" class="mCS_img_loaded" data-retry="-1" style="display: block; height: 55px; width: auto; margin-left: 5px; opacity: 1;">
+						</div>
+						<p class="ellipsis mover ti">
+							Nude, Green Leaves and Bust
+						</p>
+						<div class="change">
+							<span class="ico_ud down">down</span>
+							<div class="cont">
+								<p class="price">
+									-$84,000
+								</p>
+								<p class="percent">
+									-23%
+								</p>
+							</div>
+						</div>
+					</div>
+					</li>
+					<li class="list_item">
+					<div class="wrap">
+						<div class="when">
+							<span class="ago">2 mon ago</span>
+							<span class="date">2015-08-21</span>
+						</div>
+						<div class="thumb img_align">
+							<img src="http://52.192.241.211:8080/Alpha/FineArt_max100/FFF1/2517.jpg" alt="artwork thumbnail" onerror="getNoImage(this)" class="mCS_img_loaded" data-retry="-1" style="display: block; height: 55px; width: auto; margin-left: 6px; opacity: 1;">
+						</div>
+						<p class="ellipsis mover ti">
+							Garçon à la pipe
+						</p>
+						<div class="change">
+							<span class="ico_ud down">down</span>
+							<div class="cont">
+								<p class="price">
+									-$84,000
+								</p>
+								<p class="percent">
+									-23%
+								</p>
+							</div>
+						</div>
+					</div>
+					</li>
+					<li class="list_item">
+					<div class="wrap">
+						<div class="when">
+							<span class="ago">2 mon ago</span>
+							<span class="date">2015-08-21</span>
+						</div>
+						<div class="thumb img_align">
+							<img src="http://52.192.241.211:8080/Alpha/FineArt_max100/FFF1/2703.jpg" alt="artwork thumbnail" onerror="getNoImage(this)" class="mCS_img_loaded" data-retry="-1" style="display: block; width: 55px; height: auto; margin-top: 0px; opacity: 1;">
+						</div>
+						<p class="ellipsis mover ti">
+							Dora Maar au chat
+						</p>
+						<div class="change">
+							<span class="ico_ud down">down</span>
+							<div class="cont">
+								<p class="price">
+									-$84,000
+								</p>
+								<p class="percent">
+									-23%
+								</p>
+							</div>
+						</div>
+					</div>
+					</li>
+					<li class="list_item">
+					<div class="wrap">
+						<div class="when">
+							<span class="ago">2 mon ago</span>
+							<span class="date">2015-08-21</span>
+						</div>
+						<div class="thumb img_align">
+							<img src="http://52.192.241.211:8080/Alpha/FineArt_max100/FFF1/3093.jpg" alt="artwork thumbnail" onerror="getNoImage(this)" class="mCS_img_loaded" data-retry="-1" style="display: block; height: 55px; width: auto; margin-left: 4px; opacity: 1;">
+						</div>
+						<p class="ellipsis mover ti">
+							Buste de femme (Femme à la résille)
+						</p>
+						<div class="change">
+							<span class="ico_ud down">down</span>
+							<div class="cont">
+								<p class="price">
+									-$84,000
+								</p>
+								<p class="percent">
+									-23%
+								</p>
+							</div>
+						</div>
+					</div>
+					</li>
+					<li class="list_item">
+					<div class="wrap">
+						<div class="when">
+							<span class="ago">2 mon ago</span>
+							<span class="date">2015-08-21</span>
+						</div>
+						<div class="thumb img_align">
+							<img src="http://52.192.241.211:8080/Alpha/FineArt_max100/FFF1/2307.jpg" alt="artwork thumbnail" onerror="getNoImage(this)" class="mCS_img_loaded" data-retry="-1" style="display: block; height: 55px; width: auto; margin-left: 7px; opacity: 1;">
+						</div>
+						<p class="ellipsis mover ti">
+							Femme aux bras croisés
+						</p>
+						<div class="change">
+							<span class="ico_ud down">down</span>
+							<div class="cont">
+								<p class="price">
+									-$84,000
+								</p>
+								<p class="percent">
+									-23%
+								</p>
+							</div>
+						</div>
+					</div>
+					</li>
+					<li class="list_item">
+					<div class="wrap">
+						<div class="when">
+							<span class="ago">2 mon ago</span>
+							<span class="date">2015-08-21</span>
+						</div>
+						<div class="thumb img_align">
+							<img src="http://52.192.241.211:8080/Alpha/FineArt_max100/FFF1/2778.jpg" alt="artwork thumbnail" onerror="getNoImage(this)" class="mCS_img_loaded" data-retry="-1" style="display: block; height: 55px; width: auto; margin-left: 6px; opacity: 1;">
+						</div>
+						<p class="ellipsis mover ti">
+							Portrait d'Angel Fernández de Soto
+						</p>
+						<div class="change">
+							<span class="ico_ud up">up</span>
+							<div class="cont">
+								<p class="price">
+									+$55,000
+								</p>
+								<p class="percent">
+									+4%
+								</p>
+							</div>
+						</div>
+					</div>
+					</li>
+					<li class="list_item">
+					<div class="wrap">
+						<div class="when">
+							<span class="ago">2 mon ago</span>
+							<span class="date">2015-08-21</span>
+						</div>
+						<div class="thumb img_align">
+							<img src="http://52.192.241.211:8080/Alpha/FineArt_max100/FFF1/1766.jpg" alt="artwork thumbnail" onerror="getNoImage(this)" class="mCS_img_loaded" data-retry="-1" style="display: block; height: 55px; width: auto; margin-left: 7px; opacity: 1;">
+						</div>
+						<p class="ellipsis mover ti">
+							Le rêve
+						</p>
+						<div class="change">
+							<span class="ico_ud up">up</span>
+							<div class="cont">
+								<p class="price">
+									+$55,000
+								</p>
+								<p class="percent">
+									+4%
+								</p>
+							</div>
+						</div>
+					</div>
+					</li>
+				</ul>
+			</div>
+			<button type="button" class="close_layer" onclick="document.getElementById('temp_layer').style.display='none'">╳<span class="invisible">close</span></button>
+		</div>
+	</div>
+</div>
+
+</body></html>

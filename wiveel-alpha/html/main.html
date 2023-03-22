@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800">
+		<link rel="stylesheet" type="text/css" href="../asset/css/css.css">
+		<link rel="stylesheet" type="text/css" href="../asset/css/select.css">
+		<link rel="shortcut icon" href="../web/asset/images/pavicon.png">
+		<style type="text/css"></style>
+		<title>Wiveel - Live Market Price</title>
+		<style type="text/css" style="display:none">
+			body {overflow-y:scroll;}
+			.main {}
+			#header {position:fixed; top:0; left:0; width:100%; padding:20px 0; font-size:18px; color:#b56d09; text-align:center;}
+			.main .main_title {font-size:70px; color:#000; font-weight:700; text-align:center; margin:100px 0 0;}
+			.main .main_title2 {font-size:34px; font-weight:300; text-align:center; margin:30px 0 0;}
+			.main .main_search {max-width:770px; margin:50px auto 0;}
+			.main .main_search .input_wrap {position:relative; padding-right:60px; width:100%; height:66px; box-sizing:border-box; border-bottom:1px solid #999;}
+			.main .main_search .input_wrap::before {content:''; position:absolute; left:21px; bottom:12px; width:3px; height:38px; background:#000;}
+			.main .main_search .input_txt {display:block; box-sizing:border-box; width:100%; height:100%; padding:18px 35px; color:#000000; font-size:24px; font-weight:300; border:0; background:transparent;}
+			::-webkit-input-placeholder {color:#000;}
+			::-moz-placeholder {color:#000;}
+			::-ms-input-placeholder {color:#000;}
+			.main .main_search .submit {position:absolute; top:10px; right:10px; width:46px; height:46px; color:#000; font-size:30px; text-align:center;}
+			.main .main_search .autocomplete {position:absolute; top:66px; left:0; width:100%; max-height:300px; box-sizing:border-box; padding:10px 0; border:1px solid #d3d3d3; color:#868686; font-size:20px; text-align:left; overflow-x:hidden; overflow-y:auto; z-index:10; background:#fff;}
+			.main .main_search .autocomplete a {display:block; box-sizing:border-box; width:100%; padding:5px 20px; line-height:40px;}
+			.main .main_search .autocomplete a:hover {background:#f0f0f0;}
+			.main .main_chart {margin-top:0px;}
+			.main .main_chart .navigator {width:400px; margin:40px auto; text-align:center;}
+			.main .main_chart .navigator .title {color:#444; font-size:14px; font-weight:700;}
+			.main .main_chart .navigator .cont {position:relative; height:36px; padding:0 40px; font-size:20px; color:#7f7f7f; white-space:nowrap;}
+			.main .main_chart .navigator .cont .name {font-size:28px; font-family:ti; font-weight:normal;}
+			.main .main_chart .navigator .cont .btn {position:absolute; top:3px; left:10px; width:20px; height:30px;}
+			.main .main_chart .navigator .cont .btn::before {content:''; position:absolute; top:50%; left:50%; margin:-7px 0 0 -5px; width:10px; height:15px; background:url('/web/asset/images/bg_arrow_lr.png') no-repeat 0 0;}
+			.main .main_chart .navigator .cont .btn.next {right:10px; left:auto;}
+			.main .main_chart .navigator .cont .btn.next::before {background-position:-10px 0;}
+			.main .main_chart .navigator .cont .item {width:100%; height:36px; box-sizing:border-box; padding:0 15px; line-height:36px;}
+			.main .main_chart .navigator .cont .item .orange {color:#b56d09;}
+			.main .main_chart .navigator .cont .item .blue {color:#1596f0;}
+			.main .main_chart .navigator .cont .item .red {color:#ff2708;}
+			.main .main_chart .navigator .cont .item .change {display:inline-block; margin-left:10px; color:#43b321; font-size:18px;}
+			.main .main_chart .navigator .cont .item .change .ico_ud {margin-left:5px; vertical-align:top;}
+			.main .main_chart .navigator .cont .slider {height:100%; overflow:hidden;}
+			.main .main_chart {width:100%; display:none;}
+			.main .main_chart .charts {position:relative; height:330px; opacity:0;}
+			.main .main_chart .charts .chart_wrap img {position:absolute; bottom:0; left:0; width:100%; height:330px;}
+			.main .main_chart .point_mover {position:absolute; display:none;}
+			.main .main_chart .point_mover a {display:block;}
+			.main .main_chart .point_mover a img {display:block;}
+		</style>
+	</head>
+	<body id="body" class="main">
+		<div id="wrapper">
+			<div id="header">
+				<div class="width">
+					<p class="logo">Wiveel</p>
+				</div>
+			</div>
+			<h1 class="main_title">Live <strong>Market Price</strong></h1>
+			<p class="main_title2">Wiveel, Your own art advisor</p>
+			<div class="main_search">
+				<form action="#" method="post">
+					<div class="input_wrap">
+						<input type="search" class="input_txt" id="main_input_search" placeholder="Search Artists and Artworks" value="Pablo Picasso" readonly="readonly" onkeyup="if (this.value.length>=3) { if ( !$('#autocomplete').hasClass('on') ) { $('#autocomplete').addClass('on').slideDown(100); } }">
+						<button type="submit" class="submit" id="main_submit_search"><img src="../asset/images/bg_main_search.png" alt="submit"></button>
+						<div class="autocomplete" id="autocomplete" style="display:none">
+							<a href="javascript:document.getElementById('main_input_search').value='Pablo Picasso'">Pablo <strong>Pic</strong>asso (1881~1973)</a>
+							<a href="javascript:document.getElementById('main_input_search').value='Rfancis Picabia'">Francis <strong>Pic</strong>abia (1879~1953)</a>
+							<a href="javascript:document.getElementById('main_input_search').value='Emile Louis Picault'">Emile Louis <strong>Pic</strong>ault (1833~1915)</a>
+							<a href="javascript:document.getElementById('main_input_search').value='James Pichette'">James <strong>Pic</strong>hette (1881~1973)</a>
+							<a href="javascript:document.getElementById('main_input_search').value='Jean Picart Le Doux'">Jean <strong>Pic</strong>art Le Doux (1881~1973)</a>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="main_chart" id="main_chart" style="display: block;">
+				<div class="charts" style="opacity: 1;">
+					<div id="chart_num_01" style="display:none">
+						<div class="chart_wrap">
+							<img src="../asset/temp/chart_main_01.png" alt="temporary chart image">
+						</div>
+						<div class="point_mover view_01" style="top: 0px; right: 9%; display: block;"><a href="javascript:void(0)"><img src="../asset/temp/main_point_01_01.png" alt="best point"></a></div>
+						<div class="point_mover view_02" style="top: 162px; left: 4.5%; display: block;"><a href="javascript:void(0)"><img src="../asset/temp/main_point_01_02.png" alt="best point"></a></div>
+					</div>
+					<div id="chart_num_02" style="display:block">
+						<div class="chart_wrap">
+							<img src="../asset/temp/chart_main_02.png" alt="temporary chart image">
+						</div>
+						<div class="point_mover view_01" style="top: 127px; left: 43.4%; margin-left: -91px; display: block;"><a href="javascript:void(0)"><img src="../asset/temp/main_point_1.png" alt="best point"></a></div>
+						<div class="point_mover view_02" style="top: 87px; right: 23.45%; margin-right: -107px; display: block;"><a href="javascript:void(0)"><img src="../asset/temp/main_point_2.png" alt="best point"></a></div>
+					</div>
+				</div>
+				<div class="navigator">
+					<div class="cont">
+						<div class="slider">
+							<div class="slide_items">
+								<div class="item" style="display:none"><strong class="name red">Andy Warhol</strong><span class="change">$3,000(15%)↑</span></div>
+								<div class="item on"><strong class="name orange">Pablo Picasso</strong><span class="change">$3,000(15%)<span class="ico_ud s up">&nbsp;</span></span></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

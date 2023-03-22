@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="We'll do the Research, You Decide. Reveal the Market Price. Wiveel.">
+    <meta name="author" content="Wiveel">
+    <link rel="icon" href="../images/favicon.png">
+    <title>WIVEEL-BETA</title>
+    <link rel="stylesheet" media="screen and (min-width: 1020px)" href="../css/lots.css">
+    <link rel="stylesheet" media="screen and (max-width: 1019.9px)" href="../css/lots_sx.css">
+</head>
+
+<body>
+<header class="top-navigation">
+    <div class="container">
+        <form class="form-top-search" action="artists.html">
+            <input type="text" class="input" placeholder="Search an Artist">
+            <button type="submit" class="btn-search">Search</button>
+        </form>
+        <ul class="location">
+            <li class="logo-top" onClick="location.href='main.html'"></li>
+            <li class="home"><a class="nav-link" href="main.html">HOME</a></li>
+            <li class="active"><a class="nav-link" href="lots.html">Pablo Picasso</a></li>
+        </ul>
+    </div>
+</header>
+<div class="container lots">
+    <div class="filters hide">
+        <div class="filters-area">
+            <div class="title">
+                <button class="btn" onclick="location.href='lots.html'"></button>
+                <p class="text">Filters</p>
+            </div>
+            <div class="filter-area">
+                <div class="filter-title">Category</div>
+                <ul class="filter list">
+                    <li class="item active">All</li>
+                    <li class="item">Paintings</li>
+                    <li class="item">Photograph</li>
+                    <li class="item">Print & Multiples</li>
+                    <li class="item">Sculptures</li>
+                    <li class="item">Works on paper</li>
+                </ul>
+            </div>
+            <div class="filter-area">
+                <div class="filter-title">Year</div>
+                <ul class="filter range">
+                    <li class="active">Any</li>
+                    <li>
+                        <p>Set range</p>
+                        <!-- set range 활성화 시 노출-->
+                        <div class="range-input">
+                            <input type="text" class="from" placeholder="1900"><input type="text" class="to" placeholder="1950">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="filter-area">
+                <div class="filter-title">Search by</div>
+                <div class="filter search">
+                    <input type="text" class="input" placeholder="Worktitle, Medium...">
+                    <button type="submit" class="btn-search">Search</button>
+                </div>
+            </div>
+            <div class="filter-area">
+                <div class="filter-title">Price</div>
+                <ul class="filter list">
+                    <li class="item active">All</li>
+                    <li class="item">Up To $5,000</li>
+                    <li class="item">$5,000 - $10,000</li>
+                    <li class="item">$10,000 - $50,000</li>
+                    <li class="item">$50,000 - $100,000</li>
+                    <li class="item">Over $100,000</li>
+                </ul>
+            </div>
+            <div class="filter-area">
+                <div class="filter-title">Size</div>
+                <ul class="filter btn">
+                    <li>All</li>
+                    <li>S</li>
+                    <li class="active">M</li>
+                    <li>L</li>
+                    <li>XL</li>
+                </ul>
+                <p class="size-range">The longest side is up to <span class="num">38</span> inches</p>
+            </div>
+            <div class="filter-area">
+                <div class="filter-title">Date</div>
+                <ul class="filter list">
+                    <li class="item active">All</li>
+                    <li class="item">Upcoming Auction</li>
+                    <li class="item">Ended in last 1 year</li>
+                    <li class="item">Ended in last 3 year</li>
+                    <li class="item">Ended in last 5 year</li>
+                    <li class="item">5 years Before</li>
+                </ul>
+            </div>
+            <div class="filter-area">
+                <div class="filter-title">estimated price <p class="description">(based on million USD)</p></div>
+                <ul class="filter list">
+                    <li class="item active">Any</li>
+                    <li class="item">Up To $5,000</li>
+                    <li class="item">$5,000 - $10,000</li>
+                    <li class="item">$10,000 - $50,000</li>
+                    <li class="item">$50,000 - $100,000</li>
+                    <li class="item">Over $100,000</li>
+                </ul>
+            </div>
+            <div class="filter-btn">
+                <button class="btn">Search</button>
+            </div>
+            <div class="reset-search">
+                <a href="#">Reset Search</a>
+            </div>
+        </div>
+    </div>
+    <div class="result-area">
+        <h1 class="text-header">Pablo Picasso<p class="description">Spain, France, 1881-1973</p></h1>
+        <a href="lots_filter.html" class="btn-filter">Filters</a>
+        <p class="result-count">Showing 21 Results</p>
+        <div class="sort">
+            <div class="sorted">Sort by Recently Updated</div>
+            <!-- select options -->
+            <div class="options">
+                <div class="option">Sort by Recently Updated</div>
+                <div class="option">Sort by Most Expensive</div>
+                <div class="option">Sort by Least Expensive</div>
+                <div class="option">Sort by Latest Auction</div>
+                <div class="option">Sort by Oldest Auction</div>
+            </div>
+        </div>
+        <table class="results">
+            <thead>
+                <tr>
+                    <th class="col-details">Lot Details</th>
+                    <th class="col-date">Sale Date</th>
+                    <th class="col-info">Sale Info</th>
+                    <th class="col-price">Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr onClick="location.href='lot.html'">
+                    <td class="lot-detail">
+                        <div class="img"><img src="../images/img_long.png"></div>
+                        <p class="worktitle">Garçon à la pipe</p>
+                        <p class="summary">Works on Paper,↕103 cm, ↔95 cm, 1971</p>
+                    </td>
+                    <td class="sale-date">
+                        <p class="date">03 Mar 2018 <span class="upcoming">Upcoming</span></p>
+                    </td>
+                    <td class="sale-info">
+                        <p class="vendor">Phillips, London</p>
+                        <p class="sale">20Century & Contemporary Art</p>
+                        <p class="lot">Lot. 20</p>
+                    </td>
+                    <td class="price">
+                        <p class="estimate">$800,000 - $950,000</p>
+                    </td>
+                </tr>
+                <tr onClick="location.href='lot.html'">
+                    <td class="lot-detail">
+                        <div class="img"><img src="../images/img_wide.png"></div>
+                        <p class="worktitle">Garçon à la pipe</p>
+                        <p class="summary">Works on Paper,↕103 cm, ↔95 cm, 1971,Works on Paper,↕103 cm, ↔95 cm, 1971Works on Paper,↕103 cm, ↔95 cm, 1971Works on Paper,↕103 cm, ↔95 cm, 1971</p>
+                    </td>
+                    <td class="sale-date">
+                        <p class="date">03 Mar 2018</p>
+                    </td>
+                    <td class="sale-info">
+                        <p class="vendor">Phillips, London</p>
+                        <p class="sale">20Century & Contemporary Art</p>
+                        <p class="lot">Lot. 20</p>
+                    </td>
+                    <td class="price">
+                        <p class="sold">$1,670,000 <span class="premium">Premium</span></p>
+                    </td>
+                </tr>
+                <tr onClick="location.href='lot.html'">
+                    <td class="lot-detail">
+                        <div class="img"><img src="../images/img_no.png"></div>
+                        <p class="worktitle">Garçon à la pipe</p>
+                        <p class="summary">Works on Paper,↕103 cm, ↔95 cm, 1971</p>
+                    </td>
+                    <td class="sale-date">
+                        <p class="date">03 Mar 2018 <span class="upcoming">Upcoming</span></p>
+                    </td>
+                    <td class="sale-info">
+                        <p class="vendor">Phillips, London</p>
+                        <p class="sale">20Century & Contemporary Art</p>
+                        <p class="lot">Lot. 20</p>
+                    </td>
+                    <td class="price">
+                        <p class="sold">Bought In</p>
+                    </td>
+                </tr>
+                <tr onClick="location.href='lot.html'">
+                    <td class="lot-detail">
+                        <div class="img"><img src="../images/img_long.png"></div>
+                        <p class="worktitle">Garçon à la pipe</p>
+                        <p class="summary">Works on Paper,↕103 cm, ↔95 cm, 1971</p>
+                    </td>
+                    <td class="sale-date">
+                        <p class="date">03 Mar 2018 <span class="upcoming">Upcoming</span></p>
+                    </td>
+                    <td class="sale-info">
+                        <p class="vendor">Phillips, London</p>
+                        <p class="sale">20Century & Contemporary Art</p>
+                        <p class="lot">Lot. 20</p>
+                    </td>
+                    <td class="price">
+                        <p class="estimate">$800,000 - $950,000</p>
+                        <!--<p class="sold">$1,670,000 <span class="premium">Premium</span></p>-->
+                        <!--<p class="sold">Bought In</p>-->
+                    </td>
+                </tr>
+                <tr onClick="location.href='lot.html'">
+                    <td class="lot-detail">
+                        <div class="img"><img src="../images/img_long.png"></div>
+                        <p class="worktitle">Garçon à la pipe</p>
+                        <p class="summary">Works on Paper,↕103 cm, ↔95 cm, 1971</p>
+                    </td>
+                    <td class="sale-date">
+                        <p class="date">03 Mar 2018 <span class="upcoming">Upcoming</span></p>
+                    </td>
+                    <td class="sale-info">
+                        <p class="vendor">Phillips, London</p>
+                        <p class="sale">20Century & Contemporary Art</p>
+                        <p class="lot">Lot. 20</p>
+                    </td>
+                    <td class="price">
+                        <p class="estimate">$800,000 - $950,000</p>
+                        <!--<p class="sold">$1,670,000 <span class="premium">Premium</span></p>-->
+                        <!--<p class="sold">Bought In</p>-->
+                    </td>
+                </tr>
+                <tr onClick="location.href='lot.html'">
+                    <td class="lot-detail">
+                        <div class="img"><img src="../images/img_long.png"></div>
+                        <p class="worktitle">Garçon à la pipe</p>
+                        <p class="summary">Works on Paper,↕103 cm, ↔95 cm, 1971</p>
+                    </td>
+                    <td class="sale-date">
+                        <p class="date">03 Mar 2018 <span class="upcoming">Upcoming</span></p>
+                    </td>
+                    <td class="sale-info">
+                        <p class="vendor">Phillips, London</p>
+                        <p class="sale">20Century & Contemporary Art</p>
+                        <p class="lot">Lot. 20</p>
+                    </td>
+                    <td class="price">
+                        <p class="estimate">$800,000 - $950,000</p>
+                        <!--<p class="sold">$1,670,000 <span class="premium">Premium</span></p>-->
+                        <!--<p class="sold">Bought In</p>-->
+                    </td>
+                </tr>
+                <tr onClick="location.href='lot.html'">
+                    <td class="lot-detail">
+                        <div class="img"><img src="../images/img_long.png"></div>
+                        <p class="worktitle">Garçon à la pipe</p>
+                        <p class="summary">Works on Paper,↕103 cm, ↔95 cm, 1971</p>
+                    </td>
+                    <td class="sale-date">
+                        <p class="date">03 Mar 2018 <span class="upcoming">Upcoming</span></p>
+                    </td>
+                    <td class="sale-info">
+                        <p class="vendor">Phillips, London</p>
+                        <p class="sale">20Century & Contemporary Art</p>
+                        <p class="lot">Lot. 20</p>
+                    </td>
+                    <td class="price">
+                        <p class="estimate">$800,000 - $950,000</p>
+                        <!--<p class="sold">$1,670,000 <span class="premium">Premium</span></p>-->
+                        <!--<p class="sold">Bought In</p>-->
+                    </td>
+                </tr>
+                <tr onClick="location.href='lot.html'">
+                    <td class="lot-detail">
+                        <div class="img"><img src="../images/img_long.png"></div>
+                        <p class="worktitle">Garçon à la pipe</p>
+                        <p class="summary">Works on Paper,↕103 cm, ↔95 cm, 1971</p>
+                    </td>
+                    <td class="sale-date">
+                        <p class="date">03 Mar 2018 <span class="upcoming">Upcoming</span></p>
+                    </td>
+                    <td class="sale-info">
+                        <p class="vendor">Phillips, London</p>
+                        <p class="sale">20Century & Contemporary Art</p>
+                        <p class="lot">Lot. 20</p>
+                    </td>
+                    <td class="price">
+                        <p class="estimate">$800,000 - $950,000</p>
+                        <!--<p class="sold">$1,670,000 <span class="premium">Premium</span></p>-->
+                        <!--<p class="sold">Bought In</p>-->
+                    </td>
+                </tr>
+                <tr onClick="location.href='lot.html'">
+                    <td class="lot-detail">
+                        <div class="img"><img src="../images/img_long.png"></div>
+                        <p class="worktitle">Garçon à la pipe</p>
+                        <p class="summary">Works on Paper,↕103 cm, ↔95 cm, 1971</p>
+                    </td>
+                    <td class="sale-date">
+                        <p class="date">03 Mar 2018 <span class="upcoming">Upcoming</span></p>
+                    </td>
+                    <td class="sale-info">
+                        <p class="vendor">Phillips, London</p>
+                        <p class="sale">20Century & Contemporary Art</p>
+                        <p class="lot">Lot. 20</p>
+                    </td>
+                    <td class="price">
+                        <p class="estimate">$800,000 - $950,000</p>
+                        <!--<p class="sold">$1,670,000 <span class="premium">Premium</span></p>-->
+                        <!--<p class="sold">Bought In</p>-->
+                    </td>
+                </tr>
+                <tr onClick="location.href='lot.html'">
+                    <td class="lot-detail">
+                        <div class="img"><img src="../images/img_long.png"></div>
+                        <p class="worktitle">Garçon à la pipe</p>
+                        <p class="summary">Works on Paper,↕103 cm, ↔95 cm, 1971</p>
+                    </td>
+                    <td class="sale-date">
+                        <p class="date">03 Mar 2018 <span class="upcoming">Upcoming</span></p>
+                    </td>
+                    <td class="sale-info">
+                        <p class="vendor">Phillips, London</p>
+                        <p class="sale">20Century & Contemporary Art</p>
+                        <p class="lot">Lot. 20</p>
+                    </td>
+                    <td class="price">
+                        <p class="estimate">$800,000 - $950,000</p>
+                        <!--<p class="sold">$1,670,000 <span class="premium">Premium</span></p>-->
+                        <!--<p class="sold">Bought In</p>-->
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="paging">
+            <a href="#" class="prev">Prev</a>
+            <a href="#" class="num active">1</a>
+            <a href="#" class="num">2</a>
+            <a href="#" class="num">3</a>
+            <a href="#" class="num">4</a>
+            <a href="#" class="num">5</a>
+            <a href="#" class="next">Next</a>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="container">
+        <p class="float-right">
+            <button class="btn-top" onclick="location.href='#'"></button>
+        </p>
+        <ul class="sites">
+            <li><a href="#">Live Auction Art</a></li>
+            <li><a href="#">In Art Press</a></li>
+        </ul>
+        <p class="logo"></p>
+        <p class="copyright">Copyright © 2018 WIVEEL</p>
+    </div>
+</footer>
+<!--<div class="bg bg-lots"></div>-->
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+<script>
+    $('.dropdown-toggle').dropdown()
+</script>
+</body>
+</html>

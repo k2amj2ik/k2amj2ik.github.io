@@ -1,0 +1,1153 @@
+<!doctype html>
+<html lang="ko"><head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800">
+<link rel="stylesheet" type="text/css" href="../asset/css/css.css">
+<link rel="stylesheet" type="text/css" href="../asset/css/select.css">
+<link rel="stylesheet" type="text/css" href="../asset/css/scroll.css">
+<link rel="shortcut icon" href="../asset/images/pavicon.png">
+<style type="text/css">
+</style>
+<title>Wiveel - Live Market Price</title>
+</head>
+<body>
+<div id="wrapper" class="w1204 author">
+	<a href="javascript:void(0)" class="skip_navigation">Go to Content</a>
+	<header>
+	<div class="width">
+		<a href="javascript:void(0)" class="logo">Wiveel</a>
+		<div class="search top_search">
+			<form method="post" action="#" onsubmit="return false">
+				<input type="search" placeholder="Search Artist or Artwork">
+				<button type="submit">submit</button>
+			</form>
+		</div>
+		<div class="top_right">
+			<div class="my_infor">
+				<button type="button" class="open_myInfor tn">David Nahmad</button>
+			</div>
+			<button type="button" class="logout top_btn tn">Log Out</button>
+		</div>
+	</div>
+	</header>
+	<div class="width author_tit">
+		<div class="" id="artist_information_tmpl" style="">
+			<h1 class="author_name">Pablo PICASSO </h1>
+			<div class="info">
+				Spain,France, 1881-1973
+			</div>
+		</div>
+	</div>
+	<div class="author_top">
+		<div class="width">
+			<div class="cont_left">
+				<div class="index_infor thick">
+					<dl class="rank">
+						<dt>Global/Local Rank</dt>
+						<dd>
+						<p class="global">
+							 154 <span class="right"><span class="ico up"><span class="invisible">up</span>6</span></span>
+						</p>
+						<p class="local">
+							 16 <span class="location">USA</span>
+							<span class="right"><span class="ico down"><span class="invisible">down</span>3</span></span>
+						</p>
+						</dd>
+					</dl>
+					<dl class="grade">
+						<dt>Demand Grade</dt>
+						<dd>
+						<p class="seg">
+							PRIME
+						</p>
+						<p class="stars">
+							★★★★☆
+						</p>
+						</dd>
+					</dl>
+					<dl class="best">
+						<dt>Best Location</dt>
+						<dd>
+						<p class="buy">
+							<span class="ico">Buy</span><span class="nation usa">USA</span>
+						</p>
+						<p class="sell">
+							<span class="ico">Sell</span><span class="nation uk">UK</span>
+						</p>
+						</dd>
+					</dl>
+				</div>
+			</div>
+			<div class="cont_right">
+				<div class="author_desc ellipsis">
+					 Pablo Ruiz y Picasso, also known as Pablo Picasso (/pɪˈkɑːsoʊ, -ˈkæsoʊ/;[2] Spanish: [ˈpaβlo piˈkaso]; 25 October 1881 – 8 April 1973), was a Spanish painter, sculptor, printmaker, ceramicist, stage designer, poet and playwright who spent most of his adult life in France. As one of the greatest and most influential artists of the 20th century, he is known for co-founding the Cubist movement, the invention of constructed sculpture,[3][4] the...
+				</div>
+				<p class="aR">
+					<a href="javascript:void(0)" class="read" target="_blank">Read more</a>
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="statistics width">
+		<div class="top">
+			<div class="prices">
+				<dl class="total">
+					<dt>Total Price <a href="javascript:void(0)" class="ico_question">about total price</a></dt>
+					<dd>$ <span id="total_price_number">6,189,681,310</span></dd>
+				</dl>
+				<dl class="change">
+					<dt>Actual Change </dt>
+					<dd>$ <span id="change_price_number">413,000</span><span class="ico_ud up"><span class="invisible">up</span></span></dd>
+				</dl>
+				<dl class="change">
+					<dt>Percentage Change </dt>
+					<dd><span id="change_percent_number">25</span>% <span class="ico_ud up"><span class="invisible">up</span></span></dd>
+				</dl>
+			</div>
+		</div>
+		<div class="chart_tab">
+			<ul class="tab_list">
+				<li class="on all">
+				<p class="title">
+					<span>
+					Overall <strong>All Category</strong>
+					</span>
+				</p>
+				<p class="price">
+					$ 8,543,512,000
+				</p>
+				</li>
+				<li class="years">
+				<p class="title">
+					<span>
+					Artwork from <strong>1901 ~ 1955</strong>
+					</span>
+				</p>
+				<p class="price">
+					$ 5,412,816,000
+				</p>
+				</li>
+				<li class="repeat">
+				<p class="title">
+					<span class="med"><strong>Repeat</strong> Artwork</span>
+				</p>
+				<p class="price">
+					$ 2,983,641,000
+				</p>
+				</li>
+				<li class="other">
+				<p class="title">
+					<span>
+					Other <strong>Category</strong>
+					</span>
+				</p>
+				<p class="price">
+					$ 0
+				</p>
+				</li>
+			</ul>
+		</div>
+		<div class="charts">
+			<img src="../asset/temp/artist_chart_01.png" style="display:block; margin:0 auto" alt="temporary chart area">
+			<div class="selected_item">
+				<a href="javascript:void(0)" class="selected" style="left:448px;top:224px;margin-left:-135px;"><img src="../asset/temp/chart_indicate_01.png" alt="temporary data"></a>
+				<a href="javascript:void(0)" class="selected" style="left:736px;top:426px;margin-left:-83px;"><img src="../asset/temp/chart_indicate_02.png" alt="temporary data"></a>
+			</div>
+		</div>
+	</div>
+	<div class="where_buysell">
+		<div class="map">
+			<h2 class="title">Best Location for Buy/Sell</h2>
+			<div class="infor">
+				<img src="../asset/temp/tmp_buysell.png" style="display:block; margin:0 auto" alt="where to buy or sell - temporary image...">
+			</div>
+		</div>
+	</div>
+	<div class="results_wrap">
+		<div class="result_bg">
+		</div>
+		<div class="width">
+			<div class="result_top">
+				<p class="summary">
+					 Available Works <span class="number" id="lot_total_number">55,837</span>
+				</p>
+			</div>
+		</div>
+		<div class="list_artworks columns suffleLoaded" id="list_artwork" data-form="#artwork_list_form" data-len="5" style="height: 3000px; width: 1280px; margin: 0px auto; padding-top: 3000px;">
+			<div class="item_artwork item list_item" data-idx="3092" style="position: absolute; top: 20px; left: 0px; transition-property: left, top; transition-timing-function: ease; transition-duration: 0.2s; opacity: 1;">
+				<a href="javascript:void(0)">
+				<div class="thumb">
+					<img src="http://52.192.241.211:8080/Alpha/FineArt_w218/FFF1/3092.jpg" alt="artwork thumbnail" class="" onload="this.className=''" onerror="getNoImage(this)">
+					<button type="button" class="add_portfolio">add to my portfolio</button>
+					<button type="button" class="similar">10</button>
+				</div>
+				<div class="cont">
+					<input type="hidden" class="category_code" value="FFF1">
+					<p class="title ti">
+						Les femmes d'Alger (Version 'O')
+					</p>
+					<p class="category">
+						 Paintings, oil on canvas, 1955
+					</p>
+					<div class="auction_infor past">
+						<p class="sold">
+							<span class="date">2015</span><span class="price">$179,365,000</span><span class="range">$$$$</span>
+						</p>
+						<p class="latest">
+							<span class="date">3 mon ago</span><span class="price">$180,500,000</span><span class="ico_ud ss up">1%</span>
+						</p>
+						<p class="price_range">
+							<span class="price">$176,000,000 ~ $185,000,000</span>
+						</p>
+					</div>
+					<div class="sold_info">
+						 Christies, New York | 11 May 2015
+					</div>
+				</div>
+				</a>
+			</div>
+			<div class="item_artwork item list_item" data-idx="2811" style="position: absolute; top: 20px; left: 260px; transition-property: left, top; transition-timing-function: ease; transition-duration: 0.25s; opacity: 1;">
+				<a href="javascript:void(0)">
+				<div class="thumb">
+					<img src="http://52.192.241.211:8080/Alpha/FineArt_w218/FFF1/2811.jpg" alt="artwork thumbnail" class="" onload="this.className=''" onerror="getNoImage(this)">
+					<button type="button" class="add_portfolio">add to my portfolio</button>
+					<button type="button" class="similar">10</button>
+				</div>
+				<div class="cont">
+					<input type="hidden" class="category_code" value="FFF1">
+					<p class="title ti">
+						Nude, Green Leaves and Bust
+					</p>
+					<p class="category">
+						 Paintings, oil on canvas, 1932
+					</p>
+					<div class="auction_infor past">
+						<p class="sold">
+							<span class="date">2010</span><span class="price">$106,482,500</span><span class="range">$$$</span>
+						</p>
+						<p class="latest">
+							<span class="date">3 mon ago</span><span class="price">$116,500,000</span><span class="ico_ud ss up">10%</span>
+						</p>
+						<p class="price_range">
+							<span class="price">$114,000,000 ~ $119,000,000</span>
+						</p>
+					</div>
+					<div class="sold_info">
+						 Christies, New York | 4 May 2010
+					</div>
+				</div>
+				</a>
+			</div>
+			<div class="item_artwork item list_item" data-idx="2517" style="position: absolute; top: 20px; left: 520px; transition-property: left, top; transition-timing-function: ease; transition-duration: 0.3s; opacity: 1;">
+				<a href="javascript:void(0)">
+				<div class="thumb">
+					<img src="http://52.192.241.211:8080/Alpha/FineArt_w218/FFF1/2517.jpg" alt="artwork thumbnail" class="" onload="this.className=''" onerror="getNoImage(this)">
+					<button type="button" class="add_portfolio">add to my portfolio</button>
+					<button type="button" class="similar">7</button>
+				</div>
+				<div class="cont">
+					<input type="hidden" class="category_code" value="FFF1">
+					<p class="title ti">
+						Garçon à la pipe
+					</p>
+					<p class="category">
+						 Paintings, Oil on Canvas, 1905
+					</p>
+					<div class="auction_infor past">
+						<p class="sold">
+							<span class="date">2004</span><span class="price">$104,168,000</span><span class="range">$$$</span>
+						</p>
+						<p class="latest">
+							<span class="date">3 mon ago</span><span class="price">$106,772,200</span><span class="ico_ud ss up">3%</span>
+						</p>
+						<p class="price_range">
+							<span class="price">$104,168,000 ~ $109,376,400</span>
+						</p>
+					</div>
+					<div class="sold_info">
+						 Sothebys, New York | 5 May 2004
+					</div>
+				</div>
+				</a>
+			</div>
+			<div class="item_artwork item list_item" data-idx="2703" style="position: absolute; top: 20px; left: 780px; transition-property: left, top; transition-timing-function: ease; transition-duration: 0.35s; opacity: 1;">
+				<a href="javascript:void(0)">
+				<div class="thumb">
+					<img src="http://52.192.241.211:8080/Alpha/FineArt_w218/FFF1/2703.jpg" alt="artwork thumbnail" class="" onload="this.className=''" onerror="getNoImage(this)">
+					<button type="button" class="add_portfolio">add to my portfolio</button>
+					<button type="button" class="similar">10</button>
+				</div>
+				<div class="cont">
+					<input type="hidden" class="category_code" value="FFF1">
+					<p class="title ti">
+						Dora Maar au chat
+					</p>
+					<p class="category">
+						 Paintings, oil on canvas, 1941
+					</p>
+					<div class="auction_infor past">
+						<p class="sold">
+							<span class="date">2006</span><span class="price">$95,216,000</span><span class="range">$$$</span>
+						</p>
+						<p class="latest">
+							<span class="date">3 mon ago</span><span class="price">$130,000,000</span><span class="ico_ud ss up">37%</span>
+						</p>
+						<p class="price_range">
+							<span class="price">$127,000,000 ~ $133,000,000</span>
+						</p>
+					</div>
+					<div class="sold_info">
+						 Sothebys, New York | 3 May 2006
+					</div>
+				</div>
+				</a>
+			</div>
+			<div class="item_artwork item list_item" data-idx="3093" style="position: absolute; top: 20px; left: 1040px; transition-property: left, top; transition-timing-function: ease; transition-duration: 0.4s; opacity: 1;">
+				<a href="javascript:void(0)">
+				<div class="thumb">
+					<img src="http://52.192.241.211:8080/Alpha/FineArt_w218/FFF1/3093.jpg" alt="artwork thumbnail" class="" onload="this.className=''" onerror="getNoImage(this)">
+					<button type="button" class="add_portfolio">add to my portfolio</button>
+					<button type="button" class="similar">10</button>
+				</div>
+				<div class="cont">
+					<input type="hidden" class="category_code" value="FFF1">
+					<p class="title ti">
+						Buste de femme (Femme à la résille)
+					</p>
+					<p class="category">
+						 Paintings, oil on canvas, 1938
+					</p>
+					<div class="auction_infor past">
+						<p class="sold">
+							<span class="date">2015</span><span class="price">$67,365,000</span><span class="range">$$</span>
+						</p>
+						<p class="latest">
+							<span class="date">3 mon ago</span><span class="price">$67,500,000</span><span class="ico_ud ss up">1%</span>
+						</p>
+						<p class="price_range">
+							<span class="price">$66,000,000 ~ $69,000,000</span>
+						</p>
+					</div>
+					<div class="sold_info">
+						 Christies, New York | 11 May 2015
+					</div>
+				</div>
+				</a>
+			</div>
+			<div class="item_artwork item list_item" data-idx="2307" style="position: absolute; top: 409px; left: 0px; transition-property: left, top; transition-timing-function: ease; transition-duration: 0.45s; opacity: 1;">
+				<a href="javascript:void(0)">
+				<div class="thumb">
+					<img src="http://52.192.241.211:8080/Alpha/FineArt_w218/FFF1/2307.jpg" alt="artwork thumbnail" class="" onload="this.className=''" onerror="getNoImage(this)">
+					<button type="button" class="add_portfolio">add to my portfolio</button>
+					<button type="button" class="similar">10</button>
+				</div>
+				<div class="cont">
+					<input type="hidden" class="category_code" value="FFF1">
+					<p class="title ti">
+						Femme aux bras croisés
+					</p>
+					<p class="category">
+						 Paintings, Oil on Canvas, 1901
+					</p>
+					<div class="auction_infor past">
+						<p class="sold">
+							<span class="date">2000</span><span class="price">$55,006,000</span><span class="range">$$</span>
+						</p>
+						<p class="latest">
+							<span class="date">3 mon ago</span><span class="price">$86,500,000</span><span class="ico_ud ss up">58%</span>
+						</p>
+						<p class="price_range">
+							<span class="price">$84,000,000 ~ $89,000,000</span>
+						</p>
+					</div>
+					<div class="sold_info">
+						 Christies, New York | 8 Nov 2000
+					</div>
+				</div>
+				</a>
+			</div>
+			<div class="item_artwork item list_item" data-idx="2778" style="position: absolute; top: 450px; left: 780px; transition-property: left, top; transition-timing-function: ease; transition-duration: 0.5s; opacity: 1;">
+				<a href="javascript:void(0)">
+				<div class="thumb">
+					<img src="http://52.192.241.211:8080/Alpha/FineArt_w218/FFF1/2778.jpg" alt="artwork thumbnail" class="" onload="this.className=''" onerror="getNoImage(this)">
+					<button type="button" class="add_portfolio">add to my portfolio</button>
+					<button type="button" class="similar">10</button>
+				</div>
+				<div class="cont">
+					<input type="hidden" class="category_code" value="FFF1">
+					<p class="title ti">
+						Portrait d'Angel Fernández de Soto
+					</p>
+					<p class="category">
+						 Paintings, oil on canvas, 1903
+					</p>
+					<div class="auction_infor past">
+						<p class="sold">
+							<span class="date">2010</span><span class="price">$51,372,570</span><span class="range">$$</span>
+						</p>
+						<p class="latest">
+							<span class="date">3 mon ago</span><span class="price">$54,500,000</span><span class="ico_ud ss up">7%</span>
+						</p>
+						<p class="price_range">
+							<span class="price">$53,000,000 ~ $56,000,000</span>
+						</p>
+					</div>
+					<div class="sold_info">
+						 Christies, London | 23 Jun 2010
+					</div>
+				</div>
+				</a>
+			</div>
+			<div class="item_artwork item list_item" data-idx="1766" style="position: absolute; top: 504px; left: 260px; transition-property: left, top; transition-timing-function: ease; transition-duration: 0.55s; opacity: 1;">
+				<a href="javascript:void(0)">
+				<div class="thumb">
+					<img src="http://52.192.241.211:8080/Alpha/FineArt_w218/FFF1/1766.jpg" alt="artwork thumbnail" class="" onload="this.className=''" onerror="getNoImage(this)">
+					<button type="button" class="add_portfolio">add to my portfolio</button>
+					<button type="button" class="similar">10</button>
+				</div>
+				<div class="cont">
+					<input type="hidden" class="category_code" value="FFF1">
+					<p class="title ti">
+						Le rêve
+					</p>
+					<p class="category">
+						 Paintings, Oil on Canvas, 1932
+					</p>
+					<div class="auction_infor past">
+						<p class="sold">
+							<span class="date">1997</span><span class="price">$48,402,500</span><span class="range">$$</span>
+						</p>
+						<p class="latest">
+							<span class="date">3 mon ago</span><span class="price">$60,500,000</span><span class="ico_ud ss up">25%</span>
+						</p>
+						<p class="price_range">
+							<span class="price">$59,000,000 ~ $62,000,000</span>
+						</p>
+					</div>
+					<div class="sold_info">
+						 Christies, New York | 10 Nov 1997
+					</div>
+				</div>
+				</a>
+			</div>
+			<div class="item_artwork item list_item" data-idx="1622" style="position: absolute; top: 505px; left: 1040px; transition-property: left, top; transition-timing-function: ease; transition-duration: 0.6s; opacity: 1;">
+				<a href="javascript:void(0)">
+				<div class="thumb">
+					<img src="http://52.192.241.211:8080/Alpha/FineArt_w218/FFF1/1622.jpg" alt="artwork thumbnail" class="" onload="this.className=''" onerror="getNoImage(this)">
+					<button type="button" class="add_portfolio">add to my portfolio</button>
+					<button type="button" class="similar">10</button>
+				</div>
+				<div class="cont">
+					<input type="hidden" class="category_code" value="FFF1">
+					<p class="title ti">
+						Self Portrait: Picasso
+					</p>
+					<p class="category">
+						 Paintings, Oil on Canvas, 1901
+					</p>
+					<div class="auction_infor past">
+						<p class="sold">
+							<span class="date">1989</span><span class="price">$47,850,000</span><span class="range">$$</span>
+						</p>
+						<p class="latest">
+							<span class="date">3 mon ago</span><span class="price">$235,000,000</span><span class="ico_ud ss up">392%</span>
+						</p>
+						<p class="price_range">
+							<span class="price">$229,000,000 ~ $241,000,000</span>
+						</p>
+					</div>
+					<div class="sold_info">
+						 Sothebys, New York | 9 May 1989
+					</div>
+				</div>
+				</a>
+			</div>
+			<div class="item_artwork item list_item" data-idx="2326" style="position: absolute; top: 512px; left: 520px; transition-property: left, top; transition-timing-function: ease; transition-duration: 0.65s; opacity: 1;">
+				<a href="javascript:void(0)">
+				<div class="thumb">
+					<img src="http://52.192.241.211:8080/Alpha/FineArt_w218/FFF1/2326.jpg" alt="artwork thumbnail" class="" onload="this.className=''" onerror="getNoImage(this)">
+					<button type="button" class="add_portfolio">add to my portfolio</button>
+					<button type="button" class="similar">10</button>
+				</div>
+				<div class="cont">
+					<input type="hidden" class="category_code" value="FFF1">
+					<p class="title ti">
+						Nu au fauteuil noir
+					</p>
+					<p class="category">
+						 Paintings, Oil on Canvas, 1932
+					</p>
+					<div class="auction_infor past">
+						<p class="sold">
+							<span class="date">1999</span><span class="price">$45,102,500</span><span class="range">$$</span>
+						</p>
+						<p class="latest">
+							<span class="date">3 mon ago</span><span class="price">$120,500,000</span><span class="ico_ud ss up">168%</span>
+						</p>
+						<p class="price_range">
+							<span class="price">$117,000,000 ~ $124,000,000</span>
+						</p>
+					</div>
+					<div class="sold_info">
+						 Christies, New York | 9 Nov 1999
+					</div>
+				</div>
+				</a>
+			</div>
+			<div class="item_artwork item list_item" data-idx="3024" style="position: absolute; top: 928px; left: 0px; transition-property: left, top; transition-timing-function: ease; transition-duration: 0.7s; opacity: 1;">
+				<a href="javascript:void(0)">
+				<div class="thumb">
+					<img src="http://52.192.241.211:8080/Alpha/FineArt_w218/FFF1/3024.jpg" alt="artwork thumbnail" class="" onload="this.className=''" onerror="getNoImage(this)">
+					<button type="button" class="add_portfolio">add to my portfolio</button>
+					<button type="button" class="similar">10</button>
+				</div>
+				<div class="cont">
+					<input type="hidden" class="category_code" value="FFF1">
+					<p class="title ti">
+						Femme assise près d'une fenêtre
+					</p>
+					<p class="category">
+						 Paintings, oil on canvas, 1932
+					</p>
+					<div class="auction_infor past">
+						<p class="sold">
+							<span class="date">2013</span><span class="price">$44,773,403</span><span class="range">$</span>
+						</p>
+						<p class="latest">
+							<span class="date">3 mon ago</span><span class="price">$47,500,000</span><span class="ico_ud ss up">7%</span>
+						</p>
+						<p class="price_range">
+							<span class="price">$46,000,000 ~ $49,000,000</span>
+						</p>
+					</div>
+					<div class="sold_info">
+						 Sothebys, London | 5 Feb 2013
+					</div>
+				</div>
+				</a>
+			</div>
+			<div class="item_artwork item list_item" data-idx="3044" style="position: absolute; top: 962px; left: 780px; transition-property: left, top; transition-timing-function: ease; transition-duration: 0.75s; opacity: 1;">
+				<a href="javascript:void(0)">
+				<div class="thumb">
+					<img src="http://52.192.241.211:8080/Alpha/FineArt_w218/FFF1/3044.jpg" alt="artwork thumbnail" class="" onload="this.className=''" onerror="getNoImage(this)">
+					<button type="button" class="add_portfolio">add to my portfolio</button>
+					<button type="button" class="similar">10</button>
+				</div>
+				<div class="cont">
+					<input type="hidden" class="category_code" value="FFF1">
+					<p class="title ti">
+						Nature morte aux tulipes
+					</p>
+					<p class="category">
+						 Paintings, oil on canvas, 1932
+					</p>
+					<div class="auction_infor past">
+						<p class="sold">
+							<span class="date">2012</span><span class="price">$41,522,500</span><span class="range">$</span>
+						</p>
+						<p class="latest">
+							<span class="date">3 mon ago</span><span class="price">$43,000,000</span><span class="ico_ud ss up">4%</span>
+						</p>
+						<p class="price_range">
+							<span class="price">$42,000,000 ~ $44,000,000</span>
+						</p>
+					</div>
+					<div class="sold_info">
+						 Sothebys, New York | 8 Nov 2012
+					</div>
+				</div>
+				</a>
+			</div>
+			<div class="item_artwork item list_item" data-idx="2028" style="position: absolute; top: 987px; left: 1040px; transition-property: left, top; transition-timing-function: ease; transition-duration: 0.8s; opacity: 1;">
+				<a href="javascript:void(0)">
+				<div class="thumb">
+					<img src="http://52.192.241.211:8080/Alpha/FineArt_w218/FFF1/2028.jpg" alt="artwork thumbnail" class="" onload="this.className=''" onerror="getNoImage(this)">
+					<button type="button" class="add_portfolio">add to my portfolio</button>
+					<button type="button" class="similar">5</button>
+				</div>
+				<div class="cont">
+					<input type="hidden" class="category_code" value="FFF1">
+					<p class="title ti">
+						Au Lapin Agile
+					</p>
+					<p class="category">
+						 Paintings, Oil on Canvas, 1905
+					</p>
+					<div class="auction_infor past">
+						<p class="sold">
+							<span class="date">1989</span><span class="price">$40,700,000</span><span class="range">$</span>
+						</p>
+						<p class="latest">
+							<span class="date">3 mon ago</span><span class="price">$626,500,000</span><span class="ico_ud ss up">1440%</span>
+						</p>
+						<p class="price_range">
+							<span class="price">$611,000,000 ~ $642,000,000</span>
+						</p>
+					</div>
+					<div class="sold_info">
+						 Sothebys, New York | 15 Nov 1989
+					</div>
+				</div>
+				</a>
+			</div>
+			<div class="item_artwork item list_item" data-idx="3041" style="position: absolute; top: 1001px; left: 520px; transition-property: left, top; transition-timing-function: ease; transition-duration: 0.85s; opacity: 1;">
+				<a href="javascript:void(0)">
+				<div class="thumb">
+					<img src="http://52.192.241.211:8080/Alpha/FineArt_w218/FFF1/3041.jpg" alt="artwork thumbnail" class="" onload="this.className=''" onerror="getNoImage(this)">
+					<button type="button" class="add_portfolio">add to my portfolio</button>
+					<button type="button" class="similar">10</button>
+				</div>
+				<div class="cont">
+					<input type="hidden" class="category_code" value="FFF1">
+					<p class="title ti">
+						La lecture
+					</p>
+					<p class="category">
+						 Paintings, oil on panel, 1932
+					</p>
+					<div class="auction_infor past">
+						<p class="sold">
+							<span class="date">2011</span><span class="price">$40,600,369</span><span class="range">$</span>
+						</p>
+						<p class="latest">
+							<span class="date">3 mon ago</span><span class="price">$43,000,000</span><span class="ico_ud ss up">6%</span>
+						</p>
+						<p class="price_range">
+							<span class="price">$42,000,000 ~ $44,000,000</span>
+						</p>
+					</div>
+					<div class="sold_info">
+						 Sothebys, London | 8 Feb 2011
+					</div>
+				</div>
+				</a>
+			</div>
+			<div class="item_artwork item list_item" data-idx="2918" style="position: absolute; top: 1020px; left: 260px; transition-property: left, top; transition-timing-function: ease; transition-duration: 0.9s; opacity: 1;">
+				<a href="javascript:void(0)">
+				<div class="thumb">
+					<img src="http://52.192.241.211:8080/Alpha/FineArt_w218/FFF1/2918.jpg" alt="artwork thumbnail" class="" onload="this.className=''" onerror="getNoImage(this)">
+					<button type="button" class="add_portfolio">add to my portfolio</button>
+					<button type="button" class="similar">10</button>
+				</div>
+				<div class="cont">
+					<input type="hidden" class="category_code" value="FFF1">
+					<p class="title ti">
+						Tête de femme
+					</p>
+					<p class="category">
+						 Paintings, oil on canvas, 1935
+					</p>
+					<div class="auction_infor past">
+						<p class="sold">
+							<span class="date">2013</span><span class="price">$39,925,000</span><span class="range">$</span>
+						</p>
+						<p class="latest">
+							<span class="date">3 mon ago</span><span class="price">$42,000,000</span><span class="ico_ud ss up">6%</span>
+						</p>
+						<p class="price_range">
+							<span class="price">$41,000,000 ~ $43,000,000</span>
+						</p>
+					</div>
+					<div class="sold_info">
+						 Sothebys, New York | 6 Nov 2013
+					</div>
+				</div>
+				</a>
+			</div>
+			<div class="item_artwork item list_item" data-idx="3464" style="position: absolute; top: 1416px; left: 1040px; transition-property: left, top; transition-timing-function: ease; transition-duration: 0.95s; opacity: 1;">
+				<a href="javascript:void(0)">
+				<div class="thumb">
+					<img src="http://52.192.241.211:8080/Alpha/FineArt_w218/FFF5/3464.jpg" alt="artwork thumbnail" class="" onload="this.className=''" onerror="getNoImage(this)">
+					<button type="button" class="add_portfolio">add to my portfolio</button>
+					<button type="button" class="similar">1</button>
+				</div>
+				<div class="cont">
+					<input type="hidden" class="category_code" value="FFF5">
+					<p class="title ti">
+						Acrobate et jeune Arlequin
+					</p>
+					<p class="category">
+						 Works on Paper, Gouache on Board, 1905
+					</p>
+					<div class="auction_infor past">
+						<p class="sold">
+							<span class="date">1988</span><span class="price">$38,390,889</span><span class="range">$</span>
+						</p>
+						<p class="latest">
+							<span class="date">3 mon ago</span><span class="price">$39,350,661</span><span class="ico_ud ss up">3%</span>
+						</p>
+						<p class="price_range">
+							<span class="price">$38,390,889 ~ $40,310,433</span>
+						</p>
+					</div>
+					<div class="sold_info">
+						 Christies, London | 28 Nov 1988
+					</div>
+				</div>
+				</a>
+			</div>
+			<div class="item_artwork item list_item" data-idx="2698" style="position: absolute; top: 1419px; left: 0px; transition-property: left, top; transition-timing-function: ease; transition-duration: 1s; opacity: 1;">
+				<a href="javascript:void(0)">
+				<div class="thumb">
+					<img src="http://52.192.241.211:8080/Alpha/FineArt_w218/FFF1/2698.jpg" alt="artwork thumbnail" class="" onload="this.className=''" onerror="getNoImage(this)">
+					<button type="button" class="add_portfolio">add to my portfolio</button>
+					<button type="button" class="similar">10</button>
+				</div>
+				<div class="cont">
+					<input type="hidden" class="category_code" value="FFF1">
+					<p class="title ti">
+						Le repos
+					</p>
+					<p class="category">
+						 Paintings, oil on canvas, 1932
+					</p>
+					<div class="auction_infor past">
+						<p class="sold">
+							<span class="date">2006</span><span class="price">$34,736,000</span><span class="range">$</span>
+						</p>
+						<p class="latest">
+							<span class="date">3 mon ago</span><span class="price">$53,500,000</span><span class="ico_ud ss up">55%</span>
+						</p>
+						<p class="price_range">
+							<span class="price">$52,000,000 ~ $55,000,000</span>
+						</p>
+					</div>
+					<div class="sold_info">
+						 Christies, New York | 2 May 2006
+					</div>
+				</div>
+				</a>
+			</div>
+			<div class="item_artwork item list_item" data-idx="1759" style="position: absolute; top: 1431px; left: 520px; transition-property: left, top; transition-timing-function: ease; transition-duration: 1s; opacity: 1;">
+				<a href="javascript:void(0)">
+				<div class="thumb">
+					<img src="http://52.192.241.211:8080/Alpha/FineArt_w218/FFF1/1759.jpg" alt="artwork thumbnail" class="" onload="this.className=''" onerror="getNoImage(this)">
+					<button type="button" class="add_portfolio">add to my portfolio</button>
+					<button type="button" class="similar">10</button>
+				</div>
+				<div class="cont">
+					<input type="hidden" class="category_code" value="FFF1">
+					<p class="title ti">
+						Les femmes d'Alger (Version "O")
+					</p>
+					<p class="category">
+						 Paintings, Oil on Canvas, 1955
+					</p>
+					<div class="auction_infor past">
+						<p class="sold">
+							<span class="date">1997</span><span class="price">$31,902,500</span><span class="range">$</span>
+						</p>
+						<p class="latest">
+							<span class="date">3 mon ago</span><span class="price">$127,000,000</span><span class="ico_ud ss up">299%</span>
+						</p>
+						<p class="price_range">
+							<span class="price">$124,000,000 ~ $130,000,000</span>
+						</p>
+					</div>
+					<div class="sold_info">
+						 Christies, New York | 10 Nov 1997
+					</div>
+				</div>
+				</a>
+			</div>
+			<div class="item_artwork item list_item" data-idx="3156" style="position: absolute; top: 1470px; left: 780px; transition-property: left, top; transition-timing-function: ease; transition-duration: 1s; opacity: 1;">
+				<a href="javascript:void(0)">
+				<div class="thumb">
+					<img src="http://52.192.241.211:8080/Alpha/FineArt_w218/FFF1/3156.jpg" alt="artwork thumbnail" class="" onload="this.className=''" onerror="getNoImage(this)">
+					<button type="button" class="add_portfolio">add to my portfolio</button>
+					<button type="button" class="similar">10</button>
+				</div>
+				<div class="cont">
+					<input type="hidden" class="category_code" value="FFF1">
+					<p class="title ti">
+						Le sauvetage
+					</p>
+					<p class="category">
+						 Paintings, oil on canvas, 1932
+					</p>
+					<div class="auction_infor past">
+						<p class="sold">
+							<span class="date">2014</span><span class="price">$31,525,000</span><span class="range">$</span>
+						</p>
+						<p class="latest">
+							<span class="date">3 mon ago</span><span class="price">$32,000,000</span><span class="ico_ud ss up">2%</span>
+						</p>
+						<p class="price_range">
+							<span class="price">$31,000,000 ~ $33,000,000</span>
+						</p>
+					</div>
+					<div class="sold_info">
+						 Sothebys, New York | 7 May 2014
+					</div>
+				</div>
+				</a>
+			</div>
+			<div class="item_artwork item list_item" data-idx="2926" style="position: absolute; top: 1494px; left: 260px; transition-property: left, top; transition-timing-function: ease; transition-duration: 1s; opacity: 1;">
+				<a href="javascript:void(0)">
+				<div class="thumb">
+					<img src="http://52.192.241.211:8080/Alpha/FineArt_w218/FFF1/2926.jpg" alt="artwork thumbnail" class="" onload="this.className=''" onerror="getNoImage(this)">
+					<button type="button" class="add_portfolio">add to my portfolio</button>
+					<button type="button" class="similar">10</button>
+				</div>
+				<div class="cont">
+					<input type="hidden" class="category_code" value="FFF1">
+					<p class="title ti">
+						Mousquetaire à la pipe
+					</p>
+					<p class="category">
+						 Paintings, oil on canvas, 1969
+					</p>
+					<div class="auction_infor past">
+						<p class="sold">
+							<span class="date">2013</span><span class="price">$30,965,000</span><span class="range">$</span>
+						</p>
+						<p class="latest">
+							<span class="date">3 mon ago</span><span class="price">$33,000,000</span><span class="ico_ud ss up">7%</span>
+						</p>
+						<p class="price_range">
+							<span class="price">$32,000,000 ~ $34,000,000</span>
+						</p>
+					</div>
+					<div class="sold_info">
+						 Sothebys, New York | 6 Nov 2013
+					</div>
+				</div>
+				</a>
+			</div>
+			<div class="item_artwork item list_item" data-idx="2718" style="position: absolute; top: 1803px; left: 520px; transition-property: left, top; transition-timing-function: ease; transition-duration: 1s; opacity: 1;">
+				<a href="javascript:void(0)">
+				<div class="thumb">
+					<img src="http://52.192.241.211:8080/Alpha/FineArt_w218/FFF1/2718.jpg" alt="artwork thumbnail" class="" onload="this.className=''" onerror="getNoImage(this)">
+					<button type="button" class="add_portfolio">add to my portfolio</button>
+					<button type="button" class="similar">10</button>
+				</div>
+				<div class="cont">
+					<input type="hidden" class="category_code" value="FFF1">
+					<p class="title ti">
+						Femme accroupie au costume turc, Jacqueline
+					</p>
+					<p class="category">
+						 Paintings, oil on canvas, 1955
+					</p>
+					<div class="auction_infor past">
+						<p class="sold">
+							<span class="date">2007</span><span class="price">$30,841,000</span><span class="range">$</span>
+						</p>
+						<p class="latest">
+							<span class="date">3 mon ago</span><span class="price">$37,000,000</span><span class="ico_ud ss up">20%</span>
+						</p>
+						<p class="price_range">
+							<span class="price">$36,000,000 ~ $38,000,000</span>
+						</p>
+					</div>
+					<div class="sold_info">
+						 Christies, New York | 6 Nov 2007
+					</div>
+				</div>
+				</a>
+			</div>
+			<div class="item_artwork item list_item" data-idx="3094" style="position: absolute; top: 1843px; left: 780px; transition-property: left, top; transition-timing-function: ease; transition-duration: 1s; opacity: 1;">
+				<a href="javascript:void(0)">
+				<div class="thumb">
+					<img src="http://52.192.241.211:8080/Alpha/FineArt_w218/FFF1/3094.jpg" alt="artwork thumbnail" class="" onload="this.className=''" onerror="getNoImage(this)">
+					<button type="button" class="add_portfolio">add to my portfolio</button>
+					<button type="button" class="similar">10</button>
+				</div>
+				<div class="cont">
+					<input type="hidden" class="category_code" value="FFF1">
+					<p class="title ti">
+						Femme au chignon dans un fauteuil
+					</p>
+					<p class="category">
+						 Paintings, oil on canvas, 1948
+					</p>
+					<div class="auction_infor past">
+						<p class="sold">
+							<span class="date">2015</span><span class="price">$29,930,000</span><span class="range">$</span>
+						</p>
+						<p class="latest">
+							<span class="date">3 mon ago</span><span class="price">$30,000,000</span><span class="ico_ud ss up">1%</span>
+						</p>
+						<p class="price_range">
+							<span class="price">$29,000,000 ~ $31,000,000</span>
+						</p>
+					</div>
+					<div class="sold_info">
+						 Sothebys, New York | 5 May 2015
+					</div>
+				</div>
+				</a>
+			</div>
+			<div class="item_artwork item list_item" data-idx="2901" style="position: absolute; top: 1906px; left: 0px; transition-property: left, top; transition-timing-function: ease; transition-duration: 1s; opacity: 1;">
+				<a href="javascript:void(0)">
+				<div class="thumb">
+					<img src="http://52.192.241.211:8080/Alpha/FineArt_w218/FFF1/2901.jpg" alt="artwork thumbnail" class="" onload="this.className=''" onerror="getNoImage(this)">
+					<button type="button" class="add_portfolio">add to my portfolio</button>
+					<button type="button" class="similar">10</button>
+				</div>
+				<div class="cont">
+					<input type="hidden" class="category_code" value="FFF1">
+					<p class="title ti">
+						Femme assise dans un fauteuil
+					</p>
+					<p class="category">
+						 Paintings, oil on canvas, 1941
+					</p>
+					<div class="auction_infor past">
+						<p class="sold">
+							<span class="date">2012</span><span class="price">$29,202,500</span><span class="range">$</span>
+						</p>
+						<p class="latest">
+							<span class="date">3 mon ago</span><span class="price">$28,000,000</span><span class="ico_ud ss down">-4%</span>
+						</p>
+						<p class="price_range">
+							<span class="price">$27,000,000 ~ $29,000,000</span>
+						</p>
+					</div>
+					<div class="sold_info">
+						 Sothebys, New York | 2 May 2012
+					</div>
+				</div>
+				</a>
+			</div>
+			<div class="item_artwork item list_item" data-idx="15903" style="position: absolute; top: 1948px; left: 1040px; transition-property: left, top; transition-timing-function: ease; transition-duration: 1s; opacity: 1;">
+				<a href="javascript:void(0)">
+				<div class="thumb">
+					<img src="http://52.192.241.211:8080/Alpha/FineArt_w218/FFF4/15903.jpg" alt="artwork thumbnail" class="" onload="this.className=''" onerror="getNoImage(this)">
+					<button type="button" class="add_portfolio">add to my portfolio</button>
+					<button type="button" class="similar">1</button>
+				</div>
+				<div class="cont">
+					<input type="hidden" class="category_code" value="FFF4">
+					<p class="title ti">
+						Tête de femme (Dora Maar)
+					</p>
+					<p class="category">
+						 Sculptures &amp; Figures, bronze, 1941
+					</p>
+					<div class="auction_infor past">
+						<p class="sold">
+							<span class="date">2007</span><span class="price">$29,161,000</span><span class="range">$</span>
+						</p>
+						<p class="latest">
+							<span class="date">3 mon ago</span><span class="price">$29,890,025</span><span class="ico_ud ss up">3%</span>
+						</p>
+						<p class="price_range">
+							<span class="price">$29,161,000 ~ $30,619,050</span>
+						</p>
+					</div>
+					<div class="sold_info">
+						 Sothebys, New York | 7 Nov 2007
+					</div>
+				</div>
+				</a>
+			</div>
+			<div class="item_artwork item list_item" data-idx="1705" style="position: absolute; top: 2035px; left: 260px; transition-property: left, top; transition-timing-function: ease; transition-duration: 1s; opacity: 1;">
+				<a href="javascript:void(0)">
+				<div class="thumb">
+					<img src="http://52.192.241.211:8080/Alpha/FineArt_w218/FFF1/1705.jpg" alt="artwork thumbnail" class="" onload="this.className=''" onerror="getNoImage(this)">
+					<button type="button" class="add_portfolio">add to my portfolio</button>
+					<button type="button" class="similar">10</button>
+				</div>
+				<div class="cont">
+					<input type="hidden" class="category_code" value="FFF1">
+					<p class="title ti">
+						Angel Fernandez de soto
+					</p>
+					<p class="category">
+						 Paintings, Oil on Canvas, 1903
+					</p>
+					<div class="auction_infor past">
+						<p class="sold">
+							<span class="date">1995</span><span class="price">$29,152,500</span><span class="range">$</span>
+						</p>
+						<p class="latest">
+							<span class="date">3 mon ago</span><span class="price">$63,500,000</span><span class="ico_ud ss up">118%</span>
+						</p>
+						<p class="price_range">
+							<span class="price">$62,000,000 ~ $65,000,000</span>
+						</p>
+					</div>
+					<div class="sold_info">
+						 Sothebys, New York | 8 May 1995
+					</div>
+				</div>
+				</a>
+			</div>
+			<div class="item_artwork item list_item" data-idx="2987" style="position: absolute; top: 2319px; left: 520px; transition-property: left, top; transition-timing-function: ease; transition-duration: 1s; opacity: 1;">
+				<a href="javascript:void(0)">
+				<div class="thumb">
+					<img src="http://52.192.241.211:8080/Alpha/FineArt_w218/FFF1/2987.jpg" alt="artwork thumbnail" class="" onload="this.className=''" onerror="getNoImage(this)">
+					<button type="button" class="add_portfolio">add to my portfolio</button>
+					<button type="button" class="similar">10</button>
+				</div>
+				<div class="cont">
+					<input type="hidden" class="category_code" value="FFF1">
+					<p class="title ti">
+						Femme assise, robe bleue
+					</p>
+					<p class="category">
+						 Paintings, oil on canvas, 1939
+					</p>
+					<div class="auction_infor past">
+						<p class="sold">
+							<span class="date">2011</span><span class="price">$29,148,409</span><span class="range">$</span>
+						</p>
+						<p class="latest">
+							<span class="date">3 mon ago</span><span class="price">$31,000,000</span><span class="ico_ud ss up">7%</span>
+						</p>
+						<p class="price_range">
+							<span class="price">$30,000,000 ~ $32,000,000</span>
+						</p>
+					</div>
+					<div class="sold_info">
+						 Christies, London | 21 Jun 2011
+					</div>
+				</div>
+				</a>
+			</div>
+			<div class="item_artwork item list_item" data-idx="2948" style="position: absolute; top: 2354px; left: 780px; transition-property: left, top; transition-timing-function: ease; transition-duration: 1s; opacity: 1;">
+				<a href="javascript:void(0)">
+				<div class="thumb">
+					<img src="http://52.192.241.211:8080/Alpha/FineArt_w218/FFF1/2948.jpg" alt="artwork thumbnail" class="" onload="this.className=''" onerror="getNoImage(this)">
+					<button type="button" class="add_portfolio">add to my portfolio</button>
+					<button type="button" class="similar">10</button>
+				</div>
+				<div class="cont">
+					<input type="hidden" class="category_code" value="FFF1">
+					<p class="title ti">
+						Claude et Paloma
+					</p>
+					<p class="category">
+						 Paintings, oil and ripolin on panel, 1950
+					</p>
+					<div class="auction_infor past">
+						<p class="sold">
+							<span class="date">2013</span><span class="price">$28,165,000</span><span class="range">$</span>
+						</p>
+						<p class="latest">
+							<span class="date">3 mon ago</span><span class="price">$30,000,000</span><span class="ico_ud ss up">7%</span>
+						</p>
+						<p class="price_range">
+							<span class="price">$29,000,000 ~ $31,000,000</span>
+						</p>
+					</div>
+					<div class="sold_info">
+						 Christies, New York | 4 Nov 2013
+					</div>
+				</div>
+				</a>
+			</div>
+			<div class="item_artwork item list_item" data-idx="2894" style="position: absolute; top: 2378px; left: 1040px; transition-property: left, top; transition-timing-function: ease; transition-duration: 1s; opacity: 1;">
+				<a href="javascript:void(0)">
+				<div class="thumb">
+					<img src="http://52.192.241.211:8080/Alpha/FineArt_w218/FFF1/2894.jpg" alt="artwork thumbnail" class="" onload="this.className=''" onerror="getNoImage(this)">
+					<button type="button" class="add_portfolio">add to my portfolio</button>
+					<button type="button" class="similar">10</button>
+				</div>
+				<div class="cont">
+					<input type="hidden" class="category_code" value="FFF1">
+					<p class="title ti">
+						Femme au costume turc dans un fauteuil
+					</p>
+					<p class="category">
+						 Paintings, oil on canvas, 1955
+					</p>
+					<div class="auction_infor past">
+						<p class="sold">
+							<span class="date">2014</span><span class="price">$27,522,823</span><span class="range">$</span>
+						</p>
+						<p class="latest">
+							<span class="date">3 mon ago</span><span class="price">$29,000,000</span><span class="ico_ud ss up">6%</span>
+						</p>
+						<p class="price_range">
+							<span class="price">$28,000,000 ~ $30,000,000</span>
+						</p>
+					</div>
+					<div class="sold_info">
+						 Christies, London | 4 Feb 2014
+					</div>
+				</div>
+				</a>
+			</div>
+			<div class="item_artwork item list_item" data-idx="1493" style="position: absolute; top: 2397px; left: 0px; transition-property: left, top; transition-timing-function: ease; transition-duration: 1s; opacity: 1;">
+				<a href="javascript:void(0)">
+				<div class="thumb">
+					<img src="http://52.192.241.211:8080/Alpha/FineArt_w218/FFF1/1493.jpg" alt="artwork thumbnail" class="" onload="this.className=''" onerror="getNoImage(this)">
+					<button type="button" class="add_portfolio">add to my portfolio</button>
+					<button type="button" class="similar">10</button>
+				</div>
+				<div class="cont">
+					<input type="hidden" class="category_code" value="FFF1">
+					<p class="title ti">
+						LE MIROIR
+					</p>
+					<p class="category">
+						 Paintings, Oil on Canvas, 1932
+					</p>
+					<div class="auction_infor past">
+						<p class="sold">
+							<span class="date">1989</span><span class="price">$26,400,000</span><span class="range">$</span>
+						</p>
+						<p class="latest">
+							<span class="date">3 mon ago</span><span class="price">$82,000,000</span><span class="ico_ud ss up">211%</span>
+						</p>
+						<p class="price_range">
+							<span class="price">$80,000,000 ~ $84,000,000</span>
+						</p>
+					</div>
+					<div class="sold_info">
+						 Sothebys, New York | 15 Nov 1989
+					</div>
+				</div>
+				</a>
+			</div>
+			<div class="item_artwork item list_item" data-idx="3079" style="position: absolute; top: 2536px; left: 260px; transition-property: left, top; transition-timing-function: ease; transition-duration: 1s; opacity: 1;">
+				<a href="javascript:void(0)">
+				<div class="thumb">
+					<img src="http://52.192.241.211:8080/Alpha/FineArt_w218/FFF1/3079.jpg" alt="artwork thumbnail" class="" onload="this.className=''" onerror="getNoImage(this)">
+					<button type="button" class="add_portfolio">add to my portfolio</button>
+					<button type="button" class="similar">10</button>
+				</div>
+				<div class="cont">
+					<input type="hidden" class="category_code" value="FFF1">
+					<p class="title ti">
+						Deux personnages (la lecture)
+					</p>
+					<p class="category">
+						 Paintings, oil on canvas, 1934
+					</p>
+					<div class="auction_infor past">
+						<p class="sold">
+							<span class="date">2015</span><span class="price">$25,700,172</span><span class="range">$</span>
+						</p>
+						<p class="latest">
+							<span class="date">3 mon ago</span><span class="price">$25,500,000</span><span class="ico_ud ss even">&nbsp;</span>
+						</p>
+						<p class="price_range">
+							<span class="price">$25,000,000 ~ $26,000,000</span>
+						</p>
+					</div>
+					<div class="sold_info">
+						 Sothebys, London | 24 Jun 2015
+					</div>
+				</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+<form id="artwork_list_form">
+	<input type="hidden" id="input_start_number" name="startNo" value="0">
+	<input type="hidden" name="rowCnt" value="30">
+	<input type="hidden" name="artistID" value="1">
+</form>
+<a href="javascript:void(0)" class="go_top">go top of document</a>
+<footer>
+<p class="copyright">
+	© G&amp;S Art
+</p>
+</footer>
+
+</body></html>
