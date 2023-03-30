@@ -311,7 +311,7 @@ a {color:#000;}
 .my_header ul li:last-child a:after {left:16px;}
 .my_header ul .on {}
 .my_header ul .on a, .my_header ul li a:hover {color:#000}
-.my_header ul .on a:after {content:"▲"; display:block; position:absolute; width:100px; height:100px; font-size:60px; color:#eaeaea; left:0px; top:0px;}
+.my_header ul .on a:after {content:"▲"; display:block; position:absolute; width:100px; height:100px; font-size:60px; color:#eaeaea; left:0px; top:2px;}
 .my_header ul li a {font-size:14px; font-weight:800; color:#aaa; position:relative;}
 .my_header_down {border-bottom:1px solid #ccc;}
 .my_header_down ul {overflow:hidden; width:1000px; margin:0 auto;}
