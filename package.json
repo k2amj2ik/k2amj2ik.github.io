@@ -19,7 +19,7 @@
   "dependencies": {
     "bootstrap-icons": "^1.5.0",
     "node": "^16.4.0",
-    "npm": "^7.19.1",
+    "npm": "^9.6.4",
     "sass": "^1.35.2"
   }
 }
